@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="scroll-bookmark-2" xmlns="http://docbook.org/ns/docbook"
+<section version="5.0" xml:id="scroll-bookmark-2"
+         xmlns="http://docbook.org/ns/docbook"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          xmlns:xila="http://www.w3.org/2001/XInclude/local-attributes"
@@ -21,26 +22,6 @@
   the domain relevant values of each table are included here.</para>
 
   <informaltable>
-    <colgroup>
-      <col/>
-
-      <col/>
-
-      <col/>
-
-      <col/>
-
-      <col/>
-
-      <col/>
-
-      <col/>
-
-      <col/>
-
-      <col/>
-    </colgroup>
-
     <thead>
       <tr>
         <td colspan="1" rowspan="1"><para>Image Laterality

@@ -1,0 +1,1763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="scroll-bookmark-4" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xila="http://www.w3.org/2001/XInclude/local-attributes"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:trans="http://docbook.org/ns/transclusion"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:db="http://docbook.org/ns/docbook">
+  <title>List of codes used for specific Extraoral Views</title>
+
+  <para>Codes for the drawings shown in Figure 3; the user can customize view
+  sets by selecting the desired views and the applicable SNOMED CT
+  codes.</para>
+
+  <informaltable>
+    <thead>
+      <tr>
+        <td colspan="1" rowspan="1"><para/></td>
+
+        <td colspan="1" rowspan="1"><para><emphasis
+        role="color:#262626">Enumerated</emphasis><?linebreak ?><emphasis
+        role="color:#262626">Terms</emphasis><?linebreak ?><emphasis
+        role="color:#262626">(Acronyms)</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para><emphasis
+        role="color:#262626">Meaning</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para><emphasis role="color:#262626">Image
+        Laterality</emphasis></para><para><emphasis
+        role="color:#262626">(0020,0062)</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para><emphasis
+        role="color:#262626">Anatomic Region
+        Sequence</emphasis></para><para><emphasis
+        role="color:#262626"><emphasis
+        role="color:#262626">(0008,2218)</emphasis><?linebreak ?></emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para><emphasis
+        role="color:#262626">Anatomic Region Modifier
+        Sequence</emphasis></para><para><emphasis
+        role="color:#262626">(0008,2220)</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Primary Anatomic Structure
+        Sequence</para><para>(0008,2228)</para></td>
+
+        <td colspan="1" rowspan="1"><para><emphasis
+        role="color:#262626">Acquisition View</emphasis></para><para><emphasis
+        role="color:#262626"><emphasis
+        role="color:#262626">(xxxx,xxxx)</emphasis><?linebreak ?></emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para><emphasis role="color:#262626">Image
+        View</emphasis></para><para><emphasis role="color:#262626"><emphasis
+        role="color:#262626">(xxxx,xxxx)</emphasis><?linebreak ?></emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Functional Condition Present During
+        Acquisition</para><para><emphasis
+        role="color:#262626">(xxxx,xxxx)</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para><emphasis
+        role="color:#262626">Occlusal
+        Relationship</emphasis></para><para><emphasis
+        role="color:#262626"><emphasis
+        role="color:#262626">(xxxx,xxxx)</emphasis><?linebreak ?></emphasis></para></td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td colspan="1" rowspan="1"><para>1</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.LR.CO</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right Profile (subject is facing
+        observer's right) – Lips Relaxed, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>2</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.LR.CR</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right Profile (subject is facing
+        observer's right) – Lips Relaxed, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed:<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para><emphasis role="italics">Centric
+        relation</emphasis><?linebreak ?> SCT:<?linebreak ?>
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>3</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.LC.CO</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right Profile (subject is facing
+        observer's right) – Lips Closed, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips closed<?linebreak ?> SCT:
+        787607005</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>4</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.LC.CR</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right Profile (subject is facing
+        observer's right) - Lips Closed, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips closed<?linebreak ?> SCT:
+        787607005</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?>
+        SCT:<?linebreak ?> 736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>5</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.FS.CO</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right profile (subject is facing
+        observer's right) - Full Smile, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>6</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.FS.CR</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right Profile (subject is facing
+        observer's right) - Full Smile, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>7</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.MD.PF</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right Profile (subject is facing
+        observer's right) - Mandible Postured Forward</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Mandible postured
+        forward<?linebreak ?> SCT: 787611004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT:
+        276727009</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>8</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.LR.CO.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Right Profile (subject turns
+        toward observer's right) – Lips Relaxed, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed:<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>9</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.LR.CR.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Right Profile (subject turns
+        toward observer's right) – Lips Relaxed, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed:<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>10</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.LC.CO.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Right Profile (subject turns
+        toward observer's right) – Lips Closed, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006°</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips closed<?linebreak ?> SCT:
+        787607005</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>11</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.LC.CR.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Right Profile (subject turns
+        toward observer's right) – Lips Closed, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006°</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips closed<?linebreak ?> SCT:
+        787607005</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>12</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.FS.CO.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Right Profile (subject turns
+        toward observer's right) – Full Smile, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>13</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.FS.CR.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Right Profile (subject turns
+        toward observer's right – Full Smile, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?>
+        SCT:736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>14</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.RP.MD.PF.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Right Profile (subject turns
+        toward observer's right – Mandible Postured Forward</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right<?linebreak ?> SCT:
+        24028007</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Mandible postured
+        forward<?linebreak ?> SCT: 787611004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT:
+        276727009</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>15</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.FF.LR.CO</para></td>
+
+        <td colspan="1" rowspan="1"><para>Full Face – Lips Relaxed, Centric
+        Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?>
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right and Left<?linebreak ?> SCT:
+        51440002</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed:<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>16</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.FF.LR.CR</para></td>
+
+        <td colspan="1" rowspan="1"><para>Full Face - Lips Relaxed, Centric
+        Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right and Left<?linebreak ?> SCT:
+        51440002</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed:<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>17</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.FF.LC.CO</para></td>
+
+        <td colspan="1" rowspan="1"><para>Full Face – Lips Closed, Centric
+        Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right and Left<?linebreak ?> SCT:
+        51440002</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips closed<?linebreak ?> SCT:
+        787607005</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>18</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.FF.LC.CR</para></td>
+
+        <td colspan="1" rowspan="1"><para>Full Face - Lips Closed, Centric
+        Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right and Left<?linebreak ?> SCT:
+        51440002</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips closed<?linebreak ?> SCT:
+        787607005</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>19</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.FF.FS.CO</para></td>
+
+        <td colspan="1" rowspan="1"><para>Full Face – Full Smile, Centric
+        Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right and Left<?linebreak ?> SCT:
+        51440002</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para><para>Example: Patient in permanent
+        dentition may show the following teeth in this
+        view</para><itemizedlist>
+            <listitem>
+              <para>11 SCT: <emphasis
+              role="color:#000000">245575001</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>12 SCT: <emphasis
+              role="color:#000000">245574002,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>13 SCT <emphasis
+              role="color:#000000">245572003</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>21 SCT: <emphasis
+              role="color:#000000">245587008</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>22 SCT: <emphasis
+              role="color:#000000">245586004</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>23 SCT: <emphasis
+              role="color:#000000">245584001</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>31 SCT: <emphasis
+              role="color:#000000">245611006</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>32 SCT: <emphasis
+              role="color:#000000">245610007</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>33 SCT: <emphasis
+              role="color:#000000">245608005</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>41 SCT: <emphasis
+              role="color:#000000">245600003</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>42 SCT: <emphasis
+              role="color:#000000">245599001</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>43 SCT: <emphasis
+              role="color:#000000">245597004</emphasis></para>
+            </listitem>
+          </itemizedlist></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>20</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.FF.FS.CR</para></td>
+
+        <td colspan="1" rowspan="1"><para>Full Face - Full Smile, Centric
+        Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right and Left<?linebreak ?> SCT:
+        51440002</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para><para>Example: Patient in primary dentition
+        may show the following teeth in this view</para><itemizedlist>
+            <listitem>
+              <para>51 SCT: <emphasis
+              role="color:#000000">245620002</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>52 SCT: <emphasis
+              role="color:#000000">245619008</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>53 SCT: <emphasis
+              role="color:#000000">245617005</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>61 SCT: <emphasis
+              role="color:#000000">245627004</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>62 SCT: <emphasis
+              role="color:#000000">245626008</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>63 SCT: <emphasis
+              role="color:#000000">245624006</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>71 SCT: <emphasis
+              role="color:#000000">245642001</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>72 SCT: <emphasis
+              role="color:#000000">245641008</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>73 SCT: <emphasis
+              role="color:#000000">245639007</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>81 SCT: <emphasis
+              role="color:#000000">245635001</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>82 SCT: <emphasis
+              role="color:#000000">245634002</emphasis><emphasis
+              role="color:#000000">,</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para>83 SCT: <emphasis
+              role="color:#000000">245632003</emphasis></para>
+            </listitem>
+          </itemizedlist></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        73678300</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>21</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.FF.MD.PF</para></td>
+
+        <td colspan="1" rowspan="1"><para>Full Face - Mandible Postured
+        Forward</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right and Left<?linebreak ?> SCT:
+        51440002</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Mandible postured
+        forward<?linebreak ?> SCT: 787611004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT:
+        276727009</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>22</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.LR.CO</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left Profile (subject is facing
+        observer's left) – Lips Relaxed, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed:<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>23</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.LR.CR</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left Profile (subject is facing
+        observer's left) – Lips Relaxed, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed:<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>24</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.LC.CO</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left Profile (subject is facing
+        observer's left) – Lips Closed, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips closed<?linebreak ?> SCT:
+        787607005</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>25</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.LC.CR</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left Profile (subject is facing
+        observer's left) - Lips Closed, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips closed<?linebreak ?> SCT:
+        787607005</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>26</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.FS.CO</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left profile (subject is facing
+        observer's left) - Full Smile, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>27</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.FS.CR</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left Profile (subject is facing
+        observer's left) - Full Smile, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>28</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.MD.PF</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left Profile (subject is facing
+        observer's left) - Mandible Postured Forward</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Sagittal (Lateral)<?linebreak ?>
+        SCT: 30730003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Mandible postured
+        forward<?linebreak ?> SCT: 787611004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT:
+        276727009</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>29</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.LR.CO.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Left Profile (subject turns
+        toward observer's left) – Lips Relaxed, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed:<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>30</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.LR.CR.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Left Profile (subject turns
+        toward observer's left) – Lips Relaxed, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed:<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>31</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.LC.CO.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Left Profile (subject turns
+        toward observer's left) – Lips Closed, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips closed<?linebreak ?> SCT:
+        787607005</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>32</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.LC.CR.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Left Profile (subject turns
+        toward observer's left) – Lips Closed, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips closed<?linebreak ?> SCT:
+        787607005</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?> SCT:
+        736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>33</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.FS.CO.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Left Profile (subject turns
+        toward observer's left) – Full Smile, Centric Occlusion</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric occlusion of
+        teeth<?linebreak ?> SCT: 110320000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>34</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.FS.CR.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Left Profile (subject turns
+        toward observer's left– Full Smile, Centric Relation</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?>
+        SCT:<?linebreak ?> 736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>35</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.LP.MD.PF.45</para></td>
+
+        <td colspan="1" rowspan="1"><para>45° Left Profile (subject turns
+        toward observer's left– Full Smile, Mandible Postured
+        Forward</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Left<?linebreak ?> SCT:
+        7771000</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>45°<?linebreak ?> SCT:
+        787612006</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para><emphasis role="color:#ff0000">Both
+        must be specified:</emphasis></para><itemizedlist>
+            <listitem>
+              <para><emphasis role="color:#ff0000">Smile SCT:
+              225583004</emphasis></para>
+            </listitem>
+
+            <listitem>
+              <para><emphasis role="color:#ff0000">Mandible postured
+              forwardSCT: 787611004</emphasis></para>
+            </listitem>
+          </itemizedlist></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT:
+        276727009</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>36</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.OF.IV</para></td>
+
+        <td colspan="1" rowspan="1"><para>Other Face (head tipped back) –
+        Inferior View (showing lower border of mandible, nares, infraorbital
+        rim contours, forehead contours)</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right and Left<?linebreak ?> SCT:
+        51440002</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Inferior view<?linebreak ?>
+        261089000</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?>
+        SCT:<?linebreak ?> 736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>37</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.OF.SV</para></td>
+
+        <td colspan="1" rowspan="1"><para>Other Face (viewed from above) –
+        Superior View (showing forehead, infraorbital rim contour, dorsum of
+        nose, upper lip, chin)</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right and Left<?linebreak ?> SCT:
+        51440002</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Superior view<?linebreak ?>
+        264217000</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?>
+        SCT:<?linebreak ?> 736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>38</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.OF.CS</para></td>
+
+        <td colspan="1" rowspan="1"><para>Other Face - Close-Up Smile (with
+        lips)</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Oral region<?linebreak ?>
+        SCT:<?linebreak ?> <emphasis
+        role="color:#000000">362628005</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><itemizedlist>
+            <listitem>
+              <para>Right and Left<?linebreak ?> SCT: 51440002</para>
+            </listitem>
+
+            <listitem>
+              <para>Close-up<?linebreak ?> SCT: <emphasis
+              role="color:#000000">789131009</emphasis></para>
+            </listitem>
+          </itemizedlist></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para><para>Example: Patient in mixed dentition
+        may show the following teeth in this view</para><itemizedlist>
+            <listitem>
+              <para>11 SCT: <emphasis
+              role="color:#000000">245575001</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>12 SCT: <emphasis
+              role="color:#000000">245574002</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>53 SCT: <emphasis
+              role="color:#000000">245617005</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>21 SCT: <emphasis
+              role="color:#000000">245587008</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>22 SCT: <emphasis
+              role="color:#000000">245586004</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>63 SCT: <emphasis
+              role="color:#000000">245624006</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>31 SCT: <emphasis
+              role="color:#000000">245611006</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>32 SCT: <emphasis
+              role="color:#000000">245610007</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>73 SCT: <emphasis
+              role="color:#000000">245639007</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>41 SCT: <emphasis
+              role="color:#000000">245600003</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>42 SCT: <emphasis
+              role="color:#000000">245599001</emphasis>,</para>
+            </listitem>
+
+            <listitem>
+              <para>83 SCT: <emphasis
+              role="color:#000000">245632003</emphasis></para>
+            </listitem>
+          </itemizedlist></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Smile<?linebreak ?> SCT:
+        225583004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Centric relation<?linebreak ?>
+        SCT:<?linebreak ?> 736783005</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>39</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.OF.OC</para></td>
+
+        <td colspan="1" rowspan="1"><para>Other Face - Occlusal Cant (e.g.,
+        tongue depressor)</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><itemizedlist>
+            <listitem>
+              <para>Right and Left<?linebreak ?> SCT: 51440002</para>
+            </listitem>
+
+            <listitem>
+              <para>Close-up<?linebreak ?> SCT: <emphasis
+              role="color:#000000">789131009</emphasis></para>
+            </listitem>
+          </itemizedlist></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Lips relaxed:<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789314008</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>Cant of occlusal plane<?linebreak ?>
+        SCT: 710793000</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>40</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.OF.FI</para></td>
+
+        <td colspan="1" rowspan="1"><para>Other Face - Forensic Interest
+        (tattoos, jewelry, scars)</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:<?linebreak ?>
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>One of:</para><itemizedlist>
+            <listitem>
+              <para>Left<?linebreak ?> SCT: 7771000</para>
+            </listitem>
+
+            <listitem>
+              <para>Right<?linebreak ?> SCT: 24028007</para>
+            </listitem>
+
+            <listitem>
+              <para>Right and Left<?linebreak ?> SCT: 51440002</para>
+            </listitem>
+          </itemizedlist><para>AND</para><para>Close-up<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789131009</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>One of:</para><itemizedlist>
+            <listitem>
+              <para>Coronal (Frontal)<?linebreak ?> SCT 81654009</para>
+            </listitem>
+
+            <listitem>
+              <para>Sagittal (Lateral)<?linebreak ?> SCT: 30730003</para>
+            </listitem>
+          </itemizedlist></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT:
+        276727009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT:
+        276727009</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>41</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.OF.AN</para></td>
+
+        <td colspan="1" rowspan="1"><para>Other Face - Anomalies (ears, skin
+        tags, etc.)</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>One of:</para><itemizedlist>
+            <listitem>
+              <para>Left<?linebreak ?> SCT: 7771000</para>
+            </listitem>
+
+            <listitem>
+              <para>Right<?linebreak ?> SCT: 24028007</para>
+            </listitem>
+
+            <listitem>
+              <para>Right and Left<?linebreak ?> SCT: 51440002</para>
+            </listitem>
+          </itemizedlist><para>AND</para><para>Close-up<?linebreak ?> SCT:
+        <emphasis role="color:#000000">789131009</emphasis></para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>One of:</para><itemizedlist>
+            <listitem>
+              <para>Coronal (Frontal)<?linebreak ?> SCT 81654009</para>
+            </listitem>
+
+            <listitem>
+              <para>Sagittal (Lateral)<?linebreak ?> SCT: 30730003</para>
+            </listitem>
+          </itemizedlist></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT:
+        276727009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT:
+        276727009</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>42</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.FF.MO</para></td>
+
+        <td colspan="1" rowspan="1"><para>Full Face – Mouth Open</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>Right and Left<?linebreak ?> SCT:
+        51440002</para></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Open Mouth<?linebreak ?> SCT:
+        262016004</para></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT:
+        276727009</para></td>
+      </tr>
+
+      <tr>
+        <td colspan="1" rowspan="1"><para>43</para></td>
+
+        <td colspan="1" rowspan="1"><para>EO.FF.NW</para></td>
+
+        <td colspan="1" rowspan="1"><para>Full Face – demonstrating Nerve
+        Weakness</para></td>
+
+        <td colspan="1" rowspan="1"><para>"U"</para></td>
+
+        <td colspan="1" rowspan="1"><para>Face<?linebreak ?> SCT:
+        302549007</para></td>
+
+        <td colspan="1" rowspan="1"><para>One of:</para><itemizedlist>
+            <listitem>
+              <para>Left<?linebreak ?> SCT: 7771000</para>
+            </listitem>
+
+            <listitem>
+              <para>Right<?linebreak ?> SCT: 24028007</para>
+            </listitem>
+
+            <listitem>
+              <para>Right and Left<?linebreak ?> SCT: 51440002</para>
+            </listitem>
+          </itemizedlist></td>
+
+        <td colspan="1" rowspan="1"><para>(See section <emphasis
+        role="italics">Primary Anatomic Structure
+        Sequence</emphasis>)</para></td>
+
+        <td colspan="1" rowspan="1"><para>Coronal (Frontal)<?linebreak ?> SCT:
+        81654009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Direct<?linebreak ?> SCT:
+        255589003</para></td>
+
+        <td colspan="1" rowspan="1"><para>Facial palsy/Bell's
+        palsy<?linebreak ?> SCT:<?linebreak ?> 193093009</para></td>
+
+        <td colspan="1" rowspan="1"><para>Null<?linebreak ?> SCT: </para></td>
+      </tr>
+    </tbody>
+  </informaltable>
+</section>
