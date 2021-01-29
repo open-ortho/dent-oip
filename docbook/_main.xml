@@ -16,113 +16,13 @@
 
     <authorgroup>
       <author>
-        <personname>
-          <firstname>ADA SCDI</firstname>
-
-           
-
-          <surname>WG 11.6</surname>
-        </personname>
+        <personname><firstname>ADA SCDI</firstname> <surname>WG
+        11.6</surname></personname>
       </author>
     </authorgroup>
   </info>
 
-  <para>Appendix 5 has illustrations for encoding orthodontic/craniofacial
-  views using DICOM with SNOMED CT terminology. If needed, more SNOMED CT
-  codes can be retrieved from the Unified Medical Language Systems
-  Metathesaurus browser on the US National Library of Medicine website (<link
-  xlink:href="https://www.nlm.nih.gov/research/umls/index.html">https://www.nlm.nih.gov/research/umls/index.html</link>).</para>
-
-  <itemizedlist>
-    <listitem>
-      <para><link linkend="scroll-bookmark-2">Appendix 5.1 Summary of DICOM
-      tags for orthodontic/craniofacial views</link> — The table below
-      contains all DICOM tags used to uniquely identify and encode each
-      orthodontic view.</para>
-    </listitem>
-
-    <listitem>
-      <para><link linkend="scroll-bookmark-3">Appendix 5.2 List of codes used
-      in the DICOM CP1571 view set</link> — Codes used in the view set
-      illustrated in DICOM correction package #1571, called "Add Orthodontics
-      and Forensic Odontology View Sets to Structured Display."</para>
-    </listitem>
-
-    <listitem>
-      <para><link linkend="scroll-bookmark-4">Appendix 5.3 List of codes used
-      for specific Extraoral Views</link> — Codes for the drawings shown in
-      Figure 3; the user can customize view sets by selecting the desired
-      views and the applicable SNOMED CT codes.</para>
-    </listitem>
-
-    <listitem>
-      <para><link linkend="scroll-bookmark-5">Appendix 5.4 List of codes used
-      for specific Intraoral Views</link> — Codes for the drawings shown in
-      Figure 3; the user can customize view sets by selecting the desired
-      views and the applicable SNOMED CT codes.</para>
-    </listitem>
-
-    <listitem>
-      <para>
-        <link linkend="scroll-bookmark-6">Appendix 5.6 Image Laterality
-        (0020,0062)</link>
-      </para>
-    </listitem>
-
-    <listitem>
-      <para>
-        <link linkend="scroll-bookmark-7">Appendix 5.7 Patient Orientation
-        (0020,0020)</link>
-      </para>
-    </listitem>
-
-    <listitem>
-      <para>
-        <link linkend="scroll-bookmark-8">Appendix 5.8 Anatomic Region
-        Sequence (0008,2218)</link>
-      </para>
-    </listitem>
-
-    <listitem>
-      <para><link linkend="scroll-bookmark-9">Appendix 5.9 Primary Anatomic
-      Structure Sequence (0008,2228)</link> — Primary Anatomic Structure
-      Sequence contains a list of visible teeth using ISO tooth numbering
-      system (represented as SNOMED CT codes) in a specific view.</para>
-    </listitem>
-
-    <listitem>
-      <para>
-        <link linkend="scroll-bookmark-10">Appendix 5.10 Acquisition
-        View</link>
-      </para>
-    </listitem>
-
-    <listitem>
-      <para>
-        <link linkend="scroll-bookmark-11">Appendix 5.11 Image View</link>
-      </para>
-    </listitem>
-
-    <listitem>
-      <para>
-        <link linkend="scroll-bookmark-12">Appendix 5.12 Functional Condition
-        Present During Acquisition</link>
-      </para>
-    </listitem>
-
-    <listitem>
-      <para>
-        <link linkend="scroll-bookmark-13">Appendix 5.13 Occlusal
-        Relationship</link>
-      </para>
-    </listitem>
-
-    <listitem>
-      <para>
-        <link linkend="scroll-bookmark-14">Appendix 5.14 Progress</link>
-      </para>
-    </listitem>
-  </itemizedlist>
+  <xi:include href="scope.xml" xpointer="element(/1)"/>
 
   <xi:include href="all_snomed_codes.xml" xpointer="element(/1)"/>
 
