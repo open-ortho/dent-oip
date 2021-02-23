@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section version="5.1" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         xmlns:xila="http://www.w3.org/2001/XInclude/local-attributes"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:trans="http://docbook.org/ns/transclusion"
+         xmlns:svg="http://www.w3.org/2000/svg"
+         xmlns:m="http://www.w3.org/1998/Math/MathML"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:db="http://docbook.org/ns/docbook">
+  <title>Lossy Image Compression</title>
+
+  <para>According to <link
+  xlink:href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.html#sect_C.7.6.1.1.5">
+  DICOM </link> : <blockquote>
+      <para>The Attribute Lossy Image Compression (0028,2110) conveys that the
+      Image has undergone lossy compression. It provides a means to record
+      that the Image has been compressed (at a point in its lifetime) with a
+      lossy algorithm and changes have been introduced into the pixel data.
+      Once the value has been set to "01", it shall not be reset.</para>
+
+      <para>Note</para>
+
+      <para>If an image is compressed with a lossy algorithm, the Attribute
+      Lossy Image Compression (0028,2110) is set to "01". Subsequently, if the
+      image is decompressed and transferred in uncompressed format, this
+      Attribute value remains "01". The value of Lossy Image Compression
+      (0028,2110) in SOP Instances containing multiple frames in which one or
+      more of the frames have undergone lossy compression shall be
+      "01".</para>
+    </blockquote></para>
+
+  <para>For orthodontic purposes, this tag should be used, because of the
+  varied nature of photographic capture equipment. Some cameras are configured
+  to store images in raw and uncompressed format, others will save a
+  compressed JPEG image. In order to correctly encode this information, the
+  following three DICOM tags should be used.</para>
+
+  <section>
+    <title>Lossy Image Compression Attribute (0028,2110)</title>
+
+    <para>Set to the string <code>"00"</code> if image is not compressed.
+    Otherwise set to the string <code>"01"</code>.</para>
+
+    <para>In order to know if an image is to be considered compressed or not,
+    one needs to be familiar with the algorithm used to store the
+    image.</para>
+  </section>
+
+  <section>
+    <title>Lossy Image Compression Ratio (0028,2112)</title>
+
+    <para/>
+  </section>
+
+  <section>
+    <title>Lossy Image Compression Method (0028,2114)</title>
+
+    <para/>
+  </section>
+</section>

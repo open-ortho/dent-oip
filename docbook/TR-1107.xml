@@ -61,7 +61,7 @@
 
     <xi:include href="annotations.xml" xpointer="element(/1)"/>
 
-    <xi:include href="quality_control_image_attribute.xml" xpointer="element(/1)"/>
+    <xi:include href="lossy_image_compression.xml" xpointer="element(/1)"/>
   </section>
 
   <index/>
