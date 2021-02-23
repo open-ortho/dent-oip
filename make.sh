@@ -14,7 +14,7 @@ PANDOC="$(which pandoc)" || {
     exit 1
 }
 DOCBOOK_XSD="/usr/local/Cellar/docbook/5.1_1/docbook/xml/5.0/xsd/docbook.xsd"
-DOCBOOK_XSL=""
+DOCBOOK_XSLTNG="./resources/docbook-xslTNG-1.3.1"
 DOCBOOK_DTD="/usr/local/Cellar/docbook/5.1_1/docbook/xml/5.0/dtd/docbook.dtd"
 
 print_help() {
@@ -48,7 +48,24 @@ make_docx() {
 }
 
 make_html() {
-    $LINTER --xinclude "${MAIN}" | $PANDOC --from="docbook" --to="html" --output="${DIST}/${NAME}.html"
+    #$LINTER --xinclude "${MAIN}" | $PANDOC --from="docbook" --to="html" --output="${DIST}/${NAME}.html"
+    if [ ! -d "${DIST}/html" ]; then 
+      mkdir "${DIST}/html" 
+    fi
+    if [ ! -x "$LINTER" ]; then
+      echo "$LINTER not found"
+      exit 1
+    fi
+    if [ ! -d "${DOCBOOK_XSLTNG}" ]; then
+      echo "Cannot find xslTNG: to install download zip file from https://github.com/docbook/xslTNG/releases"
+      exit 1
+    fi
+    if ! which -s saxon ; then 
+      echo "saxon XLST 3.0 processor is required. Install first with your package manager."
+      exit 1
+    fi
+    $LINTER --xinclude "${MAIN}" | saxon -o:"${DIST}/html/${NAME}.html" -xsl:"${DOCBOOK_XSLTNG}/xslt/docbook.xsl" -s:- || exit
+    rsync -au "${DOCBOOK_XSLTNG}/resources/" "${DIST}/html/" || exit
     echo "Build HTML."
 }
 
