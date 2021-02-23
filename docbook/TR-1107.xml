@@ -60,6 +60,8 @@
     <xi:include href="progress.xml" xpointer="element(/1)"/>
 
     <xi:include href="annotations.xml" xpointer="element(/1)"/>
+
+    <xi:include href="quality_control_image_attribute.xml" xpointer="element(/1)"/>
   </section>
 
   <index/>
