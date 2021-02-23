@@ -24,33 +24,41 @@
 
   <xi:include href="scope.xml" xpointer="element(/1)"/>
 
-  <xi:include href="all_snomed_codes.xml" xpointer="element(/1)"/>
+  <section>
+    <title>Codes</title>
 
-  <xi:include href="VS-01.xml" xpointer="element(/1)"/>
+    <xi:include href="all_snomed_codes.xml" xpointer="element(/1)"/>
 
-  <xi:include href="extraoral_views.xml" xpointer="element(/1)"/>
+    <xi:include href="VS-01.xml" xpointer="element(/1)"/>
 
-  <xi:include href="intraoral_views.xml" xpointer="element(/1)"/>
+    <xi:include href="extraoral_views.xml" xpointer="element(/1)"/>
 
-  <xi:include href="image_laterality.xml" xpointer="element(/1)"/>
+    <xi:include href="intraoral_views.xml" xpointer="element(/1)"/>
+  </section>
 
-  <xi:include href="patient_orientation.xml" xpointer="element(/1)"/>
+  <section>
+    <title>DICOM</title>
 
-  <xi:include href="anatomic_region_sequence.xml" xpointer="element(/1)"/>
+    <xi:include href="image_laterality.xml" xpointer="element(/1)"/>
 
-  <xi:include href="primary_anatomic_structure_sequence.xml"
-              xpointer="element(/1)"/>
+    <xi:include href="patient_orientation.xml" xpointer="element(/1)"/>
 
-  <xi:include href="acquisition_view.xml" xpointer="element(/1)"/>
+    <xi:include href="anatomic_region_sequence.xml" xpointer="element(/1)"/>
 
-  <xi:include href="image_view.xml" xpointer="element(/1)"/>
+    <xi:include href="primary_anatomic_structure_sequence.xml"
+                xpointer="element(/1)"/>
 
-  <xi:include href="functional_condition_present_during_acquisition.xml"
-              xpointer="element(/1)"/>
+    <xi:include href="acquisition_view.xml" xpointer="element(/1)"/>
 
-  <xi:include href="occlusal_relationship.xml" xpointer="element(/1)"/>
+    <xi:include href="image_view.xml" xpointer="element(/1)"/>
 
-  <xi:include href="progress.xml" xpointer="element(/1)"/>
+    <xi:include href="functional_condition_present_during_acquisition.xml"
+                xpointer="element(/1)"/>
+
+    <xi:include href="occlusal_relationship.xml" xpointer="element(/1)"/>
+
+    <xi:include href="progress.xml" xpointer="element(/1)"/>
+  </section>
 
   <index/>
 </article>
