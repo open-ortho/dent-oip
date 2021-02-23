@@ -69,7 +69,7 @@ clean() {
 
 build() {
     mkdir ${DIST} 2> /dev/null
-    lint || exit
+    # lint || exit
     make_docx || exit
     make_pdf || exit
     make_html || exit
