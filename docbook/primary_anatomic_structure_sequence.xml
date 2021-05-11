@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="scroll-bookmark-9" xmlns="http://docbook.org/ns/docbook"
+<section version="5.0" xmlns="http://docbook.org/ns/docbook"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          xmlns:xi="http://www.w3.org/2001/XInclude"
          xmlns:svg="http://www.w3.org/2000/svg"
@@ -8,715 +8,760 @@
          xmlns:db="http://docbook.org/ns/docbook">
   <title>Primary Anatomic Structure Sequence (0008,2228)</title>
 
-  <para>Primary Anatomic Structure Sequence contains a list of visible teeth
-  using ISO tooth numbering system (represented as SNOMED CT codes) in a
-  specific view.</para>
+  <section>
+    <title>Primary Anatomic Structure for Intraoral Photography</title>
 
-  <itemizedlist>
-    <listitem>
-      <para>When no teeth are visible, this sequence will be Null.</para>
-    </listitem>
+    <para>Primary Anatomic Structure Sequence contains a list of visible teeth
+    using ISO tooth numbering system (represented as SNOMED CT codes) in a
+    specific view.</para>
 
-    <listitem>
-      <para>When one tooth is visible, this sequence will contain a single
-      SNOMED CT code representing the visible tooth.</para>
-    </listitem>
+    <itemizedlist>
+      <listitem>
+        <para>When no teeth are visible, this sequence will be Null.</para>
+      </listitem>
 
-    <listitem>
-      <para>When more teeth are visible, this sequence will contain a list of
-      SNOMED CT codes representing all visible teeth.</para>
-    </listitem>
+      <listitem>
+        <para>When one tooth is visible, this sequence will contain a single
+        SNOMED CT code representing the visible tooth.</para>
+      </listitem>
 
-    <listitem>
-      <para>When patient appears to be edentulous</para>
-    </listitem>
-  </itemizedlist>
+      <listitem>
+        <para>When more teeth are visible, this sequence will contain a list
+        of SNOMED CT codes representing all visible teeth.</para>
+      </listitem>
 
-  <para>Refer to Table below for a list of permissible values.</para>
+      <listitem>
+        <para>When patient appears to be edentulous</para>
+      </listitem>
+    </itemizedlist>
 
-  <informaltable>
-    <colgroup>
-      <col width="9%"/>
+    <para>Refer to Table below for a list of permissible values.</para>
 
-      <col width="9%"/>
+    <informaltable>
+      <thead>
+        <tr>
+          <td colspan="1" rowspan="1"><para>Code Scheme Designator</para></td>
 
-      <col width="27%"/>
+          <td colspan="1" rowspan="1"><para>Code Value</para></td>
 
-      <col width="52%"/>
-    </colgroup>
+          <td colspan="1" rowspan="1"><para>Code Meaning</para></td>
 
-    <thead>
-      <tr>
-        <td colspan="1" rowspan="1"><para>Code Scheme Designator</para></td>
+          <td colspan="1" rowspan="1"><para>when to use</para></td>
+        </tr>
+      </thead>
 
-        <td colspan="1" rowspan="1"><para>Code Value</para></td>
+      <tbody>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>Code Meaning</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">408094002</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>when to use</para></td>
-      </tr>
-    </thead>
+          <td colspan="1" rowspan="1"><para>"No Value"</para></td>
 
-    <tbody>
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>No data, information not
+          provided.</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">408094002</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"No Value"</para></td>
+          <td colspan="1" rowspan="1"><para/></td>
 
-        <td colspan="1" rowspan="1"><para>No data, information not
-        provided.</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"Not Visible"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>not seen in this image</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para/></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"Not Visible"</para></td>
+          <td colspan="1" rowspan="1"><para>278650002</para></td>
 
-        <td colspan="1" rowspan="1"><para>not seen in this image</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"Edentulous"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if in the view, one expects to see
+          teeth but sees none. The subcategories of this SNOMED code are of
+          limited interest for the orthodontic domain, however they may be
+          used within a Primary Anatomic Structure Modifier Sequence
+          (0008,2230).</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para>278650002</para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"Edentulous"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245575001</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if in the view, one expects to see
-        teeth but sees none. The subcategories of this SNOMED code are of
-        limited interest for the orthodontic domain, however they may be used
-        within a Primary Anatomic Structure Modifier Sequence
-        (0008,2230).</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"11"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245575001</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"11"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245574002</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"12"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245574002</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"12"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245572003</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"13"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245572003</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"13"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245571005</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"14"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245571005</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"14"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245570006</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"15"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245570006</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"15"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245568002</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"16"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245568002</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"16"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245567007</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"17"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245567007</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"17"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245566003</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"18"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245566003</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"18"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245587008</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"21"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245587008</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"21"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245586004</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"22"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245586004</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"22"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245584001</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"23"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245584001</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"23"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245583007</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"24"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245583007</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"24"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245582002</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"25"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245582002</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"25"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245579007</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"26"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245579007</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"26"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245578004</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"27"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245578004</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"27"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245577009</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"28"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245577009</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"28"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245611006</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"31"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245611006</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"31"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245610007</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"32"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245610007</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"32"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245608005</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"33"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245608005</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"33"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245607000</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"34"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245607000</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"34"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245606009</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"35"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245606009</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"35"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245604007</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"36"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245604007</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"36"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245603001</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"37"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245603001</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"37"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245602006</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"38"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245602006</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"38"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245600003</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"41"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245600003</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"41"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245599001</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"42"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245599001</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"42"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245597004</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"43"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245597004</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"43"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245596008</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"44"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245596008</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"44"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245595007</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"45"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245595007</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"45"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245592005</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"46"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245592005</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"46"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245591003</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"47"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245591003</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"47"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245590002</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"48"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245590002</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"48"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245620002</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"51"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245620002</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"51"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245619008</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"52"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245619008</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"52"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245617005</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"53"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245617005</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"53"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245616001</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"54"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245616001</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"54"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245615002</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"55"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245615002</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"55"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245627004</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"61"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245627004</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"61"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245626008</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"62"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245626008</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"62"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245624006</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"63"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245624006</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"63"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245623000</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"64"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245623000</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"64"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245622005</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"65"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245622005</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"65"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245642001</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"71"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245642001</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"71"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245641008</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"72"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245641008</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"72"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245639007</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"73"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245639007</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"73"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245638004</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"74"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245638004</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"74"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245637009</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"75"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245637009</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"75"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245635001</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"81"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245635001</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"81"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245634002</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"82"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245634002</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"82"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245632003</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"83"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245632003</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"83"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245631005</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"84"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the view</para></td>
+        </tr>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245631005</emphasis></para></td>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
 
-        <td colspan="1" rowspan="1"><para>"84"</para></td>
+          <td colspan="1" rowspan="1"><para><emphasis
+          role="color:#000000">245630006</emphasis></para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the view</para></td>
-      </tr>
+          <td colspan="1" rowspan="1"><para>"85"</para></td>
 
-      <tr>
-        <td colspan="1" rowspan="1"><para>SCT</para></td>
+          <td colspan="1" rowspan="1"><para>if this particular tooth is
+          visible in the </para></td>
+        </tr>
+      </tbody>
+    </informaltable>
+  </section>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#000000">245630006</emphasis></para></td>
+  <section>
+    <title>Primary Anatomic Structure for Extraoral Photography</title>
 
-        <td colspan="1" rowspan="1"><para>"85"</para></td>
+    <informaltable>
+      <thead>
+        <tr>
+          <td colspan="1" rowspan="1"><para>Code Scheme Designator</para></td>
 
-        <td colspan="1" rowspan="1"><para>if this particular tooth is visible
-        in the </para></td>
-      </tr>
-    </tbody>
-  </informaltable>
+          <td colspan="1" rowspan="1"><para>Code Value</para></td>
+
+          <td colspan="1" rowspan="1"><para>Code Meaning</para></td>
+
+          <td colspan="1" rowspan="1"><para>when to use</para></td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td colspan="1" rowspan="1"><para>SCT</para></td>
+
+          <td colspan="1" rowspan="1"><para>362627000</para></td>
+
+          <td colspan="1" rowspan="1"><para>Entire left side of
+          face</para></td>
+
+          <td>For all left profile photographs.</td>
+        </tr>
+
+        <tr>
+          <td>SCT</td>
+
+          <td>362626009</td>
+
+          <td>Entire right side of face</td>
+
+          <td>For all right profile photographs.</td>
+        </tr>
+
+        <tr>
+          <td>SCT</td>
+
+          <td>368761004</td>
+
+          <td>Entire center of face</td>
+
+          <td>For all frontal photographs.</td>
+        </tr>
+      </tbody>
+    </informaltable>
+  </section>
 </section>
