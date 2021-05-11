@@ -4,7 +4,6 @@ NAME="TR-1107"
 MAIN="docbook/${NAME}.xml"
 DIST="./dist"
 
-
 LINTER="$(which xmllint)" || {
     echo "Cannot find xmllint. Install first."
     exit 1
@@ -49,20 +48,20 @@ make_docx() {
 
 make_html() {
     #$LINTER --xinclude "${MAIN}" | $PANDOC --from="docbook" --to="html" --output="${DIST}/${NAME}.html"
-    if [ ! -d "${DIST}/html" ]; then 
-      mkdir "${DIST}/html" 
+    if [ ! -d "${DIST}/html" ]; then
+        mkdir "${DIST}/html"
     fi
     if [ ! -x "$LINTER" ]; then
-      echo "$LINTER not found"
-      exit 1
+        echo "$LINTER not found"
+        exit 1
     fi
     if [ ! -d "${DOCBOOK_XSLTNG}" ]; then
-      echo "Cannot find xslTNG: to install download zip file from https://github.com/docbook/xslTNG/releases"
-      exit 1
+        echo "Cannot find xslTNG: to install download zip file from https://github.com/docbook/xslTNG/releases"
+        exit 1
     fi
-    if ! which -s saxon ; then 
-      echo "saxon XLST 3.0 processor is required. Install first with your package manager."
-      exit 1
+    if ! which -s saxon; then
+        echo "saxon XLST 3.0 processor is required. Install first with your package manager."
+        exit 1
     fi
     $LINTER --xinclude "${MAIN}" | saxon -o:"${DIST}/html/${NAME}.html" -xsl:"${DOCBOOK_XSLTNG}/xslt/docbook.xsl" -s:- || exit
     rsync -au "${DOCBOOK_XSLTNG}/resources/" "${DIST}/html/" || exit
@@ -79,19 +78,25 @@ make_rtf() {
     echo "Build RTF."
 }
 
+make_md() {
+    $LINTER --xinclude "${MAIN}" | $PANDOC --from="docbook" --to="gfm" --output="${DIST}/${NAME}.md"
+    echo "Build Markdown."
+}
+
 clean() {
     rm -rf "${DIST}" || exit
     echo "Cleaned up ${DIST} folder."
 }
 
 build() {
-    mkdir ${DIST} 2> /dev/null
+    mkdir ${DIST} 2>/dev/null
     # lint || exit
     make_docx || exit
     make_pdf || exit
     make_html || exit
     make_rtf || exit
     make_txt || exit
+    make_md || exit
 }
 
 all() {
