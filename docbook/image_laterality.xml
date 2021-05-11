@@ -220,7 +220,7 @@
       <title>The SNOMED codes from the above table might not match the ones on
       the rest of this document.</title>
 
-      <para>The above table was copies from the DICOM standard. However, the
+      <para>The above table was copied from the DICOM standard. However, the
       recommendation for usage of SNOMED CT codes is to always use the most
       granular code possible for what the code is describing.<?linebreak ?>
       The implementer shall follow the codes as defined in this

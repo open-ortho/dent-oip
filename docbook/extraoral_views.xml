@@ -19,50 +19,53 @@
       <tr>
         <td colspan="1" rowspan="1"><para/></td>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#262626">Enumerated</emphasis><?linebreak ?><emphasis
-        role="color:#262626">Terms</emphasis><?linebreak ?><emphasis
-        role="color:#262626">(Acronyms)</emphasis></para></td>
+        <td colspan="1" rowspan="1"><para>Enumerated Terms
+        (Acronyms)</para></td>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#262626">Meaning</emphasis></para></td>
+        <td colspan="1" rowspan="1"><para>Meaning</para></td>
 
-        <td colspan="1" rowspan="1"><para><emphasis role="color:#262626">Image
-        Laterality</emphasis></para><para><emphasis
-        role="color:#262626">(0020,0062)</emphasis></para></td>
+        <td colspan="1" rowspan="1">Image Laterality</td>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#262626">Anatomic Region
-        Sequence</emphasis></para><para><emphasis
-        role="color:#262626"><emphasis
-        role="color:#262626">(0008,2218)</emphasis><?linebreak ?></emphasis></para></td>
+        <td colspan="1" rowspan="1"><para>Anatomic Region Sequence</para></td>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#262626">Anatomic Region Modifier
-        Sequence</emphasis></para><para><emphasis
-        role="color:#262626">(0008,2220)</emphasis></para></td>
+        <td colspan="1" rowspan="1"><para>Anatomic Region Modifier
+        Sequence</para></td>
 
         <td colspan="1" rowspan="1"><para>Primary Anatomic Structure
-        Sequence</para><para>(0008,2228)</para></td>
+        Sequence</para></td>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#262626">Acquisition View</emphasis></para><para><emphasis
-        role="color:#262626"><emphasis
-        role="color:#262626">(xxxx,xxxx)</emphasis><?linebreak ?></emphasis></para></td>
+        <td colspan="1" rowspan="1"><para>Acquisition View</para></td>
 
-        <td colspan="1" rowspan="1"><para><emphasis role="color:#262626">Image
-        View</emphasis></para><para><emphasis role="color:#262626"><emphasis
-        role="color:#262626">(xxxx,xxxx)</emphasis><?linebreak ?></emphasis></para></td>
+        <td colspan="1" rowspan="1"><para>Image View</para></td>
 
         <td colspan="1" rowspan="1"><para>Functional Condition Present During
-        Acquisition</para><para><emphasis
-        role="color:#262626">(xxxx,xxxx)</emphasis></para></td>
+        Acquisition</para></td>
 
-        <td colspan="1" rowspan="1"><para><emphasis
-        role="color:#262626">Occlusal
-        Relationship</emphasis></para><para><emphasis
-        role="color:#262626"><emphasis
-        role="color:#262626">(xxxx,xxxx)</emphasis><?linebreak ?></emphasis></para></td>
+        <td colspan="1" rowspan="1"><para>Occlusal Relationship</para></td>
+      </tr>
+
+      <tr>
+        <td/>
+
+        <td>–</td>
+
+        <td>–</td>
+
+        <td>(0020,0062)</td>
+
+        <td>(0008,2218)</td>
+
+        <td>(0008,2220)</td>
+
+        <td>(0008,2228)</td>
+
+        <td>(xxxx,xxxx)</td>
+
+        <td>(xxxx,xxxx)</td>
+
+        <td>(xxxx,xxxx)</td>
+
+        <td>(xxxx,xxxx)</td>
       </tr>
     </thead>
 
