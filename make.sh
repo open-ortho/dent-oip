@@ -78,6 +78,11 @@ make_rtf() {
     echo "Build RTF."
 }
 
+make_rst() {
+    $LINTER --xinclude "${MAIN}" | $PANDOC --from="docbook" --to="rst" --output="${DIST}/${NAME}.rst"
+    echo "Build reStructuredText."
+}
+
 make_md() {
     $LINTER --xinclude "${MAIN}" | $PANDOC --from="docbook" --to="gfm" --output="${DIST}/${NAME}.md"
     echo "Build Markdown."
@@ -91,6 +96,7 @@ clean() {
 build() {
     mkdir ${DIST} 2>/dev/null
     # lint || exit
+    make_rst || exit
     make_docx || exit
     make_pdf || exit
     make_html || exit
