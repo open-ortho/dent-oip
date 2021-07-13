@@ -11,6 +11,11 @@ orthodontic view.
 It was compiled from the various DICOM CID (Content IDs) tables. Only
 the domain relevant values of each table are included here.
 
+.. csv-table :: testtable
+	:file:	all_snomed_codes.csv
+	:delim:	tab
+	:header: "Image Laterality (0020,0062)","Patient Orientation (0020,0020)","Anatomic Region Sequence (0008,2218)","Anatomic Region Modifier Sequence (0008,2220)","Primary Anatomic Structure Sequence (0008,2228)","Acquisition View (xxxx,xxxx)","Image View (xxxx,xxxx)","Functional Condition Present During Acquisition (CID 91) (xxxx,xxxx)","Occlusal Relationship (xxxx,xxxx)"
+
 +-------+-------+-------+-------+-------+-------+-------+-------+-------+
 | Image | Pa    | Ana   | *Ana  | Pr    | A     | Image | Funct | Occ   |
 | Later | tient | tomic | tomic | imary | cquis | View  | ional | lusal |
