@@ -22,5 +22,4 @@ where:
 
 An example:
 
-``EV02^EO.RP.LR.CR^Extraoral, Right Profile (subject is facing
-  observer's right), Lips Relaxed, Centric Relation``
+``EV02^EO.RP.LR.CR^Extraoral, Right Profile (subject is facing observer's right), Lips Relaxed, Centric Relation``
