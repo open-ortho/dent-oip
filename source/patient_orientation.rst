@@ -26,13 +26,14 @@ Allowed Values
    * - Right
      - R
      - `(24028007, SCT, "Right") <http://snomed.info/id/24028007>`__
+.. See TROSD-65
    * - Top (towards the head)
      - H
      - `(421812003, SCT, "Top") <http://snomed.info/id/421812003>`__
+.. See TROSD-65
    * - Bottom (towards the lower limbs)
      - F
      - `(421610009, SCT, "Bottom") <http://snomed.info/id/421610009>`__
-
 
 Choosing the Correct Patient Orientation
 ----------------------------------------
