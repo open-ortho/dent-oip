@@ -3,8 +3,41 @@
 Patient Orientation (0020,0020)
 ===============================
 
-Patient direction of the rows and columns of the image. Required
-because:
+Patient direction of the rows and columns of the image.
+
+Allowed Values
+--------------
+
+.. list-table::
+   :header-rows: 1
+
+   * - Meaning
+     - DICOM Enumerated Value
+     - SNOMED Code
+   * - Anterior
+     - A
+     - `(255549009, SCT, "Anterior") <http://snomed.info/id/255549009>`__
+   * - Posterior
+     - P
+     - `(255551008, SCT, "Posterior") <http://snomed.info/id/255551008>`__
+   * - Left
+     - L
+     - `(7771000, SCT, "Left") <http://snomed.info/id/7771000>`__
+   * - Right
+     - R
+     - `(24028007, SCT, "Right") <http://snomed.info/id/24028007>`__
+   * - Top (towards the head)
+     - H
+     - `(421812003, SCT, "Top") <http://snomed.info/id/421812003>`__
+   * - Bottom (towards the lower limbs)
+     - F
+     - `(421610009, SCT, "Bottom") <http://snomed.info/id/421610009>`__
+
+
+Choosing the Correct Patient Orientation
+----------------------------------------
+
+Required because:
 
 1. This IOD VL Photographic Image does not require Image Orientation
    (Patient) (0020,0037) or Image Position (Patient) (0020,0032)
