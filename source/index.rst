@@ -11,28 +11,19 @@ Welcome to ADA-1107's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   foreword
    scope
+   normative_references
 
    all_snomed_codes.rst
    VS-01.rst
    extraoral_views.rst
    intraoral_views.rst
 
-   image_laterality.rst
-   patient_orientation.rst
-   anatomic_region_sequence.rst
-   primary_anatomic_structure_sequence.rst
-   acquisition_view.rst
-   image_view.rst
-   functional_condition_present_during_acquisition.rst
-   occlusal_relationship.rst
-   progress.rst
-   annotations.rst
-   lossy_image_compression.rst
-   image_comments.rst
+   dicom.rst
 
 
-
+   bibliography
 .. Codes
 .. =====
 
