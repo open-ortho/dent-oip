@@ -16,5 +16,6 @@ DICOM
 	annotations.rst
 	lossy_image_compression.rst
 	image_comments.rst
+	quality_control_image_attribute.rst
 
 

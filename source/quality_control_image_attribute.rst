@@ -1,3 +1,2 @@
-docbook/TR-1107.xml|64 error\| element include: XInclude error : could
-not load docbook/quality_control_image_attribute.xml, and no fallback
-was found
+Quality Control Image Attribute (0028,0300)
+===========================================
