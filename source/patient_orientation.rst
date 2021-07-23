@@ -3,7 +3,14 @@
 Patient Orientation (0020,0020)
 ===============================
 
-Patient direction of the rows and columns of the image.
+Patient direction of the rows and columns of the image. Required because:
+
+1. This IOD VL Photographic Image does not require Image Orientation
+   (Patient) (0020,0037) or Image Position (Patient) (0020,0032)
+
+2. This IOD VL Photographic Image does not require Image Orientation
+   (Slide) (0048,0102).
+
 
 Allowed Values
 --------------
@@ -37,14 +44,6 @@ Allowed Values
 
 Choosing the Correct Patient Orientation
 ----------------------------------------
-
-Required because:
-
-1. This IOD VL Photographic Image does not require Image Orientation
-   (Patient) (0020,0037) or Image Position (Patient) (0020,0032)
-
-2. This IOD VL Photographic Image does not require Image Orientation
-   (Slide) (0048,0102).
 
 Patient Orientation (0020,0020) relative to the image plane shall be
 specified by two values that designate the anatomical direction of the
