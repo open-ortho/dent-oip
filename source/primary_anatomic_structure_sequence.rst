@@ -1,33 +1,22 @@
 Primary Anatomic Structure Sequence (0008,2228)
 ===============================================
 
+Primary Anatomic Structure Sequence contains a list of visible teeth using ISO
+tooth numbering system (represented as SNOMED CT codes) in a specific view.
+
+Allowed Values
+--------------
+
+Refer to the tables below for a list of permissible values.
+
 Primary Anatomic Structure for Intraoral Photography
-----------------------------------------------------
+::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Primary Anatomic Structure Sequence contains a list of visible teeth
-using ISO tooth numbering system (represented as SNOMED CT codes) in a
-specific view.
-
--  When no teeth are visible, this sequence will be Null.
-
--  When one tooth is visible, this sequence will contain a single SNOMED
-   CT code representing the visible tooth.
-
--  When more teeth are visible, this sequence will contain a list of
-   SNOMED CT codes representing all visible teeth.
-
--  When patient appears to be edentulous
-
-Refer to Table below for a list of permissible values.
 
 +------------------+-------------+---------------+------------------+
 | Code Scheme      | Code Value  | Code Meaning  | when to use      |
 | Designator       |             |               |                  |
 +==================+=============+===============+==================+
-| SCT              | *408094002* | "No Value"    | No data,         |
-|                  |             |               | information not  |
-|                  |             |               | provided.        |
-+------------------+-------------+---------------+------------------+
 | SCT              |             | "Not Visible" | not seen in this |
 |                  |             |               | image            |
 +------------------+-------------+---------------+------------------+
@@ -311,7 +300,7 @@ Refer to Table below for a list of permissible values.
 +------------------+-------------+---------------+------------------+
 
 Primary Anatomic Structure for Extraoral Photography
-----------------------------------------------------
+::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 +-----------------+------------+-----------------+-----------------+
 | Code Scheme     | Code Value | Code Meaning    | when to use     |
@@ -328,3 +317,27 @@ Primary Anatomic Structure for Extraoral Photography
 | SCT             | 368761004  | Entire center   | For all frontal |
 |                 |            | of face         | photographs.    |
 +-----------------+------------+-----------------+-----------------+
+
+Choosing the Correct Primary Anatomic Structure
+-----------------------------------------------
+
+Intraoral Photography
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+-  When one tooth is visible, this sequence will contain a single SNOMED
+   CT code representing the visible tooth.
+
+-  When more teeth are visible, this sequence will contain a list of
+   SNOMED CT codes representing all visible teeth.
+
+-  When the region of the mouth imaged is not expected to show any teeth, omit this
+   sequence completely.
+
+-  Use Edentulous when one would normally expect to see teeth in that region,
+   however the field of view is of an are of the mouth that no longer has (or
+   was always missing) teeth. An edentulous patient may have only one or two
+   missing teeth, either in one spot or throughout the mouth.
+
+Extraoral Photography
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
