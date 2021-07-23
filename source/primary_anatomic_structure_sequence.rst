@@ -1,3 +1,5 @@
+.. _primary anatomic structure sequence:
+
 Primary Anatomic Structure Sequence (0008,2228)
 ===============================================
 
