@@ -1,4 +1,4 @@
-.. _Image Laterality:
+.. _image laterality:
 
 Image Laterality (0020,0062)
 ============================
