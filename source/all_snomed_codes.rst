@@ -3,6 +3,10 @@
 Summary of DICOM tags for orthodontic/craniofacial views
 --------------------------------------------------------
 
+.. warning ::
+	I don't think this section is needed anymore. All of the information
+	here is contained in :ref:`dicom_tags` and is therefore duplicated.
+
 .. csv-table ::
 	:file:	all_snomed_codes.csv
 	:delim:	tab

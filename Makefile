@@ -15,8 +15,8 @@ help:
 
 .PHONY: help Makefile
 
-BUILD:
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+clean:
+	rm -rf "$(BUILDDIR)"
 
 deploy:
 	rsync -auv --delete "$(BUILDDIR)" "$(DESTDIR)"
