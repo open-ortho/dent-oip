@@ -1,7 +1,10 @@
 .. _scroll-bookmark-3:
 
-List of codes used in the DICOM CP1571 view set
+View Sets
 ===============================================
+
+VS-01
+-----
 
 Codes used in the view set illustrated in DICOM correction package
 #1571, called "Add Orthodontics and Forensic Odontology View Sets to
