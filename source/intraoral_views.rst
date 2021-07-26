@@ -1,6 +1,6 @@
 .. _scroll-bookmark-5:
 
-List of codes used for specific Intraoral Views
+Intraoral Views
 ===============================================
 
 

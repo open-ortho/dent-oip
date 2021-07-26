@@ -1,6 +1,6 @@
 .. _scroll-bookmark-4:
 
-List of codes used for specific Extraoral Views
+Extraoral Views
 ===============================================
 
 Codes for the drawings shown in Figure 3; the user can customize view
