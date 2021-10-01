@@ -19,3 +19,12 @@ suffice to build the html version of this document.
 
     pipenv install
     pipenv run make html
+
+## Deployment
+
+Deployment is done with
+
+    pipenv run make deploy
+
+Deployment currently configured in `Makefile` to use rsync. You will need to
+customize, or gain access to deployment server to deploy.
