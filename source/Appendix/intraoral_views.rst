@@ -7,7 +7,7 @@ Intraoral Views
 Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)
 ----------------------------------------------------------------
 
-.. figure:: images/IV-01.png
+.. figure:: ../images/IV-01.png
 	:class: with-border
 	:alt: Line drawing of Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)
 
@@ -53,7 +53,7 @@ Patient in mixed dentition may show the following teeth in this view:
 Intraoral Right Buccal Segment – Centric Occlusion, With Mirror
 ----------------------------------------------------------------------
 
-.. figure:: images/IV-02.png
+.. figure:: ../images/IV-02.png
 	:class: with-border
 	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Occlusion, With Mirror
 
@@ -100,7 +100,7 @@ Example: Patient in permanent dentition may show the following teeth in this vie
 Intraoral Right Buccal Segment – Centric Occlusion, With Mirror But Corrected
 -----------------------------------------------------------------------------
 
-.. figure:: images/IV-03.png
+.. figure:: ../images/IV-03.png
 	:class: with-border
 	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Occlusion, With Mirror But Corrected
 
@@ -148,7 +148,7 @@ Example: Patient in permanent dentition may show the following teeth in this vie
 Intraoral, Right Buccal Segment, Centric Relation, Without Mirror
 -----------------------------------------------------------------------------
 
-.. figure:: images/IV-04.png
+.. figure:: ../images/IV-04.png
 	:class: with-border
 	:figwidth: 100%
 	:alt: Line drawing of Intraoral, Right Buccal Segment, Centric Relation, Without Mirror
@@ -193,7 +193,7 @@ Example: Patient in mixed dentition may show the following teeth in this view
 Intraoral Right Buccal Segment – Centric Relation, With Mirror
 -----------------------------------------------------------------------------
 
-.. figure:: images/IV-05.png
+.. figure:: ../images/IV-05.png
 	:class: with-border
 	:figwidth: 100%
 	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
@@ -241,7 +241,7 @@ Example: Patient in permanent dentition may show the following teeth in this vie
 Intraoral Right Buccal Segment – Centric Relation, With Mirror But Corrected
 ----------------------------------------------------------------------------
 
-.. figure:: images/IV-06.png
+.. figure:: ../images/IV-06.png
 	:class: with-border
 	:figwidth: 100%
 	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror

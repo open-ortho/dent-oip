@@ -6,9 +6,7 @@ The following appendices apply the definitions as described in section
 ADA White Paper 1100.
 
 .. toctree::
+	:glob:
 	:maxdepth: 2
 
-	extraoral_views
-	intraoral_views
-	VS-01
-
+	./*
