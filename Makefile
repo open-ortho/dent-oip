@@ -6,7 +6,7 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
-BUILDDIR      = source/_build
+BUILDDIR      = dist/
 DESTDIR				= afm@brillig.org:public_html/ada-1107/
 
 # Put it first so that "make" without argument is like "make help".
