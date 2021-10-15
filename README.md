@@ -6,6 +6,35 @@ Sourcefiles located in `source/`.
 
 Builds located in `dist/`.
 
+Sphinx is the tool used to build these files into HTML, PDF, etc. Sphinx uses
+the restructured text language.
+
+## Editing
+
+### Using GitHub
+
+If you are an editor, you can edit the document from within the `source/`
+directory. The document contents are in the files with extension `.rst` which
+stands for restructured text. [You can find a primer
+here.](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
+
+You do not need to worry about any other file which does _not_ have an `.rst` extension.
+
+You can use the GitHub interface, to make modifications to the file by clicking
+the pencil botton on the top right of the file, after you have opened it (by
+clicking on the file you want to edit).
+
+Saving in git is called "committing". So when you want to save, you add
+commments to what you have changed on the bottom, then click on Commit.
+
+### Not a git-lover?
+
+If you don't feel like learning how git works (understandable), you can edit the
+documents any way you like, then send them to Toni for the merging. You can copy
+and paste the page as it appears in git in your own editor of choice, say word
+or LibreOffice, then make modifcations, and when done, you can send Toni the
+.docx file, which he can then convert back to .rst.
+
 ## Building
 
 Build is managed with `make` and targets are in `Makefile`.
