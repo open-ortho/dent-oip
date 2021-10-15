@@ -11,21 +11,7 @@ This part was compiled using the various values allowed in the DICOM CID
 orthodontic domain.
 
 .. toctree::
+	:glob:
 	:maxdepth: 2
 
-	image_laterality
-	patient_orientation
-	anatomic_region_sequence
-	primary_anatomic_structure_sequence
-	acquisition_view
-	image_view
-	functional_condition_present_during_acquisition
-	occlusal_relationship
-	progress
-	annotations
-	lossy_image_compression
-	image_comments
-	quality_control_image_attribute
-
-	all_snomed_codes
-
+	*/index

@@ -1,4 +1,4 @@
-.. _scroll-bookmark-6:
+.. _image laterality:
 
 Image Laterality (0020,0062)
 ============================

@@ -7,16 +7,15 @@ ADA-1107
 ====================================
 
 .. toctree::
+   :glob:
    :numbered:
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
-   foreword
-   scope
-   normative_references
+   Preamble/*
 
-   dicom
-   appendix
+   DICOM/*
+   Appendix/index
 
    bibliography
 
@@ -26,4 +25,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

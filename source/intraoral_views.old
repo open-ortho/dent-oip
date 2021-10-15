@@ -1,6 +1,6 @@
 .. _scroll-bookmark-5:
 
-Intraoral Views
+List of codes used for specific Intraoral Views
 ===============================================
 
 
@@ -8,7 +8,7 @@ Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)
 ----------------------------------------------------------------------
 
 +-------------------------------------------------+--------------+---------------+------------------------------------------------------------------+
-| DICOM tag                                       |              | Value         | Meaning                                                          |
+|                    DICOM tag                    |              |     Value     |                             Meaning                              |
 +=================================================+==============+===============+==================================================================+
 | Enumerated Terms (Acronyms)                     |              | IO.RB.CO      | Intraoral, Right Buccal Segment, Centric Occlusion (Direct View) |
 +-------------------------------------------------+--------------+---------------+------------------------------------------------------------------+
@@ -28,6 +28,22 @@ Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)
 +-------------------------------------------------+--------------+---------------+------------------------------------------------------------------+
 | Occlusal Relationship                           | (gggg,hhhh)  | SCT 110320000 | Centric Occlusion of Teeth                                       |
 +-------------------------------------------------+--------------+---------------+------------------------------------------------------------------+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example:
+
+Patient in mixed dentition may show the following teeth in this view:
+
+* 54 SCT: 245616001
+* 55 SCT:245615002
+* 16 SCT: 245568002
+* 84 SCT: 245631005
+* 85 SCT: 245630006
+* 46 SCT: 245592005
 
 All other codes
 ---------------
