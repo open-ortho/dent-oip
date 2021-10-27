@@ -57,3 +57,6 @@ Deployment is done with
 
 Deployment currently configured in `Makefile` to use rsync. You will need to
 customize, or gain access to deployment server to deploy.
+
+Deployment also deploys an `.htaccess` and `.htpasswd` file with loose security.
+Username and password both are `scdi116`.

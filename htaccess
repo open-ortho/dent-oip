@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /home/afm/public_html/ada-1107/.htpasswd
+Require valid-user

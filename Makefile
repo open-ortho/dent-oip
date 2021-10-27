@@ -7,7 +7,7 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = dist/
-DESTDIR				= afm@brillig.org:public_html/ada-1107/
+DESTDIR       = afm@brillig.org:public_html/ada-1107/
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -19,6 +19,8 @@ clean:
 	rm -rf "$(BUILDDIR)"
 
 deploy:
+	cp htaccess "$(BUILDDIR)/.htaccess"
+	cp htpasswd "$(BUILDDIR)/.htpasswd"
 	rsync -auv --delete "$(BUILDDIR)" "$(DESTDIR)"
 
 # Catch-all target: route all unknown targets to Sphinx using the new
