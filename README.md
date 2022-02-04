@@ -9,6 +9,9 @@ Builds located in `dist/`.
 Sphinx is the tool used to build these files into HTML, PDF, etc. Sphinx uses
 the restructured text language.
 
+A development build of the document is available
+[here](http://brillig.org/~afm/ada-1107/html/)
+
 ## Editing
 
 ### Using GitHub
