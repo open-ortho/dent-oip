@@ -6,10 +6,12 @@ Image Laterality (0020,0062)
 In DICOM, *laterality* is used to define body parts which come in pairs, for
 example knees, ears, eyes, etc. It is not used to describe the side of the body
 being imaged. For example, an image of the left side of the right eye would have
-laterality right, even if the image is portraying the left side of the eye.
+laterality right, even though the image is portraying the left side of the eye.
+:ref:`patient orientation` should be enough to define the side of the anatomy
+being viewed.
 
-Laterality of (possibly paired) body part (as described in Anatomic Region
-Sequence (0008,2218)) examined.
+In other words, this is the laterality of (possibly paired) body part (as
+described in Anatomic Region Sequence (0008,2218)) examined.
 
 Allowed Values
 --------------
@@ -39,32 +41,32 @@ Allowed Values
 Choosing the Correct Laterality
 -------------------------------
 
-Consider the following logic to populate this tag.
+Consider the following logic when choosing laterality.
 
-+---+----------+-----------------------------------------------------+
-| U | Unpaired | Used for most images.                               |
-+---+----------+-----------------------------------------------------+
-| L | Left     | Only use if this Series is of Mastoid bone, Maxilla |
-|   |          | or Temporomandibular joint. For all other anatomic  |
-|   |          | regions containing one or both sides, set to 'U'.   |
-+---+----------+-----------------------------------------------------+
-| R | Right    | Only use if this Series is of Mastoid bone, Maxilla |
-|   |          | or Temporomandibular joint. For all other anatomic  |
-|   |          | regions containing one or both sides, set to 'U'.   |
-+---+----------+-----------------------------------------------------+
-| B | Both     | Only use if this Series is of Mastoid bone, Maxilla |
-|   |          | or Temporomandibular joint. For all other anatomic  |
-|   |          | regions containing one or both sides, set to 'U'.   |
-|   |          | This is almost never used.                          |
-|   |          |                                                     |
-|   |          | For example, a frontal face smiling photograph,     |
-|   |          | would have Image Laterality of 'U'. However, an     |
-|   |          | image which would contain both the left Maxilla and |
-|   |          | the right Maxilla in the same frame (image) (for    |
-|   |          | example making use of mirrors or by merging two     |
-|   |          | images into one) would have an Image Laterality of  |
-|   |          | 'B'.                                                |
-+---+----------+-----------------------------------------------------+
++-----+----------+-----------------------------------------------------+
+| U   | Unpaired | Used for most orthodontic images.                   |
++-----+----------+-----------------------------------------------------+
+| L   | Left     | Only use if this Series is of Mastoid bone, Maxilla |
+|     |          | or Temporomandibular joint. For all other anatomic  |
+|     |          | regions containing one or both sides, set to 'U'.   |
++-----+----------+-----------------------------------------------------+
+| R   | Right    | Only use if this Series is of Mastoid bone, Maxilla |
+|     |          | or Temporomandibular joint. For all other anatomic  |
+|     |          | regions containing one or both sides, set to 'U'.   |
++-----+----------+-----------------------------------------------------+
+| B   | Both     | Only use if this Series is of Mastoid bone, Maxilla |
+|     |          | or Temporomandibular joint. For all other anatomic  |
+|     |          | regions containing one or both sides, set to 'U'.   |
+|     |          | This is almost never used.                          |
+|     |          |                                                     |
+|     |          | For example, a frontal face smiling photograph,     |
+|     |          | would have Image Laterality of 'U'. However, an     |
+|     |          | image which would contain both the left Maxilla and |
+|     |          | the right Maxilla in the same frame (image) (for    |
+|     |          | example making use of mirrors or by merging two     |
+|     |          | images into one) would have an Image Laterality of  |
+|     |          | 'B'.                                                |
++-----+----------+-----------------------------------------------------+
 
 The above table was compiled using the following considerations:
 
