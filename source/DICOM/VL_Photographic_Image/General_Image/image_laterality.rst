@@ -3,6 +3,11 @@
 Image Laterality (0020,0062)
 ============================
 
+In DICOM, *laterality* is used to define body parts which come in pairs, for
+example knees, ears, eyes, etc. It is not used to describe the side of the body
+being imaged. For example, an image of the left side of the right eye would have
+laterality right, even if the image is portraying the left side of the eye.
+
 Laterality of (possibly paired) body part (as described in Anatomic Region
 Sequence (0008,2218)) examined.
 
@@ -61,7 +66,7 @@ Consider the following logic to populate this tag.
 |   |          | 'B'.                                                |
 +---+----------+-----------------------------------------------------+
 
-The above table was compiles using the following considerations:
+The above table was compiled using the following considerations:
 
 1. Image Laterality (0020,0062) Shall be consistent with any laterality
    information contained in Primary Anatomic Structure Modifier Sequence
@@ -158,5 +163,5 @@ orthodontic domain relevant regions)
 
    The implementer shall follow the codes as defined in this document, even if
    these are not the most granular codes possible (for what the code is
-   describing in orthdontics).  While this might go against SNOMED CT
-   reccommandations, these are the codes allowed in the DICOM standard.
+   describing in orthodontics).  While this might go against SNOMED CT
+   recommendations, these are the codes allowed in the DICOM standard.
