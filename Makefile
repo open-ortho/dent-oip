@@ -18,7 +18,7 @@ help:
 clean:
 	rm -rf "$(BUILDDIR)"
 
-deploy: html
+deploy: html docx
 	cp htaccess "$(BUILDDIR)/.htaccess"
 	cp htpasswd "$(BUILDDIR)/.htpasswd"
 	rsync -auv --delete "$(BUILDDIR)" "$(DESTDIR)"
