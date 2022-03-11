@@ -1,4 +1,4 @@
-.. _vl_photographic_image:
+.. _orphans:
 
 Orphans
 =======

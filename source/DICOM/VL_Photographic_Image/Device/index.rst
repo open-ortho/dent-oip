@@ -1,4 +1,4 @@
-.. _general_image:
+.. _device:
 
 Device
 ======
