@@ -13,12 +13,12 @@ DESTDIR       = afm@brillig.org:public_html/ada-1107/
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile
+.PHONY: help Makefile deploy
 
 clean:
 	rm -rf "$(BUILDDIR)"
 
-deploy:
+deploy: html docx
 	cp htaccess "$(BUILDDIR)/.htaccess"
 	cp htpasswd "$(BUILDDIR)/.htpasswd"
 	rsync -auv --delete "$(BUILDDIR)" "$(DESTDIR)"

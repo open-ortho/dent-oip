@@ -21,6 +21,7 @@ project = 'ADA-1107'
 copyright = '2021, ADA SCDI WG 11.6'
 author = 'ADA SCDI WG 11.6'
 master_doc = 'index'
+subject = 'DICOM implementation of WP-1100.'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'
@@ -58,13 +59,13 @@ html_static_path = ['_static']
 
 # -- Options for docx output -------------------------------------------------
 
-# docx_documents = [
-#     ('index', 'ADA-1107.docx', {
-#          'title': project,
-#          'created': author
-#          'subject': 'Sphinx builder extension',
-#          'keywords': ['Interoperability', 'Orthodontics']
-#      }, True),
-# ]
+docx_documents = [
+        ('index', 'ADA-1107.docx', {
+         'title': project,
+         'created': author,
+         'subject': subject,
+         'keywords': ['Interoperability', 'Orthodontics']
+     }, True),
+]
 # docx_style = 'path/to/custom_style.docx'
 docx_pagebreak_before_section = 2

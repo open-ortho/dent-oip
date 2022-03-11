@@ -324,7 +324,7 @@ Choosing the Correct Primary Anatomic Structure
 -----------------------------------------------
 
 Intraoral Photography
-::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::
 
 -  When one tooth is visible, this sequence will contain a single SNOMED
    CT code representing the visible tooth.
@@ -341,5 +341,7 @@ Intraoral Photography
    missing teeth, either in one spot or throughout the mouth.
 
 Extraoral Photography
-::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::
+
+.. TODO: Do we have to put something here?
 
