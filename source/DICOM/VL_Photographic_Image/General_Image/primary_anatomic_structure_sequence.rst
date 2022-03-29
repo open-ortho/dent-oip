@@ -336,7 +336,7 @@ Intraoral Photography
    sequence completely.
 
 -  Use Edentulous when one would normally expect to see teeth in that region,
-   however the field of view is of an are of the mouth that no longer has (or
+   however the field of view is of an area of the mouth that no longer has (or
    was always missing) teeth. An edentulous patient may have only one or two
    missing teeth, either in one spot or throughout the mouth.
 
