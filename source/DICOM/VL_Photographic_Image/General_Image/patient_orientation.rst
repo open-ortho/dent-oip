@@ -1,4 +1,4 @@
-.. _scroll-bookmark-7:
+.. _patient orientation:
 
 Patient Orientation (0020,0020)
 ===============================
