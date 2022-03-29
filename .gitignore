@@ -3,3 +3,4 @@ resources/
 build/
 _build/
 .~*
+.vscode/
