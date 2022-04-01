@@ -1,7 +1,7 @@
 .. _intraoral views:
 
 Intraoral Views
-===============================================
+===============
 
 
 Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)
