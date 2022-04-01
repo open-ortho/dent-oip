@@ -13,7 +13,7 @@ Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)
 
 
 .. csv-table:: IV-01
-   :file: ../tables/IV-01.csv
+   :file: ../tables/generated/IV-01.csv
    :widths: 40, 10, 10, 40
    :header-rows: 1
 
@@ -42,7 +42,7 @@ Intraoral Right Buccal Segment – Centric Occlusion, With Mirror
 	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Occlusion, With Mirror
 
 .. csv-table:: IV-02
-   :file: ../tables/IV-02.csv
+   :file: ../tables/generated/IV-02.csv
    :widths: 40, 10, 10, 40
    :header-rows: 1
 
@@ -73,7 +73,7 @@ Intraoral Right Buccal Segment – Centric Occlusion, With Mirror But Corrected
 	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Occlusion, With Mirror But Corrected
 
 .. csv-table:: IV-03
-   :file: ../tables/IV-03.csv
+   :file: ../tables/generated/IV-03.csv
    :widths: 40, 10, 10, 40
    :header-rows: 1
 

@@ -1,6 +1,9 @@
 # Minimal makefile for Sphinx documentation
 #
 
+VIEWSDB = views.db
+VIEWBUILDER = ./view_maker.py
+
 # You can set these variables from the command line, and also
 # from the environment for the first two.
 SPHINXOPTS    ?=
@@ -18,7 +21,12 @@ DESTDIR = $(SSH_USER)@$(SSH_IP):$(REMOTE_PATH)
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile deploy
+.PHONY: help Makefile deploy genereted_tables
+
+genereted_tables:
+	rm -f $(VIEWSDB)
+	$(VIEWBUILDER)
+	rm $(VIEWSDB)
 
 clean:
 	rm -rf "$(BUILDDIR)"
@@ -31,5 +39,5 @@ deploy: html docx
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile
+%: Makefile genereted_tables
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
