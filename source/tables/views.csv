@@ -1,9 +1,9 @@
 view_name,patient_orientation,laterality,anatomic_region_sequence,anatomic_region_modifier_sequnce,primary_anatomic_structure_sequence,device_sequence,acquisition_view,image_view,functional_condition_present_during_acquisition,occlusal_relationship
-IV-01,,,,,,,,,,
-IV-02,,,,,,,,,,
+IV-01,o_right,l_unpaired,jaw,buccal,,,sagittal,direct,mouth_closed,co
+IV-02,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_uncorrected,mouth_closed,co
 IV-03,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,co
-IV-04,,,,,,,,,,
-IV-05,,,,,,,,,,
-IV-06,,,,,,,,,,
-IV-07,,,,,,,,,,
-IV-08,,,,,,,,,,
+IV-04,,l_unpaired,,,,,,,,
+IV-05,,l_unpaired,,,,,,,,
+IV-06,,l_unpaired,,,,,,,,
+IV-07,,l_unpaired,,,,,,,,
+IV-08,,l_unpaired,,,,,,,,
