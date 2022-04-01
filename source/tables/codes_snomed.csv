@@ -1,0 +1,13 @@
+id,code,meaning
+face,302549007,Face
+maxilla,181813003,Maxilla
+mandible,181812008,Mandible
+jaw,181811001,Jaw region
+oral,362628005,Oral region
+anterior_teeth,789313002,Anterior teeth
+buccal,261062005,Buccal
+mirror,47162009,Mirror
+sagittal,30730003,Sagittal
+mirror_corrected,255589003,Mirrored view corrected
+mouth_closed,286866000,Mouth Closed
+co,110320000,Centric Occlusion of Teeth

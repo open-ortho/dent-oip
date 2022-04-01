@@ -1,0 +1,11 @@
+id,attribute_name,tag
+patient_orientation,Patient Orientation,"(0020,0020)"
+laterality,Laterality,"(0020,0060)"
+anatomic_region_sequence,Anatomic Region Sequence,"(0008,2218)"
+anatomic_region_modifier_sequnce,Anatomic Region Modifier Sequence,"(0008,2220)"
+primary_anatomic_structure_sequence,Primary Anatomic Structure Sequence,"(0008,2228)"
+device_sequence,Device Sequence,"(0050,0010)"
+acquisition_view,Acquisition View,"(aaaa,bbbb)"
+image_view,Image View,"(cccc,dddd)"
+functional_condition_present_during_acquisition,Functional Condition Present During Acquisition,"(eeee,ffff)"
+functional_condition_present_during_acquisition,Occlusal Relationship,"(gggg,hhhh)"

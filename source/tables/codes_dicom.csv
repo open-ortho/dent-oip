@@ -1,0 +1,8 @@
+id,code,meaning
+l_both,B,Both
+l_left,L,Left
+l_right,R,Right
+l_unpaired,U,Unpaired
+o_frontal,"R,F","Right, Foot"
+o_left,"P,F","Posterior, Foot"
+o_right,"A,F","Anterior, Foot"

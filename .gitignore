@@ -4,3 +4,4 @@ build/
 _build/
 .~*
 .vscode/
+source/tables/generated/
