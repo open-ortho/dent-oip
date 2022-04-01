@@ -5,6 +5,11 @@ import sys
 import sqlite3
 import csv
 
+# Prefixes
+PREFIX_SNOMED='SCT '
+PREFIX_DICOM='DCM '
+
+# Files and paths
 PATH_TABLES = os.path.join('.','source','tables')
 PATH_TABLES_GENERATED = os.path.join(PATH_TABLES, 'generated')
 CSV_SNOMED = os.path.join(PATH_TABLES,'codes_snomed.csv')
@@ -12,12 +17,14 @@ CSV_DICOM = os.path.join(PATH_TABLES,'codes_dicom.csv')
 CSV_DICOM_TAGS = os.path.join(PATH_TABLES,'tags_dicom.csv')
 CSV_VIEWS = os.path.join(PATH_TABLES,'views.csv')
 DBFILE='views.db'
+
+# Database Tables
 T_VIEWS='ortho_views'
 T_SNOMED='codes_snomed'
 T_DICOM='codes_dicom'
 T_DICOM_TAGS='tags_dicom'
 
-# Columns
+# Database Columns
 C_VIE = "view_name"
 C_POR = "patient_orientation"
 C_LAT = "laterality"
@@ -134,7 +141,7 @@ def create_view(cur, view_type):
 
     query_view = f'''
 -- SQLite
-CREATE TEMP TABLE _temp (
+CREATE TEMP TABLE IF NOT EXISTS _temp (
     id text,
     attribute_name text,
     tag text,
@@ -173,7 +180,7 @@ FROM (
 WHERE id = 'laterality';
 -- Anatomic Region Sequence
 UPDATE _temp
-SET code_value = 'SCT-' || anatomic_region_sequence.code,
+SET code_value = '{PREFIX_SNOMED}' || anatomic_region_sequence.code,
     meaning = anatomic_region_sequence.meaning
 FROM (
         SELECT codes_snomed.code,
@@ -185,7 +192,7 @@ FROM (
 WHERE id = 'anatomic_region_sequence';
 -- Anatomic Region Modifier Sequence
 UPDATE _temp
-SET code_value = 'SCT-' || anatomic_region_modifier_sequnce.code,
+SET code_value = '{PREFIX_SNOMED}' || anatomic_region_modifier_sequnce.code,
     meaning = anatomic_region_modifier_sequnce.meaning
 FROM (
         SELECT codes_snomed.code,
@@ -195,9 +202,86 @@ FROM (
         WHERE ortho_views.view_name LIKE '{view_type}'
     ) as anatomic_region_modifier_sequnce
 WHERE id = 'anatomic_region_modifier_sequnce';
+-- Primary Anatomic Structure Sequence
+UPDATE _temp
+SET code_value = '{PREFIX_SNOMED}' || primary_anatomic_structure_sequence.code,
+    meaning = primary_anatomic_structure_sequence.meaning
+FROM (
+        SELECT codes_snomed.code,
+            codes_snomed.meaning
+        FROM ortho_views
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.primary_anatomic_structure_sequence
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as primary_anatomic_structure_sequence
+WHERE id = 'primary_anatomic_structure_sequence';
+-- Device Sequence
+UPDATE _temp
+SET code_value = '{PREFIX_SNOMED}' || device_sequence.code,
+    meaning = device_sequence.meaning
+FROM (
+        SELECT codes_snomed.code,
+            codes_snomed.meaning
+        FROM ortho_views
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.device_sequence
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as device_sequence
+WHERE id = 'device_sequence';
+-- Acquisition View
+UPDATE _temp
+SET code_value = '{PREFIX_SNOMED}' || acquisition_view.code,
+    meaning = acquisition_view.meaning
+FROM (
+        SELECT codes_snomed.code,
+            codes_snomed.meaning
+        FROM ortho_views
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.acquisition_view
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as acquisition_view
+WHERE id = 'acquisition_view';
+-- Image View
+UPDATE _temp
+SET code_value = '{PREFIX_SNOMED}' || image_view.code,
+    meaning = image_view.meaning
+FROM (
+        SELECT codes_snomed.code,
+            codes_snomed.meaning
+        FROM ortho_views
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.image_view
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as image_view
+WHERE id = 'image_view';
+-- Functional Condition Present During Acquisition
+UPDATE _temp
+SET code_value = '{PREFIX_SNOMED}' || functional_condition_present_during_acquisition.code,
+    meaning = functional_condition_present_during_acquisition.meaning
+FROM (
+        SELECT codes_snomed.code,
+            codes_snomed.meaning
+        FROM ortho_views
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.functional_condition_present_during_acquisition
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as functional_condition_present_during_acquisition
+WHERE id = 'functional_condition_present_during_acquisition';
+-- Occlusal Relationship
+UPDATE _temp
+SET code_value = '{PREFIX_SNOMED}' || occlusal_relationship.code,
+    meaning = occlusal_relationship.meaning
+FROM (
+        SELECT codes_snomed.code,
+            codes_snomed.meaning
+        FROM ortho_views
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.occlusal_relationship
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as occlusal_relationship
+WHERE id = 'occlusal_relationship';
 '''
     output_file = os.path.join(PATH_TABLES_GENERATED,view_type + '.csv')
-    cur.executescript(query_view)
+    try:
+        cur.executescript(query_view)
+    except sqlite3.OperationalError as e:
+        print("An error occured: ", e)
+        exit()
+
     cur.execute('''SELECT
         attribute_name AS "Attribute Name",
         tag AS 'Tag',
@@ -206,19 +290,24 @@ WHERE id = 'anatomic_region_modifier_sequnce';
     FROM _temp;
     ''')
     with open(output_file,'w') as out_csv_file:
+        print(f"Writing to file {output_file}")
         csv_out = csv.writer(out_csv_file)
         # write header
         csv_out.writerow([d[0] for d in cur.description])
         # write data
         for result in cur:
             csv_out.writerow(result)
+    cur.execute("DELETE FROM _temp")
 
 def main(args):
     print("Main")
     cur = con.cursor()
     initdb(cur)
     load_views(cur)
-    create_view(cur, 'IV-03')
+
+    cur2 = con.cursor()
+    for view in cur2.execute(f"SELECT view_name FROM {T_VIEWS}"):
+        create_view(cur, view[0])
 
     close_connection()
 
