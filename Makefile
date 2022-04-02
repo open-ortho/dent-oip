@@ -1,13 +1,17 @@
 # Minimal makefile for Sphinx documentation
 #
 
+
 VIEWSDB = views.db
-VIEWBUILDER = ./view_maker.py
+
+PIPENV = python3 -m pipenv
+VIEWBUILDER = $(PIPENV) run python3 ./view_maker.py
+
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
 SPHINXOPTS    ?=
-SPHINXBUILD   ?= pipenv run sphinx-build
+SPHINXBUILD   ?= $(PIPENV) run sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = dist/
 
