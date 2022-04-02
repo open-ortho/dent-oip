@@ -156,131 +156,132 @@ SELECT id,
 FROM tags_dicom;
 -- Patient Orientation
 UPDATE _temp
-SET code_value = patient_orientation.code,
-    meaning = patient_orientation.meaning
+SET code_value = {C_POR}.code,
+    meaning = {C_POR}.meaning
 FROM (
         SELECT codes_dicom.code,
             codes_dicom.meaning
         FROM ortho_views
-            INNER JOIN codes_dicom ON codes_dicom.id = ortho_views.patient_orientation
+            INNER JOIN codes_dicom ON codes_dicom.id = ortho_views.{C_POR}
         WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as patient_orientation
-WHERE id = 'patient_orientation';
+    ) as {C_POR}
+WHERE id = '{C_POR}';
 -- Laterality
 UPDATE _temp
-SET code_value = laterality.code,
-    meaning = laterality.meaning
+SET code_value = {C_LAT}.code,
+    meaning = {C_LAT}.meaning
 FROM (
         SELECT codes_dicom.code,
             codes_dicom.meaning
         FROM ortho_views
-            INNER JOIN codes_dicom ON codes_dicom.id = ortho_views.laterality
+            INNER JOIN codes_dicom ON codes_dicom.id = ortho_views.{C_LAT}
         WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as laterality
-WHERE id = 'laterality';
+    ) as {C_LAT}
+WHERE id = '{C_LAT}';
 -- Anatomic Region Sequence
 UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || anatomic_region_sequence.code,
-    meaning = anatomic_region_sequence.meaning
+SET code_value = '{PREFIX_SNOMED}' || {C_ARS}.code,
+    meaning = {C_ARS}.meaning
 FROM (
         SELECT codes_snomed.code,
             codes_snomed.meaning
         FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.anatomic_region_sequence
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_ARS}
         WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as anatomic_region_sequence
-WHERE id = 'anatomic_region_sequence';
+    ) as {C_ARS}
+WHERE id = '{C_ARS}';
 -- Anatomic Region Modifier Sequence
 UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || anatomic_region_modifier_sequnce.code,
-    meaning = anatomic_region_modifier_sequnce.meaning
+SET code_value = '{PREFIX_SNOMED}' || {C_ARM}.code,
+    meaning = {C_ARM}.meaning
 FROM (
         SELECT codes_snomed.code,
             codes_snomed.meaning
         FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.anatomic_region_modifier_sequnce
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_ARM}
         WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as anatomic_region_modifier_sequnce
-WHERE id = 'anatomic_region_modifier_sequnce';
+    ) as {C_ARM}
+WHERE id = '{C_ARM}';
 -- Primary Anatomic Structure Sequence
 UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || primary_anatomic_structure_sequence.code,
-    meaning = primary_anatomic_structure_sequence.meaning
+SET code_value = '{PREFIX_SNOMED}' || {C_PAM}.code,
+    meaning = {C_PAM}.meaning
 FROM (
         SELECT codes_snomed.code,
             codes_snomed.meaning
         FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.primary_anatomic_structure_sequence
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_PAM}
         WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as primary_anatomic_structure_sequence
-WHERE id = 'primary_anatomic_structure_sequence';
+    ) as {C_PAM}
+WHERE id = '{C_PAM}';
 -- Device Sequence
 UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || device_sequence.code,
-    meaning = device_sequence.meaning
+SET code_value = '{PREFIX_SNOMED}' || {C_DEV}.code,
+    meaning = {C_DEV}.meaning
 FROM (
         SELECT codes_snomed.code,
             codes_snomed.meaning
         FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.device_sequence
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_DEV}
         WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as device_sequence
-WHERE id = 'device_sequence';
+    ) as {C_DEV}
+WHERE id = '{C_DEV}';
 -- Acquisition View
 UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || acquisition_view.code,
-    meaning = acquisition_view.meaning
+SET code_value = '{PREFIX_SNOMED}' || {C_AQV}.code,
+    meaning = {C_AQV}.meaning
 FROM (
         SELECT codes_snomed.code,
             codes_snomed.meaning
         FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.acquisition_view
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_AQV}
         WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as acquisition_view
-WHERE id = 'acquisition_view';
+    ) as {C_AQV}
+WHERE id = '{C_AQV}';
 -- Image View
 UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || image_view.code,
-    meaning = image_view.meaning
+SET code_value = '{PREFIX_SNOMED}' || {C_IMV}.code,
+    meaning = {C_IMV}.meaning
 FROM (
         SELECT codes_snomed.code,
             codes_snomed.meaning
         FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.image_view
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_IMV}
         WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as image_view
-WHERE id = 'image_view';
+    ) as {C_IMV}
+WHERE id = '{C_IMV}';
 -- Functional Condition Present During Acquisition
 UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || functional_condition_present_during_acquisition.code,
-    meaning = functional_condition_present_during_acquisition.meaning
+SET code_value = '{PREFIX_SNOMED}' || {C_FCA}.code,
+    meaning = {C_FCA}.meaning
 FROM (
         SELECT codes_snomed.code,
             codes_snomed.meaning
         FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.functional_condition_present_during_acquisition
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_FCA}
         WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as functional_condition_present_during_acquisition
-WHERE id = 'functional_condition_present_during_acquisition';
+    ) as {C_FCA}
+WHERE id = '{C_FCA}';
 -- Occlusal Relationship
 UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || occlusal_relationship.code,
-    meaning = occlusal_relationship.meaning
+SET code_value = '{PREFIX_SNOMED}' || {C_OCR}.code,
+    meaning = {C_OCR}.meaning
 FROM (
         SELECT codes_snomed.code,
             codes_snomed.meaning
         FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.occlusal_relationship
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_OCR}
         WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as occlusal_relationship
-WHERE id = 'occlusal_relationship';
+    ) as {C_OCR}
+WHERE id = '{C_OCR}';
 '''
     output_file = os.path.join(PATH_TABLES_GENERATED,view_type + '.csv')
     try:
         cur.executescript(query_view)
     except sqlite3.OperationalError as e:
         print("An error occured: ", e)
-        exit()
+        print(query_view)
+        exit(1)
 
     cur.execute('''SELECT
         attribute_name AS "Attribute Name",
