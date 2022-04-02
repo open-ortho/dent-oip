@@ -8,8 +8,17 @@ anterior_teeth,789313002,Anterior teeth
 buccal,261062005,Buccal
 mirror,47162009,Mirror
 sagittal,30730003,Sagittal
+coronal,81654009,Coronal
+occlusal,710098004,Occlusal
 mirror_corrected,787610003,Photographic image corrected intraoral mirrored visible record
 mirror_uncorrected,789135000,"Mirrored visible image uncorrected "
 direct,255589003,Direct
 mouth_closed,286866000,Mouth Closed
+mouth_open,262016004,"Open mouth "
 co,110320000,Centric Occlusion of Teeth
+cr,736783005,"Centric relation "
+ruler,102304005,Measuring Ruler
+gingival_recession,4356008,"Gingival recession "
+tongue_thrust,110343009,Tongue thrust
+frenum,418232001,Structure of oral frenum
+na,,Not Applicable

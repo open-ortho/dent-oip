@@ -105,31 +105,10 @@ Intraoral, Right Buccal Segment, Centric Relation, Without Mirror
 	:figwidth: 100%
 	:alt: Line drawing of Intraoral, Right Buccal Segment, Centric Relation, Without Mirror
 
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-|                 Attribute Name                  |     Tag     |     Value     |                              Meaning                              |
-+=================================================+=============+===============+===================================================================+
-| Enumerated Terms (Acronyms)                     |             | IO.RB.CR      | Intraoral, Right Buccal Segment, Centric Relation, Without Mirror |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-| Patient Orientation                             | (0020,0020) | A,F           | Anterior, Foot                                                    |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-| Laterality                                      | (0020,0060) | U             | Unpaired                                                          |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-| Anatomic Region Sequence                        | (0008,2218) | SCT 181811001 | Jaw Region                                                        |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-| Anatomic Region Modifier Sequence               | (0008,2220) | SCT 261062005 | Buccal                                                            |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-| Primary Anatomic Structure Sequence             | (0008,2228) | (see below)   |                                                                   |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-| Device Sequence                                 | (0050,0010) | -             | -                                                                 |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-| Acquisition View                                | (aaaa,bbbb) | SCT 30730003  | Sagittal (Lateral)                                                |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-| Image View                                      | (cccc,dddd) | SCT 255589003 | Direct                                                            |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-| Functional Condition Present During Acquisition | (eeee,ffff) | SCT 286866000 | Mouth Closed                                                      |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
-| Occlusal Relationship                           | (gggg,hhhh) | SCT 736783005 | Centric relation                                                  |
-+-------------------------------------------------+-------------+---------------+-------------------------------------------------------------------+
+.. csv-table:: IV-04
+   :file: ../tables/generated/IV-04.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
 
 
 Primary Anatomic Structure Sequence
@@ -154,31 +133,11 @@ Intraoral Right Buccal Segment – Centric Relation, With Mirror
 	:figwidth: 100%
 	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
 
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-|                 Attribute Name                  |     Tag     |     Value     |                            Meaning                             |
-+=================================================+=============+===============+================================================================+
-| Enumerated Terms (Acronyms)                     |             | IO.RB.CR.WM   | Intraoral Right Buccal Segment – Centric Relation, With Mirror |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-| Patient Orientation                             | (0020,0020) | A,F           | Anterior, Foot                                                 |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-| Laterality                                      | (0020,0060) | U             | Unpaired                                                       |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-| Anatomic Region Sequence                        | (0008,2218) | SCT 181811001 | Jaw Region                                                     |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-| Anatomic Region Modifier Sequence               | (0008,2220) | SCT 261062005 | Buccal                                                         |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-| Primary Anatomic Structure Sequence             | (0008,2228) | (see below)   |                                                                |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-| Device Sequence                                 | (0050,0010) | SCT 47162009  | Mirror                                                         |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-| Acquisition View                                | (aaaa,bbbb) | SCT 30730003  | Sagittal (Lateral)                                             |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-| Image View                                      | (cccc,dddd) | SCT 745168    | Mirrored view uncorrected                                      |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-| Functional Condition Present During Acquisition | (eeee,ffff) | SCT 286866000 | Mouth Closed                                                   |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
-| Occlusal Relationship                           | (gggg,hhhh) | SCT 736783005 | Centric relation                                               |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------+
+.. csv-table:: IV-05
+   :file: ../tables/generated/IV-05.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
 
 Primary Anatomic Structure Sequence
 :::::::::::::::::::::::::::::::::::
@@ -207,31 +166,11 @@ Intraoral Right Buccal Segment – Centric Relation, With Mirror But Corrected
 	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
 
 
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-|                 Attribute Name                  |     Tag     |     Value      |                                   Meaning                                    |
-+=================================================+=============+================+==============================================================================+
-| Enumerated Terms (Acronyms)                     |             | IO.RB.CR.WM.BC | Intraoral Right Buccal Segment – Centric Relation, With Mirror But Corrected |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-| Patient Orientation                             | (0020,0020) | A,F            | Anterior, Foot                                                               |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-| Laterality                                      | (0020,0060) | U              | Unpaired                                                                     |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-| Anatomic Region Sequence                        | (0008,2218) | SRT 181811001  | Jaw Region                                                                   |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-| Anatomic Region Modifier Sequence               | (0008,2220) | SCT 261062005  | Buccal                                                                       |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-| Primary Anatomic Structure Sequence             | (0008,2228) | (see below)    |                                                                              |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-| Device Sequence                                 | (0050,0010) | SCT 47162009   | Mirror                                                                       |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-| Acquisition View                                | (aaaa,bbbb) | SCT 30730003   | Sagittal (Lateral)                                                           |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-| Image View                                      | (cccc,dddd) | SCT 787610003  | Mirrored view corrected                                                      |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-| Functional Condition Present During Acquisition | (eeee,ffff) | SCT 286866000  | Mouth Closed                                                                 |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
-| Occlusal Relationship                           | (gggg,hhhh) | SCT 736783005  | Centric relation                                                             |
-+-------------------------------------------------+-------------+----------------+------------------------------------------------------------------------------+
+.. csv-table:: IV-06
+   :file: ../tables/generated/IV-06.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
 
 Primary Anatomic Structure Sequence
 :::::::::::::::::::::::::::::::::::
@@ -245,6 +184,174 @@ Example: Patient in permanent dentition may show the following teeth in this vie
 * 84 SCT: 245631005
 * 85 SCT: 245630006
 
+IV-07
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-07.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of _
+
+
+.. csv-table:: IV-07
+   :file: ../tables/generated/IV-07.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-08
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-08.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of 
+
+
+.. csv-table:: IV-08
+   :file: ../tables/generated/IV-08.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-09
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-09.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of 
+
+
+.. csv-table:: IV-09
+   :file: ../tables/generated/IV-09.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-10
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-10.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of 
+
+
+.. csv-table:: IV-10
+   :file: ../tables/generated/IV-10.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-11
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-11.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of 
+
+
+.. csv-table:: IV-11
+   :file: ../tables/generated/IV-11.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-12
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-12.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of 
+
+
+.. csv-table:: IV-12
+   :file: ../tables/generated/IV-12.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-13
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-13.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of 
+
+
+.. csv-table:: IV-13
+   :file: ../tables/generated/IV-13.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
 Intraoral Right Lateral View – Centric Occlusion, Showing Overjet Without Mirror
 --------------------------------------------------------------------------------
 
@@ -253,31 +360,11 @@ Intraoral Right Lateral View – Centric Occlusion, Showing Overjet Without Mirr
 	:figwidth: 100%
 	:alt: Intraoral Right Lateral View – Centric Occlusion, Showing Overjet Without Mirror
 
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-|                 Attribute Name                  |     Tag     |     Value     |                                     Meaning                                      |
-+=================================================+=============+===============+==================================================================================+
-| Enumerated Terms (Acronyms)                     |             | IO.RL.CO.OJ   | Intraoral Right Lateral View - Centric Occlusion, Showing Overjet Without Mirror |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-| Patient Orientation                             | (0020,0020) | A,F           | Anterior, Foot                                                                   |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-| Laterality                                      | (0020,0060) | U             | Unpaired                                                                         |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-| Anatomic Region Sequence                        | (0008,2218) | SCT 181811001 | Jaw Region                                                                       |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-| Anatomic Region Modifier Sequence               | (0008,2220) | SCT 261062005 | Buccal                                                                           |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-| Primary Anatomic Structure Sequence             | (0008,2228) | (see below)   |                                                                                  |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-| Device Sequence                                 | (0050,0010) | SCT 102304005 | Measuring Ruler                                                                  |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-| Acquisition View                                | (aaaa,bbbb) | SCT 30730003  | Sagittal (Lateral)                                                               |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-| Image View                                      | (cccc,dddd) | SCT 255589003 | Direct                                                                           |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-| Functional Condition Present During Acquisition | (eeee,ffff) | SCT 286866000 | Mouth Closed                                                                     |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
-| Occlusal Relationship                           | (gggg,hhhh) | SCT 110320000 | Centric Occlusion of Teeth                                                       |
-+-------------------------------------------------+-------------+---------------+----------------------------------------------------------------------------------+
+.. csv-table:: IV-14
+   :file: ../tables/generated/IV-14.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
 
 Primary Anatomic Structure Sequence
 :::::::::::::::::::::::::::::::::::
@@ -303,31 +390,10 @@ Intraoral Right Lateral View – Centric Relation, Showing Overjet Without Mirro
 	:figwidth: 100%
 	:alt: Intraoral Right Lateral View – Centric Relation, Showing Overjet Without Mirror
 
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-|                 Attribute Name                  |     Tag     |     Value     |                                     Meaning                                     |
-+=================================================+=============+===============+=================================================================================+
-| Enumerated Terms (Acronyms)                     |             | IO.RL.CR.OJ   | Intraoral Right Lateral View – Centric Relation, Showing Overjet Without Mirror |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-| Patient Orientation                             | (0020,0020) | A,F           | Anterior, Foot                                                                  |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-| Laterality                                      | (0020,0060) | U             | Unpaired                                                                        |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-| Anatomic Region Sequence                        | (0008,2218) | SCT 181811001 | Jaw Region                                                                      |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-| Anatomic Region Modifier Sequence               | (0008,2220) | SCT 261062005 | Buccal                                                                          |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-| Primary Anatomic Structure Sequence             | (0008,2228) | (see below)   |                                                                                 |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-| Device Sequence                                 | (0050,0010) | SCT 102304005 | Measuring Ruler                                                                 |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-| Acquisition View                                | (aaaa,bbbb) | SCT 30730003  | Sagittal (Lateral)                                                              |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-| Image View                                      | (cccc,dddd) | SCT 255589003 | Direct                                                                          |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-| Functional Condition Present During Acquisition | (eeee,ffff) | SCT 286866000 | Mouth Closed                                                                    |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
-| Occlusal Relationship                           | (gggg,hhhh) | SCT 736783005 | Centric relation                                                                |
-+-------------------------------------------------+-------------+---------------+---------------------------------------------------------------------------------+
+.. csv-table:: IV-15
+   :file: ../tables/generated/IV-15.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
 
 
 Primary Anatomic Structure Sequence
@@ -343,4 +409,364 @@ Example: Patient in mixed dentition may show the following teeth in this view
 * 84 SCT: 245631005
 * 85 SCT: 245630006
 * 46 SCT: 245592005
+
+IV-16
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-16.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of 
+
+
+.. csv-table:: IV-16
+   :file: ../tables/generated/IV-16.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-17
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-17.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-17
+   :file: ../tables/generated/IV-17.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-18
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-18.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-18
+   :file: ../tables/generated/IV-18.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-19
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-19.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-19
+   :file: ../tables/generated/IV-19.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-20
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-20.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-20
+   :file: ../tables/generated/IV-20.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-21
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-21.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-21
+   :file: ../tables/generated/IV-21.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-22
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-22.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-22
+   :file: ../tables/generated/IV-22.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-23
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-23.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-23
+   :file: ../tables/generated/IV-23.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-24
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-24.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-24
+   :file: ../tables/generated/IV-24.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-25
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-25.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-25
+   :file: ../tables/generated/IV-25.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-26
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-26.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-26
+   :file: ../tables/generated/IV-26.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-27
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-27.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-27
+   :file: ../tables/generated/IV-27.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-28
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-28.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-28
+   :file: ../tables/generated/IV-28.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-29
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-29.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-29
+   :file: ../tables/generated/IV-29.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
+
+IV-30
+----------------------------------------------------------------------------
+
+.. figure:: ../images/IV-30.png
+	:class: with-border
+	:figwidth: 100%
+	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+
+
+.. csv-table:: IV-30
+   :file: ../tables/generated/IV-30.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+Example: Patient in permanent dentition may show the following teeth in this view
+
+* _
 
