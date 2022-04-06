@@ -16,6 +16,23 @@ HTML, PDF, etc. Sphinx uses the reStructuredText language.
 A development build of the document is available
 [here](http://brillig.org/~afm/ada-1107/html/)
 
+## Automatic table building
+
+The tables in the appendices are built from CSV files, which are located in
+`source/tables/generated`. These files are automatically generated from the CSV
+files located in `source/tables`. You can edit the files in `source/tables` with
+a spreadsheet as necessary, then save back in CSV format. There is a Python
+script that generates called `view_maker.py` which does job.
+
+The script loads the CSV files into an SQLite database and then builds the
+tables into a _temp table, row by row, which a large SQL command. The temp
+tables are then exported into CSV in the `generated` folder. And that's where
+the RestructuredText files refer to.
+
+There is a potential problem with the SQL script: apparently while it works fine
+with Python 3.10 and sqlite 3.37, the script bonks with an SQL error when around
+FROM clause. See PANIO-227.
+
 ## Editing
 
 Whoever is willing to make content contributions to the document is considered
