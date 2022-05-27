@@ -16,18 +16,7 @@ HTML, PDF, etc. Sphinx uses the reStructuredText language.
 A development build of the document is available
 [here](http://brillig.org/~afm/ada-1107/html/)
 
-## Automatic table building
-
-The tables in the appendices are built from CSV files, which are located in
-`source/tables/generated`. These files are automatically generated from the CSV
-files located in `source/tables`. You can edit the files in `source/tables` with
-a spreadsheet as necessary, then save back in CSV format. There is a Python
-script that generates called `view_maker.py` which does job.
-
-The script loads the CSV files into an SQLite database and then builds the
-tables into a _temp table, row by row, which a large SQL command. The temp
-tables are then exported into CSV in the `generated` folder. And that's where
-the RestructuredText files refer to.
+## Known Issues
 
 There is a potential problem with the SQL script: apparently while it works fine
 with Python 3.10 and sqlite 3.37, the script bonks with an SQL error when around
@@ -37,6 +26,12 @@ FROM clause. See PANIO-227.
 
 Whoever is willing to make content contributions to the document is considered
 an editor.
+
+### Editing Tables
+
+To make modifications to the tables, edit the files in `source/tables/*.csv` (a spreadsheet will make this easy) then save back in CSV format.
+
+For more information on how this process works, see section View Tables Generation below.
 
 ### Using GitHub
 
@@ -97,3 +92,16 @@ customize, or gain access to deployment server to deploy.
 
 Deployment also deploys an `.htaccess` and `.htpasswd` file with loose security.
 Both username and password are `scdi116`.
+
+## View Tables Generation
+
+The CSV files in `source/tables/*.csv` are used to automatically generate another set of CSV files located in `source/tables/generated/*.csv`. The final tables in the appendices are built from CSV files `source/tables/generated/*.csv`. 
+
+`view_maker.py` contains instructions to 
+
+- import the `source/tables/generated/*.csv` into an SQLite database
+- build the tables into a `_temp` table, looping row by row with a large SQL command.
+
+The temp tables are then exported into CSV in the `generated` folder. And that's where the RestructuredText files refer to.
+
+This process is very inefficient, but optimization is not needed since execution is only done once at build time.
