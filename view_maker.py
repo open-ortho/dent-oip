@@ -275,6 +275,10 @@ FROM (
     ) as {C_OCR}
 WHERE id = '{C_OCR}';
 '''
+    try:
+        os.makedirs(PATH_TABLES_GENERATED)
+    except FileExistsError:
+        pass
     output_file = os.path.join(PATH_TABLES_GENERATED,view_type + '.csv')
     try:
         cur.executescript(query_view)
