@@ -27,6 +27,7 @@ help:
 
 .PHONY: help Makefile deploy genereted_tables
 
+# This will get executed automatically for each target routed to Sphinx. See catchall target below.
 genereted_tables:
 	rm -f $(VIEWSDB)
 	$(VIEWBUILDER)
@@ -34,6 +35,7 @@ genereted_tables:
 
 clean:
 	rm -rf "$(BUILDDIR)"
+	rm -f "$(VIEWSDB)"
 
 deploy: html docx
 	cp htaccess "$(BUILDDIR)/.htaccess"
