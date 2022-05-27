@@ -31,6 +31,10 @@ an editor.
 
 To make modifications to the tables, edit the files in `source/tables/*.csv` (a spreadsheet will make this easy) then save back in CSV format.
 
+- The `views.csv` file, contains all views and their codes.
+- The codes used in `views.csv` are referred to using ids.
+- The ids used must match those expressed in `codes_dicom.csv`, `codes_snomed.csv` or `tags_dicom.csv`.
+
 For more information on how this process works, see section View Tables Generation below.
 
 ### Using GitHub
