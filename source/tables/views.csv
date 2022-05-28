@@ -29,7 +29,7 @@ IV-27,o_left_anterior,l_unpaired,jaw,na,,mirror,occlusal,mirror_corrected,mouth_
 IV-28,?,l_unpaired,jaw,na,,na,na,direct,gingival_recession,na
 IV-29,o_front,l_unpaired,jaw,na,,na,na,direct,frenum,na
 IV-30,?,l_unpaired,jaw,na,,,na,,mouth_open,na
-EO-01,,l_unpaired,,,,,,,,
+EO-01,o_right,l_unpaired,face,right,,,sagittal,direct,lips_relaxed,co
 EO-02,,l_unpaired,,,,,,,,
 EO-03,,l_unpaired,,,,,,,,
 EO-04,,l_unpaired,,,,,,,,
