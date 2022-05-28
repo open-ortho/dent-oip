@@ -184,13 +184,14 @@ Example: Patient in permanent dentition may show the following teeth in this vie
 * 84 SCT: 245631005
 * 85 SCT: 245630006
 
-IV-07
+Intraoral Frontal View - Centric Occlusion, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-07.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of _
+	:alt: Line drawing of Intraoral Frontal View - Centric Occlusion, Without Mirror
+
 
 
 .. csv-table:: IV-07
@@ -206,15 +207,27 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 51 SCT: 245620002
+* 52 SCT: 245619008
+* 53 SCT: 245617005
+* 61 SCT: 245627004
+* 62 SCT: 245626008
+* 63 SCT: 245624006
+* 71 SCT: 245642001
+* 72 SCT: 245641008
+* 73 SCT: 245639007
+* 81 SCT: 245635001
+* 82 SCT: 245634002
+* 83 SCT: 245632003
 
-IV-08
+Intraoral Frontal View - Centric Relation, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-08.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of 
+	:alt: Line drawing of Intraoral Frontal View - Centric Relation, Without Mirror
+
 
 
 .. csv-table:: IV-08
@@ -230,7 +243,19 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 11
+* 12
+* 13
+* 21
+* 22
+* 23
+* 31
+* 32
+* 33
+* 41
+* 42
+* 43
+
 
 IV-09
 ----------------------------------------------------------------------------
