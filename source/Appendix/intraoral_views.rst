@@ -243,27 +243,28 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* 11
-* 12
-* 13
-* 21
-* 22
-* 23
-* 31
-* 32
-* 33
-* 41
-* 42
-* 43
+* 11 SCT: 245575001
+* 12 SCT: 245574002
+* 13 SCT: 245572003
+* 21 SCT: 245587008
+* 22 SCT: 245586004
+* 23 SCT: 245584001
+* 31 SCT: 245611006
+* 32 SCT: 245610007
+* 33 SCT: 245608005
+* 41 SCT: 245600003
+* 42 SCT: 245599001
+* 43 SCT: 245597004
 
 
-IV-09
+
+Intraoral Frontal View – Teeth Apart, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-09.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of 
+	:alt: Line drawing of Intraoral Frontal View – Teeth Apart, Without Mirror
 
 
 .. csv-table:: IV-09
@@ -279,15 +280,26 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 11 SCT: 245575001
+* 12 SCT: 245574002
+* 53 SCT: 245617005
+* 21 SCT: 245587008
+* 22 SCT: 245586004
+* 63 SCT: 245624006
+* 31 SCT: 245611006
+* 32 SCT: 245610007
+* 73 SCT: 245639007
+* 41 SCT: 245600003
+* 42 SCT: 245599001
+* 83 SCT: 245632003
 
-IV-10
+Intraoral Frontal View – Mouth Open, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-10.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of 
+	:alt: Line drawing of Intraoral Frontal View – Mouth Open, Without Mirror
 
 
 .. csv-table:: IV-10
@@ -303,7 +315,18 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 11 SCT: 245575001
+* 12 SCT: 245574002
+* 13 SCT: 245572003
+* 21 SCT: 245587008
+* 22 SCT: 245586004
+* 23 SCT: 245584001
+* 31 SCT: 245611006
+* 32 SCT: 245610007
+* 33 SCT: 245608005
+* 41 SCT: 245600003
+* 42 SCT: 245599001
+* 43 SCT: 245597004
 
 IV-11
 ----------------------------------------------------------------------------
