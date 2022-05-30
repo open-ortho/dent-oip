@@ -328,13 +328,13 @@ Example: Patient in permanent dentition may show the following teeth in this vie
 * 42 SCT: 245599001
 * 43 SCT: 245597004
 
-IV-11
+Intraoral Frontal View Inferior (showing depth of bite and overjet) – Centric Occlusion, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-11.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of 
+	:alt: Line drawing of Intraoral Frontal View Inferior (showing depth of bite and overjet) – Centric Occlusion, Without Mirror
 
 
 .. csv-table:: IV-11
@@ -350,15 +350,26 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 51 SCT: 245620002
+* 52 SCT: 245619008
+* 53 SCT: 245617005
+* 61 SCT: 245627004
+* 62 SCT: 245626008
+* 63 SCT: 245624006
+* 71 SCT: 245642001
+* 72 SCT: 245641008
+* 73 SCT: 245639007
+* 81 SCT: 245635001
+* 82 SCT: 245634002
+* 83 SCT: 245632003
 
-IV-12
+Intraoral Frontal View Inferior (showing depth of bite and overjet) – Centric Relation, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-12.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of 
+	:alt: Line drawing of Intraoral Frontal View Inferior (showing depth of bite and overjet) – Centric Relation, Without Mirror
 
 
 .. csv-table:: IV-12
@@ -374,15 +385,26 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 11 SCT: 245575001
+* 12 SCT: 245574002
+* 53 SCT: 245617005
+* 21 SCT: 245587008
+* 22 SCT: 245586004
+* 63 SCT: 245624006
+* 31 SCT: 245611006
+* 32 SCT: 245610007
+* 73 SCT: 245639007
+* 41 SCT: 245600003
+* 42 SCT: 245599001
+* 83 SCT: 245632003
 
-IV-13
+Intraoral, Frontal View, showing Tongue Thrust, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-13.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of 
+	:alt: Line drawing of Intraoral, Frontal View, showing Tongue Thrust, Without Mirror
 
 
 .. csv-table:: IV-13
@@ -398,7 +420,18 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 11 SCT: 245575001
+* 12 SCT: 245574002
+* 13 SCT: 245572003
+* 21 SCT: 245587008
+* 22 SCT: 245586004
+* 23 SCT: 245584001
+* 31 SCT: 245611006
+* 32 SCT: 245610007
+* 33 SCT: 245608005
+* 41 SCT: 245600003
+* 42 SCT: 245599001
+* 43 SCT: 245597004
 
 Intraoral Right Lateral View – Centric Occlusion, Showing Overjet Without Mirror
 --------------------------------------------------------------------------------
@@ -458,13 +491,13 @@ Example: Patient in mixed dentition may show the following teeth in this view
 * 85 SCT: 245630006
 * 46 SCT: 245592005
 
-IV-16
+Intraoral Left Lateral View - Centric Occlusion showing Overjet, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-16.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of 
+	:alt: Line drawing of Intraoral Left Lateral View - Centric Occlusion showing Overjet, Without Mirror
 
 
 .. csv-table:: IV-16
@@ -482,13 +515,13 @@ Example: Patient in permanent dentition may show the following teeth in this vie
 
 * _
 
-IV-17
+Intraoral Left Lateral View - Centric Relation showing Overjet, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-17.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Left Lateral View - Centric Relation showing Overjet, Without Mirror
 
 
 .. csv-table:: IV-17
@@ -506,13 +539,13 @@ Example: Patient in permanent dentition may show the following teeth in this vie
 
 * _
 
-IV-18
+Intraoral Left Buccal Segment – Centric Occlusion, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-18.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Left Buccal Segment – Centric Occlusion, Without Mirror
 
 
 .. csv-table:: IV-18
@@ -528,15 +561,20 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 64 SCT: 245623000
+* 65 SCT: 245622005
+* 26 SCT: 245579007
+* 74 SCT: 245638004
+* 75 SCT: 245637009
+* 36 SCT: 245604007
 
-IV-19
+Intraoral Left Buccal Segment – Centric Occlusion, With Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-19.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Left Buccal Segment – Centric Occlusion, With Mirror
 
 
 .. csv-table:: IV-19
@@ -552,15 +590,18 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 64 SCT: 245623000
+* 65 SCT: 245622005
+* 74 SCT: 245638004
+* 75 SCT: 245637009
 
-IV-20
+Intraoral Left Buccal Segment – Centric Occlusion, With Mirror But Corrected
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-20.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Left Buccal Segment – Centric Occlusion, With Mirror But Corrected
 
 
 .. csv-table:: IV-20
@@ -576,15 +617,24 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 24 SCT: 245583007
+* 25 SCT: 245582002
+* 26 SCT: 245579007
+* 27 SCT: 245578004
+* 28 SCT: 245577009
+* 34 SCT: 245607000
+* 35 SCT: 245606009
+* 36 SCT: 245604007
+* 37 SCT: 245603001
+* 38 SCT: 245602006
 
-IV-21
+Intraoral Left Buccal Segment – Centric Relation, Without Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-21.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Left Buccal Segment – Centric Relation, Without Mirror
 
 
 .. csv-table:: IV-21
@@ -600,15 +650,20 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 64 SCT: 245623000
+* 65 SCT: 245622005
+* 26 SCT: 245579007
+* 74 SCT: 245638004
+* 75 SCT: 245637009
+* 36 SCT: 245604007
 
-IV-22
+Intraoral Left Buccal Segment - Centric Relation, With Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-22.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Left Buccal Segment - Centric Relation, With Mirror
 
 
 .. csv-table:: IV-22
@@ -624,15 +679,18 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 64 SCT: 245623000
+* 65 SCT: 245622005
+* 74 SCT: 245638004
+* 75 SCT: 245637009
 
-IV-23
+Intraoral Left Buccal Segment – Centric Relation, With Mirror But Corrected
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-23.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Left Buccal Segment – Centric Relation, With Mirror But Corrected
 
 
 .. csv-table:: IV-23
@@ -648,15 +706,20 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 64 SCT: 245623000
+* 65 SCT: 245622005
+* 26 SCT: 245579007
+* 74 SCT: 245638004
+* 75 SCT: 245637009
+* 36 SCT: 245604007
 
-IV-24
+Intraoral Maxillary Occlusal View – Mouth Open, With Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-24.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Maxillary Occlusal View – Mouth Open, With Mirror
 
 
 .. csv-table:: IV-24
@@ -672,15 +735,26 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 11 SCT: 245575001
+* 12 SCT: 245574002
+* 53 SCT: 245617005
+* 54 SCT: 245616001
+* 55 SCT: 245615002
+* 16 SCT: 245568002
+* 21 SCT: 245587008
+* 22 SCT: 245586004
+* 63 SCT: 245624006
+* 64 SCT: 245623000
+* 65 SCT: 245622005
+* 26 SCT: 245579007
 
-IV-25
+Intraoral Maxillary Occlusal View – Mouth Open, With Mirror But Corrected
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-25.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Maxillary Occlusal View – Mouth Open, With Mirror But Corrected
 
 
 .. csv-table:: IV-25
@@ -696,15 +770,30 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 11 SCT: 245575001
+* 12 SCT: 245574002
+* 13 SCT: 245572003
+* 14 SCT: 245571005
+* 15 SCT: 245570006
+* 16 SCT: 245568002
+* 17 SCT: 245567007
+* 18 SCT: 245566003
+* 21 SCT: 245587008
+* 22 SCT: 245586004
+* 23 SCT: 245584001
+* 24 SCT: 245583007
+* 25 SCT: 245582002
+* 26 SCT: 245579007
+* 27 SCT: 245578004
+* 28 SCT: 245577009
 
-IV-26
+Intraoral Mandibular Occlusal View – Mouth Open, With Mirror
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-26.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Mandibular Occlusal View – Mouth Open, With Mirror
 
 
 .. csv-table:: IV-26
@@ -720,15 +809,24 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 71 SCT: 245642001
+* 72 SCT: 245641008
+* 73 SCT: 245639007
+* 74 SCT: 245638004
+* 75 SCT: 245637009
+* 81 SCT: 245635001
+* 82 SCT: 245634002
+* 83 SCT: 245632003
+* 84 SCT: 245631005
+* 85 SCT: 245630006
 
-IV-27
+Intraoral Mandibular Occlusal View – Mouth Open, With Mirror But Corrected
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-27.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral Mandibular Occlusal View – Mouth Open, With Mirror But Corrected
 
 
 .. csv-table:: IV-27
@@ -744,15 +842,26 @@ See section :ref:`primary anatomic structure sequence`
 
 Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
+* 31 SCT: 245611006
+* 32 SCT: 245610007
+* 73 SCT: 245639007
+* 74 SCT: 245638004
+* 75 SCT: 245637009
+* 36 SCT: 245604007
+* 41 SCT: 245600003
+* 42 SCT: 245599001
+* 83 SCT: 245632003
+* 84 SCT: 245631005
+* 85 SCT: 245630006
+* 46 SCT: 245592005
 
-IV-28
+Intraoral – showing Gingival Recession (ISO tooth numbers)
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-28.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral – showing Gingival Recession (ISO tooth numbers)
 
 
 .. csv-table:: IV-28
@@ -766,17 +875,14 @@ Primary Anatomic Structure Sequence
 
 See section :ref:`primary anatomic structure sequence`
 
-Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
-
-IV-29
+Intraoral – showing Frenum (ISO tooth numbers)
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-29.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral – showing Frenum (ISO tooth numbers)
 
 
 .. csv-table:: IV-29
@@ -790,17 +896,14 @@ Primary Anatomic Structure Sequence
 
 See section :ref:`primary anatomic structure sequence`
 
-Example: Patient in permanent dentition may show the following teeth in this view
 
-* _
-
-IV-30
+Intraoral, any photo using a photo accessory device such as a contraster to provide a solid background or black mirror ([modifier] is any set of IO modifier as specified above)
 ----------------------------------------------------------------------------
 
 .. figure:: ../images/IV-30.png
 	:class: with-border
 	:figwidth: 100%
-	:alt: Line drawing of Intraoral Right Buccal Segment – Centric Relation, With Mirror
+	:alt: Line drawing of Intraoral, any photo using a photo accessory device such as a contraster to provide a solid background or black mirror ([modifier] is any set of IO modifier as specified above)
 
 
 .. csv-table:: IV-30
@@ -813,8 +916,3 @@ Primary Anatomic Structure Sequence
 :::::::::::::::::::::::::::::::::::
 
 See section :ref:`primary anatomic structure sequence`
-
-Example: Patient in permanent dentition may show the following teeth in this view
-
-* _
-
