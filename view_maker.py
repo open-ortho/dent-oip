@@ -40,6 +40,31 @@ C_OCR = "occlusal_relationship"
 con = sqlite3.connect(DBFILE)
 cur = None
 
+IV_RST = '''
+{IV_TITLE}
+
+.. figure:: {IV_IMAGE_FILENAME}
+	:class: with-border
+	:alt: Line drawing of {IV_TITLE}
+
+
+.. csv-table:: {IV_NUMBER}
+   :file: ../tables/generated/{IV_NUMBER}.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+
+
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+
+See section :ref:`primary anatomic structure sequence`
+
+{IV_EXAMPLE}
+'''
+
+def iv_print_rst(title,filename,number):
+    print(IV_RST.format(IV_TITLE=title,IV_IMAGE_FILENAME=filename,IV_NUMBER=number))
+
 def initdb(cur):
     cur.execute(f'''
     CREATE TABLE {T_VIEWS}(
@@ -313,6 +338,10 @@ def main(args):
     cur2 = con.cursor()
     for view in cur2.execute(f"SELECT view_name FROM {T_VIEWS}"):
         create_view(cur, view[0])
+        iv_print_rst(
+            title='',
+        filename = f'../images/{view[0]}.png',
+        number = view[0])
 
     close_connection()
 
