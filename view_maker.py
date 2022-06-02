@@ -49,6 +49,9 @@ cur = None
 def iv_write_rst(title, filename, number, example):
     """ Write Intraoral Views rst to file.
     """
+    if example != "":
+        example = format_example(example)
+
     iv_rst = f"""
 {h1(title)}
     
@@ -70,8 +73,6 @@ See section :ref:`primary anatomic structure sequence`
     
 {example}
 """
-    if example != "":
-        example = format_example(example)
     with open(RST_INTRAORAL_VIEWS, "a") as rst_out:
         rst_out.write(iv_rst)
 
@@ -82,11 +83,12 @@ def format_example(example):
     rs = """Example:
 
 Patient may show the following teeth in this view:
+
 """
     for tooth in example.split("^"):
         cur.execute(f"SELECT code,meaning from {T_SNOMED} WHERE id = {tooth};")
         code,code_meaning = cur.fetchall()[0]
-        rs += f"* {tooth} SCT: {code}"
+        rs += f"* {tooth} SCT: {code}\n"
     
     return rs
 
