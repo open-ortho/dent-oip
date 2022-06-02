@@ -3,6 +3,7 @@
 
 
 VIEWSDB = views.db
+GENERATED_TABLES = source/tables/generated
 
 PIPENV = python3 -m pipenv
 VIEWBUILDER = $(PIPENV) run python3 ./view_maker.py
@@ -34,8 +35,8 @@ genereted_tables:
 	rm $(VIEWSDB)
 
 clean:
-	rm -rf "$(BUILDDIR)"
-	rm -f "$(VIEWSDB)"
+	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)"
+	rm -f "$(VIEWSDB)" 
 
 deploy: html docx
 	cp htaccess "$(BUILDDIR)/.htaccess"
