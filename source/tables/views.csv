@@ -1,5 +1,5 @@
 view_name,patient_orientation,laterality,anatomic_region_sequence,anatomic_region_modifier_sequnce,primary_anatomic_structure_sequence,device_sequence,acquisition_view,image_view,functional_condition_present_during_acquisition,occlusal_relationship,view_full_name
-IV-01,o_right,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,co,
+IV-01,o_right,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,co,"Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)"
 IV-02,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_uncorrected,mouth_closed,co,
 IV-03,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,co,
 IV-04,o_right,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,cr,
