@@ -11,7 +11,10 @@ PREFIX_DICOM = "DCM "
 
 # Files and paths
 PATH_TABLES = os.path.join(".", "source", "tables")
+PATH_APPENDIX = os.path.join(".", "source", "Appendix")
 PATH_TABLES_GENERATED = os.path.join(PATH_TABLES, "generated")
+RST_INTRAORAL_VIEWS = os.path.join(PATH_APPENDIX, "intraoral_views_gen.rst")
+RST_EXTRAORAL_VIEWS = os.path.join(PATH_APPENDIX, "extraoral_views_gen.rst")
 CSV_SNOMED = os.path.join(PATH_TABLES, "codes_snomed.csv")
 CSV_DICOM = os.path.join(PATH_TABLES, "codes_dicom.csv")
 CSV_DICOM_TAGS = os.path.join(PATH_TABLES, "tags_dicom.csv")
@@ -36,35 +39,36 @@ C_AQV = "acquisition_view"
 C_IMV = "image_view"
 C_FCA = "functional_condition_present_during_acquisition"
 C_OCR = "occlusal_relationship"
+C_FUL = "view_full_name"
 
 con = sqlite3.connect(DBFILE)
 cur = None
 
-IV_RST = """
-{IV_TITLE}
 
-.. figure:: {IV_IMAGE_FILENAME}
+def iv_write_rst(title, filename, number, example):
+    iv_rst = f"""
+{h1(title)}
+    
+.. figure:: {filename}
 	:class: with-border
-	:alt: Line drawing of {IV_TITLE}
-
-
-.. csv-table:: {IV_NUMBER}
-   :file: ../tables/generated/{IV_NUMBER}.csv
+	:alt: Line drawing of {title}
+    
+    
+.. csv-table:: {number}
+   :file: ../tables/generated/{number}.csv
    :widths: 40, 10, 10, 40
    :header-rows: 1
-
-
+    
+    
 Primary Anatomic Structure Sequence
 :::::::::::::::::::::::::::::::::::
-
+    
 See section :ref:`primary anatomic structure sequence`
-
-{IV_EXAMPLE}
+    
+{example}
 """
-
-
-def iv_print_rst(title, filename, number):
-    print(IV_RST.format(IV_TITLE=title, IV_IMAGE_FILENAME=filename, IV_NUMBER=number))
+    with open(RST_INTRAORAL_VIEWS, "a") as rst_out:
+        rst_out.write(iv_rst)
 
 
 def initdb(cur):
@@ -81,7 +85,8 @@ def initdb(cur):
         {C_AQV} text,
         {C_IMV} text,
         {C_FCA} text,
-        {C_OCR} text)
+        {C_OCR} text,
+        {C_FUL} text)
         """
     )
 
@@ -163,6 +168,7 @@ def load_views(cur):
                 i[C_IMV],
                 i[C_FCA],
                 i[C_OCR],
+                i[C_FUL],
             )
             for i in dr
         ]
@@ -179,8 +185,9 @@ def load_views(cur):
         {C_AQV},
         {C_IMV},
         {C_FCA},
-        {C_OCR})
-        VALUES (?,?,?,?,?,?,?,?,?,?,?);""",
+        {C_OCR},
+        {C_FUL})
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?);""",
         to_db,
     )
 
@@ -327,6 +334,18 @@ FROM (
         WHERE ortho_views.view_name LIKE '{view_type}'
     ) as {C_OCR}
 WHERE id = '{C_OCR}';
+-- Full View Name
+UPDATE _temp
+SET code_value = '{PREFIX_SNOMED}' || {C_FUL}.code,
+    meaning = {C_FUL}.meaning
+FROM (
+        SELECT codes_snomed.code,
+            codes_snomed.meaning
+        FROM ortho_views
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_FUL}
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as {C_FUL}
+WHERE id = '{C_FUL}';
 """
     try:
         os.makedirs(PATH_TABLES_GENERATED)
@@ -360,6 +379,10 @@ WHERE id = '{C_OCR}';
     cur.execute("DELETE FROM _temp")
 
 
+def h1(h_text):
+    return h_text + f"\n{'-' * len(h_text)}"
+
+
 def main(args):
     print("Main")
     cur = con.cursor()
@@ -367,9 +390,18 @@ def main(args):
     load_views(cur)
 
     cur2 = con.cursor()
-    for view in cur2.execute(f"SELECT view_name FROM {T_VIEWS}"):
+    with open(RST_INTRAORAL_VIEWS, "w") as rst_int:
+        rst_int_head = """.. _intraoral views:
+
+Intraoral Views
+===============
+"""
+        rst_int.write(rst_int_head)
+
+    for view in cur2.execute(f"SELECT {C_VIE},{C_FUL} FROM {T_VIEWS}"):
         create_view(cur, view[0])
-        iv_print_rst(title="", filename=f"../images/{view[0]}.png", number=view[0])
+        if view[0].startswith('IV'):
+            iv_write_rst(title=view[1], filename=f"../images/{view[0]}.png", number=view[0], example="")
 
     close_connection()
 
