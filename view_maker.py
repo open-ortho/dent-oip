@@ -47,6 +47,8 @@ cur = None
 
 
 def iv_write_rst(title, filename, number, example):
+    """ Write Intraoral Views rst to file.
+    """
     iv_rst = f"""
 {h1(title)}
     
@@ -68,9 +70,25 @@ See section :ref:`primary anatomic structure sequence`
     
 {example}
 """
+    if example != "":
+        example = format_example(example)
     with open(RST_INTRAORAL_VIEWS, "a") as rst_out:
         rst_out.write(iv_rst)
 
+def format_example(example):
+    """ Converts a string of ISO numbered teeth into an RST formatted example text.
+
+    """
+    rs = """Example:
+
+Patient may show the following teeth in this view:
+"""
+    for tooth in example.split("^"):
+        cur.execute(f"SELECT code,meaning from {T_SNOMED} WHERE id = {tooth};")
+        code,code_meaning = cur.fetchall()[0]
+        rs += f"* {tooth} SCT: {code}"
+    
+    return rs
 
 def initdb(cur):
     cur.execute(
@@ -202,6 +220,13 @@ def close_connection():
 
 
 def create_view(cur, view_type):
+    """ Creates the CSV file with attributes and tags for a single view.
+
+    This function will generate the CSV file for the current view_type, which
+    Sphynx will then render into html. Not all columns from the source views.csv
+    file will be imported here. For example, the Full Name or Teeth Example
+    column do not need to be in these tables.
+    """
 
     query_view = f"""
 -- SQLite
@@ -377,11 +402,13 @@ def h1(h_text):
 
 def main(args):
     print("Main")
+    global cur
     cur = con.cursor()
     initdb(cur)
     load_views(cur)
 
     cur2 = con.cursor()
+    # This will overwrite the current rst file with header.
     with open(RST_INTRAORAL_VIEWS, "w") as rst_int:
         rst_int_head = """.. _intraoral views:
 
@@ -390,10 +417,10 @@ Intraoral Views
 """
         rst_int.write(rst_int_head)
 
-    for view in cur2.execute(f"SELECT {C_VIE},{C_FUL} FROM {T_VIEWS}"):
+    for view in cur2.execute(f"SELECT {C_VIE},{C_FUL},{C_THE} FROM {T_VIEWS}"):
         create_view(cur, view[0])
         if view[0].startswith('IV'):
-            iv_write_rst(title=view[1], filename=f"../images/{view[0]}.png", number=view[0], example="")
+            iv_write_rst(title=view[1], filename=f"../images/{view[0]}.png", number=view[0], example=view[2])
 
     close_connection()
 
