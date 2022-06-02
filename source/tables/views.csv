@@ -1,34 +1,34 @@
 view_name,patient_orientation,laterality,anatomic_region_sequence,anatomic_region_modifier_sequnce,primary_anatomic_structure_sequence,device_sequence,acquisition_view,image_view,functional_condition_present_during_acquisition,occlusal_relationship,view_full_name
 IV-01,o_right,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,co,"Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)"
-IV-02,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_uncorrected,mouth_closed,co,
-IV-03,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,co,
-IV-04,o_right,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,cr,
-IV-05,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_uncorrected,mouth_closed,cr,
-IV-06,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,cr,
-IV-07,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_closed,co,
-IV-08,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_closed,cr,
-IV-09,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_open,na,
-IV-10,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_open,na,
-IV-11,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_closed,co,
-IV-12,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_closed,cr,
-IV-13,o_front,l_unpaired,jaw,na,,na,coronal,direct,tongue_thrust,co,
-IV-14,o_right,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,co,
-IV-15,o_right,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,cr,
-IV-16,o_left,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,co,
-IV-17,o_left,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,cr,
-IV-18,o_left,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,co,
-IV-19,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,,mouth_closed,co,
-IV-20,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,cr,
-IV-21,o_left,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,cr,
-IV-22,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,,mouth_closed,cr,
-IV-23,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,cr,
-IV-24,o_bottom,l_unpaired,jaw,na,,mirror,occlusal,,mouth_open,na,
-IV-25,o_left_posterior,l_unpaired,jaw,na,,mirror,occlusal,mirror_corrected,mouth_open,na,
-IV-26,o_left_posterior,l_unpaired,jaw,na,,mirror,occlusal,,mouth_open,na,
-IV-27,o_left_anterior,l_unpaired,jaw,na,,mirror,occlusal,mirror_corrected,mouth_open,na,
-IV-28,?,l_unpaired,jaw,na,,na,na,direct,gingival_recession,na,
-IV-29,o_front,l_unpaired,jaw,na,,na,na,direct,frenum,na,
-IV-30,?,l_unpaired,jaw,na,,,na,,mouth_open,na,
+IV-02,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_uncorrected,mouth_closed,co,"Intraoral Right Buccal Segment – Centric Occlusion, With Mirror"
+IV-03,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,co,"Intraoral Right Buccal Segment – Centric Occlusion, With Mirror But Corrected"
+IV-04,o_right,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,cr,"Intraoral, Right Buccal Segment, Centric Relation, Without Mirror"
+IV-05,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_uncorrected,mouth_closed,cr,"Intraoral Right Buccal Segment – Centric Relation, With Mirror"
+IV-06,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,cr,"Intraoral Right Buccal Segment – Centric Relation, With Mirror But Corrected"
+IV-07,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_closed,co,"Intraoral Frontal View - Centric Occlusion, Without Mirror"
+IV-08,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_closed,cr,"Intraoral Frontal View - Centric Relation, Without Mirror"
+IV-09,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_open,na,"Intraoral Frontal View – Teeth Apart, Without Mirror"
+IV-10,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_open,na,"Intraoral Frontal View – Mouth Open, Without Mirror"
+IV-11,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_closed,co,"Intraoral Frontal View Inferior (showing depth of bite and overjet) – Centric Occlusion, Without Mirror"
+IV-12,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_closed,cr,"Intraoral Frontal View Inferior (showing depth of bite and overjet) – Centric Relation, Without Mirror"
+IV-13,o_front,l_unpaired,jaw,na,,na,coronal,direct,tongue_thrust,co,"Intraoral, Frontal View, showing Tongue Thrust, Without Mirror"
+IV-14,o_right,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,co,"Intraoral Right Lateral View – Centric Occlusion, Showing Overjet Without Mirror"
+IV-15,o_right,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,cr,"Intraoral Right Lateral View – Centric Relation, Showing Overjet Without Mirror"
+IV-16,o_left,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,co,"Intraoral Left Lateral View - Centric Occlusion showing Overjet, Without Mirror"
+IV-17,o_left,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,cr,"Intraoral Left Lateral View - Centric Relation showing Overjet, Without Mirror"
+IV-18,o_left,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,co,"Intraoral Left Buccal Segment – Centric Occlusion, Without Mirror"
+IV-19,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,,mouth_closed,co,"Intraoral Left Buccal Segment – Centric Occlusion, With Mirror"
+IV-20,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,cr,"Intraoral Left Buccal Segment – Centric Occlusion, With Mirror But Corrected"
+IV-21,o_left,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,cr,"Intraoral Left Buccal Segment – Centric Relation, Without Mirror"
+IV-22,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,,mouth_closed,cr,"Intraoral Left Buccal Segment - Centric Relation, With Mirror"
+IV-23,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,cr,"Intraoral Left Buccal Segment – Centric Relation, With Mirror But Corrected"
+IV-24,o_bottom,l_unpaired,jaw,na,,mirror,occlusal,,mouth_open,na,"Intraoral Maxillary Occlusal View – Mouth Open, With Mirror"
+IV-25,o_left_posterior,l_unpaired,jaw,na,,mirror,occlusal,mirror_corrected,mouth_open,na,"Intraoral Maxillary Occlusal View – Mouth Open, With Mirror But Corrected"
+IV-26,o_left_posterior,l_unpaired,jaw,na,,mirror,occlusal,,mouth_open,na,"Intraoral Mandibular Occlusal View – Mouth Open, With Mirror"
+IV-27,o_left_anterior,l_unpaired,jaw,na,,mirror,occlusal,mirror_corrected,mouth_open,na,"Intraoral Mandibular Occlusal View – Mouth Open, With Mirror But Corrected"
+IV-28,?,l_unpaired,jaw,na,,na,na,direct,gingival_recession,na,Intraoral – showing Gingival Recession (ISO tooth numbers)
+IV-29,o_front,l_unpaired,jaw,na,,na,na,direct,frenum,na,Intraoral – showing Frenum (ISO tooth numbers)
+IV-30,?,l_unpaired,jaw,na,,,na,,mouth_open,na,"Intraoral, any photo using a photo accessory device such as a contraster to provide a solid background or black mirror ([modifier] is any set of IO modifier as specified above)"
 EO-01,o_right,l_unpaired,face,right,,,sagittal,direct,lips_relaxed,co,
 EO-02,,l_unpaired,,,,,,,,,
 EO-03,,l_unpaired,,,,,,,,,
