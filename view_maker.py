@@ -338,30 +338,6 @@ FROM (
         WHERE ortho_views.view_name LIKE '{view_type}'
     ) as {C_OCR}
 WHERE id = '{C_OCR}';
--- Full View Name
-UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || {C_FUL}.code,
-    meaning = {C_FUL}.meaning
-FROM (
-        SELECT codes_snomed.code,
-            codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_FUL}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_FUL}
-WHERE id = '{C_FUL}';
--- Teeth Examples
-UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || {C_THE}.code,
-    meaning = {C_THE}.meaning
-FROM (
-        SELECT codes_snomed.code,
-            codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_THE}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_THE}
-WHERE id = '{C_THE}';
 """
     try:
         os.makedirs(PATH_TABLES_GENERATED)
