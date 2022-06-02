@@ -47,7 +47,7 @@ cur = None
 
 
 def iv_write_rst(title, filename, number, example):
-    """ Write Intraoral Views rst to file.
+    """ Write Intraoral Views to RestructuredText file.
     """
     if example != "":
         example = format_example(example)
@@ -78,8 +78,8 @@ See section :ref:`primary anatomic structure sequence`
 
 def format_example(example):
     """ Converts a string of ISO numbered teeth into an RST formatted example text.
-
     """
+
     rs = """Example:
 
 Patient may show the following teeth in this view:
