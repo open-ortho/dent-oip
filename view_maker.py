@@ -40,6 +40,7 @@ C_IMV = "image_view"
 C_FCA = "functional_condition_present_during_acquisition"
 C_OCR = "occlusal_relationship"
 C_FUL = "view_full_name"
+C_THE = "teeth_example"
 
 con = sqlite3.connect(DBFILE)
 cur = None
@@ -86,7 +87,8 @@ def initdb(cur):
         {C_IMV} text,
         {C_FCA} text,
         {C_OCR} text,
-        {C_FUL} text)
+        {C_FUL} text,
+        {C_THE} text)
         """
     )
 
@@ -169,6 +171,7 @@ def load_views(cur):
                 i[C_FCA],
                 i[C_OCR],
                 i[C_FUL],
+                i[C_THE],
             )
             for i in dr
         ]
@@ -186,8 +189,9 @@ def load_views(cur):
         {C_IMV},
         {C_FCA},
         {C_OCR},
-        {C_FUL})
-        VALUES (?,?,?,?,?,?,?,?,?,?,?,?);""",
+        {C_FUL},
+        {C_THE})
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);""",
         to_db,
     )
 
@@ -346,6 +350,18 @@ FROM (
         WHERE ortho_views.view_name LIKE '{view_type}'
     ) as {C_FUL}
 WHERE id = '{C_FUL}';
+-- Teeth Examples
+UPDATE _temp
+SET code_value = '{PREFIX_SNOMED}' || {C_THE}.code,
+    meaning = {C_THE}.meaning
+FROM (
+        SELECT codes_snomed.code,
+            codes_snomed.meaning
+        FROM ortho_views
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_THE}
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as {C_THE}
+WHERE id = '{C_THE}';
 """
     try:
         os.makedirs(PATH_TABLES_GENERATED)
