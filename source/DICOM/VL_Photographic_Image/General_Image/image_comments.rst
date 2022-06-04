@@ -15,11 +15,11 @@ where:
 
 ``num``: is the view number, for example EV01
 
-``code``: is the view code, for example EO.RP.LR.CO
+``code``: is the view code, for example EV.RP.LR.CO
 
 ``meaning``: is the code meaning, for example Extraoral, Right Profile
 (subject is facing observer's right), Lips Relaxed, Centric Occlusion
 
 An example:
 
-``EV02^EO.RP.LR.CR^Extraoral, Right Profile (subject is facing observer's right), Lips Relaxed, Centric Relation``
+``EV02^EV.RP.LR.CR^Extraoral, Right Profile (subject is facing observer's right), Lips Relaxed, Centric Relation``

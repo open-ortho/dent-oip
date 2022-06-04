@@ -46,8 +46,45 @@ con = sqlite3.connect(DBFILE)
 cur = None
 
 
+def ev_write_rst(title, filename, number, example):
+    """ Write Extraoral Views to RestructuredText file.
+    
+    This function is very similar to iv_write_rst and has been kept separate on
+    purpose, to allow for customization.
+    """
+    if example != "":
+        example = format_example(example)
+
+    ev_rst = f"""
+{h1(title)}
+    
+.. image:: {filename}
+    :class: with-border
+    :align: center
+    :alt: Line drawing of {title}
+    
+    
+.. csv-table:: {number}
+   :file: ../tables/generated/{number}.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+    
+    
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+    
+See section :ref:`primary anatomic structure sequence`
+    
+{example}
+"""
+    with open(RST_EXTRAORAL_VIEWS, "a") as rst_out:
+        rst_out.write(ev_rst)
+
 def iv_write_rst(title, filename, number, example):
     """ Write Intraoral Views to RestructuredText file.
+
+    This function is very similar to ev_write_rst and has been kept separate on
+    purpose, to allow for customization.
     """
     if example != "":
         example = format_example(example)
@@ -412,18 +449,28 @@ def main(args):
 
     cur2 = con.cursor()
     # This will overwrite the current rst file with header.
-    with open(RST_INTRAORAL_VIEWS, "w") as rst_int:
-        rst_int_head = """.. _intraoral views:
+    with open(RST_INTRAORAL_VIEWS, "w") as rst_iv:
+        rst_iv_head = """.. _intraoral views:
 
 Intraoral Views
 ===============
 """
-        rst_int.write(rst_int_head)
+        rst_iv.write(rst_iv_head)
+
+    with open(RST_EXTRAORAL_VIEWS, "w") as rst_ev:
+        rst_ev_head = """.. _extraoral views:
+
+Extraoral Views
+===============
+"""
+        rst_ev.write(rst_ev_head)
 
     for view in cur2.execute(f"SELECT {C_VIE},{C_FUL},{C_THE} FROM {T_VIEWS}"):
         create_view(cur, view[0])
         if view[0].startswith('IV'):
             iv_write_rst(title=view[1], filename=f"../images/{view[0]}.png", number=view[0], example=view[2])
+        if view[0].startswith('EV'):
+            ev_write_rst(title=view[1], filename=f"../images/{view[0]}.png", number=view[0], example=view[2])
 
     close_connection()
 

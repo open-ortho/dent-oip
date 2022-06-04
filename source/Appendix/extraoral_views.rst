@@ -165,7 +165,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Fo    |       |       |       |       |       |       |       |       |
 |    |       | rward |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 8  | EO.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Lips  | Ce    |
+| 8  | EV.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Lips  | Ce    |
 |    | P.LR. | Right |       | SCT:  | SCT:  | se    | SCT:  | irect | rel   | ntric |
 |    | CO.45 | Pr    |       | 3025  | 240   | ction | 7876  | SCT:  | axed: | occl  |
 |    |       | ofile |       | 49007 | 28007 | *Pr   | 12006 | 2555  | SCT:  | usion |
@@ -187,7 +187,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Occl  |       |       |       |       |       |       |       |       |
 |    |       | usion |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 9  | EO.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Lips  | Ce    |
+| 9  | EV.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Lips  | Ce    |
 |    | P.LR. | Right |       | SCT:  | SCT:  | se    | SCT:  | irect | rel   | ntric |
 |    | CR.45 | Pr    |       | 3025  | 240   | ction | 7876  | SCT:  | axed: | rel   |
 |    |       | ofile |       | 49007 | 28007 | *Pr   | 12006 | 2555  | SCT:  | ation |
@@ -209,7 +209,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Rel   |       |       |       |       |       |       |       |       |
 |    |       | ation |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 10 | EO.L  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Lips  | Ce    |
+| 10 | EV.L  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Lips  | Ce    |
 |    | P.LC. | Right |       | SCT:  | SCT:  | se    | SCT:  | irect | c     | ntric |
 |    | CO.45 | Pr    |       | 3025  | 240   | ction | 78761 | SCT:  | losed | occl  |
 |    |       | ofile |       | 49007 | 28007 | *Pr   | 2006° | 2555  | SCT:  | usion |
@@ -231,7 +231,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Occl  |       |       |       |       |       |       |       |       |
 |    |       | usion |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 11 | EO.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Lips  | Ce    |
+| 11 | EV.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Lips  | Ce    |
 |    | P.LC. | Right |       | SCT:  | SCT:  | se    | SCT:  | irect | c     | ntric |
 |    | CR.45 | Pr    |       | 3025  | 240   | ction | 78761 | SCT:  | losed | rel   |
 |    |       | ofile |       | 49007 | 28007 | *Pr   | 2006° | 2555  | SCT:  | ation |
@@ -253,7 +253,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Rel   |       |       |       |       |       |       |       |       |
 |    |       | ation |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 12 | EO.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Smile | Ce    |
+| 12 | EV.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Smile | Ce    |
 |    | P.FS. | Right |       | SCT:  | SCT:  | se    | SCT:  | irect | SCT:  | ntric |
 |    | CO.45 | Pr    |       | 3025  | 240   | ction | 7876  | SCT:  | 2255  | occl  |
 |    |       | ofile |       | 49007 | 28007 | *Pr   | 12006 | 2555  | 83004 | usion |
@@ -275,7 +275,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Occl  |       |       |       |       |       |       |       |       |
 |    |       | usion |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 13 | EO.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Smile | Ce    |
+| 13 | EV.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Smile | Ce    |
 |    | P.FS. | Right |       | SCT:  | SCT:  | se    | SCT:  | irect | SCT:  | ntric |
 |    | CR.45 | Pr    |       | 3025  | 240   | ction | 7876  | SCT:  | 2255  | rel   |
 |    |       | ofile |       | 49007 | 28007 | *Pr   | 12006 | 2555  | 83004 | ation |
@@ -296,7 +296,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Rel   |       |       |       |       |       |       |       |       |
 |    |       | ation |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 14 | EO.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Man   | Null  |
+| 14 | EV.R  | 45°   | "U"   | Face  | Right | (See  | 45°   | D     | Man   | Null  |
 |    | P.MD. | Right |       | SCT:  | SCT:  | se    | SCT:  | irect | dible | SCT:  |
 |    | PF.45 | Pr    |       | 3025  | 240   | ction | 7876  | SCT:  | pos   | 2767  |
 |    |       | ofile |       | 49007 | 28007 | *Pr   | 12006 | 2555  | tured | 27009 |
@@ -745,7 +745,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Fo    |       |       |       |       |       |       |       |       |
 |    |       | rward |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 29 | EO.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Lips  | Ce    |
+| 29 | EV.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Lips  | Ce    |
 |    | P.LR. | Left  |       | SCT:  | SCT:  | se    | SCT:  | irect | rel   | ntric |
 |    | CO.45 | Pr    |       | 3025  | 77    | ction | 7876  | SCT:  | axed: | occl  |
 |    |       | ofile |       | 49007 | 71000 | *Pr   | 12006 | 2555  | SCT:  | usion |
@@ -766,7 +766,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Occl  |       |       |       |       |       |       |       |       |
 |    |       | usion |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 30 | EO.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Lips  | Ce    |
+| 30 | EV.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Lips  | Ce    |
 |    | P.LR. | Left  |       | SCT:  | SCT:  | se    | SCT:  | irect | rel   | ntric |
 |    | CR.45 | Pr    |       | 3025  | 77    | ction | 7876  | SCT:  | axed: | rel   |
 |    |       | ofile |       | 49007 | 71000 | *Pr   | 12006 | 2555  | SCT:  | ation |
@@ -787,7 +787,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Rel   |       |       |       |       |       |       |       |       |
 |    |       | ation |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 31 | EO.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Lips  | Ce    |
+| 31 | EV.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Lips  | Ce    |
 |    | P.LC. | Left  |       | SCT:  | SCT:  | se    | SCT:  | irect | c     | ntric |
 |    | CO.45 | Pr    |       | 3025  | 77    | ction | 7876  | SCT:  | losed | occl  |
 |    |       | ofile |       | 49007 | 71000 | *Pr   | 12006 | 2555  | SCT:  | usion |
@@ -808,7 +808,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Occl  |       |       |       |       |       |       |       |       |
 |    |       | usion |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 32 | EO.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Lips  | Ce    |
+| 32 | EV.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Lips  | Ce    |
 |    | P.LC. | Left  |       | SCT:  | SCT:  | se    | SCT:  | irect | c     | ntric |
 |    | CR.45 | Pr    |       | 3025  | 77    | ction | 7876  | SCT:  | losed | rel   |
 |    |       | ofile |       | 49007 | 71000 | *Pr   | 12006 | 2555  | SCT:  | ation |
@@ -829,7 +829,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Rel   |       |       |       |       |       |       |       |       |
 |    |       | ation |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 33 | EO.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Smile | Ce    |
+| 33 | EV.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Smile | Ce    |
 |    | P.FS. | Left  |       | SCT:  | SCT:  | se    | SCT:  | irect | SCT:  | ntric |
 |    | CO.45 | Pr    |       | 3025  | 77    | ction | 7876  | SCT:  | 2255  | occl  |
 |    |       | ofile |       | 49007 | 71000 | *Pr   | 12006 | 2555  | 83004 | usion |
@@ -850,7 +850,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Occl  |       |       |       |       |       |       |       |       |
 |    |       | usion |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 34 | EO.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Smile | Ce    |
+| 34 | EV.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | Smile | Ce    |
 |    | P.FS. | Left  |       | SCT:  | SCT:  | se    | SCT:  | irect | SCT:  | ntric |
 |    | CR.45 | Pr    |       | 3025  | 77    | ction | 7876  | SCT:  | 2255  | rel   |
 |    |       | ofile |       | 49007 | 71000 | *Pr   | 12006 | 2555  | 83004 | ation |
@@ -870,7 +870,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | Rel   |       |       |       |       |       |       |       |       |
 |    |       | ation |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 35 | EO.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | *Both | Null  |
+| 35 | EV.L  | 45°   | "U"   | Face  | Left  | (See  | 45°   | D     | *Both | Null  |
 |    | P.MD. | Left  |       | SCT:  | SCT:  | se    | SCT:  | irect | must  | SCT:  |
 |    | PF.45 | Pr    |       | 3025  | 77    | ction | 7876  | SCT:  | be    | 2767  |
 |    |       | ofile |       | 49007 | 71000 | *Pr   | 12006 | 2555  | s     | 27009 |
@@ -898,7 +898,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       |       |       |       |       |       |       |       | 78761 |       |
 |    |       |       |       |       |       |       |       |       | 1004* |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 36 | EO.   | Other | "U"   | Face  | Right | (See  | Co    | D     | Inf   | Ce    |
+| 36 | EV.   | Other | "U"   | Face  | Right | (See  | Co    | D     | Inf   | Ce    |
 |    | OF.IV | Face  |       | SCT:  | and   | se    | ronal | irect | erior | ntric |
 |    |       | (head |       | 3025  | Left  | ction | (Fro  | SCT:  | view  | rel   |
 |    |       | t     |       | 49007 | SCT:  | *Pr   | ntal) | 2555  | 2610  | ation |
@@ -929,7 +929,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | cont  |       |       |       |       |       |       |       |       |
 |    |       | ours) |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 37 | EO.   | Other | "U"   | Face  | Right | (See  | Co    | D     | Sup   | Ce    |
+| 37 | EV.   | Other | "U"   | Face  | Right | (See  | Co    | D     | Sup   | Ce    |
 |    | OF.SV | Face  |       | SCT:  | and   | se    | ronal | irect | erior | ntric |
 |    |       | (v    |       | 3025  | Left  | ction | (Fro  | SCT:  | view  | rel   |
 |    |       | iewed |       | 49007 | SCT:  | *Pr   | ntal) | 2555  | 2642  | ation |
@@ -958,7 +958,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       | lip,  |       |       |       |       |       |       |       |       |
 |    |       | chin) |       |       |       |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 38 | EO.   | Other | "U"   | Oral  | -     | (See  | Co    | D     | Smile | Ce    |
+| 38 | EV.   | Other | "U"   | Oral  | -     | (See  | Co    | D     | Smile | Ce    |
 |    | OF.CS | Face  |       | r     | Right | se    | ronal | irect | SCT:  | ntric |
 |    |       | -     |       | egion |       | ction | (Fro  | SCT:  | 2255  | rel   |
 |    |       | Clo   |       | SCT:  |   and | *Pr   | ntal) | 2555  | 83004 | ation |
@@ -1072,7 +1072,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       |       |       |       |       | 24563 |       |       |       |       |
 |    |       |       |       |       |       | 2003* |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 39 | EO.   | Other | "U"   | Face  | -     | (See  | Co    | D     | Lips  | Cant  |
+| 39 | EV.   | Other | "U"   | Face  | -     | (See  | Co    | D     | Lips  | Cant  |
 |    | OF.OC | Face  |       | SCT:  | Right | se    | ronal | irect | rel   | of    |
 |    |       | -     |       | 3025  |       | ction | (Fro  | SCT:  | axed: | occ   |
 |    |       | Occ   |       | 49007 |   and | *Pr   | ntal) | 2555  | SCT:  | lusal |
@@ -1093,7 +1093,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       |       |       |       | 78913 |       |       |       |       |       |
 |    |       |       |       |       | 1009* |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 40 | EO.   | Other | "U"   | Face  | One   | (See  | One   | D     | Null  | Null  |
+| 40 | EV.   | Other | "U"   | Face  | One   | (See  | One   | D     | Null  | Null  |
 |    | OF.FI | Face  |       | SCT:  | of:   | se    | of:   | irect | SCT:  | SCT:  |
 |    |       | -     |       | 3025  |       | ction |       | SCT:  | 2767  | 2767  |
 |    |       | For   |       | 49007 | -     | *Pr   | -  Co | 2555  | 27009 | 27009 |
@@ -1132,7 +1132,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       |       |       |       | 78913 |       |       |       |       |       |
 |    |       |       |       |       | 1009* |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 41 | EO.   | Other | "U"   | Face  | One   | (See  | One   | D     | Null  | Null  |
+| 41 | EV.   | Other | "U"   | Face  | One   | (See  | One   | D     | Null  | Null  |
 |    | OF.AN | Face  |       | SCT:  | of:   | se    | of:   | irect | SCT:  | SCT:  |
 |    |       | -     |       | 3025  |       | ction |       | SCT:  | 2767  | 2767  |
 |    |       | Anom  |       | 49007 | -     | *Pr   | -  Co | 2555  | 27009 | 27009 |
@@ -1171,7 +1171,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       |       |       |       | 78913 |       |       |       |       |       |
 |    |       |       |       |       | 1009* |       |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 42 | EO.   | Full  | "U"   | Face  | Right | (See  | Co    | D     | Open  | Null  |
+| 42 | EV.   | Full  | "U"   | Face  | Right | (See  | Co    | D     | Open  | Null  |
 |    | FF.MO | Face  |       | SCT:  | and   | se    | ronal | irect | Mouth | SCT:  |
 |    |       | –     |       | 3025  | Left  | ction | (Fro  | SCT:  | SCT:  | 2767  |
 |    |       | Mouth |       | 49007 | SCT:  | *Pr   | ntal) | 2555  | 2620  | 27009 |
@@ -1183,7 +1183,7 @@ sets by selecting the desired views and the applicable SNOMED CT codes.
 |    |       |       |       |       |       | Seque |       |       |       |       |
 |    |       |       |       |       |       | nce*) |       |       |       |       |
 +----+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
-| 43 | EO.   | Full  | "U"   | Face  | One   | (See  | Co    | D     | F     | Null  |
+| 43 | EV.   | Full  | "U"   | Face  | One   | (See  | Co    | D     | F     | Null  |
 |    | FF.NW | Face  |       | SCT:  | of:   | se    | ronal | irect | acial | SCT:  |
 |    |       | –     |       | 3025  |       | ction | (Fro  | SCT:  | pa    |       |
 |    |       | dem   |       | 49007 | -     | *Pr   | ntal) | 2555  | lsy/B |       |
