@@ -258,6 +258,34 @@ def close_connection():
     con.commit()
     con.close()
 
+def query_add_attribute(column,view_type):
+    return f"""
+UPDATE _temp
+SET code_value = {column}.code,
+    meaning = {column}.meaning
+FROM (
+        SELECT codes_dicom.code,
+            codes_dicom.meaning
+        FROM ortho_views
+            INNER JOIN codes_dicom ON codes_dicom.id = ortho_views.{column}
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as {column}
+WHERE id = '{column}';
+    """
+
+def query_add_snomed_code(column,view_type):
+    return f"""UPDATE _temp
+SET code_value = {column}.code,
+    meaning = {column}.meaning
+FROM (
+        SELECT codes_snomed.code,
+            codes_snomed.meaning
+        FROM ortho_views
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{column}
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as {column}
+WHERE id = '{column}';
+"""
 
 def create_view(cur, view_type):
     """ Creates the CSV file with attributes and tags for a single view.
@@ -283,126 +311,6 @@ SELECT id,
     attribute_name,
     tag
 FROM tags_dicom;
--- Patient Orientation
-UPDATE _temp
-SET code_value = {C_POR}.code,
-    meaning = {C_POR}.meaning
-FROM (
-        SELECT codes_dicom.code,
-            codes_dicom.meaning
-        FROM ortho_views
-            INNER JOIN codes_dicom ON codes_dicom.id = ortho_views.{C_POR}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_POR}
-WHERE id = '{C_POR}';
--- Laterality
-UPDATE _temp
-SET code_value = {C_LAT}.code,
-    meaning = {C_LAT}.meaning
-FROM (
-        SELECT codes_dicom.code,
-            codes_dicom.meaning
-        FROM ortho_views
-            INNER JOIN codes_dicom ON codes_dicom.id = ortho_views.{C_LAT}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_LAT}
-WHERE id = '{C_LAT}';
--- Anatomic Region Sequence
-UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || {C_ARS}.code,
-    meaning = {C_ARS}.meaning
-FROM (
-        SELECT codes_snomed.code,
-            codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_ARS}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_ARS}
-WHERE id = '{C_ARS}';
--- Anatomic Region Modifier Sequence
-UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || {C_ARM}.code,
-    meaning = {C_ARM}.meaning
-FROM (
-        SELECT codes_snomed.code,
-            codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_ARM}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_ARM}
-WHERE id = '{C_ARM}';
--- Primary Anatomic Structure Sequence
-UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || {C_PAM}.code,
-    meaning = {C_PAM}.meaning
-FROM (
-        SELECT codes_snomed.code,
-            codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_PAM}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_PAM}
-WHERE id = '{C_PAM}';
--- Device Sequence
-UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || {C_DEV}.code,
-    meaning = {C_DEV}.meaning
-FROM (
-        SELECT codes_snomed.code,
-            codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_DEV}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_DEV}
-WHERE id = '{C_DEV}';
--- Acquisition View
-UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || {C_AQV}.code,
-    meaning = {C_AQV}.meaning
-FROM (
-        SELECT codes_snomed.code,
-            codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_AQV}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_AQV}
-WHERE id = '{C_AQV}';
--- Image View
-UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || {C_IMV}.code,
-    meaning = {C_IMV}.meaning
-FROM (
-        SELECT codes_snomed.code,
-            codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_IMV}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_IMV}
-WHERE id = '{C_IMV}';
--- Functional Condition Present During Acquisition
-UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || {C_FCA}.code,
-    meaning = {C_FCA}.meaning
-FROM (
-        SELECT codes_snomed.code,
-            codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_FCA}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_FCA}
-WHERE id = '{C_FCA}';
--- Occlusal Relationship
-UPDATE _temp
-SET code_value = '{PREFIX_SNOMED}' || {C_OCR}.code,
-    meaning = {C_OCR}.meaning
-FROM (
-        SELECT codes_snomed.code,
-            codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{C_OCR}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {C_OCR}
-WHERE id = '{C_OCR}';
 """
     try:
         os.makedirs(PATH_TABLES_GENERATED)
@@ -414,6 +322,17 @@ WHERE id = '{C_OCR}';
         cur.executescript(query_view)
         # TODO: Here i need to split the ^-separated items in the sequences, to
         # add more rows for the sequences, like in DICOM documentation.
+        cur.executescript(query_add_attribute(C_POR,view_type))
+        cur.executescript(query_add_attribute(C_LAT,view_type))
+        cur.executescript(query_add_snomed_code(C_ARS,view_type))
+        cur.executescript(query_add_snomed_code(C_ARM,view_type))
+        cur.executescript(query_add_snomed_code(C_PAM,view_type))
+        cur.executescript(query_add_snomed_code(C_DEV,view_type))
+        cur.executescript(query_add_snomed_code(C_AQV,view_type))
+        cur.executescript(query_add_snomed_code(C_IMV,view_type))
+        cur.executescript(query_add_snomed_code(C_FCA,view_type))
+        cur.executescript(query_add_snomed_code(C_OCR,view_type))
+
     except sqlite3.OperationalError as e:
         print("An error occured: ", e)
         print(query_view)
