@@ -24,7 +24,7 @@ IV-22,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,,mouth_closed,cr,"Intraoral
 IV-23,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,cr,"Intraoral Left Buccal Segment – Centric Relation, With Mirror But Corrected",64^65^26^74^75^36
 IV-24,o_bottom,l_unpaired,jaw,na,,mirror,occlusal,,mouth_open,na,"Intraoral Maxillary Occlusal View – Mouth Open, With Mirror",11^12^53^54^55^16^21^22^63^64^65^26
 IV-25,o_left_posterior,l_unpaired,jaw,na,,mirror,occlusal,mirror_corrected,mouth_open,na,"Intraoral Maxillary Occlusal View – Mouth Open, With Mirror But Corrected",11^12^13^14^15^16^17^18^21^22^23^24^25^26^27^28
-IV-26,o_left_posterior,l_unpaired,jaw,na,,mirror,occlusal,,mouth_open,na,"Intraoral Mandibular Occlusal View – Mouth Open, With Mirror",71^72^73^74^81^82^83^84^85
+IV-26,o_left_posterior,l_unpaired,jaw,na,,mirror,occlusal,,mouth_open,na,"Intraoral Mandibular Occlusal View – Mouth Open, With Mirror",71^72^73^74^75^81^82^83^84^85
 IV-27,o_left_anterior,l_unpaired,jaw,na,,mirror,occlusal,mirror_corrected,mouth_open,na,"Intraoral Mandibular Occlusal View – Mouth Open, With Mirror But Corrected",31^32^73^74^75^36^41^42^83^84^85^46
 IV-28,?,l_unpaired,jaw,na,,na,na,direct,gingival_recession,na,Intraoral – showing Gingival Recession (ISO tooth numbers),
 IV-29,o_front,l_unpaired,jaw,na,,na,na,direct,frenum,na,Intraoral – showing Frenum (ISO tooth numbers),
