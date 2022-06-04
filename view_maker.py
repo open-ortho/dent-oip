@@ -55,10 +55,10 @@ def iv_write_rst(title, filename, number, example):
     iv_rst = f"""
 {h1(title)}
     
-.. figure:: {filename}
-	:class: with-border
-    :figwidth: 100%
-	:alt: Line drawing of {title}
+.. image:: {filename}
+    :class: with-border
+    :align: center
+    :alt: Line drawing of {title}
     
     
 .. csv-table:: {number}
