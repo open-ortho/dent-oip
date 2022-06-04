@@ -57,6 +57,7 @@ def iv_write_rst(title, filename, number, example):
     
 .. figure:: {filename}
 	:class: with-border
+    :figwidth: 100%
 	:alt: Line drawing of {title}
     
     
