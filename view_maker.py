@@ -287,6 +287,29 @@ FROM (
 WHERE id = '{column}';
 """
 
+def query_insert_sequence(column,view_type):
+    return f"""
+INSERT INTO _temp (id, attribute_name, tag)
+SELECT id,
+    attribute_name,
+    tag
+FROM tags_dicom
+WHERE
+    id = {column};
+    
+INSERT INTO _temp ()
+SET code_value = {column}.code,
+    meaning = {column}.meaning
+FROM (
+        SELECT codes_snomed.code,
+            codes_snomed.meaning
+        FROM ortho_views
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{column}
+        WHERE ortho_views.view_name LIKE '{view_type}'
+    ) as {column}
+WHERE id = '{column}';
+"""
+
 def create_view(cur, view_type):
     """ Creates the CSV file with attributes and tags for a single view.
 
