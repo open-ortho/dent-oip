@@ -4,6 +4,7 @@
 
 VIEWSDB = views.db
 GENERATED_TABLES = source/tables/generated
+INTRAORAL_VIEWS = source/Appendix/intraoral_views.rst
 
 PIPENV = python3 -m pipenv
 VIEWBUILDER = $(PIPENV) run python3 ./view_maker.py
@@ -32,11 +33,11 @@ help:
 genereted_tables:
 	rm -f $(VIEWSDB)
 	$(VIEWBUILDER)
-	rm $(VIEWSDB)
+	rm $(VIEWSDB) 
 
 clean:
 	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)"
-	rm -f "$(VIEWSDB)" 
+	rm -f "$(VIEWSDB)" "$(INTRAORAL_VIEWS)"
 
 deploy: html docx
 	cp htaccess "$(BUILDDIR)/.htaccess"
