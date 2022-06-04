@@ -410,7 +410,10 @@ WHERE id = '{C_OCR}';
         pass
     output_file = os.path.join(PATH_TABLES_GENERATED, view_type + ".csv")
     try:
+        # Create the single tables for each view.
         cur.executescript(query_view)
+        # TODO: Here i need to split the ^-separated items in the sequences, to
+        # add more rows for the sequences, like in DICOM documentation.
     except sqlite3.OperationalError as e:
         print("An error occured: ", e)
         print(query_view)
