@@ -265,6 +265,14 @@ def close_connection():
 
 def query_add_attribute(column,view_type):
     return f"""
+INSERT INTO _temp (id, attribute_name, tag)
+SELECT id,
+    attribute_name,
+    tag
+FROM tags_dicom
+WHERE
+    id = '{column}';
+
 UPDATE _temp
 SET code_value = {column}.code,
     meaning = {column}.meaning
@@ -368,7 +376,6 @@ FROM (
     ) AS tags_dicom
 WHERE id = '{column + "_coding_scheme_version"}';
 """
-    print(qs)
     return qs
 
 def create_view(cur, view_type):
@@ -389,12 +396,6 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
     code_value text,
     meaning text
 );
---
-INSERT INTO _temp (id, attribute_name, tag)
-SELECT id,
-    attribute_name,
-    tag
-FROM tags_dicom;
 """
     try:
         os.makedirs(PATH_TABLES_GENERATED)
