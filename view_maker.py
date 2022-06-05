@@ -403,23 +403,24 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
         pass
     output_file = os.path.join(PATH_TABLES_GENERATED, view_type + ".csv")
     cur.executescript(query_view)
+    cur2 = con.cursor()
     # Create the single tables for each view.
     # TODO: Here i need to split the ^-separated items in the sequences, to
     # add more rows for the sequences, like in DICOM documentation.
     cur.executescript(query_add_attribute(C_POR,view_type))
     cur.executescript(query_add_attribute(C_LAT,view_type))
-    for ars in cur.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        cur.executescript(query_insert_sequence(column=C_ARS,code_id=ars))
-    for arm in cur.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        cur.executescript(query_insert_sequence(column=C_ARM,code_id=arm))
-    for pam in cur.execute(f"SELECT {C_PAM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        cur.executescript(query_insert_sequence(column=C_PAM,code_id=pam))
-    for dev in cur.execute(f"SELECT {C_DEV} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        cur.executescript(query_insert_sequence(column=C_DEV,code_id=dev))
+    for ars in cur2.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        if len(ars) > 0: cur.executescript(query_insert_sequence(column=C_ARS,code_id=ars))
+    for arm in cur2.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        if len(arm) > 0: cur.executescript(query_insert_sequence(column=C_ARM,code_id=arm))
+    for pam in cur2.execute(f"SELECT {C_PAM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        if len(pam) > 0: cur.executescript(query_insert_sequence(column=C_PAM,code_id=pam))
+    for dev in cur2.execute(f"SELECT {C_DEV} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        if len(dev) > 0: cur.executescript(query_insert_sequence(column=C_DEV,code_id=dev))
     cur.executescript(query_add_snomed_code(C_AQV,view_type))
     cur.executescript(query_add_snomed_code(C_IMV,view_type))
-    for fca in cur.execute(f"SELECT {C_FCA} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        cur.executescript(query_insert_sequence(column=C_FCA,code_id=fca))
+    for fca in cur2.execute(f"SELECT {C_FCA} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        if len(fca) > 0: cur.executescript(query_insert_sequence(column=C_FCA,code_id=fca))
     cur.executescript(query_add_snomed_code(C_OCR,view_type))
     # except sqlite3.OperationalError as e:
     #     print("An error occured: ", e)
