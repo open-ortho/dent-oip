@@ -19,7 +19,7 @@ PATH_TABLES = os.path.join(".", "source", "tables")
 PATH_APPENDIX = os.path.join(".", "source", "Appendix")
 PATH_TABLES_GENERATED = os.path.join(PATH_TABLES, "generated")
 RST_INTRAORAL_VIEWS = os.path.join(PATH_APPENDIX, "intraoral_views.rst")
-RST_EXTRAORAL_VIEWS = os.path.join(PATH_APPENDIX, "extraoral_views_gen.rst")
+RST_EXTRAORAL_VIEWS = os.path.join(PATH_APPENDIX, "extraoral_views.rst")
 CSV_SNOMED = os.path.join(PATH_TABLES, "codes_snomed.csv")
 CSV_DICOM = os.path.join(PATH_TABLES, "codes_dicom.csv")
 CSV_DICOM_TAGS = os.path.join(PATH_TABLES, "tags_dicom.csv")
@@ -419,23 +419,22 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
         pass
     output_file = os.path.join(PATH_TABLES_GENERATED, view_type + ".csv")
     cur.executescript(query_view)
-    cur2 = con.cursor()
     cur.executescript(query_add_attribute(C_POR,view_type))
     cur.executescript(query_add_attribute(C_LAT,view_type))
-    for ars in cur2.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+    for ars in cur.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
         if len(ars) > 0 and ars != "na": cur.executescript(query_insert_sequence(column=C_ARS,code_id=ars))
-    r = cur2.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';") 
-    for arm in cur2.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+    for arm in cur.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
         if len(arm) > 0 and arm != "na": cur.executescript(query_insert_sequence(column=C_ARM,code_id=arm))
-    for pam in cur2.execute(f"SELECT {C_PAM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+    for pam in cur.execute(f"SELECT {C_PAM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
         if len(pam) > 0 and pam != "na": cur.executescript(query_insert_sequence(column=C_PAM,code_id=pam))
-    for dev in cur2.execute(f"SELECT {C_DEV} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+    for dev in cur.execute(f"SELECT {C_DEV} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
         if len(dev) > 0 and dev != "na": cur.executescript(query_insert_sequence(column=C_DEV,code_id=dev))
     cur.executescript(query_add_snomed_code(C_AQV,view_type))
     cur.executescript(query_add_snomed_code(C_IMV,view_type))
-    for fca in cur2.execute(f"SELECT {C_FCA} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+    for fca in cur.execute(f"SELECT {C_FCA} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
         if len(fca) > 0 and fca != "na": cur.executescript(query_insert_sequence(column=C_FCA,code_id=fca))
-    cur.executescript(query_add_snomed_code(C_OCR,view_type))
+    for ocr in cur.execute(f"SELECT {C_OCR} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        if len(ocr) > 0 and ocr != "na": cur.executescript(query_insert_sequence(column=C_OCR,code_id=ocr))
     # except sqlite3.OperationalError as e:
     #     print("An error occured: ", e)
     #     print(query_view)
