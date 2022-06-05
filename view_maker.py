@@ -9,6 +9,11 @@ import csv
 PREFIX_SNOMED = "SCT "
 PREFIX_DICOM = "DCM "
 
+# Snomed name, version and number to appear in the code sequences.
+SNOMED_NAME = "SNOMED CT"
+SNOMED_VERSION = "3.25"
+SNOMED_YEAR = "2022"
+
 # Files and paths
 PATH_TABLES = os.path.join(".", "source", "tables")
 PATH_APPENDIX = os.path.join(".", "source", "Appendix")
@@ -287,28 +292,84 @@ FROM (
 WHERE id = '{column}';
 """
 
-def query_insert_sequence(column,view_type):
-    return f"""
+def query_insert_sequence(column,code_id):
+    """ Return an SQL query string to add entire code sequence.
+
+
+    """
+    qs = f"""
+-- Insert the Sequence Name
 INSERT INTO _temp (id, attribute_name, tag)
 SELECT id,
     attribute_name,
     tag
 FROM tags_dicom
 WHERE
-    id = {column};
+    id = '{column}';
     
-INSERT INTO _temp ()
-SET code_value = {column}.code,
-    meaning = {column}.meaning
+-- Insert the sequence code value
+INSERT INTO _temp (id)
+VALUES ('{column + "_code_value"}');
+
+-- Add the Code Value tag name and attribute
+UPDATE  _temp
+SET attribute_name = tags_dicom.attribute_name,
+    tag = tags_dicom.tag
+FROM (
+        SELECT attribute_name, tag
+        FROM tags_dicom
+        WHERE tags_dicom.id LIKE 'code_value'
+    ) AS tags_dicom
+WHERE id = '{column + '_code_value'}';
+
+-- Add the Code Value value and meaning
+UPDATE  _temp
+SET code_value = codes_snomed.code,
+    meaning = codes_snomed.meaning
 FROM (
         SELECT codes_snomed.code,
             codes_snomed.meaning
-        FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.{column}
-        WHERE ortho_views.view_name LIKE '{view_type}'
-    ) as {column}
-WHERE id = '{column}';
+        FROM codes_snomed
+        WHERE codes_snomed.id LIKE '{code_id}'
+    ) as codes_snomed
+WHERE id = '{column + '_code_value'}';
+
+-- Insert the sequence coding scheme designator
+INSERT INTO _temp (id)
+VALUES ('{column + "_coding_scheme_designator"}');
+
+-- Add the Coding Scheme Designator Name Tag, Value and Meaning
+UPDATE  _temp
+SET attribute_name = tags_dicom.attribute_name,
+    tag = tags_dicom.tag,
+    code_value = '{PREFIX_SNOMED.rstrip()}',
+    meaning = '{SNOMED_NAME}'
+FROM (
+        SELECT attribute_name, tag
+        FROM tags_dicom
+        WHERE tags_dicom.id LIKE 'coding_scheme_designator'
+    ) AS tags_dicom
+WHERE id = '{column + '_coding_scheme_designator'}';
+
+-- Insert the sequence coding scheme Version
+INSERT INTO _temp (id)
+VALUES ('{column + "_coding_scheme_version"}');
+
+-- Add the Coding Scheme Designator Name Tag, Value and Meaning
+UPDATE  _temp
+SET attribute_name = tags_dicom.attribute_name,
+    tag = tags_dicom.tag,
+    code_value = '{SNOMED_VERSION}',
+    meaning = '{SNOMED_YEAR}'
+FROM (
+        SELECT attribute_name, tag
+        FROM tags_dicom
+        WHERE tags_dicom.id LIKE 'coding_scheme_version'
+    ) AS tags_dicom
+WHERE id = '{column + "_coding_scheme_version"}';
 """
+    print(qs)
+    return qs
 
 def create_view(cur, view_type):
     """ Creates the CSV file with attributes and tags for a single view.
@@ -340,26 +401,29 @@ FROM tags_dicom;
     except FileExistsError:
         pass
     output_file = os.path.join(PATH_TABLES_GENERATED, view_type + ".csv")
-    try:
-        # Create the single tables for each view.
-        cur.executescript(query_view)
-        # TODO: Here i need to split the ^-separated items in the sequences, to
-        # add more rows for the sequences, like in DICOM documentation.
-        cur.executescript(query_add_attribute(C_POR,view_type))
-        cur.executescript(query_add_attribute(C_LAT,view_type))
-        cur.executescript(query_add_snomed_code(C_ARS,view_type))
-        cur.executescript(query_add_snomed_code(C_ARM,view_type))
-        cur.executescript(query_add_snomed_code(C_PAM,view_type))
-        cur.executescript(query_add_snomed_code(C_DEV,view_type))
-        cur.executescript(query_add_snomed_code(C_AQV,view_type))
-        cur.executescript(query_add_snomed_code(C_IMV,view_type))
-        cur.executescript(query_add_snomed_code(C_FCA,view_type))
-        cur.executescript(query_add_snomed_code(C_OCR,view_type))
-
-    except sqlite3.OperationalError as e:
-        print("An error occured: ", e)
-        print(query_view)
-        exit(1)
+    cur.executescript(query_view)
+    # Create the single tables for each view.
+    # TODO: Here i need to split the ^-separated items in the sequences, to
+    # add more rows for the sequences, like in DICOM documentation.
+    cur.executescript(query_add_attribute(C_POR,view_type))
+    cur.executescript(query_add_attribute(C_LAT,view_type))
+    for ars in cur.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        cur.executescript(query_insert_sequence(column=C_ARS,code_id=ars))
+    for arm in cur.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        cur.executescript(query_insert_sequence(column=C_ARM,code_id=arm))
+    for pam in cur.execute(f"SELECT {C_PAM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        cur.executescript(query_insert_sequence(column=C_PAM,code_id=pam))
+    for dev in cur.execute(f"SELECT {C_DEV} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        cur.executescript(query_insert_sequence(column=C_DEV,code_id=dev))
+    cur.executescript(query_add_snomed_code(C_AQV,view_type))
+    cur.executescript(query_add_snomed_code(C_IMV,view_type))
+    for fca in cur.execute(f"SELECT {C_FCA} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
+        cur.executescript(query_insert_sequence(column=C_FCA,code_id=fca))
+    cur.executescript(query_add_snomed_code(C_OCR,view_type))
+    # except sqlite3.OperationalError as e:
+    #     print("An error occured: ", e)
+    #     print(query_view)
+    #     exit(1)
 
     cur.execute(
         """SELECT
