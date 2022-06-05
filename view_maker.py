@@ -264,6 +264,8 @@ def close_connection():
     con.close()
 
 def query_add_attribute(column,view_type):
+    """ Returns an SQL string to insert new tag which is based on a DICOM code.
+    """
     return f"""
 INSERT INTO _temp (id, attribute_name, tag)
 SELECT id,
@@ -287,7 +289,19 @@ WHERE id = '{column}';
     """
 
 def query_add_snomed_code(column,view_type):
-    return f"""UPDATE _temp
+    """ Returns an SQL string to insert a new SNOMED CT based attribute, which
+    is not a sequence.
+    """
+    return f"""
+INSERT INTO _temp (id, attribute_name, tag)
+SELECT id,
+    attribute_name,
+    tag
+FROM tags_dicom
+WHERE
+    id = '{column}';
+
+UPDATE _temp
 SET code_value = {column}.code,
     meaning = {column}.meaning
 FROM (
@@ -302,9 +316,11 @@ WHERE id = '{column}';
 
 def query_insert_sequence(column,code_id):
     """ Return an SQL query string to add entire code sequence.
-
-
     """
+    # IDs to use for each new row in the temp table
+    cv_id  = f"{column}_code_value_{code_id}"
+    csd_id = f"{column}_coding_scheme_designator_{code_id}"
+    csv_id = f"{column}_coding_scheme_version_{code_id}"
     qs = f"""
 -- Insert the Sequence Name
 INSERT INTO _temp (id, attribute_name, tag)
@@ -317,7 +333,7 @@ WHERE
     
 -- Insert the sequence code value
 INSERT INTO _temp (id)
-VALUES ('{column + "_code_value"}');
+VALUES ('{cv_id}');
 
 -- Add the Code Value tag name and attribute
 UPDATE  _temp
@@ -328,7 +344,7 @@ FROM (
         FROM tags_dicom
         WHERE tags_dicom.id LIKE 'code_value'
     ) AS tags_dicom
-WHERE id = '{column + '_code_value'}';
+WHERE id = '{cv_id}';
 
 -- Add the Code Value value and meaning
 UPDATE  _temp
@@ -340,11 +356,11 @@ FROM (
         FROM codes_snomed
         WHERE codes_snomed.id LIKE '{code_id}'
     ) as codes_snomed
-WHERE id = '{column + '_code_value'}';
+WHERE id = '{cv_id}';
 
 -- Insert the sequence coding scheme designator
 INSERT INTO _temp (id)
-VALUES ('{column + "_coding_scheme_designator"}');
+VALUES ('{csd_id}');
 
 -- Add the Coding Scheme Designator Name Tag, Value and Meaning
 UPDATE  _temp
@@ -357,11 +373,11 @@ FROM (
         FROM tags_dicom
         WHERE tags_dicom.id LIKE 'coding_scheme_designator'
     ) AS tags_dicom
-WHERE id = '{column + '_coding_scheme_designator'}';
+WHERE id = '{csd_id}';
 
 -- Insert the sequence coding scheme Version
 INSERT INTO _temp (id)
-VALUES ('{column + "_coding_scheme_version"}');
+VALUES ('{csv_id}');
 
 -- Add the Coding Scheme Designator Name Tag, Value and Meaning
 UPDATE  _temp
@@ -374,7 +390,7 @@ FROM (
         FROM tags_dicom
         WHERE tags_dicom.id LIKE 'coding_scheme_version'
     ) AS tags_dicom
-WHERE id = '{column + "_coding_scheme_version"}';
+WHERE id = '{csv_id}';
 """
     return qs
 
@@ -404,23 +420,21 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
     output_file = os.path.join(PATH_TABLES_GENERATED, view_type + ".csv")
     cur.executescript(query_view)
     cur2 = con.cursor()
-    # Create the single tables for each view.
-    # TODO: Here i need to split the ^-separated items in the sequences, to
-    # add more rows for the sequences, like in DICOM documentation.
     cur.executescript(query_add_attribute(C_POR,view_type))
     cur.executescript(query_add_attribute(C_LAT,view_type))
     for ars in cur2.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(ars) > 0: cur.executescript(query_insert_sequence(column=C_ARS,code_id=ars))
+        if len(ars) > 0 and ars != "na": cur.executescript(query_insert_sequence(column=C_ARS,code_id=ars))
+    r = cur2.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';") 
     for arm in cur2.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(arm) > 0: cur.executescript(query_insert_sequence(column=C_ARM,code_id=arm))
+        if len(arm) > 0 and arm != "na": cur.executescript(query_insert_sequence(column=C_ARM,code_id=arm))
     for pam in cur2.execute(f"SELECT {C_PAM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(pam) > 0: cur.executescript(query_insert_sequence(column=C_PAM,code_id=pam))
+        if len(pam) > 0 and pam != "na": cur.executescript(query_insert_sequence(column=C_PAM,code_id=pam))
     for dev in cur2.execute(f"SELECT {C_DEV} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(dev) > 0: cur.executescript(query_insert_sequence(column=C_DEV,code_id=dev))
+        if len(dev) > 0 and dev != "na": cur.executescript(query_insert_sequence(column=C_DEV,code_id=dev))
     cur.executescript(query_add_snomed_code(C_AQV,view_type))
     cur.executescript(query_add_snomed_code(C_IMV,view_type))
     for fca in cur2.execute(f"SELECT {C_FCA} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(fca) > 0: cur.executescript(query_insert_sequence(column=C_FCA,code_id=fca))
+        if len(fca) > 0 and fca != "na": cur.executescript(query_insert_sequence(column=C_FCA,code_id=fca))
     cur.executescript(query_add_snomed_code(C_OCR,view_type))
     # except sqlite3.OperationalError as e:
     #     print("An error occured: ", e)
