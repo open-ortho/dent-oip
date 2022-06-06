@@ -19,8 +19,9 @@ A development build of the document is available
 ## Known Issues
 
 There is a potential problem with the SQL script: apparently while it works fine
-with Python 3.10 and sqlite 3.37, the script bonks with an SQL error when around
-FROM clause. See PANIO-227.
+with Sqlite 3.37, the script bonks with an SQL error when around FROM clause
+when using Sqlite 3.31, which is the version shipped with Ubuntu 20.04 LTS.
+Install the latest sqlite3 version to fix the issue.
 
 ## Editing
 
