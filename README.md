@@ -16,12 +16,10 @@ HTML, PDF, etc. Sphinx uses the reStructuredText language.
 A development build of the document is available
 [here](http://brillig.org/~afm/ada-1107/html/)
 
-## Known Issues
+## Requirements
 
-There is a potential problem with the SQL script: apparently while it works fine
-with Sqlite 3.37, the script bonks with an SQL error when around FROM clause
-when using Sqlite 3.31, which is the version shipped with Ubuntu 20.04 LTS.
-Install the latest sqlite3 version to fix the issue.
+* sqlite3 >= 3.32
+* Python3
 
 ## Editing
 
