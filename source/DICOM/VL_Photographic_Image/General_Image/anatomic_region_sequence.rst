@@ -11,25 +11,12 @@ When applied to orthodontic photographs, the anatomic region is either Face for 
 Anatomic Region Modifier Sequence (0008,2220)
 ---------------------------------------------
 
-.. table:: Anatomic Region Modifier for Extra-oral Photography
+DICOM allows this sequence to be used for anything that is necessary to further define the anatomical region represented in the image. There is no restriction on the amount of region "modifications" that can be used.
 
-   +----------+----------+----------+----------+----------+----------+
-   | Coding   | Code     | Code     | SNODENT  | S        | UMSL     |
-   | Scheme   | Value    | Meaning  | Code     | NOMED-RT | Concept  |
-   | De       |          |          |          | ID       | Unique   |
-   | signator |          |          |          |          | ID       |
-   +==========+==========+==========+==========+==========+==========+
-   |          |          |          |          |          |          |
-   +----------+----------+----------+----------+----------+----------+
+When applied to orthodontic photographs, the following "modifications" are used. See :ref:`Intraoral Views <intraoral views>` and :ref:`Extraoral Views <extraoral views>` in Appendix for the correct SNOMED codes to use.
 
-.. table:: Anatomic Region Modifier for Intra-oral Photography
-
-   +----------+----------+----------+----------+----------+----------+
-   | Coding   | Code     | Code     | SNODENT  | S        | UMSL     |
-   | Scheme   | Value    | Meaning  | Code     | NOMED-RT | Concept  |
-   | De       |          |          |          | ID       | Unique   |
-   | signator |          |          |          |          | ID       |
-   +==========+==========+==========+==========+==========+==========+
-   |          |          |          |          |          |          |
-   +----------+----------+----------+----------+----------+----------+
-
+* Buccal
+* Left
+* Right
+* Left and Right
+* Closeup
