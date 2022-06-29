@@ -1,7 +1,9 @@
 Anatomic Region Sequence (0008,2218)
 ====================================
 
-Bla Bla
+The use of the Anatomic Region Sequence, populated with standard values, enables
+seamless interoperability of imaging data regardless of whether images are used
+within a site or across different sites and systems.
 
 Anatomic Region Modifier Sequence (0008,2220)
 ---------------------------------------------
