@@ -1,21 +1,21 @@
-"Coding Scheme Designator","Code Value","Code Meaning","ISO 3950 Designation of Quadrant","ISO 3950 Designation of Tooth","SNODENT Code","SNOMED-RT ID","UMLS Concept Unique ID"
-SCT,245620002,"Deciduous maxillary right central incisor tooth",5,1,162619D,T-54610,C0447234
-SCT,245619008,"Deciduous maxillary right lateral incisor tooth",5,2,162494D,T-54620,C0447233
-SCT,30618001,"Deciduous maxillary right canine tooth",5,3,124018D,T-54630,C0227087
-SCT,245616001,"Deciduous maxillary right first molar tooth",5,4,162234D,T-54640,C0447230
-SCT,27855007,"Deciduous maxillary right second molar tooth",5,5,130574D,T-54650,C0227089
-SCT,51678005,"Deciduous maxillary left central incisor tooth",6,1,108911D,T-54660,C1533615
-SCT,43622005,"Deciduous maxillary left lateral incisor tooth",6,2,123818D,T-54670,C0227091
-SCT,73937000,"Deciduous maxillary left canine tooth",6,3,140711D,T-54680,C0227092
-SCT,45234009,"Deciduous maxillary left first molar tooth",6,4,141712D,T-54690,C0227093
-SCT,51943008,"Deciduous maxillary left second molar tooth",6,5,112992D,T-54700,C0227094
-SCT,89552004,"Deciduous mandibular left central incisor tooth",7,1,150298D,T-54760,C0227100
-SCT,14770005,"Deciduous mandibular left lateral incisor tooth",7,2,134816D,T-54770,C1533616
-SCT,245639007,"Deciduous mandibular left canine tooth",7,3,162441D,T-54780,C0447255
-SCT,38896004,"Deciduous mandibular left first molar tooth",7,4,118147D,T-54790,C0227103
-SCT,49330006,"Deciduous mandibular left second molar tooth",7,5,144621D,T-54800,C0227104
-SCT,67834006,"Deciduous mandibular right central incisor tooth",8,1,120236D,T-54710,C0227095
-SCT,22445006,"Deciduous mandibular right lateral incisor tooth",8,2,113281D,T-54720,C0227101
-SCT,6062009,"Deciduous mandibular right canine tooth",8,3,105720D,T-54730,C0227097
-SCT,245631005,"Deciduous mandibular right first molar tooth",8,4,162206D,T-54740,C0447244
-SCT,61868007,"Deciduous mandibular right second molar tooth",8,5,107031D,T-54750,C0227099
+"Coding Scheme Designator","Code Value","Code Meaning","ISO 3950 Designation of Quadrant","ISO 3950 Designation of Tooth"
+"SCT","245620002","Deciduous maxillary right central incisor tooth","5","1"
+"SCT","245619008","Deciduous maxillary right lateral incisor tooth","5","2"
+"SCT","30618001","Deciduous maxillary right canine tooth","5","3"
+"SCT","245616001","Deciduous maxillary right first molar tooth","5","4"
+"SCT","27855007","Deciduous maxillary right second molar tooth","5","5"
+"SCT","51678005","Deciduous maxillary left central incisor tooth","6","1"
+"SCT","43622005","Deciduous maxillary left lateral incisor tooth","6","2"
+"SCT","73937000","Deciduous maxillary left canine tooth","6","3"
+"SCT","45234009","Deciduous maxillary left first molar tooth","6","4"
+"SCT","51943008","Deciduous maxillary left second molar tooth","6","5"
+"SCT","89552004","Deciduous mandibular left central incisor tooth","7","1"
+"SCT","14770005","Deciduous mandibular left lateral incisor tooth","7","2"
+"SCT","245639007","Deciduous mandibular left canine tooth","7","3"
+"SCT","38896004","Deciduous mandibular left first molar tooth","7","4"
+"SCT","49330006","Deciduous mandibular left second molar tooth","7","5"
+"SCT","67834006","Deciduous mandibular right central incisor tooth","8","1"
+"SCT","22445006","Deciduous mandibular right lateral incisor tooth","8","2"
+"SCT","6062009","Deciduous mandibular right canine tooth","8","3"
+"SCT","245631005","Deciduous mandibular right first molar tooth","8","4"
+"SCT","61868007","Deciduous mandibular right second molar tooth","8","5"
