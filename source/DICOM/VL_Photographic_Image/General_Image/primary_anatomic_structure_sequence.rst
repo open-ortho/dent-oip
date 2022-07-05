@@ -13,8 +13,18 @@ Allowed Values
 Primary Anatomic Structure for Intraoral Photography
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Refer to DICOM `CID-4018<https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4018.html>`_ and `CID-4019<https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4018.html>`_ for a list of permissible values.
+Refer to DICOM `CID-4018 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4018.html>`_ and `CID-4019 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4019.html>`_ for a list of permissible values.
 
+.. warning::
+   The below tables have been copied from the 2022 version of DICOM for convenience of the reader. It is the reader's reader's responsability to verify these tables are still accurate at the time of implementation.
+
+.. csv-table:: Table CID 4018. Primary Anatomic Structure for Intra-oral Radiography (Permanent Dentition - Designation of Teeth)
+   :file: CID-4018.csv
+   :header-rows: 1
+
+.. csv-table:: Table CID 4019. Primary Anatomic Structure for Intra-oral Radiography (Deciduous Dentition - Designation of Teeth)
+   :file: CID-4019.csv
+   :header-rows: 1
 
 Primary Anatomic Structure for Extraoral Photography
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
