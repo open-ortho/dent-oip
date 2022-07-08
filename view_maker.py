@@ -1,4 +1,58 @@
 #!/usr/bin/env python3
+"""Generate the Intraoral and Extraoral view pages found in the Appendix.
+
+The scripts loads data from CSV files into a temporary SQLite DB, which is used to format the data in the proper format for the Appendix. 
+
+Overview
+--------
+
+Initially, we had all the views in a single table, which grew very large. It was hard to read, but easy to maintain. Having many tables, one for each view, would have made the information a lot easier to understand, but it would have been a nightmare to maintain: every single change would have required search and replace operations, and the possibility of generating inconsistent pages and introducing errors would have been really high.
+
+The appendix tables needed to be generated programmatically. By using this script, we can keep and maintain the views from a single CSV file, and programmatically generating the readable appendix tables.
+
+Procedure
+---------
+
+Data is maintained ``source/tables`` folder. The ``views.csv`` contains all the orthodontic views. See :ref:`Tables` below. When running this script, this is what it will do:
+
+1. Create empty tables in an SQLite DB. This is done with the ``initdb()``.
+2. Load data from CSV files into the DB tables. This is done with the ``load_*()`` functions.
+3. Iterate through all views, and for each view:
+4. Populate an "output" table (called ``_temp``, because it gets overwritten for each view iteration), one view at a time, using the ``query_*()`` functions.
+5. During population, tooth examples are converted to proper SNOMED codes with meanings with the ``format_example()`` function.
+6. 
+
+Tables
+------
+
+``views.csv``
+^^^^^^^^^^^^^
+The full list of all orthodontic views. Edit this to make any changes. However, this file makes use of codes and abbreviations for many things. For example, the values in ``patient_orientation`` are taken from ``codes_dicom.csv`` by using the ``id``column.
+
+There is a teeth_example column used to add teeth to use as examples. The format for this column is ``AA^BB^CC...`` where ``AA``, ``BB`` and ``CC`` are tooth numbers. For example: ``54^55^84^85``.
+
+``codes_dicom.csv``
+^^^^^^^^^^^^^^^^^^^^
+List of DICOM codes, which aren't actually codes, but more like enumerated values, or whatever they are called in DICOM. Things like ``L`` for Left and ``P`` for Posterior. The ``id`` column is used to refer to these codes in ``views.csv``.
+
+``codes_snomed.csv``
+^^^^^^^^^^^^^^^^^^^^^
+Full list of all SNOMED codes used. The ``id`` column is the one that you will see in ``views.csv``.
+
+``tags_dicom.csv``
+^^^^^^^^^^^^^^^^^^^
+A list of DICOM tag names with their tag ID. We use this in the views, because we want to make our tables in the Appendix look as similar to DICOM tables as possible.
+
+Like in DICOM, sequences here should start with a ``>``.
+
+``CID-4018.csv`` and ``CID-4019.csv``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The DICOM tables containing the codes used for tooth numbering. These are copied and pasted directly from DICOM standard.
+
+
+``
+
+"""
 
 import os
 import sys
@@ -121,6 +175,11 @@ See section :ref:`primary anatomic structure sequence`
 
 def format_example(example):
     """ Converts a string of ISO numbered teeth into an RST formatted example text.
+    
+    :param example: A string containing a sequence of teeth numbers, separated by the caret ``^`` character.
+    :type example: str
+
+    :return: A string containing the teeth from ``example`` expressed as SNOMED codes and formatted in RestructuredText.
     """
 
     rs = """Example:
@@ -264,7 +323,20 @@ def close_connection():
     con.close()
 
 def query_add_attribute(column,view_type):
-    """ Returns an SQL string to insert new tag which is based on a DICOM code.
+    """Returns an SQL string to insert new DICOM tag into _temp table.
+    
+    This assumes that the DICOM codes have been imported into a table called "tags_dicom". The function ``load_dicom_tags()``
+
+    Parameters
+    ----------
+    :param column: The name of the column in the _temp table containing all views. You would use the ``C_*``variables here, like ``C_AQV`` or ``C_IMV``.
+    :type column: str
+    
+    :param view_type: The name of the view, like IV-01.
+    :type view_type: str
+
+    :return: An SQL string to insert new DICOM tag into _temp table.
+    :rtype: str
     """
     return f"""
 INSERT INTO _temp (id, attribute_name, tag)
@@ -291,6 +363,8 @@ WHERE id = '{column}';
 def query_add_snomed_code(column,view_type):
     """ Returns an SQL string to insert a new SNOMED CT based attribute, which
     is not a sequence.
+
+    This would typically be used to read the SNOMED code value and meaning from the CSV file, and store it into a _temp table, used only for the purpose of generating RST files.
     """
     return f"""
 INSERT INTO _temp (id, attribute_name, tag)
@@ -398,9 +472,17 @@ def create_view(cur, view_type):
     """ Creates the CSV file with attributes and tags for a single view.
 
     This function will generate the CSV file for the current view_type, which
-    Sphynx will then render into html. Not all columns from the source views.csv
+    Sphinx will then render into html. Not all columns from the source ``views.csv``
     file will be imported here. For example, the Full Name or Teeth Example
     column do not need to be in these tables.
+    
+    Parameters
+    ----------
+    :param cur: The database cursor
+    :type cur: cursor
+
+    :param view_type: The name of the view, like IV-01. It is used to name the output files.
+    :type view_type: str
     """
 
     query_view = f"""
