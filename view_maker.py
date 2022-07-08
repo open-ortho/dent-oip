@@ -16,7 +16,7 @@ Procedure
 Data is maintained ``source/tables`` folder. The ``views.csv`` contains all the orthodontic views. See :ref:`Tables` below. When running this script, this is what it will do:
 
 1. Create empty tables in an SQLite DB. This is done with the ``initdb()``.
-2. Load data from CSV files into the DB tables. This is done with the ``load_*()`` functions.
+2. The same ``initdb()`` also loads data from CSV files into the DB tables by calling the ``load_*()`` functions.
 3. Iterate through all views, and for each view:
 4. Populate an "output" table (called ``_temp``, because it gets overwritten for each view iteration), one view at a time, using ``create_view()`` which, in turn, uses the ``query_*()`` functions.
 5. During population, tooth examples are converted to proper SNOMED codes with meanings with the ``format_example()`` function.
@@ -82,6 +82,8 @@ CSV_SNOMED = os.path.join(PATH_TABLES, "codes_snomed.csv")
 CSV_DICOM = os.path.join(PATH_TABLES, "codes_dicom.csv")
 CSV_DICOM_TAGS = os.path.join(PATH_TABLES, "tags_dicom.csv")
 CSV_VIEWS = os.path.join(PATH_TABLES, "views.csv")
+CSV_CID4018 = os.path.join(PATH_TABLES, "CID-4018.csv")
+CSV_CID4019 = os.path.join(PATH_TABLES, "CID-4019.csv")
 DBFILE = "views.db"
 
 # Database Tables
@@ -230,6 +232,7 @@ def initdb(cur):
         """
     )
     load_snomed_codes(cur)
+    load_tooth_codes(cur)
 
     cur.execute(
         f"""
@@ -252,7 +255,39 @@ def initdb(cur):
     load_dicom_tags(cur)
 
 
+def load_tooth_codes(cur):
+    """Import data from DICOM CID4018 and CID4019 to the table T_SNOMED in the DB.
+
+    The SNOMED codes used for teeth are actually already defined in DICOM and we should therefore use those.
+
+    :param cur: The DB cursor
+    :type cur: cursor
+    """
+
+    for tooth_code_filename in [CSV_CID4018, CSV_CID4019]:
+        with open(tooth_code_filename, "r") as toot_code_file:
+            # csv.DictReader uses first line in file for column headings by default
+            dr = csv.DictReader(toot_code_file)  # comma is default delimiter
+            to_db = [
+                (
+                    f'{i["ISO 3950 Designation of Quadrant"]}{i["ISO 3950 Designation of Tooth"]}',
+                    i["Code Value"],
+                    i["Code Meaning"],
+                )
+                for i in dr
+            ]
+        cur.executemany(
+            f"INSERT INTO {T_SNOMED} (id, code, meaning) VALUES (?, ?, ?);", to_db
+        )
+
+
 def load_snomed_codes(cur):
+    """Import data from CSV_SNOMED to the table T_SNOMED in the DB.
+
+    :param cur: The DB cursor
+    :type cur: cursor
+    """
+
     with open(CSV_SNOMED, "r") as fin:
         # csv.DictReader uses first line in file for column headings by default
         dr = csv.DictReader(fin)  # comma is default delimiter
@@ -619,14 +654,14 @@ Extraoral Views
                 filename=f"../images/{view[0]}.png",
                 number=view[0],
                 example=view[2],
-            ) # write intraoral view to rst file
+            )  # write intraoral view to rst file
         if view[0].startswith("EV"):
             ev_write_rst(
                 title=view[1],
                 filename=f"../images/{view[0]}.png",
                 number=view[0],
                 example=view[2],
-            ) # write extraoral view to rst file
+            )  # write extraoral view to rst file
 
     close_connection()
 
