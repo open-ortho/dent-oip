@@ -35,22 +35,23 @@ tongue_thrust,110343009,Tongue thrust
 frenum,418232001,Structure of oral frenum
 45deg,787612006,45º
 na,,Not Applicable
-11,245575001,
-12,245574002,
-13,245572003,
-14,245571005,
-15,245570006,
-16,245568002,
-17,245567007,
-18,245566003,
-21,245587008,
-22,245586004,
-23,245584001,
-24,245583007,
-25,245582002,
-26,245579007,
-27,245578004,
-28,245577009,
+edentulous,278650002,"Edentulous "
+11,245575001,Entire permanent maxillary right central incisor tooth
+12,245574002,Entire permanent maxillary right lateral incisor tooth
+13,245572003,Entire permanent maxillary right canine tooth
+14,245571005,Entire permanent maxillary right first premolar tooth
+15,245570006,Entire permanent maxillary right second premolar tooth
+16,245568002,Entire permanent maxillary right first molar tooth
+17,245567007,Entire permanent maxillary right second molar tooth
+18,245566003,Entire permanent maxillary right third molar tooth
+21,245587008,Entire permanent maxillary left central incisor tooth
+22,245586004,Entire permanent maxillary left lateral incisor tooth
+23,245584001,Entire permanent maxillary left canine tooth
+24,245583007,Entire permanent maxillary left first premolar tooth
+25,245582002,Entire permanent maxillary left second premolar tooth
+26,245579007,Entire permanent maxillary left first molar tooth
+27,245578004,Entire permanent maxillary left second molar tooth
+28,245577009,Entire permanent maxillary left third molar tooth
 31,245611006,
 32,245610007,
 33,245608005,

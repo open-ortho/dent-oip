@@ -131,7 +131,7 @@ Patient may show the following teeth in this view:
     for tooth in example.split("^"):
         cur.execute(f"SELECT code,meaning from {T_SNOMED} WHERE id = {tooth};")
         code,code_meaning = cur.fetchall()[0]
-        rs += f"* {tooth} SCT: {code}\n"
+        rs += f"* {tooth} SCT: {code} ({code_meaning})\n"
     
     return rs
 
