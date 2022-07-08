@@ -1,7 +1,7 @@
 Image Comments (0020,4000)
 ==========================
 
-According to DICOM, Image comments can be any string with maximum length
+According to DICOM, Image comments can be any string with a maximum length
 of 10240 characters. New lines and tabs are allowed.
 
 For orthodontic purposes, any kind of clinical comments for an image
