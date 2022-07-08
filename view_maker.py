@@ -18,9 +18,13 @@ Data is maintained ``source/tables`` folder. The ``views.csv`` contains all the 
 1. Create empty tables in an SQLite DB. This is done with the ``initdb()``.
 2. Load data from CSV files into the DB tables. This is done with the ``load_*()`` functions.
 3. Iterate through all views, and for each view:
-4. Populate an "output" table (called ``_temp``, because it gets overwritten for each view iteration), one view at a time, using the ``query_*()`` functions.
+4. Populate an "output" table (called ``_temp``, because it gets overwritten for each view iteration), one view at a time, using ``create_view()`` which, in turn, uses the ``query_*()`` functions.
 5. During population, tooth examples are converted to proper SNOMED codes with meanings with the ``format_example()`` function.
-6. 
+6. ``create_view()`` then dumps the view into a csv file stored in ``PATH_TABLES_GENERATED`` (probably in ``source/tables/generated``).
+7. Finally, ``iv_write_rst()`` and ``ev_write_rst()`` write out the actual ``.rst`` file ready for Sphinx. The RST code contains a csv-table:: referencing the csv files generated in the step above by ``create_view()``, which are ignored in ``.gitignore``.
+
+.. note::
+    The Sphinx csv-table directive actually also allows one to include the CSV directly inside the .rst file, but i didn't know about this at the time of writing. It would have been probably cleaner and more robust to include all the CSVs into a huge .rst file. Its large size would have made it hard to work with, but who cares, since that file is not intended to be edited by humans, but is auto-generated at build time.
 
 Tables
 ------
@@ -106,8 +110,8 @@ cur = None
 
 
 def ev_write_rst(title, filename, number, example):
-    """ Write Extraoral Views to RestructuredText file.
-    
+    """Write Extraoral Views to RestructuredText file.
+
     This function is very similar to iv_write_rst and has been kept separate on
     purpose, to allow for customization.
     """
@@ -139,8 +143,9 @@ See section :ref:`primary anatomic structure sequence`
     with open(RST_EXTRAORAL_VIEWS, "a") as rst_out:
         rst_out.write(ev_rst)
 
+
 def iv_write_rst(title, filename, number, example):
-    """ Write Intraoral Views to RestructuredText file.
+    """Write Intraoral Views to RestructuredText file.
 
     This function is very similar to ev_write_rst and has been kept separate on
     purpose, to allow for customization.
@@ -173,9 +178,10 @@ See section :ref:`primary anatomic structure sequence`
     with open(RST_INTRAORAL_VIEWS, "a") as rst_out:
         rst_out.write(iv_rst)
 
+
 def format_example(example):
-    """ Converts a string of ISO numbered teeth into an RST formatted example text.
-    
+    """Converts a string of ISO numbered teeth into an RST formatted example text.
+
     :param example: A string containing a sequence of teeth numbers, separated by the caret ``^`` character.
     :type example: str
 
@@ -189,10 +195,11 @@ Patient may show the following teeth in this view:
 """
     for tooth in example.split("^"):
         cur.execute(f"SELECT code,meaning from {T_SNOMED} WHERE id = {tooth};")
-        code,code_meaning = cur.fetchall()[0]
+        code, code_meaning = cur.fetchall()[0]
         rs += f"* {tooth} SCT: {code} ({code_meaning})\n"
-    
+
     return rs
+
 
 def initdb(cur):
     cur.execute(
@@ -322,16 +329,17 @@ def close_connection():
     con.commit()
     con.close()
 
-def query_add_attribute(column,view_type):
+
+def query_add_attribute(column, view_type):
     """Returns an SQL string to insert new DICOM tag into _temp table.
-    
+
     This assumes that the DICOM codes have been imported into a table called "tags_dicom". The function ``load_dicom_tags()``
 
     Parameters
     ----------
     :param column: The name of the column in the _temp table containing all views. You would use the ``C_*``variables here, like ``C_AQV`` or ``C_IMV``.
     :type column: str
-    
+
     :param view_type: The name of the view, like IV-01.
     :type view_type: str
 
@@ -360,8 +368,9 @@ FROM (
 WHERE id = '{column}';
     """
 
-def query_add_snomed_code(column,view_type):
-    """ Returns an SQL string to insert a new SNOMED CT based attribute, which
+
+def query_add_snomed_code(column, view_type):
+    """Returns an SQL string to insert a new SNOMED CT based attribute, which
     is not a sequence.
 
     This would typically be used to read the SNOMED code value and meaning from the CSV file, and store it into a _temp table, used only for the purpose of generating RST files.
@@ -388,11 +397,11 @@ FROM (
 WHERE id = '{column}';
 """
 
-def query_insert_sequence(column,code_id):
-    """ Return an SQL query string to add entire code sequence.
-    """
+
+def query_insert_sequence(column, code_id):
+    """Return an SQL query string to add entire code sequence."""
     # IDs to use for each new row in the temp table
-    cv_id  = f"{column}_code_value_{code_id}"
+    cv_id = f"{column}_code_value_{code_id}"
     csd_id = f"{column}_coding_scheme_designator_{code_id}"
     csv_id = f"{column}_coding_scheme_version_{code_id}"
     qs = f"""
@@ -468,14 +477,15 @@ WHERE id = '{csv_id}';
 """
     return qs
 
+
 def create_view(cur, view_type):
-    """ Creates the CSV file with attributes and tags for a single view.
+    """Creates the CSV file with attributes and tags for a single view.
 
     This function will generate the CSV file for the current view_type, which
     Sphinx will then render into html. Not all columns from the source ``views.csv``
     file will be imported here. For example, the Full Name or Teeth Example
     column do not need to be in these tables.
-    
+
     Parameters
     ----------
     :param cur: The database cursor
@@ -501,22 +511,52 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
         pass
     output_file = os.path.join(PATH_TABLES_GENERATED, view_type + ".csv")
     cur.executescript(query_view)
-    cur.executescript(query_add_attribute(C_POR,view_type))
-    cur.executescript(query_add_attribute(C_LAT,view_type))
-    for ars in cur.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(ars) > 0 and ars != "na": cur.executescript(query_insert_sequence(column=C_ARS,code_id=ars))
-    for arm in cur.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(arm) > 0 and arm != "na": cur.executescript(query_insert_sequence(column=C_ARM,code_id=arm))
-    for pam in cur.execute(f"SELECT {C_PAM} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(pam) > 0 and pam != "na": cur.executescript(query_insert_sequence(column=C_PAM,code_id=pam))
-    for dev in cur.execute(f"SELECT {C_DEV} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(dev) > 0 and dev != "na": cur.executescript(query_insert_sequence(column=C_DEV,code_id=dev))
-    cur.executescript(query_add_snomed_code(C_AQV,view_type))
-    cur.executescript(query_add_snomed_code(C_IMV,view_type))
-    for fca in cur.execute(f"SELECT {C_FCA} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(fca) > 0 and fca != "na": cur.executescript(query_insert_sequence(column=C_FCA,code_id=fca))
-    for ocr in cur.execute(f"SELECT {C_OCR} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0].split("^"):
-        if len(ocr) > 0 and ocr != "na": cur.executescript(query_insert_sequence(column=C_OCR,code_id=ocr))
+    cur.executescript(query_add_attribute(C_POR, view_type))
+    cur.executescript(query_add_attribute(C_LAT, view_type))
+    for ars in (
+        cur.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';")
+        .fetchone()[0]
+        .split("^")
+    ):
+        if len(ars) > 0 and ars != "na":
+            cur.executescript(query_insert_sequence(column=C_ARS, code_id=ars))
+    for arm in (
+        cur.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';")
+        .fetchone()[0]
+        .split("^")
+    ):
+        if len(arm) > 0 and arm != "na":
+            cur.executescript(query_insert_sequence(column=C_ARM, code_id=arm))
+    for pam in (
+        cur.execute(f"SELECT {C_PAM} FROM ortho_views WHERE view_name = '{view_type}';")
+        .fetchone()[0]
+        .split("^")
+    ):
+        if len(pam) > 0 and pam != "na":
+            cur.executescript(query_insert_sequence(column=C_PAM, code_id=pam))
+    for dev in (
+        cur.execute(f"SELECT {C_DEV} FROM ortho_views WHERE view_name = '{view_type}';")
+        .fetchone()[0]
+        .split("^")
+    ):
+        if len(dev) > 0 and dev != "na":
+            cur.executescript(query_insert_sequence(column=C_DEV, code_id=dev))
+    cur.executescript(query_add_snomed_code(C_AQV, view_type))
+    cur.executescript(query_add_snomed_code(C_IMV, view_type))
+    for fca in (
+        cur.execute(f"SELECT {C_FCA} FROM ortho_views WHERE view_name = '{view_type}';")
+        .fetchone()[0]
+        .split("^")
+    ):
+        if len(fca) > 0 and fca != "na":
+            cur.executescript(query_insert_sequence(column=C_FCA, code_id=fca))
+    for ocr in (
+        cur.execute(f"SELECT {C_OCR} FROM ortho_views WHERE view_name = '{view_type}';")
+        .fetchone()[0]
+        .split("^")
+    ):
+        if len(ocr) > 0 and ocr != "na":
+            cur.executescript(query_insert_sequence(column=C_OCR, code_id=ocr))
     # except sqlite3.OperationalError as e:
     #     print("An error occured: ", e)
     #     print(query_view)
@@ -551,9 +591,9 @@ def main(args):
     global cur
     cur = con.cursor()
     initdb(cur)
-    load_views(cur)
+    load_views(cur)  # Load data from views.csv
 
-    cur2 = con.cursor()
+    cur2 = con.cursor()  # Get another cursor to avoid concurrent sessions
     # This will overwrite the current rst file with header.
     with open(RST_INTRAORAL_VIEWS, "w") as rst_iv:
         rst_iv_head = """.. _intraoral views:
@@ -561,7 +601,7 @@ def main(args):
 Intraoral Views
 ===============
 """
-        rst_iv.write(rst_iv_head)
+        rst_iv.write(rst_iv_head)  # Initialize RST file for intraoral views
 
     with open(RST_EXTRAORAL_VIEWS, "w") as rst_ev:
         rst_ev_head = """.. _extraoral views:
@@ -569,14 +609,24 @@ Intraoral Views
 Extraoral Views
 ===============
 """
-        rst_ev.write(rst_ev_head)
+        rst_ev.write(rst_ev_head)  # Initialize RST file for extraoral views
 
     for view in cur2.execute(f"SELECT {C_VIE},{C_FUL},{C_THE} FROM {T_VIEWS}"):
         create_view(cur, view[0])
-        if view[0].startswith('IV'):
-            iv_write_rst(title=view[1], filename=f"../images/{view[0]}.png", number=view[0], example=view[2])
-        if view[0].startswith('EV'):
-            ev_write_rst(title=view[1], filename=f"../images/{view[0]}.png", number=view[0], example=view[2])
+        if view[0].startswith("IV"):
+            iv_write_rst(
+                title=view[1],
+                filename=f"../images/{view[0]}.png",
+                number=view[0],
+                example=view[2],
+            ) # write intraoral view to rst file
+        if view[0].startswith("EV"):
+            ev_write_rst(
+                title=view[1],
+                filename=f"../images/{view[0]}.png",
+                number=view[0],
+                example=view[2],
+            ) # write extraoral view to rst file
 
     close_connection()
 
