@@ -4,29 +4,27 @@ Device Sequence (0050,0010)
 ===========================
 
 The Device Sequence allows for an unlimited number of devices, which are defined
-using SNOMED codes. The folloing are the codes that are used for orthodontic
-views.
+using SNOMED codes. The following are the codes that are most commonly used for
+orthodontic views that may be visible in the image.
 
 
-+---------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
-|     Code      |     Meaning     |                                                             Notes                                                             |
-+===============+=================+===============================================================================================================================+
-| SCT 102304005 | Measuring Ruler | When included, the ruler should be in SI units (millimeter increments).                                                       |
-|               |                 | DICOM device sequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements. |
-+---------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
-| SCT 47162009  | Mirror          | This is a generic code and should be avoided if a more specific one has since been                                            |
-|               |                 | added to SNOMED.                                                                                                              |
-+---------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
-| SCT 468670005 | Dental Mirror   | Dental mirrors are usually not present in orthodontic photographs.                                                            |
-+---------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
++---------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+|     Code      |            Meaning            |                                                             Notes                                                             |
++===============+===============================+===============================================================================================================================+
+| SCT 102304005 | Measuring Ruler               | When included, the ruler should be in SI units (millimeter increments).                                                       |
+|               |                               | DICOM device sequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements. |
++---------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+| SCT XXXXXX    | Intraoral Photographic Mirror | Awaiting for SNOMED publication of new code. Use SCT 47162009 'Mirror'.                                                       |
++---------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+| SCT 86967005  | Tool                          | Use when other devices are present in the field of view, such contraster, coin or black mirror.                               |
++---------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
-Optional Tags
--------------
+Additional Tags for Compliance with this Standard
+-------------------------------------------------
 
-The following optional DICOM tags can be optionally used, if known, for any device used.
 
 +----------------------------+-------------+------+------------------------------------------------------+
-|       Attribute Name       |     Tag     | Type |                Attribute Description                 |
+| Attribute Name             | Tag         | Type | Attribute Description                                |
 +============================+=============+======+======================================================+
 | >Manufacturer              | (0008,0070) | 3    | Manufacturer of the device                           |
 +----------------------------+-------------+------+------------------------------------------------------+
