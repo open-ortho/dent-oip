@@ -1,3 +1,5 @@
+.. _device sequence:
+
 Device Sequence (0050,0010)
 ===========================
 
@@ -5,17 +7,18 @@ The Device Sequence allows for an unlimited number of devices, which are defined
 using SNOMED codes. The folloing are the codes that are used for orthodontic
 views.
 
-+---------------+-----------------+------------------------------------------------------------------------------------+
-|     Code      |     Meaning     |                                       Notes                                        |
-+===============+=================+====================================================================================+
-| SCT 102304005 | Measuring Ruler | When included, the ruler should be in SI units (millimeter increments).            |
-|               |                 | DICOM device sequence does not have a place for defining ruler units.              |
-+---------------+-----------------+------------------------------------------------------------------------------------+
-| SCT 47162009  | Mirror          | This is a generic code and should be avoided if a more specific one has since been |
-|               |                 | added to SNOMED.                                                                   |
-+---------------+-----------------+------------------------------------------------------------------------------------+
-| SCT 468670005 | Dental Mirror   | Dental mirrors are usually not present in orthodontic photographs.                 |
-+---------------+-----------------+------------------------------------------------------------------------------------+
+
++---------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
+|     Code      |     Meaning     |                                                             Notes                                                             |
++===============+=================+===============================================================================================================================+
+| SCT 102304005 | Measuring Ruler | When included, the ruler should be in SI units (millimeter increments).                                                       |
+|               |                 | DICOM device sequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements. |
++---------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
+| SCT 47162009  | Mirror          | This is a generic code and should be avoided if a more specific one has since been                                            |
+|               |                 | added to SNOMED.                                                                                                              |
++---------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
+| SCT 468670005 | Dental Mirror   | Dental mirrors are usually not present in orthodontic photographs.                                                            |
++---------------+-----------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 Optional Tags
 -------------
