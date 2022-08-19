@@ -7,17 +7,22 @@ The Device Sequence allows for an unlimited number of devices, which are defined
 using SNOMED codes. The following are the codes that are most commonly used for
 orthodontic views that may be visible in the image.
 
+.. list-table:: 
+    :header-rows: 1
 
-+---------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-|     Code      |            Meaning            |                                                             Notes                                                             |
-+===============+===============================+===============================================================================================================================+
-| SCT 102304005 | Measuring Ruler               | When included, the ruler should be in SI units (millimeter increments).                                                       |
-|               |                               | DICOM device sequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements. |
-+---------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-| SCT XXXXXX    | Intraoral Photographic Mirror | Awaiting for SNOMED publication of new code. Use SCT 47162009 'Mirror'.                                                       |
-+---------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-| SCT 86967005  | Tool                          | Use when other devices are present in the field of view, such contraster, coin or black mirror.                               |
-+---------------+-------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+    * - Code
+      - Meaning
+      - Notes
+    * - SCT 102304005
+      - Measuring Ruler
+      - When included, the ruler should be in SI units (millimeter increments). DICOM device sequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements.
+    * - SCT XXXXXX
+      - Intraoral Photographic Mirror
+      - Awaiting for SNOMED publication of new code. Use SCT 47162009 'Mirror'.
+    * - SCT 86967005
+      - Tool
+      - Use when other devices are present in the field of view, such contraster, coin or black mirror.
+
 
 Additional Tags for Compliance with this Standard
 -------------------------------------------------
