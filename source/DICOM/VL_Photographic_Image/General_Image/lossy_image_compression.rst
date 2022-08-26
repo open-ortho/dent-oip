@@ -1,6 +1,12 @@
 Lossy Image Compression
 =======================
 
+Compression, in general, aims to reduce file size, with or without decreasing data quality of the original file. DICOM is a medical imaging file standard used to store multiple information such as information of the image itself (resolution, pixel data, bit allocation, compression type, etc.) . With the rising usage of imaging in clinical diagnosis, there is a need for a fast and secure method to share a large number of  images between  practitioners, and compression is used to facilitate interoperability.
+
+The main purpose of compression techniques is memory efficiency, fast compression, and the generation of the best output. It can be divided into two types, lossless compression and lossy compression. Lossless compression is a type of data compression which does not remove any information from the initial data, while the lossy compression removes some of the information from the initial data. 
+
+Compression of image may compromise the diagnostic value of photographs and is therefore not the preferred method of storage. The main reasons to utilize compression in the past were related to storage costs and bandwidth speed, which, over time, have increased by orders of magnitude. In addition, each image is composed of single relatively small file (less then 20MB).
+
 According to
 `DICOM <http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.html#sect_C.7.6.1.1.5>`__
 :
