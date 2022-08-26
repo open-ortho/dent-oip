@@ -13,9 +13,9 @@ IV-11,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_closed,co,"Intraoral Fr
 IV-12,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_closed,cr,"Intraoral Frontal View Inferior (showing depth of bite and overjet) - Centric Relation, Without Mirror",11^12^53^21^22^63^31^32^73^41^42^83
 IV-13,o_front,l_unpaired,jaw,na,,na,coronal,direct,tongue_thrust,co,"Intraoral Frontal View, showing Tongue Thrust, Without Mirror",11^12^13^21^22^23^31^32^33^41^42^43
 IV-14,o_right,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,co,"Intraoral Right Lateral View - Centric Occlusion, Showing Overjet, Without Mirror",54^55^16^84^85^46
-IV-15,o_right,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,cr,"Intraoral Right Lateral View - Centric Relation, Showing Overjet, Without Mirror",54^55^16^84^85^46
-IV-16,o_left,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,co,"Intraoral Left Lateral View - Centric Occlusion, Showing Overjet, Without Mirror",
-IV-17,o_left,l_unpaired,jaw,buccal,,ruler,sagittal,direct,mouth_closed,cr,"Intraoral Left Lateral View - Centric Relation, Showing Overjet, Without Mirror",
+IV-15,o_right,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,cr,"Intraoral Right Lateral View - Centric Relation, Showing Overjet, Without Mirror",54^55^16^84^85^46
+IV-16,o_left,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,co,"Intraoral Left Lateral View - Centric Occlusion, Showing Overjet, Without Mirror",
+IV-17,o_left,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,cr,"Intraoral Left Lateral View - Centric Relation, Showing Overjet, Without Mirror",
 IV-18,o_left,l_unpaired,jaw,buccal,,na,sagittal,direct,mouth_closed,co,"Intraoral Left Buccal Segment - Centric Occlusion, Without Mirror",64^65^26^74^75^36
 IV-19,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,,mouth_closed,co,"Intraoral Left Buccal Segment - Centric Occlusion, With Mirror",64^65^74^75
 IV-20,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,mouth_closed,cr,"Intraoral Left Buccal Segment - Centric Occlusion, With Mirror But Corrected",24^25^26^27^28^34^35^36^37^38
