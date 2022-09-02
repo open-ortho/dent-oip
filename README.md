@@ -108,3 +108,7 @@ The CSV files in `source/tables/*.csv` are used to automatically generate anothe
 The temp tables are then exported into CSV in the `generated` folder. And that's where the RestructuredText files refer to.
 
 This process is very inefficient, but optimization is not needed since execution is only done once at build time.
+
+## Image generation
+
+The images of the tables in the appendix are imported automatically by `make` from the `open-ortho/orthoviews-linedrawings` GitHub repository, which is a submodule of this repository. You will therefore find  the `sources/images` folder excluded from `.gitignore`.
