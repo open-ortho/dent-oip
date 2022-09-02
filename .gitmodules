@@ -1,0 +1,3 @@
+[submodule "modules/orthoviews-linedrawings"]
+	path = modules/orthoviews-linedrawings
+	url = git@github.com:open-ortho/orthoviews-linedrawings.git
