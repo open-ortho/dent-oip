@@ -2,3 +2,5 @@
 
 Reason For Visit
 ================
+
+Reason for visit is an optional tag that would typically come from the appointment type of the software that is managing appointments.
