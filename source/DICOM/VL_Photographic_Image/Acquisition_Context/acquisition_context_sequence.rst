@@ -3,11 +3,6 @@
 Acquisition Context Sequence (0040,0555)
 ========================================
 
-During an orthodontic treatment, it is common for the provider to keep
-track of treatment progress by regularly collecting records (such as
-photographs or intra-oral surface scans) [provide reference]. It is
-therefore useful to identify when, relative to an orthodontic treatment,
-the records were taken. 
 
 Below is a list of the types of progresses used by the orthodontic domain and
 how to properly encode them in a DICOM object.
@@ -72,8 +67,8 @@ how to properly encode them in a DICOM object.
       - (0040,A30A)
       - 1,2,3,...
       - An integer representing the sequence number of the progress.
-    * - Study Description
-      - (0008,1030)
+    * - Acquisition Context Description
+      - (0040,0556)
       - 
       - Optional. See notes below.
 
@@ -81,3 +76,7 @@ Concept Code Sequence Attribute (0040,A168)
 -------------------------------------------
 
 The allowed values for this tag have been taken from `DICOM Table CID6146 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_6146.html>`__ and applied in the :ref:`Progress Table above <table_progress_values>`
+
+Acquisition Context Description (0040,0556)
+-------------------------------------------
+
