@@ -28,3 +28,8 @@
 
 Bibliography
 ============
+
+.. Bibliography is generated automatically using zotero HTML export and added here in HTML.
+
+.. raw:: html
+    :file: bibliography.html
