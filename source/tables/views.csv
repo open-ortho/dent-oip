@@ -7,7 +7,7 @@ IV-05,o_left,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_uncorrected,,cr,"Intr
 IV-06,o_right,l_unpaired,jaw,buccal,,mirror,sagittal,mirror_corrected,,cr,"Intraoral Right Buccal Segment - Centric Relation, With Mirror But Corrected",54^55^84^85
 IV-07,o_front,l_unpaired,jaw,na,,na,coronal,direct,,co,"Intraoral Frontal View - Centric Occlusion, Without Mirror",51^52^53^61^62^63^71^72^73^81^82^83
 IV-08,o_front,l_unpaired,jaw,na,,na,coronal,direct,,cr,"Intraoral Frontal View - Centric Relation, Without Mirror",11^12^13^21^22^23^31^32^33^41^42^43
-IV-09,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_open,na,"Intraoral Frontal View - Teeth Apart, Without Mirror",11^12^53^21^22^63^31^32^73^41^42^83
+IV-09,o_front,l_unpaired,jaw,na,,na,coronal,direct,teeth_apart,na,"Intraoral Frontal View - Teeth Apart, Without Mirror",11^12^53^21^22^63^31^32^73^41^42^83
 IV-10,o_front,l_unpaired,jaw,na,,na,coronal,direct,mouth_open,na,"Intraoral Frontal View - Mouth Open, Without Mirror",11^12^13^21^22^23^31^32^33^41^42^43
 IV-11,o_front,l_unpaired,jaw,na,,na,coronal,direct,,co,"Intraoral Frontal View Inferior (showing depth of bite and overjet) - Centric Occlusion, Without Mirror",51^52^53^61^62^63^71^72^73^81^82^83
 IV-12,o_front,l_unpaired,jaw,na,,na,coronal,direct,,cr,"Intraoral Frontal View Inferior (showing depth of bite and overjet) - Centric Relation, Without Mirror",11^12^53^21^22^63^31^32^73^41^42^83
