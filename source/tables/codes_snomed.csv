@@ -17,19 +17,19 @@ occlusal,710098004,Occlusal
 mirror_corrected,787610003,Photographic image corrected intraoral mirrored visible record
 mirror_uncorrected,789135000,"Mirrored visible image uncorrected "
 direct,255589003,Direct
-mouth_closed,286866000,Mouth Closed
 mouth_open,262016004,Mouth Open
-lips_relaxed,789314008,Lips Relaxed
-lips_closed,787607005,Lips Closed
-smile,225583004,Smile
+teeth_apart,789130005,"Photographic image with mouth partially opened position and teeth apart "
+lips_relaxed,789314008,Photographic image of face with lips in relaxed position
+lips_closed,787607005,Photographic image with lips closed
+smile,225583004,Smiles
 cant,710793000,Cant of occlusal plane
 palsy,193093009,Facial palsy/Bell’s palsy
-co,110320000,Centric Occlusion of Teeth
+co,110320000,"Centric occlusion "
 cr,736783005,"Centric relation "
-mpf,787611004,Mandible Postured Forward
-inf_view,261089000,Inferior View
-sup_view,264217000,Superior View
-ruler,102304005,Measuring Ruler
+mpf,787611004,Photographic image extraoral with mandible postured forward
+inf_view,261089000,Inferior
+sup_view,264217000,Superior
+ruler,102304005,Measuring ruler
 gingival_recession,4356008,"Gingival recession "
 tongue_thrust,110343009,Tongue thrust
 frenum,418232001,Structure of oral frenum
