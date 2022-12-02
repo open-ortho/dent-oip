@@ -84,6 +84,16 @@ suffice to build the `html` version of this document.
     pipenv install
     pipenv run make html
 
+### Building on macOS
+
+The `Makefile` makes use of gnu cut. You need to install `brew install coreutils`, then replace the `cut` instance in `Makefile` with `gcut`.
+
+To build the PDF, you will need LaTeX. 
+
+        brew install basictex
+        sudo tlmgr update --self
+        sudo tlmgr install latexmk tex-gyre fncychap wrapfig capt-of framed needspace tabulary varwidth titlesec
+
 ## Deployment
 
 Deployment is done with
@@ -95,16 +105,6 @@ customize, or gain access to deployment server to deploy.
 
 Deployment also deploys an `.htaccess` and `.htpasswd` file with loose security.
 Both username and password are `scdi116`.
-
-### Building on macOS
-
-The `Makefile` makes use of gnu cut. You need to install `brew install coreutils`, then replace the `cut` instance in `Makefile` with `gcut`.
-
-To build the PDF, you will need LaTeX. 
-
-        brew install basictex
-        sudo tlmgr update --self
-        sudo tlmgr install latexmk tex-gyre fncychap wrapfig capt-of framed needspace tabulary varwidth titlesec
 
 ## View Tables Generation
 
