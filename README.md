@@ -96,6 +96,16 @@ customize, or gain access to deployment server to deploy.
 Deployment also deploys an `.htaccess` and `.htpasswd` file with loose security.
 Both username and password are `scdi116`.
 
+### Building on macOS
+
+The `Makefile` makes use of gnu cut. You need to install `brew install coreutils`, then replace the `cut` instance in `Makefile` with `gcut`.
+
+To build the PDF, you will need LaTeX. 
+
+        brew install basictex
+        sudo tlmgr update --self
+        sudo tlmgr install latexmk tex-gyre fncychap wrapfig capt-of framed needspace tabulary varwidth titlesec
+
 ## View Tables Generation
 
 The CSV files in `source/tables/*.csv` are used to automatically generate another set of CSV files located in `source/tables/generated/*.csv`. The final tables in the appendices are built from CSV files `source/tables/generated/*.csv`. 

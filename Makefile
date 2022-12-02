@@ -42,9 +42,10 @@ clean:
 	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)" "$(IMAGES)"
 	rm -f "$(VIEWSDB)" "$(INTRAORAL_VIEWS)" "$(EXTRAORAL_VIEWS)"
 
-deploy: html docx
+deploy: html docx latexpdf
 	cp htaccess "$(BUILDDIR)/.htaccess"
 	cp htpasswd "$(BUILDDIR)/.htpasswd"
+	cp index.html "$(BUILDDIR)"
 	ssh -p $(SSH_PORT) $(SSH_USER)@$(SSH_IP) "mkdir -p $(REMOTE_PATH)"
 	rsync -auv -e "ssh -p $(SSH_PORT)" --delete "$(BUILDDIR)" "$(DESTDIR)"
 
@@ -52,7 +53,7 @@ $(IMAGES):
 	git submodule init
 	git submodule update
 	mkdir -p "$(IMAGES)"
-	cd $(IMAGES_ORIGIN) && for image in $$(ls); do cp -v $${image:?} $${OLDPWD}/$(IMAGES)/$$(echo $${image} | cut --characters='1-5').png; done
+	cd $(IMAGES_ORIGIN) && for image in $$(ls); do cp -v $${image:?} $${OLDPWD}/$(IMAGES)/$$(echo $${image} | gcut --characters='1-5').png; done
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
