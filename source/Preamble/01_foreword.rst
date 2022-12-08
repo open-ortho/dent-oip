@@ -14,5 +14,12 @@
 Foreword
 ========
 
-(This Foreword does not form a part of Revised ANSI/ADA Standard No. 1107 for
-DICOM and SNOMED CT Implementation of ADA SCDI WP1100).
+This standard specifies the exact DICOM tags to use to contain the SNOMED codes required to unambiguosly label each clinical image. The intention of the standard is to:
+
+#. provide a standardized method to store information necessary to unambiguosly identify an image type for clinical purposes. This should eliminate the need for different vendors implementing DICOM in different ways;
+
+#. support and facilitate the work of the software developer that wishes to make use of the DICOM standard to properly encode medical photographs;
+
+The standard provides tables for each individual image type (called image view) identified in ADA WP-1100, and an explanatory section with the reasoning behind the choice for each tag.
+
+This standard presents guidelines for implementing the interoperability and transmissibility of visible light intraoral and extraoral images. The codes and enumerated terms presented in this paper permit construction of proper DICOM files which contain facial extra-oral and intraoral images, primarily used for orthodontic purposes. 
