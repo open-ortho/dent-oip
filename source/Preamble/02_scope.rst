@@ -8,4 +8,4 @@ tables.
 The intended audience of this document are software developers. 
 
 This guide depends on ADA SCDI White Paper 1100 -
-Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets.
+Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets available online on the ADA Catalog.

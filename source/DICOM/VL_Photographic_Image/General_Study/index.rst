@@ -14,7 +14,7 @@ orthodontic photography pertaining to the General Study module.
 
 #. When two progresses are collected during the same orthodontic visit (for example when a patient is removing braces, the practice might acquire a set of images just before removing braces, and another set just after removing braces), the software shall create two separate DICOM Studies, one for each progress. Each progress is distnguished by making use of the :ref:`Acquisition Context Module <acquisition_context>`
 
-This part was compiled using the various values allowed in the DICOM CID
+This part was compiled using the values allowed in the DICOM CID
 (Content IDs) tables, highlighting those values which are relevant to the
 orthodontic domain.
 
