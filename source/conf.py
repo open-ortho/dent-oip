@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ADA-1107'
-copyright = '2021, ADA SCDI WG 11.6'
+project = ' - DRAFT - ADA-1107 - DRAFT - '
+copyright = '2023, ADA SCDI WG 11.6'
 author = 'ADA SCDI WG 11.6'
 master_doc = 'index'
 subject = 'DICOM implementation of WP-1100.'

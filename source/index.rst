@@ -6,11 +6,18 @@
 ADA-1107
 ====================================
 
+Executive Summary
+-----------------
+
+The archival of high quality photographic documentation in a open standard is central to big data research, reduction in errors, data loss, staff and doctor burnout. This standard defines how to save orthodontic medical visible light images (aka photographs) making use of the most widely used standard for medical images: DICOM.
+
+Contents
+--------
+
 .. toctree::
    :glob:
    :numbered:
-   :maxdepth: 3
-   :caption: Contents:
+   :maxdepth: 2
 
    Preamble/*
 
@@ -19,9 +26,3 @@ ADA-1107
 
    bibliography
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
