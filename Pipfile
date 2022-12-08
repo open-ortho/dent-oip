@@ -9,6 +9,7 @@ black = "*"
 [packages]
 sphinx = "*"
 docxbuilder = "*"
+sphinx-book-theme = "*"
 
 [requires]
 python_version = "3"
