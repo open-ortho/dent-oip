@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = ' - DRAFT - ADA-1107 - DRAFT - '
+project = 'DRAFT ADA-1107 DRAFT'
 copyright = '2023, ADA SCDI WG 11.6'
 author = 'ADA SCDI WG 11.6'
 master_doc = 'index'
