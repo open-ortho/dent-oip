@@ -1,6 +1,6 @@
 # ADA-1107
 
-These are the source files for the ADA-1107 standard document. You can find the nightly [nightly builds here](http://brillig.org/~afm/ada-1107/index.html).
+These are the source files for the ADA-1107 standard document. You can find the nightly [nightly builds here](http://brillig.org/~afm/ada-1107/html/index.html).
 
 Source files located in `source/`.
 

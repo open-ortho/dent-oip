@@ -9,7 +9,6 @@ INTRAORAL_VIEWS = source/Appendix/intraoral_views.rst
 EXTRAORAL_VIEWS = source/Appendix/extraoral_views.rst
 IMAGES = source/images
 IMAGES_ORIGIN = modules/orthoviews-linedrawings/images/png
-INDEX = $(BUILDDIR)/index.html
 
 PIPENV = python3 -m pipenv
 VIEWBUILDER = $(PIPENV) run python3 ./view_maker.py
@@ -43,10 +42,6 @@ clean:
 	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)" "$(IMAGES)"
 	rm -f "$(VIEWSDB)" "$(INTRAORAL_VIEWS)" "$(EXTRAORAL_VIEWS)"
 
-$(INDEX):
-	mkdir -p $(BUILDDIR)
-	cp $(notdir $@) "$(BUILDDIR)"
-
 deploy: html docx latexpdf 
 	cp htaccess "$(BUILDDIR)/.htaccess"
 	cp htpasswd "$(BUILDDIR)/.htpasswd"
@@ -61,5 +56,5 @@ $(IMAGES):
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile $(IMAGES) genereted_tables $(INDEX)
+%: Makefile $(IMAGES) genereted_tables 
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
