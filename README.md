@@ -1,10 +1,6 @@
 # ADA-1107
 
-These are the source files for the ADA-1107 standard document. You can find the built versions here:
-
-- [HTML build](http://brillig.org/~afm/ada-1107/html/index.html)
-- [docx build](http://brillig.org/~afm/ada-1107/docx/ADA-1107.docx)
-
+These are the source files for the ADA-1107 standard document. You can find the nightly [nightly builds here](http://brillig.org/~afm/ada-1107/index.html).
 
 Source files located in `source/`.
 
@@ -13,8 +9,6 @@ Builds located in `dist/`.
 [Sphinx](https://www.sphinx-doc.org/) is the tool used to build these files into
 HTML, PDF, etc. Sphinx uses the reStructuredText language.
 
-A development build of the document is available
-[here](http://brillig.org/~afm/ada-1107/html/)
 
 ## Requirements
 
