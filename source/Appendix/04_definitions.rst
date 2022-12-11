@@ -9,9 +9,14 @@ Centric relation and Centric occlusion
 .. _centric relation:
 .. _centric occlusion:
 
-Centric relation and centric occlusion are terms which define the mandibular jaw position of the patient. In orthodontics, the doctor asks the patient to place the mandible in one of these positions when imaging the patient in order to provide better clinical decisions. It is important that these positions are recorded with the image.
+Centric relation and centric occlusion are terms which define the mandibular jaw position of the patient. 
+
+According to Hidaka (2002), centric occlusion (CO) is *the patient's full or habitual occlusion* whereas centric relation (CR) is the position of the condyle when *it is forward and uppermost against the eminence when the joint is loaded by the elevating musculature.*
+
+In orthodontics, the doctor asks the patient to place the mandible in one of these positions when imaging the patient in order to provide better informed clinical decisions. It is important that these positions are recorded with the image as these two positions can be measured or compared.
 
 See also :ref:`occlusal relationship`.
+
 
 Overjet
 *******
@@ -21,7 +26,7 @@ Overjet
 Quoting from Draker (1960):
 
 
-    Overjet in millimeters is recorded with the patient in the centric occlusion and measured using a ruler from the labial of the lower incisor to the labial of the upper incisor. The measurement could apply to a protruding single tooth as well as to the whole arch. The measurement is read and rounded off to the nearest millimeter. 
+    *Overjet in millimeters is recorded with the patient in the centric occlusion and measured using a ruler from the labial of the lower incisor to the labial of the upper incisor. The measurement could apply to a protruding single tooth as well as to the whole arch. The measurement is read and rounded off to the nearest millimeter.*
 
 
 Overjet is a clinical diagnosis and requires clinical interpretation and therefore is not stored in the original DICOM image object. However, in order to properly measure Overjet, a measuring device such as a millimeter ruler is required in the image itself and should be recorded accordingly. See :ref:`DICOM Device Sequence <device sequence>` for details.
