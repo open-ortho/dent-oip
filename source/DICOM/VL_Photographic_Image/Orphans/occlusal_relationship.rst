@@ -1,13 +1,19 @@
-Occlusal Relationship
-=====================
+.. _occlusal relationship:
 
-+--------------------------+------------+-------------------+----------------------+------------------------+
-| Coding Scheme Designator | Code Value |   Code Meaning    | SNOMED-CT Concept ID | UMLS Concept Unique ID |
-+==========================+============+===================+======================+========================+
-| SRT                      | XX         | Centric occlusion | 110320000            |                        |
-+--------------------------+------------+-------------------+----------------------+------------------------+
-| SRT                      | XX         | Centric relation  | 736783005            |                        |
-+--------------------------+------------+-------------------+----------------------+------------------------+
-| SRT                      | XX         | Null              | 225583004            |                        |
-+--------------------------+------------+-------------------+----------------------+------------------------+
+Occlusal Relationship (gggg,hhhh)
+=================================
 
+The occlusal relationship of the mandible is recorded here. See :ref:`Centric Relation and Centric Occlusion Definition <centric occlusion>`.
+
+.. list-table:: 
+    :header-rows: 1
+
+    * - Code
+      - Meaning
+      - Notes
+    * - SCT 110320000
+      - Centric occlusion
+      - 
+    * - SCT 736783005
+      - Centric relation
+      - 
