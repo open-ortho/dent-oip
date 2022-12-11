@@ -5,7 +5,7 @@ _build/
 .~*
 .vscode/
 source/tables/generated/
-source/Appendix/intraoral_views.rst
-source/Appendix/extraoral_views.rst
+source/Appendix/*intraoral_views.rst
+source/Appendix/*extraoral_views.rst
 source/images/
 .DS_Store
