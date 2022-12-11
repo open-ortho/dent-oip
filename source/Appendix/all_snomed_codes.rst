@@ -3,7 +3,6 @@
 Summary of DICOM tags for orthodontic/craniofacial views
 --------------------------------------------------------
 
-hello
 
 .. warning::
 	I don't think this section is needed anymore. All of the information

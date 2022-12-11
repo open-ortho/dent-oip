@@ -123,6 +123,7 @@ def ev_write_rst(title, filename, number, example):
     ev_rst = f"""
 {h1(title)}
     
+.. _{number}:
 .. image:: {filename}
     :class: with-border
     :align: center
@@ -157,7 +158,8 @@ def iv_write_rst(title, filename, number, example):
 
     iv_rst = f"""
 {h1(title)}
-    
+
+.. _{number}:
 .. image:: {filename}
     :class: with-border
     :align: center
