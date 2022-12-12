@@ -3,6 +3,10 @@
 Device Sequence (0050,0010)
 ===========================
 
+.. warning:: 
+  Missing SNOMED codes.
+
+
 The Device Sequence allows for an unlimited number of devices, which are defined
 using SNOMED codes. The following are the codes that are most commonly used for
 orthodontic views that may be visible in the image. See :ref:`device_examples` for a more detailed explanation of how these devices look like and how they are used.

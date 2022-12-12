@@ -3,6 +3,16 @@
 CID-xxx5 Orthodontic Treatment Progress
 ***************************************
 
+.. warning:: 
+  Table at bottom is missing proper SNOMED Codes.
+
+During an orthodontic treatment, it is common for the provider to keep
+track of treatment progress by regularly collecting records (such as
+photographs or intra-oral surface scans) [provide reference]. It is
+therefore useful to identify when, relative to an orthodontic treatment,
+the records were taken. 
+
+
 .. list-table::
     :header-rows: 1
 
@@ -35,6 +45,14 @@ CID-xxx5 Orthodontic Treatment Progress
       - 1,2,3,...
       - An integer representing the sequence number of the progress.
 
+
+.. _concept code sequence attribute:
+
+Concept Code Sequence Attribute (0040,A168)
+-------------------------------------------
+
+The allowed values for this tag have been taken from `DICOM Table CID6146 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_6146.html>`__ and applied in the :ref:`Progress Table above <cid-xxx5>`
+
 Below is a list of the types of progresses used by the orthodontic domain and
 how to properly encode them in a DICOM object.
 
@@ -64,11 +82,3 @@ how to properly encode them in a DICOM object.
 .. note::
 
    The lack of a row for "Initial" is intentional. All Pre-treatment images are essentially initials and initial can be considered as a synonym for pretreatment. There is no need for coding Initial in the image. The last pretreatment image acquired before treatment starts would be the initial.
-
-
-.. _concept code sequence attribute:
-
-Concept Code Sequence Attribute (0040,A168)
--------------------------------------------
-
-The allowed values for this tag have been taken from `DICOM Table CID6146 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_6146.html>`__ and applied in the :ref:`Progress Table above <cid-xxx5>`
