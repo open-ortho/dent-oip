@@ -367,7 +367,7 @@ def close_connection():
     con.close()
 
 
-def query_add_attribute(column, view_type):
+def query_add_attribute(column:str, view_type:str) -> str:
     """Returns an SQL string to insert new DICOM tag into _temp table.
 
     This assumes that the DICOM codes have been imported into a table called "tags_dicom". The function ``load_dicom_tags()``
@@ -406,7 +406,7 @@ WHERE id = '{column}';
     """
 
 
-def query_add_snomed_code(column, view_type):
+def query_add_snomed_code(column:str, view_type:str) -> str:
     """Returns an SQL string to insert a new SNOMED CT based attribute, which
     is not a sequence.
 
@@ -435,7 +435,7 @@ WHERE id = '{column}';
 """
 
 
-def query_insert_sequence(column, code_id):
+def query_insert_sequence(column:str, code_id:str) -> str:
     """Return an SQL query string to add entire code sequence."""
     # IDs to use for each new row in the temp table
     cv_id = f"{column}_code_value_{code_id}"
@@ -515,7 +515,7 @@ WHERE id = '{csv_id}';
     return qs
 
 
-def create_view(cur, view_type):
+def create_view(cur:sqlite3.Cursor, view_type:str):
     """Creates the CSV file with attributes and tags for a single view.
 
     This function will generate the CSV file for the current view_type, which
@@ -526,7 +526,7 @@ def create_view(cur, view_type):
     Parameters
     ----------
     :param cur: The database cursor
-    :type cur: cursor
+    :type cur: sqlite3:Cursor
 
     :param view_type: The name of the view, like IV-01. It is used to name the output files.
     :type view_type: str
