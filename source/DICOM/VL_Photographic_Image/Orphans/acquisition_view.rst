@@ -3,13 +3,19 @@ Dental Acquisition View
 
 .. Why do we need a new table for Sagittal and Coronal view? How does this differ from Patient Orientation?
 
-+--------------------------+------------+---------------------+----------------------+------------------------+
-| Coding Scheme Designator | Code Value |    Code Meaning     | SNOMED-CT Concept ID | UMLS Concept Unique ID |
-+==========================+============+=====================+======================+========================+
-| SRT                      | G-A145     | Sagittal            | 30730003             |                        |
-+--------------------------+------------+---------------------+----------------------+------------------------+
-| SRT                      | G-A138     | Coronal             | 81654009             |                        |
-+--------------------------+------------+---------------------+----------------------+------------------------+
-| SRT                      | R-40810    | Occlusal projection | 710098004            |                        |
-+--------------------------+------------+---------------------+----------------------+------------------------+
+.. list-table:: 
+    :header-rows: 1
+
+    * - Code
+      - Meaning
+      - Notes
+    * - SCT 30730003
+      - Sagittal
+      - 
+    * - SCT 81654009
+      - Coronal
+      - 
+    * - SCT 710098004
+      - Occlusal projection
+      - 
 
