@@ -1,9 +1,7 @@
-.. _dental acquisition view:
+.. _occlusal relationship:
 
-CID xxx1 Dental Acquisition View
-================================
-
-.. Why do we need a new table for Sagittal and Coronal view? How does this differ from Patient Orientation?
+CID xxx4 Occlusal Relationship
+=================================
 
 .. list-table:: 
     :header-rows: 1
@@ -19,11 +17,11 @@ CID xxx1 Dental Acquisition View
     * - >> Concept Name Code Sequence Attribute
       - (0040,A043)
       - ?
-      - Dental Acquisition View
+      - Occlusal Relationship
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
-      - One of CID-xxx1 values. 
-      - See :ref:`notes <cid-xxx1>` below.
+      - One of CID-xxx4 values. 
+      - See :ref:`notes <cid-xxx4>` below.
 
 Concept Name Code Sequence Attribute (0040,A043)
 ------------------------------------------------
@@ -38,7 +36,9 @@ Concept Code Sequence Attribute (0040,A168)
 .. note::
   These codes have been added to DICOM via CP-1570.
 
-.. _cid-xxx1:
+.. _cid-xxx4:
+
+The occlusal relationship of the mandible is recorded here. See :ref:`Centric Relation and Centric Occlusion Definition <centric occlusion>`.
 
 .. list-table:: 
     :header-rows: 1
@@ -46,13 +46,9 @@ Concept Code Sequence Attribute (0040,A168)
     * - Code
       - Meaning
       - Notes
-    * - SCT 30730003
-      - Sagittal
+    * - SCT 110320000
+      - Centric occlusion
       - 
-    * - SCT 81654009
-      - Coronal
+    * - SCT 736783005
+      - Centric relation
       - 
-    * - SCT 710098004
-      - Occlusal projection
-      - 
-

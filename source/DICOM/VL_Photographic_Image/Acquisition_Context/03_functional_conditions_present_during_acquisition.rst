@@ -64,12 +64,3 @@ The following are those codes of `DICOM CID 91 <http://dicom.nema.org/medical/di
     * - SCT 47162009
       - Mouth Closed
       - 
-
-
-
-Acquisition Context Description (0040,0556)
--------------------------------------------
-
-.. warning:: 
-
-  Missing explanation of description.
