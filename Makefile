@@ -11,13 +11,14 @@ IMAGES = source/images
 IMAGES_ORIGIN = modules/orthoviews-linedrawings/images/png
 
 PIPENV = python3 -m pipenv
-VIEWBUILDER = $(PIPENV) run python3 ./view_maker.py
+# PIPENV_RUN = $(PIPENV) run
+VIEWBUILDER = $(PIPENV_RUN) python3 ./view_maker.py
 
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
 SPHINXOPTS    ?=
-SPHINXBUILD   ?= $(PIPENV) run sphinx-build
+SPHINXBUILD   ?= $(PIPENV_RUN) sphinx-build
 SOURCEDIR     = source
 
 SSH_USER			= afm
