@@ -5,10 +5,10 @@ Acquisition Context Sequence (0040,0555)
 
 For orthodontic photography, we make use of the `Acquisition Context Sequence (0040,0555) <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.14.html>`__ to store the treatment progress and the conditions of the lips and mouth (open, closed, smiling, relaxed, etc).
 
-Orthodontic Treatment Progress
-******************************
+CID-xxx5 Orthodontic Treatment Progress
+***************************************
 
-.. list-table:: 
+.. list-table::
     :header-rows: 1
 
     * - Attribute Name
@@ -25,7 +25,7 @@ Orthodontic Treatment Progress
       - Time Point Type
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
-      - One of CID6146 values. 
+      - One of :ref:`cid-xxx5` below. 
       - See :ref:`notes <concept code sequence attribute>` below.
     * - > Acquisition Context Sequence Attribute
       - (0040,0555) 
@@ -43,7 +43,7 @@ Orthodontic Treatment Progress
 Below is a list of the types of progresses used by the orthodontic domain and
 how to properly encode them in a DICOM object.
 
-.. _table_progress_values:
+.. _cid-xxx5:
 .. list-table:: Progress Values
     :header-rows: 1
 
@@ -76,10 +76,10 @@ how to properly encode them in a DICOM object.
 Concept Code Sequence Attribute (0040,A168)
 -------------------------------------------
 
-The allowed values for this tag have been taken from `DICOM Table CID6146 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_6146.html>`__ and applied in the :ref:`Progress Table above <table_progress_values>`
+The allowed values for this tag have been taken from `DICOM Table CID6146 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_6146.html>`__ and applied in the :ref:`Progress Table above <cid-xxx5>`
 
-Functional Condition Present During Acquisition
-******************************************************
+CID xxx3 Functional Conditions Present During Acquisition
+*********************************************************
 
 .. list-table:: 
     :header-rows: 1
@@ -99,11 +99,7 @@ Functional Condition Present During Acquisition
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
       - One of CID-91 values. 
-      - See :ref:`notes <cid-91>` below.
-    * - Acquisition Context Description
-      - (0040,0556)
-      - 
-      - Optional. See notes below.
+      - See :ref:`notes <cid-xxx3>` below.
 
 Concept Name Code Sequence Attribute (0040,A043)
 ------------------------------------------------
@@ -120,9 +116,9 @@ The following are those codes of `DICOM CID 91 <http://dicom.nema.org/medical/di
   These codes have been added to DICOM via CP-1570.
 
 
-.. _cid-91:
+.. _cid-xxx3:
 
-.. list-table:: CID-91
+.. list-table:: CID xxx3
     :header-rows: 1
 
     * - Code

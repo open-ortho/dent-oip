@@ -1,5 +1,5 @@
-Dental Acquisition View
-=======================
+CID xxx1 Dental Acquisition View
+================================
 
 .. Why do we need a new table for Sagittal and Coronal view? How does this differ from Patient Orientation?
 

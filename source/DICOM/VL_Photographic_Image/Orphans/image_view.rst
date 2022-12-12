@@ -1,5 +1,5 @@
-Dental Image Views
-==================
+CID xxx2 Dental Image Views
+===========================
 
 .. warning:: 
     It appears as if this is a duplicate for :ref:`device sequence`. This needs to be verified. Is it possible that we no longer need this?
