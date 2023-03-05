@@ -3,6 +3,8 @@
 CID xxx2 Dental Image View
 **************************
 
+The projection of the anatomic region of interest on an image receptor.
+
 .. list-table:: 
     :header-rows: 1
 
