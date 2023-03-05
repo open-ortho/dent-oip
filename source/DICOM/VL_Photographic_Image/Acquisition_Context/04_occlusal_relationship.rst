@@ -1,7 +1,7 @@
 .. _occlusal relationship:
 
-CID xxx4 Occlusal Relationship
-=================================
+CID xxx4 Dental Occlusion
+=========================
 
 .. list-table:: 
     :header-rows: 1
@@ -16,8 +16,8 @@ CID xxx4 Occlusal Relationship
       - 
     * - >> Concept Name Code Sequence Attribute
       - (0040,A043)
-      - ?
-      - Occlusal Relationship
+      - `SCT 25272006 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=25272006&edition=MAIN&release=&languages=en>`__
+      - Dental occlusion, function
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
       - One of CID-xxx4 values. 
@@ -46,9 +46,9 @@ The occlusal relationship of the mandible is recorded here. See :ref:`Centric Re
     * - Code
       - Meaning
       - Notes
-    * - SCT 110320000
+    * - `SCT 110320000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=110320000&edition=MAIN&release=&languages=en>`__
       - Centric occlusion
       - 
-    * - SCT 736783005
+    * - `SCT 736783005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=736783005&edition=MAIN&release=&languages=en>`__
       - Centric relation
       - 

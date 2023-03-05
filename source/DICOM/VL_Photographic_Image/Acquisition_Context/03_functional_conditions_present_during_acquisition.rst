@@ -1,7 +1,7 @@
 .. _functional conditions present during acquisition:
 
 CID xxx3 Functional Conditions Present During Acquisition
-*********************************************************
+=========================================================
 
 A functional condition present during acquisition, such as phonation, weight bearing, voiding of the bladder or hemodynamic physiological challenges.
 
@@ -18,7 +18,7 @@ A functional condition present during acquisition, such as phonation, weight bea
       - 
     * - >> Concept Name Code Sequence Attribute
       - (0040,A043)
-      - DCM-130324
+      - `DCM-130324 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html#DCM_130324>`__
       - Functional condition present during acquisition
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
