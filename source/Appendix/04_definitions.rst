@@ -15,7 +15,7 @@ According to Hidaka (2002), centric occlusion (CO) is *the patient's full or hab
 
 In orthodontics, the doctor asks the patient to place the mandible in one of these positions when imaging the patient in order to provide better informed clinical decisions. It is important that these positions are recorded with the image as these two positions can be measured or compared.
 
-See also :ref:`occlusal relationship`.
+See also :ref:`functional conditions present during acquisition`.
 
 
 Overjet

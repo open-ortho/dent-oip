@@ -71,3 +71,10 @@ The following are those codes of `DICOM CID 91 <http://dicom.nema.org/medical/di
     * - `SCT 789130005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=789130005&edition=MAIN&release=&languages=en>`__
       - Photographic image with mouth partially opened position and teeth apart (record artifact)
       - 
+    * - `SCT 110320000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=110320000&edition=MAIN&release=&languages=en>`__
+      - Centric occlusion
+      - Optional. If present, *Centric relation* cannot be present. See :ref:`Centric Relation and Centric Occlusion Definition <centric occlusion>`.
+    * - `SCT 736783005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=736783005&edition=MAIN&release=&languages=en>`__
+      - Centric relation
+      - Optional. If present, *Centric occlusion* cannot be present. See :ref:`Centric Relation and Centric Occlusion Definition <centric occlusion>`.
+
