@@ -16,6 +16,7 @@ coronal,81654009,Coronal
 occlusal,710098004,Occlusal
 mirror_corrected,787610003,Photographic image corrected intraoral mirrored visible record
 mirror_uncorrected,789135000,"Mirrored visible image uncorrected "
+indirect,255541007,Indirect
 direct,255589003,Direct
 mouth_open,262016004,Mouth Open
 teeth_apart,789130005,"Photographic image with mouth partially opened position and teeth apart "
