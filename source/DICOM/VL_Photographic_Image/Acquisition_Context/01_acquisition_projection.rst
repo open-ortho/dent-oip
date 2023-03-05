@@ -18,7 +18,7 @@ The projection of the anatomic region of interest on an image receptor.
       - 
     * - >> Concept Name Code Sequence Attribute
       - (0040,A043)
-      - `DCM-111031 <https://dicom.nema.org/medical/dicom/current/output/html/part16.html#DCM_111031>`__
+      - `DCM-111031 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html#DCM_111031>`__
       - Image View
     * - >> Concept Code Sequence Attribute
       - (0040,A168)

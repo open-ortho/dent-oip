@@ -18,7 +18,7 @@ Modifier for Image View.
       - 
     * - >> Concept Name Code Sequence Attribute
       - (0040,A043)
-      - `DCM-111032 <https://dicom.nema.org/medical/dicom/current/output/html/part16.html#DCM_111032>`__
+      - `DCM-111032 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html#DCM_111032>`__
       - Image View Modifier
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
