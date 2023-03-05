@@ -1,7 +1,9 @@
 .. _dental acquisition projection:
 
-CID xxx1 Dental acquisition projection
+CID xxx1 Dental Image View
 ======================================
+
+The projection of the anatomic region of interest on an image receptor.
 
 .. list-table:: 
     :header-rows: 1
@@ -16,8 +18,8 @@ CID xxx1 Dental acquisition projection
       - 
     * - >> Concept Name Code Sequence Attribute
       - (0040,A043)
-      - `SCT 260419006 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260419006&edition=MAIN&release=&languages=en>`__
-      - Projection
+      - `DCM-111031 <https://dicom.nema.org/medical/dicom/current/output/html/part16.html#DCM_111031>`__
+      - Image View
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
       - One of CID-xxx1 values. 
@@ -27,6 +29,7 @@ CID xxx1 Dental acquisition projection
 Concept Code Sequence Attribute (0040,A168)
 -------------------------------------------
 
+A DICOM code is used (instead of a SNOMED-CT code), because the Concept Name "`Image View <https://dicom.nema.org/medical/dicom/current/output/html/part16.html#DCM_111031>`__" already exists in DICOM and can be found througout `DICOM Part 16 <https://dicom.nema.org/medical/dicom/current/output/html/part16.html>`__ 
 
 .. note::
   Use one of the lateral projections for photographs of the buccal (cheek) region.

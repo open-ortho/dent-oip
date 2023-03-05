@@ -1,9 +1,9 @@
 .. _dental image view:
 
-CID xxx2 Dental Image View
-**************************
+CID xxx2 Dental Image View Modifier
+===================================
 
-The projection of the anatomic region of interest on an image receptor.
+Modifier for Image View.
 
 .. list-table:: 
     :header-rows: 1
@@ -18,8 +18,8 @@ The projection of the anatomic region of interest on an image receptor.
       - 
     * - >> Concept Name Code Sequence Attribute
       - (0040,A043)
-      - DCM-111031
-      - Image View
+      - `DCM-111032 <https://dicom.nema.org/medical/dicom/current/output/html/part16.html#DCM_111032>`__
+      - Image View Modifier
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
       - One of CID xxx2 values. 
@@ -28,7 +28,7 @@ The projection of the anatomic region of interest on an image receptor.
 Concept Name Code Sequence Attribute (0040,A043)
 ------------------------------------------------
 
-A DICOM code is used (instead of a SNOMED-CT code), because the Concept Name "`Image View <https://dicom.nema.org/medical/dicom/current/output/html/part16.html#DCM_111031>`__" already exists in DICOM and can be found througout `DICOM Part 16 <https://dicom.nema.org/medical/dicom/current/output/html/part16.html>`__ 
+A DICOM code is used (instead of a SNOMED-CT code), because the Concept Name "`Image View Modifier <https://dicom.nema.org/medical/dicom/current/output/html/part16.html#DCM_111032>`__" already exists in DICOM and can be found througout `DICOM Part 16 <https://dicom.nema.org/medical/dicom/current/output/html/part16.html>`__ 
 
 Concept Code Sequence Attribute (0040,A168)
 -------------------------------------------
