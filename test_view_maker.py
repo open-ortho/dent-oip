@@ -6,6 +6,7 @@ import os
 import logging
 import sqlite3
 import view_maker as vm
+from pydicom import dcmread
 
 class Test(unittest.TestCase):
 
@@ -41,3 +42,23 @@ class Test(unittest.TestCase):
         self.assertEqual(views[0][0],"IV-01")
 
 
+    def test_dicom(self):
+        def show_dataset(ds, indent):
+            for elem in ds:
+                if elem.keyword != "PixelData":
+                    if elem.VR == "SQ":
+                        value = ""
+                    else:
+                        value = elem.value
+                    print(f'"{indent} {elem.name}","{elem.tag}","{value}"')
+                if elem.VR == "SQ":
+                    indent += ">"
+                    for item in elem:
+                        show_dataset(item, indent)
+                    indent = indent[1:]
+
+        def print_dataset(file_name):
+            ds = dcmread(file_name)
+            show_dataset(ds, indent="")
+
+        print_dataset("test.dcm")
