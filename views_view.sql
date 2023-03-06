@@ -50,16 +50,16 @@ FROM (
 WHERE id = 'anatomic_region_sequence';
 -- Anatomic Region Modifier Sequence
 UPDATE iv_03
-SET code_value = 'SCT-' || anatomic_region_modifier_sequnce.code,
-    meaning = anatomic_region_modifier_sequnce.meaning
+SET code_value = 'SCT-' || anatomic_region_modifier_sequence.code,
+    meaning = anatomic_region_modifier_sequence.meaning
 FROM (
         SELECT codes_snomed.code,
             codes_snomed.meaning
         FROM ortho_views
-            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.anatomic_region_modifier_sequnce
+            INNER JOIN codes_snomed ON codes_snomed.id = ortho_views.anatomic_region_modifier_sequence
         WHERE ortho_views.view_name LIKE 'IV-03'
-    ) as anatomic_region_modifier_sequnce
-WHERE id = 'anatomic_region_modifier_sequnce';
+    ) as anatomic_region_modifier_sequence
+WHERE id = 'anatomic_region_modifier_sequence';
 -- show results
 SELECT id,
     attribute_name AS "Attribute Name",
