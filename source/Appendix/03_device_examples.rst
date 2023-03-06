@@ -50,31 +50,18 @@ A device placed inside the field of view primarily used to measure overjet. See 
 The following are views which make use of such a device: 
 :ref:`IV-14 <IV-14>`
 
-Black Mirror
-++++++++++++
-
-.. figure:: ../images-static/no-image.png
-    :class: with-border with-shadow float-left
-    :align: center
-    :scale: 10
-    :alt: Phograph of an orthodontic black mirror.
-
-A device ...
-
-The following are views which make use of such a device: ...
-
 Contraster
 ++++++++++
 
-.. figure:: ../images-static/no-image.png
+.. figure:: ../images-static/contraster.jpg
     :class: with-border with-shadow float-left
     :align: center
     :scale: 10
     :alt: Phograph of an orthodontic contraster.
 
-A device ...
+A device used to prevent soft tissue of the oral cavity from appearing in the field of view. The device is typically flat and comes in different shapes, in order to be placed in the oral cavity behind the teeth to be photographed. The device is also used to keep other soft tissue like cheeks from covering areas of interest, thus serving a dual purpose: retractor and background. 
 
-The following are views which make use of such a device: ...
+Any of the intraoral views can be taken with a contraster. 
 
 Coin
 ++++++++++
