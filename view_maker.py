@@ -97,11 +97,10 @@ C_VIE = "view_name"
 C_POR = "patient_orientation"
 C_LAT = "laterality"
 C_ARS = "anatomic_region_sequence"
-C_ARM = "anatomic_region_modifier_sequnce"
+C_ARM = "anatomic_region_modifier_sequence"
 C_PAM = "primary_anatomic_structure_sequence"
 C_PAMS = "primary_anatomic_structure_modifier_sequence"
 C_DEV = "device_sequence"
-C_AQV = "acquisition_projection"
 C_IMV = "image_view"
 C_IVM = "image_view_modifier"
 C_FCA = "functional_condition_present_during_acquisition"
@@ -218,7 +217,6 @@ def initdb(cur):
         {C_PAM} text,
         {C_PAMS} text,
         {C_DEV} text,
-        {C_AQV} text,
         {C_IMV} text,
         {C_IVM} text,
         {C_FCA} text,
@@ -335,7 +333,6 @@ def load_views(cur):
                 i[C_PAM],
                 i[C_PAMS],
                 i[C_DEV],
-                i[C_AQV],
                 i[C_IMV],
                 i[C_IVM],
                 i[C_FCA],
@@ -355,7 +352,6 @@ def load_views(cur):
         {C_PAM},
         {C_PAMS},
         {C_DEV},
-        {C_AQV},
         {C_IMV},
         {C_IVM},
         {C_FCA},
@@ -590,7 +586,7 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
     ):
         if len(dev) > 0 and dev != "na":
             cur.executescript(query_insert_sequence(column=C_DEV, code_id=dev))
-    cur.executescript(query_add_snomed_code(C_AQV, view_type))
+    cur.executescript(query_add_snomed_code(C_IVM, view_type))
     cur.executescript(query_add_snomed_code(C_IMV, view_type))
     
     # Functional Conditions Present During Acquisition
@@ -602,14 +598,6 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
         if len(fca) > 0 and fca != "na":
             cur.executescript(query_insert_sequence(column=C_FCA, code_id=fca))
     
-    # Occlusal Relationship
-    for ocr in (
-        cur.execute(f"SELECT {C_OCR} FROM ortho_views WHERE view_name = '{view_type}';")
-        .fetchone()[0]
-        .split("^")
-    ):
-        if len(ocr) > 0 and ocr != "na":
-            cur.executescript(query_insert_sequence(column=C_OCR, code_id=ocr))
     # except sqlite3.OperationalError as e:
     #     print("An error occured: ", e)
     #     print(query_view)
