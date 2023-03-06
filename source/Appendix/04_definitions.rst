@@ -15,6 +15,9 @@ According to Hidaka (2002), centric occlusion (CO) is *the patient's full or hab
 
 In orthodontics, the doctor asks the patient to place the mandible in one of these positions when imaging the patient in order to provide better informed clinical decisions. It is important that these positions are recorded with the image as these two positions can be measured or compared.
 
+.. note::
+    Both centric relation and centric occlusion define a type of dental occlusion, i.e. how teeth occlude. In other words they specify how the cusps of the opposing teeth fitting together come into contact. It is therfore not possible to have the mouth open while being in centric occlusion or centric relation, and the DICOM file can therefore not be tagged as *mouth open* or *teeth apart* and *centric relation* or *centric occlusion* at the same time.
+
 See also :ref:`functional conditions present during acquisition`.
 
 
