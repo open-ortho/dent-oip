@@ -1,19 +1,25 @@
 id,code,meaning
-right,24028007,Right
-left,7771000,Left
+right,24028007,Right (qualifier value)
+right_projection,399198007,Right lateral projection (qualifier value)
+left,7771000,Left (qualifier value)
+left_projection,399173006,Left lateral projection (qualifier value)
 right_and_left,51440002,Right And Left
 closeup,789131009,Close-up
+head_neck,361355005,Entire head and neck (body structure)
+head,69536005,Head structure (body structure)
+mouth,21082005,Entire mouth region (body structure)
 face,302549007,Face
 maxilla,181813003,Maxilla
 mandible,181812008,Mandible
 jaw,181811001,Jaw region
-oral,362628005,Oral region
+oral,362628005,Entire oral region of face (body structure)
+oral_cavity,74262004,Oral cavity structure (body structure)
 anterior_teeth,789313002,Anterior teeth
-buccal,261062005,Buccal
+buccal,728500007,Buccal
 mirror,47162009,Mirror
 sagittal,30730003,Sagittal
-coronal,81654009,Coronal
-occlusal,710098004,Occlusal
+frontal,399033003,Frontal projection (qualifier value)
+occlusal,260499007,Occlusal projection (qualifier value)
 mirror_corrected,787610003,Photographic image corrected intraoral mirrored visible record
 mirror_uncorrected,789135000,"Mirrored visible image uncorrected "
 indirect,255541007,Indirect
