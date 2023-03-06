@@ -548,17 +548,17 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
         pass
     output_file = os.path.join(PATH_TABLES_GENERATED, view_type + ".csv")
     cur.executescript(query_view)
+    
+    # Patient Orientation
     cur.executescript(query_add_attribute(C_POR, view_type))
+    
+    # Laterality
     cur.executescript(query_add_attribute(C_LAT, view_type))
 
-    # Anatomic Region Sequence
-    for ars in (
-        cur.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';")
-        .fetchone()[0]
-        .split("^")
-    ):
-        if len(ars) > 0 and ars != "na":
-            cur.executescript(query_insert_sequence(column=C_ARS, code_id=ars))
+    # Anatomic Region Sequence: only single item allowed
+    ars = cur.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';").fetchone()[0]
+    if len(ars) > 0 and ars != "na":
+        cur.executescript(query_insert_sequence(column=C_ARS, code_id=ars))
     
     # Anatomic Region Modifier Sequence
     for arm in (
