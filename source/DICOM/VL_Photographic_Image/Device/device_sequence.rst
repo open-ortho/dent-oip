@@ -17,22 +17,19 @@ orthodontic views that may be visible in the image. See :ref:`device_examples` f
     * - Code
       - Meaning
       - Notes
-    * - SCT 102304005
+    * - `SCT 102304005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=102304005&edition=MAIN&release=&languages=en>`__
       - Measuring Ruler
       - When included, the ruler should be in SI units (millimeter increments). DICOM device sequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements.
     * - SCT XXXXXX
       - Intraoral Photographic Mirror
       - Awaiting for SNOMED publication of new code. Use SCT 47162009 'Mirror'.
     * - SCT XXXXXX
-      - Contraster
+      - Contraster/Black Mirror
       - Awaiting for SNOMED publication of new code. 
-    * - SCT XXXXXX
-      - Black Mirror
-      - Awaiting for SNOMED publication of new code.
     * - SCT XXXXXX
       - Coin
       - Awaiting for SNOMED publication of new code.
-    * - SCT 86967005
+    * - `SCT 86967005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=86967005&edition=MAIN&release=&languages=en>`__
       - Tool
       - Use when other devices are present in the field of view, such as contraster, coin or black mirror.
 
