@@ -8,7 +8,7 @@ Overview
 
 Initially, we had all the views in a single table, which grew very large. It was hard to read, but easy to maintain. Having many tables, one for each view, would have made the information a lot easier to understand, but it would have been a nightmare to maintain: every single change would have required search and replace operations, and the possibility of generating inconsistent pages and introducing errors would have been really high.
 
-The appendix tables needed to be generated programmatically. By using this script, we can keep and maintain the views from a single CSV file, and programmatically generating the readable appendix tables.
+The appendix tables needed to be generated programmatically. By using this script, we can keep and maintain the views from a handful of CSV files, and programmatically generating the readable appendix tables.
 
 Procedure
 ---------
@@ -69,8 +69,8 @@ PREFIX_DICOM = "DCM "
 
 # Snomed name, version and number to appear in the code sequences.
 SNOMED_NAME = "SNOMED CT"
-SNOMED_VERSION = "3.25"
-SNOMED_YEAR = "2022"
+SNOMED_VERSION = "2023-02-28"
+SNOMED_YEAR = "2023"
 
 # Files and paths
 PATH_TABLES = os.path.join(".", "source", "tables")
@@ -99,11 +99,12 @@ C_LAT = "laterality"
 C_ARS = "anatomic_region_sequence"
 C_ARM = "anatomic_region_modifier_sequnce"
 C_PAM = "primary_anatomic_structure_sequence"
+C_PAMS = "primary_anatomic_structure_modifier_sequence"
 C_DEV = "device_sequence"
 C_AQV = "acquisition_projection"
 C_IMV = "image_view"
+C_IVM = "image_view_modifier"
 C_FCA = "functional_condition_present_during_acquisition"
-C_OCR = "occlusal_relationship"
 C_FUL = "view_full_name"
 C_THE = "teeth_example"
 
@@ -215,11 +216,12 @@ def initdb(cur):
         {C_ARS} text,
         {C_ARM} text,
         {C_PAM} text,
+        {C_PAMS} text,
         {C_DEV} text,
         {C_AQV} text,
         {C_IMV} text,
+        {C_IVM} text,
         {C_FCA} text,
-        {C_OCR} text,
         {C_FUL} text,
         {C_THE} text)
         """
@@ -331,11 +333,12 @@ def load_views(cur):
                 i[C_ARS],
                 i[C_ARM],
                 i[C_PAM],
+                i[C_PAMS],
                 i[C_DEV],
                 i[C_AQV],
                 i[C_IMV],
+                i[C_IVM],
                 i[C_FCA],
-                i[C_OCR],
                 i[C_FUL],
                 i[C_THE],
             )
@@ -350,11 +353,12 @@ def load_views(cur):
         {C_ARS},
         {C_ARM},
         {C_PAM},
+        {C_PAMS},
         {C_DEV},
         {C_AQV},
         {C_IMV},
+        {C_IVM},
         {C_FCA},
-        {C_OCR},
         {C_FUL},
         {C_THE})
         VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?);""",
@@ -550,6 +554,8 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
     cur.executescript(query_view)
     cur.executescript(query_add_attribute(C_POR, view_type))
     cur.executescript(query_add_attribute(C_LAT, view_type))
+
+    # Anatomic Region Sequence
     for ars in (
         cur.execute(f"SELECT {C_ARS} FROM ortho_views WHERE view_name = '{view_type}';")
         .fetchone()[0]
@@ -557,6 +563,8 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
     ):
         if len(ars) > 0 and ars != "na":
             cur.executescript(query_insert_sequence(column=C_ARS, code_id=ars))
+    
+    # Anatomic Region Modifier Sequence
     for arm in (
         cur.execute(f"SELECT {C_ARM} FROM ortho_views WHERE view_name = '{view_type}';")
         .fetchone()[0]
@@ -564,6 +572,8 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
     ):
         if len(arm) > 0 and arm != "na":
             cur.executescript(query_insert_sequence(column=C_ARM, code_id=arm))
+    
+    # Primary Anatomic Structure Sequence
     for pam in (
         cur.execute(f"SELECT {C_PAM} FROM ortho_views WHERE view_name = '{view_type}';")
         .fetchone()[0]
@@ -571,6 +581,8 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
     ):
         if len(pam) > 0 and pam != "na":
             cur.executescript(query_insert_sequence(column=C_PAM, code_id=pam))
+    
+    # Device Sequence
     for dev in (
         cur.execute(f"SELECT {C_DEV} FROM ortho_views WHERE view_name = '{view_type}';")
         .fetchone()[0]
@@ -580,6 +592,8 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
             cur.executescript(query_insert_sequence(column=C_DEV, code_id=dev))
     cur.executescript(query_add_snomed_code(C_AQV, view_type))
     cur.executescript(query_add_snomed_code(C_IMV, view_type))
+    
+    # Functional Conditions Present During Acquisition
     for fca in (
         cur.execute(f"SELECT {C_FCA} FROM ortho_views WHERE view_name = '{view_type}';")
         .fetchone()[0]
@@ -587,6 +601,8 @@ CREATE TEMP TABLE IF NOT EXISTS _temp (
     ):
         if len(fca) > 0 and fca != "na":
             cur.executescript(query_insert_sequence(column=C_FCA, code_id=fca))
+    
+    # Occlusal Relationship
     for ocr in (
         cur.execute(f"SELECT {C_OCR} FROM ortho_views WHERE view_name = '{view_type}';")
         .fetchone()[0]
