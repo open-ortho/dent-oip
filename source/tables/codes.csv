@@ -1,0 +1,57 @@
+keyword,code,codeset,meaning
+right,24028007,SCT,Right (qualifier value)
+right_projection,399198007,SCT,Right lateral projection (qualifier value)
+left,7771000,SCT,Left (qualifier value)
+left_projection,399173006,SCT,Left lateral projection (qualifier value)
+right_and_left,51440002,SCT,Right And Left
+closeup,789131009,SCT,Close-up
+head_neck,361355005,SCT,Entire head and neck (body structure)
+head,69536005,SCT,Head structure (body structure)
+mouth,21082005,SCT,Entire mouth region (body structure)
+face,302549007,SCT,Face
+maxilla,181813003,SCT,Maxilla
+mandible,181812008,SCT,Mandible
+jaw,181811001,SCT,Jaw region
+oral,362628005,SCT,Entire oral region of face (body structure)
+oral_cavity,74262004,SCT,Oral cavity structure (body structure)
+anterior_teeth,789313002,SCT,Anterior teeth
+buccal,728500007,SCT,Buccal
+mirror,47162009,SCT,Mirror
+sagittal,30730003,SCT,Sagittal
+frontal,399033003,SCT,Frontal projection (qualifier value)
+occlusal,260499007,SCT,Occlusal projection (qualifier value)
+mirror_corrected,787610003,SCT,Photographic image corrected intraoral mirrored visible record
+mirror_uncorrected,789135000,SCT,Mirrored visible image uncorrected 
+indirect,255541007,SCT,Indirect
+direct,255589003,SCT,Direct
+mouth_open,262016004,SCT,Mouth Open
+teeth_apart,789130005,SCT,Photographic image with mouth partially opened position and teeth apart 
+lips_relaxed,789314008,SCT,Photographic image of face with lips in relaxed position
+lips_closed,787607005,SCT,Photographic image with lips closed
+smile,225583004,SCT,Smiles
+cant,710793000,SCT,Cant of occlusal plane
+palsy,193093009,SCT,Facial palsy/Bell’s palsy
+co,110320000,SCT,Centric occlusion 
+cr,736783005,SCT,Centric relation 
+mpf,787611004,SCT,Photographic image extraoral with mandible postured forward
+inf_view,261089000,SCT,Inferior
+sup_view,264217000,SCT,Superior
+ruler,102304005,SCT,Measuring ruler
+gingival_recession,4356008,SCT,Gingival recession 
+tongue_thrust,110343009,SCT,Tongue thrust
+frenum,418232001,SCT,Structure of oral frenum
+45deg,787612006,SCT,45º
+na,,,Not Applicable
+edentulous,278650002,SCT,Edentulous 
+l_both,B,DCM,Both
+l_left,L,DCM,Left
+l_right,R,DCM,Right
+l_unpaired,U,DCM,Unpaired
+o_frontal,"[‘R’,’F’]",DCM,"Right, Foot"
+o_left,"[‘P’,’F’]",DCM,"Posterior, Foot"
+o_right,"[‘A’,‘F’]",DCM,"Anterior, Foot"
+o_top,"[‘R’,’P’]",DCM,"Right, Posterior"
+o_bottom,"[‘R’,’A’]",DCM,"Right, Anterior"
+o_front,"[‘L’,’F’]",DCM,"Left, Foot"
+o_left_posterior,"[‘L’,’P’]",DCM,"Left, Posterior"
+o_left_anterior,"[‘L’,’A’]",DCM,"Left, Anterior"

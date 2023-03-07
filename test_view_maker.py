@@ -32,6 +32,9 @@ class Test(unittest.TestCase):
         self.assertEqual(len(tables),4)
 
     def test_load_views(self):
+        ''' Load views into DB.
+        
+        '''
         try:
             vm.initdb(vm.cur)
         except sqlite3.OperationalError:
@@ -43,14 +46,21 @@ class Test(unittest.TestCase):
 
 
     def test_dicom(self):
+        ignore_values_of = [
+            "(0008,0018)",
+            "(0020,000d)",
+            "(0020,000e)",
+        ]
         def show_dataset(ds, indent):
             for elem in ds:
+                tag = str(elem.tag).replace(" ","")
                 if elem.keyword != "PixelData":
-                    if elem.VR == "SQ":
+                    if elem.VR == "SQ" or tag in ignore_values_of:
                         value = ""
                     else:
                         value = elem.value
-                    print(f'"{indent} {elem.name}","{elem.tag}","{value}"')
+                    attr_name = f"{indent} {elem.name}".strip()
+                    print(f'"{attr_name}","{tag}","{value}",""')
                 if elem.VR == "SQ":
                     indent += ">"
                     for item in elem:
@@ -61,4 +71,5 @@ class Test(unittest.TestCase):
             ds = dcmread(file_name)
             show_dataset(ds, indent="")
 
+        print('"Attribute Name","Tag","Value","Meaning"')
         print_dataset("test.dcm")
