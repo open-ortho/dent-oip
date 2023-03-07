@@ -43,15 +43,17 @@ frenum,418232001,SCT,Structure of oral frenum
 45deg,787612006,SCT,45º
 na,,,Not Applicable
 edentulous,278650002,SCT,Edentulous 
-l_both,B,DCM,Both
-l_left,L,DCM,Left
-l_right,R,DCM,Right
-l_unpaired,U,DCM,Unpaired
-o_frontal,"[‘R’,’F’]",DCM,"Right, Foot"
-o_left,"[‘P’,’F’]",DCM,"Posterior, Foot"
-o_right,"[‘A’,‘F’]",DCM,"Anterior, Foot"
-o_top,"[‘R’,’P’]",DCM,"Right, Posterior"
-o_bottom,"[‘R’,’A’]",DCM,"Right, Anterior"
-o_front,"[‘L’,’F’]",DCM,"Left, Foot"
+LateralityBoth,B,DCM,Both
+LateralityLeft,L,DCM,Left
+LateralityRight,R,DCM,Right
+LateralityUnpaired,U,DCM,Unpaired
+OrientationLeft,"[‘P’,’F’]",DCM,"Posterior, Foot"
+OrientationRight,"[‘A’,‘F’]",DCM,"Anterior, Foot"
+OrientationTop,"[‘R’,’P’]",DCM,"Right, Posterior"
+OrientationBottom,"[‘R’,’A’]",DCM,"Right, Anterior"
+OrientationFront,"[‘L’,’F’]",DCM,"Left, Foot"
+OrientationBack,"[‘R’,’F’]",DCM,"Right, Foot"
 o_left_posterior,"[‘L’,’P’]",DCM,"Left, Posterior"
 o_left_anterior,"[‘L’,’A’]",DCM,"Left, Anterior"
+FunctionalConditionPresentDuringAcquisition,130324,DCM,Functional condition present during acquisition
+ImageViewModifier,111032,DCM,Image View Modifier
