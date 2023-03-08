@@ -1,4 +1,5 @@
 keyword,code,codeset,meaning,notes
+__version__,0.1.0,,,
 right,24028007,SCT,Right (qualifier value),
 right_projection,399198007,SCT,Right lateral projection (qualifier value),
 left,7771000,SCT,Left (qualifier value),
