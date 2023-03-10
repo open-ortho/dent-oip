@@ -11,7 +11,8 @@ IMAGES_ORIGIN = modules/orthoviews-linedrawings/images/png
 
 PIPENV = python3 -m pipenv
 # PIPENV_RUN = $(PIPENV) run
-VIEWBUILDER = $(PIPENV_RUN) python3 ./view_maker_dcm.py
+VIEWBUILDER_PY = ./view_maker_dcm.py
+VIEWBUILDER = $(PIPENV_RUN) python3 $(VIEWBUILDER_PY)
 
 
 # You can set these variables from the command line, and also
@@ -33,7 +34,7 @@ help:
 .PHONY: help Makefile deploy genereted_tables
 
 # This will get executed automatically for each target routed to Sphinx. See catchall target below.
-$(GENERATED_TABLES): $(IMAGES) 
+$(GENERATED_TABLES): $(IMAGES)
 	$(VIEWBUILDER)
 
 clean:

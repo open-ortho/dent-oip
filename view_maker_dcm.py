@@ -120,10 +120,25 @@ def generate_rst_pages():
    :header-rows: 1
     
     
-Primary Anatomic Structure Sequence
-:::::::::::::::::::::::::::::::::::
-    
-See section :ref:`primary anatomic structure sequence`
+Comments to [{number}]
+::::::::::::::::::::::
+
+* The table above does not show anything for SOP Instance UID (0008,0018), Study Instance UID (0020,000d) and Series Instance UID(0020,000e). This was done purposely to avoid having the careless reader copy them. Instead, the implementer must generate these randomly. Here is an example:
+
+.. code-block:: 
+
+    def generate_dicom_uid(hash=None):
+        new_uuid = hash or uuid.uuid4().bytes
+        dicom_uid = ''
+        for i in range(len(new_uuid)):
+            dicom_uid += '.' + str(new_uuid[i])
+        return dicom_uid
+
+
+* The actual image that was encoded in DICOM was a 1 bit black and white (not grayscale) image, which is not what a realistic color orthodontic photograph would be like.
+
+
+.. include:: ../{number}_comments.rst
     
 """
 
