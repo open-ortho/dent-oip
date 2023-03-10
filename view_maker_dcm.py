@@ -99,7 +99,7 @@ def generate_rst_pages():
         rst_path = Path(PATH_VIEW_EXAMPLES,rst_filename)
 
         rst_string = f"""
-{h1(title)}
+{h1(f"[{number}] - {title}")}
 
 .. _{number}:
 .. image:: {image_path}
