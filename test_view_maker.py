@@ -6,7 +6,7 @@ import os
 import logging
 import sqlite3
 import view_maker as vm
-import view_maker_dcm as vmd
+import view_maker as vmd
 from pydicom import dcmread
 
 class Test(unittest.TestCase):
