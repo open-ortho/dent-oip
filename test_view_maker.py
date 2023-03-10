@@ -49,6 +49,9 @@ class Test(unittest.TestCase):
     def test_generate_tables_in_csv(self):
         vmd.generate_tables_in_csv()
 
+    def test_generate_rst_pages(self):
+        vmd.generate_rst_pages()
+
     def _dicom(self):
         ignore_values_of = [
             "(0008,0018)",

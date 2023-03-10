@@ -11,15 +11,7 @@ PATH_TABLES = Path(".", "source", "tables")
 PATH_APPENDIX = Path(".", "source", "Appendix")
 PATH_IMAGES = Path(".", "source", "images")
 PATH_TABLES_GENERATED = Path(PATH_TABLES, "generated")
-RST_INTRAORAL_VIEWS = Path(PATH_APPENDIX, "01_intraoral_views.rst")
-RST_EXTRAORAL_VIEWS = Path(PATH_APPENDIX, "02_extraoral_views.rst")
-CSV_SNOMED = Path(PATH_TABLES, "codes_snomed.csv")
-CSV_DICOM = Path(PATH_TABLES, "codes_dicom.csv")
-CSV_DICOM_TAGS = Path(PATH_TABLES, "tags_dicom.csv")
-CSV_VIEWS = Path(PATH_TABLES, "views.csv")
-CSV_CID4018 = Path(PATH_TABLES, "CID-4018.csv")
-CSV_CID4019 = Path(PATH_TABLES, "CID-4019.csv")
-DBFILE = "views.db"
+PATH_VIEW_EXAMPLES = Path(PATH_APPENDIX, "ViewExamples","generated")
 
 def generate_views_in_dicom():
     ''' Take the png files in images, extract the image type from the file name and generate the dcm files.'''
@@ -83,15 +75,67 @@ def generate_tables_in_csv():
         with open(csv_file_name,'w') as csvfile:
             csvfile.write(f"{csv_header}{csv_body}")
 
+    PATH_TABLES_GENERATED.mkdir(parents=True, exist_ok=True)
     for dcm in PATH_IMAGES.glob("*.dcm"):
         logging.info(f"Converting {dcm} to CSV.")
         save_dataset_to_csv(dcm)
 
+def generate_rst_pages():
+    def h1(h_text):
+        return h_text + f"\n{'-' * len(h_text)}"
+
+    def generate_rst_page_from_dcm(dcm_filename):
+        """Write Intraoral Views to RestructuredText file.
+
+        This function is very similar to ev_write_rst and has been kept separate on
+        purpose, to allow for customization.
+        """
+        ds = dcmread(dcm_filename)
+        number, title = ds.ImageComments.split("^")
+        file_stem = Path(dcm_filename.stem)
+        image_filename = file_stem.with_suffix(".png")
+        image_path = f"../../images/{image_filename}"
+        rst_filename = file_stem.with_suffix(".rst")
+        rst_path = Path(PATH_VIEW_EXAMPLES,rst_filename)
+
+        rst_string = f"""
+{h1(title)}
+
+.. _{number}:
+.. image:: {image_path}
+    :class: with-border
+    :align: center
+    :alt: Line drawing of {title}
+    
+    
+.. csv-table:: {number}
+   :file: ../../tables/generated/{number}.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
+    
+    
+Primary Anatomic Structure Sequence
+:::::::::::::::::::::::::::::::::::
+    
+See section :ref:`primary anatomic structure sequence`
+    
+"""
+
+        with open(rst_path, "w") as rst_out:
+            rst_out.write(rst_string)
+        
+
+    # Make output directory if it doesn't exist already.
+    PATH_VIEW_EXAMPLES.mkdir(parents=True, exist_ok=True)
+    for dcm in PATH_IMAGES.glob("*.dcm"):
+        logging.info(f"Creating RST page for {dcm}.")
+        generate_rst_page_from_dcm(dcm)
 
 def main(args):
     print("Main")
-    # generate_views_in_dicom()
+    generate_views_in_dicom()
     generate_tables_in_csv()
+    generate_rst_pages()
 
 if __name__ == "__main__":
     main(sys.argv[1:])

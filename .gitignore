@@ -4,7 +4,7 @@ build/
 _build/
 .~*
 .vscode/
-source/tables/generated/
+generated/
 source/Appendix/*intraoral_views.rst
 source/Appendix/*extraoral_views.rst
 source/images/
