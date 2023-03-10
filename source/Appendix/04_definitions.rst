@@ -64,4 +64,4 @@ Quoting from `Olivares et al (2013) <https://doi.org/10.4317%2Fmedoral.18335>`__
 
 Occlusal canting is often measured visually with a :ref:`Tongue Depressor<tongue_depressor>`.
 
-See :ref:`EV-39 <ev-39>` and :ref:`Tongue Depressor<tongue_depressor>`
+See :ref:`EV-39 <EV39>` and :ref:`Tongue Depressor<tongue_depressor>`

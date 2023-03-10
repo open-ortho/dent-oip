@@ -1,6 +1,8 @@
 View Examples
 =============
 
+.. _view_examples:
+
 Examples of DICOM implementations of the 77 views defined in ADA SCDI White Paper 1100. Each view contains a sample DICOM image, a rendered table with DICOM tags and a comment section explaining tags which are less intuitive.
 
 
