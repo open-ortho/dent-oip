@@ -32,8 +32,7 @@ help:
 .PHONY: help Makefile deploy genereted_tables
 
 # This will get executed automatically for each target routed to Sphinx. See catchall target below.
-genereted_tables: $(IMAGES)
-	rm -f $(VIEWSDB)
+$(GENERATED_TABLES): $(IMAGES)
 	$(VIEWBUILDER)
 
 clean:
@@ -53,5 +52,5 @@ $(IMAGES):
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile genereted_tables 
+%: Makefile $(GENERATED_TABLES) 
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

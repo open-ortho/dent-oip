@@ -10,3 +10,4 @@ ADA White Paper 1100.
 	:maxdepth: 2
 
 	./*
+	./ViewExamples/index
