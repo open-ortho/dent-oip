@@ -6,6 +6,7 @@ import os
 import logging
 import sqlite3
 import view_maker as vm
+import view_maker_dcm as vmd
 from pydicom import dcmread
 
 class Test(unittest.TestCase):
@@ -45,7 +46,10 @@ class Test(unittest.TestCase):
         self.assertEqual(views[0][0],"IV-01")
 
 
-    def test_dicom(self):
+    def test_generate_tables_in_csv(self):
+        vmd.generate_tables_in_csv()
+
+    def _dicom(self):
         ignore_values_of = [
             "(0008,0018)",
             "(0020,000d)",
