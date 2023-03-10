@@ -4,6 +4,7 @@
 
 BUILDDIR      = dist/
 GENERATED_TABLES = source/tables/generated
+SAMPLE_DICOM_FILES = source/_static/dicom_samples
 VIEW_EXAMPLES = source/Appendix/ViewExamples
 IMAGES = source/images
 IMAGES_ORIGIN = modules/orthoviews-linedrawings/images/png
@@ -32,11 +33,11 @@ help:
 .PHONY: help Makefile deploy genereted_tables
 
 # This will get executed automatically for each target routed to Sphinx. See catchall target below.
-$(GENERATED_TABLES): $(IMAGES)
+$(GENERATED_TABLES): $(IMAGES) 
 	$(VIEWBUILDER)
 
 clean:
-	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)" "$(IMAGES)" "$(VIEW_EXAMPLES)/generated"
+	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)" "$(IMAGES)" "$(VIEW_EXAMPLES)/generated" "$(SAMPLE_DICOM_FILES)"
 
 deploy: html docx latexpdf 
 	cp htaccess "$(BUILDDIR)/.htaccess"
@@ -50,7 +51,12 @@ $(IMAGES):
 	mkdir -p "$(IMAGES)"
 	cd $(IMAGES_ORIGIN) && for image in $$(ls); do cp -v $${image:?} $${OLDPWD}/$(IMAGES)/$$(echo $${image} | gcut --characters='1-5' | sed 's/-//').png; done
 
+$(SAMPLE_DICOM_FILES): $(GENERATED_TABLES)
+	mkdir -p $@
+	mv -v $(IMAGES)/*.dcm $@
+
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile $(GENERATED_TABLES) 
+%: Makefile $(SAMPLE_DICOM_FILES) 
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

@@ -6,6 +6,8 @@ import dicom4ortho.controller
 from  pathlib import Path
 from pydicom import dcmread
 
+from source.conf import html_static_path
+
 # Files and paths
 PATH_TABLES = Path(".", "source", "tables")
 PATH_APPENDIX = Path(".", "source", "Appendix")
@@ -84,17 +86,20 @@ def generate_rst_pages():
     def h1(h_text):
         return h_text + f"\n{'-' * len(h_text)}"
 
-    def generate_rst_page_from_dcm(dcm_filename):
+    def generate_rst_page_from_dcm(dcm_filename:Path):
         """Write Intraoral Views to RestructuredText file.
 
         This function is very similar to ev_write_rst and has been kept separate on
         purpose, to allow for customization.
         """
+        root = "../../.."
+        static = f"{root}/{html_static_path[0]}"
+
         ds = dcmread(dcm_filename)
         number, title = ds.ImageComments.split("^")
         file_stem = Path(dcm_filename.stem)
         image_filename = file_stem.with_suffix(".png")
-        image_path = f"../../../images/{image_filename}"
+        image_path = f"{root}/images/{image_filename}"
         rst_filename = file_stem.with_suffix(".rst")
         rst_path = Path(PATH_VIEW_EXAMPLES,rst_filename)
 
@@ -107,9 +112,10 @@ def generate_rst_pages():
     :align: center
     :alt: Line drawing of {title}
     
+.. centered:: `Download sample DICOM file <{static}/dicom_samples/{dcm_filename.name}>`__
     
 .. csv-table:: {number}
-   :file: ../../../tables/generated/{number}.csv
+   :file: {root}/tables/generated/{number}.csv
    :widths: 40, 10, 10, 40
    :header-rows: 1
     

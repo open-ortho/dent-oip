@@ -15,7 +15,7 @@ Primary Anatomic Structure for Intraoral Photography
 
 This tag is used to define which teeth are represented in the image. Refer to DICOM `CID-4018 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4018.html>`_ and `CID-4019 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4019.html>`_ for a list of permissible values.
 
-You can find examples of usage in the Appendix :ref:`intraoral views`
+You can find examples of usage in the Appendix :ref:`view_examples`
 
 Primary Anatomic Structure for Extraoral Photography
 ::::::::::::::::::::::::::::::::::::::::::::::::::::

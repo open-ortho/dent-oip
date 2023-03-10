@@ -2,6 +2,7 @@ dist/
 resources/
 build/
 _build/
+_static/
 .~*
 .vscode/
 generated/
