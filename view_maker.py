@@ -27,8 +27,6 @@ def generate_views_in_dicom():
             "patient_birthdate": "1958-08-29",
             "dental_provider_firstname": "Conrad",
             "dental_provider_lastname": "Murray",
-            "study_instance_uid": "generate_dicom_uid()",
-            "series_instance_uid": "generate_dicom_uid()",
             "series_description": "UnitTest make_photo_metadata",
             "input_image_filename": input_image_filename,
         }
@@ -123,16 +121,17 @@ def generate_rst_pages():
 Comments to [{number}]
 ::::::::::::::::::::::
 
-* The table above does not show anything for SOP Instance UID (0008,0018), Study Instance UID (0020,000d) and Series Instance UID(0020,000e). This was done purposely to avoid having the careless reader copy them. Instead, the implementer must generate these randomly. Here is an example:
+* SOP Instance UID (0008,0018), Study Instance UID (0020,000d) and Series Instance UID(0020,000e) have been purposely left blank to avoid inadvertantly copying them from this table when implementing the standard, instead of generating these randomly or pseudo-randomly. Here is an example:
 
 .. code-block:: 
 
+    import uuid
     def generate_dicom_uid(hash=None):
         new_uuid = hash or uuid.uuid4().bytes
         dicom_uid = ''
         for i in range(len(new_uuid)):
             dicom_uid += '.' + str(new_uuid[i])
-        return dicom_uid
+        return dicom_uid[1:]
 
 
 * The actual image that was encoded in DICOM was a 1 bit black and white (not grayscale) image, which is not what a realistic color orthodontic photograph would be like.

@@ -1,9 +1,11 @@
 .. _definitions:
+
 Definitions
 ===========
 
 .. _centric relation:
 .. _centric occlusion:
+
 Centric relation and Centric occlusion
 --------------------------------------
 
