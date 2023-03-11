@@ -1,7 +1,7 @@
-.. _dental acquisition projection:
+.. _dental image view:
 
 CID xxx1 Dental Image View
-======================================
+==========================
 
 The projection of the anatomic region of interest on an image receptor.
 

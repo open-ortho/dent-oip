@@ -11,8 +11,7 @@ IMAGES_ORIGIN = modules/orthoviews-linedrawings/images/png
 
 PIPENV = python3 -m pipenv
 # PIPENV_RUN = $(PIPENV) run
-VIEWBUILDER_PY = ./view_maker.py
-VIEWBUILDER = $(PIPENV_RUN) python3 $(VIEWBUILDER_PY)
+VIEWBUILDER = $(PIPENV_RUN) python3 ./view_maker.py
 
 
 # You can set these variables from the command line, and also

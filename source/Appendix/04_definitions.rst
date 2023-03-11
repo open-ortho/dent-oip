@@ -1,13 +1,12 @@
 .. _definitions:
-
 Definitions
 ===========
 
+.. _centric relation:
+.. _centric occlusion:
 Centric relation and Centric occlusion
 --------------------------------------
 
-.. _centric relation:
-.. _centric occlusion:
 
 Centric relation and centric occlusion are terms which define the mandibular jaw position of the patient. 
 

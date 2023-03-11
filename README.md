@@ -12,8 +12,10 @@ HTML, PDF, etc. Sphinx uses the reStructuredText language.
 
 ## Requirements
 
-* sqlite3 >= 3.32
-* Python3
+* Python3: the whole thing runs in Python3
+* orthoviews-linedrawings: all the line drawings which represent the orthodontic views, come from these line drawings. They are also used to create the DICOM sample files.
+* dicom4ortho: used to generate the DICOM files. The orthoviews-linedrawings are used as `PixelValue`.
+* pynetdicom: used to convert the DICOM files into tables for the example views in the appendix section of this document.
 
 ## Editing
 

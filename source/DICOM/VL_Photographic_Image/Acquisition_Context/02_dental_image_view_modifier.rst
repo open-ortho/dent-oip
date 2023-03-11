@@ -1,4 +1,4 @@
-.. _dental image view:
+.. _dental image view modifier:
 
 CID xxx2 Dental Image View Modifier
 ===================================
