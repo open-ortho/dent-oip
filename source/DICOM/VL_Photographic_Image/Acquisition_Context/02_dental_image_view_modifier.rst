@@ -51,3 +51,6 @@ specific regions.
     * - `SCT 255541007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=255541007&edition=MAIN&release=&languages=en>`__
       - Indirect (qualifier value)
       - Light from anatomy is reflected on a mirror before reaching camera lens.
+    * - `SCT 789131009 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=789131009&edition=MAIN&release=&languages=en>`__
+      - Close up photographic view of teeth with no set magnification or distance (record artifact)
+      - Used to chategorize a specific kind of extraoral view. All intraoral views are closeup views, but there is no need to tag them as such.
