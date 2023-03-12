@@ -1,5 +1,7 @@
-Lossy Image Compression
-=======================
+.. _lossy_image_compression:
+
+Lossy Image Compression (0028,2110)
+===================================
 
 Compression, in general, aims to reduce file size, with or without decreasing data quality of the original file. DICOM is a medical imaging file standard used to store multiple information such as information of the image itself (resolution, pixel data, bit allocation, compression type, etc.) . With the rising usage of imaging in clinical diagnosis, there is a need for a fast and secure method to share a large number of  images between  practitioners, and compression is used to facilitate interoperability.
 
