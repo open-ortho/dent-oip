@@ -112,11 +112,6 @@ def generate_rst_pages():
     
 .. centered:: `Download sample DICOM file <{static}/dicom_samples/{dcm_filename.name}>`__
     
-.. csv-table:: {number}
-   :file: {root}/tables/generated/{number}.csv
-   :widths: 40, 10, 10, 40
-   :header-rows: 1
-    
     
 Comments to [{number}]
 ::::::::::::::::::::::
@@ -138,6 +133,14 @@ Comments to [{number}]
 
 
 .. include:: ../{number}_comments.rst
+    
+DICOM header for [{number}]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: {number}
+   :file: {root}/tables/generated/{number}.csv
+   :widths: 40, 10, 10, 40
+   :header-rows: 1
     
 """
 
