@@ -68,7 +68,7 @@ Tongue Depressor
 
 .. _tongue_depressor:
 
-.. figure:: ../images-static/2023-lincoln-penny-uncirculated-obverse-philadelphia-768x768.jpg
+.. figure:: ../images-static/no-image.png
     :class: with-border with-shadow float-left
     :align: center
     :scale: 10
