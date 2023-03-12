@@ -17,6 +17,9 @@ orthodontic views that may be visible in the image. See :ref:`device_examples` f
     * - Code
       - Meaning
       - Notes
+    * - `SCT 462735007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=462735007&edition=MAIN&release=&languages=en>`__
+      - Periodontal probe (physical object)
+      - Frequently included in photographs to show gengival recession. May be included in photographs for other purposes as well.
     * - `SCT 102304005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=102304005&edition=MAIN&release=&languages=en>`__
       - Measuring Ruler
       - When included, the ruler should be in SI units (millimeter increments). DICOM device sequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements.
