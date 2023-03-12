@@ -77,4 +77,10 @@ The following are those codes of `DICOM CID 91 <http://dicom.nema.org/medical/di
     * - `SCT 736783005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=736783005&edition=MAIN&release=&languages=en>`__
       - Centric relation
       - Optional. If present, *Centric occlusion* cannot be present. See :ref:`Centric Relation and Centric Occlusion Definition <centric occlusion>`.
+    * - `SCT 276470008 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=276470008&edition=MAIN&release=&languages=en>`__
+      - Skin mark (disorder)
+      - Optional. Use this code or SNOMED-CT children of this code if some kind of skin mark is present. For example: Birthmark, slap mark, ...
+    * - `SCT 341000119102 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=341000119102&edition=MAIN&release=&languages=en>`__
+      - Tattoo of skin (finding)
+      - Optional. Use this code if a tattoo is present on the skin inside the field of view.
 
