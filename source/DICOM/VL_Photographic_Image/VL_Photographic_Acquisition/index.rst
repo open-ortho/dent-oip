@@ -8,7 +8,7 @@ necessary to fully describe orthodontic views (photographs).
 
 Most of the tags of this module have a direct mapping to EXIF tags that come from digital cameras. Any EXIF tag which comes from the camera, should be mapped and stored here making use of the table specified in DICOM `NNNN Mapping of Visible Light Photography Related Attributes to EXIF and TIFF/EP Tags <https://dicom.nema.org/medical/dicom/current/output/chtml/part17/chapter_NNNN.html>`__ .
 
-Of particualar interest for orthodontic photography are the following tags.
+Of particular interest for orthodontic photography are the following tags.
 
 .. list-table:: 
     :header-rows: 1
