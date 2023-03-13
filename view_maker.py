@@ -112,26 +112,6 @@ def generate_rst_pages():
     
 .. centered:: `Download sample DICOM file <{static}/dicom_samples/{dcm_filename.name}>`__
     
-    
-Comments to [{number}]
-::::::::::::::::::::::
-
-* SOP Instance UID (0008,0018), Study Instance UID (0020,000d) and Series Instance UID(0020,000e) have been purposely left blank to avoid inadvertantly copying them from this table when implementing the standard, instead of generating these randomly or pseudo-randomly. Here is an example:
-
-.. code-block:: 
-
-    import uuid
-    def generate_dicom_uid(hash=None):
-        new_uuid = hash or uuid.uuid4().bytes
-        dicom_uid = ''
-        for i in range(len(new_uuid)):
-            dicom_uid += '.' + str(new_uuid[i])
-        return dicom_uid[1:]
-
-
-* The actual image that was encoded in DICOM was a 1 bit black and white (not grayscale) image, which is not what a realistic color orthodontic photograph would be like.
-
-
 .. include:: ../{number}_comments.rst
     
 DICOM header for [{number}]

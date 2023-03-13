@@ -24,11 +24,29 @@ Here we define how to use keywords for views. The regular expressione for the ke
 - Zero padding is not defined. Can be used or not used. Valid examples are therefore ``EV1``, ``EV01``, ``EV001``.
 - No dashes between charachter part and digit part are allowed.
 
+General notes regarding the examples
+------------------------------------
+
+* SOP Instance UID (0008,0018), Study Instance UID (0020,000d) and Series Instance UID(0020,000e) have been purposely left blank to avoid inadvertently copying them from this table when implementing the standard, instead of generating these randomly or pseudo-randomly. Here is an example in Python:
+
+.. code-block:: 
+
+    import uuid
+    def generate_dicom_uid():
+        new_uuid = uuid.uuid4().bytes # Generate a 128bit UUID Type 4
+        dicom_uid = ''
+        for i in range(len(new_uuid)):
+            dicom_uid += '.' + str(new_uuid[i])
+        return dicom_uid[1:]
+
+
+* The actual image that was encoded in DICOM was a 1 bit black and white (not grayscale) image, which is not what a realistic color orthodontic photograph would be like.
+
+List of view examples
+---------------------
 
 .. toctree::
 	:glob:
 	:maxdepth: 2
 
 	./generated/*
-
-.. include:: IV01_comments.rst
