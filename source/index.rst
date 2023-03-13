@@ -26,6 +26,14 @@ If you have any problems, `send an email to Toni Magni afm@case.edu <mailto:afm@
 
 Thank you!
 
+How ADA-1107 is built
+---------------------
+
+.. figure:: ./images-static/ada-1107-building.drawio.png
+    :class: with-border with-shadow float-left
+    :align: center
+    :alt: Photograph of tongue depressor device.
+
 Contents
 --------
 
