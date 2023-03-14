@@ -5,6 +5,7 @@ import sys
 import dicom4ortho.controller
 from  pathlib import Path
 from pydicom import dcmread
+import csv
 
 from source.conf import html_static_path
 
@@ -48,7 +49,7 @@ def generate_tables_in_csv():
         "(0020,000e)",
     ]
     def show_dataset(ds, indent):
-        csv_row = ""
+        csv_row = []
         for elem in ds:
             tag = str(elem.tag).replace(" ","")
             if elem.keyword != "PixelData":
@@ -57,7 +58,7 @@ def generate_tables_in_csv():
                 else:
                     value = elem.value
                 attr_name = f"{indent} {elem.name}".strip()
-                csv_row += f'"{attr_name}","{tag}","{value}",""\n'
+                csv_row.append([str(attr_name),str(tag),str(value)])
             if elem.VR == "SQ":
                 indent += ">"
                 for item in elem:
@@ -68,12 +69,15 @@ def generate_tables_in_csv():
     def save_dataset_to_csv(file_name):
         logging.info(f"Creating CSV File from {file_name}")
         ds = dcmread(file_name)
-        csv_header = '"Attribute Name","Tag","Value","Meaning"\n'
+        csv_header = ["Attribute Name","Tag","Value"]
         csv_body = show_dataset(ds, indent="")
         csv_file_name = Path(PATH_TABLES_GENERATED,file_name.stem).with_suffix(".csv")
 
         with open(csv_file_name,'w') as csvfile:
-            csvfile.write(f"{csv_header}{csv_body}")
+            csvwriter = csv.writer(csvfile, delimiter=',',quotechar='"',quoting=csv.QUOTE_ALL)
+            csvwriter.writerow(csv_header)
+            for row in csv_body:
+                csvwriter.writerow(row)
 
     PATH_TABLES_GENERATED.mkdir(parents=True, exist_ok=True)
     for dcm in PATH_IMAGES.glob("*.dcm"):
@@ -119,7 +123,7 @@ DICOM header for [{number}]
 
 .. csv-table:: {number}
    :file: {root}/tables/generated/{number}.csv
-   :widths: 40, 10, 10, 40
+   :widths: 40, 10, 10
    :header-rows: 1
     
 """
@@ -133,6 +137,22 @@ DICOM header for [{number}]
     for dcm in PATH_IMAGES.glob("*.dcm"):
         logging.info(f"Creating RST page for {dcm}.")
         generate_rst_page_from_dcm(dcm)
+
+def generate_codes_table():
+    ''' There is a section in the document which summarizes all the SNOMED codes used. 
+    
+    This function removes those columns which are not worth printing in the human version of the document.
+    '''
+    with open(Path(PATH_TABLES_GENERATED/'codes.csv'), 'w', newline='') as csvfile:
+        fieldnames = ['first_name', 'last_name']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+        writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})
+        writer.writerow({'first_name': 'Lovely', 'last_name': 'Spam'})
+        writer.writerow({'first_name': 'Wonderful', 'last_name': 'Spam'})
+
+
 
 def main(args):
     print("Main")
