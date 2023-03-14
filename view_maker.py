@@ -36,7 +36,10 @@ def generate_views_in_dicom():
     for png in PATH_IMAGES.glob("*.png"):
         logging.info(f"Converting {png} to DICOM.")
         c = dicom4ortho.controller.SimpleController()
-        c.convert_image_to_dicom4orthograph(metadata=make_photo_metadata(png))
+        try:
+            c.convert_image_to_dicom4orthograph(metadata=make_photo_metadata(png))
+        except AttributeError:
+            logging.warning(f"View {png} not found in views.csv.")
         
 def generate_tables_in_csv():
     ''' Generate the CSV tables which contain all DICOM tags.

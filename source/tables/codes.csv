@@ -24,6 +24,7 @@ ImageViewModifier,111032,DCM,Image view modifier,AcquisitionContextSequence^Imag
 closeup,789131009,SCT,Close up photographic view of teeth with no set magnification or distance (record artifact),AcquisitionContextSequence^ImageViewModifier,"I'm not happy with this code, because it should be an qualifier value, like direct since it goes into ImageViewModifier."
 mirror_corrected,787610003,SCT,Photographic image corrected intraoral mirrored visible record (record artifact),AcquisitionContextSequence^ImageViewModifier,
 mirror_uncorrected,789135000,SCT,Mirrored visible image uncorrected (record artifact),AcquisitionContextSequence^ImageViewModifier,
+face_structure,89545001,SCT,Face structure (body structure),AnatomicRegionModifierSequence,
 face_entire,302549007,SCT,Entire face (body structure),AnatomicRegionModifierSequence,
 face_right,362626009,SCT,Entire right half of face (body structure),AnatomicRegionModifierSequence,
 face_left,362627000,SCT,Entire left half of face (body structure),AnatomicRegionModifierSequence,
