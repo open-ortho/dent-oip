@@ -79,7 +79,6 @@ def generate_tables_in_csv():
             for row in csv_body:
                 csvwriter.writerow(row)
 
-    PATH_TABLES_GENERATED.mkdir(parents=True, exist_ok=True)
     for dcm in PATH_IMAGES.glob("*.dcm"):
         logging.info(f"Converting {dcm} to CSV.")
         save_dataset_to_csv(dcm)
@@ -143,19 +142,20 @@ def generate_codes_table():
     
     This function removes those columns which are not worth printing in the human version of the document.
     '''
-    with open(Path(PATH_TABLES_GENERATED/'codes.csv'), 'w', newline='') as csvfile:
-        fieldnames = ['first_name', 'last_name']
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-        writer.writeheader()
-        writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})
-        writer.writerow({'first_name': 'Lovely', 'last_name': 'Spam'})
-        writer.writerow({'first_name': 'Wonderful', 'last_name': 'Spam'})
-
-
+    with open(Path(PATH_TABLES/'codes.csv'),'r') as input_csv_file:
+        reader = csv.DictReader(input_csv_file)
+        with open(Path(PATH_TABLES_GENERATED/'codes.csv'), 'w', newline='') as output_csv_file:
+            fieldnames = ['code','codeset','meaning']
+            writer = csv.DictWriter(output_csv_file, fieldnames=fieldnames,extrasaction='ignore')
+            writer.writeheader()
+            for row in reader:
+                if (row['keyword'] != '__version__'):
+                    writer.writerow(row)
 
 def main(args):
+    PATH_TABLES_GENERATED.mkdir(parents=True, exist_ok=True)
     print("Main")
+    generate_codes_table()
     generate_views_in_dicom()
     generate_tables_in_csv()
     generate_rst_pages()

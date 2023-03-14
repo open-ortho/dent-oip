@@ -2,7 +2,7 @@ keyword,code,codeset,meaning,used for,notes
 __version__,0.1.0,,,,
 mouth_open,262016004,SCT,Open mouth (finding),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
 teeth_apart,789130005,SCT,Photographic image with mouth partially opened position and teeth apart (record artifact),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,"I'm not happy with this code, because it should be an observable entity like co and cr, since it goes into FCPDA."
-lips_relaxed,789314008,SCT,Photographic image of face with lips in relaxed position,AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,"I'm not happy with this code, because it should be an observable entity like co and cr, since it goes into FCPDA."
+lips_relaxed,789314008,SCT,Photographic image of face with lips in relaxed position (record artifact),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,"I'm not happy with this code, because it should be an observable entity like co and cr, since it goes into FCPDA."
 lips_closed,787607005,SCT,Photographic image with lips closed,AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
 smile,225583004,SCT,Smiles,AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
 cant,710793000,SCT,Cant of occlusal plane (observable entity),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
@@ -65,7 +65,7 @@ direct,255589003,SCT,Direct (qualifier value),,
 mpf,787611004,SCT,Photographic image extraoral with mandible postured forward (record artifact),,"I'm not happy with this code, because it should be an observable entity like co and cr, since it goes into FCPDA."
 inf_view,261089000,SCT,Inferior,,
 sup_view,264217000,SCT,Superior,,
-gingival_recession,4356008,SCT,Gingival recession ,,
+gingival_recession,4356008,SCT,Gingival recession (disorder),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
 tongue_thrust,110343009,SCT,Tongue thrust,,
 edentulous,278650002,SCT,Edentulous ,,
 na,,,Not Applicable,,
