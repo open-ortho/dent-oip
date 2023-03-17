@@ -64,7 +64,7 @@ anterior_teeth,789313002,SCT,Anterior teeth,,
 sagittal,30730003,SCT,Sagittal,,
 indirect,255541007,SCT,Indirect,,
 direct,255589003,SCT,Direct (qualifier value),,
-mpf,787611004,SCT,Photographic image extraoral with mandible postured forward (record artifact),,"I'm not happy with this code, because it should be an observable entity like co and cr, since it goes into FCPDA."
+mpf,787611004,SCT,Photographic image extraoral with mandible postured forward (record artifact),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,"I'm not happy with this code, because it should be an observable entity like co and cr, since it goes into FCPDA."
 inf_view,261089000,SCT,Inferior,,
 sup_view,264217000,SCT,Superior,,
 tongue_thrust,110343009,SCT,Tongue thrust,,
