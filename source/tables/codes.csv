@@ -14,6 +14,7 @@ slap_mark,281689009,SCT,Slap mark (disorder),AcquisitionContextSequence^Function
 birthmark,51089004,SCT,Birthmark (disorder),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
 tattoo,341000119102,SCT,Tattoo of skin (finding),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
 gingival_recession,4356008,SCT,Gingival recession (disorder),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
+mpf,787611004,SCT,Photographic image extraoral with mandible postured forward (record artifact),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,"I'm not happy with this code, because it should be an observable entity like co and cr, since it goes into FCPDA."
 ImageView,111031,DCM,Image view,AcquisitionContextSequence^ImageView,
 right_projection,399198007,SCT,Right lateral projection (qualifier value),AcquisitionContextSequence^ImageView,
 left_projection,399173006,SCT,Left lateral projection (qualifier value),AcquisitionContextSequence^ImageView,
@@ -64,7 +65,6 @@ anterior_teeth,789313002,SCT,Anterior teeth,,
 sagittal,30730003,SCT,Sagittal,,
 indirect,255541007,SCT,Indirect,,
 direct,255589003,SCT,Direct (qualifier value),,
-mpf,787611004,SCT,Photographic image extraoral with mandible postured forward (record artifact),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,"I'm not happy with this code, because it should be an observable entity like co and cr, since it goes into FCPDA."
 inf_view,261089000,SCT,Inferior,,
 sup_view,264217000,SCT,Superior,,
 tongue_thrust,110343009,SCT,Tongue thrust,,
