@@ -19,7 +19,7 @@ orthodontic views that may be visible in the image. See :ref:`device_examples` f
       - Notes
     * - `SCT 462735007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=462735007&edition=MAIN&release=&languages=en>`__
       - Periodontal probe (physical object)
-      - Frequently included in photographs to show gengival recession (See :ref:`[IV28] <IV28>`). May be included in photographs for other purposes as well.
+      - Frequently included in photographs to document gengival health (See :ref:`[IV28] <IV28>`). May be included in photographs for other purposes as well.
     * - `SCT 102304005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=102304005&edition=MAIN&release=&languages=en>`__
       - Measuring Ruler
       - When included, the ruler should be in SI units (millimeter increments). DICOM device sequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements.
@@ -29,13 +29,8 @@ orthodontic views that may be visible in the image. See :ref:`device_examples` f
     * - SCT XXXXXX
       - Contraster/Black Mirror
       - Awaiting for SNOMED publication of new code. 
-    * - SCT XXXXXX
-      - Coin
-      - Awaiting for SNOMED publication of new code.
-    * - `SCT 86967005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=86967005&edition=MAIN&release=&languages=en>`__
-      - Tool
-      - Use when other devices are present in the field of view, such as contraster, coin or black mirror.
 
+It is not required to codify each object present in the field of view of the image, except for those listed above. The implementer may, however, add additional entries making uses of codes which are childre of `SCT 260787004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260787004&edition=MAIN&release=&languages=en>`__ physical object.
 
 Additional Tags for Compliance with this Standard
 -------------------------------------------------

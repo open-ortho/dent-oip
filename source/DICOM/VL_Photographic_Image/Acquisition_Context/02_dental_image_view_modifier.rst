@@ -53,4 +53,4 @@ specific regions.
       - Light from anatomy is reflected on a mirror before reaching camera lens.
     * - `SCT 789131009 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=789131009&edition=MAIN&release=&languages=en>`__
       - Close up photographic view of teeth with no set magnification or distance (record artifact)
-      - Used to chategorize a specific kind of extraoral view. All intraoral views are closeup views, but there is no need to tag them as such.
+      - Used for a specific kind of close up of the oral cavity or face. (See :ref:`[IV28] <IV28>`, :ref:`[IV29] <IV29>`, :ref:`[EV38] <EV38>`) 
