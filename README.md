@@ -12,8 +12,10 @@ HTML, PDF, etc. Sphinx uses the reStructuredText language.
 
 ## Requirements
 
-* sqlite3 >= 3.32
-* Python3
+* Python3: the whole thing runs in Python3
+* orthoviews-linedrawings: all the line drawings which represent the orthodontic views, come from these line drawings. They are also used to create the DICOM sample files.
+* dicom4ortho: used to generate the DICOM files. The orthoviews-linedrawings are used as `PixelValue`.
+* pynetdicom: used to convert the DICOM files into tables for the example views in the appendix section of this document.
 
 ## Editing
 
@@ -25,10 +27,26 @@ an editor.
 To make modifications to the tables, edit the files in `source/tables/*.csv` (a spreadsheet will make this easy) then save back in CSV format.
 
 - The `views.csv` file, contains all views and their codes.
-- The codes used in `views.csv` are referred to using ids.
-- The ids used must match those expressed in `codes_dicom.csv`, `codes_snomed.csv` or `tags_dicom.csv`.
+- The codes used in `views.csv` are referred to using keywords.
+- The keywords used must match those expressed in `codes.csv`.
 
 For more information on how this process works, see section View Tables Generation below.
+
+#### views.csv format
+
+- First two rows are header rows
+- First row contains the DICOM keyword for the DICOM tag.
+- Second row contains the DICOM tag number.
+- _AcquisitonContextSequence_ has various columns, one for each concept name.
+- The first row of the _AcquisitionContextSequence_ column has the format `AcquisitionContextSequnce^[concept name]`, where `[concept name]` is the keyword for the code that goes in _Concept Name Code Sequence Attribute (0040,A043)_.
+- The second row of the _AcquisitionContextSequence_ columns are always `(0040,0555)`.
+- The subsequent rows of the _AcquisitionContextSequence_ column contain the keyword for the concept value.
+- If more than one concept name/concept value pairs is required, multiple concepts value keywords are entered in the same cell, separated by the caret `^` character.
+
+#### codes.csv format
+
+- The _codeset_ column contains the abbreviation for the codeset used, i.e. `SCT` for SNOMED-CT, `DCM` for DICOM.
+- The codes which are not part of a real codeset and are considered CS (Coded String) in DICOM, have `CS` in the _codeset_ column.
 
 ### Using GitHub
 

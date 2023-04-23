@@ -14,7 +14,11 @@
 Foreword
 ========
 
-This standard specifies the exact DICOM tags to use to contain the SNOMED codes required to unambiguosly label each clinical image. The intention of the standard is to:
+The use of the Anatomic Region Sequence, populated with standard values, enables seamless interoperability of imaging data regardless of whether images are used within a site or across different sites and systems. 
+
+This standard specifies the exact DICOM tags to use to contain the SNOMED codes required to unambiguosly label each clinical image. The use of DICOM populated with standard SNOMED values, enables seamless interoperability of imaging data regardless of whether images are used within a site or across different sites and systems.
+
+The intention of the standard is to:
 
 #. provide a standardized method to store information necessary to unambiguosly identify an image type for clinical purposes. This should eliminate the need for different vendors implementing DICOM in different ways;
 

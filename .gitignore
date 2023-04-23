@@ -2,10 +2,13 @@ dist/
 resources/
 build/
 _build/
+_static/
 .~*
 .vscode/
-source/tables/generated/
+generated/
 source/Appendix/*intraoral_views.rst
 source/Appendix/*extraoral_views.rst
 source/images/
 .DS_Store
+*.pyc
+views.db

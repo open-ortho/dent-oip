@@ -3,11 +3,12 @@
 Definitions
 ===========
 
+.. _centric relation:
+.. _centric occlusion:
+
 Centric relation and Centric occlusion
 --------------------------------------
 
-.. _centric relation:
-.. _centric occlusion:
 
 Centric relation and centric occlusion are terms which define the mandibular jaw position of the patient. 
 
@@ -18,7 +19,7 @@ According to Hidaka (2002), centric occlusion (CO) is *the patient's full or hab
 .. note::
     Both centric relation and centric occlusion define a type of dental occlusion, i.e. how teeth occlude. In other words they specify how the cusps of the opposing teeth fitting together come into contact.
     
-    It is therfore not possible to have the mouth open while being in centric occlusion or centric relation. The DICOM tags for the photograph can therefore not contain both *mouth open* or *teeth apart* and *centric relation* or *centric occlusion* at the same time.
+    It is therefore not possible to have the mouth open while being in centric occlusion or centric relation. The DICOM tags for the photograph can therefore not contain both *mouth open* or *teeth apart* and *centric relation* or *centric occlusion* at the same time.
 
 Definitions
 ***********
@@ -52,3 +53,16 @@ Quoting from Draker (1960):
 
 
 Overjet is a clinical diagnosis and requires clinical interpretation and therefore is not stored in the original DICOM image object. However, in order to properly measure Overjet, a measuring device such as a millimeter ruler is required in the image itself and should be recorded accordingly. See :ref:`DICOM Device Sequence <device sequence>` for details.
+
+Occlusal cant
+-------------
+
+.. _occlusal cant:
+
+Quoting from `Olivares et al (2013) <https://doi.org/10.4317%2Fmedoral.18335>`__:
+
+    *Occlusal plane canting is one characteristic that must be evaluated in any assessment of smile esthetics. It describes the vertical position of the teeth when the left and right sides are different and this is defined as the rotation upwards or downwards in the transversal plane of one side over the other.*
+
+Occlusal canting is often measured visually with a :ref:`Tongue Depressor<tongue_depressor>`.
+
+See :ref:`EV-39 <EV39>` and :ref:`Tongue Depressor<tongue_depressor>`
