@@ -3,7 +3,7 @@
 Device Examples
 ===============
 
-A list of devices used in :ref:`Device Sequence <device sequence>`.
+A list of devices used in :ref:`Device Sequence <DeviceSequence>`.
 
 Intraoral Photographic Mirror
 +++++++++++++++++++++++++++++

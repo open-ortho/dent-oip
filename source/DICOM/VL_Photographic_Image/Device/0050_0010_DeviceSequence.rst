@@ -1,4 +1,4 @@
-.. _device sequence:
+.. _DeviceSequence:
 
 Device Sequence (0050,0010)
 ===========================
@@ -22,7 +22,7 @@ orthodontic views that may be visible in the image. See :ref:`device_examples` f
       - Frequently included in photographs to document gengival health (See :ref:`[IV28] <IV28>`). May be included in photographs for other purposes as well.
     * - `SCT 102304005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=102304005&edition=MAIN&release=&languages=en>`__
       - Measuring Ruler
-      - When included, the ruler should be in SI units (millimeter increments). DICOM device sequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements.
+      - When included, the ruler should be in SI units (millimeter increments). DICOM DeviceSequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements.
     * - SCT XXXXXX
       - Intraoral Photographic Mirror
       - Awaiting for SNOMED publication of new code. Use SCT 47162009 'Mirror'.

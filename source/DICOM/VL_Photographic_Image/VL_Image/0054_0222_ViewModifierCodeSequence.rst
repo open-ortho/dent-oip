@@ -1,4 +1,4 @@
-.. _view modifier sequence:
+.. _ViewModifierCodeSequence:
 
 View Modifier Code Sequence (0054,0222)
 =======================================

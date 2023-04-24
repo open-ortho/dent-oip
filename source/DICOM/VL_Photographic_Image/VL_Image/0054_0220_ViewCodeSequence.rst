@@ -1,4 +1,4 @@
-.. _view sequence:
+.. _ViewCodeSequence:
 
 View Code Sequence (0054,0220)
 ==============================
