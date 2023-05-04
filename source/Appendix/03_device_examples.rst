@@ -3,11 +3,7 @@
 Device Examples
 ===============
 
-.. warning:: 
-
-    This section contains unfinished subsections.
-
-A list of devices used in :ref:`Device Sequence <device sequence>`.
+A list of devices used in :ref:`Device Sequence <DeviceSequence>`.
 
 Intraoral Photographic Mirror
 +++++++++++++++++++++++++++++
@@ -68,10 +64,10 @@ Tongue Depressor
 
 .. _tongue_depressor:
 
-.. figure:: ../images-static/no-image.png
+.. figure:: ../images-static/tongue_depressor.jpg
     :class: with-border with-shadow float-left
     :align: center
-    :scale: 10
+    :scale: 100
     :alt: Photograph of tongue depressor device.
 
 A tongue depressor is a tool used in medical practice to depress the tongue to allow for examination of the mouth and throat. In orthodontics it is sometimes used to measure :ref:`occlusal cant <occlusal cant>` by asking the patient to bight on it, then taking a frontal picture. The tilt on the depressor highlights the occlusal cant.
