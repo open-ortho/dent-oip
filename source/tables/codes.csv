@@ -15,13 +15,11 @@ birthmark,51089004,SCT,Birthmark (disorder),AcquisitionContextSequence^Functiona
 tattoo,341000119102,SCT,Tattoo of skin (finding),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
 gingival_recession,4356008,SCT,Gingival recession (disorder),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
 mpf,787611004,SCT,Photographic image extraoral with mandible postured forward (record artifact),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,"I'm not happy with this code, because it should be an observable entity like co and cr, since it goes into FCPDA."
-ImageView,111031,DCM,Image view,AcquisitionContextSequence^ImageView,
 right_projection,399198007,SCT,Right lateral projection (qualifier value),AcquisitionContextSequence^ImageView,
 left_projection,399173006,SCT,Left lateral projection (qualifier value),AcquisitionContextSequence^ImageView,
 frontal,399033003,SCT,Frontal projection (qualifier value),AcquisitionContextSequence^ImageView,
 occlusal,260499007,SCT,Occlusal projection (qualifier value),AcquisitionContextSequence^ImageView,
 45deg,260454004,SCT,45 degree projection (qualifier value),AcquisitionContextSequence^ImageView,
-ImageViewModifier,111032,DCM,Image view modifier,AcquisitionContextSequence^ImageViewModifier,
 closeup,789131009,SCT,Close up photographic view of teeth with no set magnification or distance (record artifact),AcquisitionContextSequence^ImageViewModifier,"I'm not happy with this code, because it should be an qualifier value, like direct since it goes into ImageViewModifier."
 mirror_corrected,787610003,SCT,Photographic image corrected intraoral mirrored visible record (record artifact),AcquisitionContextSequence^ImageViewModifier,
 mirror_uncorrected,789135000,SCT,Mirrored visible image uncorrected (record artifact),AcquisitionContextSequence^ImageViewModifier,
