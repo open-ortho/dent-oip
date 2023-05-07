@@ -1,7 +1,7 @@
 .. _orthodontic treatment progress:
 
-CID-xxx5 Orthodontic Treatment Progress
-***************************************
+Orthodontic Treatment Progress
+==============================
 
 .. warning:: 
   Table at bottom is missing proper SNOMED Codes.
@@ -11,7 +11,6 @@ track of treatment progress by regularly collecting records (such as
 photographs or intra-oral surface scans) [provide reference]. It is
 therefore useful to identify when, relative to an orthodontic treatment,
 the records were taken. 
-
 
 .. list-table::
     :header-rows: 1
@@ -40,11 +39,28 @@ the records were taken.
       - (0040,A043)
       - DCM-126073
       - Time Point Order
-    * - >> Numeric Value Attribute 
+    * - >> Numeric Value Attribute
       - (0040,A30A)
       - 1,2,3,...
       - An integer representing the sequence number of the progress.
 
+There are three places where progress shall be stored for orthodontic photographs:
+
+- As a Time Point Type (Initial, Final, Pre-treatment, ...)
+- As a Time Point Order (1, 2, 3, ...)
+- As a :ref:`study_description`
+
+Furthermore it can also be defined as 
+
+- a Longitudinal Temporal Event Type (Baseline, Enrollment)
+- a Longitudinal Temporal Offset From Event (in days)
+- a :ref:`study_description`
+
+Concept Name Code Sequence Attribute (0040,A043)
+------------------------------------------------
+
+.. note:: 
+  The Concept Name for CID-6146 entries is defined in `TID 1502 Time Point Context <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_A.html#sect_TID_1502>`__ to be `DCM-126072 Time Point Type <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html#DCM_126072>`__.
 
 .. _concept code sequence attribute:
 
@@ -82,3 +98,8 @@ how to properly encode them in a DICOM object.
 .. note::
 
    The lack of a row for "Initial" is intentional. All Pre-treatment images are essentially initials and initial can be considered as a synonym for pretreatment. There is no need for coding Initial in the image. The last pretreatment image acquired before treatment starts would be the initial.
+
+Study Description (0008,1030)
+-----------------------------
+
+Refer to :ref:`Study Description <study_description>`.
