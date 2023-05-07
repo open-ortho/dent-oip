@@ -1,6 +1,6 @@
 .. _functional conditions present during acquisition:
 
-CID xxx3 Functional Conditions Present During Acquisition
+Functional Conditions Present During Acquisition
 =========================================================
 
 A functional condition present during acquisition, such as phonation, weight bearing, voiding of the bladder or hemodynamic physiological challenges.
