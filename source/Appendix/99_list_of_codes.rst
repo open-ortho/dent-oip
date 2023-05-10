@@ -25,10 +25,15 @@ In this situation, one would choose the latter, "Face structure".
 Prefer post-coordination
 ------------------------
 
-https://michaelstearns.net/post-coordination-pre-coordination-codified-concepts/ provides a good explanation for post-coordination:
+In SNOMED-CT, there might be some pre-coordinated codes, such as 784262003 Structure of body of left half of mandible (body structure). When selecting codes for DICOM, it is preferred not to use these. Instead, use one code to define the anatomic region, and another code that "qualifies" that region. In the example above, we would use Mandible as body structrure in the Anatomic Region Sequence, and then modify it with left half in the Anatomic Region Modifier Sequence.
+
+The rationale behind this comes from an email exchange with David Clunie from 2023-02-24:
+
+	Also, we (DICOM) don't normally pre-coordinate laterality, e.g., we wouldn't use "right half of face", but instead use its parent, SCT:422624005 "Structure of half of face lateral to midsagittal plane (body structure)", and post-coordinate laterality. 422624005 half of face is not a modifier, it is the anatomy, so would go in AnatomicRegionSequence, rather than 774007 head and/or neck. AnatomicRegionModifierSequence would contain 24028007 Right.
+
+https://michaelstearns.net/post-coordination-pre-coordination-codified-concepts/ provides a good explanation for the meaning of the term "post-coordination":
 
     Post-coordination refers to using two codes to represent a clinical expression such as “severe headache.”    For example a code exists for the symptom “headache” (e.g., SNOMED CT code 25064002) and a separate code exists for the modifier “severe” (e.g., SNOMED CT code 24484000).  These two are then placed together in combination as 24484000 (severe) + 25064002 (headache), allowing the information system to identify when a patient presents with a severe headache vs. just a headache alone or a mild headache. 
-
 
 
 .. _list_of_codes:
