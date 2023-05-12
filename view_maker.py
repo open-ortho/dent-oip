@@ -4,7 +4,7 @@ logging.basicConfig(level=logging.INFO)
 import sys
 import dicom4ortho.controller
 from  pathlib import Path
-from pydicom import dcmread
+from pydicom import dcmread, charset
 import csv
 
 from source.conf import html_static_path
@@ -100,6 +100,7 @@ def generate_rst_pages():
         static = f"{root}/{html_static_path[0]}"
 
         ds = dcmread(dcm_filename)
+        charset.decode_element(ds[0x20,0x4000],ds.SpecificCharacterSet)
         number, title = ds.ImageComments.split("^")
         file_stem = Path(dcm_filename.stem)
         image_filename = file_stem.with_suffix(".png")
