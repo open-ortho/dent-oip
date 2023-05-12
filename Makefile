@@ -9,10 +9,16 @@ VIEW_EXAMPLES = source/Appendix/ViewExamples
 IMAGES = source/images
 IMAGES_ORIGIN = modules/orthoviews-linedrawings/images/png
 
-PIPENV = python3 -m pipenv
-# PIPENV_RUN = $(PIPENV) run
-VIEWBUILDER = $(PIPENV_RUN) python3 ./view_maker.py
+# In Windows, calling python3 will default to the system path. But regular python will pick up the path of the python inside the virtual environment. This might not be the case for 
+ifeq ($(OS), Windows_NT)
+	PYTHON=python
+else
+	PYTHON=python3
+endif
 
+PIPENV = $(PYTHON) -m pipenv
+# PIPENV_RUN = $(PIPENV) run
+VIEWBUILDER = $(PIPENV_RUN) $(PYTHON) ./view_maker.py
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
@@ -49,7 +55,7 @@ $(IMAGES):
 	git submodule init
 	git submodule update
 	mkdir -p "$(IMAGES)"
-	cd $(IMAGES_ORIGIN) && for image in $$(ls); do cp -v $${image:?} $${OLDPWD}/$(IMAGES)/$$(echo $${image} | gcut --characters='1-5' | sed 's/-//').png; done
+	cd $(IMAGES_ORIGIN) && for image in $$(ls); do cp -v $${image:?} $${OLDPWD}/$(IMAGES)/$$(echo $${image} | cut --characters='1-5' | sed 's/-//').png; done
 
 $(SAMPLE_DICOM_FILES): $(GENERATED_TABLES)
 	mkdir -p $@
