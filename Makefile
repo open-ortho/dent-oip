@@ -1,4 +1,5 @@
 OS := $(shell uname -s)
+DATESTAMP := $(shell date +"%Y%m%d%H%M%S")
 # In Windows, calling python3 will default to the system path. But regular python will pick up the path of the python inside the virtual environment. This might not be the case for 
 ifeq ($(OS), Windows_NT)
 	PYTHON=python
@@ -26,6 +27,7 @@ VIEWBUILDER = $(PIPENV_RUN) $(PYTHON) ./view_maker.py
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= $(PIPENV_RUN) sphinx-build
 SOURCEDIR     = source
+VERSION_FILE  = $(SOURCEDIR)/_VERSION
 
 SSH_USER			= afm
 SSH_IP				= brillig.org
@@ -44,9 +46,17 @@ $(GENERATED_TABLES): $(IMAGES)
 	$(VIEWBUILDER)
 
 clean:
-	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)" "$(IMAGES)" "$(VIEW_EXAMPLES)/generated" "$(SAMPLE_DICOM_FILES)"
+	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)" "$(IMAGES)" "$(VIEW_EXAMPLES)/generated" "$(SAMPLE_DICOM_FILES)" "$(VERSION_FILE)"
 
-deploy: html docx latexpdf 
+deploy:
+	cp VERSION $(VERSION_FILE)
+	$(MAKE) _deploy
+
+nightly:
+	printf "%s-nightly.$(DATESTAMP)" $(shell cat VERSION) > $(VERSION_FILE)
+	$(MAKE) _deploy
+
+_deploy: html docx latexpdf 
 	cp htaccess "$(BUILDDIR)/.htaccess"
 	cp htpasswd "$(BUILDDIR)/.htpasswd"
 	ssh -p $(SSH_PORT) $(SSH_USER)@$(SSH_IP) "mkdir -p $(REMOTE_PATH)"

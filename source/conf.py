@@ -1,3 +1,5 @@
+from pathlib import Path
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -17,14 +19,19 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'DRAFT ADA-1107 DRAFT'
+project = 'ADA-1107'
 copyright = '2023, ADA SCDI WG 11.6'
 author = 'ADA SCDI WG 11.6'
 master_doc = 'index'
 subject = 'DICOM implementation of WP-1100.'
 
-# The full version, including alpha/beta/rc tags
-release = '0.1'
+try:
+    # The full version, including alpha/beta/rc tags
+    with open('_VERSION','r') as version_file:
+        release = version_file.read().strip()
+except FileNotFoundError:
+    # I'm parsing this conf from view_maker, which will cause the above to not find the file, because this file is being parsed from a parent folder of how sphinx normally calls it. So i'm catching the FileNotFound to work around this problem.
+    pass
 
 
 # -- General configuration ---------------------------------------------------

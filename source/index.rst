@@ -6,7 +6,7 @@
 ADA-1107
 ====================================
 
-`DOCX <../docx/ADA-1107.docx>`__ | `PDF <../latex/draftada-1107draft.pdf>`__
+`DOCX <../docx/ADA-1107.docx>`__ | `PDF <../latex/ada-1107.pdf>`__
 
 Executive Summary
 -----------------

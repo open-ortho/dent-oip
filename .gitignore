@@ -12,3 +12,4 @@ source/images/
 .DS_Store
 *.pyc
 views.db
+_VERSION
