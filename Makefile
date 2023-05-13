@@ -1,6 +1,14 @@
-# Minimal makefile for Sphinx documentation
-#
-
+OS := $(shell uname -s)
+# In Windows, calling python3 will default to the system path. But regular python will pick up the path of the python inside the virtual environment. This might not be the case for 
+ifeq ($(OS), Windows_NT)
+	PYTHON=python
+	CUT=cut
+else ifeq ($(OS), Darwin)
+	PYTHON=python3
+	CUT=gcut
+else
+	CUT=cut
+endif
 
 BUILDDIR      = dist/
 GENERATED_TABLES = source/tables/generated
@@ -8,13 +16,6 @@ SAMPLE_DICOM_FILES = source/_static/dicom_samples
 VIEW_EXAMPLES = source/Appendix/ViewExamples
 IMAGES = source/images
 IMAGES_ORIGIN = modules/orthoviews-linedrawings/images/png
-
-# In Windows, calling python3 will default to the system path. But regular python will pick up the path of the python inside the virtual environment. This might not be the case for 
-ifeq ($(OS), Windows_NT)
-	PYTHON=python
-else
-	PYTHON=python3
-endif
 
 PIPENV = $(PYTHON) -m pipenv
 # PIPENV_RUN = $(PIPENV) run
@@ -55,7 +56,7 @@ $(IMAGES):
 	git submodule init
 	git submodule update
 	mkdir -p "$(IMAGES)"
-	cd $(IMAGES_ORIGIN) && for image in $$(ls); do cp -v $${image:?} $${OLDPWD}/$(IMAGES)/$$(echo $${image} | cut --characters='1-5' | sed 's/-//').png; done
+	cd $(IMAGES_ORIGIN) && for image in $$(ls); do cp -v $${image:?} $${OLDPWD}/$(IMAGES)/$$(echo $${image} | $(CUT) --characters='1-5' | sed 's/-//').png; done
 
 $(SAMPLE_DICOM_FILES): $(GENERATED_TABLES)
 	mkdir -p $@
