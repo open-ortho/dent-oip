@@ -52,9 +52,13 @@ deploy:
 	cp VERSION $(VERSION_FILE)
 	$(MAKE) _deploy
 
+git-tag:
+	git tag $(shell cat $(VERSION_FILE))
+	git push --tags
+
 nightly:
 	printf "%s-nightly.$(DATESTAMP)" $(shell cat VERSION) > $(VERSION_FILE)
-	$(MAKE) _deploy
+	$(MAKE) _deploy git-tag
 
 _deploy: html docx latexpdf 
 	cp htaccess "$(BUILDDIR)/.htaccess"
