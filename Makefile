@@ -1,5 +1,5 @@
 OS := $(shell uname -s)
-DATESTAMP := $(shell date +"%Y%m%d%H%M%S")
+DATESTAMP := $(shell date -u +"%Y%m%d%H%M%S")
 # In Windows, calling python3 will default to the system path. But regular python will pick up the path of the python inside the virtual environment. This might not be the case for 
 ifeq ($(OS), Windows_NT)
 	PYTHON=python
