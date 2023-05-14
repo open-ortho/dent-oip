@@ -20,3 +20,6 @@ class Test(unittest.TestCase):
 
     def test_generate_rst_pages(self):
         vmd.generate_rst_pages()
+
+    def test_generate_views_in_dicom(self):
+        vmd.generate_views_in_dicom()
