@@ -29,6 +29,8 @@ def generate_views_in_dicom():
             "dental_provider_firstname": "Conrad",
             "dental_provider_lastname": "Murray",
             "series_description": "UnitTest make_photo_metadata",
+            "treatment_event_type": "Posttreatment",
+            "days_after_event": 234,
             "input_image_filename": input_image_filename,
         }
         return metadata
