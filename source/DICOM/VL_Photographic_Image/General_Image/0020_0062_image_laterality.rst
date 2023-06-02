@@ -16,7 +16,7 @@ Allowed Values
 --------------
 
 
-.. list-table::
+.. list-table:: From DICOM CID-244
    :header-rows: 1
 
    * - DICOM Enumerated Value
@@ -89,7 +89,7 @@ The above table was compiled using the following considerations:
    2. The section references `Part 16 Table L-5 <http://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_L.html#table_L-5>`__,
       a table which defines whether a specific anatomic region is to be
       considered a paired structure or not. Below, we report a table of those
-      body parts relevant to orthodontic visible light images
+      body parts relevant to orthodontic visible light images.
 
 2. Laterality (0020,0060) (a Series level Attribute) must be absent,
    because
@@ -159,10 +159,3 @@ orthodontic domain relevant regions)
 | `21974007 <http://snome   |                       |                  |
 | d.info/id/21974007>`__    |                       |                  |
 +---------------------------+-----------------------+------------------+
-
-.. warning::
-
-   The implementer shall follow the codes as defined in this document, even if
-   these are not the most granular codes possible (for what the code is
-   describing in orthodontics).  While this might go against SNOMED CT
-   recommendations, these are the codes allowed in the DICOM standard.
