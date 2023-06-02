@@ -49,8 +49,8 @@ General notes regarding the examples
 View keywords
 -------------
 
-In ADA-1107, every orthodontic view is identified with a keyword, like `IV01` or `EV20`. View keywords allow software and standard developers to have a standardized way of dealing with the view name, when required, without needing to use SNOMED-CT codes. This would be the analogous of DICOM Keywords, where, for example, the attribute Patient's Name has keyword "PatientName" defined in DICOM.
-
+In ADA-1107, every orthodontic view is identified with a keyword, like ``IV01`` or ``EV20``. View keywords allow software and standard developers to have a standardized way of dealing with the view name, when required, without needing to use SNOMED-CT codes. This would be the analogous of DICOM Keywords, where, for example, the attribute Patient's Name has keyword "PatientName" defined in DICOM.
+=
 Here we define how to use keywords for views. The regular expressione for the keyword is: ``^[I,E]VP?[0-9]+$``. In plain English, this translates to:
 
 - Each keyword is composed of intially a sequnce of capital letters, followed a sequence of digits. 
