@@ -16,6 +16,6 @@ specific regions.
     * - `SCT 255541007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=255541007&edition=MAIN&release=&languages=en>`__
       - Indirect (qualifier value)
       - Light from anatomy is reflected on a mirror before reaching camera lens.
-    * - `SCT 789131009 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=789131009&edition=MAIN&release=&languages=en>`__
-      - Close up photographic view of teeth with no set magnification or distance (record artifact)
-      - Used for a specific kind of close up of the oral cavity or face. (See :ref:`[IV28] <IV28>`, :ref:`[IV29] <IV29>`, :ref:`[EV38] <EV38>`) 
+    * - `SCT XXXXXXXXX <https://browser.ihtsdotools.org/?perspective=full&conceptId1=XXXXXXXXX&edition=MAIN&release=&languages=en>`__
+      - Close up 
+      - Still waiting for SNOMED-CT code. Should be qualifier value. Used for a specific kind of close up of the oral cavity or face. (See :ref:`[IV28] <IV28>`, :ref:`[IV29] <IV29>`, :ref:`[EV38] <EV38>`) 

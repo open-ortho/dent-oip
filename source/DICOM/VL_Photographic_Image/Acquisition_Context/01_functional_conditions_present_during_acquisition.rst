@@ -68,6 +68,12 @@ The following are those codes of `DICOM CID 91 <http://dicom.nema.org/medical/di
     * - `SCT 736783005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=736783005&edition=MAIN&release=&languages=en>`__
       - Centric relation (observable entity)
       - Optional. If present, *Centric occlusion* cannot be present. See :ref:`Centric Relation and Centric Occlusion Definition <centric occlusion>`.
+    * - `SCT 710793000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=710793000&edition=MAIN&release=&languages=en>`__
+      - Cant of occlusal plane (observable entity)
+      - 
+    * - `SCT 193093009 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=193093009&edition=MAIN&release=&languages=en>`__
+      - Bell's palsy (disorder)
+      - 
     * - `SCT 276470008 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=276470008&edition=MAIN&release=&languages=en>`__
       - Skin mark (disorder)
       - Optional. Use this code or SNOMED-CT children of this code if some kind of skin mark is present. For example: Birthmark, slap mark, ...
