@@ -44,19 +44,19 @@ The following are those codes of `DICOM CID 91 <http://dicom.nema.org/medical/di
     * - Code
       - Meaning
       - Notes
-    * - `SCT XXXXXXXXX <https://browser.ihtsdotools.org/?perspective=full&conceptId1=XXXXXXXXX&edition=MAIN&release=&languages=en>`__
+    * - `SCT AAAAAAAAA <https://browser.ihtsdotools.org/?perspective=full&conceptId1=XXXXXXXXX&edition=MAIN&release=&languages=en>`__
       - Face with lips in relaxed position 
       - Still waiting for SNOMED-CT code. Should be an observable entity or finding.
-    * - `SCT XXXXXXXXX <https://browser.ihtsdotools.org/?perspective=full&conceptId1=XXXXXXXXX&edition=MAIN&release=&languages=en>`__
+    * - `SCT DDDDDDDDD <https://browser.ihtsdotools.org/?perspective=full&conceptId1=XXXXXXXXX&edition=MAIN&release=&languages=en>`__
       - Face with lips in closed position
       - Still waiting for SNOMED-CT code. Should be an observable entity or finding.
-    * - `SCT XXXXXXXXX <https://browser.ihtsdotools.org/?perspective=full&conceptId1=XXXXXXXXX&edition=MAIN&release=&languages=en>`__
+    * - `SCT BBBBBBBBB <https://browser.ihtsdotools.org/?perspective=full&conceptId1=XXXXXXXXX&edition=MAIN&release=&languages=en>`__
       - Mouth in partially open position and teeth apart
       - Still waiting for SNOMED-CT code. Should be an observable entity or finding.
     * - `SCT 262016004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=262016004&edition=MAIN&release=&languages=en>`__
       - Open Mouth (finding)
       - 
-    * - `SCT XXXXXXXXX <https://browser.ihtsdotools.org/?perspective=full&conceptId1=XXXXXXXXX&edition=MAIN&release=&languages=en>`__
+    * - `SCT CCCCCCCCC <https://browser.ihtsdotools.org/?perspective=full&conceptId1=XXXXXXXXX&edition=MAIN&release=&languages=en>`__
       - Mandible postured forward (observable entity)
       - Still waiting for SNOMED-CT code. Should be an observable entity or finding.
     * - `SCT 225583004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=225583004&edition=MAIN&release=&languages=en>`__
@@ -80,4 +80,7 @@ The following are those codes of `DICOM CID 91 <http://dicom.nema.org/medical/di
     * - `SCT 341000119102 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=341000119102&edition=MAIN&release=&languages=en>`__
       - Tattoo of skin (finding)
       - Optional. Use this code if a tattoo is present on the skin inside the field of view.
+    * - `SCT 4356008 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=4356008&edition=MAIN&release=&languages=en>`__
+      - Gingival recession (disorder)
+      - 
 

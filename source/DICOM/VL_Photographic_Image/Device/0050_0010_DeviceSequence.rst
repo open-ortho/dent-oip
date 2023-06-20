@@ -19,18 +19,21 @@ orthodontic views that may be visible in the image. See :ref:`device_examples` f
       - Notes
     * - `SCT 462735007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=462735007&edition=MAIN&release=&languages=en>`__
       - Periodontal probe (physical object)
-      - Frequently included in photographs to document gengival health (See :ref:`[IV28] <IV28>`). May be included in photographs for other purposes as well.
+      - Frequently included in photographs to document gingival health (See :ref:`[IV28] <IV28>`). May be included in photographs for other purposes as well.
     * - `SCT 102304005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=102304005&edition=MAIN&release=&languages=en>`__
       - Measuring Ruler
       - When included, the ruler should be in SI units (millimeter increments). DICOM DeviceSequence does not have a place for defining ruler units. Usually used for :ref:`Overjet <overjet>` measurements.
-    * - SCT XXXXXX
+    * - `SCT 39802000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=39802000&edition=MAIN&release=&languages=en>`__
+      - Tongue blade, device (physical object)
+      -
+    * - SCT EEEEEEEEE 
       - Intraoral Photographic Mirror
       - Awaiting for SNOMED publication of new code. Use SCT 47162009 'Mirror'.
-    * - SCT XXXXXX
+    * - SCT FFFFFFFFF 
       - Contraster/Black Mirror
       - Awaiting for SNOMED publication of new code. 
 
-It is not required to codify each object present in the field of view of the image, except for those listed above. The implementer may, however, add additional entries making uses of codes which are childre of `SCT 260787004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260787004&edition=MAIN&release=&languages=en>`__ physical object.
+It is not required to codify each object present in the field of view of the image, except for those listed above. The implementer may, however, add additional entries making uses of codes which are children of `SCT 260787004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260787004&edition=MAIN&release=&languages=en>`__ physical object.
 
 Additional Tags for Compliance with this Standard
 -------------------------------------------------
