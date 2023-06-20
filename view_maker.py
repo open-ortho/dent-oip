@@ -78,7 +78,7 @@ def generate_tables_in_csv():
         csv_body = show_dataset(ds, indent="")
         csv_file_name = Path(PATH_TABLES_GENERATED,file_name.stem).with_suffix(".csv")
 
-        with open(csv_file_name,'w') as csvfile:
+        with open(csv_file_name,'w',encoding='utf-8') as csvfile:
             csvwriter = csv.writer(csvfile, delimiter=',',quotechar='"',quoting=csv.QUOTE_ALL)
             csvwriter.writerow(csv_header)
             for row in csv_body:
@@ -98,42 +98,45 @@ def generate_rst_pages():
         This function is very similar to ev_write_rst and has been kept separate on
         purpose, to allow for customization.
         """
-        root = "../../.."
-        static = f"{root}/{html_static_path[0]}"
+        root = Path("../../..")
+        static = root/ html_static_path[0]
 
         ds = dcmread(dcm_filename)
         charset.decode_element(ds[0x20,0x4000],ds.SpecificCharacterSet)
         number, title = ds.ImageComments.split("^")
         file_stem = Path(dcm_filename.stem)
         image_filename = file_stem.with_suffix(".png")
-        image_path = f"{root}/images/{image_filename}"
+        image_path = root / "images" / image_filename
         rst_filename = file_stem.with_suffix(".rst")
         rst_path = Path(PATH_VIEW_EXAMPLES,rst_filename)
+        csv_file = root / "tables" / "generated" / f"{number}.csv"
+        comments_file = Path(f"../{number}_comments.rst")
+        sample_dicom_file = static / "dicom_samples" / dcm_filename.name
 
         rst_string = f"""
 {h1(f"[{number}] - {title}")}
 
 .. _{number}:
-.. image:: {image_path}
+.. image:: {image_path.as_posix()}
     :class: with-border
     :align: center
     :alt: Line drawing of {title}
     
-.. centered:: `Download sample DICOM file <{static}/dicom_samples/{dcm_filename.name}>`__
+.. centered:: `Download sample DICOM file <{sample_dicom_file.as_posix()}>`__
     
-.. include:: ../{number}_comments.rst
+.. include:: {comments_file.as_posix()}
     
 DICOM header for [{number}]
 ::::::::::::::::::::::::::::::::
 
 .. csv-table:: {number}
-   :file: {root}/tables/generated/{number}.csv
+   :file: {csv_file.as_posix()}
    :widths: 40, 10, 10
    :header-rows: 1
     
 """
 
-        with open(rst_path, "w") as rst_out:
+        with open(rst_path, "w", encoding="utf-8") as rst_out:
             rst_out.write(rst_string)
         
 
@@ -150,7 +153,7 @@ def generate_codes_table():
     '''
     with open(Path(PATH_TABLES/'codes.csv'),'r') as input_csv_file:
         reader = csv.DictReader(input_csv_file)
-        with open(Path(PATH_TABLES_GENERATED/'codes.csv'), 'w', newline='') as output_csv_file:
+        with open(Path(PATH_TABLES_GENERATED/'codes.csv'), 'w', newline='', encoding='utf-8') as output_csv_file:
             fieldnames = ['code','codeset','meaning']
             writer = csv.DictWriter(output_csv_file, fieldnames=fieldnames,extrasaction='ignore')
             writer.writeheader()
