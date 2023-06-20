@@ -1,14 +1,18 @@
 OS := $(shell uname -s)
 DATESTAMP := $(shell date -u +"%Y%m%d%H%M%S")
 # In Windows, calling python3 will default to the system path. But regular python will pick up the path of the python inside the virtual environment. This might not be the case for 
-ifeq ($(OS), Windows_NT)
-	PYTHON=python
-	CUT=cut
-else ifeq ($(OS), Darwin)
+ifeq ($(OS), Darwin)
 	PYTHON=python3
 	CUT=gcut
 else
-	CUT=cut
+	OS := $(shell uname -o)
+	ifeq ($(OS), Msys)
+		PYTHON=python
+		CUT=cut
+	else ifeq ($(OS), GNU/Linux)
+		PYTHON=python3
+		CUT=cut
+	endif
 endif
 
 BUILDDIR      = dist/
