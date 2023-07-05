@@ -36,7 +36,7 @@ There are three places where progress shall be stored for orthodontic photograph
       - Longitudinal Temporal Event Type
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
-      - One of :ref:`cid-280` below. 
+      - One of :ref:`CID-280 <cid-280>` below. 
       - See :ref:`notes <concept code sequence attribute>` below.
     * - > Acquisition Context Sequence Attribute
       - (0040,0555) 
