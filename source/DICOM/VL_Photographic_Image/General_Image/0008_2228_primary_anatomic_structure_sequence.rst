@@ -3,43 +3,60 @@
 Primary Anatomic Structure Sequence (0008,2228)
 ===============================================
 
-When applied to orthodontic photographs, for intraoral views the anatomic region is always
+When applied to orthodontic photographs, for extraoral views it is *Face Structure (body structure)*. Intraoral views have more variations, as detailed in the table below.
 
-* *Oral cavity structure (body structure)*
+.. _cid-xxx:
+.. list-table:: CID-???
+    :header-rows: 1
 
-Refer to the :ref:`List of Codes <list_of_codes>` in the Appendix for the correct SNOMED codes to use.
+    * - code scheme designator
+      - code value
+      - code meaning
+      - notes
+    * - SCT
+      - 89545001
+      - Face structure (body structure)
+      - Used for EV-* extraoral views.
+    * - SCT
+      - 74262004
+      - Oral cavity structure (body structure)
+      - Used for IV-* intraoral views.
+    * - SCT
+      - 88176008
+      - Lower dental arch structure (body structure)
+      - Used for IV-* intraoral views.
+    * - SCT
+      - 39481002
+      - Upper dental arch structure (body structure)
+      - Used for IV-* intraoral views.
+    * - SCT
+      - 261063000
+      - Structure of buccal space (body structure)
+      - Used for IV-* intraoral views.
+    * - SCT
+      - 7652006
+      - Structure of frenulum labii (body structure)
+      - Used for IV-* intraoral views.
 
-This tag is omitted entirely for extraoral views, because of the less detailed nature of these views.
 
 Primary Anatomic Structure Modifier Sequence (0008,2230)
 --------------------------------------------------------
 
-This tag is used to further specify the area of the oral cavity being imaged, and is used for intraoral views only.
+This modifier is used to clarify which side of the structure is contained in the image.
 
-* *Buccal*
-* *Entire frenulum labii (body structure)*
-* *Entire lower dental arch (body structure)*
-* *Entire upper dental arch (body structure)*
+.. _cid-xxy:
+.. list-table:: CID-??
+    :header-rows: 1
 
-
-Primary Anatomic Structure for including teeth
-----------------------------------------------
-
-.. warning::
-   The entire tooth section needs work. I think we have considered removing it from v1.
-
-Primary Anatomic Structure Sequence contains a list of visible teeth using ISO
-tooth numbering system (represented as SNOMED CT codes) in a specific view.
-
-This tag is used to define which teeth are represented in the image. Refer to DICOM `CID-4018 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4018.html>`_ and `CID-4019 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4019.html>`_ for a list of permissible values.
-
-You can find examples of usage in the Appendix :ref:`View Examples <view_examples>`
-
--  When one tooth is visible, this sequence will contain a single SNOMED
-   CT code representing the visible tooth.
-
--  When more teeth are visible, this sequence will contain a list of
-   SNOMED CT codes representing all visible teeth.
-
--  When the region of the mouth imaged is not expected to show any teeth, omit this
-   sequence completely.
+    * - code scheme designator
+      - code value
+      - code meaning
+      - notes
+    * - SCT
+      - 24028007
+      - Right (qualifier value)
+      - 
+    * - SCT
+      - 7771000
+      - Left (qualifier value)
+      - 
