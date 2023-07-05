@@ -3,10 +3,10 @@ Anatomic Region Sequence (0008,2218)
 
 According to DICOM, this sequence identifies the anatomic region of interest, i.e., external anatomy, surface anatomy, or general region of the body. Only a single Item is permitted in this Sequence.
 
-When applied to orthodontic photographs, the anatomic region is always
+When applied to orthodontic photographs, the anatomic region is *Mouth* for intraoral views, and *Head/Neck* for extraoral views.
 
-.. _cid-yxx:
-.. list-table:: CID-???
+.. _cid-4028a:
+.. list-table:: Table CID 4028. Craniofacial Anatomic Region
     :header-rows: 1
 
     * - code scheme designator
@@ -26,10 +26,10 @@ When applied to orthodontic photographs, the anatomic region is always
 Anatomic Region Modifier Sequence (0008,2220)
 ---------------------------------------------
 
-This modifier is used to clarify which side of the structure is contained in the image.
+This modifier is used to clarify which side of the region is contained in the image.
 
-.. _cid-yxy:
-.. list-table:: CID-??
+.. _cid-2a:
+.. list-table:: Table CID 2. Anatomic Modifier
     :header-rows: 1
 
     * - code scheme designator
