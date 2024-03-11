@@ -3,7 +3,7 @@
 Primary Anatomic Structure Sequence (0008,2228)
 ===============================================
 
-When applied to orthodontic photographs, for extraoral views it is *Face Structure (body structure)*. Intraoral views have more variations, as detailed in the table below.
+For orthodontic photographs, the primary anatomic structure for extraoral views is designated as *Face Structure (body structure)*. In contrast, intraoral views exhibit a broader range of variations, as enumerated in the following table.
 
 .. _cid-4028b:
 .. list-table:: Table CID 4028. Craniofacial Anatomic Region
