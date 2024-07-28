@@ -2,7 +2,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 import sys
-import dicom4ortho.controller
+from dicom4ortho.controller import OrthodonticController
 from  pathlib import Path
 from pydicom import dcmread, charset
 import csv
@@ -37,9 +37,9 @@ def generate_views_in_dicom():
 
     for png in PATH_IMAGES.glob("*.png"):
         logging.info(f"Converting {png} to DICOM.")
-        c = dicom4ortho.controller.SimpleController()
+        c = OrthodonticController()
         try:
-            c.convert_image_to_dicom4orthograph(metadata=make_photo_metadata(png))
+            c.convert_image_to_dicom4orthograph_and_save(metadata=make_photo_metadata(png))
         except AttributeError:
             logging.warning(f"View {png} not found in views.csv.")
         
