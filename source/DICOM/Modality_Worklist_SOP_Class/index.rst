@@ -1,12 +1,5 @@
 .. _modality_worklist_sop_class:
 
-.. toctree::
-	:glob:
-	:maxdepth: 2
-
-	*/index
-
-
 Modality Worklist SOP Class
 ===========================
 
@@ -52,11 +45,11 @@ Modality Worklist Building Blocks in Orthodontics
 
 There are three main building blocks of a modality worklist. This explanation will describe how these components apply to the orthodontic domain, specifically for orthodontic photographs. For further details, refer to `DICOM Part 3.4, Section K.6 <https://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_K.6.html>`_ and the `IHE RAD-5 Profile <https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Vol2.pdf>`_.
 
-1. **Requested Procedure** <_requested_procedure>
+1. **Requested Procedure** :ref:`requested_procedure`
 
    This represents a high-level procedure associated with an appointment, such as an Initial Visit or Initial Records. During such appointments, the patient may need to collect various types of images, including Digital X-rays (DX), Panoramic X-rays (PX), Computed Tomography (CT), and Extraoral Photographs (XC).
 
-2. **Scheduled Procedure Step** <_scheduled_procedure_step>
+2. **Scheduled Procedure Step** :ref:`scheduled_procedure_step`
 
    Each requested procedure can have multiple procedure steps, which are modality-specific. For instance, for an Initial Visit, the following steps might be required:
    
@@ -64,10 +57,18 @@ There are three main building blocks of a modality worklist. This explanation wi
    - Two DX (PA and lateral)
    - Eight XC (intraoral and extraoral)
 
-3. **Scheduled Protocol Code** <_scheduled_protocol_code>
+3. **Scheduled Protocol Code** :ref:`scheduled_protocol_code`
 
    Each procedure step can include one or more scheduled protocol codes. For example, the PX scheduled procedure step might use the code `89846007 | Orthopantogram (procedure)`, while the XC scheduled procedure step may include codes such as:
    
    - `1306665006 | Photographic extraoral image of full face with full smile and jaws in centric relation (record artifact)`
    - `1306651009 | Photographic extraoral image of left half of face with full smile and teeth in centric occlusion (record artifact)`
    - ...
+
+
+.. toctree::
+	:glob:
+	:maxdepth: 1
+
+	*/index
+
