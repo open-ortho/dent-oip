@@ -1,4 +1,4 @@
-.. _patient_study:
+.. _sop_common:
 
 SOP Common
 =============
