@@ -28,8 +28,8 @@ Anatomic Region Modifier Sequence (0008,2220)
 
 This modifier is used to clarify which side of the region is contained in the image.
 
-.. _cid-2a:
-.. list-table:: Table CID 2. Anatomic Modifier
+.. _cid-247a:
+.. list-table:: Table CID 247. Laterality Left-Right Only 
     :header-rows: 1
 
     * - code scheme designator

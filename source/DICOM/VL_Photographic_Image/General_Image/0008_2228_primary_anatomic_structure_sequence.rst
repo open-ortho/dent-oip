@@ -5,8 +5,8 @@ Primary Anatomic Structure Sequence (0008,2228)
 
 For orthodontic photographs, the primary anatomic structure for extraoral views is designated as *Face Structure (body structure)*. In contrast, intraoral views exhibit a broader range of variations, as enumerated in the following table.
 
-.. _cid-4028b:
-.. list-table:: Table CID 4028. Craniofacial Anatomic Region
+.. _cid-AAAA:
+.. list-table:: Table CID AAAA. Head and/or Neck Primary Anatomic Structure
     :header-rows: 1
 
     * - code scheme designator
@@ -42,21 +42,4 @@ For orthodontic photographs, the primary anatomic structure for extraoral views 
 Primary Anatomic Structure Modifier Sequence (0008,2230)
 --------------------------------------------------------
 
-This modifier is used to clarify which side of the structure is contained in the image.
-
-.. _cid-2b:
-.. list-table:: Table CID 2. Anatomic Modifier
-    :header-rows: 1
-
-    * - code scheme designator
-      - code value
-      - code meaning
-      - notes
-    * - SCT
-      - 24028007
-      - Right (qualifier value)
-      - 
-    * - SCT
-      - 7771000
-      - Left (qualifier value)
-      - 
+This modifier is used to clarify which side of the structure is contained in the image. Use CID 247, as specified in :ref:`cid-247a`.
