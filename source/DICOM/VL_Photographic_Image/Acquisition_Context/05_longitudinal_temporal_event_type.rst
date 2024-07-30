@@ -1,23 +1,8 @@
-.. _orthodontic treatment progress:
+.. _longitudinal_temporal_event_type:
 
-Orthodontic Treatment Progress
-==============================
+Longitudinal Temporal Event Type
+===============================================
 
-During an orthodontic treatment, it is common for the provider to keep
-track of treatment progress by regularly collecting records (such as
-photographs or intra-oral surface scans) [provide reference]. It is
-therefore useful to identify when, relative to an orthodontic treatment,
-the records were taken. In particular, the orthodontic provider is interest in knowing if when the photographs were acquired, the patient 
-
-- was in treatment (progress photos)
-- never had treatment before (observation/pretreatment photos)
-- had treatment before (posttreatment).
-
-There are three places where progress shall be stored for orthodontic photographs:
-
-- Longitudinal Temporal Event Type (Registration,Treatment,Posttreatment)
-- Longitudinal Temporal Offset From Event (in days)
-- :ref:`study_description`
 
 .. list-table::
     :header-rows: 1
@@ -38,26 +23,12 @@ There are three places where progress shall be stored for orthodontic photograph
       - (0040,A168)
       - One of :ref:`CID-280 <cid-280>` below. 
       - See :ref:`notes <concept code sequence attribute>` below.
-    * - > Acquisition Context Sequence Attribute
-      - (0040,0555) 
-      - 
-      - This sequence is omitted for "Initial" and "Final", as there are no progresses.
-    * - >> Concept Name Code Sequence Attribute
-      - (0040,A043)
-      - DCM-128740
-      - Longitudinal Temporal Offset from Event
-    * - >> Numeric Value Attribute
-      - (0040,A30A)
-      - 1,2,3,...
-      - Number of days past the Event Type.
-
 
 Concept Name Code Sequence Attribute (0040,A043)
 ------------------------------------------------
 
 The Concept Name for CID-280 entries is defined in `TID 1502 Time Point Context <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_A.html#sect_TID_1502>`__ to be `DCM-128741 Longitudinal Temporal Event Type <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html#DCM_128741>`__.
 
-The Concept Name the values is defined in `TID 1502 Time Point Context <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_A.html#sect_TID_1502>`__ to be `DCM-128740 Longitudinal Temporal Offset from Event <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html#DCM_128741>`__ and its values are defined to be `NUMERICAL` in units of days.
 
 .. _concept code sequence attribute:
 
@@ -70,30 +41,24 @@ The allowed values for this tag have been taken from `DICOM Table CID280 <https:
 .. list-table:: CID-280 Longitudinal Temporal Event Type
     :header-rows: 1
 
-    * - code scheme designator
-      - code value
-      - code meaning
-      - 2023 status in CID-280
-    * - NCIt
-      - C37948
+    * - Code
+      - Meaning
+      - Notes
+    * - NCIt-C37948
       - Enrollment
-      - Present. Not ideal.
-    * - DCM
-      - 121079
+      - 
+    * - DCM-121079
       - Baseline
-      - Present. Not ideal.
-    * - DCM
-      - 126074
-      - Posttreatment
-      - Present in CID-6146, but not CID-280.
-    * - SCTID
-      - 184047000
-      - Patient registration (procedure)
-      - Not Present. Could substitute NCIt-C37948 Enrollment
-    * - SCTID
-      - 122452007
-      - Comprehensive orthodontic treatment (procedure)
-      - Not Present. Could substitute DCM-121079 Baseline
+      - 
+    * - `SCT 184047000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=184047000&edition=MAIN&release=&languages=en>`__
+      - Patient registration
+      - 
+    * - `SCT 1332161000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1332161000&edition=MAIN&release=&languages=en>`__
+      - Orthodontic Treatment started
+      - 
+    * - `SCT 1340210007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1340210007&edition=MAIN&release=&languages=en>`__
+      - Orthodontic Treatment stopped
+      - 
 
 The below mapping provides a reference for translating orthodontic progresses in codesets that DICOM can understand.
 
