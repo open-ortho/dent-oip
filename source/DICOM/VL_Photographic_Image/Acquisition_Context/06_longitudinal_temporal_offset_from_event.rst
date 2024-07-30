@@ -6,18 +6,6 @@ Longitudinal Temporal Offset from Event
 - Recommended. SHOULD be present if :ref:`longitudinal_temporal_event_type` is present. 
 - If present, :ref:`longitudinal_temporal_event_type` SHALL be present.
 
-During an orthodontic treatment, it is common for the provider to keep track of treatment progress by regularly collecting records (such as photographs or intra-oral surface scans) [provide reference]. It is therefore useful to identify when, relative to an orthodontic treatment, the records were taken. In particular, the orthodontic provider is interested in knowing if, when the photographs were acquired, the patient: 
-
-- was in treatment (progress photos)
-- never had treatment before (observation/pretreatment photos)
-- had treatment before (posttreatment).
-
-There are three places where progress shall be stored for orthodontic photographs:
-
-- Longitudinal Temporal Event Type (Registration,Treatment,Posttreatment)
-- Longitudinal Temporal Offset From Event (in days)
-- :ref:`study_description`
-
 .. list-table::
     :header-rows: 1
 

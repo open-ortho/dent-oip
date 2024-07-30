@@ -66,19 +66,18 @@ The mapping below provides a reference for translating orthodontic progress into
 Study Description (0008,1030)
 -----------------------------
 
-This is an optional DICOM tag, which can contain a Long String (64 character max), part of the General Study module. For the application of orthodontic photographs, Study Description is used to replicate the treatment progress, as defined above.
+This optional DICOM tag, part of the General Study module, can contain a Long String (up to 64 characters). In the context of orthodontic photographs, the *Study Description* is used to represent treatment progress as defined above.
 
-The *Study Description* is shown by most PACS system in the search results when listing studies after a query. It is therefore recommended to repeat the information contained in the Concept Codes described in :ref:`longitudinal_temporal_event_type`  and :ref:`longitudinal_temporal_event_type` also here, but in a more human readable form. For example, it would be acceptable to choose a *Study Description* by using progress name defined by the main practice management system in use by the practice who was responsible for initially acquiring the photographs. For example:
+Most PACS systems display the *Study Description* in search results when listing studies after a query. Therefore, it is recommended to include the information from the Concept Codes described in :ref:`longitudinal_temporal_event_type` and :ref:`longitudinal_temporal_offset_from_event` here, in a more human-readable form. For example, you might choose a *Study Description* based on progress names defined by the main practice management system used by the practice that initially acquired the photographs. Examples include:
 
 - Pre-treatment 1
 - Initial
 - Progress 12
 - Final
 
-
 .. note::
-    - The Study Description is usually used by the medical provider which is treating the patient and has acquired the images.
-    - Other software might also use *Study Description* and only 64 characters are allowed. It is recommended to keep the string shorter than 16 characters, which would allow other software systems to append their text to this one.
-    - When importing images acquired by other institutions, it may happen and is exptected for the *Study Description* to not be relevant to the receiving practice.
-    - *Study Description* is *not* a good tag to be relied upon for interoperability across systems and institutions.
-    - For reliable interoperability,  refer to *Acquisition Context* codes as defined in :ref:`longitudinal_temporal_event_type`  and :ref:`longitudinal_temporal_event_type`.
+    - The *Study Description* is typically used by the medical provider who treats the patient and acquires the images.
+    - Other software may also use the *Study Description*. But with the limit of 64 characters, it is advisable to keep the string under 16 characters to allow other systems to append their own text.
+    - When importing images from other institutions, the *Study Description* may not be relevant to the receiving practice.
+    - The *Study Description* is *not* a reliable tag for ensuring interoperability across systems and institutions.
+    - For reliable interoperability, refer to *Acquisition Context* codes as defined in :ref:`longitudinal_temporal_event_type` and :ref:`longitudinal_temporal_offset_from_event`.

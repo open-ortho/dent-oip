@@ -1,7 +1,7 @@
 .. _dicom_tags:
 
-DICOM
-=====
+DICOM (Normative)
+=================
 
 This normative section contains a description of the DICOM tags which are
 necessary to fully describe orthodontic views (photographs) and to request for these photographs to be taken (acquired).

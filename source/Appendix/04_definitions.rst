@@ -1,7 +1,7 @@
 .. _definitions:
 
-Definitions
-===========
+Definitions (Informative)
+=========================
 
 .. _centric relation:
 .. _centric occlusion:
@@ -38,7 +38,7 @@ Definitions
 
 
 
-See also :ref:`functional conditions present during acquisition`.
+See also :ref:`dental_occlusion_function`.
 
 
 Overjet
