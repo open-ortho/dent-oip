@@ -1,2 +1,3 @@
 - Define requirements. What is SHALL, SHOULD and MAY? ADA-1100 doesn't specify this. This is a problem.
+- Missing requirements: should devices be required? Required only when a known device was purposely placed in the FOV during acquisition process? 
 - 
