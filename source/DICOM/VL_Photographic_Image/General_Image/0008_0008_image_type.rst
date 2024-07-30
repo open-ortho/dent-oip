@@ -1,6 +1,8 @@
 Image Type (0008,0008)
 ======================
 
+Required. The field SHALL always be specified.
+
 When acquiring orthodontic photographs, the photographs can usually be archived in three forms:
 
 .. list-table::

@@ -23,7 +23,7 @@ Longitudinal Temporal Offset from Event
       - Longitudinal Temporal Offset from Event
     * - >> Numeric Value Attribute
       - (0040,A30A)
-      - 1,2,3,...
+      - 0,1,2,3,...
       - Number of days past the Event Type.
 
 
@@ -37,3 +37,10 @@ The Concept Name the values is defined in `TID 1502 Time Point Context <https://
 Numeric Value Attribute (0040,A30A)
 -------------------------------------------
 
+Required. This field SHALL be populated and part of this Acquisition Context Sequence (0040,0555) if the Concept Name Code Sequence Attribute (0040,A043) with value *DCM-128740 Longitudinal Temporal Offset from Event* is also part of this same Sequence.
+
+Zero or a positive integer, in units of days.
+
+- If value is unknown, the entire sequence should be omitted.
+- If value is zero (0), the integer zero SHALL be used.
+- This Acquisition Context Sequence (0040,0555) without a Numeric Value Attribute (0040,A30A) SHALL be considered invalid, malformed and disregarded. Interpreting it as a zero is a violation of this standard.
