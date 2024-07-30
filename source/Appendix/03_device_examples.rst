@@ -1,7 +1,7 @@
 .. _device_examples:
 
-Device Examples
-===============
+Device Examples (Informative)
+=============================
 
 A list of devices used in :ref:`Device Sequence <DeviceSequence>`.
 
@@ -46,6 +46,8 @@ A device placed inside the field of view primarily used to measure overjet. See 
 The following are views which make use of such a device: 
 :ref:`IV-14 <IV14>`
 
+Use `SCT 102304005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=102304005&edition=MAIN&release=&languages=en>`__ for this device.
+
 Contraster
 ++++++++++
 
@@ -58,6 +60,8 @@ Contraster
 A device used to prevent soft tissue of the oral cavity from appearing in the field of view. The device is typically flat and comes in different shapes, in order to be placed in the oral cavity behind the teeth to be photographed. The device is also used to keep other soft tissue like cheeks from covering areas of interest, thus serving a dual purpose: retractor and background. 
 
 Any of the intraoral views can be taken with a contraster. 
+
+Use `SCT 1332163002 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1332163002&edition=MAIN&release=&languages=en>`__ for this device.
 
 Tongue Depressor
 ++++++++++++++++
@@ -72,6 +76,8 @@ Tongue Depressor
 
 A tongue depressor is a tool used in medical practice to depress the tongue to allow for examination of the mouth and throat. In orthodontics it is sometimes used to measure :ref:`occlusal cant <occlusal cant>` by asking the patient to bight on it, then taking a frontal picture. The tilt on the depressor highlights the occlusal cant.
 
+Use `SCT 39802000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=39802000&edition=MAIN&release=&languages=en>`__ for this device.
+
 Coin
 ++++
 
@@ -84,3 +90,5 @@ Coin
 An object most people are familiar with, sometimes placed in the field of view of the image to provide the viewer with a sense of scale/size of the anatomy in the image.
 
 The following are views which make use of such a device: ...
+
+Use `SCT 1332164008 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1332164008&edition=MAIN&release=&languages=en>`__ for this device.

@@ -1,4 +1,4 @@
-.. _06_longitudinal_temporal_offset_from_event:
+.. _longitudinal_temporal_offset_from_event:
 
 Longitudinal Temporal Offset from Event
 =======================================
