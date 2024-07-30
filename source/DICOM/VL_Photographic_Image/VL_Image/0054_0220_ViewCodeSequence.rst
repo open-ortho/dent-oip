@@ -3,6 +3,8 @@
 View Code Sequence (0054,0220)
 ==============================
 
+Recommended. SHOULD be specified, if known. Only one value is allowed.
+
 The projection of the anatomic region of interest on an image receptor.
 
 .. note::
@@ -67,11 +69,11 @@ The projection of the anatomic region of interest on an image receptor.
 .. _ViewModifierCodeSequence:
 
 View Modifier Code Sequence (0054,0222)
----------------------------------------
+=======================================
 
-Photographs in orthodontics are not always taken directly: sometimes there is a
-device between the patient and the camera lens, like a mirror, to be able to see
-specific regions.
+
+
+Photographs in orthodontics are not always taken directly: sometimes there is a device between the patient and the camera lens, like a mirror, to be able to see specific regions.
 
 .. _cid-DDDD:
 .. list-table:: Table CID DDDD. VL View Modifier

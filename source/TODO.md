@@ -1,0 +1,2 @@
+- Define requirements. What is SHALL, SHOULD and MAY? ADA-1100 doesn't specify this. This is a problem.
+- Create Orthodonntic Progress in informative section to explain how it all comes together.
