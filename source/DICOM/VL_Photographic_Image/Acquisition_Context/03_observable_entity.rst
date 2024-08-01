@@ -45,6 +45,9 @@ The following are those codes of `DICOM CID KKKK <http://dicom.nema.org/medical/
     * - Code
       - Meaning
       - Notes
+    * - `SCT 110343009 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=110343009&edition=MAIN&release=&languages=en>`__
+      - Tongue thrust
+      - Mandatory if encoding :ref:`IV13 <IV13>`.
     * - `SCT 193093009 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=193093009&edition=MAIN&release=&languages=en>`__
       - Bell's palsy (disorder)
       - Optional.

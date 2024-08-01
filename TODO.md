@@ -1,3 +1,4 @@
 - Define requirements. What is SHALL, SHOULD and MAY? ADA-1100 doesn't specify this. This is a problem.
 - Missing requirements: should devices be required? Required only when a known device was purposely placed in the FOV during acquisition process? 
 - Look at General Study index: define clinical context, division of series in some contextual situation. Ask docs for examples for different contexts, where one would want to see them as different series.
+- What is an uncorrected flipped image? Why do we have tags for those? I thought the correction meant flipping. So there cannot be an uncorrected flipped image.
