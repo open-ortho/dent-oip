@@ -1,34 +1,93 @@
 Requirements (Informative)
 ==========================
 
+M: Mandatory (SHALL)
+C: Conditionally Mandatory
+R: Recommended (SHOULD)
+O: Optional (MAY)
+
 In ADA SCDI WP-1100, the orthodontic providers have identified the following functionality as being essential or crucial for providing maximum patient care and research capabilities: 
 
-1. ability to store and recall visible light store and recall visible light images that have metadata associate to them and present them in the same way that they were acquired, whether or not the same product was used
-2. find the images without requiring a lot of manual labor
-3. demonstrate the staff member which image to take
-4. warn if the wrong picture was taken
-5. acquire the desired images and viewsets correctly
-6. store these images and viewsets persistently
-7. recall and share these images and viewsets persistently
-8. ensure the following characteristics of the images are indexable separately:
-    9. Patient demographics
-    #. Device that acquired the image (iPhone X, Nikon SLR camera, ...)
-    #. Orientation of patient to the device (left, right, frontal, ...)
-    #. Anatomy being imaged (whole face, part of face, mouth)
-    #. Occlusal relationship (Centric occlusion, centric relation)
-    #. Patients having a specific feature (tattoo, birthmark, ...)
-    #. Who acquired the image (patient, assistant, parent, ...)
-    #. Conditions under which the image was acquired (tongue depressor, mirror, )
-    #. Whether or not the image is associated to other images taken during the same encounter.
-    #. Person who ordered the image to be taken.
+Capture/acquire visible light (VL) images
+------------------------------------
 
-This document was developed in order to fulfill these requirements, a standard that unambiguously defines how orthodontic photographic images should be electronically represented.
+- The system SHALL provide a way to capture VL still images.
+- The system SHALL provide a way to store the captured VL still images persistently.
+- The system SHALL provide the ability to capture the entire head including neck.
+- The system SHALL provide the ability to capture the oral cavity.
+- The system SHALL provide the ability to capture VL images with natural or artifical lighting.
+- The system SHALL provide the ability to capture VL images when natural lighting is insufficient by augmenting it (e.g. flash).
+- The system SHOULD have a latency of capture (time between 'click' and when the system capture the images) below 500ms.
+- The system SHOULD provide the ability to capture images without shadows.
+- The system SHOULD provide a way to upload the images to a medical enterprise imaging network.
+- The system MAY aid the operator during the acquisition process (e.g. by prompting the operator which image to take, showing a silhoutte of the image type, etc). The system MAY warn if the the operator was prompted to take one image type, but acquired a different one.
 
-1. Using DICOM gives the industry the ability to develop solutions that are able to store and recall images and their metadata across different products.
-2. Improving the search capabilities of images is not directly addressed in this document. However, using DICOM tags will provide the industry to develop solutions that can improve search capabilities by searching through the DICOM tags and their values.
-3. Demonstrating or otherwise aiding the staff member during the acquisition process is part of the user experience of the software that the staff member is using, and not part of this document. However, the choice of standards used in this standards (DICOM and SNOMED-CT) will not alter or hinder in any way the ability of industry to provide such solutions.
-4. Warning the staff member during the acquisition process that the wrong image is being taken or has been taken is part of the user experience of the software that the staff member is using, and not part of this document. However, the choice of standards used in this standards (DICOM and SNOMED-CT) could be leveraged by the industry to have tools to provide such solutions.
-5. By implementing this standard, industry could develop products that capture and store all of the information needed for the process to be considered "correct" without having to implement something similar themselves.
-6. Persistence is a characteristic of DICOM and SNOMED-CT:
-7. DICOM has a defined protocol for exchanging images over the network and between devices. By promoting the use of DICOM, we facilitate the implementation of it, and the more developers implement it, the greater the level of interoperabiltiy will be. By making use of SNOMED-CT, we make sure that different devices and software don't interpret it incorrectly.
-8. All of the characteristics in 9-18 can be recorded in DICOM tags, and are addressed in this document.
+
+View the visible light images
+-----------------------------
+
+- The system SHALL have the ability to present and visualize the VL images at the same quality and resolution as the one that was used during acquisition time.
+- The system SHOULD inform the user if the image resolution has been modified from the original.
+- The system SHALL be device independent: the visualizing system SHALL be able to display images taken with a the same or a different device manufactured by the same or a different vendor equally accurately.
+- If known, the system SHALL inform the user if the asymmetry portrayed in the image is functional or skeletal (e.g. if it is caused by Bell's palsy, or other condition or obstruction that prevents the patient from moving the body).
+
+Searching for VL images
+-----------------------
+
+- The system SHOULD provide a way to search by 
+    - [M] First Family Name of Patient
+    - [M] Patient identifier
+    - [R] By appointment (Acession Number)
+    - [O] Acquisition date
+    - [O] By Procedure type (e.g. Cementazione (MEA) Maxillary Expander Appliance )
+
+Image Exporting
+---------------
+
+- The system SHALL always export the images with all associated clinical and demographical data, unless specifcally chosen not to (e.g. anonymization).
+- The system MAY allow exporting of images using conventional, non-medical formats (i.e. JPG, TIFF, PNG, etc.). When doing so, the system SHALL  by default include with the image the clinical and demographical data in a way that the importing system is able to interpret or present such data to the receiving provider, unless specifcally chosen not to (e.g. anonymization).
+- In case the system has the capability of storing the images and their patient data, the system SHALL have the ability to export **all** data in bulk in a digital format compatible with medical enterprise imaging standards.
+
+Metadata
+--------
+
+- The captured image SHALL be inequivocably associated with required clincal and demographical patient data 
+
+- [M] Patient demographics (see DHFP)
+- [M] Whether or not the image is associated to other images taken during the same encounter.
+- [C] The time point with respect to Orthodontic Treatment (progress). Mandatory if known.
+- [C] Occlusal relationship (Centric occlusion, centric relation). Required for specific view sets only (e.g. frontal and lateral extra oral)
+- [C] Skeletal or functional asymmetry. Required for specific view sets only 
+- [R] Orientation of patient to the device (left, right, frontal, ...)
+- [R] Anatomy being imaged (whole face, part of face, mouth)
+- [R] Who acquired the image (patient, assistant, parent, robot, ...)
+- [R] If the image was captured directly or indirectly (taking photo of the mirror)
+- [R] Skeletal or functional asymmetry.
+- [O] Device that acquired the image (iPhone X, Nikon SLR camera, ...)
+- [O] Patients having a specific feature (tattoo, birthmark, ...)
+- [O] Devices present (visible or invisible) in the field of view (tongue depressor, ruler  )
+- [O] Responsible party (human or non-human) which ordered the image to be taken.
+
+
+This document was developed to fulfill the following requirements, setting a standard that clearly defines how orthodontic photographic images should be electronically represented:
+
+1. **Using DICOM**: 
+   - DICOM provides the industry with the ability to develop solutions that store and recall images and their metadata across different products.
+
+2. **Improving Search Capabilities**: 
+   - Using DICOM tags allows the industry to develop solutions that enhance search capabilities by searching through DICOM tags and their values.
+
+3. **Acquisition Process**: 
+   - Demonstrating or aiding the staff member during the acquisition process is part of the user experience of the software they are using and is not covered in this document. The choice of standards utilized here (DICOM and SNOMED-CT) will not impede the industry’s ability to provide such solutions.
+
+5. **Implementation Benefits**: 
+   - By implementing this standard, the industry can develop products that capture and store all necessary information, eliminating the need for custom implementations.
+
+6. **Persistence**: 
+   - Persistence is a key characteristic of DICOM and SNOMED-CT.
+
+7. **DICOM Protocol**: 
+   - DICOM has a defined protocol for exchanging images over networks and between devices. Promoting DICOM use facilitates implementation, and increased adoption by developers enhances interoperability. SNOMED-CT ensures consistent interpretation across different devices and software.
+
+8. **DICOM Tags**: 
+   - All characteristics listed in sections 9-18 can be recorded in DICOM tags and are addressed in this document.
