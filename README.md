@@ -1,4 +1,4 @@
-# ADA-1107
+# ADA-1107 v0.1.0
 
 These are the source files for the ADA-1107 standard document. You can find the nightly [nightly builds here](http://brillig.org/~afm/ada-1107/html/index.html). Username: `scdi116` Password: `scdi116`.
 
