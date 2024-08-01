@@ -11,7 +11,7 @@ sphinx = "*"
 docxbuilder = "*"
 sphinx-book-theme = "*"
 pynetdicom = "*"
-dicom4ortho = {editable = true, path = "./../dicom4ortho"}
+dicom4ortho = "*"
 
 [requires]
 python_version = "3"

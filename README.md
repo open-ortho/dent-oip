@@ -96,6 +96,14 @@ suffice to build the `html` version of this document.
     pipenv install
     pipenv run make html
 
+### Building on Ubuntu/Debian
+
+This section wasn't required until recently the latexpdf target stopped working on my machine. I still haven't figured out the steps to fix.
+
+    sudo apt install texlive
+
+
+
 ### Building on macOS
 
 The `Makefile` makes use of gnu cut. You need to install `brew install coreutils`, then replace the `cut` instance in `Makefile` with `gcut`.

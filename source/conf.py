@@ -20,8 +20,8 @@ from pathlib import Path
 # -- Project information -----------------------------------------------------
 
 project = 'ADA-1107'
-copyright = '2023, ADA SCDI WG 11.6'
-author = 'ADA SCDI WG 11.6'
+copyright = '2024, ADA SC WG 11.6'
+author = 'ADA SC WG 11.6'
 master_doc = 'index'
 subject = 'DICOM implementation of WP-1100.'
 
