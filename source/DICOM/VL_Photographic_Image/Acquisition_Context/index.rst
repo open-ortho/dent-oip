@@ -9,6 +9,6 @@ For orthodontic photography, we make use of the `Acquisition Context Module <htt
 
 .. toctree::
 	:glob:
-	:maxdepth: 2
+	:maxdepth: 1
 
 	./*
