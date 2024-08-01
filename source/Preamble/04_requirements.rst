@@ -58,28 +58,49 @@ Sharing of images
 - The system SHOULD have the ability to share images with other parties outside of the institution in a secure way.
 - The system SHOULD have the ability to share images and their viewsets with other parties outside of the institution in a secure way.
 
+Orthodontic Treatment Progress
+------------------------------
+
+- The system SHOULD be able to record the orthodontic treatment progress of when the photograph was taken (was in treatment, never had treatment before, had treatment before)
+- The system SHALL display the orthodontic treatment progress of when the photograph was taken (was in treatment, never had treatment before, had treatment before) when the user is viewing the VL Images or series.
+- When recording and displaying treatment progress, the system SHALL be able to encode at least the following information:
+   - Before treatment (from patient registration, including all observation appointments. If treatment becomes necessary, then move to during treatment, starting at "initial records").
+   - During treatment (from initial records to final debond and final records)
+   - After treatment (after final records, Including retention. If retreatment becomes necessary, then move to "during treatment" starting at "initial records".)
+
+
 
 Metadata
 --------
 
-- The captured image SHALL be inequivocably associated with required clincal and demographical patient data 
+The following information is to be attached, linked or otherwise connected to the orthdontic images. Level of requirement in square brackets.
+
 
 - [M] Patient demographics (see DHFP)
 - [M] Support for all character sets required to fully represent the patient's name and address details.
 - [M] Whether or not the image is associated to other images taken during the same encounter.
+- [M] Time the image was acquired (universal, with time zone, or in UTC, in such a way that anyone from any timezone can unambiguously know the exact time the photograph was acquired.)
+- [M] If the image has been flipped horizontally or vertically (e.g. to account for a mirror).
 - [C] The time point with respect to Orthodontic Treatment (progress). Mandatory if known.
-- [C] Occlusal relationship (Centric occlusion, centric relation). Required for specific view sets only (e.g. frontal and lateral extra oral)
+- [C] Occlusal relationship If the patient was asked to position its mouth/mandible postured forward or in centric relation or centric occlusion. (Centric occlusion, centric relation). Required for specific view sets only (e.g. frontal and lateral extra oral)
 - [C] Skeletal or functional asymmetry. Required for specific view sets only 
-- [R] Orientation of patient to the device (left, right, frontal, ...)
-- [R] Anatomy being imaged (whole face, part of face, mouth)
+- [R] The appointment during which the image was acquired: a unique identifier and its description that can be traced back to the precise appointment or visit in the practice during which the staff took pictures of the patient.
+- [R] Referring Physician: the doctor that was treating the patient when the image was acquired.
+- [R] Orientation of patient to the device (which side of the patient corresponds to the right side of the image? Head? Feet? Left? Right? Front? Back?)
+- [R] Side of the anatomy in the image: Right/left side of the face?
+- [R] Anatomy on image: is this a picture of the face? Is it the mandible? Of the maxilla?
+- [R] Angle at which the image was taken: was this image taken at 45 degrees from bottom or right side?
 - [R] Who acquired the image (patient, assistant, parent, robot, ...)
 - [R] If the image was captured directly or indirectly (taking photo of the mirror)
 - [R] Skeletal or functional asymmetry.
+- [R] If the patient was asked to smile, keep lips in a relaxed position, or close lips.
+- [O] Practice/Institution name: the name of the institution or practice that acquired the image.
 - [O] Device that acquired the image (iPhone X, Nikon SLR camera, ...)
 - [O] Patients having a specific feature (tattoo, birthmark, ...)
-- [O] Devices present (visible or invisible) in the field of view (tongue depressor, ruler  )
+- [O] Devices present (visible or invisible) in the field of view (tongue depressor, ruler, retractor, periodontal probe, measuring ruler, tongue blade or mirror)
 - [O] Responsible party (human or non-human) which ordered the image to be taken.
 - [O] The coding and indexing of teeth present in the image IS NOT required, nor defined.
+- [O] If the patient presents tattoos, birthmarks, piercings, bell's palsy, gingival recession or other similar unique features.
 - [?] The reason why the VL images were taken.
 
 
