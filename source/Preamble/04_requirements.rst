@@ -9,7 +9,7 @@ O: Optional (MAY)
 In ADA SCDI WP-1100, the orthodontic providers have identified the following functionality as being essential or crucial for providing maximum patient care and research capabilities: 
 
 Capture/acquire visible light (VL) images
-------------------------------------
+-----------------------------------------
 
 - The system SHALL provide a way to capture VL still images.
 - The system SHALL provide a way to store the captured VL still images persistently.
@@ -67,6 +67,7 @@ Metadata
 - [O] Patients having a specific feature (tattoo, birthmark, ...)
 - [O] Devices present (visible or invisible) in the field of view (tongue depressor, ruler  )
 - [O] Responsible party (human or non-human) which ordered the image to be taken.
+- [x] Teeth visible in the image.
 
 
 This document was developed to fulfill the following requirements, setting a standard that clearly defines how orthodontic photographic images should be electronically represented:
