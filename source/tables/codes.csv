@@ -5,6 +5,7 @@ mouth_open,262016004,SCT,Open mouth (finding),AcquisitionContextSequence^Orthogn
 mouth_partially_open,1332210001,SCT,Mouth in partially open position,AcquisitionContextSequence^OrthognathicFunctionalConditions,
 lips_relaxed,1336028006,SCT,Upper and lower lips in relaxed position,AcquisitionContextSequence^OrthognathicFunctionalConditions,
 lips_closed,1336029003,SCT,Upper and lower lips in closed position,AcquisitionContextSequence^OrthognathicFunctionalConditions,
+mpf,1336026005,SCT,Mandible postured forward (record artifact),AcquisitionContextSequence^OrthognathicFunctionalConditions,Still waiting for SNOMED-CT code. Should be an observable entity or finding.
 smile,225583004,SCT,Smiles (finding),AcquisitionContextSequence^OrthognathicFunctionalConditions,
 FindingByInspection,118243007,SCT,Finding By Inspection,AcquisitionContextSequence^FindingByInspection,
 skin_mark,276470008,SCT,Skin mark (disorder),AcquisitionContextSequence^FindingByInspection,
@@ -23,7 +24,6 @@ palsy,193093009,SCT,Bell's palsy (disorder),AcquisitionContextSequence^Observabl
 DentalOcclusion,25272006,SCT,"Dental occlusion, function",AcquisitionContextSequence^DentalOcclusion,
 co,110320000,SCT,Centric occlusion (observable entity),AcquisitionContextSequence^DentalOcclusion,
 cr,736783005,SCT,Centric relation (observable entity),AcquisitionContextSequence^DentalOcclusion,
-mpf,CCCCCCCCC,SCT,Mandible postured forward (record artifact),AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,Still waiting for SNOMED-CT code. Should be an observable entity or finding.
 direct,255589003,SCT,Direct (qualifier value),ViewModifierCodeSequence,
 TemporalEventType,128741,DCM,Longitudinal Temporal Event Type,AcquisitionContextSequence^LongitudinalTemporalEventType,A pre-defined type of a specific time point in a continuum.
 PatientRegistration,121079,DCM,Baseline,AcquisitionContextSequence^LongitudinalTemporalEventType,
@@ -67,6 +67,8 @@ projection_right_oblique,260424009,SCT,Right lateral oblique (qualifier value),V
 projection_oblique,399182000,SCT,Oblique projection (qualifier value),ViewCodeSequence,
 projection_45deg,260454004,SCT,45 degree projection (qualifier value),ViewCodeSequence,
 projection_occlusal,260499007,SCT,Occlusal projection (qualifier value),ViewCodeSequence,
+projection_submentovertical,399255003,SCT,Submentovertical projection (qualifier value),ViewCodeSequence,
+projection_vertex,260461000,SCT,Vertex projection (qualifier value),ViewCodeSequence,
 image_mirrored_uncorrected,789135000,SCT,Mirrored visible image uncorrected (record artifact),ViewModifierCodeSequence,
 image_mirrored_uncorrected_flipped_horizontally,789134001,SCT,Mirrored visible image uncorrected flipped horizontally,ViewModifierCodeSequence,
 image_mirrored_uncorrected_flipped_horizontally_vertically,789132002,SCT,Mirrored visible image uncorrected flipped horizontally and vertically,ViewModifierCodeSequence,

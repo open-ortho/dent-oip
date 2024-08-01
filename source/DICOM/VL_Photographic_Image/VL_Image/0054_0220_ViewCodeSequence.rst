@@ -52,6 +52,14 @@ The projection of the anatomic region of interest on an image receptor.
       - `260427002 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260427002&edition=MAIN&release=&languages=en>`__
       - Oblique lateral (qualifier value)
       - 
+    * - SCT
+      - `399255003 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=399255003&edition=MAIN&release=&languages=en>`__
+      - Submentovertical projection (qualifier value)
+      - Used for :ref:`EV36`
+    * - SCT
+      - `260461000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260461000&edition=MAIN&release=&languages=en>`__
+      - Vertex projection (qualifier value)
+      - Used for :ref:`EV37`
 
 .. _cid-CCCC:
 .. list-table:: Table CID CCCC. VL Dental View
