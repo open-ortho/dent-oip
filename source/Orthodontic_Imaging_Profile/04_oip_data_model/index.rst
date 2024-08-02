@@ -1,8 +1,13 @@
+.. _oip_data_model:
+
+Orthodontic Imaging Data Model
+==============================
+
+
 .. _orthodontic_progress:
 
-
 Orthodontic Progress (Informative)
-===================================
+----------------------------------
 
 During orthodontic treatment, it is common for providers to monitor progress by regularly collecting records such as photographs or intra-oral surface scans [provide reference]. Identifying the timing of these records in relation to the treatment is crucial. Specifically, the provider needs to know if, at the time of acquisition, the patient:
 
@@ -81,3 +86,4 @@ Most PACS systems display the *Study Description* in search results when listing
     - When importing images from other institutions, the *Study Description* may not be relevant to the receiving practice.
     - The *Study Description* is *not* a reliable tag for ensuring interoperability across systems and institutions.
     - For reliable interoperability, refer to *Acquisition Context* codes as defined in :ref:`longitudinal_temporal_event_type` and :ref:`longitudinal_temporal_offset_from_event`.
+
