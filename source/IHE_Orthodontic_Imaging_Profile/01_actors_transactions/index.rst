@@ -1,7 +1,7 @@
-.. _actors_transactions:
+.. _oip_actors_transactions:
 
-Actors/Transactions
-===================
+Orthodontic Imaging Actors/Transactions
+=======================================
 
 Acquisition Modality
 --------------------
