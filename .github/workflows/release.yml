@@ -2,7 +2,6 @@ name: Release Workflow
 
 on:
   workflow_dispatch:
-
   push:
     tags:
       - 'v*'
@@ -14,25 +13,15 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create and Upload Release Assets
+        uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ github.ref_name }}  # Uses the tag name
+          name: Release ${{ github.ref_name }}
           draft: false
           prerelease: false
-
-      - name: Upload Release Asset codes.csv
-        uses: softprops/action-gh-release@v2
-        with:
-          files: ./source/tables/codes.csv  # Updated to use 'files' in the newer action
-          name: dent-opi_codes.csv
-
-      - name: Upload Release Asset views.csv
-        uses: softprops/action-gh-release@v2
-        with:
-          files: ./source/tables/views.csv  # Updated to use 'files' in the newer action
-          name: dent-opi_views.csv
+          files: |
+            ./source/tables/codes.csv=dent-opi_codes.csv
+            ./source/tables/views.csv=dent-opi_views.csv
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
