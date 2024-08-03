@@ -29,10 +29,10 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: ./source/tables/codes.csv  # Updated to use 'files' in the newer action
-          name: ada1107_codes.csv
+          name: dent-opi_codes.csv
 
       - name: Upload Release Asset views.csv
         uses: softprops/action-gh-release@v2
         with:
           files: ./source/tables/views.csv  # Updated to use 'files' in the newer action
-          name: ada1107_views.csv
+          name: dent-opi_views.csv
