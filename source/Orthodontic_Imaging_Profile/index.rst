@@ -3,3 +3,9 @@
 Orthodontic Imaging Profile
 ============================
 
+.. toctree::
+	:glob:
+	:maxdepth: 1
+
+	*/index
+
