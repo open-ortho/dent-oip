@@ -40,10 +40,11 @@ Contents
 .. toctree::
    :glob:
    :numbered:
-   :maxdepth: 2
+   :maxdepth: 1
 
    Preamble/*
 
+   Orthodontic_Imaging_Profile/*
    DICOM/*
    Appendix/index
 
