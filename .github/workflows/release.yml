@@ -21,7 +21,7 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            ./source/tables/codes.csv=dent-opi_codes.csv
-            ./source/tables/views.csv=dent-opi_views.csv
+            ./source/tables/codes.csv
+            ./source/tables/views.csv
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
