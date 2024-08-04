@@ -1,6 +1,6 @@
-# ADA-1107 v0.2.0-dev
+# DENT-OIP v0.2.4-dev
 
-These are the source files for the ADA-1107 standard document. You can find the nightly [nightly builds here](http://brillig.org/~afm/ada-1107/html/index.html). Username: `scdi116` Password: `scdi116`.
+These are the source files for the DENT-OIP standard document. You can find the nightly [nightly builds here](http://brillig.org/~afm/DENT-OIP/html/index.html). Username: `scdi116` Password: `scdi116`.
 
 Source files located in `source/`.
 
@@ -76,7 +76,7 @@ modifications. When done, send Toni the .docx file, which he can then convert
 back to `.rst`.
 
 You can also work off of the [docx
-build](http://brillig.org/~afm/ada-1107/docx/ADA-1107.docx). When doing so, make
+build](http://brillig.org/~afm/DENT-OIP/docx/DENT-OIP.docx). When doing so, make
 strict use of heading formatting to divide sections and paragraphs, and do not
 worry about any formatting: this will facilitate merging the modifications back
 in `.rst`.

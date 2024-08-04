@@ -19,11 +19,11 @@ from pathlib import Path
 
 # -- Project information -----------------------------------------------------
 
-project = 'ADA-1107'
+project = 'DENT-OIP'
 copyright = '2024, ADA SC WG 11.6'
 author = 'ADA SC WG 11.6'
 master_doc = 'index'
-subject = 'DICOM implementation of WP-1100.'
+subject = 'Dentistry - Orthodontic Imaging Profile'
 
 try:
     # The full version, including alpha/beta/rc tags
@@ -68,7 +68,7 @@ html_static_path = ['_static']
 # -- Options for docx output -------------------------------------------------
 
 docx_documents = [
-        ('index', 'ADA-1107.docx', {
+        ('index', f'{project}.docx', {
          'title': project,
          'created': author,
          'subject': subject,

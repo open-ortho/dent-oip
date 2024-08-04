@@ -65,10 +65,6 @@ nightly:
 	$(MAKE) _deploy git-tag
 
 _deploy: html docx latexpdf 
-	cp htaccess "$(BUILDDIR)/.htaccess"
-	cp htpasswd "$(BUILDDIR)/.htpasswd"
-	ssh -p $(SSH_PORT) $(SSH_USER)@$(SSH_IP) "mkdir -p $(REMOTE_PATH)"
-	rsync -auv -e "ssh -p $(SSH_PORT)" --delete "$(BUILDDIR)" "$(DESTDIR)"
 
 $(IMAGES):
 	git submodule init
