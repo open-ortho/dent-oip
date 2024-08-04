@@ -33,12 +33,6 @@ SPHINXBUILD   ?= $(PIPENV_RUN) sphinx-build
 SOURCEDIR     = source
 VERSION_FILE  = $(SOURCEDIR)/_VERSION
 
-SSH_USER			= afm
-SSH_IP				= brillig.org
-REMOTE_PATH			= public_html/ada-1107/
-SSH_PORT			= 22
-
-DESTDIR = $(SSH_USER)@$(SSH_IP):$(REMOTE_PATH)
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
