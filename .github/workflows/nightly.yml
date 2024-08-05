@@ -31,6 +31,13 @@ jobs:
         with:
           python-version: '3.10' # Specify the Python version.
 
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Install Dependencies
         run: |
           sudo apt update

@@ -41,7 +41,7 @@ jobs:
           tag_name: ${{ github.ref_name }}  # Uses the tag name
           name: Release ${{ github.ref_name }}
           draft: false
-          prerelease: false
+          prerelease: true
           files: |
             ./dist/docx/DENT-OIP.docx
             ./dist/pdf/DENT-OIP.pdf
