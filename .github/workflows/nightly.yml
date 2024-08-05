@@ -1,4 +1,4 @@
-name: Nightly Release and GH Pages Workflow
+name: Nightly Build
 
 on:
   workflow_dispatch:
@@ -41,19 +41,17 @@ jobs:
       - name: Run Make nightly
         run: make nightly
 
-      - name: Read _VERSION file
+      - name: Get NIGHTLY_VERSION from _VERSION
         id: version
-        run: echo "::set-output name=version::$(cat ./_VERSION)"
-      
-      - name: Update Release Tag in index.rst
         run: |
-          sed -i "s|RELEASE_TAG_PLACEHOLDER|${{ steps.version.outputs.id }}|g" ./source/index.rst
-
+          echo "NIGHTLY_VERSION=$(cat ./_VERSION)" >> $GITHUB_ENV
+          echo "NIGHTLY_VERSION=$(cat ./_VERSION)" >> $GITHUB_OUTPUT
+      
       - name: Create and Upload Release Assets
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ steps.version.outputs.id }}  # Uses the tag name
-          name: Nightly Build ${{ steps.version.outputs.id }}
+          tag_name: ${{ steps.version.outputs.NIGHTLY_VERSION }}  # Uses the tag name
+          name: Nightly Build ${{ steps.version.outputs.NIGHTLY_VERSION }}
           draft: true
           prerelease: false
           files: |
@@ -69,7 +67,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/html/
           destination_dir: nightly
-
-      - name: Store the current commit SHA for future checks
-        run: echo "$(git rev-parse HEAD)" > last-successful-commit.txt
-  

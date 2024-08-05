@@ -1,4 +1,4 @@
-name: Release and GH Pages Workflow
+name: Release
 
 on:
   workflow_dispatch:
@@ -16,7 +16,6 @@ jobs:
           submodules: true
           ref: ${{ github.ref_name }}
           
-      
       - name: Set up Python
         uses: actions/setup-python@master
         with:

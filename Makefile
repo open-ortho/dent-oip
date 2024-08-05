@@ -1,5 +1,8 @@
 OS := $(shell uname -s)
 DATESTAMP := $(shell date -u +"%Y%m%d%H%M%S")
+VERSION := $(shell cat VERSION)
+NIGHTLY_VERSION := $(VERSION)-nightly.$(DATESTAMP)
+
 # In Windows, calling python3 will default to the system path. But regular python will pick up the path of the python inside the virtual environment. This might not be the case for 
 ifeq ($(OS), Darwin)
 	PYTHON=python3
@@ -17,7 +20,7 @@ else
 	endif
 endif
 
-BUILDDIR      = dist/
+BUILDDIR      = ./dist
 GENERATED_TABLES = source/tables/generated
 SAMPLE_DICOM_FILES = source/_static/dicom_samples
 VIEW_EXAMPLES = source/Appendix/ViewExamples
@@ -58,9 +61,11 @@ git-tag:
 
 # Don't run locally, will change rst files. Intended for github actions only.
 nightly:
+	printf "%s" $(NIGHTLY_VERSION) > $(VERSION_FILE)
+    sed -i "s|RELEASE_TAG_PLACEHOLDER|$(NIGHTLY_VERSION)|g" ./source/index.rst
 	sed -i "s|DENT-OIP.docx|nightly-DENT-OIP.docx|g" ./source/index.rst
 	sed -i "s|DENT-OIP.pdf|nightly-DENT-OIP.pdf|g" ./source/index.rst
-	printf "%s-nightly.$(DATESTAMP)" $(shell cat VERSION) > $(VERSION_FILE)
+
 	$(MAKE) dist git-tag
 	cp ./source/tables/views.csv $(BUILDDIR)/nightly-views.csv
 	cp ./source/tables/codes.csv $(BUILDDIR)/nightly-codes.csv
