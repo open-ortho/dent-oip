@@ -27,7 +27,7 @@ subject = 'Dentistry - Orthodontic Imaging Profile'
 
 try:
     # The full version, including alpha/beta/rc tags
-    with open('_VERSION','r') as version_file:
+    with open('_VERSION', 'r') as version_file:
         release = version_file.read().strip()
 except FileNotFoundError:
     # I'm parsing this conf from view_maker, which will cause the above to not find the file, because this file is being parsed from a parent folder of how sphinx normally calls it. So i'm catching the FileNotFound to work around this problem.
@@ -41,6 +41,7 @@ except FileNotFoundError:
 # ones.
 extensions = [ 'docxbuilder'
 ]
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -68,12 +69,12 @@ html_static_path = ['_static']
 # -- Options for docx output -------------------------------------------------
 
 docx_documents = [
-        ('index', f'{project}.docx', {
-         'title': project,
-         'created': author,
-         'subject': subject,
-         'keywords': ['Interoperability', 'Orthodontics']
-     }, True),
+    ('index', f'{project}.docx', {
+        'title': project,
+        'created': author,
+        'subject': subject,
+        'keywords': ['Interoperability', 'Orthodontics']
+    }, True),
 ]
 # docx_style = 'path/to/custom_style.docx'
 docx_pagebreak_before_section = 2

@@ -4,6 +4,7 @@ DATESTAMP := $(shell date -u +"%Y%m%d%H%M%S")
 ifeq ($(OS), Darwin)
 	PYTHON=python3
 	CUT=gcut
+	LIBREOFFICE=/Applications/LibreOffice.app/Contents/MacOS/soffice
 else
 	OS := $(shell uname -o)
 	ifeq ($(OS), Msys)
@@ -12,6 +13,7 @@ else
 	else ifeq ($(OS), GNU/Linux)
 		PYTHON=python3
 		CUT=cut
+		LIBREOFFICE=libreoffice
 	endif
 endif
 
@@ -70,9 +72,13 @@ $(SAMPLE_DICOM_FILES): $(GENERATED_TABLES)
 	mkdir -p $@
 	mv -v $(IMAGES)/*.dcm $@
 
+pdf: docx
+	mkdir -p $(BUILDDIR)/pdf/
+	$(LIBREOFFICE) --headless --convert-to pdf --outdir $(BUILDDIR)/pdf/ $(BUILDDIR)/docx/*.docx
+
 # override the latexpdf target to launch ignoring errors with the - as prefix.
-.PHONY: latexpdf
-latexpdf:
+.PHONY: _latexpdf
+_latexpdf:
 	-$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
 	@echo "Running LaTeX files through pdflatex..."
 	-$(MAKE) -C $(BUILDDIR)/latex all-pdf
