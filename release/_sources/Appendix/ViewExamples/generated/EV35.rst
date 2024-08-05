@@ -1,0 +1,22 @@
+
+[EV35] - 45° Left Profile (subject turns toward observer's left- Full Smile, Mandible Postured Forward
+------------------------------------------------------------------------------------------------------
+
+.. _EV35:
+.. image:: ../../../images/EV35.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of 45° Left Profile (subject turns toward observer's left- Full Smile, Mandible Postured Forward
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/EV35.dcm>`__
+    
+.. include:: ../EV35_comments.rst
+    
+DICOM header for [EV35]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV35
+   :file: ../../../tables/generated/EV35.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

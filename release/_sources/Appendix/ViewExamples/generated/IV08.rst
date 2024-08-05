@@ -1,0 +1,22 @@
+
+[IV08] - Intraoral Frontal View - Centric Relation, Without Mirror
+------------------------------------------------------------------
+
+.. _IV08:
+.. image:: ../../../images/IV08.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Frontal View - Centric Relation, Without Mirror
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/IV08.dcm>`__
+    
+.. include:: ../IV08_comments.rst
+    
+DICOM header for [IV08]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV08
+   :file: ../../../tables/generated/IV08.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

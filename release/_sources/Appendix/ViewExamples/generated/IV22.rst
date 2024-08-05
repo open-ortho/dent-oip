@@ -1,0 +1,22 @@
+
+[IV22] - Intraoral Left Buccal Segment - Centric Relation, With Mirror
+----------------------------------------------------------------------
+
+.. _IV22:
+.. image:: ../../../images/IV22.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Left Buccal Segment - Centric Relation, With Mirror
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/IV22.dcm>`__
+    
+.. include:: ../IV22_comments.rst
+    
+DICOM header for [IV22]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV22
+   :file: ../../../tables/generated/IV22.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

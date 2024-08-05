@@ -1,0 +1,22 @@
+
+[IV11] - Intraoral Frontal View Inferior (showing depth of bite and overjet) - Centric Occlusion, Without Mirror
+----------------------------------------------------------------------------------------------------------------
+
+.. _IV11:
+.. image:: ../../../images/IV11.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Frontal View Inferior (showing depth of bite and overjet) - Centric Occlusion, Without Mirror
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/IV11.dcm>`__
+    
+.. include:: ../IV11_comments.rst
+    
+DICOM header for [IV11]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV11
+   :file: ../../../tables/generated/IV11.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

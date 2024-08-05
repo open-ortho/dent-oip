@@ -1,0 +1,22 @@
+
+[IV06] - Intraoral Right Buccal Segment - Centric Relation, With Mirror But Corrected
+-------------------------------------------------------------------------------------
+
+.. _IV06:
+.. image:: ../../../images/IV06.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Right Buccal Segment - Centric Relation, With Mirror But Corrected
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/IV06.dcm>`__
+    
+.. include:: ../IV06_comments.rst
+    
+DICOM header for [IV06]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV06
+   :file: ../../../tables/generated/IV06.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

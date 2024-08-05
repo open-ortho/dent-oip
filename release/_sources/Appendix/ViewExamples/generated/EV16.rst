@@ -1,0 +1,22 @@
+
+[EV16] - Full Face - Lips Relaxed, Centric Relation
+---------------------------------------------------
+
+.. _EV16:
+.. image:: ../../../images/EV16.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Full Face - Lips Relaxed, Centric Relation
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/EV16.dcm>`__
+    
+.. include:: ../EV16_comments.rst
+    
+DICOM header for [EV16]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV16
+   :file: ../../../tables/generated/EV16.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    
