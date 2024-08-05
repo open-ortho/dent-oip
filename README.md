@@ -1,4 +1,4 @@
-# DENT-OIP v0.2.4-dev
+# DENT-OIP v0.2.5-dev
 
 These are the source files for the DENT-OIP standard document. You can find the nightly [nightly builds here](http://brillig.org/~afm/DENT-OIP/html/index.html). Username: `scdi116` Password: `scdi116`.
 
