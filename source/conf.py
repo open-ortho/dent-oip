@@ -1,5 +1,3 @@
-from pathlib import Path
-
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -20,8 +18,8 @@ from pathlib import Path
 # -- Project information -----------------------------------------------------
 
 project = 'DENT-OIP'
-copyright = '2024, ADA SC WG 11.6'
-author = 'ADA SC WG 11.6'
+copyright = '2024, open-ortho.org'
+author = 'Toni Magni'
 master_doc = 'index'
 subject = 'Dentistry - Orthodontic Imaging Profile'
 
