@@ -65,13 +65,7 @@ nightly:
 	sed -i "s|RELEASE_TAG_PLACEHOLDER|$(NIGHTLY_VERSION)|g" ./source/index.rst
 	sed -i "s|DENT-OIP.docx|nightly-DENT-OIP.docx|g" ./source/index.rst
 	sed -i "s|DENT-OIP.pdf|nightly-DENT-OIP.pdf|g" ./source/index.rst
-
 	$(MAKE) dist git-tag
-	cp ./source/tables/views.csv $(BUILDDIR)/nightly-views.csv
-	cp ./source/tables/codes.csv $(BUILDDIR)/nightly-codes.csv
-	mv $(BUILDDIR)/docx/DENT-OIP.docx $(BUILDDIR)/docx/nightly-DENT-OIP.docx
-	mv $(BUILDDIR)/pdf/DENT-OIP.pdf $(BUILDDIR)/pdf/nightly-DENT-OIP.pdf
-
 
 dist: html docx pdf
 
