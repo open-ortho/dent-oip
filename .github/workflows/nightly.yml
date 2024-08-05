@@ -13,9 +13,28 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
-          ref: ${{ github.ref_name }}
+          ref: 'develop'
           
-      
+      - name: Download last successful commit SHA artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: last-successful-commit
+  
+      - name: Check for changes since last successful build
+        id: check-changes
+        run: |
+          if [ -f last-successful-commit.txt ]; then
+            LAST_SUCCESSFUL_SHA=$(cat last-successful-commit.txt)
+            CURRENT_SHA=$(git rev-parse HEAD)
+            if [ "$LAST_SUCCESSFUL_SHA" = "$CURRENT_SHA" ]; then
+              echo "No changes since the last build. Exiting."
+              exit 78  # Neutral exit to stop workflow
+            fi
+          else
+            echo "No previous build found, assuming first run."
+            echo "::set-output name=changes::true"
+          fi
+          
       - name: Set up Python
         uses: actions/setup-python@master
         with:
@@ -28,10 +47,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Update Release Tag in index.rst
-        run: |
-          sed -i "s|RELEASE_TAG_PLACEHOLDER|${{ github.ref_name }}|g" ./source/index.rst
-
       - name: Run Make nightly
         run: make nightly
 
@@ -39,10 +54,14 @@ jobs:
         id: version
         run: echo "::set-output name=version::$(cat ./_VERSION)"
       
+      - name: Update Release Tag in index.rst
+        run: |
+          sed -i "s|RELEASE_TAG_PLACEHOLDER|${{ steps.version.outputs.id }}|g" ./source/index.rst
+
       - name: Create and Upload Release Assets
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}  # Uses the tag name
+          tag_name: ${{ steps.version.outputs.id }}  # Uses the tag name
           name: Nightly Build ${{ steps.version.outputs.id }}
           draft: true
           prerelease: false
@@ -59,3 +78,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/html/
           destination_dir: nightly
+
+      - name: Store the current commit SHA for future checks
+        run: echo "$(git rev-parse HEAD)" > last-successful-commit.txt
+  
+      - name: Upload current commit SHA as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: last-successful-commit
+          path: last-successful-commit.txt
+  
