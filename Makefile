@@ -21,10 +21,6 @@ else
 endif
 
 BUILDDIR      = ./dist
-GENERATED_TABLES = source/tables/generated
-SAMPLE_DICOM_FILES = source/_static/dicom_samples
-VIEW_EXAMPLES = source/Appendix/ViewExamples
-IMAGES = source/images
 IMAGES_ORIGIN = modules/orthoviews-linedrawings/images/png
 
 PIPENV = $(PYTHON) -m pipenv
@@ -35,8 +31,13 @@ VIEWBUILDER = $(PIPENV_RUN) $(PYTHON) ./view_maker.py
 # from the environment for the first two.
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= $(PIPENV_RUN) sphinx-build
-SOURCEDIR     = source
+SOURCEDIR     = ./source
+
 VERSION_FILE  = $(SOURCEDIR)/_VERSION
+GENERATED_TABLES = $(SOURCEDIR)/tables/generated
+SAMPLE_DICOM_FILES = $(SOURCEDIR)/_static/dicom_samples
+VIEW_EXAMPLES = $(SOURCEDIR)/Appendix/ViewExamples
+IMAGES = $(SOURCEDIR)/images
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -62,9 +63,9 @@ git-tag:
 # Don't run locally, will change rst files. Intended for github actions only.
 nightly:
 	printf "%s" $(NIGHTLY_VERSION) > $(VERSION_FILE)
-	sed -i "s|RELEASE_TAG_PLACEHOLDER|$(NIGHTLY_VERSION)|g" ./source/index.rst
-	sed -i "s|DENT-OIP.docx|nightly-DENT-OIP.docx|g" ./source/index.rst
-	sed -i "s|DENT-OIP.pdf|nightly-DENT-OIP.pdf|g" ./source/index.rst
+	sed -i "s|RELEASE_TAG_PLACEHOLDER|$(NIGHTLY_VERSION)|g" $(SOURCEDIR)/index.rst
+	sed -i "s|DENT-OIP.docx|nightly-DENT-OIP.docx|g" $(SOURCEDIR)/index.rst
+	sed -i "s|DENT-OIP.pdf|nightly-DENT-OIP.pdf|g" $(SOURCEDIR)/index.rst
 	$(MAKE) dist git-tag
 
 dist: html docx pdf
