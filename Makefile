@@ -56,9 +56,17 @@ git-tag:
 	git tag $(shell cat $(VERSION_FILE))
 	git push --tags
 
+# Don't run locally, will change rst files. Intended for github actions only.
 nightly:
+	sed -i "s|DENT-OIP.docx|nightly-DENT-OIP.docx|g" ./source/index.rst
+	sed -i "s|DENT-OIP.pdf|nightly-DENT-OIP.pdf|g" ./source/index.rst
 	printf "%s-nightly.$(DATESTAMP)" $(shell cat VERSION) > $(VERSION_FILE)
 	$(MAKE) dist git-tag
+	cp ./source/tables/views.csv $(BUILDDIR)/nightly-views.csv
+	cp ./source/tables/codes.csv $(BUILDDIR)/nightly-codes.csv
+	mv $(BUILDDIR)/docx/{,nightly-}DENT-OIP.docx
+	mv $(BUILDDIR)/docx/{,nightly-}DENT-OIP.pdf
+
 
 dist: html docx pdf
 
