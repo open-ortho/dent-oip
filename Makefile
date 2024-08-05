@@ -60,7 +60,7 @@ nightly:
 	printf "%s-nightly.$(DATESTAMP)" $(shell cat VERSION) > $(VERSION_FILE)
 	$(MAKE) _deploy git-tag
 
-_deploy: html docx latexpdf 
+_deploy: html docx pdf
 
 $(IMAGES):
 	git submodule init
@@ -72,18 +72,10 @@ $(SAMPLE_DICOM_FILES): $(GENERATED_TABLES)
 	mkdir -p $@
 	mv -v $(IMAGES)/*.dcm $@
 
+# both using latexpdf and sphinx -b pdf proved to be unstable. Too much maintenance. Resorting to LibreOffice.
 pdf: docx
 	mkdir -p $(BUILDDIR)/pdf/
 	$(LIBREOFFICE) --headless --convert-to pdf --outdir $(BUILDDIR)/pdf/ $(BUILDDIR)/docx/*.docx
-
-# override the latexpdf target to launch ignoring errors with the - as prefix.
-.PHONY: _latexpdf
-_latexpdf:
-	-$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
-	@echo "Running LaTeX files through pdflatex..."
-	-$(MAKE) -C $(BUILDDIR)/latex all-pdf
-	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
-
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
