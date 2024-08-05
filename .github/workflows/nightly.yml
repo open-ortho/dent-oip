@@ -44,8 +44,8 @@ jobs:
       - name: Get NIGHTLY_VERSION from _VERSION
         id: version
         run: |
-          echo "NIGHTLY_VERSION=$(cat ./_VERSION)" >> $GITHUB_ENV
-          echo "NIGHTLY_VERSION=$(cat ./_VERSION)" >> $GITHUB_OUTPUT
+          echo "NIGHTLY_VERSION=$(cat ./source/_VERSION)" >> $GITHUB_ENV
+          echo "NIGHTLY_VERSION=$(cat ./source/_VERSION)" >> $GITHUB_OUTPUT
       
       - name: Create and Upload Release Assets
         uses: softprops/action-gh-release@v2
