@@ -46,6 +46,8 @@ jobs:
           files: |
             ./dist/docx/DENT-OIP.docx
             ./dist/pdf/DENT-OIP.pdf
+            ./source/tables/codes.csv
+            ./source/tables/views.csv
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish HTML to gh-pages branch
