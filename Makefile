@@ -62,7 +62,7 @@ git-tag:
 # Don't run locally, will change rst files. Intended for github actions only.
 nightly:
 	printf "%s" $(NIGHTLY_VERSION) > $(VERSION_FILE)
-    sed -i "s|RELEASE_TAG_PLACEHOLDER|$(NIGHTLY_VERSION)|g" ./source/index.rst
+	sed -i "s|RELEASE_TAG_PLACEHOLDER|$(NIGHTLY_VERSION)|g" ./source/index.rst
 	sed -i "s|DENT-OIP.docx|nightly-DENT-OIP.docx|g" ./source/index.rst
 	sed -i "s|DENT-OIP.pdf|nightly-DENT-OIP.pdf|g" ./source/index.rst
 
