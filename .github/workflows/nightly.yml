@@ -18,7 +18,7 @@ jobs:
       - name: Check for changes since last successful build
         id: check_tag
         run: |
-          TAG_FOUND=$(git tag --contains HEAD | grep -E '.*-dev-nightly.*')
+          TAG_FOUND=$(git tag --contains HEAD | grep -E '.*-dev-nightly.*' || true)
           if [ -n "$TAG_FOUND" ]; then
             echo "Skipping nightly build: current commit is already a nightly build: $TAG_FOUND"
             exit 78  # Neutral exit to stop workflow
