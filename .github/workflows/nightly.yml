@@ -15,26 +15,17 @@ jobs:
           submodules: true
           ref: 'develop'
           
-      - name: Download last successful commit SHA artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: last-successful-commit
-        continue-on-error: true # Ensure we continue the first time, where there is no artifact yet.
-  
       - name: Check for changes since last successful build
-        id: check-changes
+        id: check_tag
         run: |
-          if [ -f last-successful-commit.txt ]; then
-            LAST_SUCCESSFUL_SHA=$(cat last-successful-commit.txt)
-            CURRENT_SHA=$(git rev-parse HEAD)
-            if [ "$LAST_SUCCESSFUL_SHA" = "$CURRENT_SHA" ]; then
-              echo "No changes since the last build. Exiting."
-              exit 78  # Neutral exit to stop workflow
-            fi
+          TAG_FOUND=$(git tag --contains HEAD | grep -E '.*-dev-nightly.*')
+          if [ -n "$TAG_FOUND" ]; then
+            echo "Skipping nightly build: current commit is already a nightly build: $TAG_FOUND"
+            exit 78  # Neutral exit to stop workflow
           else
-            echo "No previous build found, assuming first run."
+            echo "No nightly tag found on the current commit. Building new nightly."
           fi
-          
+
       - name: Set up Python
         uses: actions/setup-python@master
         with:
@@ -81,10 +72,4 @@ jobs:
 
       - name: Store the current commit SHA for future checks
         run: echo "$(git rev-parse HEAD)" > last-successful-commit.txt
-  
-      - name: Upload current commit SHA as an artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: last-successful-commit
-          path: last-successful-commit.txt
   
