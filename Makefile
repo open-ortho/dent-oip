@@ -64,8 +64,6 @@ git-tag:
 nightly:
 	printf "%s" $(NIGHTLY_VERSION) > $(VERSION_FILE)
 	sed -i "s|RELEASE_TAG_PLACEHOLDER|$(NIGHTLY_VERSION)|g" $(SOURCEDIR)/index.rst
-	sed -i "s|DENT-OIP.docx|nightly-DENT-OIP.docx|g" $(SOURCEDIR)/index.rst
-	sed -i "s|DENT-OIP.pdf|nightly-DENT-OIP.pdf|g" $(SOURCEDIR)/index.rst
 	$(MAKE) dist git-tag
 
 dist: html docx pdf
