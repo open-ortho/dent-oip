@@ -33,7 +33,6 @@ jobs:
             fi
           else
             echo "No previous build found, assuming first run."
-            echo "::set-output name=changes::true"
           fi
           
       - name: Set up Python

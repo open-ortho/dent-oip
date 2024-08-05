@@ -64,8 +64,8 @@ nightly:
 	$(MAKE) dist git-tag
 	cp ./source/tables/views.csv $(BUILDDIR)/nightly-views.csv
 	cp ./source/tables/codes.csv $(BUILDDIR)/nightly-codes.csv
-	mv $(BUILDDIR)/docx/{,nightly-}DENT-OIP.docx
-	mv $(BUILDDIR)/docx/{,nightly-}DENT-OIP.pdf
+	mv $(BUILDDIR)/docx/DENT-OIP.docx $(BUILDDIR)/docx/nightly-DENT-OIP.docx
+	mv $(BUILDDIR)/pdf/DENT-OIP.pdf $(BUILDDIR)/pdf/nightly-DENT-OIP.pdf
 
 
 dist: html docx pdf
