@@ -1,0 +1,61 @@
+name: Nightly Release and GH Pages Workflow
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # Runs at midnight UTC every day
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@master
+        with:
+          submodules: true
+          ref: ${{ github.ref_name }}
+          
+      
+      - name: Set up Python
+        uses: actions/setup-python@master
+        with:
+          python-version: '3.10' # Specify the Python version.
+
+      - name: Install Dependencies
+        run: |
+          sudo apt update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libreoffice
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Update Release Tag in index.rst
+        run: |
+          sed -i "s|RELEASE_TAG_PLACEHOLDER|${{ github.ref_name }}|g" ./source/index.rst
+
+      - name: Run Make nightly
+        run: make nightly
+
+      - name: Read _VERSION file
+        id: version
+        run: echo "::set-output name=version::$(cat ./_VERSION)"
+      
+      - name: Create and Upload Release Assets
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}  # Uses the tag name
+          name: Nightly Build ${{ steps.version.outputs.id }}
+          draft: true
+          prerelease: false
+          files: |
+            ./dist/docx/nightly-DENT-OIP.docx
+            ./dist/pdf/nightly-DENT-OIP.pdf
+            ./dist/nightly-codes.csv
+            ./dist/nightly-views.csv
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish HTML to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/html/
+          destination_dir: nightly
