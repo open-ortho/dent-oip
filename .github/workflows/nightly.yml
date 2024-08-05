@@ -19,6 +19,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: last-successful-commit
+        continue-on-error: true # Ensure we continue the first time, where there is no artifact yet.
   
       - name: Check for changes since last successful build
         id: check-changes
