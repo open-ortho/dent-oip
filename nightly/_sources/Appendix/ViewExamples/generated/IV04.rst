@@ -1,0 +1,22 @@
+
+[IV04] - Intraoral Right Buccal Segment - Centric Relation, Without Mirror
+--------------------------------------------------------------------------
+
+.. _IV04:
+.. image:: ../../../images/IV04.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Right Buccal Segment - Centric Relation, Without Mirror
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/IV04.dcm>`__
+    
+.. include:: ../IV04_comments.rst
+    
+DICOM header for [IV04]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV04
+   :file: ../../../tables/generated/IV04.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

@@ -1,0 +1,22 @@
+
+[EV22] - Left Profile (subject is facing observer's left) - Lips Relaxed, Centric Occlusion
+-------------------------------------------------------------------------------------------
+
+.. _EV22:
+.. image:: ../../../images/EV22.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Left Profile (subject is facing observer's left) - Lips Relaxed, Centric Occlusion
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/EV22.dcm>`__
+    
+.. include:: ../EV22_comments.rst
+    
+DICOM header for [EV22]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV22
+   :file: ../../../tables/generated/EV22.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

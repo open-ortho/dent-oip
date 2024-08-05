@@ -1,0 +1,22 @@
+
+[EV19] - Full Face - Full Smile, Centric Occlusion
+--------------------------------------------------
+
+.. _EV19:
+.. image:: ../../../images/EV19.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Full Face - Full Smile, Centric Occlusion
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/EV19.dcm>`__
+    
+.. include:: ../EV19_comments.rst
+    
+DICOM header for [EV19]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV19
+   :file: ../../../tables/generated/EV19.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

@@ -1,0 +1,22 @@
+
+[EV25] - Left Profile (subject is facing observer's left) - Lips Closed, Centric Relation
+-----------------------------------------------------------------------------------------
+
+.. _EV25:
+.. image:: ../../../images/EV25.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Left Profile (subject is facing observer's left) - Lips Closed, Centric Relation
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/EV25.dcm>`__
+    
+.. include:: ../EV25_comments.rst
+    
+DICOM header for [EV25]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV25
+   :file: ../../../tables/generated/EV25.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    
