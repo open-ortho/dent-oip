@@ -1,13 +1,15 @@
 # DENT-OIP v0.2.5-dev
 
-These are the source files for the DENT-OIP standard document. You can find the nightly [nightly builds here](http://brillig.org/~afm/DENT-OIP/html/index.html). Username: `scdi116` Password: `scdi116`.
+These are the source files for the DENT-OIP standard document.
+
+- [DENT-OIP latest release](http://open-ortho.org/dent-oip/release/index.html)
+- [DENT-OIP nightly build](http://open-ortho.org/dent-oip/nightly/index.html)
 
 Source files located in `source/`.
 
 Builds located in `dist/`.
 
-[Sphinx](https://www.sphinx-doc.org/) is the tool used to build these files into
-HTML, PDF, etc. Sphinx uses the reStructuredText language.
+[Sphinx](https://www.sphinx-doc.org/) is the tool used to build these files into HTML, PDF, etc. Sphinx uses the reStructuredText language.
 
 
 ## Requirements

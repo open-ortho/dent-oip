@@ -6,7 +6,7 @@
 DENT-OPI
 ====================================
 
-`DOCX <../docx/DENT-OIP.docx>`__ | `PDF <../latex/DENT-OIP.pdf>`__
+`DOCX <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.pdf>`__
 
 Executive Summary
 -----------------

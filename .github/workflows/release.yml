@@ -29,6 +29,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Update Release Tag in index.rst
+        run: |
+          sed -i "s|RELEASE_TAG_PLACEHOLDER|${{ github.ref_name }}|g" ./source/index.rst
+
       - name: Run Make dist
         run: make dist
 
