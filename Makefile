@@ -39,7 +39,7 @@ VERSION_FILE  = $(SOURCEDIR)/_VERSION
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile deploy genereted_tables
+.PHONY: help Makefile deploy genereted_tables dist
 
 # This will get executed automatically for each target routed to Sphinx. See catchall target below.
 $(GENERATED_TABLES): $(IMAGES)
@@ -50,7 +50,7 @@ clean:
 
 deploy:
 	cp VERSION $(VERSION_FILE)
-	$(MAKE) _deploy
+	$(MAKE) dist
 
 git-tag:
 	git tag $(shell cat $(VERSION_FILE))
@@ -58,15 +58,18 @@ git-tag:
 
 nightly:
 	printf "%s-nightly.$(DATESTAMP)" $(shell cat VERSION) > $(VERSION_FILE)
-	$(MAKE) _deploy git-tag
+	$(MAKE) dist git-tag
 
-_deploy: html docx pdf
+dist: html docx pdf
 
 $(IMAGES):
 	git submodule init
 	git submodule update
 	mkdir -p "$(IMAGES)"
 	cd $(IMAGES_ORIGIN) && for image in $$(ls); do cp -v $${image:?} $${OLDPWD}/$(IMAGES)/$$(echo $${image} | $(CUT) --characters='1-5' | sed 's/-//').png; done
+
+.PHONY: pre_requisites
+pre_requisites: $(SAMPLE_DICOM_FILES)
 
 $(SAMPLE_DICOM_FILES): $(GENERATED_TABLES)
 	mkdir -p $@
