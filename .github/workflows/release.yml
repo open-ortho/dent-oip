@@ -11,20 +11,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@master
+        with:
+          submodules: true
+          ref: ${{ github.ref_name }}
+          
       
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@master
         with:
           python-version: '3.10' # Specify the Python version.
 
       - name: Install Dependencies
         run: |
+          sudo apt update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libreoffice
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Make Deploy
-        run: make _deploy
+      - name: Run Make dist
+        run: make dist
 
       - name: Create and Upload Release Assets
         uses: softprops/action-gh-release@v2
@@ -35,42 +41,12 @@ jobs:
           prerelease: false
           files: |
             ./dist/docx/DENT-OIP.docx
-            ./dist/latex/DENT-OIP.pdf
+            ./dist/pdf/DENT-OIP.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  deploy-gh-pages:
-    runs-on: ubuntu-latest
-    needs: build-and-release  # Ensures this job runs after the build-and-release job completes
-    steps:
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
+      - name: Publish HTML to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          ref: gh-pages
-          path: gh-pages  # Checkout gh-pages branch into a 'gh-pages' directory
-        
-      - name: Checkout source branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.sha }}  # Checkout the commit that triggered the workflow into 'source' directory
-          path: source
-        
-      - name: Copy HTML to gh-pages
-        run: |
-          cd gh-pages
-          git rm -rf ./*  # Remove old files to ensure the branch is clean
-          cp -r ../source/dist/html/* .  # Copy new HTML files to root of gh-pages branch
-        
-      - name: Commit and Push changes
-        run: |
-          cd gh-pages
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
-          git add .  # Add changes to git
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Update GitHub Pages"
-            git push origin gh-pages
-          fi
-        
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/html/
+          destination_dir: release
