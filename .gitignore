@@ -13,3 +13,5 @@ source/images/
 *.pyc
 views.db
 _VERSION
+Pipfile
+Pipfile.lock
