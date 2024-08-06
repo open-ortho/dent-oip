@@ -15,15 +15,6 @@ jobs:
           submodules: true
           ref: develop
 
-      # For some reason, actions/checkout ignores the ref: develop, and checks out master when running off of schedule.
-      - name: Force develop branch checkout
-        run: |
-          BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-          if [ "$BRANCH" != "develop" ]; then
-            echo "WARNING: Not on develop branch. Checking out develop branch."
-            git checkout origin/develop
-          fi
-          
       - name: Check for changes since last successful build
         id: check_tag
         run: |

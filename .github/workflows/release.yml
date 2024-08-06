@@ -11,11 +11,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
         with:
           submodules: true
-          ref: ${{ github.ref_name }}
+          ref: master
           
+      - name: Get VERSION from VERSION file
+        id: version
+        run: |
+          VERSION_FILE="./VERSION"
+          if [ -f "$VERSION_FILE" ]; then
+            echo "VERSION=$(cat $VERSION_FILE)" >> $GITHUB_ENV
+            echo "VERSION=$(cat $VERSION_FILE)" >> $GITHUB_OUTPUT
+          else
+            echo "Cannot load VERSION from $VERSION_FILE"
+            exit 1
+          fi
+      
       - name: Set up Python
         uses: actions/setup-python@master
         with:
@@ -30,7 +42,7 @@ jobs:
 
       - name: Update Release Tag in index.rst
         run: |
-          sed -i "s|RELEASE_TAG_PLACEHOLDER|${{ github.ref_name }}|g" ./source/index.rst
+          sed -i "s|RELEASE_TAG_PLACEHOLDER|v${{ steps.version.outputs.VERSION }}|g" ./source/index.rst
 
       - name: Run Make dist
         run: make dist
@@ -38,8 +50,8 @@ jobs:
       - name: Create and Upload Release Assets
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}  # Uses the tag name
-          name: Release ${{ github.ref_name }}
+          tag_name: v${{ steps.version.outputs.VERSION }}  # Uses the tag name
+          name: Release v${{ steps.version.outputs.VERSION }}
           draft: false
           prerelease: true
           files: |
