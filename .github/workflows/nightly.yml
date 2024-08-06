@@ -1,4 +1,4 @@
-name: Nightly Release and GH Pages Workflow
+name: Nightly Build
 
 on:
   workflow_dispatch:
@@ -10,51 +10,81 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
         with:
           submodules: true
-          ref: ${{ github.ref_name }}
+          ref: develop
+
+      # For some reason, actions/checkout ignores the ref: develop, and checks out master when running off of schedule.
+      - name: Force develop branch checkout
+        run: |
+          BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+          if [ "$BRANCH" != "develop" ]; then
+            echo "WARNING: Not on develop branch. Checking out develop branch."
+            git checkout origin/develop
+          fi
           
-      
+      - name: Check for changes since last successful build
+        id: check_tag
+        run: |
+          TAG_FOUND=$(git tag --contains HEAD | grep -E '.*-dev-nightly.*' || true)
+          if [ -n "$TAG_FOUND" ]; then
+            echo "Skipping nightly build: current commit is already a nightly build: $TAG_FOUND"
+            exit 78  # Neutral exit to stop workflow
+          else
+            echo "No nightly tag found on the current commit. Building new nightly."
+          fi
+
       - name: Set up Python
         uses: actions/setup-python@master
         with:
           python-version: '3.10' # Specify the Python version.
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install Dependencies
         run: |
           sudo apt update
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libreoffice
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Update Release Tag in index.rst
-        run: |
-          sed -i "s|RELEASE_TAG_PLACEHOLDER|${{ github.ref_name }}|g" ./source/index.rst
+          pip install -r ./requirements.txt
 
       - name: Run Make nightly
         run: make nightly
 
-      - name: Read _VERSION file
+      - name: Get NIGHTLY_VERSION from _VERSION
         id: version
-        run: echo "::set-output name=version::$(cat ./_VERSION)"
+        run: |
+          VERSION_FILE="./source/_VERSION"
+          if [ -f "$VERSION_FILE" ]; then
+            echo "NIGHTLY_VERSION=$(cat $VERSION_FILE)" >> $GITHUB_ENV
+            echo "NIGHTLY_VERSION=$(cat $VERSION_FILE)" >> $GITHUB_OUTPUT
+          else
+            echo "Cannot load NIGHTLY_VERSION from $VERSION_FILE"
+            exit 1
+          fi
       
       - name: Create and Upload Release Assets
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}  # Uses the tag name
-          name: Nightly Build ${{ steps.version.outputs.id }}
+          tag_name: ${{ steps.version.outputs.NIGHTLY_VERSION }}  # Uses the tag name
+          name: Nightly Build ${{ steps.version.outputs.NIGHTLY_VERSION }}
           draft: true
           prerelease: false
           files: |
-            ./dist/docx/nightly-DENT-OIP.docx
-            ./dist/pdf/nightly-DENT-OIP.pdf
-            ./dist/nightly-codes.csv
-            ./dist/nightly-views.csv
+            ./dist/docx/DENT-OIP.docx
+            ./dist/pdf/DENT-OIP.pdf
+            ./source/tables/codes.csv
+            ./source/tables/views.csv
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish HTML to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/html/
