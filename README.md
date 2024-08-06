@@ -1,4 +1,4 @@
-# DENT-OIP v0.2.6-dev
+# DENT-OIP v0.2.6
 
 These are the source files for the DENT-OIP standard document.
 
