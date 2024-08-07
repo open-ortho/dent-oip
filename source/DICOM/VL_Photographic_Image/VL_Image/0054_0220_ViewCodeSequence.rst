@@ -60,6 +60,10 @@ The projection of the anatomic region of interest on an image receptor.
       - `260461000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260461000&edition=MAIN&release=&languages=en>`__
       - Vertex projection (qualifier value)
       - Mandatory for :ref:`EV37 <EV37>`
+    * - SCT
+      - `410514004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=410514004&edition=MAIN&release=&languages=en>`__
+      - Unknown (qualifier value)
+      - 
 
 .. _cid-CCCC:
 .. list-table:: Table CID CCCC. VL Dental View
