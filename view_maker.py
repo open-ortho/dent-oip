@@ -35,9 +35,17 @@ def generate_views_in_dicom():
         }
         return metadata
 
+    # Create Path objects for files
+    views_path = Path('./source/tables/views.csv').resolve()
+    codes_path = Path('./source/tables/codes.csv').resolve()
+
+    # Create the controller object with URLs
+    c = OrthodonticController(
+        url_views=views_path.as_uri(),
+        url_codes=codes_path.as_uri())
+
     for png in PATH_IMAGES.glob("*.png"):
         logging.info(f"Converting {png} to DICOM.")
-        c = OrthodonticController()
         try:
             c.convert_image_to_dicom4orthograph_and_save(metadata=make_photo_metadata(png))
         except AttributeError:
