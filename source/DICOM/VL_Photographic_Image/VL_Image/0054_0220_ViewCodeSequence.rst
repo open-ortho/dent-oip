@@ -63,7 +63,7 @@ The projection of the anatomic region of interest on an image receptor.
     * - SCT
       - `410514004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=410514004&edition=MAIN&release=&languages=en>`__
       - Unknown (qualifier value)
-      - 
+      - This code is used when the photograph is taken without specific attention to the projection, prioritizing image detail over projection accuracy. In cases where the :ref:ViewModifierCodeSequence is required, it must be included. Since the :ref:ViewModifierCodeSequence also requires the parent :ref:ViewCodeSequence, the sequence cannot be omitted, and the value 'Unknown' SHALL be used.
 
 .. _cid-CCCC:
 .. list-table:: Table CID CCCC. VL Dental View
