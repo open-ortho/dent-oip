@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-DENT-OPI
+DENT-OIP
 ====================================
 
 `DOCX <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.pdf>`__
