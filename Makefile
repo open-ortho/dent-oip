@@ -58,7 +58,7 @@ deploy:
 
 git-tag:
 	git tag $(shell cat $(VERSION_FILE))
-	git push $(shell cat $(VERSION_FILE))
+	git push origin $(shell cat $(VERSION_FILE))
 
 # Don't run locally, will change rst files. Intended for github actions only.
 nightly:
