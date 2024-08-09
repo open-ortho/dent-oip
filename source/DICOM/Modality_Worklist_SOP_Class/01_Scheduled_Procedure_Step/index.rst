@@ -3,4 +3,8 @@
 Scheduled Procedure Step
 ========================
 
-Empty
+.. toctree::
+	:glob:
+	:maxdepth: 1
+
+	*
