@@ -1,12 +1,12 @@
-.. DENT-OPI documentation master file, created by
+.. DENT-OIP documentation master file, created by
    sphinx-quickstart on Tue Jul 13 09:01:04 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-DENT-OPI
+DENT-OIP
 ====================================
 
-`DOCX <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-dev-nightly.20240807011639/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-dev-nightly.20240807011639/DENT-OIP.pdf>`__
+`DOCX <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20240810011736/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20240810011736/DENT-OIP.pdf>`__
 
 Executive Summary
 -----------------
