@@ -11,10 +11,9 @@ from source.conf import html_static_path
 
 # Files and paths
 PATH_TABLES = Path(".", "source", "tables")
-PATH_APPENDIX = Path(".", "source", "Appendix")
+PATH_VIEW_EXAMPLES = Path(".", "source", "V3_Appendix_A_ViewExamples","generated")
 PATH_IMAGES = Path(".", "source", "images")
 PATH_TABLES_GENERATED = Path(PATH_TABLES, "generated")
-PATH_VIEW_EXAMPLES = Path(PATH_APPENDIX, "ViewExamples","generated")
 
 def generate_views_in_dicom():
     ''' Take the png files in images, extract the image type from the file name and generate the dcm files.'''
@@ -106,7 +105,7 @@ def generate_rst_pages():
         This function is very similar to ev_write_rst and has been kept separate on
         purpose, to allow for customization.
         """
-        root = Path("../../..")
+        root = Path("../..")
         static = root/ html_static_path[0]
 
         ds = dcmread(dcm_filename)

@@ -1,7 +1,7 @@
 .. _oip_actors_transactions:
 
-Orthodontic Imaging Actors/Transactions
-=======================================
+OIP Actors, Transactions, and Content Modules
+=============================================
 
 Acquisition Modality
 --------------------

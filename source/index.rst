@@ -3,7 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-DENT-OIP
+Dental 
+======
+Technical Framework Supplement
+==============================
+Orthodontic Imaging Profile 
+===========================
+(OIP)
+=====
+Trial Implementation
 ====================================
 
 `DOCX <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.pdf>`__
@@ -44,9 +52,11 @@ Contents
 
    Preamble/*
 
-   Orthodontic_Imaging_Profile/*
-   DICOM/*
-   Appendix/index
+   V1_Orthodontic_Imaging_Profile/*
+   V3_07_DICOM/*
+   V3_Appendix_A_ViewExamples/index
+   V3_Appendix_B_DeviceExamples/03_device_examples
+   V3_Appendix_C_Definitions/04_definitions
 
    bibliography
 
