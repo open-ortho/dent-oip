@@ -1,0 +1,22 @@
+
+[EV38] - Other Face - Close-Up Smile (with lips)
+------------------------------------------------
+
+.. _EV38:
+.. image:: ../../images/EV38.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Other Face - Close-Up Smile (with lips)
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV38.dcm>`__
+    
+.. include:: ../EV38_comments.rst
+    
+DICOM header for [EV38]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV38
+   :file: ../../tables/generated/EV38.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

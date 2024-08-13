@@ -1,0 +1,22 @@
+
+[EV20] - Full Face - Full Smile, Centric Relation
+-------------------------------------------------
+
+.. _EV20:
+.. image:: ../../images/EV20.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Full Face - Full Smile, Centric Relation
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV20.dcm>`__
+    
+.. include:: ../EV20_comments.rst
+    
+DICOM header for [EV20]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV20
+   :file: ../../tables/generated/EV20.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

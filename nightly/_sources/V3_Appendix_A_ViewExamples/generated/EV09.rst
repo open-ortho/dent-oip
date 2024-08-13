@@ -1,0 +1,22 @@
+
+[EV09] - 45° Right Profile (subject turns toward observer's right) - Lips Relaxed, Centric Relation
+---------------------------------------------------------------------------------------------------
+
+.. _EV09:
+.. image:: ../../images/EV09.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of 45° Right Profile (subject turns toward observer's right) - Lips Relaxed, Centric Relation
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV09.dcm>`__
+    
+.. include:: ../EV09_comments.rst
+    
+DICOM header for [EV09]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV09
+   :file: ../../tables/generated/EV09.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

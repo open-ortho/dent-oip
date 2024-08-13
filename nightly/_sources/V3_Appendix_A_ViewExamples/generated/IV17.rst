@@ -1,0 +1,22 @@
+
+[IV17] - Intraoral Left Lateral View - Centric Relation, Showing Overjet, Without Mirror
+----------------------------------------------------------------------------------------
+
+.. _IV17:
+.. image:: ../../images/IV17.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Left Lateral View - Centric Relation, Showing Overjet, Without Mirror
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/IV17.dcm>`__
+    
+.. include:: ../IV17_comments.rst
+    
+DICOM header for [IV17]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV17
+   :file: ../../tables/generated/IV17.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

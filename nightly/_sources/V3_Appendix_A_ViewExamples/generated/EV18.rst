@@ -1,0 +1,22 @@
+
+[EV18] - Full Face - Lips Closed, Centric Relation
+--------------------------------------------------
+
+.. _EV18:
+.. image:: ../../images/EV18.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Full Face - Lips Closed, Centric Relation
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV18.dcm>`__
+    
+.. include:: ../EV18_comments.rst
+    
+DICOM header for [EV18]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV18
+   :file: ../../tables/generated/EV18.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

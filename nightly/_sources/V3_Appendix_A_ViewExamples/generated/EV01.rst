@@ -1,0 +1,22 @@
+
+[EV01] - Right Profile (subject is facing observer's right) - Lips Relaxed, Centric Occlusion
+---------------------------------------------------------------------------------------------
+
+.. _EV01:
+.. image:: ../../images/EV01.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Right Profile (subject is facing observer's right) - Lips Relaxed, Centric Occlusion
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV01.dcm>`__
+    
+.. include:: ../EV01_comments.rst
+    
+DICOM header for [EV01]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV01
+   :file: ../../tables/generated/EV01.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

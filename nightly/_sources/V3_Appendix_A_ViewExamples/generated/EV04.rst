@@ -1,0 +1,22 @@
+
+[EV04] - Right Profile (subject is facing observer's right) - Lips Closed, Centric Relation
+-------------------------------------------------------------------------------------------
+
+.. _EV04:
+.. image:: ../../images/EV04.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Right Profile (subject is facing observer's right) - Lips Closed, Centric Relation
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV04.dcm>`__
+    
+.. include:: ../EV04_comments.rst
+    
+DICOM header for [EV04]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV04
+   :file: ../../tables/generated/EV04.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

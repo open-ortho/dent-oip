@@ -1,0 +1,22 @@
+
+[IV27] - Intraoral Mandibular Occlusal View - Mouth Open, With Mirror But Corrected
+-----------------------------------------------------------------------------------
+
+.. _IV27:
+.. image:: ../../images/IV27.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Mandibular Occlusal View - Mouth Open, With Mirror But Corrected
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/IV27.dcm>`__
+    
+.. include:: ../IV27_comments.rst
+    
+DICOM header for [IV27]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV27
+   :file: ../../tables/generated/IV27.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

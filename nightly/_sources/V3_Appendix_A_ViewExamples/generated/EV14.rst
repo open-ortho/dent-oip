@@ -1,0 +1,22 @@
+
+[EV14] - 45° Right Profile (subject turns toward observer's right) - Mandible Postured Forward
+----------------------------------------------------------------------------------------------
+
+.. _EV14:
+.. image:: ../../images/EV14.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of 45° Right Profile (subject turns toward observer's right) - Mandible Postured Forward
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV14.dcm>`__
+    
+.. include:: ../EV14_comments.rst
+    
+DICOM header for [EV14]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV14
+   :file: ../../tables/generated/EV14.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

@@ -1,0 +1,22 @@
+
+[EV12] - 45° Right Profile (subject turns toward observer's right) - Full Smile, Centric Occlusion
+--------------------------------------------------------------------------------------------------
+
+.. _EV12:
+.. image:: ../../images/EV12.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of 45° Right Profile (subject turns toward observer's right) - Full Smile, Centric Occlusion
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV12.dcm>`__
+    
+.. include:: ../EV12_comments.rst
+    
+DICOM header for [EV12]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV12
+   :file: ../../tables/generated/EV12.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

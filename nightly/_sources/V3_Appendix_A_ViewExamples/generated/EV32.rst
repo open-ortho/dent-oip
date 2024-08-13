@@ -1,0 +1,22 @@
+
+[EV32] - 45° Left Profile (subject turns toward observer's left) - Lips Closed, Centric Relation
+------------------------------------------------------------------------------------------------
+
+.. _EV32:
+.. image:: ../../images/EV32.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of 45° Left Profile (subject turns toward observer's left) - Lips Closed, Centric Relation
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV32.dcm>`__
+    
+.. include:: ../EV32_comments.rst
+    
+DICOM header for [EV32]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV32
+   :file: ../../tables/generated/EV32.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

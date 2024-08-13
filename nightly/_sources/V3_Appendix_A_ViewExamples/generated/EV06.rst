@@ -1,0 +1,22 @@
+
+[EV06] - Right Profile (subject is facing observer's right) - Full Smile, Centric Relation
+------------------------------------------------------------------------------------------
+
+.. _EV06:
+.. image:: ../../images/EV06.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Right Profile (subject is facing observer's right) - Full Smile, Centric Relation
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV06.dcm>`__
+    
+.. include:: ../EV06_comments.rst
+    
+DICOM header for [EV06]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV06
+   :file: ../../tables/generated/EV06.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

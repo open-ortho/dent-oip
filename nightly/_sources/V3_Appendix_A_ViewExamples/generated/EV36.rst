@@ -1,0 +1,22 @@
+
+[EV36] - Other Face (head tipped back) - Inferior View (showing lower border of mandible, nares, infraorbital rim contours, forehead contours)
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+.. _EV36:
+.. image:: ../../images/EV36.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Other Face (head tipped back) - Inferior View (showing lower border of mandible, nares, infraorbital rim contours, forehead contours)
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/EV36.dcm>`__
+    
+.. include:: ../EV36_comments.rst
+    
+DICOM header for [EV36]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV36
+   :file: ../../tables/generated/EV36.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

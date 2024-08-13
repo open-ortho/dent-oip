@@ -1,0 +1,22 @@
+
+[IV20] - Intraoral Left Buccal Segment - Centric Occlusion, With Mirror But Corrected
+-------------------------------------------------------------------------------------
+
+.. _IV20:
+.. image:: ../../images/IV20.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Left Buccal Segment - Centric Occlusion, With Mirror But Corrected
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/IV20.dcm>`__
+    
+.. include:: ../IV20_comments.rst
+    
+DICOM header for [IV20]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV20
+   :file: ../../tables/generated/IV20.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

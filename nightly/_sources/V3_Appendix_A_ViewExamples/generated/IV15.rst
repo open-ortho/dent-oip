@@ -1,0 +1,22 @@
+
+[IV15] - Intraoral Right Lateral View - Centric Relation, Showing Overjet, Without Mirror
+-----------------------------------------------------------------------------------------
+
+.. _IV15:
+.. image:: ../../images/IV15.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Right Lateral View - Centric Relation, Showing Overjet, Without Mirror
+    
+.. centered:: `Download sample DICOM file <../../_static/dicom_samples/IV15.dcm>`__
+    
+.. include:: ../IV15_comments.rst
+    
+DICOM header for [IV15]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV15
+   :file: ../../tables/generated/IV15.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    
