@@ -23,22 +23,22 @@ Viewset VS-01
      - `SCT 1306664005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1306664005&edition=MAIN&release=&languages=en>`__
      - Photographic extraoral image of full face with full smile and teeth in centric occlusion (record artifact)
    * - 04
-     - IO.MX.MO.OV.WM.BC
+     - `OPOR 73865053 <https://github.com/open-ortho/terminology/releases/download/v0.3.2/open_ortho_terminology.terminology.open_ortho.json>`__
      - Intraoral, Maxillary, Mouth Open, Occlusal View, With Mirror, But Corrected
    * - 05
      - 
      - 
    * - 06
-     - IO.MD.MO.OV.WM.BC
+     - `OPOR 73865055 <https://github.com/open-ortho/terminology/releases/download/v0.3.2/open_ortho_terminology.terminology.open_ortho.json>`__
      - Intraoral, Mandibular, Mouth Open, Occlusal View, With Mirror, But Corrected
    * - 07
-     - IO.RB.CO
+     - `OPOR 73864849 <https://github.com/open-ortho/terminology/releases/download/v0.3.2/open_ortho_terminology.terminology.open_ortho.json>`__
      - Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)
    * - 08
-     - IO.FV.CO
+     - `OPOR 73864855 <https://github.com/open-ortho/terminology/releases/download/v0.3.2/open_ortho_terminology.terminology.open_ortho.json>`__
      - Intraoral, Frontal View, Centric Occlusion
    * - 09
-     - IO.LB.CO
+     - `OPOR 73864956 <https://github.com/open-ortho/terminology/releases/download/v0.3.2/open_ortho_terminology.terminology.open_ortho.json>`__
      - Intraoral, Left Buccal Segment, Centric Occlusion (Direct View)
 
 Viewset VS-02
