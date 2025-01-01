@@ -14,7 +14,7 @@ Orthodontic Imaging Profile
 Trial Implementation
 ====================================
 
-`DOCX <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20241231012511/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20241231012511/DENT-OIP.pdf>`__
+`DOCX <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20250101014003/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20250101014003/DENT-OIP.pdf>`__
 
 Executive Summary
 -----------------
