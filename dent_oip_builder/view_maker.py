@@ -12,12 +12,16 @@ from  pathlib import Path
 from pydicom import dcmread, charset
 import csv
 
-from source.conf import html_static_path
+# Add the source directory to the sys.path
+PATH_ROOT = Path(__file__).resolve().parent.parent
+source_path = PATH_ROOT / 'source'
+sys.path.insert(0, str(source_path))
+from conf import html_static_path
 
 # Files and paths
-PATH_TABLES = Path(".", "source", "tables")
-PATH_VIEW_EXAMPLES = Path(".", "source", "V3_Appendix_A_ViewExamples","generated")
-PATH_IMAGES = Path(".", "source", "images")
+PATH_TABLES = Path(PATH_ROOT, "source", "tables")
+PATH_VIEW_EXAMPLES = Path(PATH_ROOT, "source", "V3_Appendix","A_ViewExamples","generated")
+PATH_IMAGES = Path(PATH_ROOT, "source", "images")
 PATH_TABLES_GENERATED = Path(PATH_TABLES, "generated")
 
 def generate_views_in_dicom():

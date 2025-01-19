@@ -9,17 +9,22 @@ Requested Procedure Code Sequence (0032,1064)
     http://terminology.open-ortho.org/fhir/extraoral-3d-visible-light-scheduled-protocol
     http://terminology.open-ortho.org/fhir/intraoral-3d-visible-light-scheduled-protocol
 
-
 .. _extraoral-2d-photographic-scheduled-protocol:
-.. list-table:: Extraoral 2D Photographic Scheduled Protocol
+.. csv-table:: Extraoral 2D Photographic Scheduled Protocol
     :header-rows: 1
+    :file: ../../tables/generated/extraoral-2d-photographic-scheduled-protocol.csv
 
-    * - code scheme designator
-      - code value
-      - code meaning
-      - notes
-    * - SCT
-      - `789131009 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=789131009&edition=MAIN&release=&languages=en>`__
-      - Close up photographic view of teeth with no set magnification or distance (record artifact)
-      - 
+.. _intraoral-2d-photographic-scheduled-protocol:
+.. csv-table:: Intraoral 2D Photographic Scheduled Protocol
+    :header-rows: 1
+    :file: ../../tables/generated/intraoral-2d-photographic-scheduled-protocol.csv
 
+.. _extraoral-3d-visible-light-scheduled-protocol:
+.. csv-table:: Extraoral 3D Visible Light Scheduled Protocol
+    :header-rows: 1
+    :file: ../../tables/generated/extraoral-3d-visible-light-scheduled-protocol.csv
+
+.. _intraoral-3d-visible-light-scheduled-protocol:
+.. csv-table:: Intraoral 3D Visible Light Scheduled Protocol
+    :header-rows: 1
+    :file: ../../tables/generated/intraoral-3d-visible-light-scheduled-protocol.csv

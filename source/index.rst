@@ -54,10 +54,10 @@ Contents
 
    V1_Orthodontic_Imaging_Profile/*
    V3_07_DICOM/*
-   V3_Appendix_A_ViewExamples/index
-   V3_Appendix_B_ViewSetExamples/index
-   V3_Appendix_C_DeviceExamples/03_device_examples
-   V3_Appendix_D_Definitions/04_definitions
+   V3_Appendix/A_ViewExamples/index
+   V3_Appendix/B_ViewSetExamples/index
+   V3_Appendix/C_DeviceExamples/03_device_examples
+   V3_Appendix/D_Definitions/04_definitions
 
    bibliography
 

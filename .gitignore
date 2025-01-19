@@ -6,8 +6,8 @@ _static/
 .~*
 .vscode/
 generated/
-source/Appendix/*intraoral_views.rst
-source/Appendix/*extraoral_views.rst
+source/V3_Appendix/*intraoral_views.rst
+source/V3_Appendix/*extraoral_views.rst
 source/images/
 .DS_Store
 *.pyc
