@@ -33,11 +33,11 @@ The mapping below provides a reference for translating orthodontic progress into
       - offset (days)
     * - First Time Observation
       - Patient has just registered with the practice for the first time and has not agreed any treatment yet. The provider collects first time records.
-      - NCIt-C37948 Enrollment
+      - SCT-184047000 Patient registration
       - 0
     * - Observation
       - Patient comes back for regular visits. The provider collects observation records.
-      - NCIt-C37948 Enrollment
+      - SCT-184047000 Patient registration
       - Number of days past the day the patient registers.
     * - Pretreatment
       - Images acquired before treatment starts. Only used when the patient and doctor have agreed to start a treatment. This should be treated as Observation above.
