@@ -25,7 +25,7 @@ IMAGES_ORIGIN = modules/orthoviews-linedrawings/images/png
 
 PIPENV = $(PYTHON) -m pipenv
 # PIPENV_RUN = $(PIPENV) run
-VIEWBUILDER = $(PIPENV_RUN) $(PYTHON) ./view_maker.py
+VIEWBUILDER = $(PIPENV_RUN) $(PYTHON) ./dent_oip_builder/view_maker.py
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.

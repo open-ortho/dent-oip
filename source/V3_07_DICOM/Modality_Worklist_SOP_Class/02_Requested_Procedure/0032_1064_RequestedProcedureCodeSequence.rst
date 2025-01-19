@@ -3,8 +3,15 @@
 Requested Procedure Code Sequence (0032,1064)
 =============================================
 
-.. _cid-BBBB:
-.. list-table:: Orthodontic View Types
+.. Include values from: 
+    http://terminology.open-ortho.org/fhir/extraoral-2d-photographic-scheduled-protocol
+    http://terminology.open-ortho.org/fhir/intraoral-2d-photographic-scheduled-protocol
+    http://terminology.open-ortho.org/fhir/extraoral-3d-visible-light-scheduled-protocol
+    http://terminology.open-ortho.org/fhir/intraoral-3d-visible-light-scheduled-protocol
+
+
+.. _extraoral-2d-photographic-scheduled-protocol:
+.. list-table:: Extraoral 2D Photographic Scheduled Protocol
     :header-rows: 1
 
     * - code scheme designator

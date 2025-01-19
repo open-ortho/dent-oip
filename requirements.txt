@@ -4,3 +4,4 @@ docxbuilder
 dicom4ortho
 pydicom
 pynetdicom
+requests

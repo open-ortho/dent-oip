@@ -1,3 +1,8 @@
+""" This script uses dicom4ortho to generate the .dcm files from the .png in the linedrawings repository.
+
+It then generates the CSV files from the .dcm files to get used in the RST files.
+
+"""
 import logging
 logging.basicConfig(level=logging.INFO)
 
