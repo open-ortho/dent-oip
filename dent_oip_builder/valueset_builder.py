@@ -5,6 +5,7 @@ The various tables which rely on various codes which can be obtaines as FHIR Val
 """
 import requests
 import ftplib
+import tempfile
 import csv
 import json
 from urllib.parse import urlparse
@@ -12,11 +13,25 @@ from pathlib import Path
 from fhir.resources.codesystem import CodeSystem
 from fhir.resources.valueset import ValueSet
 
+import logging
+# Configure logging
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+handler = logging.StreamHandler()
+handler.setLevel(logging.INFO)
+# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+formatter = logging.Formatter('%(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+
+
 SYSTEM_TO_CODESCHEMEDESIGNATOR_MAP = {
     "http://dicom.nema.org/resources/ontology/DCM": "DCM",
+    "http://snomed.info/srt": "SRT",
     "http://snomed.info/sct": "SCT",
     "http://loinc.org": "LOINC",
-    "http://​www.snomed.org/": "SRT"
+    "http://​www.snomed.org/": "SRT",
+    "http://sig.biostr.washington.edu/projects/fm/AboutFM.html": "FMA",
 }
 
 
@@ -25,11 +40,14 @@ urls = [
     "http://terminology.open-ortho.org/fhir/intraoral-2d-photographic-scheduled-protocol",
     "http://terminology.open-ortho.org/fhir/extraoral-3d-visible-light-scheduled-protocol",
     "http://terminology.open-ortho.org/fhir/intraoral-3d-visible-light-scheduled-protocol",
-    "ftp://medical.nema.org/medical/dicom/resources/valuesets/fhir/json/ValueSet-dicom-cid-405-MediaTypeCode.json"
+    "ftp://medical.nema.org/medical/dicom/resources/valuesets/fhir/json/ValueSet-dicom-cid-2-AnatomicModifier.json",
+    "ftp://medical.nema.org/medical/dicom/resources/valuesets/fhir/json/ValueSet-dicom-cid-7201-ReferencedImagePurposeOfReference.json",
+    "ftp://medical.nema.org/medical/dicom/resources/valuesets/fhir/json/ValueSet-dicom-cid-247-LateralityLeftRightOnly.json"
 ]
 
 
 def download_fhir_codesystem_to_csv(url, output_file):
+    logger.info(f"Downloading {url} to {output_file}")
     parsed_url = urlparse(url)
     if parsed_url.scheme in ['http', 'https']:
         response = requests.get(url)
@@ -39,11 +57,11 @@ def download_fhir_codesystem_to_csv(url, output_file):
         ftp = ftplib.FTP(parsed_url.hostname)
         ftp.login()
         ftp.cwd(parsed_url.path.rsplit('/', 1)[0])
-        with open('temp.json', 'wb') as temp_file:
-            ftp.retrbinary(
-                f"RETR {parsed_url.path.rsplit('/', 1)[1]}", temp_file.write)
-        with open('temp.json', 'r') as temp_file:
+        with tempfile.NamedTemporaryFile(delete=True) as temp_file:
+            ftp.retrbinary(f"RETR {parsed_url.path.rsplit('/', 1)[1]}", temp_file.write)
+            temp_file.seek(0)  # Go back to the beginning of the file
             codesystem = json.load(temp_file)
+
     else:
         raise ValueError("Unsupported URL scheme")
 
@@ -62,6 +80,10 @@ def write_valueset_to_csv(valueset, output_file):
                         "Code Value", "Code Meaning"])
         for system in valueset.compose.include:
             codeschemedesignator = SYSTEM_TO_CODESCHEMEDESIGNATOR_MAP.get(system.system)
+            if not codeschemedesignator:
+                logger.warning(
+                    f"Unknown system {system.system}, skipping")
+                continue
 
             for concept in system.concept:
                 writer.writerow(
@@ -87,9 +109,8 @@ def main():
         output_base_path = Path('source') / 'tables' / 'generated'
         # Create the directory if it doesn't exist
         output_base_path.mkdir(parents=True, exist_ok=True)
-        for url in urls:
-            output_file = output_base_path / (url.split('/')[-1] + '.csv')
-            download_fhir_codesystem_to_csv(url, output_file)
+        output_file = output_base_path / (url.split('/')[-1] + '.csv')
+        download_fhir_codesystem_to_csv(url, output_file)
 
 
 if __name__ == "__main__":
