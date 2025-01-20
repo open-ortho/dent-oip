@@ -18,7 +18,7 @@ jobs:
       - name: Check for changes since last successful build
         id: check_tag
         run: |
-          TAG_FOUND=$(git tag --contains HEAD | grep -E '.*-dev-nightly.*' || true)
+          TAG_FOUND=$(git tag --contains HEAD | grep -E '.*nightly.*' || true)
           if [ -n "$TAG_FOUND" ]; then
             echo "Skipping nightly build: current commit is already a nightly build: $TAG_FOUND"
             exit 78  # Neutral exit to stop workflow
@@ -80,3 +80,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/html/
           destination_dir: nightly
+
+      - name: Update Nightly Latest Tag
+        run: |
+          git tag -d nightly-latest || true  # Delete the local tag if it exists
+          git push origin :refs/tags/nightly-latest || true  # Delete the remote tag if it exists
+          git tag -a nightly-latest -m "Updated nightly-latest tag"
+          git push origin nightly-latest
+
