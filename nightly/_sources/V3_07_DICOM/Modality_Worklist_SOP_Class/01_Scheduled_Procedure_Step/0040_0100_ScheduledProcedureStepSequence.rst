@@ -28,8 +28,13 @@ Scheduled Procedure Step ID (0040,0009)
 Scheduled Protocol Code Sequence (0040,0008)
 --------------------------------------------
 
+.. Include values from: 
+    http://terminology.open-ortho.org/fhir/extraoral-2d-photographic-views
+    http://terminology.open-ortho.org/fhir/intraoral-2d-photographic-views
+
+
 .. _cid-BBBB:
-.. list-table:: Orthodontic View Types
+.. list-table:: Extraoral 2D Photographic Views
     :header-rows: 1
 
     * - code scheme designator
