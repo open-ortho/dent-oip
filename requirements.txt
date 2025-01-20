@@ -5,3 +5,4 @@ dicom4ortho
 pydicom
 pynetdicom
 requests
+fhir.resources
