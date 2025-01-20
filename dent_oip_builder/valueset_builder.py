@@ -20,7 +20,7 @@ def download_fhir_codesystem_to_rst(url, output_file):
     response.raise_for_status()
     codesystem = response.json()
 
-    with open(output_file, 'a') as file:
+    with open(output_file, 'w') as file:
         file.write(f".. _{codesystem['id']}:\n")
         file.write(f".. list-table:: {codesystem['title']}\n")
         file.write("    :header-rows: 1\n\n")
@@ -41,14 +41,14 @@ def download_fhir_codesystem_to_csv(url, output_file):
     response.raise_for_status()
     codesystem = response.json()
 
-    with open(output_file, 'a', newline='', encoding='utf-8') as file:
+    with open(output_file, 'w', newline='', encoding='utf-8') as file:
         # get code scheme designator from codesystem
         if 'identifier' in codesystem:
             codeschemedesignator = codesystem['identifier'][0]['value']
         else:
             codeschemedesignator = codesystem['url']
         writer = csv.writer(file)
-        writer.writerow(["Attribute Name", "Tag", "Value"])
+        writer.writerow(["Coding Scheme Designator", "Code Value", "Code Meaning"])
         for concept in codesystem['concept']:
             writer.writerow(
                 [codeschemedesignator, concept['code'], concept['display']])

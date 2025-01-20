@@ -38,7 +38,7 @@ VIEWBUILDER = $(PIPENV_RUN) $(PYTHON) ./dent_oip_builder/view_maker.py
 VERSION_FILE  = $(SOURCEDIR)/_VERSION
 GENERATED_TABLES = $(SOURCEDIR)/tables/generated
 SAMPLE_DICOM_FILES = $(SOURCEDIR)/_static/dicom_samples
-VIEW_EXAMPLES = $(SOURCEDIR)/V3_Appendix_A_ViewExamples
+VIEW_EXAMPLES = $(SOURCEDIR)/V3_Appendix/A_ViewExamples
 IMAGES = $(SOURCEDIR)/images
 
 # Put it first so that "make" without argument is like "make help".
