@@ -1,14 +1,14 @@
 .. _device_examples:
 
-Device Examples (Informative)
-=============================
+Appendix C: Device Examples (Informative)
+=========================================
 
 A list of devices used in :ref:`Device Sequence <DeviceSequence>`.
 
 Intraoral Photographic Mirror
 +++++++++++++++++++++++++++++
 
-.. figure:: ../images-static/intraoral_mirror.jpg
+.. figure:: ../../images-static/intraoral_mirror.jpg
     :class: with-border with-shadow float-left
     :align: center
     :scale: 25 
@@ -35,7 +35,7 @@ The following are views which make use of such a device:
 Measuring Ruler
 +++++++++++++++
 
-.. figure:: ../images-static/measuring-ruler.jpg
+.. figure:: ../../images-static/measuring-ruler.jpg
     :class: with-border with-shadow float-left
     :align: center
     :scale: 10
@@ -51,7 +51,7 @@ Use `SCT 102304005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1
 Contraster
 ++++++++++
 
-.. figure:: ../images-static/contraster.jpg
+.. figure:: ../../images-static/contraster.jpg
     :class: with-border with-shadow float-left
     :align: center
     :scale: 10
@@ -68,7 +68,7 @@ Tongue Depressor
 
 .. _tongue_depressor:
 
-.. figure:: ../images-static/tongue_depressor.jpg
+.. figure:: ../../images-static/tongue_depressor.jpg
     :class: with-border with-shadow float-left
     :align: center
     :scale: 100
@@ -81,7 +81,7 @@ Use `SCT 39802000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=
 Coin
 ++++
 
-.. figure:: ../images-static/2023-lincoln-penny-uncirculated-obverse-philadelphia-768x768.jpg
+.. figure:: ../../images-static/2023-lincoln-penny-uncirculated-obverse-philadelphia-768x768.jpg
     :class: with-border with-shadow float-left
     :align: center
     :scale: 10

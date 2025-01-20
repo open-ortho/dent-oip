@@ -1,7 +1,7 @@
 .. _definitions:
 
-Definitions (Informative)
-=========================
+Appendix D: Definitions (Informative)
+=====================================
 
 .. _centric relation:
 .. _centric occlusion:

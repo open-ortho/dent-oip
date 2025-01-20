@@ -58,6 +58,7 @@ Contents
    V3_Appendix/B_ViewSetExamples/index
    V3_Appendix/C_DeviceExamples/03_device_examples
    V3_Appendix/D_Definitions/04_definitions
+   V3_Appendix/99_list_of_codes
 
    bibliography
 

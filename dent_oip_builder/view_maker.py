@@ -114,7 +114,7 @@ def generate_rst_pages():
         This function is very similar to ev_write_rst and has been kept separate on
         purpose, to allow for customization.
         """
-        root = Path("../..")
+        root = Path("../../..")
         static = root/ html_static_path[0]
 
         ds = dcmread(dcm_filename)

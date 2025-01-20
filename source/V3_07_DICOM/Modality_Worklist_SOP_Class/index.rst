@@ -56,7 +56,7 @@ There are three main building blocks of a modality worklist. This explanation wi
    - Two DX (PA and lateral)
    - Eight XC (intraoral and extraoral)
 
-3. :ref:`scheduled_protocol_code`
+3. :ref:`scheduled_protocol_code_sequence`
 
    Each procedure step can include one or more scheduled protocol codes. For example, the PX scheduled procedure step might use the code `89846007 | Orthopantogram (procedure)`, while the XC scheduled procedure step may include codes such as:
    
@@ -66,7 +66,7 @@ There are three main building blocks of a modality worklist. This explanation wi
 
    This section specifies where the different image types defined in ADA Standard 1100 (referred to as views in the standard) can be saved.
 
-4. :ref:`accession_number`
+4. :ref:`mwl_accession_number`
 
    The DICOM Accession Number may be used to identify the patient's appointment. According to IHE RAD-5 Vol1, the Accession Number may group one or more Requested Procedures. In orthodontics, an example situation where this might occur could be when a patient has a Fixed Appliance Initial Visit appointment. This includes both Initial Records before installing the fixed appliance and records after having applied the fixed appliance. In this case, one Requested Procedure, possibly with two Scheduled Procedure Steps (one for XC modality, one for CT modality to capture and record patient state before anything has been done), could be associated with the same Accession Number of a second Requested Procedure. This second Requested Procedure includes only the XC modality to record the status of the oral cavity after the appliance has been installed.
 

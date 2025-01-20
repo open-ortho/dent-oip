@@ -1,4 +1,4 @@
-.. _accession_number:
+.. _mwl_accession_number:
 
 Accession Number (0008,0050)
 ============================
