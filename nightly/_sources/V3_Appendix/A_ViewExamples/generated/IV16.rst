@@ -1,0 +1,22 @@
+
+[IV16] - Intraoral Left Lateral View - Centric Occlusion, Showing Overjet, Without Mirror
+-----------------------------------------------------------------------------------------
+
+.. _IV16:
+.. image:: ../../../images/IV16.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Left Lateral View - Centric Occlusion, Showing Overjet, Without Mirror
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/IV16.dcm>`__
+    
+.. include:: ../IV16_comments.rst
+    
+DICOM header for [IV16]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV16
+   :file: ../../../tables/generated/IV16.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

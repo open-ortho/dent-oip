@@ -1,0 +1,22 @@
+
+[EV31] - 45° Left Profile (subject turns toward observer's left) - Lips Closed, Centric Occlusion
+-------------------------------------------------------------------------------------------------
+
+.. _EV31:
+.. image:: ../../../images/EV31.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of 45° Left Profile (subject turns toward observer's left) - Lips Closed, Centric Occlusion
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/EV31.dcm>`__
+    
+.. include:: ../EV31_comments.rst
+    
+DICOM header for [EV31]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV31
+   :file: ../../../tables/generated/EV31.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

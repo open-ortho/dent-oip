@@ -1,0 +1,22 @@
+
+[IV09] - Intraoral Frontal View - Teeth Apart, Without Mirror
+-------------------------------------------------------------
+
+.. _IV09:
+.. image:: ../../../images/IV09.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Frontal View - Teeth Apart, Without Mirror
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/IV09.dcm>`__
+    
+.. include:: ../IV09_comments.rst
+    
+DICOM header for [IV09]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV09
+   :file: ../../../tables/generated/IV09.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

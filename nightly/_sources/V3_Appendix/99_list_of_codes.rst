@@ -1,7 +1,7 @@
 .. _code selection:
 
-SNOMED Codes 
-============
+Appendix E: SNOMED Codes 
+========================
 
 This section lists the SNOMED codes used and describes the criteria followed when selecting SNOMED-CT codes. This criteria should be followed when making any kind of modification to this document which affects the selection of SNOMED-CT codes.
 

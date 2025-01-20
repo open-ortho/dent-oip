@@ -1,0 +1,22 @@
+
+[EV11] - 45° Right Profile (subject turns toward observer's right) - Lips Closed, Centric Relation
+--------------------------------------------------------------------------------------------------
+
+.. _EV11:
+.. image:: ../../../images/EV11.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of 45° Right Profile (subject turns toward observer's right) - Lips Closed, Centric Relation
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/EV11.dcm>`__
+    
+.. include:: ../EV11_comments.rst
+    
+DICOM header for [EV11]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: EV11
+   :file: ../../../tables/generated/EV11.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    

@@ -14,7 +14,7 @@ Orthodontic Imaging Profile
 Trial Implementation
 ====================================
 
-`DOCX <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20250120012414/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20250120012414/DENT-OIP.pdf>`__
+`DOCX <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20250120234911/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20250120234911/DENT-OIP.pdf>`__
 
 Executive Summary
 -----------------
@@ -54,10 +54,11 @@ Contents
 
    V1_Orthodontic_Imaging_Profile/*
    V3_07_DICOM/*
-   V3_Appendix_A_ViewExamples/index
-   V3_Appendix_B_ViewSetExamples/index
-   V3_Appendix_C_DeviceExamples/03_device_examples
-   V3_Appendix_D_Definitions/04_definitions
+   V3_Appendix/A_ViewExamples/index
+   V3_Appendix/B_ViewSetExamples/index
+   V3_Appendix/C_DeviceExamples/03_device_examples
+   V3_Appendix/D_Definitions/04_definitions
+   V3_Appendix/99_list_of_codes
 
    bibliography
 

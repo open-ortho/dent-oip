@@ -1,0 +1,22 @@
+
+[IV13] - Intraoral Frontal View, showing Tongue Thrust, Without Mirror
+----------------------------------------------------------------------
+
+.. _IV13:
+.. image:: ../../../images/IV13.png
+    :class: with-border
+    :align: center
+    :alt: Line drawing of Intraoral Frontal View, showing Tongue Thrust, Without Mirror
+    
+.. centered:: `Download sample DICOM file <../../../_static/dicom_samples/IV13.dcm>`__
+    
+.. include:: ../IV13_comments.rst
+    
+DICOM header for [IV13]
+::::::::::::::::::::::::::::::::
+
+.. csv-table:: IV13
+   :file: ../../../tables/generated/IV13.csv
+   :widths: 40, 10, 10
+   :header-rows: 1
+    
