@@ -92,7 +92,7 @@ def write_valueset_to_csv(valueset, output_file):
 
 def write_codesystem_to_csv(codesystem, output_file):
     with open(output_file, 'w', newline='', encoding='utf-8') as file:
-        if 'identifier' in codesystem:
+        if hasattr(codesystem, 'identifier') and codesystem.identifier:
             codeschemedesignator = codesystem.identifier[0].value
         else:
             codeschemedesignator = codesystem.url
