@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6.4.4.4. Instance Number (0020,0013) &#8212; DENT-OIP 0.2.7-nightly.20250121000654 documentation</title>
+    <title>6.4.4.4. Instance Number (0020,0013) &#8212; DENT-OIP 0.2.7-nightly.20250121012317 documentation</title>
   
   
   
@@ -39,7 +39,7 @@
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../../_static/documentation_options.js?v=9e492111"></script>
+    <script src="../../../_static/documentation_options.js?v=48636210"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -125,7 +125,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20250121000654 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20250121012317 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -467,9 +467,12 @@
   <section id="instance-number-0020-0013">
 <span id="instance-number"></span><h1><span class="section-number">6.4.4.4. </span>Instance Number (0020,0013)<a class="headerlink" href="#instance-number-0020-0013" title="Link to this heading">#</a></h1>
 <p>See also <a class="reference internal" href="../../Modality_Worklist_SOP_Class/01_Scheduled_Procedure_Step/0040_0100_ScheduledProcedureStepSequence.html#scheduled-protocol-code-sequence"><span class="std std-ref">Scheduled Protocol Code Sequence (0040,0008)</span></a>.</p>
+<p>The below defined schema allows for proper definition, even if different instances of the same image type are required in the same series.</p>
 <ul class="simple">
 <li><p>The Instance Number (0020,0013) is a unique integer for each image in the series. If present, it SHOULD be used to place the different views in the series in the order intended by the acquisition operator or modality.</p></li>
 <li><p>If <a class="reference internal" href="../../Modality_Worklist_SOP_Class/01_Scheduled_Procedure_Step/0040_0100_ScheduledProcedureStepSequence.html#scheduled-protocol-code-sequence"><span class="std std-ref">Scheduled Protocol Code Sequence (0040,0008)</span></a> in the <a class="reference internal" href="../../Modality_Worklist_SOP_Class/01_Scheduled_Procedure_Step/0040_0100_ScheduledProcedureStepSequence.html#scheduledprocedurestepsequence"><span class="std std-ref">Scheduled Procedure Step Sequence (0040,0100)</span></a> are present, the Instance Number SHALL be considered as a pointer to refer to the index position of the Scheduled Protocol Code Sequence. This means that with the combination of the Scheduled Protocol Code Sequence and the Instance Number, the type of image can be identified.</p></li>
+<li><p>The actual position/index SHALL be InstanceNumber//100 (integer division, dropping remainder). 100-199:1, 200-299:2, etc.</p></li>
+<li><p>Is a String Integer and SHALL thus be zero padded to a total of five digits. Ex: “00100” refers to first instance of the type defined by the first scheduled protocol code in the sequence. “00203” would be the fourth instance of the second scheduled protocol code in the sequence.</p></li>
 </ul>
 </section>
 
