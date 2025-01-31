@@ -15,3 +15,4 @@ views.db
 _VERSION
 Pipfile
 Pipfile.lock
+*.log
