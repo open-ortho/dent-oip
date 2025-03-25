@@ -3,6 +3,22 @@
 IOD Definitions
 ===============
 
+Introduction
+-----------
+
+The Basic Structured Display IOD is a DICOM Information Object Definition that specifies a fixed, deterministic layout of images and related content that must be presented to the viewer exactly as defined. It provides a mechanism to create reproducible presentations of images, graphics, text and other renderable content.
+
+In orthodontics, Basic Structured Displays can be used to exchange images with other medical providers, software systems or patients while ensuring they are displayed in the same way. This can be achieved by attaching, along with the actual image data (like the :ref:`VL Photographic Image IOD <vl_photographic_image_iod_definitions>`), a Structured Display IOD that defines which of the VL Image IODs should go in which image box, how they should be arranged, and what annotations should be displayed.
+
+Basic Structured Displays may be constructed from a :ref:`Hanging Protocol IOD <hanging_protocol_iod_definitions>`, which acts as a "template", as it defines generically, which type of image should go in which box, the size of the boxes, and the layout of the boxes. 
+
+Basic Structured Displays are particularly valuable:
+
+* for saving a specific layout and ensuring that layout persists. Every time the user asks the system to show the images, they will be shown in the same way;
+* for exchanging images with other systems or providers, ensuring that the images are displayed in the same way on the receiving end;
+
+
+
 .. list-table:: Usage of DICOM Modules in Basic Structured Display
    :header-rows: 1
    :widths: 15 25 15 40 15
