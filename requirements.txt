@@ -2,7 +2,7 @@ sphinx
 sphinx-book-theme
 docxbuilder
 dicom4ortho==0.3.12
-pydicom
+pydicom<3.0.0
 pynetdicom
 requests
 fhir.resources
