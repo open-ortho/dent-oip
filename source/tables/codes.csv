@@ -1,12 +1,12 @@
 keyword,code,codeset,meaning,used for,notes
 FunctionalConditionPresentDuringAcquisition,130324,DCM,Functional condition present during acquisition,AcquisitionContextSequence^FunctionalConditionPresentDuringAcquisition,
-OrthognathicFunctionalConditions,ZZZZZZ,DCM,Orthognathic Functional Conditions,AcquisitionContextSequence^OrthognathicFunctionalConditions,
-mouth_open,262016004,SCT,Open mouth (finding),AcquisitionContextSequence^OrthognathicFunctionalConditions,
-mouth_partially_open,1332210001,SCT,Mouth in partially open position,AcquisitionContextSequence^OrthognathicFunctionalConditions,
-lips_relaxed,1336028006,SCT,Upper and lower lips in relaxed position,AcquisitionContextSequence^OrthognathicFunctionalConditions,
-lips_closed,1336029003,SCT,Upper and lower lips in closed position,AcquisitionContextSequence^OrthognathicFunctionalConditions,
-mpf,1336026005,SCT,Mandible postured forward (record artifact),AcquisitionContextSequence^OrthognathicFunctionalConditions,Still waiting for SNOMED-CT code. Should be an observable entity or finding.
-smile,225583004,SCT,Smiles (finding),AcquisitionContextSequence^OrthognathicFunctionalConditions,
+OrthognathicFunctionalCondition,130325,DCM,Orthognathic Functional Condition,AcquisitionContextSequence^OrthognathicFunctionalCondition,
+mouth_open,262016004,SCT,Open mouth (finding),AcquisitionContextSequence^OrthognathicFunctionalCondition,
+mouth_partially_open,1332210001,SCT,Mouth in partially open position,AcquisitionContextSequence^OrthognathicFunctionalCondition,
+lips_relaxed,1336028006,SCT,Upper and lower lips in relaxed position,AcquisitionContextSequence^OrthognathicFunctionalCondition,
+lips_closed,1336029003,SCT,Upper and lower lips in closed position,AcquisitionContextSequence^OrthognathicFunctionalCondition,
+mpf,1336026005,SCT,Mandible postured forward (record artifact),AcquisitionContextSequence^OrthognathicFunctionalCondition,Still waiting for SNOMED-CT code. Should be an observable entity or finding.
+smile,225583004,SCT,Smiles (finding),AcquisitionContextSequence^OrthognathicFunctionalCondition,
 FindingByInspection,118243007,SCT,Finding By Inspection,AcquisitionContextSequence^FindingByInspection,
 skin_mark,276470008,SCT,Skin mark (disorder),AcquisitionContextSequence^FindingByInspection,
 slap_mark,281689009,SCT,Slap mark (disorder),AcquisitionContextSequence^FindingByInspection,
