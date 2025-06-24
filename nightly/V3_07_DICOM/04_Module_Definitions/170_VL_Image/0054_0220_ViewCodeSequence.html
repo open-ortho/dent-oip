@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6.4.6.1. View Code Sequence (0054,0220) &#8212; DENT-OIP 0.2.7-nightly.20250624204530 documentation</title>
+    <title>6.4.6.1. View Code Sequence (0054,0220) &#8212; DENT-OIP 0.2.7-nightly.20250624235335 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../../_static/documentation_options.js?v=a3f4b4f6"></script>
+    <script src="../../../_static/documentation_options.js?v=639e7cfb"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20250624204530 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20250624235335 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -202,6 +202,7 @@
 </details></li>
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">6.4.6. VL Image</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l4 current active"><a class="current reference internal" href="#">6.4.6.1. View Code Sequence (0054,0220)</a></li>
+
 
 </ul>
 </details></li>
@@ -480,6 +481,12 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6.4.6.1. View Code Sequence (0054,0220)</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-modifier-code-sequence-0054-0222">6.4.6.2. View Modifier Code Sequence (0054,0222)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-orthodontic-image-type-in-dicom-implementation-specification">6.4.6.3. Storing Orthodontic Image Type in DICOM: Implementation Specification</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">6.4.6.3.1. Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">6.4.6.3.2. Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">6.4.6.3.3. References</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -696,6 +703,95 @@ document.write(`
 </table>
 </div>
 </section>
+<section id="storing-orthodontic-image-type-in-dicom-implementation-specification">
+<h1><span class="section-number">6.4.6.3. </span>Storing Orthodontic Image Type in DICOM: Implementation Specification<a class="headerlink" href="#storing-orthodontic-image-type-in-dicom-implementation-specification" title="Link to this heading">#</a></h1>
+<section id="overview">
+<h2><span class="section-number">6.4.6.3.1. </span>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
+<p>This specification describes the requirements for storing the image type of an orthodontic photograph in a DICOM Visible Light (VL) object, using a private extension to the standard ViewCodeSequence. It is intended for developers implementing IHE or similar dental/orthodontic imaging profiles.</p>
+</section>
+<section id="requirements">
+<h2><span class="section-number">6.4.6.3.2. </span>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>ViewCodeSequence Usage</strong></p>
+<ul class="simple">
+<li><p>The DICOM attribute <code class="docutils literal notranslate"><span class="pre">ViewCodeSequence</span></code> (Tag: (0054,0220)) SHALL be used to encode the image type for orthodontic photographs.</p></li>
+<li><p>Only a single Item SHALL be present in the <code class="docutils literal notranslate"><span class="pre">ViewCodeSequence</span></code> for each image type code.</p></li>
+</ul>
+</li>
+<li><p><strong>Context Identifier (CID) and Private Extension</strong></p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">ContextIdentifier</span></code> (Tag: (0008,010F)) of the code item in <code class="docutils literal notranslate"><span class="pre">ViewCodeSequence</span></code> SHALL be set to the value <code class="docutils literal notranslate"><span class="pre">4063</span></code> (CID 4063, “VL Dental View”) for standard codes.</p></li>
+<li><p>For private or proprietary codes, the <code class="docutils literal notranslate"><span class="pre">ContextIdentifier</span></code> SHALL be set to <code class="docutils literal notranslate"><span class="pre">4063</span></code> with extension attributes as described below.</p></li>
+</ul>
+</li>
+<li><p><strong>Context Group Extension Attributes</strong></p>
+<ul class="simple">
+<li><p>If a code is not part of the standard CID 4063, the following attributes SHALL be present in the code item:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">ContextGroupExtensionFlag</span></code> (Tag: (0008,010B)) = <code class="docutils literal notranslate"><span class="pre">'Y'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ContextGroupLocalVersion</span></code> (Tag: (0008,0107)) = the current date in <code class="docutils literal notranslate"><span class="pre">YYYYMMDD</span></code> format</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ContextGroupExtensionCreatorUID</span></code> (Tag: (0008,010D)) = a UID identifying the entity responsible for the code (see below)</p></li>
+</ul>
+</li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">ContextGroupExtensionCreatorUID</span></code>:
+- SHALL be set by the application or site generating the code.</p></li>
+</ul>
+</li>
+<li><p><strong>Code Triplet</strong></p>
+<ul class="simple">
+<li><p>Each code item in <code class="docutils literal notranslate"><span class="pre">ViewCodeSequence</span></code> SHALL include:
+- <code class="docutils literal notranslate"><span class="pre">CodeValue</span></code> (Tag: (0008,0100)): The code identifier (max 16 chars, or use Long/URN Code Value as appropriate)
+- <code class="docutils literal notranslate"><span class="pre">CodingSchemeDesignator</span></code> (Tag: (0008,0102)): The coding scheme (e.g., <code class="docutils literal notranslate"><span class="pre">99ORG</span></code> for private codes)
+- <code class="docutils literal notranslate"><span class="pre">CodeMeaning</span></code> (Tag: (0008,0104)): Human-readable meaning of the code</p></li>
+</ul>
+</li>
+<li><p><strong>Setting and Retrieving the Code</strong></p>
+<ul class="simple">
+<li><p>When setting the image type code, the implementation SHALL:
+- Set or update the code item in <code class="docutils literal notranslate"><span class="pre">ViewCodeSequence</span></code> matching both <code class="docutils literal notranslate"><span class="pre">ContextIdentifier</span></code> and <code class="docutils literal notranslate"><span class="pre">ContextGroupExtensionFlag</span></code>.
+- If no such item exists, append a new item.</p></li>
+<li><p>When retrieving the image type code, the implementation SHALL:
+- Return the first item in <code class="docutils literal notranslate"><span class="pre">ViewCodeSequence</span></code> where <code class="docutils literal notranslate"><span class="pre">ContextIdentifier</span></code> and <code class="docutils literal notranslate"><span class="pre">ContextGroupExtensionFlag</span></code> match the expected values.</p></li>
+</ul>
+</li>
+<li><p><strong>Interoperability</strong></p>
+<ul class="simple">
+<li><p>Receivers of the DICOM object SHOULD recognize and preserve private extension codes, including all extension attributes.</p></li>
+<li><p>Receivers MAY ignore codes with unknown <code class="docutils literal notranslate"><span class="pre">ContextGroupExtensionCreatorUID</span></code>, but SHALL keep them.</p></li>
+</ul>
+</li>
+<li><p><strong>Example</strong></p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="o">=</span> <span class="n">Dataset</span><span class="p">()</span>
+<span class="n">code</span><span class="o">.</span><span class="n">CodeValue</span> <span class="o">=</span> <span class="s1">&#39;EV20&#39;</span>
+<span class="n">code</span><span class="o">.</span><span class="n">CodingSchemeDesignator</span> <span class="o">=</span> <span class="s1">&#39;99OPOR&#39;</span>
+<span class="n">code</span><span class="o">.</span><span class="n">CodeMeaning</span> <span class="o">=</span> <span class="s1">&#39;Extraoral, Full Face, Full Smile, Centric Relation&#39;</span>
+<span class="n">code</span><span class="o">.</span><span class="n">ContextIdentifier</span> <span class="o">=</span> <span class="s1">&#39;4063&#39;</span>
+<span class="n">code</span><span class="o">.</span><span class="n">ContextGroupExtensionFlag</span> <span class="o">=</span> <span class="s1">&#39;Y&#39;</span>
+<span class="n">code</span><span class="o">.</span><span class="n">ContextGroupLocalVersion</span> <span class="o">=</span> <span class="s1">&#39;20240625&#39;</span>
+<span class="n">code</span><span class="o">.</span><span class="n">ContextGroupExtensionCreatorUID</span> <span class="o">=</span> <span class="s1">&#39;1.2.826.0.1.3680043.10.1234&#39;</span>
+
+<span class="n">ds</span><span class="o">.</span><span class="n">ViewCodeSequence</span> <span class="o">=</span> <span class="n">Sequence</span><span class="p">([</span><span class="n">code</span><span class="p">])</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="8">
+<li><p><strong>Compliance</strong></p>
+<ul class="simple">
+<li><p>Implementations SHALL follow this specification for all orthodontic photographs requiring non-standard image type codes.</p></li>
+<li><p>Implementations SHOULD provide a mechanism for the application to specify the <code class="docutils literal notranslate"><span class="pre">ContextGroupExtensionCreatorUID</span></code>.</p></li>
+<li><p>Implementations MAY provide a fallback UID for development or testing, but SHALL warn the user.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="references">
+<h2><span class="section-number">6.4.6.3.3. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>DICOM PS3.3, PS3.16 (2025a)</p></li>
+<li><p>DICOM Change Proposal CP-1570</p></li>
+</ul>
+</section>
+</section>
 
 
                 </article>
@@ -744,6 +840,12 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6.4.6.1. View Code Sequence (0054,0220)</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-modifier-code-sequence-0054-0222">6.4.6.2. View Modifier Code Sequence (0054,0222)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-orthodontic-image-type-in-dicom-implementation-specification">6.4.6.3. Storing Orthodontic Image Type in DICOM: Implementation Specification</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">6.4.6.3.1. Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">6.4.6.3.2. Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">6.4.6.3.3. References</a></li>
+</ul>
+</li>
 </ul>
 
   </nav></div>

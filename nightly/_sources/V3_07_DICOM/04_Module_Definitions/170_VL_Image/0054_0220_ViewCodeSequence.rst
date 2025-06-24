@@ -168,3 +168,82 @@ Photographs in orthodontics are not always taken directly: sometimes there is a 
       - `789130005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=789130005&edition=MAIN&release=&languages=en>`__
       - Photographic image with mouth partially opened position and teeth apart
       - 
+
+Storing Orthodontic Image Type in DICOM: Implementation Specification
+=====================================================================
+
+Overview
+--------
+
+This specification describes the requirements for storing the image type of an orthodontic photograph in a DICOM Visible Light (VL) object, using a private extension to the standard ViewCodeSequence. It is intended for developers implementing IHE or similar dental/orthodontic imaging profiles.
+
+Requirements
+------------
+
+1. **ViewCodeSequence Usage**
+
+   - The DICOM attribute ``ViewCodeSequence`` (Tag: (0054,0220)) SHALL be used to encode the image type for orthodontic photographs.
+   - Only a single Item SHALL be present in the ``ViewCodeSequence`` for each image type code.
+
+2. **Context Identifier (CID) and Private Extension**
+
+   - The ``ContextIdentifier`` (Tag: (0008,010F)) of the code item in ``ViewCodeSequence`` SHALL be set to the value ``4063`` (CID 4063, "VL Dental View") for standard codes.
+   - For private or proprietary codes, the ``ContextIdentifier`` SHALL be set to ``4063`` with extension attributes as described below.
+
+3. **Context Group Extension Attributes**
+
+   - If a code is not part of the standard CID 4063, the following attributes SHALL be present in the code item:
+   
+     - ``ContextGroupExtensionFlag`` (Tag: (0008,010B)) = ``'Y'``
+     - ``ContextGroupLocalVersion`` (Tag: (0008,0107)) = the current date in ``YYYYMMDD`` format
+     - ``ContextGroupExtensionCreatorUID`` (Tag: (0008,010D)) = a UID identifying the entity responsible for the code (see below)
+   
+   - The ``ContextGroupExtensionCreatorUID``:
+     - SHALL be set by the application or site generating the code.
+
+4. **Code Triplet**
+
+   - Each code item in ``ViewCodeSequence`` SHALL include:
+     - ``CodeValue`` (Tag: (0008,0100)): The code identifier (max 16 chars, or use Long/URN Code Value as appropriate)
+     - ``CodingSchemeDesignator`` (Tag: (0008,0102)): The coding scheme (e.g., ``99ORG`` for private codes)
+     - ``CodeMeaning`` (Tag: (0008,0104)): Human-readable meaning of the code
+
+5. **Setting and Retrieving the Code**
+
+   - When setting the image type code, the implementation SHALL:
+     - Set or update the code item in ``ViewCodeSequence`` matching both ``ContextIdentifier`` and ``ContextGroupExtensionFlag``.
+     - If no such item exists, append a new item.
+   - When retrieving the image type code, the implementation SHALL:
+     - Return the first item in ``ViewCodeSequence`` where ``ContextIdentifier`` and ``ContextGroupExtensionFlag`` match the expected values.
+
+6. **Interoperability**
+
+   - Receivers of the DICOM object SHOULD recognize and preserve private extension codes, including all extension attributes.
+   - Receivers MAY ignore codes with unknown ``ContextGroupExtensionCreatorUID``, but SHALL keep them.
+
+7. **Example**
+
+.. code-block:: python
+
+   code = Dataset()
+   code.CodeValue = 'EV20'
+   code.CodingSchemeDesignator = '99OPOR'
+   code.CodeMeaning = 'Extraoral, Full Face, Full Smile, Centric Relation'
+   code.ContextIdentifier = '4063'
+   code.ContextGroupExtensionFlag = 'Y'
+   code.ContextGroupLocalVersion = '20240625'
+   code.ContextGroupExtensionCreatorUID = '1.2.826.0.1.3680043.10.1234'
+
+   ds.ViewCodeSequence = Sequence([code])
+
+8. **Compliance**
+
+   - Implementations SHALL follow this specification for all orthodontic photographs requiring non-standard image type codes.
+   - Implementations SHOULD provide a mechanism for the application to specify the ``ContextGroupExtensionCreatorUID``.
+   - Implementations MAY provide a fallback UID for development or testing, but SHALL warn the user.
+
+References
+----------
+
+- DICOM PS3.3, PS3.16 (2025a)
+- DICOM Change Proposal CP-1570
