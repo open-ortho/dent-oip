@@ -143,6 +143,4 @@ In the orthodontic domain, it is expected for the photographs to be taken in a
 specific sequence in order to optimize the workflow. This order can be defined
 in the Scheduled Procedure Code Sequence, such that image acquisition devices
 (such as DICOM enabled cameras) can present the operator with the images in the
-same order. The Instance Number of each image, can then be used to refer
-to the index position of the Scheduled Procedure Code Sequence in the series.
-See :ref:`instance_number` for more information.
+same order. See :ref:`instance_number` for more information.
