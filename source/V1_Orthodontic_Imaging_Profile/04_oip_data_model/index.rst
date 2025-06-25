@@ -115,11 +115,9 @@ what the original intention of that image was. The image type code is therefore
 well suited to be used as a protocol for a scheduled procedure, and represents
 what the provider has scheduled before the acquisition of the image. Then, once
 the photograph is taken, the DICOM tags are used to define what was actually
-taken.  The resulting DICOM image would thus contain both the scheduled protocol
+taken. The resulting DICOM image would thus contain both the scheduled protocol
 code, as well as the anatomical and view information in the DICOM tags. In the
 domain of orthodontics, these two should, for the vast majority of cases, match.
-It should thus be safe to make use of the protocol code to identify the image
-type.
 
 When the provider schedules for an appointment, once the patient has arrived for
 that appointment, the practice management system can trigger the generation of a
@@ -135,12 +133,13 @@ type of image (instance). Instead, it must contain all the views that are part
 of the same series. This is because the Scheduled Procedure Code Sequence is
 shared by all instances in the series. Then Instance Number (0020,0013), which
 is part of the General Image module, is used to differentiate between the
-different views in the series. The Instance Number is a unique integer for each
-image in the series which can correspond to the index position of the Requested
-Procedure Code in the Requested Procedure Code Sequence.
+different views in the series.
 
 In the orthodontic domain, it is expected for the photographs to be taken in a
 specific sequence in order to optimize the workflow. This order can be defined
 in the Scheduled Procedure Code Sequence, such that image acquisition devices
 (such as DICOM enabled cameras) can present the operator with the images in the
-same order. See :ref:`instance_number` for more information.
+same order. Once the image is acquired, the Instance Number, a unique integer
+for each image in the series, can be used to preserve the same order as the on
+in the Requested Procedure Code Sequence. See :ref:`instance_number` for more
+information.

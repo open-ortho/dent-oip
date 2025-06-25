@@ -172,10 +172,8 @@ Photographs in orthodontics are not always taken directly: sometimes there is a 
 Storing Orthodontic Image Type in DICOM: Implementation Specification
 =====================================================================
 
-Overview
---------
+This specification describes the requirements for storing the image type of an orthodontic photograph as a code in a DICOM Visible Light (VL) object. While the orthodontic image can be fully represented using a combination of various DICOM attributes, there exist many situations where it is more convenient to encode the image type in a single code.
 
-This specification describes the requirements for storing the image type of an orthodontic photograph in a DICOM Visible Light (VL) object, using a private extension to the standard ViewCodeSequence. It is intended for developers implementing IHE or similar dental/orthodontic imaging profiles.
 
 Requirements
 ------------
