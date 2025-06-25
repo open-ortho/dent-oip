@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6.4.6.1. View Code Sequence (0054,0220) &#8212; DENT-OIP 0.2.7-nightly.20250624235438 documentation</title>
+    <title>6.4.6.1. View Code Sequence (0054,0220) &#8212; DENT-OIP 0.2.7-nightly.20250625001615 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../../_static/documentation_options.js?v=1e257c39"></script>
+    <script src="../../../_static/documentation_options.js?v=5a950973"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20250624235438 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20250625001615 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -482,9 +482,8 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6.4.6.1. View Code Sequence (0054,0220)</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-modifier-code-sequence-0054-0222">6.4.6.2. View Modifier Code Sequence (0054,0222)</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-orthodontic-image-type-in-dicom-implementation-specification">6.4.6.3. Storing Orthodontic Image Type in DICOM: Implementation Specification</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">6.4.6.3.1. Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">6.4.6.3.2. Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">6.4.6.3.3. References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">6.4.6.3.1. Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">6.4.6.3.2. References</a></li>
 </ul>
 </li>
 </ul>
@@ -705,12 +704,9 @@ document.write(`
 </section>
 <section id="storing-orthodontic-image-type-in-dicom-implementation-specification">
 <h1><span class="section-number">6.4.6.3. </span>Storing Orthodontic Image Type in DICOM: Implementation Specification<a class="headerlink" href="#storing-orthodontic-image-type-in-dicom-implementation-specification" title="Link to this heading">#</a></h1>
-<section id="overview">
-<h2><span class="section-number">6.4.6.3.1. </span>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<p>This specification describes the requirements for storing the image type of an orthodontic photograph in a DICOM Visible Light (VL) object, using a private extension to the standard ViewCodeSequence. It is intended for developers implementing IHE or similar dental/orthodontic imaging profiles.</p>
-</section>
+<p>This specification describes the requirements for storing the image type of an orthodontic photograph as a code in a DICOM Visible Light (VL) object. While the orthodontic image can be fully represented using a combination of various DICOM attributes, there exist many situations where it is more convenient to encode the image type in a single code.</p>
 <section id="requirements">
-<h2><span class="section-number">6.4.6.3.2. </span>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.4.6.3.1. </span>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p><strong>ViewCodeSequence Usage</strong></p>
 <ul class="simple">
@@ -785,7 +781,7 @@ document.write(`
 </ol>
 </section>
 <section id="references">
-<h2><span class="section-number">6.4.6.3.3. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">6.4.6.3.2. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>DICOM PS3.3, PS3.16 (2025a)</p></li>
 <li><p>DICOM Change Proposal CP-1570</p></li>
@@ -841,9 +837,8 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6.4.6.1. View Code Sequence (0054,0220)</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-modifier-code-sequence-0054-0222">6.4.6.2. View Modifier Code Sequence (0054,0222)</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-orthodontic-image-type-in-dicom-implementation-specification">6.4.6.3. Storing Orthodontic Image Type in DICOM: Implementation Specification</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">6.4.6.3.1. Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">6.4.6.3.2. Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">6.4.6.3.3. References</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">6.4.6.3.1. Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">6.4.6.3.2. References</a></li>
 </ul>
 </li>
 </ul>
