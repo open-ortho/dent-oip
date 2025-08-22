@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6.7.3.2. Requested Procedure &#8212; DENT-OIP 0.2.7-nightly.20250714065212 documentation</title>
+    <title>6.7.3.2. Requested Procedure &#8212; DENT-OIP 0.2.7-nightly.20250822181001 documentation</title>
   
   
   
@@ -36,14 +36,14 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../../_static/documentation_options.js?v=9686ae2e"></script>
+    <script src="../../../_static/documentation_options.js?v=f1f755d2"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'V3_07_DICOM/07_Modality_Worklist_SOP_Class/02_Requested_Procedure/index';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="6.7.3.2.1. Requested Procedure Code Sequence (0032,1064)" href="0032_1064_RequestedProcedureCodeSequence.html" />
+    <link rel="next" title="6.7.3.3. Imaging Service Request" href="../03_Imaging_Service_Request/index.html" />
     <link rel="prev" title="6.7.3.1.1. Scheduled Procedure Step Sequence (0040,0100)" href="../01_Scheduled_Procedure_Step/0040_0100_ScheduledProcedureStepSequence.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20250714065212 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20250822181001 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -171,7 +171,9 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../04_Module_Definitions/040_Patient_Study/index.html">6.4.2. Patient Study</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../04_Module_Definitions/040_Patient_Study/0032_1066_reason_for_visit.html">6.4.2.1. Reason For Visit (0032,1066)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../04_Module_Definitions/040_Patient_Study/0032_1066_reason_for_visit.html">6.4.2.1. Reason For Visit</a></li>
+
+
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../04_Module_Definitions/100_Acquisition_Context/index.html">6.4.3. Acquisition Context</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -220,10 +222,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../01_Scheduled_Procedure_Step/0040_0100_ScheduledProcedureStepSequence.html">6.7.3.1.1. Scheduled Procedure Step Sequence (0040,0100)</a></li>
 </ul>
 </details></li>
-<li class="toctree-l3 current active has-children"><a class="current reference internal" href="#">6.7.3.2. Requested Procedure</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="0032_1064_RequestedProcedureCodeSequence.html">6.7.3.2.1. Requested Procedure Code Sequence (0032,1064)</a></li>
-</ul>
-</details></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">6.7.3.2. Requested Procedure</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../03_Imaging_Service_Request/index.html">6.7.3.3. Imaging Service Request</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="../03_Imaging_Service_Request/0008_0050_accession_number.html">6.7.3.3.1. Accession Number (0008,0050)</a></li>
 </ul>
@@ -456,7 +455,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -472,6 +473,17 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requested-procedure-comments-0040-1040">6.7.3.2.1. Requested Procedure Comments (0040,1040)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requested-procedure-description-0032-1060">6.7.3.2.2. Requested Procedure Description (0032,1060)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requested-procedure-code-sequence-0032-1064">6.7.3.2.3. Requested Procedure Code Sequence (0032,1064)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requested-procedure-id-0040-1001">6.7.3.2.4. Requested Procedure ID (0040,1001)</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -483,11 +495,39 @@ document.write(`
                   
   <section id="requested-procedure">
 <span id="id1"></span><h1><span class="section-number">6.7.3.2. </span>Requested Procedure<a class="headerlink" href="#requested-procedure" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="0032_1064_RequestedProcedureCodeSequence.html">6.7.3.2.1. Requested Procedure Code Sequence (0032,1064)</a></li>
+<p>A Requested Procedure can contain Scheduled Procedure Steps (0040,0100) of different modalities. It is therefore NOT modality-specific.</p>
+<p>It is important to differentiate between Requested Procedure Description (0032,1060), which is used in the Modality Worklist to describe what images SHALL be taken, and Reason For Visit (0032,1066/0032,1067), which reflects the appointment or procedure type from the scheduling system, used in the IOD. For details on Reason For Visit, see <a class="reference internal" href="../../04_Module_Definitions/040_Patient_Study/0032_1066_reason_for_visit.html#reason-for-visit"><span class="std std-ref">Reason For Visit</span></a>.</p>
+<section id="requested-procedure-comments-0040-1040">
+<span id="requestedprocedurecomments"></span><h2><span class="section-number">6.7.3.2.1. </span>Requested Procedure Comments (0040,1040)<a class="headerlink" href="#requested-procedure-comments-0040-1040" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>This attribute MAY be used to provide additional comments or instructions related to the requested procedure.</p></li>
+<li><p>Examples include a related field from the PMS, patient-specific notes, or clarifications for the imaging staff.</p></li>
 </ul>
-</div>
+</section>
+<section id="requested-procedure-description-0032-1060">
+<span id="requestedproceduredescription"></span><h2><span class="section-number">6.7.3.2.2. </span>Requested Procedure Description (0032,1060)<a class="headerlink" href="#requested-procedure-description-0032-1060" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>(0032,1060) SHALL be used in the Modality Worklist to describe what kind of images should be taken. Examples include “simple extra-oral photographs”, “Initial records”, or other descriptions that define the imaging requirements for the appointment.</p></li>
+<li><p>This MAY be derived from the appointment type in the PMS, but SHOULD reflect the actual images to be acquired during the appointment.</p></li>
+<li><p>If the PMS only provides free text for the reason for the appointment, then usage of (0032,1060) alone SHALL be allowed.</p></li>
+</ul>
+</section>
+<section id="requested-procedure-code-sequence-0032-1064">
+<span id="requestedprocedurecodesequence"></span><h2><span class="section-number">6.7.3.2.3. </span>Requested Procedure Code Sequence (0032,1064)<a class="headerlink" href="#requested-procedure-code-sequence-0032-1064" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>If the PMS uses values from a set, such as those used for billing, or a pre-programmed or customizable list, then (0032,1064) SHALL be used.</p></li>
+<li><p>In this case, (0032,1060) MAY be used with the Code Meaning from this sequence.</p></li>
+<li><p>Multiple items MAY be included in this sequence, provided they describe the same procedure from different coding systems.</p></li>
+</ul>
+</section>
+<section id="requested-procedure-id-0040-1001">
+<span id="requestedprocedureid"></span><h2><span class="section-number">6.7.3.2.4. </span>Requested Procedure ID (0040,1001)<a class="headerlink" href="#requested-procedure-id-0040-1001" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>This attribute SHALL be used to uniquely identify the requested procedure within the system.</p></li>
+<li><p>The value MAY be generated by the PMS or scheduling system and SHOULD be unique for each procedure request.</p></li>
+<li><p>Examples include appointment IDs, procedure request numbers, or other unique identifiers.</p></li>
+</ul>
+</section>
 </section>
 
 
@@ -511,11 +551,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="0032_1064_RequestedProcedureCodeSequence.html"
+       href="../03_Imaging_Service_Request/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6.7.3.2.1. </span>Requested Procedure Code Sequence (0032,1064)</p>
+        <p class="prev-next-title"><span class="section-number">6.7.3.3. </span>Imaging Service Request</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -525,6 +565,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requested-procedure-comments-0040-1040">6.7.3.2.1. Requested Procedure Comments (0040,1040)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requested-procedure-description-0032-1060">6.7.3.2.2. Requested Procedure Description (0032,1060)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requested-procedure-code-sequence-0032-1064">6.7.3.2.3. Requested Procedure Code Sequence (0032,1064)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requested-procedure-id-0040-1001">6.7.3.2.4. Requested Procedure ID (0040,1001)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6.4.2.1. Reason For Visit (0032,1066) &#8212; DENT-OIP 0.2.7-nightly.20250714065212 documentation</title>
+    <title>6.4.2.1. Reason For Visit &#8212; DENT-OIP 0.2.7-nightly.20250822181001 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../../_static/documentation_options.js?v=9686ae2e"></script>
+    <script src="../../../_static/documentation_options.js?v=f1f755d2"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20250714065212 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20250822181001 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -171,7 +171,9 @@
 </ul>
 </details></li>
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">6.4.2. Patient Study</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l4 current active"><a class="current reference internal" href="#">6.4.2.1. Reason For Visit (0032,1066)</a></li>
+<li class="toctree-l4 current active"><a class="current reference internal" href="#">6.4.2.1. Reason For Visit</a></li>
+
+
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../100_Acquisition_Context/index.html">6.4.3. Acquisition Context</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -220,10 +222,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/01_Scheduled_Procedure_Step/0040_0100_ScheduledProcedureStepSequence.html">6.7.3.1.1. Scheduled Procedure Step Sequence (0040,0100)</a></li>
 </ul>
 </details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/02_Requested_Procedure/index.html">6.7.3.2. Requested Procedure</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/02_Requested_Procedure/0032_1064_RequestedProcedureCodeSequence.html">6.7.3.2.1. Requested Procedure Code Sequence (0032,1064)</a></li>
-</ul>
-</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/02_Requested_Procedure/index.html">6.7.3.2. Requested Procedure</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/03_Imaging_Service_Request/index.html">6.7.3.3. Imaging Service Request</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/03_Imaging_Service_Request/0008_0050_accession_number.html">6.7.3.3.1. Accession Number (0008,0050)</a></li>
 </ul>
@@ -456,7 +455,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -467,11 +468,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Reason For Visit (0032,1066)</h1>
+    <h1>Reason For Visit</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6.4.2.1. Reason For Visit</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reason-for-visit-code-sequence-0032-1067">6.4.2.2. Reason For Visit Code Sequence (0032,1067)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reason-for-visit-0032-1066">6.4.2.3. Reason For Visit (0032,1066)</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -481,10 +493,25 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="reason-for-visit-0032-1066">
-<span id="reason-for-visit"></span><h1><span class="section-number">6.4.2.1. </span>Reason For Visit (0032,1066)<a class="headerlink" href="#reason-for-visit-0032-1066" title="Link to this heading">#</a></h1>
-<p>Reason for visit is an optional tag that would typically come from the appointment type of the software that is managing appointments.</p>
-<p>This tag can contain a character string that may contain one or more paragraphs, and is considered as “unlimited”. The actual limit is two bytes shy of 4GB. Refer to <a class="reference external" href="https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_6.2.html">DICOM Value Representation (VR)</a> for more details.</p>
+  <section id="reason-for-visit">
+<span id="id1"></span><h1><span class="section-number">6.4.2.1. </span>Reason For Visit<a class="headerlink" href="#reason-for-visit" title="Link to this heading">#</a></h1>
+<p>In orthodontics, the reason for a visit is typically obtained from the Practice Management System (PMS) and is associated with an appointment. Examples include “Initial Consultation”, “Follow-up”, “Debanding”, or “Adjustment”. These values represent the reason for the patient’s visit and do not necessarily describe any imaging-specific procedures.</p>
+<p>This differs from Requested Procedure Description (0032,1060), which is used in the Modality Worklist to describe the image-specific procedure to be performed. See <a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/02_Requested_Procedure/index.html#requested-procedure"><span class="std std-ref">Requested Procedure</span></a>.</p>
+</section>
+<section id="reason-for-visit-code-sequence-0032-1067">
+<h1><span class="section-number">6.4.2.2. </span>Reason For Visit Code Sequence (0032,1067)<a class="headerlink" href="#reason-for-visit-code-sequence-0032-1067" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>If the PMS uses values from a set, such as those used for billing, or a pre-programmed or customizable list, then (0032,1067) SHALL be used.</p></li>
+<li><p>If the PMS only provides free text, (0032,1066) MAY be used instead.</p></li>
+<li><p>This sequence allows multiple codes, but for orthodontic visits, typically only one code is used.</p></li>
+</ul>
+</section>
+<section id="reason-for-visit-0032-1066">
+<h1><span class="section-number">6.4.2.3. </span>Reason For Visit (0032,1066)<a class="headerlink" href="#reason-for-visit-0032-1066" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>When a coded value from the PMS is not available, (0032,1066) MAY be used alone. This MAY occur when the PMS only provides free text for the appointment type.</p></li>
+<li><p>This attribute can contain a character string that MAY include one or more paragraphs, and is considered “unlimited” in length. The actual limit is two bytes less than 4GB. Refer to <a class="reference external" href="https://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_6.2.html">DICOM Value Representation (VR)</a> for more details.</p></li>
+</ul>
 </section>
 
 
@@ -522,6 +549,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6.4.2.1. Reason For Visit</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reason-for-visit-code-sequence-0032-1067">6.4.2.2. Reason For Visit Code Sequence (0032,1067)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reason-for-visit-0032-1066">6.4.2.3. Reason For Visit (0032,1066)</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
