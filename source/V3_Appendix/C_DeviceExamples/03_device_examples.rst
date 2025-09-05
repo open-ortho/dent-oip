@@ -16,7 +16,7 @@ Intraoral Photographic Mirror
 
 A device used to take photographs of areas of the oral cavity which would not be possible because of obstructing anatomy. 
 
-The following are views which make use of such a device: 
+The following are views which may make use of such a device: 
 :ref:`IV-02 <IV02>`
 , :ref:`IV-03 <IV03>`
 , :ref:`IV-04 <IV04>`
@@ -43,7 +43,7 @@ Measuring Ruler
 
 A device placed inside the field of view primarily used to measure overjet. See :ref:`Overjet <overjet>`.
 
-The following are views which make use of such a device: 
+The following are views which may make use of such a device: 
 :ref:`IV-14 <IV14>`
 
 Use `SCT 102304005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=102304005&edition=MAIN&release=&languages=en>`__ for this device.
@@ -59,7 +59,7 @@ Contraster
 
 A device used to prevent soft tissue of the oral cavity from appearing in the field of view. The device is typically flat and comes in different shapes, in order to be placed in the oral cavity behind the teeth to be photographed. The device is also used to keep other soft tissue like cheeks from covering areas of interest, thus serving a dual purpose: retractor and background. 
 
-Any of the intraoral views can be taken with a contraster. 
+Any of the intraoral views may be taken with a contraster. 
 
 Use `SCT 1332163002 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1332163002&edition=MAIN&release=&languages=en>`__ for this device.
 
@@ -76,6 +76,8 @@ Tongue Depressor
 
 A tongue depressor is a tool used in medical practice to depress the tongue to allow for examination of the mouth and throat. In orthodontics it is sometimes used to measure :ref:`occlusal cant <occlusal cant>` by asking the patient to bight on it, then taking a frontal picture. The tilt on the depressor highlights the occlusal cant.
 
+The following are views which make use of such a device: :ref:`EV-39 <EV39>`
+
 Use `SCT 39802000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=39802000&edition=MAIN&release=&languages=en>`__ for this device.
 
 Coin
@@ -89,6 +91,22 @@ Coin
 
 An object most people are familiar with, sometimes placed in the field of view of the image to provide the viewer with a sense of scale/size of the anatomy in the image.
 
-The following are views which make use of such a device: ...
+The coin device may be present in any view.
 
 Use `SCT 1332164008 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1332164008&edition=MAIN&release=&languages=en>`__ for this device.
+
+
+Cheek Retractor
++++++++++++++++
+
+.. figure:: ../../images-static/cheek_retractor.jpg
+    :class: with-border with-shadow float-left
+    :align: center
+    :scale: 10
+    :alt: Photograph of an orthodontic cheek retractor.
+
+A cheek retractor is a device used to hold the cheeks away from the teeth and gums during dental procedures. This allows for better visibility and access to the oral cavity.
+
+Although this device is commonly used for most intraoral views, it is generally not seen in the final photograph. 
+
+Use `SCT 700627006 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=700627006&edition=MAIN&release=&languages=en>`__ when the device is needed for an unusual condition. This code is not needed for routine use of the device.
