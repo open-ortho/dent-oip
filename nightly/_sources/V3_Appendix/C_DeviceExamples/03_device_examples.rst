@@ -99,7 +99,7 @@ Use `SCT 1332164008 <https://browser.ihtsdotools.org/?perspective=full&conceptId
 Cheek Retractor
 +++++++++++++++
 
-.. figure:: ../../images-static/cheek_retractor.jpg
+.. figure:: ../../images-static/retractor_1.jpg
     :class: with-border with-shadow float-left
     :align: center
     :scale: 10
