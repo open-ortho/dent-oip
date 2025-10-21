@@ -95,15 +95,44 @@ The coin device may be present in any view.
 
 Use `SCT 1332164008 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1332164008&edition=MAIN&release=&languages=en>`__ for this device.
 
-
 Cheek Retractor
 +++++++++++++++
 
-.. figure:: ../../images-static/retractor_1.jpg
-    :class: with-border with-shadow float-left
-    :align: center
-    :scale: 10
-    :alt: Photograph of an orthodontic cheek retractor.
+.. |retractor1| image:: ../../images-static/retractor_1.png
+   :class: with-border with-shadow
+   :scale: 10
+   :alt: Photograph of an orthodontic cheek retractor (style 1).
+
+.. |retractor2| image:: ../../images-static/retractor_2.png
+   :class: with-border with-shadow
+   :scale: 10
+   :alt: Photograph of an orthodontic cheek retractor (style 2).
+
+.. |retractor3| image:: ../../images-static/retractor_3.png
+   :class: with-border with-shadow
+   :scale: 10
+   :alt: Photograph of an orthodontic cheek retractor (style 3).
+
+.. raw:: html
+
+   <style>
+     .device-image-row td {
+       background: transparent !important;
+       text-align: center;
+     }
+     .device-image-row img {
+       display: block;
+       margin: 0 auto;
+     }
+   </style>
+
+.. table::
+   :class: device-image-row
+   :align: center
+
+   +--------------+--------------+--------------+
+   | |retractor1| | |retractor2| | |retractor3| |
+   +--------------+--------------+--------------+
 
 A cheek retractor is a device used to hold the cheeks away from the teeth and gums during dental procedures. This allows for better visibility and access to the oral cavity.
 
