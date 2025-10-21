@@ -7,7 +7,7 @@ To ensure images are presented in a specific sequence, set the Instance Number
 (0020,0013) for each image according to the desired order. 
 
 Examples 
-----------------------
+--------
 
 For example, if you have a series of intraoral photographs, assign Instance
 Numbers incrementally:
