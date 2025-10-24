@@ -139,3 +139,16 @@ A cheek retractor is a device used to hold the cheeks away from the teeth and gu
 Although this device is commonly used for most intraoral views, it is generally not seen in the final photograph. 
 
 Use `SCT 700627006 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=700627006&edition=MAIN&release=&languages=en>`__ when the device is needed for an unusual condition. This code is not needed for routine use of the device.
+
+Periodontal Probe
++++++++++++++++++
+
+.. figure:: ../../images-static/periodontal_probe.png
+    :class: with-border with-shadow float-left
+    :align: center
+    :scale: 100
+    :alt: Photograph of a periodontal probe.
+
+A periodontal probe is a dental instrument used to measure the depth of the periodontal pockets around a tooth. It is typically a thin, calibrated instrument with a blunt end that is gently inserted into the sulcus between the tooth and the gum.
+
+Use `SCT 462735007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=462735007&edition=MAIN&release=&languages=en>`__ for this device.
