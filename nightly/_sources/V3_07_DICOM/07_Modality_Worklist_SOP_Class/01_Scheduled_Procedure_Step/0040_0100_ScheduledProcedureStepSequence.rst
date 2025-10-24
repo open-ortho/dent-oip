@@ -27,6 +27,7 @@ Scheduled Procedure Step ID (0040,0009)
 TODO
 
 .. _scheduled_protocol_code_sequence:
+
 Scheduled Protocol Code Sequence (0040,0008)
 --------------------------------------------
 

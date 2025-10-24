@@ -11,7 +11,7 @@ X.1 OIP Actors, Transactions, and Content Modules
 
 The archival of high quality photographic documentation in a open standard is central to big data research, reduction in errors, data loss, staff and doctor burnout. This standard defines how to save orthodontic medical visible light images (aka photographs) making use of the most widely used standard for medical images: DICOM.
 
-.. _oip_actors_transactions:
+.. _volume_1_oip_actors_transactions:
 
 .. list-table:: OIP Actors, Transactions, and Content Modules
     :header-rows: 1

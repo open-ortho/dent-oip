@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6.6. IOD Definitions &#8212; DENT-OIP 0.2.7-nightly.20251021110351 documentation</title>
+    <title>6.6. IOD Definitions &#8212; DENT-OIP 0.2.7-nightly.20251024142906 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=bc01b0e4"></script>
+    <script src="../../_static/documentation_options.js?v=0af72bf1"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20251021110351 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20251024142906 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -163,7 +163,7 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">6. DICOM Content Definitions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../01_Conventions/index.html">6.1. Conventions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../02_General_Definitions/index.html">6.2. General Definitions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../03_VL_Photographic_Image_IOD_Definitions/index.html">6.3. IOD Definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../03_VL_Photographic_Image_IOD_Definitions/index.html">6.3. VL Photographic Image IOD Definitions</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../04_Module_Definitions/index.html">6.4. VL Photographic Image</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../04_Module_Definitions/030_General_Study/index.html">6.4.1. General Study</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="../04_Module_Definitions/030_General_Study/0008_0050_accession_number.html">6.4.1.1. Accession Number (0008,0050)</a></li>
@@ -495,7 +495,7 @@ document.write(`
 <section id="introduction">
 <h2><span class="section-number">6.6.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>The Basic Structured Display IOD is a DICOM Information Object Definition that specifies a fixed, deterministic layout of images and related content that must be presented to the viewer exactly as defined. It provides a mechanism to create reproducible presentations of images, graphics, text and other renderable content.</p>
-<p>In orthodontics, Basic Structured Displays can be used to exchange images with other medical providers, software systems or patients while ensuring they are displayed in the same way. This can be achieved by attaching, along with the actual image data (like the <span class="xref std std-ref">VL Photographic Image IOD</span>), a Structured Display IOD that defines which of the VL Image IODs should go in which image box, how they should be arranged, and what annotations should be displayed.</p>
+<p>In orthodontics, Basic Structured Displays can be used to exchange images with other medical providers, software systems or patients while ensuring they are displayed in the same way. This can be achieved by attaching, along with the actual image data (like the <a class="reference internal" href="../03_VL_Photographic_Image_IOD_Definitions/index.html#vl-photographic-image-iod-definitions"><span class="std std-ref">VL Photographic Image IOD</span></a>), a Structured Display IOD that defines which of the VL Image IODs should go in which image box, how they should be arranged, and what annotations should be displayed.</p>
 <p>Basic Structured Displays may be constructed from a <a class="reference internal" href="../05_Hanging_Protocol_IOD_Definitions/index.html#hanging-protocol-iod-definitions"><span class="std std-ref">Hanging Protocol IOD</span></a>, which acts as a “template”, as it defines generically, which type of image should go in which box, the size of the boxes, and the layout of the boxes.</p>
 <p>Basic Structured Displays are particularly valuable:</p>
 <ul class="simple">

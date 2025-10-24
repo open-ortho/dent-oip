@@ -1,7 +1,7 @@
-.. _iod_definitions:
+.. _vl_photographic_image_iod_definitions:
 
-IOD Definitions
-===============
+VL Photographic Image IOD Definitions
+=====================================
 
 .. list-table:: Usage of DICOM Modules in IHE
    :header-rows: 1
