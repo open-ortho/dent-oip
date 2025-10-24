@@ -149,6 +149,7 @@ Periodontal Probe
     :scale: 100
     :alt: Photograph of a periodontal probe.
 
-A periodontal probe is a dental instrument used to measure the depth of the periodontal pockets around a tooth. It is typically a thin, calibrated instrument with a blunt end that is gently inserted into the sulcus between the tooth and the gum.
+
+In orthodontics, a periodontal probe with millimeter markings may be used during intraoral photography to document the periodontal pocket depth in millimeters. 
 
 Use `SCT 462735007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=462735007&edition=MAIN&release=&languages=en>`__ for this device.
