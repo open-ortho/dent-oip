@@ -26,4 +26,8 @@ Appendix D - Glossary
       - Definition
       - Synonyms
       - Acronym/Abbreviation
+    * - <Glossary Term 1>
+      - <Definition 1>
+      - <Synonyms 1>
+      - <Acronym/Abbreviation 1>
 

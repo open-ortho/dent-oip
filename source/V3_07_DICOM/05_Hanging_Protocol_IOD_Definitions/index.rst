@@ -4,7 +4,7 @@ IOD Definitions
 ===============
 
 Introduction
------------
+-------------
 
 A Hanging Protocol is a specialized DICOM Information Object Definition (IOD) that defines the initial display arrangement of medical images on one or more display systems. It allows for the specification of how images should be positioned, sized, annotated, and organized when initially displayed to a user.
 
