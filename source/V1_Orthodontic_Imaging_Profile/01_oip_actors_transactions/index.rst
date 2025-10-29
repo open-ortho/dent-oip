@@ -9,13 +9,13 @@ Figure X.1-1 shows the actors directly involved in the OIP Profile and the direc
 
 A product implementation using this profile may group actors from this profile with actors from a workflow or transport profile to be functional. The grouping of the content module described in this profile to specific actors is described in more detail in Section X.6Required Actor Groupings  or in Section X.6Cross Profile Considerations .
 
-*Figure X.1-1*
+**Figure X.1-1**
 
 ..image: TODO Add URL to Content Creator Content Consumer image
 
 Table X.1-1 lists the content module(s) defined in the OIP Profile. To claim support with this profile, an actor shall support all required content modules (labeled “R”) and may support optional content modules (labeled “O”). 
 
-*Table X.1-1*
+**Table X.1-1**
 
 .. list-table::
     :header-rows: 1
