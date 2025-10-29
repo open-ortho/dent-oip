@@ -64,7 +64,7 @@ Section X.5 describes some optional groupings that may be of interest for securi
     * - Content Creator
       - None
       - 
-* - Content Consumer
+    * - Content Consumer
       - None
       - 
 
