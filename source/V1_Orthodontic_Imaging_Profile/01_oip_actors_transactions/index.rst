@@ -10,7 +10,9 @@ A product implementation using this profile may group actors from this profile w
 
 **Figure X.1-1**
 
-.. figure:: ../../../images-static/Figure_X.1-1_OIPActorDiagram.jpg
+.. figure:: ../images-static/Figure_X.1-1_OIPActorDiagram.jpg
+    :class: with-border with-shadow float-left
+    :align: center
 
 Table X.1-1 lists the content module(s) defined in the OIP Profile. To claim support with this profile, an actor shall support all required content modules (labeled “R”) and may support optional content modules (labeled “O”). 
 
