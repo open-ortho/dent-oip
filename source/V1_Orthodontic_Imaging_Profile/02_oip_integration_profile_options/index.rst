@@ -11,7 +11,7 @@ Options that may be selected for each actor in this profile, if any, are listed 
 .. list-table::
     :header-rows: 1
 
-    * - **Actor****
+    * - **Actor**
       - **Option Name**
       - **Reference**
     * - Content Creator
@@ -58,7 +58,7 @@ Section X.5 describes some optional groupings that may be of interest for securi
 .. list-table::
     :header-rows: 1
 
-    * - **OIP Actor****
+    * - **OIP Actor**
       - **Actor(s) to be Grouped With**
       - **Reference**
     * - Content Creator
