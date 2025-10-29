@@ -29,15 +29,19 @@ X.2.1 Modality Worklist Option
 ==============================
 The Modality Worklist Option enables a Content Creator to use DICOM Modality Worklist to query for patient and order information from a Department System Scheduler/Order Filler and map the patient and order details into the DICOM image IODs it creates. 
 
-A Content Creator that supports the Modality Worklist Option shall support the IHE RAD Query Modality Worklist [RAD-5] transaction (RAD TF-2: 4.5) in the Role of Acquisition Modality, i.e., it is able to support the DICOM Basic Worklist Management Service as an SCU.  Note that this includes all requirements in RAD TF-2: 4.5.4.1.2 Message Semantics and RAD TF-2: 4.5.4.1.2.2 Matching and Return Keys.   <<Discuss with Toni: rqmts for diplay of return keys on the SCU>>
+A Content Creator that supports the Modality Worklist Option shall support the IHE RAD Query Modality Worklist [RAD-5] transaction (RAD TF-2: 4.5) in the Role of Acquisition Modality, i.e., it is able to support the DICOM Basic Worklist Management Service as an SCU.  Note that this includes all requirements in RAD TF-2: 4.5.4.1.2 Message Semantics and RAD TF-2: 4.5.4.1.2.2 Matching and Return Keys.  
+
+<<Discuss with Toni: rqmts for diplay of return keys on the SCU>>
 
 X.2.2 DICOM Storage Option
 ==========================
 The DICOM Storage Option enables a Content Creator and Content Consumer to DICOM C-STORE to send and receive DICOM images compliant with the profile.
 
 A Content Creator that supports the DICOM Storage Option shall support the IHE RAD Store Instances [RAD-8] transaction (RAD TF-2: 4.50) in the Role of sender, i.e., it is able to support DICOM Storage Service as an SCU.  
+
 <<Discuss with Toni:  would you like to pull in the requirements in RAD TF-2: 4.8.4.1.1.1 Study and Series UIDs ??>>
+
 <<Discuss with Toni:  You may want mandate support for a *one of* a list of supported IODs here>>
 
-A Content Consumer  that supports the DICOM Storage Option shall support the IHE RAD Store Instancess [RAD-50] transaction (RAD TF-2: 4.50) in the Role of Responder, i.e., it is able to support DICOM Storage Service as an SCP.  
+A Content Consumer that supports the DICOM Storage Option shall support the IHE RAD Store Instancess [RAD-50] transaction (RAD TF-2: 4.50) in the Role of Responder, i.e., it is able to support DICOM Storage Service as an SCP.  
 <<Discuss with Toni:  You may want mandate support for a list of supported IODs here>>
