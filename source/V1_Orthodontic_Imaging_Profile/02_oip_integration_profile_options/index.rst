@@ -43,6 +43,29 @@ A Content Creator that supports the DICOM Storage Option shall support the IHE R
 
 <<Discuss with Toni:  You may want mandate support for a *one of* a list of supported IODs here>>
 
-A Content Consumer that supports the DICOM Storage Option shall support the IHE RAD Store Instancess [RAD-50] transaction (RAD TF-2: 4.50) in the Role of Responder, i.e., it is able to support DICOM Storage Service as an SCP.  
+A Content Consumer that supports the DICOM Storage Option shall support the IHE RAD Store Instancess [RAD-50] transaction (RAD TF-2: 4.50) in the Role of Responder, i.e., it is able to support DICOM Storage Service as an SCP.
 
 <<Discuss with Toni:  You may want mandate support for a list of supported IODs here>>
+
+.. _oip_integration_profile_options:
+
+X.3 Required Actor Groupings
+============================
+An actor from this profile (Column 1) shall implement all of the required transactions and/or content modules in this profile in addition to all of the requirements for the grouped actor (Column 2).
+
+Section X.5 describes some optional groupings that may be of interest for security considerations and Section X.6 describes some optional groupings in other related profiles.
+
+.. list-table::
+    :header-rows: 1
+
+    * - **OIP Actor****
+      - **Actor(s) to be Grouped With**
+      - **Reference**
+    * - Content Creator
+      - None
+      - --
+      * - Content Consumer
+      - None
+      - --
+
+
