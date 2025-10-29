@@ -4,8 +4,10 @@ X.1 OIP Actors, Transactions, and Content Modules
 =================================================
 This section defines the actors, transactions, and/or content modules in this profile. General definitions of actors are given in the Technical Frameworks General Introduction Appendix A. IHE Transactions can be found in the Technical Frameworks General Introduction Appendix B. Both appendices are located at https://profiles.ihe.net/GeneralIntro/index.html.
 
-Figure X.1-1 shows the actors directly involved in the OIP Profile and the direction that the content is exchanged. 
+Figure X.1-1 shows the actors directly involved in the OIP Profile. 
 
+
+.. figure:: ../../images-static/Figure X.1-1 OIP Actor Diagram.jpg
 
 A product implementation using this profile may group actors from this profile with actors from a workflow or transport profile to be functional. The grouping of the content module described in this profile to specific actors is described in more detail in Section X.6Required Actor Groupings  or in Section X.6Cross Profile Considerations .
 
