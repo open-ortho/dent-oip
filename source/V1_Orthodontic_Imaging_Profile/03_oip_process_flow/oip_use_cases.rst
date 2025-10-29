@@ -13,7 +13,7 @@ This use case outlines both direct and indirect workflows for creating digital o
 
 
 .. note::
-   The use cases in Sections X.4.2.2 and X.4.2.3 are based on ADA Standard No. 1100 and may be outdated. Please refer to the latest release of ADA1100 for the most current information.
+   *The use cases in Sections X.4.2.2 and X.4.2.3 are based on ADA Standard No. 1100 and may be outdated. Please refer to the latest release of ADA1100 for the most current information.*
 
 X.4.2.2 ADA 1100 Use Case No. 2.1 - Routine Orthodontic Photography Workflow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
