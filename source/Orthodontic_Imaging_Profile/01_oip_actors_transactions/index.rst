@@ -3,7 +3,7 @@
 Orthodontic Imaging Actors/Transactions
 =======================================
 
-Acquisition Modality
+Acquisition Modality (Content Creator)
 --------------------
 
 A system that acquires and creates medical images while a patient is present. A modality may also create other evidence objects such as Grayscale Softcopy Presentation States for the consistent viewing of images or Evidence Documents containing measurements, etc. In orthodontic care, modalities acquire diagnostic information such as images and/or evidence documents. Some examples of these may include still visible light photography, visible light motion picture with audio, radiographs, etc.
