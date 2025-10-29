@@ -29,7 +29,7 @@ X.4.2.2 ADA 1100 Use Case No. 2.1 - Routine Orthodontic Photography Workflow
     """
 
 X.4.2.3 ADA 1100 Use Case No. 2.2 - Referral and Image Transfer Workflow
-------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     """
     The practitioner orders a referral of the patient to a colleague for
