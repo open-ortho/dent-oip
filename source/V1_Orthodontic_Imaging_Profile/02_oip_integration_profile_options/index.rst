@@ -7,6 +7,7 @@ X.2 Orthodontic Imaging Integration Profile Options
 Options that may be selected for each actor in this profile, if any, are listed in the Table X.2-1. Dependencies between options, when applicable, are specified in notes.
 
 Table X.2-1: OIP Profile Actors and Options
+
 .. list-table::
     :header-rows: 1
 
@@ -31,6 +32,7 @@ The Modality Worklist Option enables a Content Creator to use DICOM Modality Wor
 A Content Creator that supports the Modality Worklist Option shall support the IHE RAD Query Modality Worklist [RAD-5] transaction (RAD TF-2: 4.5) in the Role of Acquisition Modality, i.e., it is able to support the DICOM Basic Worklist Management Service as an SCU.  Note that this includes all requirements in RAD TF-2: 4.5.4.1.2 Message Semantics and RAD TF-2: 4.5.4.1.2.2 Matching and Return Keys.   <<Discuss with Toni: rqmts for diplay of return keys on the SCU>>
 
 X.2.2 DICOM Storage Option
+==========================
 The DICOM Storage Option enables a Content Creator and Content Consumer to DICOM C-STORE to send and receive DICOM images compliant with the profile.
 
 A Content Creator that supports the DICOM Storage Option shall support the IHE RAD Store Instances [RAD-8] transaction (RAD TF-2: 4.50) in the Role of sender, i.e., it is able to support DICOM Storage Service as an SCU.  
