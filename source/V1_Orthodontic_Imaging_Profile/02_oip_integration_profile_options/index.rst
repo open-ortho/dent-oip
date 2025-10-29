@@ -17,7 +17,7 @@ Options that may be selected for each actor in this profile, if any, are listed 
     * - Content Creator
       - Modality Worlist Option
       - Section X.2.1
-    * - Content Creator
+    * - 
       - DICOM Storage Option
       - Section X.2.2
     * - Content Consumer
