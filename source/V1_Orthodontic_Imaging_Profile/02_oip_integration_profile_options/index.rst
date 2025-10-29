@@ -1,6 +1,6 @@
 .. _oip_integration_profile_options:
 
-X.2 Orthodontic Imaging Integration Profile Options
+X.2 OIP Profile Options
 ===================================================
 <<Discuss with Toni:  It is possible that you will want no options; however, the following shows one model for what it might look like if you wanted to introduce into your profile a step beyond 'content only', i.e. an actor could **choose** to implement one of these options (or not) to offer enhanced capabililities.   (the other model would be to introduce actual transactions into the profile as mandatory, which I don't think you want to do).
 
@@ -49,7 +49,7 @@ A Content Consumer that supports the DICOM Storage Option shall support the IHE 
 
 .. _oip_integration_profile_options:
 
-X.3 Required Actor Groupings
+X.3 OIP Required Actor Groupings
 ============================
 An actor from this profile (Column 1) shall implement all of the required transactions and/or content modules in this profile in addition to all of the requirements for the grouped actor (Column 2).
 
