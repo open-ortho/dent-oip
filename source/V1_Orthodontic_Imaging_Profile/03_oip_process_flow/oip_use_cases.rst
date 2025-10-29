@@ -6,17 +6,17 @@ ADA Technical Report No. 1065 for Use Cases of the Orthodontic Electronic Health
 Please refer to the original ADA documents for more details on each use case.
 
 
-ADA TR 1065 Use Case No. 03 - Creating Digital Orthodontic Records
--------------------------------------------------------------------------
+X.4.2.1 ADA TR 1065 Use Case No. 03 - Creating Digital Orthodontic Records
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This use case outlines both direct and indirect workflows for creating digital orthodontic records, either through direct capture with imaging devices or by digitizing analog records. It details how acquired images and models are tagged with standard metadata and integrated into the patient’s EHR for proper storage and retrieval. The process supports efficient transformation between digital and analog formats for clinical applications such as 3D printing. 
 
 
 .. note::
-   The following use cases are based on ADA Standard No. 1100 and may be outdated. Please refer to the latest release of ADA1100 for the most current information.
+   The use cases in Sections X.4.2.2 and X.4.2.3 are based on ADA Standard No. 1100 and may be outdated. Please refer to the latest release of ADA1100 for the most current information.
 
-ADA 1100 Use Case No. 2.1 - Routine Orthodontic Photography Workflow
----------------------------------------------------------------------
+X.4.2.2 ADA 1100 Use Case No. 2.1 - Routine Orthodontic Photography Workflow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     """
     A routine set of facial and intraoral photographs is ordered by the
@@ -28,7 +28,7 @@ ADA 1100 Use Case No. 2.1 - Routine Orthodontic Photography Workflow
     desired view set out of the individual images.
     """
 
-ADA 1100 Use Case No. 2.2 - Referral and Image Transfer Workflow
+X.4.2.3 ADA 1100 Use Case No. 2.2 - Referral and Image Transfer Workflow
 ------------------------------------------------------------------
 
     """
