@@ -7,7 +7,7 @@ This section defines the actors, transactions, and/or content modules in this pr
 Figure X.1-1 shows the actors directly involved in the OIP Profile. 
 
 
-.. figure:: ../../images-static/Figure_X.1-1_OIPActorDiagram.jpg
+.. figure:: ../../../images-static/Figure_X.1-1_OIPActorDiagram.jpg
 
 A product implementation using this profile may group actors from this profile with actors from a workflow or transport profile to be functional. The grouping of the content module described in this profile to specific actors is described in more detail in Section X.6Required Actor Groupings  or in Section X.6Cross Profile Considerations .
 
