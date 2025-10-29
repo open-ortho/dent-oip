@@ -44,4 +44,5 @@ A Content Creator that supports the DICOM Storage Option shall support the IHE R
 <<Discuss with Toni:  You may want mandate support for a *one of* a list of supported IODs here>>
 
 A Content Consumer that supports the DICOM Storage Option shall support the IHE RAD Store Instancess [RAD-50] transaction (RAD TF-2: 4.50) in the Role of Responder, i.e., it is able to support DICOM Storage Service as an SCP.  
+
 <<Discuss with Toni:  You may want mandate support for a list of supported IODs here>>
