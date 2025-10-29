@@ -10,8 +10,7 @@ This part was compiled using the values allowed in the DICOM CID
 (Content IDs) tables, highlighting those values which are relevant to the
 orthodontic domain.
 
-*The
-DICOM Content Definitions constrain the use of instances of specific DICOM IODs (also referred to as DICOM objects). This typically means placing requirements on the creators of those instances, although requirements may also be placed on the receivers and users.
+The DICOM Content Definitions constrain the use of instances of specific DICOM IODs (also referred to as DICOM objects). This typically means placing requirements on the creators of those instances, although requirements may also be placed on the receivers and users.
 
 The most common such requirements are to:
 
