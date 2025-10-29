@@ -1,6 +1,5 @@
-Use Cases for Orthodontic Images
-=================================================
-
+X.4.2 Use Cases for Orthodontic Images
+++++++++++++++++++++++++++++++++++++++
 
 ADA Technical Report No. 1065 for Use Cases of the Orthodontic Electronic Health Record contains use cases that describe orthodontic workflows, both imaging and non-imaging. Within 1065, Use Case No. 03 specifically addresses the creation of digital orthodontic records, which includes the imaging workflows. ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets" is specific for visible light images.
 
