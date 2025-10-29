@@ -19,9 +19,9 @@ The most common such requirements are to:
 + Require that an attribute that is optional (Type 3) in a DICOM Module be absent
 + Constrain the content of an attribute to be empty
 + Constrain the content of an attribute to be populated in a certain way, such as:
-++ Constraining the value to be taken from a specific table
-++ Constraining the value to be copied from a specific source
-++ Constraining the value to encode certain information
+	+ Constraining the value to be taken from a specific table
+	+ Constraining the value to be copied from a specific source
+	+ Constraining the value to encode certain information
 +	Require that an attribute be displayed/accessible to the operator
 
 Reiterating DICOM requirements is kept to a minimum sufficient to provide context for the IHE requirements.  Implementers are still required to be familiar with, and conform to, the underlying DICOM specification. 
