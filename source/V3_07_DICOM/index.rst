@@ -10,7 +10,7 @@ The most common such requirements are to:
 + Make an attribute that is optional (Type 3) in a DICOM Module be required or conditional,
 + Require that an attribute that is optional (Type 3) in a DICOM Module be absent
 + Constrain the content of an attribute to be empty
-+ Constrain the content of an attribute to be populated in a certain way, such as:
++ Constrain the content of an attribute to be populated in a certain way, such as
 	+ Constraining the value to be taken from a specific table
 	+ Constraining the value to be copied from a specific source
 	+ Constraining the value to encode certain information
