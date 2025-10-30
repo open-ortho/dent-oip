@@ -1,4 +1,5 @@
 .. _general_definitions:
 
-General Definitions
-===================
+7.2  General Definitions
+========================
+Intentionally left blank.
