@@ -22,24 +22,6 @@ Content Definitions may be referenced from a Profile independent of transactions
 
 For attributes that are optional, the creator is permitted but not required to include them, and the receiver is permitted but not required to ignore them.
 
-7.1	Conventions
-+++++++++++++++
-
-
-7.2 General Definitions
-+++++++++++++++++++++++
-Intentionally left blank.
-
-7.3 IOD Definitions
-++++++++++++++++++++
-This section contains DICOM IOD specifications referenced in profiles of the IHE Dental domain, specifying the parts of the DICOM Standard used and the extended IHE requirements.
-
-This normative section contains a description of the DICOM tags which are
-necessary to fully describe orthodontic views (photographs) and to request for these photographs to be taken (acquired).
-
-This part was compiled using the values allowed in the DICOM CID
-(Content IDs) tables, highlighting those values which are relevant to the
-orthodontic domain.
 
 .. toctree::
 	:glob:
