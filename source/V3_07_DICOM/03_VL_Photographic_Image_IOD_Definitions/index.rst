@@ -1,7 +1,18 @@
 .. _vl_photographic_image_iod_definitions:
 
-VL Photographic Image IOD Definitions
-=====================================
+7.3 IOD Definitions
+===================
+This section contains DICOM IOD specifications referenced in profiles of the IHE Dental domain, specifying the parts of the DICOM Standard used and the extended IHE requirements.
+
+This normative section contains a description of the DICOM tags which are
+necessary to fully describe orthodontic views (photographs) and to request for these photographs to be taken (acquired).
+
+This part was compiled using the values allowed in the DICOM CID
+(Content IDs) tables, highlighting those values which are relevant to the
+orthodontic domain.
+
+7.3.1 VL Photographic Image IOD Definition
++++++++++++++++++++++++++++++++++++++++++++
 
 .. list-table:: Usage of DICOM Modules in IHE
    :header-rows: 1
