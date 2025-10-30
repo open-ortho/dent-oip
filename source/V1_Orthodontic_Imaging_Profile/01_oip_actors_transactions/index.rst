@@ -36,11 +36,11 @@ Table X.1-1 lists the content module(s) defined in the OIP Profile. To claim sup
 
 X.1.1 Actor Description and Actor Profile Requirements
 ------------------------------------------------------
-Most requirements are documented in DEN: TF-3 T Content Modules. This section documents any additional requirements on profile’s actors.
+Most requirements are documented in DEN: TF-3: Content Modules. This section documents any additional requirements on profile’s actors.
 
 X.1.1.1 Content Creator
 ~~~~~~~~~~~~~~~~~~~~~~~
-In the OIP profile, the Content Creator is a 'generic' actor for a system that creates DICOM images that are compliant with the requirements in DEN TF-3: 6.x.x of this profile.   In the 'real-world' an OIP Content Creator actor may be:
+In the OIP profile, the Content Creator is a 'generic' actor for a system that creates DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 of this profile.   In the 'real-world' an OIP Content Creator actor may be:
 
 + *Acquisition Modality* -- A system that acquires and creates medical images while a patient is present. A modality may also create other evidence objects such as Grayscale Softcopy Presentation States for the consistent viewing of images or Evidence Documents containing measurements, etc. In orthodontic care, modalities acquire diagnostic information such as images and/or evidence documents. Some examples of these may include still visible light photography, visible light motion picture with audio, radiographs, etc.
 
@@ -48,7 +48,7 @@ In the OIP profile, the Content Creator is a 'generic' actor for a system that c
 
 X.1.1.2 Content Consumer
 ~~~~~~~~~~~~~~~~~~~~~~~~
-In the OIP profile, the Content Consumer is a 'generic' actor for a system that consumes DICOM images that are compliant with the requirements in DEN TF-3: 6.x.x of this profile.   Using the DICOM images, Content Consumer performs functions that are relevant to its application, e.g., rendering the images for a user, storing the images in an archive, extracting information from the DICOM images for reporting purposes, etc.
+In the OIP profile, the Content Consumer is a 'generic' actor for a system that consumes DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 of this profile.   Using the DICOM images, Content Consumer performs functions that are relevant to its application, e.g., rendering the images for a user, storing the images in an archive, extracting information from the DICOM images for reporting purposes, etc.
 
 Department System Scheduler/Order Filler  
 ----------------------------------------
