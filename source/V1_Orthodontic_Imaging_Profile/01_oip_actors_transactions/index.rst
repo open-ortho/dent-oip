@@ -26,13 +26,13 @@ Table X.1-1 lists the content module(s) defined in the OIP Profile. To claim sup
       - **Optionality**
       - **Reference**
     * - Content Creator
-      - <Content Module Name>
+      - VL Photographic Image IOD Definition
       - R
-      - DEN TF-3: 6.x.x
+      - DEN TF-3: 7.3.1 
     * - Content Consumer
-      - <Content Module Name>
+      - VL Photographic Image IOD Definition
       - R
-      - DEN TF-3: 6.x.x
+      - DEN TF-3: 7.3.1
 
 X.1.1 Actor Description and Actor Profile Requirements
 ------------------------------------------------------
