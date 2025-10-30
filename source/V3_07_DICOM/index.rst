@@ -32,7 +32,7 @@ such attributes; in other words, the creator shall not assign default values to 
 IHE has defined requirements related to the support for and use of attributes by both creators and consumers of DICOM objects; IHE also defines requirements related to the support for and use of attributes in DICOM storage
 transactions by both Service Class Users (SCUs) and Service Class Providers (SCPs):   
 
-**Table 7.1-1**
+**Table 7.1-1: Usage of DICOM Modules in IHE**
 
 .. list-table:: 
     :header-rows: 1
@@ -46,7 +46,7 @@ transactions by both Service Class Users (SCUs) and Service Class Providers (SCP
     * - RC
       - The Module is defined as Conditional (C) or User Option (U) in DICOM. The Requirement is an IHE extension of the DICOM requirements, and the module shall be present when the specified conditions apply.
 
-**Table 7.1-2**
+**Table 7.1-2 Usage of DICOM Attributes in IHE**
 
 .. list-table:: 
     :header-rows: 1
