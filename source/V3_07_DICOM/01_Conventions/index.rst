@@ -1,7 +1,9 @@
 .. _dicom_conventions:
 
-Conventions
-=============
+7.1 Conventions
+===============
+*<note to Toni:  I have updated this section to align with the conventions documented in the IHE RAD TF.   What was here came from the template, but RAD's content is better (more accurate), and I have submitted a CP to IHE to fix it>*
+
 For some DICOM content described in this document, IHE has strengthened the requirements on the use of selected Type 2 and Type 3 attributes.  These situations are explicitly documented in the content specifications here in Volume 3.
 
 IHE specifically emphasizes that DICOM Type 2 attributes (for instance, Patient Name, Patient ID) shall be transmitted with zero length if the source system does not possess valid values for
@@ -10,7 +12,7 @@ such attributes; in other words, the creator shall not assign default values to 
 IHE has defined requirements related to the support for and use of attributes by both creators and consumers of DICOM objects; IHE also defines requirements related to the support for and use of attributes in DICOM storage
 transactions by both Service Class Users (SCUs) and Service Class Providers (SCPs):   
 
-.. list-table:: Usage of DICOM Modules in IHE
+.. list-table:: **Table 7.1-1: Usage of DICOM Modules in IHE**
    :header-rows: 0
    :widths: 10 90
 
@@ -21,7 +23,7 @@ transactions by both Service Class Users (SCUs) and Service Class Providers (SCP
    * - RC
      - The Module is defined as Conditional (C) or User Option (U) in DICOM. The Requirement is an IHE extension of the DICOM requirements, and the module shall be present when the specified conditions apply.
 
-.. list-table:: Usage of DICOM Attributes in IHE
+.. list-table:: **Table 7.1-2:  Usage of DICOM Attributes in IHE
    :header-rows: 0
    :widths: 10 90
 
