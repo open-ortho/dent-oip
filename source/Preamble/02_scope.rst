@@ -2,7 +2,7 @@ Introduction to this Supplement
 ===============================
 The intended audience of this document is the medical imaging software developers or medical imaging device manufacturer who deals with visible light digital photography.
 
-<TO DO: First, briefly describe the current landscape in dental imaging, presumably with many proprietary implementations.  Then describe how the IOP profile addresses this problem.>
+**<TO DO: First, briefly describe the current landscape in dental imaging, presumably with many proprietary implementations.  Then describe how the IOP profile addresses this problem.>**
 
 The document, along with its accompanying CSV files and DICOM sample files found in the Volume 3 Appendices, provides a detailed implementation guide for encoding orthodontic/craniofacial
 views using DICOM with SNOMED CT terminology. 
@@ -24,20 +24,20 @@ Open Issues and Questions
 Closed Issues 
 =============
 
-<Discuss with Toni:  You might choose to omit the following IHE-specific sections, at least for now...>
+**<Discuss with Toni:  You might choose to omit the following IHE-specific sections, at least for now...>**
 
 IHE Technical Frameworks General Introduction
 =============================================
-The IHE Technical Frameworks General Introduction is shared by all of the IHE domain technical frameworks. Each technical framework volume contains links to this document where appropriate.
+The `IHE Technical Frameworks General Introduction <https://profiles.ihe.net/GeneralIntro>`_ is shared by all of the IHE domain technical frameworks. Each technical framework volume contains links to this document where appropriate.
 
 Copyright Licenses
 ==================
-IHE technical documents refer to, and make use of, a number of standards developed and published by several standards development organizations. Please refer to the IHE Technical Frameworks General Introduction, Section 9 - Copyright Licenses for copyright license information for frequently referenced base standards. Information pertaining to the use of IHE International copyrighted materials is also available there.
+IHE technical documents refer to, and make use of, a number of standards developed and published by several standards development organizations. Please refer to the IHE Technical Frameworks General Introduction, `Section 9 - Copyright Licenses <https://profiles.ihe.net/GeneralIntro/ch-9.html>`_ for copyright license information for frequently referenced base standards. Information pertaining to the use of IHE International copyrighted materials is also available there.
 
 Trademark
 =========
-IHE® and the IHE logo are trademarks of the Healthcare Information Management Systems Society in the United States and trademarks of IHE Europe in the European Community. Please refer to the IHE Technical Frameworks General Introduction, Section 10- Trademark for information on their use.
+IHE® and the IHE logo are trademarks of the Healthcare Information Management Systems Society in the United States and trademarks of IHE Europe in the European Community. Please refer to the IHE Technical Frameworks General Introduction, `Section 10 - Trademark <https://profiles.ihe.net/GeneralIntro/ch-10.html>`_ for information on their use.
 
 IHE Technical Frameworks General Introduction Appendices
 ========================================================
-The IHE Technical Framework General Introduction Appendices are components shared by all of the IHE domain technical frameworks. Each technical framework volume contains links to these documents where appropriate.
+The `IHE Technical Framework General Introduction Appendices <https://profiles.ihe.net/GeneralIntro/index.html>`_ are components shared by all of the IHE domain technical frameworks. Each technical framework volume contains links to these documents where appropriate.
