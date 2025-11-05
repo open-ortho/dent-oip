@@ -19,7 +19,7 @@ Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets available onli
 
 Open Issues and Questions
 =========================
-<List the open issues/questions that need to be addressed. These are particularly useful for highlighting problematic issues and/or specifically soliciting public comments.>
+*<List the open issues/questions that need to be addressed. These are particularly useful for highlighting problematic issues and/or specifically soliciting public comments.>*
 
 Closed Issues 
 =============
