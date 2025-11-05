@@ -53,8 +53,7 @@ In the OIP profile, the Content Consumer is a 'generic' actor for a system that 
 Department System Scheduler/Order Filler  
 ----------------------------------------
 
-<Discuss with Toni:  This will likely be omitted, in which case, a vendor could not claim that their product is compliant with OIP as a DSS/OF
-
+*<Discuss with Toni:  This will likely be omitted, in which case, a vendor could not claim that their product is compliant with OIP as a DSS/OF*
 
 A department-based system that provides functions related to the management of orders received from external systems or through the department system's user interface. A dental or orthodontic example of a department based system could be a dental Practice Management System (PMS). 
 
