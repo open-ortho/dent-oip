@@ -11,6 +11,8 @@ This part was compiled using the values allowed in the DICOM CID
 (Content IDs) tables, highlighting those values which are relevant to the
 orthodontic domain.
 
+The DICOM VL Photographic Image IOD is defined in DICOM `PS3.3: A.32.4 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.4>`_ .
+
 7.3.1 VL Photographic Image IOD Definition
 +++++++++++++++++++++++++++++++++++++++++++
 
