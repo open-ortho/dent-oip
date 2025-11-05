@@ -41,3 +41,21 @@ IHE® and the IHE logo are trademarks of the Healthcare Information Management S
 IHE Technical Frameworks General Introduction Appendices
 ========================================================
 The `IHE Technical Framework General Introduction Appendices <https://profiles.ihe.net/GeneralIntro/index.html>`_ are components shared by all of the IHE domain technical frameworks. Each technical framework volume contains links to these documents where appropriate.
+
+`Appendix A <https://profiles.ihe.net/GeneralIntro/ch-A.html>_ - **Actors**
++++++++++++++++++++
+
+The table below lists existing actors that are utilized in this profile.
+
+.. list-table::
+    :header-rows: 1
+
+    * - **Existing Actor Name**
+      - **Definition**
+    * - Content Creator
+      - The Content Creator Actor creates content and transmits to a Content Consumer.
+    * - Content Consumer
+      - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.
+
+*<TO DO:  If we decide to add the option to enable transmitting content via a transaction, we would add an Appendix B -  Transaction section here>>
+
