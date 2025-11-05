@@ -2,7 +2,7 @@ Introduction to this Supplement
 ===============================
 The intended audience of this document is the medical imaging software developers or medical imaging device manufacturer who deals with visible light digital photography.
 
-**<TO DO: First, briefly describe the current landscape in dental imaging, presumably with many proprietary implementations.  Then describe how the IOP profile addresses this problem.>**
+*<TO DO: First, briefly describe the current landscape in dental imaging, presumably with many proprietary implementations.  Then describe how the IOP profile addresses this problem.>*
 
 The document, along with its accompanying CSV files and DICOM sample files found in the Volume 3 Appendices, provides a detailed implementation guide for encoding orthodontic/craniofacial
 views using DICOM with SNOMED CT terminology. 
@@ -24,7 +24,7 @@ Open Issues and Questions
 Closed Issues 
 =============
 
-**<Discuss with Toni:  You might choose to omit the following IHE-specific sections, at least for now...>**
+*<Discuss with Toni:  You might choose to omit the following IHE-specific sections, at least for now...>*
 
 IHE Technical Frameworks General Introduction
 =============================================
