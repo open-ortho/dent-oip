@@ -15,6 +15,8 @@ The baseline requirements for the VL Photographic Image IOD is defined in DICOM 
 
 *<Discuss with Toni:   How to interpret blank cells in Column 4>>*
 
+*<Discuss:  This profile defines many constraints on the modules listed in this table.   In Col 4, add a reference to the section containing those constraints (otherwise, a quick glance at this table implies, for example, that there is no difference between DICOM and OIP for the General Study, Patient, Acquisition Context, etc modules, which is not the case)>* 
+
 7.3.1 VL Photographic Image IOD Definition
 +++++++++++++++++++++++++++++++++++++++++++
 
