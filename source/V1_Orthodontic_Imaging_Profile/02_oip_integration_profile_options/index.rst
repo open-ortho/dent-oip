@@ -31,7 +31,7 @@ The Modality Worklist Option enables a Content Creator to use DICOM Modality Wor
 
 A Content Creator that supports the Modality Worklist Option shall support the IHE RAD Query Modality Worklist [RAD-5] transaction (RAD TF-2: 4.5) in the Role of Acquisition Modality, i.e., it is able to support the DICOM Basic Worklist Management Service as an SCU.  Note that this includes all requirements in RAD TF-2: 4.5.4.1.2 Message Semantics and RAD TF-2: 4.5.4.1.2.2 Matching and Return Keys.  
 
-*<<Discuss with Toni: rqmts for diplay of return keys on the SCU>>*
+*<<Discuss with Toni: rqmts for display of return keys on the SCU>>*
 
 X.2.2 DICOM Storage Option
 --------------------------
