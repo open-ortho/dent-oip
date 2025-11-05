@@ -13,6 +13,8 @@ orthodontic domain.
 
 The baseline requirements for the VL Photographic Image IOD is defined in DICOM `PS3.3: A.32.4 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.4>`_ .  In Table 7.3.1-1, Column 4 identifies modules where the IOP profile defines additional constraints on the baseline DICOM requirements. 
 
+*<Discuss with Toni:   How to interpret blank cells in Column 4>>*
+
 7.3.1 VL Photographic Image IOD Definition
 +++++++++++++++++++++++++++++++++++++++++++
 
@@ -24,7 +26,7 @@ The baseline requirements for the VL Photographic Image IOD is defined in DICOM 
      - Module
      - Reference
      - Usage
-     - IHE Usage
+     - OIP Profile Usage
    * - Patient
      - Patient
      - C.7.1.1
