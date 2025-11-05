@@ -1,5 +1,5 @@
-Scope
-=====
+Introduction to this Supplement
+===============================
 
 The intended audience of this document is the medical imaging software developers or medical imaging device manufacturer who deals with visible light digital photography.
 
