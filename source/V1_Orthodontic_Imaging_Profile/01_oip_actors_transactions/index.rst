@@ -50,6 +50,13 @@ X.1.1.2 Content Consumer
 ~~~~~~~~~~~~~~~~~~~~~~~~
 In the OIP profile, the Content Consumer is a 'generic' actor for a system that consumes DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 of this profile.   Using the DICOM images, Content Consumer performs functions that are relevant to its application, e.g., rendering the images for a user, storing the images in an archive, extracting information from the DICOM images for reporting purposes, etc.
 
+X.1.1.3 Image Display
+~~~~~~~~~~~~~~~~~~~~~
+The Image Display is a specialized Content Consumer that implements requirements to provide standardized display functionality to ensure <TO DO: Describe to goal of standardized display requirements here.
+
+An Image Display in the OIP Profile shall implement all requirements in OIP TF-2: 3.1 "Display OIP Images".
+
+
 Department System Scheduler/Order Filler  
 ----------------------------------------
 
