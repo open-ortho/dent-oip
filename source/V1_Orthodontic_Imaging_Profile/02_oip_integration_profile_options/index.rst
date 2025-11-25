@@ -50,7 +50,7 @@ A Content Consumer that supports the DICOM Storage Option shall support the IHE 
 .. _oip_integration_profile_options:
 
 X.3 OIP Required Actor Groupings
-============================
+===============================
 An actor from this profile (Column 1) shall implement all of the required transactions and/or content modules in this profile in addition to all of the requirements for the grouped actor (Column 2).
 
 Section X.5 describes some optional groupings that may be of interest for security considerations and Section X.6 describes some optional groupings in other related profiles.
@@ -59,7 +59,7 @@ Section X.5 describes some optional groupings that may be of interest for securi
     :header-rows: 1
 
     * - **OIP Actor**
-      - **Actor(s) to be Grouped With**
+      - **Profile/Actor(s) to be Grouped With**
       - **Reference**
     * - Content Creator
       - None
@@ -67,5 +67,8 @@ Section X.5 describes some optional groupings that may be of interest for securi
     * - Content Consumer
       - None
       - 
-
+      - 
+    * - Image Display
+      - OIP / Content Consumer
+      - Section X.1.1.2
 
