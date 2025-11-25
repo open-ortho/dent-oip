@@ -62,9 +62,9 @@ The behaviors in this section are specified as baseline capabilities. Displays m
 or alternate capabilities that may be invoked or configured.
 
 Displays shall support the capabilities described in this section for DICOM images encoded in instances of the following:
-+ xxx IOD
-+ yyy IOD
-+ ZZZ IOD
+* xxx IOD
+* yyy IOD
+* ZZZ IOD
 
 3.1.4.1.3.1 General Display Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
