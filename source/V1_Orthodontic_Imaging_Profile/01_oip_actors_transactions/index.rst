@@ -52,15 +52,15 @@ In the OIP profile, the Content Consumer is a 'generic' actor for a system that 
 
 X.1.1.3 Image Display
 ~~~~~~~~~~~~~~~~~~~~~
-The Image Display is a specialized Content Consumer that implements requirements to provide standardized display functionality to ensure <TO DO: Describe to goal of standardized display requirements here.
+The Image Display is a specialized Content Consumer that implements requirements to provide standardized display functionality to ensure *<TO DO: Describe to goal of standardized display requirements here.   You may want to point to the ADA spec driving these requirements.>*
 
-An Image Display in the OIP Profile shall implement all requirements in OIP TF-2: 3.1 "Display OIP Images".
+An Image Display in the OIP Profile shall implement all requirements in DEN TF-2: 3.1 "Display OIP Images".
 
 
 Department System Scheduler/Order Filler  
 ----------------------------------------
 
-*<Discuss with Toni:  This will likely be omitted, in which case, a vendor could not claim that their product is compliant with OIP as a DSS/OF*
+*<Discuss with Toni:  This will likely be omitted, in which case, a vendor could not claim that their product is compliant with OIP as a DSS/OF>*
 
 A department-based system that provides functions related to the management of orders received from external systems or through the department system's user interface. A dental or orthodontic example of a department based system could be a dental Practice Management System (PMS). 
 
