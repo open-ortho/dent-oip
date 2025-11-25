@@ -23,10 +23,12 @@ shown here:
     :header-rows: 0
 
     * - **Role**
-      - Display:  Presents results visually to a user.
+      - Display:  
+           Presents results visually to a user.
 
     * - **Actor(s)**
-      - The following actors may play the role of Display:   Image Display
+      - The following actors may play the role of Display:   
+           Image Display
 
 3.1.3 Referenced Standards
 ==========================
@@ -62,6 +64,7 @@ The behaviors in this section are specified as baseline capabilities. Displays m
 or alternate capabilities that may be invoked or configured.
 
 Displays shall support the capabilities described in this section for DICOM images encoded in instances of the following:
+
 * xxx IOD
 * yyy IOD
 * ZZZ IOD
