@@ -1,4 +1,4 @@
-3.1 Display OIP Images [OIP-1]
+3.1 Display OIP Images [DEN-1]
 ------------------------------
 3.1.1 Scope
 =========
