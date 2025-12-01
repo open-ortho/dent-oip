@@ -33,7 +33,7 @@ Options that may be selected for each actor in this profile, if any, are listed 
 
 X.2.1 A Option
 --------------
-A Content Creator that supports the A Option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 6.a.x.  <TO DO: list IODs here>
+The A Option applies to photography (visible light imaging) in orthodontics  A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 6.a.x.  <TO DO: list IODs here>
 
 X.2.2 B Option
 --------------
