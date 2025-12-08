@@ -31,17 +31,22 @@ Options that may be selected for each actor in this profile, if any, are listed 
 
 *Note 1:* The Content Creator shall support at least one option.
 
+<*DISCUSS: (2) Confirm/adjust the list of Creator options and the DICOM scope of each.   (2) Determine whether there should be options for the Content Consumer, or whether a Consumer that is compliant with this profile shalle be able to 'process' the types of images in all of the options*>
+
 X.2.1 A Option
 --------------
-The A Option applies to photography (visible light imaging) in orthodontics  A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 VL Photographic Image IOD Definition.  <TO DO: list IODs here>
+The A Option applies to photography (visible light imaging) in orthodontics.  
+A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 VL Photographic Image IOD Definition.  <TO DO: list IODs here>
 
 X.2.2 B Option
 --------------
-A Content Creator that supports the A Option shall be able to acquire 3D intraoral scans and create DICOM images that are compliant with the requirements in DEN TF-3: 7.a.y.  <TO DO: list IODs here>
+The B Option applies to photography (visible light imaging) in orthodontics.  
+A Content Creator that supports the B Option shall be able to acquire 3D intraoral scans and create DICOM images that are compliant with the requirements in DEN TF-3: 7.a.y.  <TO DO: list IODs here>
 
 X.2.3 C Option
 --------------
-A Content Creator that supports the A Option shall be able to generate scanned documents or generate scanned photographs from negatives or from paper and create DICOM objects that are compliant with the requirements in DEN TF-3: 7.a.y..  <TO DO: list IODs here>
+Option C applies to scanners that generate scanned documents or generate scanned photographs from negatives or from paper.
+A Content Creator that supports the A Option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.a.y.z.  <TO DO: list IODs here>
 
 X.3 OIP Required Actor Groupings
 ===============================
