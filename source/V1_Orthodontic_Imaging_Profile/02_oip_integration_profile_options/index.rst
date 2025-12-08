@@ -26,16 +26,21 @@ Options that may be selected for each actor in this profile, if any, are listed 
       - No options defined
       - --
     * - Image Display
-      - No options defined
-      - --
+      - Structured Dislay Option
+      - Section X.2.4
+    * - 
+      - Hanging Protocol Option
+      - Section X.2.5
 
 *Note 1:* The Content Creator shall support at least one option.
 
-<*DISCUSS: (2) Confirm/adjust the list of Creator options and the DICOM scope of each.   (2) Determine whether there should be options for the Content Consumer, or whether a Consumer that is compliant with this profile shalle be able to 'process' the types of images in all of the options*>
+<*DISCUSS: (1) Confirm/adjust the list of Creator options and the DICOM scope of each.   (2) Determine whether there should be options for the Content Consumer, or whether a Consumer that is compliant with this profile shalle be able to 'process' the types of images in all of the options*>
+
+<*DISCUSS: This revision of the table proposes Options on the Display for support of Structured Display and Hanging Protocol.
 
 X.2.1 A Option
 --------------
-The A Option applies to photography (visible light imaging) in orthodontics.  
+The A Option applies to  photography (visible light imaging) in orthodontics.  
 A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 VL Photographic Image IOD Definition.  <TO DO: list IODs here>
 
 X.2.2 B Option
@@ -47,6 +52,29 @@ X.2.3 C Option
 --------------
 Option C applies to scanners that generate scanned documents or generate scanned photographs from negatives or from paper.
 A Content Creator that supports the A Option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.a.y.z.  <TO DO: list IODs here>
+
+X.2.4 Structured Display Option
+-------------------------------
+A Structured Display DICOM Object represents a standard method of encoding and exchanging a specific presentation layout of single screen that has been created for a Patient.  The Structured Display can be exchanged with images to allow for complete reproduction of the original exam.   See DICOM PS3.17: Section OO.1.1 for Informative Structured Display Use Cases for Dentistry.
+
+DICOM Structured Display which enables a user to arrange a specific presentation layout of single screen that has been created for a Patient.  
+
+An Image Display that supports the Structured Dislay Option shall be able to create a Basic Structured Display IOD, as defined in DICOM PS3.3 Section A.33.5.3, to specify an Instance of a single screen structured display that has been created for a Patient. 
+
+An Image Display that supports the Structured Dislay Option shall be able to:
+  + consume a Basic Structured Display IOD and the associated DICOM images, and
+  + render for the user a static presentation that shows the layout of the screen the exactly as specified in the Basic Structured Display IOD.
+
+X.2.5 Hanging Protocol Option
+-----------------------------
+A Hanging Protocol DICOM Object  defines the initial display arrangement of medical images on one or more display systems. It allows for the specification of how images should be positioned, sized, annotated, and organized when initially displayed to a user, while allowing users to subsequently manipulate and interact with the images.
+
+An Image Display that supports the Hanging Protocol Option shall be able to create a Hanging Protocol IOD, as defined in DICOM PS3.3 Section A.44.3, to specify he creator of the display, the type of Study it addresses, the type of image sets to display, the intended display environment, and the intended layout for the screen(s).
+
+An Image Display that supports the Hanging Protocol Option shall be able to:
+  + consume a Hanging Protocol IOD and the associated DICOM images, and
+  + render for the user an initial presentation that shows the layout of the images the exactly as specified in the Hanging Protocol IOD
+  + enable the user to interact with the images in the display.
 
 X.3 OIP Required Actor Groupings
 ===============================
