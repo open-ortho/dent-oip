@@ -1,7 +1,7 @@
 3.1 Display OIP Images [DEN-1]
 ------------------------------
 3.1.1 Scope
-=========
+===========
 This transaction is used to present O results to a dental professional interpreting a study.  This includes 2-dimensional radiographic images such as intraoral and panoramic image, cone beam computed tomography (CBCT) data); as well as visible light images, such as photographs in an organized and structured manner for all aspect of oral healthcare, including those in private practice settings. 
 
 <NOTE to Toni:  The above list comes from the ADA spec, Introduction section pg 7>
@@ -33,8 +33,8 @@ shown here:
 3.1.3 Referenced Standards
 ==========================
 
-+ TO DO:
-+ Add list of standards here...
++ ANSI/ADA Standard No. 1100, Rev. ??, "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets
++ TO DO: Add list of standards here...
 
 3.1.4 Messages
 ===============
@@ -78,3 +78,29 @@ The Display shall:
 + <TO DO:  enumerate here requirements that  apply to all IODs, or that are independent of an IOD type
 
 <TO DO:  Next, add logical subsections.   There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.
+
+3.1.4.1.3.2 Viewset VS-01
+~~~~~~~~~~~~~~~~~~~~~~~~~
+VS-01 (from DICOM correction package 1571) is the template preferred by the ABO for Case Submission and Display. It is the viewset most commonly used by orthodontic practitioners and vendors of orthodontic software.
+
+The Display shall be able to display for the user Viewset VS-01, with eight images and one text box, as defined in **ANSI/ADA Standard No. 1100**, Section 10.
+
+
+3.1.4.1.3.3 Viewset VS-02
+~~~~~~~~~~~~~~~~~~~~~~~~~
+VS-02 is a custom craniofacial viewset has greatest use for documentation of orthognathic and craniofacial surgery treatment.
+
+The Display shall be able to display for the user Viewset VS-01, with 13 views as defined in **ANSI/ADA Standard No. 1100**, Section 10.
+
+
+3.1.4.1.3.4 Viewset VS-03
+~~~~~~~~~~~~~~~~~~~~~~~~~
+VS-03 is a custom supplementary patient record display, presents specific views commonly requested by insurance companies for documentation of automatic qualifiers (such as excessive overjet or impinging deep bite).
+
+The Display shall be able to display for the user Viewset VS-03, with 13 image boxes as defined in **ANSI/ADA Standard No. 1100**, Section 10.
+
+3.1.4.1.3.5 Viewset VS-04
+~~~~~~~~~~~~~~~~~~~~~~~~~
+VS-04 is a custom supplementary patient record display, was designed to facilitate assessment of craniofacial asymmetries. 
+
+The Display shall be able to display for the user Viewset VS-04, with 12 image boxes as defined in **ANSI/ADA Standard No. 1100**, Section 10.
