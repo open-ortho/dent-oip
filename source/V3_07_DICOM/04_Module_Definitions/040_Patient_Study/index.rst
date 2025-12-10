@@ -1,7 +1,10 @@
 .. _patient_study:
 
 
-References:  DICOM PS3.3 C.7.1.1   Note:  Extensions in Table X.y z-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
+**References:**
+
++ DICOM PS3.3 C.7.1.1  
++ Extensions in Table X.y z-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
 
 **Table X.y.z-1 Patient Module Attribute Requirements**
 
@@ -15,11 +18,15 @@ References:  DICOM PS3.3 C.7.1.1   Note:  Extensions in Table X.y z-1 are from A
     * - Patient's Name
       - (0010,0010)
       - R+
-      - SHALL include the patient’s legal name; if anonymized, SHALL follow DICOM’s Attribute Confidentiality Profiles (Normative) in Part 15 Chapter E
+      - if anonymized, shall follow DICOM’s Attribute Confidentiality Profiles (Normative) in DICOM PS3.15 Chapter E
+    * - Patient ID
+      - (0010,0020)
+      - R+
+      - if anonymized, shall follow DICOM’s Attribute Confidentiality Profiles (Normative) in DICOM PS3.15 Chapter E
     * - Patient's Birth Date
       - (0010,0030)
       - R+
-      - SHALL include the patient’s date of birth; if anonymized, SHALL follow DICOM’s Attribute Confidentiality Profiles (Normative) in Part 15 Chapter E
+      - if anonymized, shall follow DICOM’s Attribute Confidentiality Profiles (Normative) in DICOM PS3.15 Chapter E
 
 
 Patient Study
