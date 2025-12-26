@@ -3,8 +3,7 @@
 General Study
 =============
 
-This normative section contains a description of the DICOM tags relevant to
-orthodontic photography pertaining to the General Study module.
+This normative section contains extensions to DICOM tags defined in the General Study module DICOM tags which are relevant to orthodontic photography.
 
 **References:**
 
