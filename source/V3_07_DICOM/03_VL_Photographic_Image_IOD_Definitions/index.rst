@@ -11,7 +11,7 @@ This part was compiled using the values allowed in the DICOM CID
 (Content IDs) tables, highlighting those values which are relevant to the
 orthodontic domain.
 
-The baseline requirements for the VL Photographic Image IOD is defined in DICOM `PS3.3: A.32.4.3 <hhttps://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.4.3>`_ .  In Table 7.3.1-1, Column 4 identifies modules where the IOP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for the VL Photographic Image IOD is defined in `DICOM PS3.3: A.32.4.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.4.3>`_ .  In Table 7.3.1-1, Column 4 identifies modules where the IOP profile defines additional constraints on the baseline DICOM requirements. 
 
 *<Discuss with Toni:   How to interpret blank cells in Column 4>>*
 
@@ -127,6 +127,8 @@ The baseline requirements for the VL Photographic Image IOD is defined in DICOM 
 
 7.3.1.1 VL Photographic Image IOD Acquisition Requirements
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+**Reference:**  <question for Toni:  Where did these requirement originate?>
 
 #. Each DICOM *Study* SHALL represent a specific orthodontic progress (rather than necessarily an orthodontic visit). The same *Study* SHALL NOT span across multiple visits, or multiple progresses.
 
