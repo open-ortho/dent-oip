@@ -49,16 +49,18 @@ A Content Creator that supports this option shall be able to acquire 2D photogra
 X.2.2 3D Scanning Option
 ------------------------
 The B Option applies to photography (visible light imaging) in orthodontics.  
-A Content Creator that supports the B Option shall be able to acquire 3D intra-oral and extra-oral scans and create DICOM images that are compliant with the requirements in DEN TF-3: 7.a.y.  <TO DO: list IODs here:  Encapsulated STL, Encapsulated OBJ, OSS (Optical Surface Scanning) (DICOM modality type M3D)>
+A Content Creator that supports the B Option shall be able to acquire 3D intra-oral and extra-oral scans and create DICOM images that are compliant with the requirements in DEN TF-3: 7.a.y.  
+DICOM A.85 WITH MODALITY M3D
+<TO DO: list IODs here:  Encapsulated STL, Encapsulated OBJ, OSS (Optical Surface Scanning) (DICOM modality type M3D)>
 
 X.2.3 2D Scanning Option
 ------------------------
-Option C applies to scanners that generate scanned documents or generate scanned photographs from negatives or from paper.
+Option C applies to scanners that generate scanned documents or generate scanned photographs from negatives or from paper.   SECONDARY CAPTURE WITH XC MODALITY
 A Content Creator that supports the A Option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.a.y.z.  <TO DO: list IODs here>
 
 X.2.4 3D Scanning Option
 ------------------------
-Option C applies to scanners that generate scanned documents or generate scanned photographs from negatives or from paper.
+Option C applies to scanners that generate scanned documents or generate scanned photographs from negatives or from paper.   SECONDARY CAPTURE WITH OSS MODALITY
 A Content Creator that supports the A Option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.a.y.z.  <TO DO: list IODs here>
 
 X.2.5 Structured Display Option
