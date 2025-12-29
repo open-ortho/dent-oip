@@ -14,23 +14,26 @@ Options that may be selected for each actor in this profile, if any, are listed 
       - **Option Name**
       - **Reference**
     * - Content Creator *(Note 1)*
-      - A Option
+      - Visible Light Option
       - Section X.2.1
     * - 
-      - B Option
+      - 3D Scanning Option
       - Section X.2.2
     * - 
-      - C Option
+      - 2D Scanning Option
       - Section X.2.3
+    * - Content Consumer
+      - No options defined
+      - --
     * - Content Consumer
       - No options defined
       - --
     * - Image Display
       - Structured Dislay Option
-      - Section X.2.4
+      - Section X.2.5
     * - 
       - Hanging Protocol Option
-      - Section X.2.5
+      - Section X.2.6
 
 *Note 1:* The Content Creator shall support at least one option.
 
@@ -38,22 +41,27 @@ Options that may be selected for each actor in this profile, if any, are listed 
 
 <*DISCUSS: This revision of the table proposes Options on the Display for support of Structured Display and Hanging Protocol.
 
-X.2.1 A Option
---------------
+X.2.1 Visible Light 2D Option
+-----------------------------
 The A Option applies to  photography (visible light imaging) in orthodontics.  
 A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 VL Photographic Image IOD Definition.  <TO DO: list IODs here>
 
-X.2.2 B Option
---------------
+X.2.2 3D Scanning Option
+------------------------
 The B Option applies to photography (visible light imaging) in orthodontics.  
-A Content Creator that supports the B Option shall be able to acquire 3D intraoral scans and create DICOM images that are compliant with the requirements in DEN TF-3: 7.a.y.  <TO DO: list IODs here>
+A Content Creator that supports the B Option shall be able to acquire 3D intra-oral and extra-oral scans and create DICOM images that are compliant with the requirements in DEN TF-3: 7.a.y.  <TO DO: list IODs here:  Encapsulated STL, Encapsulated OBJ, OSS (Optical Surface Scanning) (DICOM modality type M3D)>
 
-X.2.3 C Option
---------------
+X.2.3 2D Scanning Option
+------------------------
 Option C applies to scanners that generate scanned documents or generate scanned photographs from negatives or from paper.
 A Content Creator that supports the A Option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.a.y.z.  <TO DO: list IODs here>
 
-X.2.4 Structured Display Option
+X.2.4 3D Scanning Option
+------------------------
+Option C applies to scanners that generate scanned documents or generate scanned photographs from negatives or from paper.
+A Content Creator that supports the A Option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.a.y.z.  <TO DO: list IODs here>
+
+X.2.5 Structured Display Option
 -------------------------------
 A Structured Display DICOM Object represents a standard method of encoding and exchanging a specific presentation layout of single screen that has been created for a Patient.  The Structured Display can be exchanged with images to allow for complete reproduction of the original exam.   See DICOM PS3.17: Section OO.1.1 for Informative Structured Display Use Cases for Dentistry.
 
