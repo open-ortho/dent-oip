@@ -22,7 +22,7 @@ This normative section contains extensions to DICOM tags defined in the General 
     * - Accession Number
       - (0008,0050)
       - ??
-      - ??
+      - See :ref:`mwl_accession_number`.
     * - Study Description
       - (0008,1030)
       - RC+
