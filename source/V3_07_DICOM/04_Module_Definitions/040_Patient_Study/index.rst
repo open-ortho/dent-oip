@@ -1,37 +1,5 @@
 .. _patient_study:
 
-Patient Module
-==============
-
-This normative section contains extensions to DICOM tags defined in the Patient module which are relevant to orthodontic photography.
-
-**References:**
-
-+ `DICOM PS3.3: C.7.1.1  <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.7.1.1>`_ "Patient Module"
-+ Extensions in Table X.y z-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
-
-**Table X.y.z-1 Patient Module Attribute Requirements**
-
-.. list-table::
-    :header-rows: 1
-
-    * - **Attribute**
-      - **Tag**
-      - **Type**
-      - **Attribute Description**
-    * - Patient's Name
-      - (0010,0010)
-      - R+
-      - if anonymized, shall follow DICOM’s Attribute Confidentiality Profiles (Normative) in DICOM PS3.15 Chapter E
-    * - Patient ID
-      - (0010,0020)
-      - R+
-      - if anonymized, shall follow DICOM’s Attribute Confidentiality Profiles (Normative) in DICOM PS3.15 Chapter E
-    * - Patient's Birth Date
-      - (0010,0030)
-      - R+
-      - if anonymized, shall follow DICOM’s Attribute Confidentiality Profiles (Normative) in DICOM PS3.15 Chapter E
-
 
 Patient Study Module
 =====================
