@@ -52,7 +52,7 @@ In the OIP profile, the Content Creator is a 'generic' actor for a system that c
 
 In the 'real-world' OIP Content Creator actor may be:
 
-+ DICOM-compliant devices such as physical cameras, intraoral scanners, smart phone apps.   These acquire and create medical images while a patient is present.
++ DICOM-compliant devices such as physical cameras, intra-oral scanners, smart phone apps.   These acquire and create medical images while a patient is present.
 
 + A system or software that interfaces to a non-DICOM ready modality in order to integrate that modality into dental care workflows by creating DICOM output compliant with this profile.  Examples of a non-DICOM ready modality includes conventional photographic SLR cameras, a smart phone with a generic photo app, etc.
 
