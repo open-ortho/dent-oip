@@ -29,13 +29,33 @@ Table X.1-1 lists the transactions content module(s) defined in the OIP Profile.
     * - Content Creator
       - VL Photographic Image IOD Definition
       - --
-      - R
+      - R (Note 1)
       - DEN TF-3: 7.3.1 
-    * - Content Consumer
+    * - 
+      - Encapsulated 3D Manufacturing Model IOD Definition
+      - --
+      - R (Note 1)
+      - DEN TF-3: 7.3.2 
+    * - 
+      - Secondary Capture IOD Definition
+      - --
+      - R (Note 1)
+      - DEN TF-3: 7.3.3 
+    * - Content Consumer 
       - VL Photographic Image IOD Definition
       - --
       - R
       - DEN TF-3: 7.3.1
+    * - 
+      - Encapsulated 3D Manufacturing Model IOD Definition
+      - --
+      - R
+      - DEN TF-3: 7.3.2 
+    * - 
+      - Secondary Capture IOD Definition
+      - --
+      - R 
+      - DEN TF-3: 7.3.3 
     * - Image Display
       - --
       - Display OIP Images [DEN-1]
@@ -48,7 +68,8 @@ Most requirements are documented in DEN: TF-2: Transactions and DEN TF-3: Conten
 
 X.1.1.1 Content Creator
 ~~~~~~~~~~~~~~~~~~~~~~~
-In the OIP profile, the Content Creator is a 'generic' actor for a system that creates DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 of this profile.   
+In the OIP profile, the Content Creator is a 'generic' actor for a system that creates DICOM images.  
+To identify which type(s) of DICOM images a Content Creator supports, it shall specify support one or more of the Options in Table X.2-1.
 
 In the 'real-world' OIP Content Creator actor may be:
 
@@ -58,11 +79,9 @@ In the 'real-world' OIP Content Creator actor may be:
 
 + A system or software that converts existing contents of a non-DICOM archive into DICOM images compliant with this profile
 
-To identify which type(s) of DICOM images that a system supports, the Content Creator shall support one or more of the Options in Table X.2-1.
-
 X.1.1.2 Content Consumer
 ~~~~~~~~~~~~~~~~~~~~~~~~
-In the OIP profile, the Content Consumer is a 'generic' actor for a system that consumes DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 of this profile.   Using the DICOM images, Content Consumer performs functions that are relevant to its application, e.g., rendering the images for a user, storing the images in an archive, extracting information from the DICOM images for reporting purposes, etc.
+In the OIP profile, the Content Consumer is a 'generic' actor for a system that consumes DICOM images that are compliant with the requirements in DEN TF-3: 7.3.x of this profile.   Using the DICOM images, Content Consumer performs functions that are relevant to its application, e.g., rendering the images for a user, storing the images in an archive, extracting information from the DICOM images for reporting purposes, etc.
 
 <*DISCUSS:   A common pattern is for a Consumer to support all of the variations of content that a Content Creator can produce (following a pattern of Clients can choose, Servers support all).   Alternatively, you could choose to introduce Options as we are doing the the Creator to enable a Content Consumer to declare (in its product documentation) which types of content it supports.=*>
 
