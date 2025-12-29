@@ -161,6 +161,14 @@ The baseline requirements for the VL Photographic Image IOD is defined in `DICOM
 
 7.3.2 Encapsulated 3D Manufacturing Models IODs Definition
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The baseline requirements for Encapsulated 3D Manufacturing Model IODs are defined in `DICOM PS3.3: A.85 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85>`_ , specifially:
+
++ **Encapsulated STL IOD** in `DICOM PS3.3: A.85.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.1>`_ - The Encapsulated STL IOD describes a 3D model in Stereolithography (STL) format that has been encapsulated within a DICOM Information Object.
++ **Encapsulated OBJ IOD** in `DICOM PS3.3: A.85.2 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.2>`_ - The Encapsulated OBJ IOD describes a 3D model in OBJ format. *(Note:  Any supporting material library file (MTL) and supporting 2D texture map image files are addressed in other DICOM IODs..)*
++ **Encapsulated MTL IOD** in `DICOM PS3.3: A.85.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.3>`_- The Encapsulated MTL IOD describes in MTL format a materials library used by an Encapsulated OBJ 3D model (see `DICOM PS3.3: A.85.2.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.2.1>_).
+
+The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.2-1, Column 4 identifies modules where the IOP profile defines additional constraints on the baseline DICOM requirements. 
+
 
 .. list-table:: **Table 7.3.2-1 - IHE constraints DICOM Encapsulated 3D Manufacturing Model IODs**
    :header-rows: 1
@@ -256,7 +264,7 @@ The baseline requirements for the VL Photographic Image IOD is defined in `DICOM
      - Acquisition Context 
      - C.7.6.14
      - X
-     - M
+     - M See Section 7.4.x
 
-       See Section 7.4.x
-
+7.3.2.1 Additional Encoding Requirements
+++++++++++++++++++++++++++++++++++++++++
