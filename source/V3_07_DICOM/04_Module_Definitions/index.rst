@@ -72,6 +72,10 @@ This normative section contains extensions to DICOM tags defined in the General 
       - **Tag**
       - **Type**
       - **Attribute Description**
+    * - Study Date
+      - (0008,0020)
+      - R+
+      - Shall include the date of image acquisition
     * - Accession Number
       - (0008,0050)
       - ??
