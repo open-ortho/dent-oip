@@ -50,11 +50,13 @@ X.1.1.1 Content Creator
 ~~~~~~~~~~~~~~~~~~~~~~~
 In the OIP profile, the Content Creator is a 'generic' actor for a system that creates DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 of this profile.   
 
-In the 'real-world' an OIP Content Creator actor may be:
+In the 'real-world' OIP Content Creator actor may be:
 
-+ *Acquisition Modality* -- A system that acquires and creates medical images while a patient is present; this includes, for example, devices such as cameras or interoral scanners.  A modality may also create other evidence objects such as Grayscale Softcopy Presentation States for the consistent viewing of images or Evidence Documents containing measurements, etc.  In orthodontic care, modalities acquire diagnostic information such as images and/or evidence documents. Some examples of these may include still visible light photography, visible light motion picture with audio, radiographs, etc.
++ DICOM-compliant devices such as physical cameras, intraoral scanners, smart phone apps.   These acquire and create medical images while a patient is present.
 
-+ *Acquisition Modality Importer* -- A system that interfaces to a non-DICOM ready modality in order to integrate that modality into dental care workflows.
++ A system or software that interfaces to a non-DICOM ready modality in order to integrate that modality into dental care workflows by creating DICOM output compliant with this profile.  Examples of a non-DICOM ready modality includes conventional photographic SLR cameras, a smart phone with a generic photo app, etc.
+
++ A system or software that converts existing contents of a non-DICOM archive into DICOM images compliant with this profile
 
 To identify which type(s) of DICOM images that a system supports, the Content Creator shall support one or more of the Options in Table X.2-1.
 
