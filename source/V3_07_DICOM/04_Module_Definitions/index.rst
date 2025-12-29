@@ -48,6 +48,10 @@ This normative section contains extensions to DICOM tags defined in the Patient 
       - (0010,0030)
       - R+
       - See Patient ID (0010,0010).  If anonymized, shall follow DICOM’s Attribute Confidentiality Profiles (Normative) in DICOM PS3.15 Chapter E.
+    * - Patient's Sex
+      - (0010,0040)
+      - O+
+      - If anonymized, shall follow DICOM’s Attribute Confidentiality Profiles (Normative) in DICOM PS3.15 Chapter E.
 
 7.4.1.2 General Study Module
 +++++++++++++++++++++++++++
