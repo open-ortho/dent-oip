@@ -33,7 +33,7 @@ The baseline requirements for the VL Photographic Image IOD is defined in `DICOM
      - M
      - M 
 
-       See Section 7.4.x
+       See Section 7.4.1.1
    * - 
      - Clinical Trial Subject
      - C.7.1.3
@@ -45,14 +45,14 @@ The baseline requirements for the VL Photographic Image IOD is defined in `DICOM
      - M
      - M
 
-       See Section 7.4.x
+       See Section 7.4.1.2
    * - 
      - Patient Study
      - C.7.2.2
      - U
      - U
 
-       See Section 7.4.x
+       See Section 7.4.1.3
    * - 
      - Clinical Trial Study
      - C.7.2.3
