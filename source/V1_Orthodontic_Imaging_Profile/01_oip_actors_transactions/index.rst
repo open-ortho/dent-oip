@@ -26,41 +26,49 @@ Table X.1-1 lists the transactions content module(s) defined in the OIP Profile.
       - **Transactions**
       - **Optionality**
       - **Reference**
-    * - Content Creator
+    * - Content Creator & Content Consumer
       - VL Photographic Image IOD Definition
       - --
-      - R (Note 1)
+      - R *(Note 1)*
       - DEN TF-3: 7.3.1 
     * - 
-      - Encapsulated 3D Manufacturing Model IOD Definition
+      - Videograpic Image IOD Definition
       - --
-      - R (Note 1)
+      - R *(Note 1)*
       - DEN TF-3: 7.3.2 
-    * - 
-      - Secondary Capture IOD Definition
-      - --
-      - R (Note 1)
-      - DEN TF-3: 7.3.3 
-    * - Content Consumer 
-      - VL Photographic Image IOD Definition
-      - --
-      - R
-      - DEN TF-3: 7.3.1
+
     * - 
       - Encapsulated 3D Manufacturing Model IOD Definition
       - --
-      - R
-      - DEN TF-3: 7.3.2 
+      - R *(Note 1)*
+      - DEN TF-3: 7.3.3 
     * - 
       - Secondary Capture IOD Definition
       - --
-      - R 
+      - R *(Note 1)*
       - DEN TF-3: 7.3.3 
+    * - 
+      - Surface Scan Mesh IOD Definition
+      - --
+      - R *(Note 1)*
+      - DEN TF-3: 7.3.4 
+    * - 
+      - Multi-frame True Color Secondary Capture Image IOD Definition
+      - --
+      - R *(Note 1)*
+      - DEN TF-3: 7.3.5 
+    * - 
+      - Secondary Capture IOD Definition
+      - --
+      - R *(Note 1)*
+      - DEN TF-3: 7.3.5 
     * - Image Display
       - --
       - Display OIP Images [DEN-1]
       - R
       - DEN TF-2: 3.1
+
+*Note 1:* A Content Creator shall support at least one of these Content Modules (i.e., IOD Defintiions).   A Content Creator shall support all Content Modules listed. 
 
 X.1.1 Actor Description and Actor Profile Requirements
 ------------------------------------------------------
