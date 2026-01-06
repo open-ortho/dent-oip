@@ -14,7 +14,7 @@ This part was compiled using the values allowed in the DICOM CID
 (Content IDs) tables, highlighting those values which are relevant to the
 orthodontic domain.
 
-The baseline requirements for the VL Photographic Image IOD is defined in `DICOM PS3.3: A.32.4.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.4.3>`_ .  In Table 7.3.1-1, Column 4 identifies modules where the IOP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for the VL Photographic Image IOD are defined in `DICOM PS3.3: A.32.4.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.4.3>`_ .  In Table 7.3.1-1, Column 4 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
 *<Discuss:  This profile defines many constraints on the modules listed in this table.   In Col 4, add a reference to the section containing those constraints (otherwise, a quick glance at this table implies, for example, that there is no difference between DICOM and OIP for the General Study, Patient, Acquisition Context, etc modules, which is not the case)>* 
 
@@ -160,7 +160,11 @@ The baseline requirements for the VL Photographic Image IOD is defined in `DICOM
 
 7.3.2 Videograpic Image IOD Definition IODs Definition
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-The baseline requirements for Video Photographic Image IODs are defined in `DICOM PS3.3: A.32.7.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.7.3>`_ :
+
+This normative section contains a description of the DICOM tags which are
+necessary to captureotion picture, movies, and/or video in orthodontics.
+
+The baseline requirements for Video Photographic Image IODs are defined in `DICOM PS3.3: A.32.7.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.7.3>`_ . In Table 7.3.2-1, Column 4 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
 .. list-table:: **Table 7.3.2-1 - IHE constraints DICOM Modules for Videograpic Image IODs**
    :header-rows: 1
@@ -240,6 +244,16 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - U
      - U
    * - 
+     - Cine
+     - C.7.6.5
+     - M
+     - M
+   * - 
+     - Multi-frame
+     - C.7.6.6
+     - M
+     - M
+   * - 
      - Image Pixel
      - C.7.6.3
      - M
@@ -270,8 +284,26 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - M
 
        See Section 7.4.x
-
-
+   * - 
+     - ICC Profile
+     - C.11.15
+     - U
+     - U
+   * - 
+     - SOP Common
+     - C.12.1
+     - M
+     - M
+   * - 
+     - Common Instance Reference
+     - C.12.2
+     - U
+     - U
+   * - 
+     - Frame Extraction
+     - C.12.3
+     - C - Required if the SOP Instance was created in response to a Frame-Level retrieve request
+     - C
 
 7.3.3 Encapsulated 3D Manufacturing Models IODs Definition
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
