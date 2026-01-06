@@ -1,13 +1,13 @@
 .. _patient_study:
 
 
-Patient Study Module
-=====================
+7.4.1.3 Patient Study Module
+============================
 
-This normative section contains extensions to DICOM tags defined in the Patient Study module .
+This normative section contains extensions to DICOM tags defined in the Patient Study module for orthodontic image acquisition.
 
-Encoding Reason for Visit
-+++++++++++++++++++++++++
+7.4.1.3.1 Encoding Reason for Visit
++++++++++++++++++++++++++++++++++++
 
 In orthodontics, the reason for a visit is typically obtained from the Practice Management System (PMS) and is associated with an appointment. Examples include "Initial Consultation", "Follow-up", "Debanding", or "Adjustment". These values represent the reason for the patient's visit and do not necessarily describe any imaging-specific procedures.
 
@@ -16,9 +16,9 @@ This differs from Requested Procedure Description (0032,1060), which is used in 
 **References:**
 
 + `DICOM PS3.3: C.7.1.1  <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.7.2.2>`_ "Patient Study Module"
-+ Extensions in Table X.y z-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
++ Extensions in Table 7.4.1.3-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
 
-**Table X.y.z-1 Patient Study Module Attribute Requirements**
+**Table 7.4.1.3-1 Patient Study Module Attribute Requirements**
 
 .. list-table::
     :header-rows: 1
