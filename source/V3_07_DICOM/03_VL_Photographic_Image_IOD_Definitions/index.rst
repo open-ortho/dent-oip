@@ -158,8 +158,122 @@ The baseline requirements for the VL Photographic Image IOD is defined in `DICOM
 
 #. When two progresses are collected during the same orthodontic visit (the practice might acquire a set of images just before removing braces, and another set just after removing braces during the same patient encounter), the software shall create two separate DICOM Studies, one for each progress. Each progress is distinguished by making use of the :ref:`Acquisition Context Module <acquisition_context>`
 
+7.3.2 Videograpic Image IOD Definition IODs Definition
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+The baseline requirements for Video Photographic Image IODs are defined in `DICOM PS3.3: A.32.7.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.7.3>`_ :
 
-7.3.2 Encapsulated 3D Manufacturing Models IODs Definition
+.. list-table:: **Table 7.3.2-1 - IHE constraints DICOM Modules for Videograpic Image IODs**
+   :header-rows: 1
+   :widths: 15 25 15 40 15
+
+   * - IE
+     - Module
+     - Reference
+     - Usage
+     - OIP Profile Usage
+   * - Patient
+     - Patient
+     - C.7.1.1
+     - M
+     - M 
+
+       See Section 7.4.1.1
+   * - 
+     - Clinical Trial Subject
+     - C.7.1.3
+     - U
+     - U
+   * - Study
+     - General Study
+     - C.7.2.1
+     - M
+     - M
+
+       See Section 7.4.1.2
+   * - 
+     - Patient Study
+     - C.7.2.2
+     - U
+     - U
+
+       See Section 7.4.1.3
+   * - 
+     - Clinical Trial Study
+     - C.7.2.3
+     - U
+     - U
+   * - Series
+     - General Series
+     - C.7.3.1
+     - M
+     - M
+   * - 
+     - Clinical Trial Series
+     - C.7.3.2
+     - U
+     - U
+   * - Frame of Reference
+     - Synchronization
+     - C.7.4.2
+     - U
+     - U
+   * - Equipment
+     - General Equipment
+     - C.7.5.1
+     - M
+     - M
+   * - Acquisition
+     - General Acquisition
+     - C.7.10.1
+     - M
+     - M
+   * - Image
+     - General Image
+     - C.7.6.1
+     - M
+     - M 
+
+       See Section 7.4.x
+   * - 
+     - General Reference
+     - C.12.4
+     - U
+     - U
+   * - 
+     - Image Pixel
+     - C.7.6.3
+     - M
+     - M
+   * - 
+     - Acquisition Context
+     - C.7.6.14
+     - M
+     - M
+
+       See Section 7.4.x
+   * - 
+     - Device
+     - C.7.6.12
+     - U
+     - U
+
+       See Section 7.4.x
+   * - 
+     - Specimen
+     - C.7.6.22
+     - C - Required if Imaging Subject is a specimen
+     - C
+   * - 
+     - VL Image
+     - C.8.12.1
+     - M
+     - M
+
+       See Section 7.4.x
+
+
+
+7.3.3 Encapsulated 3D Manufacturing Models IODs Definition
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 The baseline requirements for Encapsulated 3D Manufacturing Model IODs are defined in `DICOM PS3.3: A.85 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85>`_ , specifially:
 
@@ -168,7 +282,6 @@ The baseline requirements for Encapsulated 3D Manufacturing Model IODs are defin
 + **Encapsulated MTL IOD** in `DICOM PS3.3: A.85.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.3>`_- The Encapsulated MTL IOD describes in MTL format a materials library used by an Encapsulated OBJ 3D model (see `DICOM PS3.3: A.85.2.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.2.1>_).
 
 The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.2-1, Column 4 identifies modules where the IOP profile defines additional constraints on the baseline DICOM requirements. 
-
 
 .. list-table:: **Table 7.3.2-1 - IHE constraints DICOM Encapsulated 3D Manufacturing Model IODs**
    :header-rows: 1
