@@ -63,6 +63,8 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - C.7.3.1
      - M
      - M
+
+       See Section 7.4.1.4
    * - 
      - Clinical Trial Series
      - C.7.3.2
@@ -211,6 +213,8 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - C.7.3.1
      - M
      - M
+
+       See Section 7.4.1.4
    * - 
      - Clinical Trial Series
      - C.7.3.2
