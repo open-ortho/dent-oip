@@ -160,11 +160,11 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
 
 #. When two progresses are collected during the same orthodontic visit (the practice might acquire a set of images just before removing braces, and another set just after removing braces during the same patient encounter), the software shall create two separate DICOM Studies, one for each progress. Each progress is distinguished by making use of the :ref:`Acquisition Context Module <acquisition_context>`
 
-7.3.2 Videograpic Image IOD Definition IODs Definition
+7.3.2 Videograpic Image IOD Definition IOD Definition
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 This normative section contains a description of the DICOM tags which are
-necessary to captureotion picture, movies, and/or video in orthodontics.
+necessary to capture motion picture, movies, and/or video in orthodontics.
 
 The baseline requirements for Video Photographic Image IODs are defined in `DICOM PS3.3: A.32.7.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.7.3>`_ . In Table 7.3.2-1, Column 4 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
@@ -415,5 +415,116 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - X
      - M See Section 7.4.x
 
-7.3.2.1 Additional Encoding Requirements
+7.3.3.1 Additional Encoding Requirements
 ++++++++++++++++++++++++++++++++++++++++
+
+
+7.3.4 Surface Scan Mesh IOD Definition
++++++++++++++++++++++++++++++++++++++++
+
+This normative section contains a description of the DICOM tags which are
+necessary to capture 3D intraoral or extraoral surface scans directly from a patient.
+
+The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3: A.68 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.68>`_ . In Table 7.3.4-1, Column 4 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+
+.. list-table:: **Table 7.3.4-1 - IHE constraints DICOM Modules for Videograpic Image IODs**
+   :header-rows: 1
+   :widths: 15 25 15 40 15
+
+   * - IE
+     - Module
+     - Reference
+     - Usage
+     - OIP Profile Usage
+   * - Patient
+     - Patient
+     - C.7.1.1
+     - M
+     - M 
+
+       See Section 7.4.1.1
+   * - 
+     - Clinical Trial Subject
+     - C.7.1.3
+     - U
+     - U
+   * - Study
+     - General Study
+     - C.7.2.1
+     - M
+     - M
+
+       See Section 7.4.1.2
+   * - 
+     - Patient Study
+     - C.7.2.2
+     - U
+     - U
+
+       See Section 7.4.1.3
+   * - 
+     - Clinical Trial Study
+     - C.7.2.3
+     - U
+     - U
+   * - Series
+     - General Series
+     - C.7.3.1
+     - M
+     - M
+
+       See Section 7.4.1.4
+   * - 
+     - Clinical Trial Series
+     - C.7.3.2
+     - U
+     - U
+   * - 
+     - Optical Surface Scanner Series
+     - C.8.29.2
+     - M
+     - M
+   * - Frame of Reference
+     - Frame of Reference
+     - C.7.4.1
+     - M
+     - M
+   * - Equipment
+     - General Equipment
+     - C.7.5.1
+     - M
+     - M
+   * - 
+     - Enhanced General Equipment
+     - C.7.5.2
+     - M
+     - M
+   * - Surface
+     - Surface Mesh
+     - C.27.1
+     - M
+     - M
+   * - 
+     - UV Mapping
+     - C.27.6
+     - U
+     - U
+   * - 
+     - Scan Procedure
+     - C.8.29.2
+     - M
+     - M
+   * - 
+     - Specimin
+     - C.7.6.22
+     - U
+     - U
+   * - 
+     - SOP Common
+     - C.12.1
+     - M
+     - M
+
+7.3.4.1 Additional Encoding Requirements
+++++++++++++++++++++++++++++++++++++++++
+
