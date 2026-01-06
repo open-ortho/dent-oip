@@ -61,7 +61,7 @@ Table X.1-1 lists the transactions content module(s) defined in the OIP Profile.
       - Secondary Capture IOD Definition
       - --
       - R *(Note 1)*
-      - DEN TF-3: 7.3.5 
+      - DEN TF-3: 7.3.6 
     * - Image Display
       - --
       - Display OIP Images [DEN-1]
