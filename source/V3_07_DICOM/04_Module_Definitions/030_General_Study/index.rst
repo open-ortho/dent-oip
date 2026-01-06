@@ -1,14 +1,14 @@
 .. _general_study:
 
-General Study
-=============
+7.4.1.2 General Study
+=====================
 
-This normative section contains extensions to DICOM tags defined in the General Study module DICOM tags which are relevant to orthodontic photography.
+This normative section contains extensions to DICOM tags defined in the General Study module DICOM tags which are relevant to orthodontic image acquisition.
 
 **References:**
 
 + `DICOM PS3.3: C.7.2.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.7.2.1>`_
-+ Extensions in Table X.y z-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
++ Extensions in Table 7.4.1.2-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
 
 **Table X.y.z-1 General Study Module Attribute Requirements**
 
