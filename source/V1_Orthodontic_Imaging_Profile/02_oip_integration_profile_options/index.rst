@@ -14,72 +14,76 @@ Options that may be selected for each actor in this profile, if any, are listed 
       - **Option Name**
       - **Reference**
     * - Content Creator *(Note 1)*
-      - Visible Light Option
+      - Direct Photography Option
       - Section X.2.1
     * - 
-      - 3D Scanning Option
+      - Direct Motion Picture Option
       - Section X.2.2
     * - 
-      - 2D Scanning Option
+      - 3D Scan for Appliances Option
       - Section X.2.3
     * - 
-      - Scanned Radiograph Option
+      - 3D Intraoral / Extraoral Scan Option
       - Section X.2.4
+    * - 
+      - True Color Scan Option
+      - Section X.2.5
+    * - 
+      - Scanned Radiograph Option
+      - Section X.2.6
     * - Content Consumer
       - No options defined
       - --
     * - Image Display
       - Structured Dislay Option
-      - Section X.2.5
+      - Section X.2.7
     * - 
       - Hanging Protocol Option
-      - Section X.2.6
+      - Section X.2.8
 
 *Note 1:* The Content Creator shall support at least one option.
 
-<*DISCUSS: (1) Confirm/adjust the list of Creator options and the DICOM scope of each.   (2) Determine whether there should be options for the Content Consumer, or whether a Consumer that is compliant with this profile shalle be able to 'process' the types of images in all of the options*>
+<*DISCUSS: (1) Possibly rename options to be more meaningful to industry readers.  (2) Determine whether there should be options for the Content Consumer, or whether a Consumer that is compliant with this profile shalle be able to 'process' the types of images in all of the options*>
 
 <*DISCUSS: This revision of the table proposes Options on the Display for support of Structured Display and Hanging Protocol.
 
-X.2.1 Visible Light Option
+X.2.1 Direct Photography Option
 -----------------------------
-The Visible Light Option applies to photography (visible light imaging) in orthodontics.  
+The Visible Light Option applies to direct photography (visible light imaging) in orthodontics.  
 
 A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 VL Photographic Image IOD Definition.  
 
-X.2.2 3D Scanning Option
------------------------------
-The 3D Scanning Option Option applies to devices that acquire 3D intraoral surfaces.  
+X.2.2 Direct Motion Picture Option
+---------------------------------
+The Direct Motion Picture Option applies to devices that capture motion picture, movies, and/or video in orthodontics.  
 
-A Content Creator that supports this ption shall be able to acquire 3D intra-oral and extra-oral scans and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.2  
+A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.2 Videograpic Image IOD Definition.  
 
-A Content Creator that supports this option shall be able to create one or more of these DICOM IODs:
+X.2.3 3D Scan for Appliances Option
+---------------------------------------
+The 3D Scan Option Option applies to for aligners and study models needed to produce orthodontic appliances. These are surfaces produced by devices and systems (M3D), where the data comes from different tools, for example treatment planning, or orthodontic appliance design for production/manufacturing.
 
-+ Encapsulated STL IOD with Modality of M3D
-+ Encapsulated OBJ IOD with Modality of M3D
-+ Encapsulated MTL IOD with Modality of M3D
+A Content Creator that supports this option shall be able to create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.3 Encapsulated 3D Manufacturing Model IOD Definition.
 
-X.2.3 2D Scanning Option
+X.2.4 3D Intraoral / Extraoral Scan Option
+------------------------------------------
+The 3D Intraoral / Extraoral Scan Option applies to devices that capture 3D intraoral or extraoral surface scans directly from a patient
+
+A Content Creator that supports this option shall be able to create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.4 Surface Scan Mesh IOD Definition.
+
+X.2.5 True Color Scan Option
 ------------------------
-The 2D Scanning Option applies to scanners that generate scanned documents or generate scanned photographs from negatives or from paper.  
+The True Color Scan Option applies devices that scan film, negatives, or positive photographs.  
 
-A Content Creator that supports this option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.3.3 
+A Content Creator that supports this option shall be able to create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition.
 
-A Content Creator that supports this option shall be able to create:
+X.2.6 Scanned Radiographs Option
+--------------------------------
+The 2D Scan Option applies to scanners that generate higher quality medical-grade scanned radiographs from 2D film (cephalograms, bytewings, intraoral radiographs, panos, or other body parts).   
 
-+ Secondary Capture IOD with Modality of XC
+A Content Creator that supports this option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.3.6 Multi-frame True Color Secondary Capture Image IOD Definitions.
 
-X.2.4 Scanned Radiograph Option
--------------------------------
-The Scanned Radiograph Option applies to scanners thatenerate higher quality medical-grade scanned radiographs from 2D film (cephalograms, bytewings, intraoral radiographs, panos, or other body parts).   
-
-A Content Creator that supports this shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.3.4 
-
-A Content Creator that supports this option shall be able to create:
-
-+ Secondary Capture IOD with Modality of OSS
-
-X.2.5 Structured Display Option
+X.2.7 Structured Display Option
 -------------------------------
 A Structured Display DICOM Object represents a standard method of encoding and exchanging a specific presentation layout of single screen that has been created for a Patient.  The Structured Display can be exchanged with images to allow for complete reproduction of the original exam.   See DICOM PS3.17: Section OO.1.1 for Informative Structured Display Use Cases for Dentistry.
 
@@ -91,7 +95,7 @@ An Image Display that supports the Structured Dislay Option shall be able to:
   + consume a Basic Structured Display IOD and the associated DICOM images, and
   + render for the user a static presentation that shows the layout of the screen the exactly as specified in the Basic Structured Display IOD.
 
-X.2.6 Hanging Protocol Option
+X.2.8 Hanging Protocol Option
 -----------------------------
 A Hanging Protocol DICOM Object  defines the initial display arrangement of medical images on one or more display systems. It allows for the specification of how images should be positioned, sized, annotated, and organized when initially displayed to a user, while allowing users to subsequently manipulate and interact with the images.
 
