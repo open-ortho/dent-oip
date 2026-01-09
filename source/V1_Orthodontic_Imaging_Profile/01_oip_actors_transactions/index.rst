@@ -87,6 +87,8 @@ In the 'real-world' OIP Content Creator actor may be:
 
 + A system or software that converts existing contents of a non-DICOM archive into DICOM images compliant with this profile
 
+When claiming compliance to the OPI profile, a product identifies its DICOM capabilities by supporting one or more options in Table X.1-1.
+
 X.1.1.2 Content Consumer
 ~~~~~~~~~~~~~~~~~~~~~~~~
 In the OIP profile, the Content Consumer is a 'generic' actor for a system that consumes DICOM images that are compliant with the requirements in DEN TF-3: 7.3.x of this profile.   Using the DICOM images, Content Consumer performs functions that are relevant to its application, e.g., rendering the images for a user, storing the images in an archive, extracting information from the DICOM images for reporting purposes, etc.
