@@ -57,11 +57,11 @@ X.2.2 Direct Motion Picture Option
 ---------------------------------
 The Direct Motion Picture Option applies to devices that capture motion picture, movies, and/or video in orthodontics.  
 
-A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.2 Videograpic Image IOD Definition.  
+A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.2 Video Photograpic Image IOD Definition.  
 
 X.2.3 3D Scan for Appliances Option
 ---------------------------------------
-The 3D Scan Option Option applies to for aligners and study models needed to produce orthodontic appliances. These are surfaces produced by devices and systems (M3D), where the data comes from different tools, for example treatment planning, or orthodontic appliance design for production/manufacturing.
+The 3D Scan Option applies to for aligners and study models needed to produce orthodontic appliances. These are surfaces produced by devices and systems (M3D), where the data comes from different tools, for example treatment planning, or orthodontic appliance design for production/manufacturing.
 
 A Content Creator that supports this option shall be able to create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.3 Encapsulated 3D Manufacturing Model IOD Definition.
 
@@ -72,16 +72,16 @@ The 3D Intraoral / Extraoral Scan Option applies to devices that capture 3D intr
 A Content Creator that supports this option shall be able to create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.4 Surface Scan Mesh IOD Definition.
 
 X.2.5 True Color Scan Option
-------------------------
+----------------------------
 The True Color Scan Option applies devices that scan film, negatives, or positive photographs.  
 
 A Content Creator that supports this option shall be able to create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition.
 
 X.2.6 Scanned Radiographs Option
 --------------------------------
-The 2D Scan Option applies to scanners that generate higher quality medical-grade scanned radiographs from 2D film (cephalograms, bytewings, intraoral radiographs, panos, or other body parts).   
+The 2D Scan Option applies to scanners that generate higher quality medical-grade scanned radiographs from 2D film (cephalograms, bytewings, intraoral radiographs, panos, or other body parts, e.g., face).   
 
-A Content Creator that supports this option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.3.6 Multi-frame True Color Secondary Capture Image IOD Definitions.
+A Content Creator that supports this option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.3.6  Secondary Capture Image IOD Definitions with a Modality type of OSS.
 
 X.2.7 Structured Display Option
 -------------------------------
