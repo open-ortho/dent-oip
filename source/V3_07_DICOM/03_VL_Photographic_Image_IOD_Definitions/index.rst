@@ -14,11 +14,11 @@ This part was compiled using the values allowed in the DICOM CID
 (Content IDs) tables, highlighting those values which are relevant to the
 orthodontic domain.
 
-The baseline requirements for the VL Photographic Image IOD are defined in `DICOM PS3.3: A.32.4.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.4.3>`_ .  In Table 7.3.1-1, Column 4 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for the VL Photographic Image IOD are defined in `DICOM PS3.3: A.32.4.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.4.3>`_ .  In Table 7.3.1-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
-*<Discuss:  This profile defines many constraints on the modules listed in this table.   In Col 4, add a reference to the section containing those constraints (otherwise, a quick glance at this table implies, for example, that there is no difference between DICOM and OIP for the General Study, Patient, Acquisition Context, etc modules, which is not the case)>* 
+*<Discuss:  This profile defines many constraints on the modules listed in this table.   In Col 5, add a reference to the section containing those constraints (otherwise, a quick glance at this table implies, for example, that there is no difference between DICOM and OIP for the General Study, Patient, Acquisition Context, etc modules, which is not the case)>* 
 
-.. list-table:: **Table 7.3.1-1 - IHE constraints DICOM Modules for VL Photographic Image IODs**
+.. list-table:: **Table 7.3.1-1 - IHE constraints on DICOM Modules for VL Photographic Image IODs**
    :header-rows: 1
    :widths: 15 25 15 40 15
 
@@ -160,15 +160,15 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
 
 #. When two progresses are collected during the same orthodontic visit (the practice might acquire a set of images just before removing braces, and another set just after removing braces during the same patient encounter), the software shall create two separate DICOM Studies, one for each progress. Each progress is distinguished by making use of the :ref:`Acquisition Context Module <acquisition_context>`
 
-7.3.2 Videograpic Image IOD Definition IOD Definition
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+7.3.2 Video Photograpic Image IOD Definition IOD Definition
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 This normative section contains a description of the DICOM tags which are
 necessary to capture motion picture, movies, and/or video in orthodontics.
 
-The baseline requirements for Video Photographic Image IODs are defined in `DICOM PS3.3: A.32.7.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.7.3>`_ . In Table 7.3.2-1, Column 4 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for Video Photographic Image IODs are defined in `DICOM PS3.3: A.32.7.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.7.3>`_ . In Table 7.3.2-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
-.. list-table:: **Table 7.3.2-1 - IHE constraints DICOM Modules for Videograpic Image IODs**
+.. list-table:: **Table 7.3.2-1 - IHE constraints on DICOM Modules for Video Photograpic Image IODs**
    :header-rows: 1
    :widths: 15 25 15 40 15
 
@@ -315,11 +315,11 @@ The baseline requirements for Encapsulated 3D Manufacturing Model IODs are defin
 
 + **Encapsulated STL IOD** in `DICOM PS3.3: A.85.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.1>`_ - The Encapsulated STL IOD describes a 3D model in Stereolithography (STL) format that has been encapsulated within a DICOM Information Object.
 + **Encapsulated OBJ IOD** in `DICOM PS3.3: A.85.2 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.2>`_ - The Encapsulated OBJ IOD describes a 3D model in OBJ format. *(Note:  Any supporting material library file (MTL) and supporting 2D texture map image files are addressed in other DICOM IODs..)*
-+ **Encapsulated MTL IOD** in `DICOM PS3.3: A.85.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.3>`_- The Encapsulated MTL IOD describes in MTL format a materials library used by an Encapsulated OBJ 3D model (see `DICOM PS3.3: A.85.2.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.2.1>_).
++ **Encapsulated MTL IOD** in `DICOM PS3.3: A.85.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.3>`_ . The Encapsulated MTL IOD describes in MTL format a materials library used by an Encapsulated OBJ 3D model (see `DICOM PS3.3: A.85.2.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.2.1>`_).
 
-The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.2-1, Column 4 identifies modules where the IOP profile defines additional constraints on the baseline DICOM requirements. 
+The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.3-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
-.. list-table:: **Table 7.3.2-1 - IHE constraints DICOM Encapsulated 3D Manufacturing Model IODs**
+.. list-table:: **Table 7.3.3-1 - IHE constraints on DICOM Encapsulated 3D Manufacturing Model IODs**
    :header-rows: 1
    :widths: 15 25 15 40 15
 
@@ -413,7 +413,9 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - Acquisition Context 
      - C.7.6.14
      - X
-     - M See Section 7.4.x
+     - M 
+
+      See Section 7.4.x
 
 7.3.3.1 Additional Encoding Requirements
 ++++++++++++++++++++++++++++++++++++++++
@@ -425,9 +427,9 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
 This normative section contains a description of the DICOM tags which are
 necessary to capture 3D intraoral or extraoral surface scans directly from a patient.
 
-The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3: A.68 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.68>`_ . In Table 7.3.4-1, Column 4 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3: A.68 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.68>`_ . In Table 7.3.4-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
-.. list-table:: **Table 7.3.4-1 - IHE constraints DICOM Modules for Videograpic Image IODs**
+.. list-table:: **Table 7.3.4-1 - IHE constraints on DICOM Modules for Surface Scan Mesh IODs**
    :header-rows: 1
    :widths: 15 25 15 40 15
 
@@ -515,7 +517,7 @@ The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3
      - M
      - M
    * - 
-     - Specimin
+     - Specimen
      - C.7.6.22
      - U
      - U
@@ -528,3 +530,162 @@ The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3
 7.3.4.1 Additional Encoding Requirements
 ++++++++++++++++++++++++++++++++++++++++
 
+7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+This normative section contains a description of the DICOM tags which are
+necessary to capture scan film, negatives, or positive photographs. 
+
+The baseline requirements for Multi-frame True Color Secondary Capture Image IODs are defined in `DICOM PS3.3: A.68 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.8.5>`_ . In Table 7.3.5-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+
+.. list-table:: **Table 7.3.5-1 - IHE constraints on DICOM Modules for Surface Scan Mesh IODs**
+   :header-rows: 1
+   :widths: 15 25 15 40 15
+
+   * - IE
+     - Module
+     - Reference
+     - Usage
+     - OIP Profile Usage
+   * - Patient
+     - Patient
+     - C.7.1.1
+     - M
+     - M 
+
+       See Section 7.4.1.1
+   * - 
+     - Clinical Trial Subject
+     - C.7.1.3
+     - U
+     - U
+   * - Study
+     - General Study
+     - C.7.2.1
+     - M
+     - M
+
+       See Section 7.4.1.2
+   * - 
+     - Patient Study
+     - C.7.2.2
+     - U
+     - U
+
+       See Section 7.4.1.3
+   * - 
+     - Clinical Trial Study
+     - C.7.2.3
+     - U
+     - U
+   * - Series
+     - General Series
+     - C.7.3.1
+     - M
+     - M
+
+       See Section 7.4.1.4
+   * - 
+     - Clinical Trial Series
+     - C.7.3.2
+     - U
+     - U
+   * - Frame of Reference
+     - Frame of Reference
+     - C.7.4.1
+     - C - Required if Pixel Measures or Plane Position (Patient) or Plane Orientation (Patient) Functional Group Macros Present
+     - C
+   * - 
+     - Synchronization
+     - C.7.4.2
+     - U
+     - U
+   * - Equipment
+     - General Equipment
+     - C.7.5.1
+     - M
+     - M
+   * - 
+     - SC Equipment
+     - C.8.6.1
+     - M
+     - M
+  * - Image
+     - General Image
+     - C.7.6.1
+     - M
+     - M 
+
+       See Section 7.4.x
+   * - 
+     - General Reference
+     - C.12.4
+     - U
+     - U
+   * - 
+     - Cine
+     - C.7.6.5
+     - C - Required if Frame Increment Pointer (0028,0009) is Frame Time (0018,1063) or Frame Time Vector (0018,1065)
+     - C
+   * - 
+     - Multi-frame
+     - C.7.6.6
+     - M
+     - M
+   * - 
+     - Frame Pointers
+     - C.7.6.9
+     - U
+     - U
+   * - 
+     - Device
+     - C.7.6.12
+     - U
+     - U
+
+       See Section 7.4.x
+   * - 
+     - Multi-frame Functional Groups
+     - C.7.6.16
+     - U
+     - U
+   * - 
+     - Multi-frame Dimension
+     - C.7.16.7
+     - U
+     - U
+   * - 
+     - Specimen
+     - C.7.6.22
+     - U
+     - U
+   * - 
+     - SC Image
+     - C.8.6.2
+     - U
+     - U
+   * - 
+     - SC Multi-frame Image
+     - C.8.6.3
+     - M
+     - M
+   * - 
+     - ICC Profile
+     - C.11.15
+     - U
+     - U
+   * - 
+     - SOP Common
+     - C.12.1
+     - M
+     - M
+   * - 
+     - Common Instance Reference
+     - C.12.2
+     - U
+     - U
+   * - 
+     - Frame Extraction
+     - C.12.3
+     - C - Required if the SOP Instance was created in response to a Frame-Level retrieve request
+     - C
