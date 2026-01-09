@@ -62,13 +62,13 @@ Table X.1-1 lists the transactions content module(s) defined in the OIP Profile.
       - --
       - R *(Note 1)*
       - DEN TF-3: 7.3.6 
-    * - Image Display
+    * - Display
       - --
       - Display OIP Images [DEN-1]
       - R
       - DEN TF-2: 3.1
 
-*Note 1:* A Content Creator shall support at least one of these Content Modules (i.e., IOD Defintiions).   A Content Creator shall support all Content Modules listed. 
+*Note 1:* A Content Creator shall support at least one of these Content Modules (i.e., IOD Defintiions).   A Content Consumer shall support all Content Modules listed. 
 
 X.1.1 Actor Description and Actor Profile Requirements
 ------------------------------------------------------
@@ -87,21 +87,21 @@ In the 'real-world' OIP Content Creator actor may be:
 
 + A system or software that converts existing contents of a non-DICOM archive into DICOM images compliant with this profile
 
-When claiming compliance to the OPI profile, a product identifies its DICOM capabilities by supporting one or more options in Table X.1-1.
+When claiming compliance to the OIP profile, a product identifies its DICOM capabilities by supporting one or more options in Table X.1-1.
 
 X.1.1.2 Content Consumer
 ~~~~~~~~~~~~~~~~~~~~~~~~
-In the OIP profile, the Content Consumer is a 'generic' actor for a system that consumes DICOM images that are compliant with the requirements in DEN TF-3: 7.3.x of this profile.   Using the DICOM images, Content Consumer performs functions that are relevant to its application, e.g., rendering the images for a user, storing the images in an archive, extracting information from the DICOM images for reporting purposes, etc.
+In the OIP profile, the Content Consumer is a 'generic' actor for a system that consumes DICOM objects (e.g., images, movies, 3D models) that are compliant with the requirements in DEN TF-3: 7.3.x of this profile.   Using these DICOM objects, Content Consumer performs functions that are relevant to its application, e.g., rendering the images for a user, storing the DICOM objects in an archive, extracting information from the DICOM metadata for reporting purposes, etc.
 
-<*DISCUSS:   A common pattern is for a Consumer to support all of the variations of content that a Content Creator can produce (following a pattern of Clients can choose, Servers support all).   Alternatively, you could choose to introduce Options as we are doing the the Creator to enable a Content Consumer to declare (in its product documentation) which types of content it supports.=*>
+<*DISCUSS:   A common pattern is for a Consumer to support all of the variations of content that a Content Creator can produce (following a pattern of Clients can choose, Servers support all).   Alternatively, you could choose to introduce Options as we are doing the the Creator to enable a Content Consumer to declare (in its product documentation) which types of content it supports.*>
 
-X.1.1.3 Image Display
-~~~~~~~~~~~~~~~~~~~~~
-The Image Display is a specialized Content Consumer that implements requirements to provide standardized display functionality to ensure *<TO DO: Describe to goal of standardized display requirements here.   You may want to point to the ADA spec driving these requirements.>*
+X.1.1.3 Display
+~~~~~~~~~~~~~~~
+The Display is a specialized Content Consumer that implements requirements to provide standardized display functionality to ensure *<TO DO: Describe to goal of standardized display requirements here.   You may want to point to the ADA spec driving these requirements.>*
 
-An Image Display in the OIP Profile shall implement all display requirements in DEN TF-2: 3.1.4.1.3.  This provides mandatory support for Viewsets VS-01, VS-02, VS-03, and VS-04 as defined in ANSI/ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets".
+An Display in the OIP Profile shall implement all display requirements in DEN TF-2: 3.1.4.1.3.  This provides mandatory support for Viewsets VS-01, VS-02, VS-03, and VS-04 as defined in ANSI/ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets".
 
-An Image Display may optionally support Standard Display and/or the Hanging Protocol.  See Table X.2-1.
+An Display may optionally support Standard Display and/or the Hanging Protocol.  See Table X.2-1.
 
 
 
