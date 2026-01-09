@@ -34,7 +34,7 @@ Options that may be selected for each actor in this profile, if any, are listed 
     * - Content Consumer
       - No options defined
       - --
-    * - Image Display
+    * - Display
       - Structured Dislay Option
       - Section X.2.7
     * - 
@@ -85,13 +85,13 @@ A Content Creator that supports this option shall be able to create DICOM object
 
 X.2.7 Structured Display Option
 -------------------------------
-A Structured Display DICOM Object represents a standard method of encoding and exchanging a specific presentation layout of single screen that has been created for a Patient.  The Structured Display can be exchanged with images to allow for complete reproduction of the original exam.   See DICOM PS3.17: Section OO.1.1 for Informative Structured Display Use Cases for Dentistry.
+A Structured Display DICOM Object represents a standard method of encoding and exchanging a specific presentation layout of single screen that has been created for a Patient.  The Structured Display can be exchanged with images to allow for complete reproduction of the original exam.   See `DICOM PS3.17: Section OO.1.1 <https://dicom.nema.org/medical/dicom/current/output/html/part17.html#sect_OO.1.1>`_ for Informative Structured Display Use Cases for Dentistry.
 
 DICOM Structured Display which enables a user to arrange a specific presentation layout of single screen that has been created for a Patient.  
 
-An Image Display that supports the Structured Dislay Option shall be able to create a Basic Structured Display IOD, as defined in DICOM PS3.3 Section A.33.5.3, to specify an Instance of a single screen structured display that has been created for a Patient. 
+A Display that supports the Structured Dislay Option shall be able to create a Basic Structured Display IOD, as defined in `DICOM PS3.3 Section A.33.5.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.33.5.3>`_ , to specify an Instance of a single screen structured display that has been created for a Patient. 
 
-An Image Display that supports the Structured Dislay Option shall be able to:
+A Display that supports the Structured Dislay Option shall be able to:
   + consume a Basic Structured Display IOD and the associated DICOM images, and
   + render for the user a static presentation that shows the layout of the screen the exactly as specified in the Basic Structured Display IOD.
 
@@ -99,9 +99,9 @@ X.2.8 Hanging Protocol Option
 -----------------------------
 A Hanging Protocol DICOM Object  defines the initial display arrangement of medical images on one or more display systems. It allows for the specification of how images should be positioned, sized, annotated, and organized when initially displayed to a user, while allowing users to subsequently manipulate and interact with the images.
 
-An Image Display that supports the Hanging Protocol Option shall be able to create a Hanging Protocol IOD, as defined in DICOM PS3.3 Section A.44.3, to specify he creator of the display, the type of Study it addresses, the type of image sets to display, the intended display environment, and the intended layout for the screen(s).
+A Display that supports the Hanging Protocol Option shall be able to create a Hanging Protocol IOD, as defined in `DICOM PS3.3 Section A.44.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.44.3>`_, to specify he creator of the display, the type of Study it addresses, the type of image sets to display, the intended display environment, and the intended layout for the screen(s).
 
-An Image Display that supports the Hanging Protocol Option shall be able to:
+A Display that supports the Hanging Protocol Option shall be able to:
   + consume a Hanging Protocol IOD and the associated DICOM images, and
   + render for the user an initial presentation that shows the layout of the images the exactly as specified in the Hanging Protocol IOD
   + enable the user to interact with the images in the display.
@@ -122,7 +122,7 @@ An actor from this profile (Column 1) shall implement all of the required transa
     * - Content Consumer
       - None
       - 
-    * - Image Display
+    * - Display
       - OIP / Content Consumer
       - Section X.1.1.2
 
