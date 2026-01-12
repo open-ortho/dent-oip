@@ -46,14 +46,15 @@ Allowed values:
 - `**CID 4062**: VL View <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4062.html>`__
 - `**CID 4063**: VL Dental View <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4063.html>`__
 
-.. _cid-4062:
-.. list-table:: Table CID 4062. VL View
+**Table CID 4062. VL View**
+
+.. list-table:: 
     :header-rows: 1
 
-    * - code scheme designator
-      - code value
-      - code meaning
-      - notes
+    * - Code Scheme Designator
+      - Code Value
+      - Code Meaning
+      - Notes
     * - SCT
       - `399033003 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=399033003&edition=MAIN&release=&languages=en>`__
       - frontal
@@ -99,17 +100,19 @@ Allowed values:
       - Unknown (qualifier value)
       - This code is used when the photograph is taken without specific attention to the projection, prioritizing image detail over projection accuracy. In cases where the :ref:ViewModifierCodeSequence is required, it must be included. Since the :ref:ViewModifierCodeSequence also requires the parent :ref:ViewCodeSequence, the sequence cannot be omitted, and the value 'Unknown' SHALL be used.
 
-.. _cid-4063:
-.. list-table:: Table CID 4063. VL Dental View
+**Table CID 4063. VL Dental View**
+
+.. list-table:: 
     :header-rows: 1
 
-    * - code scheme designator
-      - code value
-      - code meaning
-      - notes
+    * - Code Scheme Designator
+      - Code Value
+      - Code Meaning
+      - Notes
     * - SCT
       - `260499007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260499007&edition=MAIN&release=&languages=en>`__
       - Occlusal projection (qualifier value)
+      - 
 
 .. toctree::
 	:glob:
