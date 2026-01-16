@@ -1,17 +1,17 @@
 .. _oip_process_flow:
 
 X.4 OIP Overview
-=================
+----------------
 The Orthodontic Imaging Profile ... 
 
 X.4.1 Concepts
-++++++++++++++
+~~~~~~~~~~~~~~
 *If needed, this section provides an overview of the concepts that provide necessary background for understanding the profile.*
 
 .. _orthodontic_progress:
 
-Orthodontic Progress (Informative)
-----------------------------------
+X.4.1.1 Orthodontic Progress (Informative)
+++++++++++++++++++++++++++++++++++++++++++
 
 During orthodontic treatment, it is common for providers to monitor progress by regularly collecting records such as photographs or intra-oral surface scans [provide reference]. Identifying the timing of these records in relation to the treatment is crucial. Specifically, the provider needs to know if, at the time of acquisition, the patient:
 
@@ -72,8 +72,8 @@ The mapping below provides a reference for translating orthodontic progress into
   Consequently, the orthodontic domain experts of the working group have decided to disregard Pretreatment status and consider it as Observation.
 
 
-Study Description (0008,1030)
------------------------------
+X.4.1.2 Study Description (0008,1030)
++++++++++++++++++++++++++++++++++++++
 
 This optional DICOM tag, part of the General Study module, can contain a Long String (up to 64 characters). In the context of orthodontic photographs, the *Study Description* is used to represent treatment progress as defined above.
 
@@ -92,9 +92,8 @@ Most PACS systems display the *Study Description* in search results when listing
     - For reliable interoperability, refer to *Acquisition Context* codes as defined in :ref:`longitudinal_temporal_event_type` and :ref:`longitudinal_temporal_offset_from_event`.
 
 
-
-Image Views/Request Procedure Codes
------------------------------------
+X.4.1.3 Image Views/Request Procedure Codes
+++++++++++++++++++++++++++++++++++++++++++++
 
 Orthodontic photographs are typically taken in a standardized manner to ensure
 consistent and comparable results. The American Dental Association (ADA) has
