@@ -43,7 +43,7 @@ IHE Technical Frameworks General Introduction Appendices
 The `IHE Technical Framework General Introduction Appendices <https://profiles.ihe.net/GeneralIntro/index.html>`_ are components shared by all of the IHE domain technical frameworks. Each technical framework volume contains links to these documents where appropriate.
 
 `Appendix A <https://profiles.ihe.net/GeneralIntro/ch-A.html>`_ - **Actors**
-+++++++++++++++++++
+-----------------------------------------------------------------------------
 
 The table below lists existing actors that are utilized in this profile.
 
