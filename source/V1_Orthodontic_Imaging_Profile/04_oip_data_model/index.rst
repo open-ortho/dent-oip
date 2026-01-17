@@ -1,3 +1,6 @@
+
+*<<Discuss with Toni:  Note that I copied all of this content into the Concepts section under in the Process Flow index.rst file.   If you agree with this, then this section would be deleted.>>*
+
 .. _oip_data_model:
 
 Orthodontic Imaging Data Model

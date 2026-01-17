@@ -1,5 +1,7 @@
 .. _basic_structured_display_iod_definitions:
 
+*<<Discuss:  Are display requirements really a part of compliance to this profile (presumably for the Content Consumer??   If so, we should discuss how to incorporate these requirements into Volume 1>*
+
 IOD Definitions
 ===============
 
