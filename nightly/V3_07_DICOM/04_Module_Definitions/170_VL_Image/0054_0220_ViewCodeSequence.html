@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6.4.6.1. View Code Sequence (0054,0220) &#8212; DENT-OIP 0.2.7-nightly.20251024154551 documentation</title>
+    <title>12.4.6.9.1.1. View Code Sequence (0054,0220) &#8212; DENT-OIP 0.2.7-nightly.20260117111821 documentation</title>
   
   
   
@@ -36,15 +36,15 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../../_static/documentation_options.js?v=825ca2cf"></script>
+    <script src="../../../_static/documentation_options.js?v=2b33c064"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'V3_07_DICOM/04_Module_Definitions/170_VL_Image/0054_0220_ViewCodeSequence';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="6.4.7. VL Photographic Acquisition" href="../180_VL_Photographic_Acquisition/index.html" />
-    <link rel="prev" title="6.4.6. VL Image" href="index.html" />
+    <link rel="next" title="12.4.6.10. VL Photographic Acquisition" href="../180_VL_Photographic_Acquisition/index.html" />
+    <link rel="prev" title="12.4.6.7. 7.4.x Image Modules" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20251024154551 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260117111821 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -150,186 +150,188 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../Preamble/01_foreword.html">1. Foreword</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../Preamble/02_scope.html">2. Scope</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../Preamble/03_normative_references.html">3. Normative References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../Preamble/04_requirements.html">4. Requirements (Informative)</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/index.html">5. Orthodontic Imaging (OIP) Profile</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/01_oip_actors_transactions/index.html">5.1. OIP Actors, Transactions, and Content Modules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/index.html">5.2. Orthodontic Imaging Integration Profile Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/03_oip_process_flow/index.html">5.3. Orthodontic Imaging Process Flow</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/04_oip_data_model/index.html">5.4. Orthodontic Imaging Data Model</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">6. DICOM Content Definitions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../01_Conventions/index.html">6.1. Conventions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../02_General_Definitions/index.html">6.2. General Definitions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../03_VL_Photographic_Image_IOD_Definitions/index.html">6.3. VL Photographic Image IOD Definitions</a></li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">6.4. VL Photographic Image</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 has-children"><a class="reference internal" href="../030_General_Study/index.html">6.4.1. General Study</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../030_General_Study/0008_0050_accession_number.html">6.4.1.1. Accession Number (0008,0050)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../030_General_Study/0008_1030_study_description.html">6.4.1.2. Study Description (0008,1030)</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../040_Patient_Study/index.html">6.4.2. Patient Study</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../040_Patient_Study/0032_1066_reason_for_visit.html">6.4.2.1. Reason For Visit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Preamble/02_scope.html">2. Introduction to this Supplement</a></li>
 
 
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../100_Acquisition_Context/index.html">6.4.3. Acquisition Context</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/01_orthognatic_functional_conditions.html">6.4.3.1. Orthognathic Functional Conditions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/02_finding_by_inspection.html">6.4.3.2. Finding By Inspection</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/03_observable_entity.html">6.4.3.3. Observable entity</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/04_dental_occlusion_function.html">6.4.3.4. Dental occlusion, function</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/05_longitudinal_temporal_event_type.html">6.4.3.5. Longitudinal Temporal Event Type</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/06_longitudinal_temporal_offset_from_event.html">6.4.3.6. Longitudinal Temporal Offset from Event</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../110_General_Image/index.html">6.4.4. General Image</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0008_0008_image_type.html">6.4.4.1. Image Type (0008,0008)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0008_2218_anatomic_region_sequence.html">6.4.4.2. Anatomic Region Sequence (0008,2218)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0008_2228_primary_anatomic_structure_sequence.html">6.4.4.3. Primary Anatomic Structure Sequence (0008,2228)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0020_0013_instance_number.html">6.4.4.4. Instance Number (0020,0013)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0020_0020_patient_orientation.html">6.4.4.5. Patient Orientation (0020,0020)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0020_0062_image_laterality.html">6.4.4.6. Image Laterality (0020,0062)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0020_4000_image_comments.html">6.4.4.7. Image Comments (0020,4000)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0028_0300_quality_control_image_attribute.html">6.4.4.8. Quality Control Image (0028,0300)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0028_0301_annotations.html">6.4.4.9. Burned in Annotation (0028,0301)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0028_2110_lossy_image_compression.html">6.4.4.10. Lossy Image Compression (0028,2110)</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../150_Device/index.html">6.4.5. Device</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../150_Device/0050_0010_DeviceSequence.html">6.4.5.1. Device Sequence (0050,0010)</a></li>
-</ul>
-</details></li>
-<li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">6.4.6. VL Image</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l4 current active"><a class="current reference internal" href="#">6.4.6.1. View Code Sequence (0054,0220)</a></li>
 
 
+
+
+<li class="toctree-l1"><a class="reference internal" href="../../../Preamble/03_normative_references.html">9. Normative References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Preamble/04_requirements.html">10. Guiding Principles (Informative)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/index.html">11. Orthodontic Imaging (OIP) Profile</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/01_oip_actors_transactions/index.html">11.1. X.1 OIP Actors, Transactions, and Content Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/index.html">11.2. X.2 OIP Profile Options</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/03_oip_process_flow/index.html">11.5. X.4 OIP Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/04_oip_data_model/index.html">11.6. Orthodontic Imaging Data Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V1_Orthodontic_Imaging_Profile/05_oip_security_considerations/index.html">11.7. X.5 OIP Security Considerations</a></li>
 </ul>
 </details></li>
-<li class="toctree-l3"><a class="reference internal" href="../180_VL_Photographic_Acquisition/index.html">6.4.7. VL Photographic Acquisition</a></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../220_SOP_Common/index.html">6.4.8. SOP Common</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../220_SOP_Common/0008_0005_specific_character_set.html">6.4.8.1. Specific Character Set (0008,0005)</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">12. 7. DICOM Content Definitions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../01_Conventions/index.html">12.1. 7 DICOM Conventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../02_General_Definitions/index.html">12.2. 7.2  General Definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../03_VL_Photographic_Image_IOD_Definitions/index.html">12.3. 7.3 IOD Definitions</a></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">12.4. 7.4 Module Definitions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../030_General_Study/index.html">12.4.6.1. 7.4.1.2 General Study</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../030_General_Study/0008_0050_accession_number.html">12.4.6.1.1. Accession Number (0008,0050)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../030_General_Study/0008_1030_study_description.html">12.4.6.1.2. Study Description (0008,1030)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../040_Patient_Study/index.html">12.4.6.2. 7.4.1.3 Patient Study Module</a></li>
+
+<li class="toctree-l3 has-children"><a class="reference internal" href="../100_Acquisition_Context/index.html">12.4.6.4. Acquisition Context</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/01_orthognatic_functional_conditions.html">12.4.6.4.1. Orthognathic Functional Conditions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/02_finding_by_inspection.html">12.4.6.4.2. Finding By Inspection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/03_observable_entity.html">12.4.6.4.3. Observable entity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/04_dental_occlusion_function.html">12.4.6.4.4. Dental occlusion, function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/05_longitudinal_temporal_event_type.html">12.4.6.4.5. Longitudinal Temporal Event Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../100_Acquisition_Context/06_longitudinal_temporal_offset_from_event.html">12.4.6.4.6. Longitudinal Temporal Offset from Event</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../110_General_Image/index.html">12.4.6.5. General Image</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0008_0008_image_type.html">12.4.6.5.1. Image Type (0008,0008)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0008_2218_anatomic_region_sequence.html">12.4.6.5.2. Anatomic Region Sequence (0008,2218)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0008_2228_primary_anatomic_structure_sequence.html">12.4.6.5.3. Primary Anatomic Structure Sequence (0008,2228)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0020_0013_instance_number.html">12.4.6.5.4. Instance Number (0020,0013)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0020_0020_patient_orientation.html">12.4.6.5.5. Patient Orientation (0020,0020)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0020_0062_image_laterality.html">12.4.6.5.6. Image Laterality (0020,0062)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0020_4000_image_comments.html">12.4.6.5.7. Image Comments (0020,4000)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0028_0300_quality_control_image_attribute.html">12.4.6.5.8. Quality Control Image (0028,0300)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0028_0301_annotations.html">12.4.6.5.9. Burned in Annotation (0028,0301)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../110_General_Image/0028_2110_lossy_image_compression.html">12.4.6.5.10. Lossy Image Compression (0028,2110)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../150_Device/index.html">12.4.6.6. Device</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../150_Device/0050_0010_DeviceSequence.html">12.4.6.6.1. Device Sequence (0050,0010)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html">12.4.6.7. 7.4.x Image Modules</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../180_VL_Photographic_Acquisition/index.html">12.4.6.10. VL Photographic Acquisition</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../220_SOP_Common/index.html">12.4.6.11. SOP Common</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../220_SOP_Common/0008_0005_specific_character_set.html">12.4.6.11.1. Specific Character Set (0008,0005)</a></li>
 </ul>
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l2"><a class="reference internal" href="../../05_Hanging_Protocol_IOD_Definitions/index.html">6.5. IOD Definitions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../06_Basic_Structured_Display_IOD_Definitions/index.html">6.6. IOD Definitions</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/index.html">6.7. Modality Worklist SOP Class</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/01_Scheduled_Procedure_Step/index.html">6.7.3.1. Scheduled Procedure Step</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/01_Scheduled_Procedure_Step/0040_0100_ScheduledProcedureStepSequence.html">6.7.3.1.1. Scheduled Procedure Step Sequence (0040,0100)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../05_Hanging_Protocol_IOD_Definitions/index.html">12.5. IOD Definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../06_Basic_Structured_Display_IOD_Definitions/index.html">12.6. IOD Definitions</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/index.html">12.7. Modality Worklist SOP Class</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/01_Scheduled_Procedure_Step/index.html">12.7.3.1. Scheduled Procedure Step</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/01_Scheduled_Procedure_Step/0040_0100_ScheduledProcedureStepSequence.html">12.7.3.1.1. Scheduled Procedure Step Sequence (0040,0100)</a></li>
 </ul>
 </details></li>
-<li class="toctree-l3"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/02_Requested_Procedure/index.html">6.7.3.2. Requested Procedure</a></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/03_Imaging_Service_Request/index.html">6.7.3.3. Imaging Service Request</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/03_Imaging_Service_Request/0008_0050_accession_number.html">6.7.3.3.1. Accession Number (0008,0050)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/02_Requested_Procedure/index.html">12.7.3.2. Requested Procedure</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/03_Imaging_Service_Request/index.html">12.7.3.3. Imaging Service Request</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/03_Imaging_Service_Request/0008_0050_accession_number.html">12.7.3.3.1. Accession Number (0008,0050)</a></li>
 </ul>
 </details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/04_Visit_Identification/index.html">6.7.3.4. Visit Identification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/04_Visit_Identification/index.html">12.7.3.4. Visit Identification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/05_Visit_Status/index.html">6.7.3.5. Visit Status</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/05_Visit_Status/index.html">12.7.3.5. Visit Status</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/06_Visit_Relationship/index.html">6.7.3.6. Visit Relationship</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/06_Visit_Relationship/index.html">12.7.3.6. Visit Relationship</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/07_Patient_Identification/index.html">6.7.3.7. Patient Identification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/07_Patient_Identification/index.html">12.7.3.7. Patient Identification</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/08_Patient_Demographic/index.html">6.7.3.8. Patient Demographic</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/08_Patient_Demographic/index.html">12.7.3.8. Patient Demographic</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/09_Patient_Medical/index.html">6.7.3.9. Patient Medical</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../07_Modality_Worklist_SOP_Class/09_Patient_Medical/index.html">12.7.3.9. Patient Medical</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
 </ul>
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/index.html">7. Appendix A: View Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV01.html">7.3.1. [EV01] - Right Profile (subject is facing observer’s right) - Lips Relaxed, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV02.html">7.3.2. [EV02] - Right Profile (subject is facing observer’s right) - Lips Relaxed, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV03.html">7.3.3. [EV03] - Right Profile (subject is facing observer’s right) - Lips Closed, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV04.html">7.3.4. [EV04] - Right Profile (subject is facing observer’s right) - Lips Closed, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV05.html">7.3.5. [EV05] - Right profile (subject is facing observer’s right) - Full Smile, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV06.html">7.3.6. [EV06] - Right Profile (subject is facing observer’s right) - Full Smile, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV07.html">7.3.7. [EV07] - Right Profile (subject is facing observer’s right) - Mandible Postured Forward</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV08.html">7.3.8. [EV08] - 45° Right Profile (subject turns toward observer’s right) - Lips Relaxed, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV09.html">7.3.9. [EV09] - 45° Right Profile (subject turns toward observer’s right) - Lips Relaxed, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV10.html">7.3.10. [EV10] - 45° Right Profile (subject turns toward observer’s right) - Lips Closed, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV11.html">7.3.11. [EV11] - 45° Right Profile (subject turns toward observer’s right) - Lips Closed, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV12.html">7.3.12. [EV12] - 45° Right Profile (subject turns toward observer’s right) - Full Smile, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV13.html">7.3.13. [EV13] - 45° Right Profile (subject turns toward observer’s right) - Full Smile, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV14.html">7.3.14. [EV14] - 45° Right Profile (subject turns toward observer’s right) - Mandible Postured Forward</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV15.html">7.3.15. [EV15] - Full Face - Lips Relaxed, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV16.html">7.3.16. [EV16] - Full Face - Lips Relaxed, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV17.html">7.3.17. [EV17] - Full Face - Lips Closed, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV18.html">7.3.18. [EV18] - Full Face - Lips Closed, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV19.html">7.3.19. [EV19] - Full Face - Full Smile, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV20.html">7.3.20. [EV20] - Full Face - Full Smile, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV21.html">7.3.21. [EV21] - Full Face - Mandible Postured Forward</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV22.html">7.3.22. [EV22] - Left Profile (subject is facing observer’s left) - Lips Relaxed, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV23.html">7.3.23. [EV23] - Left Profile (subject is facing observer’s left) - Lips Relaxed, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV24.html">7.3.24. [EV24] - Left Profile (subject is facing observer’s left) - Lips Closed, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV25.html">7.3.25. [EV25] - Left Profile (subject is facing observer’s left) - Lips Closed, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV26.html">7.3.26. [EV26] - Left profile (subject is facing observer’s left) - Full Smile, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV27.html">7.3.27. [EV27] - Left Profile (subject is facing observer’s left) - Full Smile, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV28.html">7.3.28. [EV28] - Left Profile (subject is facing observer’s left) - Mandible Postured Forward</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV29.html">7.3.29. [EV29] - 45° Left Profile (subject turns toward observer’s left) - Lips Relaxed, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV30.html">7.3.30. [EV30] - 45° Left Profile (subject turns toward observer’s left) - Lips Relaxed, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV31.html">7.3.31. [EV31] - 45° Left Profile (subject turns toward observer’s left) - Lips Closed, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV32.html">7.3.32. [EV32] - 45° Left Profile (subject turns toward observer’s left) - Lips Closed, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV33.html">7.3.33. [EV33] - 45° Left Profile (subject turns toward observer’s left) - Full Smile, Centric Occlusion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV34.html">7.3.34. [EV34] - 45° Left Profile (subject turns toward observer’s left) - Full Smile, Centric Relation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV35.html">7.3.35. [EV35] - 45° Left Profile (subject turns toward observer’s left- Full Smile, Mandible Postured Forward</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV36.html">7.3.36. [EV36] - Other Face (head tipped back) - Inferior View (showing lower border of mandible, nares, infraorbital rim contours, forehead contours)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV37.html">7.3.37. [EV37] - Other Face (viewed from a bove) - Superior View (showing forehead, infraorbital rim contour, dorsum of nose, upper lip, chin)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV38.html">7.3.38. [EV38] - Other Face - Close-Up Smile (with lips)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV39.html">7.3.39. [EV39] - Other Face - Occlusal Cant ( e.g., tongue depressor)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV40.html">7.3.40. [EV40] - Other Face - Forensic Interest (tattoos, jewelry, scars)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV41.html">7.3.41. [EV41] - Other Face - Anomalies (ears, skin tags, etc.)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV42.html">7.3.42. [EV42] - Full Face - Mouth Open</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV43.html">7.3.43. [EV43] - Full Face - demonstrating Nerve Weakness</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV01.html">7.3.44. [IV01] - Intraoral Right Buccal Segment, Centric Occlusion, Direct View</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV02.html">7.3.45. [IV02] - Intraoral Right Buccal Segment - Centric Occlusion, With Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV03.html">7.3.46. [IV03] - Intraoral Right Buccal Segment - Centric Occlusion, With Mirror But Corrected</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV04.html">7.3.47. [IV04] - Intraoral Right Buccal Segment - Centric Relation, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV05.html">7.3.48. [IV05] - Intraoral Right Buccal Segment - Centric Relation, With Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV06.html">7.3.49. [IV06] - Intraoral Right Buccal Segment - Centric Relation, With Mirror But Corrected</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV07.html">7.3.50. [IV07] - Intraoral Frontal View - Centric Occlusion, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV08.html">7.3.51. [IV08] - Intraoral Frontal View - Centric Relation, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV09.html">7.3.52. [IV09] - Intraoral Frontal View - Teeth Apart, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV10.html">7.3.53. [IV10] - Intraoral Frontal View - Mouth Open, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV11.html">7.3.54. [IV11] - Intraoral Frontal View Inferior (showing depth of bite and overjet) - Centric Occlusion, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV12.html">7.3.55. [IV12] - Intraoral Frontal View Inferior (showing depth of bite and overjet) - Centric Relation, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV13.html">7.3.56. [IV13] - Intraoral Frontal View, showing Tongue Thrust, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV14.html">7.3.57. [IV14] - Intraoral Right Lateral View - Centric Occlusion, Showing Overjet, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV15.html">7.3.58. [IV15] - Intraoral Right Lateral View - Centric Relation, Showing Overjet, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV16.html">7.3.59. [IV16] - Intraoral Left Lateral View - Centric Occlusion, Showing Overjet, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV17.html">7.3.60. [IV17] - Intraoral Left Lateral View - Centric Relation, Showing Overjet, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV18.html">7.3.61. [IV18] - Intraoral Left Buccal Segment - Centric Occlusion, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV19.html">7.3.62. [IV19] - Intraoral Left Buccal Segment - Centric Occlusion, With Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV20.html">7.3.63. [IV20] - Intraoral Left Buccal Segment - Centric Occlusion, With Mirror But Corrected</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV21.html">7.3.64. [IV21] - Intraoral Left Buccal Segment - Centric Relation, Without Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV22.html">7.3.65. [IV22] - Intraoral Left Buccal Segment - Centric Relation, With Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV23.html">7.3.66. [IV23] - Intraoral Left Buccal Segment - Centric Relation, With Mirror But Corrected</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV24.html">7.3.67. [IV24] - Intraoral Maxillary Occlusal View - Mouth Open, With Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV25.html">7.3.68. [IV25] - Intraoral Maxillary Occlusal View - Mouth Open, With Mirror But Corrected</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV26.html">7.3.69. [IV26] - Intraoral Mandibular Occlusal View - Mouth Open, With Mirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV27.html">7.3.70. [IV27] - Intraoral Mandibular Occlusal View - Mouth Open, With Mirror But Corrected</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV28.html">7.3.71. [IV28] - Intraoral - showing Gingival Recession (ISO tooth numbers)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV29.html">7.3.72. [IV29] - Intraoral - showing Frenum (ISO tooth numbers)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV30.html">7.3.73. [IV30] - Intraoral - any photo using a photo accessory device such as a contraster to provide a solid background or black mirror ([modifier] is any set of IO modifier as specified above)</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/index.html">13. Appendix A: View Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV01.html">13.3.1. [EV01] - Right Profile (subject is facing observer’s right) - Lips Relaxed, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV02.html">13.3.2. [EV02] - Right Profile (subject is facing observer’s right) - Lips Relaxed, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV03.html">13.3.3. [EV03] - Right Profile (subject is facing observer’s right) - Lips Closed, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV04.html">13.3.4. [EV04] - Right Profile (subject is facing observer’s right) - Lips Closed, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV05.html">13.3.5. [EV05] - Right profile (subject is facing observer’s right) - Full Smile, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV06.html">13.3.6. [EV06] - Right Profile (subject is facing observer’s right) - Full Smile, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV07.html">13.3.7. [EV07] - Right Profile (subject is facing observer’s right) - Mandible Postured Forward</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV08.html">13.3.8. [EV08] - 45° Right Profile (subject turns toward observer’s right) - Lips Relaxed, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV09.html">13.3.9. [EV09] - 45° Right Profile (subject turns toward observer’s right) - Lips Relaxed, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV10.html">13.3.10. [EV10] - 45° Right Profile (subject turns toward observer’s right) - Lips Closed, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV11.html">13.3.11. [EV11] - 45° Right Profile (subject turns toward observer’s right) - Lips Closed, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV12.html">13.3.12. [EV12] - 45° Right Profile (subject turns toward observer’s right) - Full Smile, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV13.html">13.3.13. [EV13] - 45° Right Profile (subject turns toward observer’s right) - Full Smile, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV14.html">13.3.14. [EV14] - 45° Right Profile (subject turns toward observer’s right) - Mandible Postured Forward</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV15.html">13.3.15. [EV15] - Full Face - Lips Relaxed, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV16.html">13.3.16. [EV16] - Full Face - Lips Relaxed, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV17.html">13.3.17. [EV17] - Full Face - Lips Closed, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV18.html">13.3.18. [EV18] - Full Face - Lips Closed, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV19.html">13.3.19. [EV19] - Full Face - Full Smile, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV20.html">13.3.20. [EV20] - Full Face - Full Smile, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV21.html">13.3.21. [EV21] - Full Face - Mandible Postured Forward</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV22.html">13.3.22. [EV22] - Left Profile (subject is facing observer’s left) - Lips Relaxed, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV23.html">13.3.23. [EV23] - Left Profile (subject is facing observer’s left) - Lips Relaxed, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV24.html">13.3.24. [EV24] - Left Profile (subject is facing observer’s left) - Lips Closed, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV25.html">13.3.25. [EV25] - Left Profile (subject is facing observer’s left) - Lips Closed, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV26.html">13.3.26. [EV26] - Left profile (subject is facing observer’s left) - Full Smile, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV27.html">13.3.27. [EV27] - Left Profile (subject is facing observer’s left) - Full Smile, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV28.html">13.3.28. [EV28] - Left Profile (subject is facing observer’s left) - Mandible Postured Forward</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV29.html">13.3.29. [EV29] - 45° Left Profile (subject turns toward observer’s left) - Lips Relaxed, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV30.html">13.3.30. [EV30] - 45° Left Profile (subject turns toward observer’s left) - Lips Relaxed, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV31.html">13.3.31. [EV31] - 45° Left Profile (subject turns toward observer’s left) - Lips Closed, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV32.html">13.3.32. [EV32] - 45° Left Profile (subject turns toward observer’s left) - Lips Closed, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV33.html">13.3.33. [EV33] - 45° Left Profile (subject turns toward observer’s left) - Full Smile, Centric Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV34.html">13.3.34. [EV34] - 45° Left Profile (subject turns toward observer’s left) - Full Smile, Centric Relation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV35.html">13.3.35. [EV35] - 45° Left Profile (subject turns toward observer’s left- Full Smile, Mandible Postured Forward</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV36.html">13.3.36. [EV36] - Other Face (head tipped back) - Inferior View (showing lower border of mandible, nares, infraorbital rim contours, forehead contours)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV37.html">13.3.37. [EV37] - Other Face (viewed from a bove) - Superior View (showing forehead, infraorbital rim contour, dorsum of nose, upper lip, chin)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV38.html">13.3.38. [EV38] - Other Face - Close-Up Smile (with lips)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV39.html">13.3.39. [EV39] - Other Face - Occlusal Cant ( e.g., tongue depressor)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV40.html">13.3.40. [EV40] - Other Face - Forensic Interest (tattoos, jewelry, scars)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV41.html">13.3.41. [EV41] - Other Face - Anomalies (ears, skin tags, etc.)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV42.html">13.3.42. [EV42] - Full Face - Mouth Open</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/EV43.html">13.3.43. [EV43] - Full Face - demonstrating Nerve Weakness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV01.html">13.3.44. [IV01] - Intraoral Right Buccal Segment, Centric Occlusion, Direct View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV02.html">13.3.45. [IV02] - Intraoral Right Buccal Segment - Centric Occlusion, With Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV03.html">13.3.46. [IV03] - Intraoral Right Buccal Segment - Centric Occlusion, With Mirror But Corrected</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV04.html">13.3.47. [IV04] - Intraoral Right Buccal Segment - Centric Relation, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV05.html">13.3.48. [IV05] - Intraoral Right Buccal Segment - Centric Relation, With Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV06.html">13.3.49. [IV06] - Intraoral Right Buccal Segment - Centric Relation, With Mirror But Corrected</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV07.html">13.3.50. [IV07] - Intraoral Frontal View - Centric Occlusion, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV08.html">13.3.51. [IV08] - Intraoral Frontal View - Centric Relation, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV09.html">13.3.52. [IV09] - Intraoral Frontal View - Teeth Apart, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV10.html">13.3.53. [IV10] - Intraoral Frontal View - Mouth Open, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV11.html">13.3.54. [IV11] - Intraoral Frontal View Inferior (showing depth of bite and overjet) - Centric Occlusion, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV12.html">13.3.55. [IV12] - Intraoral Frontal View Inferior (showing depth of bite and overjet) - Centric Relation, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV13.html">13.3.56. [IV13] - Intraoral Frontal View, showing Tongue Thrust, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV14.html">13.3.57. [IV14] - Intraoral Right Lateral View - Centric Occlusion, Showing Overjet, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV15.html">13.3.58. [IV15] - Intraoral Right Lateral View - Centric Relation, Showing Overjet, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV16.html">13.3.59. [IV16] - Intraoral Left Lateral View - Centric Occlusion, Showing Overjet, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV17.html">13.3.60. [IV17] - Intraoral Left Lateral View - Centric Relation, Showing Overjet, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV18.html">13.3.61. [IV18] - Intraoral Left Buccal Segment - Centric Occlusion, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV19.html">13.3.62. [IV19] - Intraoral Left Buccal Segment - Centric Occlusion, With Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV20.html">13.3.63. [IV20] - Intraoral Left Buccal Segment - Centric Occlusion, With Mirror But Corrected</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV21.html">13.3.64. [IV21] - Intraoral Left Buccal Segment - Centric Relation, Without Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV22.html">13.3.65. [IV22] - Intraoral Left Buccal Segment - Centric Relation, With Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV23.html">13.3.66. [IV23] - Intraoral Left Buccal Segment - Centric Relation, With Mirror But Corrected</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV24.html">13.3.67. [IV24] - Intraoral Maxillary Occlusal View - Mouth Open, With Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV25.html">13.3.68. [IV25] - Intraoral Maxillary Occlusal View - Mouth Open, With Mirror But Corrected</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV26.html">13.3.69. [IV26] - Intraoral Mandibular Occlusal View - Mouth Open, With Mirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV27.html">13.3.70. [IV27] - Intraoral Mandibular Occlusal View - Mouth Open, With Mirror But Corrected</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV28.html">13.3.71. [IV28] - Intraoral - showing Gingival Recession (ISO tooth numbers)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV29.html">13.3.72. [IV29] - Intraoral - showing Frenum (ISO tooth numbers)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/generated/IV30.html">13.3.73. [IV30] - Intraoral - any photo using a photo accessory device such as a contraster to provide a solid background or black mirror ([modifier] is any set of IO modifier as specified above)</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../V3_Appendix/B_ViewSetExamples/index.html">8. Appendix B: ViewSet Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../V3_Appendix/C_DeviceExamples/03_device_examples.html">9. Appendix C: Device Examples (Informative)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../V3_Appendix/D_Definitions/04_definitions.html">10. Appendix D: Definitions (Informative)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../V3_Appendix/99_list_of_codes.html">11. Appendix E: SNOMED Codes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../bibliography.html">12. Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../V3_Appendix/B_ViewSetExamples/index.html">14. Appendix B: ViewSet Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../V3_Appendix/C_DeviceExamples/03_device_examples.html">15. Appendix C: Device Examples (Informative)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../V3_Appendix/D_Definitions/04_definitions.html">16. Appendix D: Definitions (Informative)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../V3_Appendix/99_list_of_codes.html">17. Appendix E: SNOMED Codes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../bibliography.html">18. Bibliography</a></li>
 </ul>
 
     </div>
@@ -478,11 +480,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6.4.6.1. View Code Sequence (0054,0220)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-modifier-code-sequence-0054-0222">6.4.6.2. View Modifier Code Sequence (0054,0222)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-orthodontic-image-type-in-dicom-implementation-specification">6.4.6.3. Storing Orthodontic Image Type in DICOM: Implementation Specification</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">6.4.6.3.1. Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">6.4.6.3.2. References</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">12.4.6.9.1.1. View Code Sequence (0054,0220)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-modifier-code-sequence-0054-0222">12.4.6.9.1.2. View Modifier Code Sequence (0054,0222)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-orthodontic-image-type-in-dicom-implementation-specification">12.4.6.9.1.3. Storing Orthodontic Image Type in DICOM: Implementation Specification</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">12.4.6.9.1.3.1. Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">12.4.6.9.1.3.2. References</a></li>
 </ul>
 </li>
 </ul>
@@ -498,7 +500,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="view-code-sequence-0054-0220">
-<span id="viewcodesequence"></span><h1><span class="section-number">6.4.6.1. </span>View Code Sequence (0054,0220)<a class="headerlink" href="#view-code-sequence-0054-0220" title="Link to this heading">#</a></h1>
+<span id="viewcodesequence"></span><h1><span class="section-number">12.4.6.9.1.1. </span>View Code Sequence (0054,0220)<a class="headerlink" href="#view-code-sequence-0054-0220" title="Link to this heading">#</a></h1>
 <p>Recommended. SHOULD be specified, if known. Only one value is allowed.</p>
 <p>The projection of the anatomic region of interest on an image receptor.</p>
 <div class="admonition note">
@@ -597,7 +599,7 @@ document.write(`
 </div>
 </section>
 <section id="view-modifier-code-sequence-0054-0222">
-<span id="viewmodifiercodesequence"></span><h1><span class="section-number">6.4.6.2. </span>View Modifier Code Sequence (0054,0222)<a class="headerlink" href="#view-modifier-code-sequence-0054-0222" title="Link to this heading">#</a></h1>
+<span id="viewmodifiercodesequence"></span><h1><span class="section-number">12.4.6.9.1.2. </span>View Modifier Code Sequence (0054,0222)<a class="headerlink" href="#view-modifier-code-sequence-0054-0222" title="Link to this heading">#</a></h1>
 <p>Photographs in orthodontics are not always taken directly: sometimes there is a device between the patient and the camera lens, like a mirror, to be able to see specific regions.</p>
 <div class="pst-scrollable-table-container"><span id="cid-4064"></span><table class="table" id="id3">
 <caption><span class="caption-text">Table CID 4064. VL View Modifier</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
@@ -702,10 +704,10 @@ document.write(`
 </div>
 </section>
 <section id="storing-orthodontic-image-type-in-dicom-implementation-specification">
-<h1><span class="section-number">6.4.6.3. </span>Storing Orthodontic Image Type in DICOM: Implementation Specification<a class="headerlink" href="#storing-orthodontic-image-type-in-dicom-implementation-specification" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">12.4.6.9.1.3. </span>Storing Orthodontic Image Type in DICOM: Implementation Specification<a class="headerlink" href="#storing-orthodontic-image-type-in-dicom-implementation-specification" title="Link to this heading">#</a></h1>
 <p>This specification describes the requirements for storing the image type of an orthodontic photograph as a code in a DICOM Visible Light (VL) object. While the orthodontic image can be fully represented using a combination of various DICOM attributes, there exist many situations where it is more convenient to encode the image type in a single code.</p>
 <section id="requirements">
-<h2><span class="section-number">6.4.6.3.1. </span>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">12.4.6.9.1.3.1. </span>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p><strong>ViewCodeSequence Usage</strong></p>
 <ul class="simple">
@@ -780,7 +782,7 @@ document.write(`
 </ol>
 </section>
 <section id="references">
-<h2><span class="section-number">6.4.6.3.2. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">12.4.6.9.1.3.2. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>DICOM PS3.3, PS3.16 (2025a)</p></li>
 <li><p>DICOM Change Proposal CP-1570</p></li>
@@ -805,7 +807,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">6.4.6. </span>VL Image</p>
+        <p class="prev-next-title"><span class="section-number">12.4.6.7. </span>7.4.x Image Modules</p>
       </div>
     </a>
     <a class="right-next"
@@ -813,7 +815,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6.4.7. </span>VL Photographic Acquisition</p>
+        <p class="prev-next-title"><span class="section-number">12.4.6.10. </span>VL Photographic Acquisition</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -833,11 +835,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6.4.6.1. View Code Sequence (0054,0220)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-modifier-code-sequence-0054-0222">6.4.6.2. View Modifier Code Sequence (0054,0222)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-orthodontic-image-type-in-dicom-implementation-specification">6.4.6.3. Storing Orthodontic Image Type in DICOM: Implementation Specification</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">6.4.6.3.1. Requirements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">6.4.6.3.2. References</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">12.4.6.9.1.1. View Code Sequence (0054,0220)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-modifier-code-sequence-0054-0222">12.4.6.9.1.2. View Modifier Code Sequence (0054,0222)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-orthodontic-image-type-in-dicom-implementation-specification">12.4.6.9.1.3. Storing Orthodontic Image Type in DICOM: Implementation Specification</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">12.4.6.9.1.3.1. Requirements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">12.4.6.9.1.3.2. References</a></li>
 </ul>
 </li>
 </ul>
