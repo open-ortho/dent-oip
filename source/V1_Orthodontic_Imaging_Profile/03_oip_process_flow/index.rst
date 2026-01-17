@@ -1,16 +1,14 @@
 .. _oip_process_flow:
 
-X.4 OIP Overview
+3.4 OIP Overview
 ----------------
-The Orthodontic Imaging Profile ... 
+The Orthodontic Imaging Profile ... *TO DO:  Provide a short intro to concepts here*
 
-X.4.1 Concepts
+3.4.1 Concepts
 ~~~~~~~~~~~~~~
-*If needed, this section provides an overview of the concepts that provide necessary background for understanding the profile.*
+This section provides an overview of the concepts that provide necessary background for understanding the profile.
 
-.. _orthodontic_progress:
-
-X.4.1.1 Orthodontic Progress (Informative)
+3.4.1.1 Orthodontic Progress (Informative)
 ++++++++++++++++++++++++++++++++++++++++++
 
 During orthodontic treatment, it is common for providers to monitor progress by regularly collecting records such as photographs or intra-oral surface scans [provide reference]. Identifying the timing of these records in relation to the treatment is crucial. Specifically, the provider needs to know if, at the time of acquisition, the patient:
@@ -23,12 +21,12 @@ Orthodontic photograph progress shall be stored in three key areas:
 
 - Longitudinal Temporal Event Type (Registration, Treatment, Posttreatment)
 - Longitudinal Temporal Offset From Event (in days)
-- :ref:`study_description`
+- Study Description; see Section 3.4.1.2
 
-The mapping below provides a reference for translating orthodontic progress into codesets that DICOM can understand.
+Table 3.4.1.1-1 provides a reference for translating orthodontic progress into codesets that DICOM can understand.
 
 .. _progress_codes:
-.. list-table:: Orthodontic progress code mapping
+.. list-table:: **Table 3.4.1.1-1 Orthodontic Progress Code Mapping**
     :header-rows: 1
 
     * - orthodontic progress
@@ -65,14 +63,9 @@ The mapping below provides a reference for translating orthodontic progress into
       - Number of days past the day the treatment ended (see Final above).
 
 
-.. note::
+**Note:**  Distinguishing Pretreatment from Observation is not always straightforward. In some cases, there may be a clear Pretreatment definition by the provider, which could be properly coded in the practice management system. However, in many other cases, it may not be clearly defined, or what was considered Pretreatment might not lead to treatment.  Consequently, the orthodontic domain experts of the working group have decided to disregard Pretreatment status and consider it as Observation.
 
-  Distinguishing Pretreatment from Observation is not always straightforward. In some cases, there may be a clear Pretreatment definition by the provider, which could be properly coded in the practice management system. However, in many other cases, it may not be clearly defined, or what was considered Pretreatment might not lead to treatment.
-
-  Consequently, the orthodontic domain experts of the working group have decided to disregard Pretreatment status and consider it as Observation.
-
-
-X.4.1.2 Study Description (0008,1030)
+3.4.1.2 Study Description (0008,1030)
 +++++++++++++++++++++++++++++++++++++
 
 This optional DICOM tag, part of the General Study module, can contain a Long String (up to 64 characters). In the context of orthodontic photographs, the *Study Description* is used to represent treatment progress as defined above.
@@ -92,7 +85,7 @@ Most PACS systems display the *Study Description* in search results when listing
     - For reliable interoperability, refer to *Acquisition Context* codes as defined in :ref:`longitudinal_temporal_event_type` and :ref:`longitudinal_temporal_offset_from_event`.
 
 
-X.4.1.3 Image Views/Request Procedure Codes
+3.4.1.3 Image Views/Request Procedure Codes
 ++++++++++++++++++++++++++++++++++++++++++++
 
 Orthodontic photographs are typically taken in a standardized manner to ensure
