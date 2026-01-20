@@ -57,7 +57,14 @@ This normative section contains extensions to DICOM tags defined in the General 
       - (0020,0014)
       - R+
       - To ensure images are presented in a specific sequence, set the Instance Number (0020,0013) for each image in a series according to the desired order.   See Section 7.4.1.5.1 for guidance and examples.
+    * - Patient Orientation
+      - (0020,0020)
+      - R+
+      - Patient direction of the rows and columns of the image. 
 
+	Required because the IOD VL Photographic Image does not require Image Orientation (Patient) (0020,0037) or Image Position (Patient) (0020,0032), and the IOD VL Photographic Image does not require Image Orientation (Slide) (0048,0102).
+
+	See Section 7.2.4 for allowed values.
 
 
 7.4.1.5.1 Instance Number (0020,0013) Examples
