@@ -36,13 +36,13 @@ This normative section contains extensions to DICOM tags defined in the General 
       - O+
       - When applied to orthodontic photographs, the anatomic region is Mouth for intraoral views, and Head/Neck for extraoral views.  
 
-	See Section X.X.X for coded values taken from DICOM CID 4028. Craniofacial Anatomic Region 
+	See Section 7.2.1 for coded values taken from DICOM CID 4028. Craniofacial Anatomic Region 
     * - Anatomic Region Modifier Sequence
       - (0008,2208)
       - O+
       - This modifier is used to clarify which side of the region is contained in the image.  
 
-	See Section X.X.X for coded values taken from DICOM CID 247 Laterality Left-Right Only 
+	See Section 7.2.2 for coded values taken from DICOM CID 247 Laterality Left-Right Only 
 
 .. toctree::
 	:glob:
