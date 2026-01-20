@@ -40,11 +40,11 @@ When applied to orthodontic photographs, the anatomic region is *Mouth* for intr
       - Notes
     * - SCT
       - 24028007
-      - Right (qualifier value)
+      - Right 
       - 
     * - SCT
       - 7771000
-      - Left (qualifier value)
+      - Left 
       - 
 
 7.2.3 Table CID 244 - Laterality
@@ -55,29 +55,26 @@ being imaged. For example, an image of the left side of the right eye would have
 laterality right, even though the image is portraying the left side of the eye. In other words, this is the laterality of (possibly paired) body part (as
 described in Anatomic Region Sequence (0008,2218)) examined.
 
-Note:  Patient Orientation should be enough to define the side of the anatomy
-being viewed.  See Section 7.2.5.
+Note:  Patient Orientation should be enough to define the side of the anatomy being viewed.  See Section 7.2.5.
 
+These values are used in Image Laterality (0020,0062).
 
-.. list-table:: Table CID 244.  Laterality**
-   :header-rows: 1
+.. _cid-244a:
+.. list-table:: **Table CID 244. Laterality**
+    :header-rows: 1
 
-   * - DICOM Enumerated Value (Note)
-     - SNOMED Code
-   * - L
-     - `(7771000, SCT, "Left") <http://snomed.info/id/7771000>`__
-   * - R
-     - `(24028007, SCT, "Right") <http://snomed.info/id/24028007>`__
-   * - U
-     - `(66459002, SCT, "Unilateral") <http://snomed.info/id/66459002>`__
-   * - B
-     - `(51440002, SCT, "Bilateral") <http://snomed.info/id/51440002>`__
-    - 
-.. note::
-   Note:  When creating the DICOM object, DICOM requires an enumerated value (aka
-   string) for this tag. You should therefore always use the string in the DICOM
-   Enumerated Value column of the table above.
+    * - DICOM Enumerated Value
+      - SNOMED CODE
+    * - L
+      - (77771000,SCT,"Left")
+    * - R
+      - (66459002,SCT,"Right")
+    * - U
+      - (24028007,SCT,"Unilateral")
+    * - B
+      - (51440002,SCT,"Bilateral")
 
+Note:  When creating the DICOM object, DICOM requires an enumerated value (aka string) for this tag. You should therefore always use the string in the DICOM Enumerated Value column of the table above.
 
 7.2.3.1 Choosing the Correct Laterality
 +++++++++++++++++++++++++++++++++++++++
@@ -112,7 +109,7 @@ The above table was compiled using the following considerations:
 
 1. Image Laterality (0020,0062) Shall be consistent with any laterality
    information contained in Primary Anatomic Structure Modifier Sequence
-   (0008,2230). `DICOM PS 3.3 Section 10.5 General Anatomy Macros
+   (0008,2230). `DICOM PS3.3: Section 10.5 General Anatomy Macros
    <http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_10.5.html>`__
    discusses the relationship between Image Laterality (0020,0062) and Primary
    Anatomic Structure Modifier Sequence (0008,2230):
@@ -140,7 +137,7 @@ The above table was compiled using the following considerations:
    2. because Laterality (0020,0060) only allows 'L' and 'R' enumerated
       values, which are not sufficient to describe these images.
 
-(excerpt from DICOM `Part 16 Table L-5 <http://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_L.html#table_L-5>`__ with
+(excerpt from DICOM `PS3.16: Table L-5 <http://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_L.html#table_L-5>`__ with
 orthodontic domain relevant regions)
 
 +---------------------------+-----------------------+------------------+
