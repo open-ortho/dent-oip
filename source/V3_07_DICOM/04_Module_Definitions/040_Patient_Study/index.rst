@@ -60,13 +60,13 @@ This normative section contains extensions to DICOM tags defined in the General 
       - R
       - The OIP profile specifies these values:
 
-	XC - for VL Photographic Image IOD, Video Photographic IOD, Multi-frame True Color Secondary Capture Image IOD
+	**XC** - for VL Photographic Image IOD, Video Photographic IOD, Multi-frame True Color Secondary Capture Image IOD
 
 	?? - for Scan Mesh IOD
 
-	OSS - for Secondary Capture IOD
+	**OSS** - for Secondary Capture IOD
 
-	M3D - for Encapsulated 3D Manufacturing Model IOD
+	**M3D** - for Encapsulated 3D Manufacturing Model IOD
 
 
 .. toctree::
