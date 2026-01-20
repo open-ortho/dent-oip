@@ -29,7 +29,6 @@ When applied to orthodontic photographs, the anatomic region is *Mouth* for intr
 
 7.2.2 Table CID 247 - Laterality Left-Right Only
 ------------------------------------------------
-These values are used in the Anatomic Region Modifier Sequence (0008,2220) and are a subset of DICOM CID 4028. 
 
 .. _cid-247a:
 .. list-table:: **Table CID 247. Laterality Left-Right Only**
@@ -48,4 +47,40 @@ These values are used in the Anatomic Region Modifier Sequence (0008,2220) and a
       - Left (qualifier value)
       - 
 
+7.2.3 Table CID 4061 - Head and/or Neck Primary Anatomic Structure
+-----------------------------------------------------------------
+These values are used in the Primary Anatomic Structure Sequence (0008,2228) and are a subset of DICOM CID 4061.
+
+.. _cid-4061:
+.. list-table:: **Table CID 4061. Head and/or Neck Primary Anatomic Structure**
+    :header-rows: 1
+
+    * - Code Scheme Designator
+      - Code Value
+      - Code Meaning
+      - Notes
+    * - SCT
+      - 89545001
+      - Face 
+      - Used for EV-* extraoral views.
+    * - SCT
+      - 74262004
+      - oral cavity 
+      - Used for IV-* intraoral views.
+    * - SCT
+      - 88176008
+      - Mandibular dental arch
+      - Used for IV-* intraoral views.
+    * - SCT
+      - 39481002
+      - Maxillary dental arch
+      - Used for IV-* intraoral views.
+    * - SCT
+      - 261063000
+      - Structure of buccal space 
+      - Used for IV-* intraoral views.
+    * - SCT
+      - 7652006
+      - Structure of frenulum labii 
+      - Used for IV-* intraoral views.
 
