@@ -52,7 +52,7 @@ This normative section contains extensions to DICOM tags defined in the General 
       - O+
       - This modifier is used to clarify which side of the structure is contained in the image. 
 
-		See Section 7.2.2 for coded values taken from DICOM CID 247 Laterality
+		See Section 7.2.2 for coded values taken from DICOM CID 247 Laterality Left-Right Only
     * - Instance Number
       - (0020,0014)
       - R+
@@ -64,7 +64,7 @@ This normative section contains extensions to DICOM tags defined in the General 
 
 	Required because the IOD VL Photographic Image does not require Image Orientation (Patient) (0020,0037) or Image Position (Patient) (0020,0032), and the IOD VL Photographic Image does not require Image Orientation (Slide) (0048,0102).
 
-	See Section 7.2.4 for allowed values.
+	See Section 7.2.3 for allowed values.
 
 
 7.4.1.5.1 Instance Number (0020,0013) Examples
