@@ -4,7 +4,7 @@
 ===================
 This section contains DICOM (Information Object Defintion) IOD specifications referenced in profiles of the IHE Dental domain.  
 
-Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules whose definition is extended by Dental domain profiles.  In Column 4 and 5 of the tables below, the values for 'Usage' are defined in `DICOM PS3.3: A.1.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.1.3>`_.
+Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  In Column 4 and 5 of the tables below, the values for 'Usage' are defined in `DICOM PS3.3: A.1.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.1.3>`_.
 
 
 7.3.1 VL Photographic Image IOD Definition
