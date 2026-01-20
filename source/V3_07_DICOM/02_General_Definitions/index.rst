@@ -1,12 +1,12 @@
 .. _general_definitions:
 
 7.2  DICOM Coded Values
-=======================
+-----------------------
 *Note: Codes are added here for now; they may find a new home*
 
 7.2.1 Table CID 4028 - Craniofacial Anatomic Region
----------------------------------------------------
-These values are used in Anatomic Region Sequence (0008,2218) and are a subset of DICOM CID 4028.  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+These values are used in the Anatomic Region Sequence (0008,2218) and are a subset of DICOM CID 4028.  
 
 When applied to orthodontic photographs, the anatomic region is *Mouth* for intraoral views, and *Head/Neck* for extraoral views.
 
@@ -28,7 +28,7 @@ When applied to orthodontic photographs, the anatomic region is *Mouth* for intr
       - Used for EV-* extraoral views. This code was selected, because it is the most detailed code that includes the ear as well since the ear is present in both frontal and lateral extra oral views.
 
 7.2.2 Table CID 247 - Laterality Left-Right Only
-------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. _cid-247a:
 .. list-table:: **Table CID 247. Laterality Left-Right Only**
@@ -48,7 +48,7 @@ When applied to orthodontic photographs, the anatomic region is *Mouth* for intr
       - 
 
 7.2.3 Table CID 4061 - Head and/or Neck Primary Anatomic Structure
------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 These values are used in the Primary Anatomic Structure Sequence (0008,2228) and are a subset of DICOM CID 4061.
 
 .. _cid-4061:
@@ -84,3 +84,63 @@ These values are used in the Primary Anatomic Structure Sequence (0008,2228) and
       - Structure of frenulum labii 
       - Used for IV-* intraoral views.
 
+7.2.5 Patient Orientation
+~~~~~~~~~~~~~~~~~~~~~~~~~
+These values are used in Patient Orientation (0020,0020).
+
+.. list-table::
+   :header-rows: 1
+
+   * - Meaning
+     - DICOM Enumerated Value
+     - SNOMED Code
+   * - Anterior
+     - A
+     - `(255549009, SCT, "Anterior") <http://snomed.info/id/255549009>`__
+   * - Posterior
+     - P
+     - `(255551008, SCT, "Posterior") <http://snomed.info/id/255551008>`__
+   * - Left
+     - L
+     - `(7771000, SCT, "Left") <http://snomed.info/id/7771000>`__
+   * - Right
+     - R
+     - `(24028007, SCT, "Right") <http://snomed.info/id/24028007>`__
+.. See TROSD-65
+   * - Top (towards the head)
+     - H
+     - `(421812003, SCT, "Top") <http://snomed.info/id/421812003>`__
+.. See TROSD-65
+   * - Bottom (towards the lower limbs)
+     - F
+     - `(421610009, SCT, "Bottom") <http://snomed.info/id/421610009>`__
+
+Choosing the Correct Patient Orientation
+++++++++++++++++++++++++++++++++++++++++
+Patient Orientation (0020,0020) relative to the image plane shall be
+specified by two values that designate the anatomical direction of the
+positive row axis (left to right) and the positive column axis (top to
+bottom).
+
+-  The first entry is the direction of the rows, given by the direction
+   of the last pixel in the first row from the first pixel in that row.
+
+-  The second entry is the direction of the columns, given by the
+   direction of the last pixel in the first column from the first pixel
+   in that column.
+
+Since Anatomical Orientation Type (0010,2210) is absent (or has a value
+of BIPED), anatomical direction shall be designated by abbreviations
+using the capital letters:
+
+= =========
+A anterior
+P posterior
+R right
+L left
+H head
+F foot
+= =========
+
+Example: a Right Profile photograph of the face, would have Patient
+Orientation set to ['A','F']
