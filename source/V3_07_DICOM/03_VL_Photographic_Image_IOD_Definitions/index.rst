@@ -4,8 +4,14 @@
 ===================
 This section contains DICOM (Information Object Defintion) IOD specifications referenced in profiles of the IHE Dental domain.  
 
-Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  In Column 4 and 5 of the tables below, the values for 'Usage' are defined in `DICOM PS3.3: A.1.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.1.3>`_.
+Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  
 
+In Column 4 of the tables below, the values of **M**, **U**, and **C** for 'Usage' are defined in `DICOM PS3.3: A.1.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.1.3>`_.  
+
+In Column 5, these additional 'Usage' values are defined:
+
+- **R** - The Module is defined as Conditional (C) or User Option (U) in DICOM; however, this Requirement is an IHE extension of the DICOM requirements, and the Module shall be present.
+- **RC** - The Module is defined as Conditional (C) or User Option (U) in DICOM; however, this requirement is an IHE extension of the DICOM requirements, and the Module shall be present when the specified conditions apply.
 
 7.3.1 VL Photographic Image IOD Definition
 +++++++++++++++++++++++++++++++++++++++++++
@@ -116,7 +122,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - Device
      - C.7.6.12
      - U
-     - U
+     - RC
 
        See Section 7.4.x
    * - 
@@ -135,7 +141,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - VL Photographic Acquisition
      - C.8.12.11
      - U
-     - U
+     - R
 
        See Section 7.4.x
    * - 
