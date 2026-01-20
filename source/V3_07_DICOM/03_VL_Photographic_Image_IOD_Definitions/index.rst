@@ -100,7 +100,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - M
      - M 
 
-       See Section 7.4.x
+       See Section 7.4.1.5
    * - 
      - General Reference
      - C.12.4
@@ -250,7 +250,7 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - M
      - M 
 
-       See Section 7.4.x
+       See Section 7.4.1.5
    * - 
      - General Reference
      - C.12.4
@@ -393,7 +393,7 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - C.7.5.2
      - M
      - M
-   * - Encapsulated Documetn
+   * - Encapsulated Document
      - Encapsulated Document 
      - C.24.2
      - M
@@ -623,7 +623,7 @@ The baseline requirements for Multi-frame True Color Secondary Capture Image IOD
      - General Image
      - C.7.6.1
      - M
-     - M See Section 7.4.x
+     - M See Section 7.4.1.5
    * - 
      - General Reference
      - C.12.4
@@ -785,7 +785,7 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
      - General Image
      - C.7.6.1
      - M
-     - M See Section 7.4.x
+     - M See Section 7.4.1.5
    * - 
      - General Reference
      - C.12.4
