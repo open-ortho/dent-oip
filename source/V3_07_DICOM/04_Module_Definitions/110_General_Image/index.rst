@@ -99,9 +99,9 @@ This normative section contains extensions to DICOM tags defined in the General 
     * - >>Primary Anatomic Structure Sequence 
       - (0008,2228)
       - O+
-      - For orthodontic photographs, the primary anatomic structure for extraoral views is designated as Face Structure (body structure). In contrast, intraoral views exhibit a broader range of variations, as enumerated in the following table.
+      - For orthodontic photographs, the primary anatomic structure for extraoral views is designated as Face Structure (body structure). In contrast, intraoral views exhibit a broader range of variations.
 
-	See Section 7.2.3 for coded values taken fromCID AAAA. Head and/or Neck Primary Anatomic Structure
+	See Section 7.2.3 for coded values taken from CID 4061. Head and/or Neck Primary Anatomic Structure
     * - >>>Anatomic Region Modifier Sequence
       - (0008,2220)
       - O+
