@@ -65,6 +65,25 @@ This normative section contains extensions to DICOM tags defined in the General 
 	Required because the IOD VL Photographic Image does not require Image Orientation (Patient) (0020,0037) or Image Position (Patient) (0020,0032), and the IOD VL Photographic Image does not require Image Orientation (Slide) (0048,0102).
 
 	See Section 7.2.3 for allowed values.
+    * - Image Laterality
+      - (0020,0062)
+      - R+
+      - P
+    * - Image Comments
+      - (0020,4000)
+      - O+
+      - According to DICOM, Image comments can be any string with a maximum lengthof 10240 characters. N ew lines and tabs are allowed. For orthodontic purposes, any kind of clinical comments for an image would normally go in the practice management software, or in a DICOM  structured report. 
+
+	We recommend this field to be used to store the image view type with the following format: ``<num>^<code>^<meaning>``
+
+	where:
+
+	``num``: is the view number, for example EV01 (from ADA WP-1100)
+
+	``code``: is the view code, for example EV.RP.LR.CO (from ADA WP-1100)
+	``meaning``: is the code meaning, for example Extraoral, Right Profile (subject is facing observer's right), Lips Relaxed, Centric Occlusion (from ADA WP-1100)
+
+	An example string: ``EV02^EV.RP.LR.CR^Extraoral, Right Profile (subject is facing observer's right), Lips Relaxed, Centric Relation``
 
 
 7.4.1.5.1 Instance Number (0020,0013) Examples
