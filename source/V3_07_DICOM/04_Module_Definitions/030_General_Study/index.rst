@@ -26,7 +26,9 @@ This normative section contains extensions to DICOM tags defined in the General 
     * - Study Description
       - (0008,1030)
       - RC+
-      - Shall be present if orthodontic progress is known and set in the Acquisition Context Sequence (0040,0555). The value SHOULD represent the :ref:`orthodontic_progress`, in a human readable form. The string SHOULD be limited to 16 characters. If a Study Description is already present, the system MAY prefix the existing Study Description with this one.
+      - Shall be present if orthodontic progress is known and set in the Acquisition Context Sequence (0040,0555). The value SHOULD represent the orthodontic progress in a human readable form. See DEN TF-2: 3.4.1.1 for guidance.  
+
+	The string SHOULD be limited to 16 characters. If a Study Description is already present, the system MAY prefix the existing Study Description with this one.
 
 
 
