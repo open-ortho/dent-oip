@@ -115,9 +115,11 @@ These values are used in Patient Orientation (0020,0020).
      - F
      - `(421610009, SCT, "Bottom") <http://snomed.info/id/421610009>`__
 
-Choosing the Correct Patient Orientation
-++++++++++++++++++++++++++++++++++++++++
-Patient Orientation (0020,0020) relative to the image plane shall be
+7.2.5.1 Specifying the Correct Patient Orientation
+++++++++++++++++++++++++++++++++++++++++++++++++++
+The following requirements come from `DICOM PS3.3: Section C.7.6.1.1.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.7.6.1.1.1>`_:
+
+Patient Orientation (0020,0020) relative to the image plane shall be 
 specified by two values that designate the anatomical direction of the
 positive row axis (left to right) and the positive column axis (top to
 bottom).
@@ -129,18 +131,5 @@ bottom).
    direction of the last pixel in the first column from the first pixel
    in that column.
 
-Since Anatomical Orientation Type (0010,2210) is absent (or has a value
-of BIPED), anatomical direction shall be designated by abbreviations
-using the capital letters:
-
-= =========
-A anterior
-P posterior
-R right
-L left
-H head
-F foot
-= =========
-
-Example: a Right Profile photograph of the face, would have Patient
+**For example:** a Right Profile photograph of the face, would have Patient
 Orientation set to ['A','F']
