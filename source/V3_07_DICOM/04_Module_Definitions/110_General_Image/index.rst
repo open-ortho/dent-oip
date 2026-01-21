@@ -64,11 +64,11 @@ This normative section contains extensions to DICOM tags defined in the General 
 
 	Required because the IOD VL Photographic Image does not require Image Orientation (Patient) (0020,0037) or Image Position (Patient) (0020,0032), and the IOD VL Photographic Image does not require Image Orientation (Slide) (0048,0102).
 
-	See Section 7.2.3 for allowed values.
+	See Section 7.2.5 for guidance and allowed values.
     * - Image Laterality
       - (0020,0062)
       - R+
-      - P
+      - See Section 7.2.3 for guidance and allowed values.
     * - Image Comments
       - (0020,4000)
       - O+
@@ -84,6 +84,26 @@ This normative section contains extensions to DICOM tags defined in the General 
 	``meaning``: is the code meaning, for example Extraoral, Right Profile (subject is facing observer's right), Lips Relaxed, Centric Occlusion (from ADA WP-1100)
 
 	An example string: ``EV02^EV.RP.LR.CR^Extraoral, Right Profile (subject is facing observer's right), Lips Relaxed, Centric Relation``
+    * - Quality Control Image
+      - (0028,0300)
+      - O+
+      - Indicates whether or not this image is a quality control or phantom image. 
+
+	In the orthodontic practice, a quality control image is usually an image that the staff acquires to ensure that the equipment is functioning as desired, or to test new settings (flash, exposure, ...) on the camera. Under these circumstances, set the value to ``YES``.
+
+	For regular production use, this value should always be set to ``NO``.
+    * - Burned in Annotation 
+      - (0028,0301)
+      - O+
+      - According to DICOM, burned in annotation indicates whether or not an image  contains sufficient burned in annotation to identify the patient and date the image was acquired. If this Attribute is absent, then the image may or may not contain burned in annotation.
+
+	For orthodontic purposes, conventionally photographs do not contain any burned in annotations. If this were the case for your software, thisvalue could always be present and set to ``NO``.
+    * - Lossy Image Compression 
+      - (0028,2110)
+      - O+
+      - Because of the varied nature of photographic capture equipment used for orthodontic purposes, this tag should be used. E.g, some cameras are configured to store images in raw and uncompressed format, others will save a compressed JPEG image. 
+
+	See Section 7.4.1.5.2 for guidance on encoding this attribute.
 
 
 7.4.1.5.1 Instance Number (0020,0013) Examples
