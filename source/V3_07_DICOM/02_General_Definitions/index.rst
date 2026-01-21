@@ -52,12 +52,12 @@ When applied to orthodontic photographs, the anatomic region is *Mouth* for intr
 In DICOM, *laterality* is used to define body parts which come in pairs, for
 example knees, ears, eyes, etc. It is not used to describe the side of the body
 being imaged. For example, an image of the left side of the right eye would have
-laterality right, even though the image is portraying the left side of the eye. In other words, this is the laterality of (possibly paired) body part (as
-described in Anatomic Region Sequence (0008,2218)) examined.
+laterality right, even though the image is portraying the left side of the eye. In other words, this is the laterality of (possibly paired) body part examined (as
+described in Anatomic Region Sequence (0008,2218)).
 
-Note:  Patient Orientation should be enough to define the side of the anatomy being viewed.  See Section 7.2.5.
+The values in CID 244 are used in Image Laterality (0020,0062).
 
-These values are used in Image Laterality (0020,0062).
+Note:  The attribute Patient Orientation (0020,0020) should be enough to define the side of the anatomy being viewed.  See Section 7.2.5.
 
 .. _cid-244a:
 .. list-table:: **Table CID 244. Laterality**
