@@ -32,7 +32,7 @@ Table 3.1-1 lists the transactions content module(s) defined in the OIP Profile.
       - R *(Note 1)*
       - DEN TF-3: 7.3.1 
     * - 
-      - Videograpic Image IOD Definition
+      - Video Photograpic Image IOD Definition
       - --
       - R *(Note 1)*
       - DEN TF-3: 7.3.2 
