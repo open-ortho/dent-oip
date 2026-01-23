@@ -8,7 +8,7 @@ Figure 3.1-1 shows the actors directly involved in the OIP Profile.
 
 A product implementation using this profile may group actors from this profile with actors from a separate workflow or transport profile specify how images are exchanged between actors. 
 
-.. figure:: ../../images-static/Figure_X.1-1_OIPActorDiagram.jpg
+.. figure:: ../../images-static/Figure_X.1-1_OIPActorDiagram.png
     :class: with-border with-shadow float-left
     :align: center
 
@@ -74,6 +74,8 @@ Table 3.1-1 lists the transactions content module(s) defined in the OIP Profile.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Most requirements are documented in DEN: TF-2: Transactions and DEN TF-3: Content Modules. This section documents any additional requirements on profile’s actors.
 
+.. _content_creator_actor:
+
 3.1.1.1 Content Creator
 +++++++++++++++++++++++
 In the OIP profile, the Content Creator is a 'generic' actor for a system that creates DICOM images.  
@@ -87,17 +89,21 @@ In the 'real-world' OIP Content Creator actor may be:
 
 + A system or software that converts existing contents of a non-DICOM archive into DICOM images compliant with this profile
 
+.. _content_consumer_actor:
+
 3.1.1.2 Content Consumer
 ++++++++++++++++++++++++
 In the OIP profile, the Content Consumer is a 'generic' actor for a system that consumes DICOM objects (e.g., images, movies, 3D models) that are compliant with the requirements in DEN TF-3: 7.3.x of this profile.   Using these DICOM objects, Content Consumer performs functions that are relevant to its application, e.g., rendering the images for a user, storing the DICOM objects in an archive, extracting information from the DICOM metadata for reporting purposes, etc.
 
 <*DISCUSS:   A common pattern is for a Consumer to support all of the variations of content that a Content Creator can produce (following a pattern of Clients can choose, Servers support all).   Alternatively, you could choose to introduce Options as we are doing the the Creator to enable a Content Consumer to declare (in its product documentation) which types of content it supports.*>
 
+.. _display_actor:
+
 3.1.1.3 Display
 +++++++++++++++
 The Display is a specialized Content Consumer that implements requirements to provide standardized display functionality to ensure *<TO DO: Describe to goal of standardized display requirements here.   You may want to point to the ADA spec driving these requirements.>*
 
-An Display in the OIP Profile shall implement all display requirements in DEN TF-2: 3.1.4.1.3.  This provides mandatory support for Viewsets VS-01, VS-02, VS-03, and VS-04 as defined in ANSI/ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets".
+A Display in the OIP Profile shall implement all display requirements in DEN TF-2: 3.1.4.1.3.  This provides mandatory support for Viewsets VS-01, VS-02, VS-03, and VS-04 as defined in ANSI/ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets".
 
 An Display may optionally support Standard Display and/or the Hanging Protocol.  See Table 3.2-1.
 
