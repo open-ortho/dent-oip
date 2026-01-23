@@ -45,7 +45,7 @@ Options that may be selected for each actor in this profile, if any, are listed 
 
 <*DISCUSS: (1) Possibly rename options to be more meaningful to industry readers.  (2) Determine whether there should be options for the Content Consumer, or whether a Consumer that is compliant with this profile shalle be able to 'process' the types of images in all of the options*>
 
-<*DISCUSS: This revision of the table proposes Options on the Display for support of Structured Display and Hanging Protocol.*
+<*DISCUSS: This revision of the table proposes Options on the Display for support of Structured Display and Hanging Protocol.  This could be deferred to a future revision of the profile.*>
 
 3.2.1 Direct Photography Option
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
