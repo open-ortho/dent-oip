@@ -1,4 +1,4 @@
-.. _vl_photographic_image:
+.. _module_definitions:
 
 7.4 Module Definitions
 ======================
@@ -16,6 +16,8 @@ orthodontic domain.
 7.4.1 General (Common) Modules
 ++++++++++++++++++++++++++++++++
 This section contains IHE constraints on Modules that are common across multiple DICOM Composite IODs.
+
+.. _patient_module:
 
 7.4.1.1 Patient Module
 ++++++++++++++++++++++
@@ -53,8 +55,10 @@ This normative section contains extensions to DICOM tags defined in the Patient 
       - O+
       - If anonymized, shall follow DICOM’s Attribute Confidentiality Profiles (Normative) in DICOM PS3.15 Chapter E.
 
+.. _general_study_module:
+
 7.4.1.2 General Study Module
-+++++++++++++++++++++++++++
+++++++++++++++++++++++++++++
 
 This normative section contains extensions to DICOM tags defined in the General Study module DICOM tags which are relevant to orthodontic photography.
 
@@ -85,9 +89,10 @@ This normative section contains extensions to DICOM tags defined in the General 
       - RC+
       - Shall be present if orthodontic progress is known and set in the Acquisition Context Sequence (0040,0555). The value SHOULD represent the :ref:`orthodontic_progress`, in a human readable form. The string SHOULD be limited to 16 characters. If a Study Description is already present, the system MAY prefix the existing Study Description with this one.
 
+.. _patient_study_module:
 
 7.4.1.3 Patient Study Module
-+++++++++++++++++++++++++++
+++++++++++++++++++++++++++++
 
 This normative section contains extensions to DICOM tags defined in the Patient Study module .
 
@@ -97,7 +102,7 @@ This normative section contains extensions to DICOM tags defined in the Patient 
 + Extensions in Table 7.4.1.3.1.1-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
 
 7.4.3.1.1 Guidance on Encoding Reason for Visit
-+++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In orthodontics, the reason for a visit is typically obtained from the Practice Management System (PMS) and is associated with an appointment. Examples include "Initial Consultation", "Follow-up", "Debanding", or "Adjustment". These values represent the reason for the patient's visit and do not necessarily describe any imaging-specific procedures.
 
@@ -121,8 +126,10 @@ This differs from Requested Procedure Description (0032,1060), which is used in 
       - RC+
       - If the PMS uses values from a set, such as those used for billing, or a pre-programmed or customizable list, then (0032,1067) SHALL be used. This sequence allows multiple codes, but for orthodontic visits, typically only one code is used.
 
+.. _general_equipment_module:
+
 7.4.1.4 General Equipment Module
-+++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++
 
 This normative section contains extensions to DICOM tags defined in the General Equipment module.
 
