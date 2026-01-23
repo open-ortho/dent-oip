@@ -57,5 +57,4 @@ The table below lists existing actors that are utilized in this profile.
     * - Content Consumer
       - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.
 
-*<TO DO:  If we decide to add the option to enable transmitting content via a transaction, we would add an Appendix B -  Transaction section here>>
 
