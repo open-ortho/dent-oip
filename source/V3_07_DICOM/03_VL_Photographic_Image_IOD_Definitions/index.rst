@@ -86,6 +86,8 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - C.7.5.1
      - M
      - M
+
+       See Section 7.4.1.5
    * - 
      - VL Photographic Equipment
      - C.8.12.10
@@ -102,7 +104,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - M
      - M 
 
-       See Section 7.4.1.5
+       See Section 7.4.1.6
    * - 
      - General Reference
      - C.12.4
