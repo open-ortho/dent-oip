@@ -14,8 +14,15 @@ This section also specifies the values allowed in the DICOM CID
 orthodontic domain.
 
 7.4.1 General (Common) Modules
-++++++++++++++++++++++++++++++++
-This section contains IHE constraints on Modules that are common across multiple DICOM Composite IODs.
+++++++++++++++++++++++++++++++
+This section contains IHE constraints on Modules that are common across multiple DICOM Composite IODs:
+
++ :ref:`requested_procedure`
++ :ref:`patient_module`
++ :ref:`general_study_module`
++ :ref:`patient_study_module`
++ :ref:`general_series_module`
++ :ref:`general_equipment_module`
 
 .. _patient_module:
 
