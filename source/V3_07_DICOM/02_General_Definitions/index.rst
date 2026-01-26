@@ -1,8 +1,12 @@
 .. _general_definitions:
 
+.._dicom_coded_values:
+
 7.2  DICOM Coded Values
 -----------------------
 *Note: Codes are added here for now; they may find a new home*
+
+.._table_cid_4028:
 
 7.2.1 Table CID 4028 - Craniofacial Anatomic Region
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
