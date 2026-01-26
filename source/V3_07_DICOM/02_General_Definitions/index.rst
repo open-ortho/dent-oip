@@ -1,12 +1,12 @@
 .. _general_definitions:
 
-.._dicom_coded_values:
+.. _dicom_coded_values:
 
 7.2  DICOM Coded Values
 -----------------------
 *Note: Codes are added here for now; they may find a new home*
 
-.._table_cid_4028:
+.. _cid_4028:
 
 7.2.1 Table CID 4028 - Craniofacial Anatomic Region
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,10 +31,11 @@ When applied to orthodontic photographs, the anatomic region is *Mouth* for intr
       - Structure of head and/or neck (body structure)
       - Used for EV-* extraoral views. This code was selected, because it is the most detailed code that includes the ear as well since the ear is present in both frontal and lateral extra oral views.
 
+.. _cid_247:
+
 7.2.2 Table CID 247 - Laterality Left-Right Only
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _cid-247a:
 .. list-table:: **Table CID 247. Laterality Left-Right Only**
     :header-rows: 1
 
@@ -51,6 +52,8 @@ When applied to orthodontic photographs, the anatomic region is *Mouth* for intr
       - Left 
       - 
 
+.. _cid_244:
+
 7.2.3 Table CID 244 - Laterality
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In DICOM, *laterality* is used to define body parts which come in pairs, for
@@ -63,7 +66,6 @@ The values in CID 244 are used in Image Laterality (0020,0062).
 
 Note:  The attribute Patient Orientation (0020,0020) should be enough to define the side of the anatomy being viewed.  See Section 7.2.5.
 
-.. _cid-244a:
 .. list-table:: **Table CID 244. Laterality**
     :header-rows: 1
 
@@ -202,11 +204,12 @@ orthodontic domain relevant regions)
 | d.info/id/21974007>`__    |                       |                  |
 +---------------------------+-----------------------+------------------+
 
+.. _cid_4061:
+
 7.2.4 Table CID 4061 - Head and/or Neck Primary Anatomic Structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 These values are used in the Primary Anatomic Structure Sequence (0008,2228) and are a subset of DICOM CID 4061.
 
-.. _cid-4061:
 .. list-table:: **Table CID 4061. Head and/or Neck Primary Anatomic Structure**
     :header-rows: 1
 
@@ -238,6 +241,8 @@ These values are used in the Primary Anatomic Structure Sequence (0008,2228) and
       - 7652006
       - Structure of frenulum labii 
       - Used for IV-* intraoral views.
+
+.. _patient_orientation:
 
 7.2.5 Patient Orientation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
