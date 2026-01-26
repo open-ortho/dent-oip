@@ -126,9 +126,42 @@ This differs from Requested Procedure Description (0032,1060), which is used in 
       - RC+
       - If the PMS uses values from a set, such as those used for billing, or a pre-programmed or customizable list, then (0032,1067) SHALL be used. This sequence allows multiple codes, but for orthodontic visits, typically only one code is used.
 
+.. _general_series_module:
+
+7.4.1.4 General Series Module
+=============================
+
+This normative section contains extensions to DICOM tags defined in the General Series module for orthodontic image acquisition.
+
+**References:**
+
++ `DICOM PS3.3: C.7.3.1  <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.7.3.1>`_ "General Series Module"
+
+**Table 7.4.1.4-1 General Series Attribute Requirements**
+
+.. list-table::
+    :header-rows: 1
+
+    * - **Attribute**
+      - **Tag**
+      - **Type**
+      - **Attribute Description**
+    * - Modality
+      - (0008,0060)
+      - R
+      - The OIP profile specifies these values:
+
+	**XC** - for VL Photographic Image IOD, Video Photographic IOD, Multi-frame True Color Secondary Capture Image IOD
+
+	?? - for Scan Mesh IOD
+
+	**OSS** - for Secondary Capture IOD
+
+	**M3D** - for Encapsulated 3D Manufacturing Model IOD
+
 .. _general_equipment_module:
 
-7.4.1.4 General Equipment Module
+7.4.1.5 General Equipment Module
 ++++++++++++++++++++++++++++++++
 
 This normative section contains extensions to DICOM tags defined in the General Equipment module.
