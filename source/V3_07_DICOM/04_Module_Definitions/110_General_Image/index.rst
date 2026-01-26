@@ -34,7 +34,7 @@ This normative section contains extensions to DICOM tags defined in the General 
       - O+
       - When applied to orthodontic photographs, the anatomic region is Mouth for intraoral views, and Head/Neck for extraoral views.  
 
-	See Section 7.2.1 for coded values taken from DICOM CID 4028 Craniofacial Anatomic Region 
+	See Section 7.2.1 for coded values taken from DICOM CID 4028 Craniofacial Anatomic Region :ref:`cid_4028`
     * - >Anatomic Region Modifier Sequence
       - (0008,2220)
       - O+
@@ -46,17 +46,17 @@ This normative section contains extensions to DICOM tags defined in the General 
       - O+
       - For orthodontic photographs, the primary anatomic structure for extraoral views is designated as Face Structure (body structure). In contrast, intraoral views exhibit a broader range of variations.
 
-	See Section 7.2.3 for coded values taken from CID 4061. Head and/or Neck Primary Anatomic Structure
+	See Section 7.2.4 for coded values taken from CID 4061 :ref:`cid_4061`. Head and/or Neck Primary Anatomic Structure
     * - >>>Anatomic Region Modifier Sequence
       - (0008,2220)
       - O+
       - This modifier is used to clarify which side of the structure is contained in the image. 
 
-		See Section 7.2.2 for coded values taken from DICOM CID 247 Laterality Left-Right Only
+		See Section 7.2.2 for coded values taken from DICOM CID 247 Laterality Left-Right Only :ref:`cid_247`
     * - Instance Number
       - (0020,0014)
       - R+
-      - To ensure images are presented in a specific sequence, set the Instance Number (0020,0013) for each image in a series according to the desired order.   See Section 7.4.1.5.1 for guidance and examples.
+      - To ensure images are presented in a specific sequence, set the Instance Number (0020,0013) for each image in a series according to the desired order.   See Section 7.4.1.5.1 :ref:`instance_number` for guidance and examples.
     * - Patient Orientation
       - (0020,0020)
       - R+
@@ -64,11 +64,11 @@ This normative section contains extensions to DICOM tags defined in the General 
 
 	Required because the IOD VL Photographic Image does not require Image Orientation (Patient) (0020,0037) or Image Position (Patient) (0020,0032), and the IOD VL Photographic Image does not require Image Orientation (Slide) (0048,0102).
 
-	See Section 7.2.5 for guidance and allowed values.
+	See Section 7.2.5 :ref:`patient_orientation`for guidance and allowed values.
     * - Image Laterality
       - (0020,0062)
       - R+
-      - See Section 7.2.3 for guidance and allowed values.
+      - See Section 7.2.3 :ref:`cid_144` for guidance and allowed values.
     * - Image Comments
       - (0020,4000)
       - O+
@@ -103,8 +103,9 @@ This normative section contains extensions to DICOM tags defined in the General 
       - O+
       - Because of the varied nature of photographic capture equipment used for orthodontic purposes, this tag should be used. E.g, some cameras are configured to store images in raw and uncompressed format, others will save a compressed JPEG image. 
 
-	See Section 7.4.1.5.2 for guidance on encoding this attribute.
+	See Section 7.4.1.5.2 :ref:`lossy_compression` for guidance on encoding this attribute.
 
+.. _instance_number:
 
 7.4.1.5.1 Instance Number (0020,0013) Examples
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -152,6 +153,7 @@ match an external numbering scheme:
 DICOM viewers will still use the Instance Number to determine display order,
 regardless of whether the numbers are consecutive.
 
+.. _lossy_compression:
 
 7.4.1.5.2 Lossy Image Compression (0028,2110) - Guidance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -227,7 +229,7 @@ In an orthodontic setting, the following use cases are to be considered:
 |   |                          | all.        |             |             |
 +---+--------------------------+-------------+-------------+-------------+
 | 0 | An existing DICOM image  | 01          | For a 30:1  | See `Lossy  |
-| 4 | was modified and         |             | compression | IMage       |
+| 4 | was modified and         |             | compression | Image       |
 |   | compressed with a lossy  |             | ratio, set  | Compression |
 |   | algorithm.               |             | to 30. If   | Method <#   |
 |   |                          |             | unknown, do | compression |
