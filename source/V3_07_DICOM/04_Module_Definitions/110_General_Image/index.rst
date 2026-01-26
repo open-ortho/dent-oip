@@ -64,7 +64,7 @@ This normative section contains extensions to DICOM tags defined in the General 
 
 	Required because the IOD VL Photographic Image does not require Image Orientation (Patient) (0020,0037) or Image Position (Patient) (0020,0032), and the IOD VL Photographic Image does not require Image Orientation (Slide) (0048,0102).
 
-	See Section 7.2.5 :ref:`patient_orientation`for guidance and allowed values.
+	See Section 7.2.5 :ref:`patient_orientation` for guidance and allowed values.
     * - Image Laterality
       - (0020,0062)
       - R+
