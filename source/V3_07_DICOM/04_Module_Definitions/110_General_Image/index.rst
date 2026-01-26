@@ -1,6 +1,6 @@
 .. _general_image:
 
-7.4.1.5 General Image
+7.4.1.7 General Image
 +++++++++++++++++++++
 
 This normative section contains extensions to DICOM tags defined in the General Image module which are relevant to orthodontic image acquisition.
@@ -8,9 +8,9 @@ This normative section contains extensions to DICOM tags defined in the General 
 **References:**
 
 + `DICOM PS3.3: C.7.6.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.7.6.1>`_
-+ Extensions in Table 7.4.1.5-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
++ Extensions in Table 7.4.1.7-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
 
-.. list-table:: **Table 7.4.1.5-1 General Image Module Attribute Requirements**
+.. list-table:: **Table 7.4.1.7-1 General Image Module Attribute Requirements**
     :header-rows: 1
 
     * - **Attribute**
@@ -56,7 +56,7 @@ This normative section contains extensions to DICOM tags defined in the General 
     * - Instance Number
       - (0020,0014)
       - R+
-      - To ensure images are presented in a specific sequence, set the Instance Number (0020,0013) for each image in a series according to the desired order.   See Section 7.4.1.5.1 :ref:`instance_number` for guidance and examples.
+      - To ensure images are presented in a specific sequence, set the Instance Number (0020,0013) for each image in a series according to the desired order.   See Section 7.4.1.7.1 :ref:`instance_number` for guidance and examples.
     * - Patient Orientation
       - (0020,0020)
       - R+
@@ -103,11 +103,11 @@ This normative section contains extensions to DICOM tags defined in the General 
       - O+
       - Because of the varied nature of photographic capture equipment used for orthodontic purposes, this tag should be used. E.g, some cameras are configured to store images in raw and uncompressed format, others will save a compressed JPEG image. 
 
-	See Section 7.4.1.5.2 :ref:`lossy_compression` for guidance on encoding this attribute.
+	See Section 7.4.1.7.2 :ref:`lossy_compression` for guidance on encoding this attribute.
 
 .. _instance_number:
 
-7.4.1.5.1 Instance Number (0020,0013) Examples
+7.4.1.7.1 Instance Number (0020,0013) Examples
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 To ensure images are presented in a specific sequence, set the Instance Number
 (0020,0013) for each image according to the desired order. 
@@ -155,9 +155,9 @@ regardless of whether the numbers are consecutive.
 
 .. _lossy_compression:
 
-7.4.1.5.2 Lossy Image Compression (0028,2110) - Guidance
+7.4.1.7.2 Lossy Image Compression (0028,2110) - Guidance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-7.4.1.5.2.1 Compression Use Cases
+7.4.1.7.2.1 Compression Use Cases
 *********************************
 Compression, in general, aims to reduce file size, with or without decreasing data quality of the original file. DICOM is a medical imaging file standard used to store multiple information such as information of the image itself (resolution, pixel data, bit allocation, compression type, etc.) . With the rising usage of imaging in clinical diagnosis, there is a need for a fast and secure method to share a large number of  images between  practitioners, and compression is used to facilitate interoperability.
 
@@ -271,7 +271,7 @@ In an orthodontic setting, the following use cases are to be considered:
 |   |                          | or slide.   | or slide.   | or slide.   |
 +---+--------------------------+-------------+-------------+-------------+
 
-7.4.1.5.2.2 Lossy Image Compression(0028,2110) - Attribute Values
+7.4.1.7.2.2 Lossy Image Compression(0028,2110) - Attribute Values
 *****************************************************************
 
 Set to the string ``"00"`` if image is not compressed. Otherwise set to
@@ -282,12 +282,12 @@ one needs to be familiar with the algorithm used to store the image. As
 an example, all forms of JPEG images are considered lossy compression
 and should thus be tagged as ``"01"``.
 
-7.4.1.5.2.3. Lossy Image Compression Ratio (0028,2112) - Attribute Values
+7.4.1.7.2.3. Lossy Image Compression Ratio (0028,2112) - Attribute Values
 *************************************************************************
 
 .. _compression_method:
 
-7.4.1.5.2.4. Lossy Image Compression Method (0028,2114) - Attribute Values
+7.4.1.7.2.4. Lossy Image Compression Method (0028,2114) - Attribute Values
 **************************************************************************
 
 Check `DICOM
