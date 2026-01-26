@@ -4,6 +4,13 @@
 ===================
 This section contains DICOM (Information Object Defintion) IOD specifications referenced in profiles of the IHE Dental domain.  
 
++ :ref:`vl_photographic_image_iod_definition`
++ :ref:`video_photographic_image_iod_definition`
++ :ref:`encapsulated_3d_manufacturing_model_iods_definition`
++ :ref:`surface_scan_mesh_iod_definition`
++ :ref:`multi-frame_true_color_secondary_capture_mage_iod_definition`
++ :ref:`secondary_capture_image_iod_definition`
+
 Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  
 
 In Column 4 of the tables below, the values of **M**, **U**, and **C** for 'Usage' are defined in `DICOM PS3.3: A.1.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.1.3>`_.  
@@ -104,7 +111,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - M
      - M 
 
-       See Section 7.4.1.6
+       See Section 7.4.1.7
    * - 
      - General Reference
      - C.12.4
@@ -244,7 +251,9 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - General Equipment
      - C.7.5.1
      - M
-     - M
+     - M 
+
+       See Section 7.4.1.5
    * - Acquisition
      - General Acquisition
      - C.7.10.1
@@ -256,7 +265,7 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - M
      - M 
 
-       See Section 7.4.1.5
+       See Section 7.4.1.7
    * - 
      - General Reference
      - C.12.4
@@ -351,7 +360,7 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - M
      - M 
 
-       See Section 7.4.x
+       See Section 7.4.1.1
    * - 
      - Clinical Trial Subject
      - C.7.1.3
@@ -363,14 +372,14 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - M
      - M
 
-       See Section 7.4.x
+       See Section 7.4.1.2
    * - 
      - Patient Study
      - C.7.2.2
      - U
      - U
 
-       See Section 7.4.x
+       See Section 7.4.1.3
    * - 
      - Clinical Trial Study
      - C.7.2.3
@@ -395,7 +404,9 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - General Equipment
      - C.7.5.1
      - M
-     - M
+     - U
+
+       See Section 7.4.1.5
    * - 
      - Enhanced General Equipment
      - C.7.5.2
@@ -515,6 +526,8 @@ The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3
      - C.7.5.1
      - M
      - M
+
+       See Section 7.4.1.5
    * - 
      - Enhanced General Equipment
      - C.7.5.2
@@ -628,6 +641,8 @@ The baseline requirements for Multi-frame True Color Secondary Capture Image IOD
      - C.7.5.1
      - M
      - M
+
+       See Section 7.4.1.5
    * - 
      - SC Equipment
      - C.8.6.1
@@ -637,7 +652,9 @@ The baseline requirements for Multi-frame True Color Secondary Capture Image IOD
      - General Image
      - C.7.6.1
      - M
-     - M See Section 7.4.1.5
+     - M
+
+       See Section 7.4.1.7
    * - 
      - General Reference
      - C.12.4
@@ -713,14 +730,14 @@ The baseline requirements for Multi-frame True Color Secondary Capture Image IOD
 
 .. _secondary_capture_image_iod_definition:
 
-7.3.5 Secondary Capture Image IOD Definition
+7.3.6 Secondary Capture Image IOD Definition
 ++++++++++++++++++++++++++++++++++++++++++++
 
 This normative section contains a description of the DICOM tags which are necessary to capture scanned study models or other body parts (i.e. face)
 
-The baseline requirements for Secondary Capture Image IODs are defined in `DICOM PS3.3: A.8.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.8.1>`_ . In Table 7.3.5-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for Secondary Capture Image IODs are defined in `DICOM PS3.3: A.8.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.8.1>`_ . In Table 7.3.6-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
-.. list-table:: **Table 7.3.5-1 - IHE constraints on DICOM Modules for Secondary Capture Image IODs**
+.. list-table:: **Table 7.3.6-1 - IHE constraints on DICOM Modules for Secondary Capture Image IODs**
    :header-rows: 1
    :widths: 15 25 15 40 15
 
@@ -787,6 +804,8 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
      - C.7.5.1
      - U
      - U
+
+       See Section 7.4.1.5
    * - 
      - SC Equipment
      - C.8.6.1
@@ -801,7 +820,9 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
      - General Image
      - C.7.6.1
      - M
-     - M See Section 7.4.1.5
+     - M
+
+       See Section 7.4.1.7
    * - 
      - General Reference
      - C.12.4
@@ -863,7 +884,7 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
      - U
      - U
 
-7.3.5.1 Additional Encoding Requirements
+7.3.6.1 Additional Encoding Requirements
 ++++++++++++++++++++++++++++++++++++++++
 
 If any...to be determined...
