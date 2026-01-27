@@ -28,7 +28,7 @@ Each of these is encoded as a sequence item in the Acquisition Context Sequence.
     * - > Value Type
       - (0040,A040)
       - R+
-      - Shall be "CODE"
+      - Shall be "CODE", unless the Concept Name Code is (128740, DCM, "Longitudinal Temporal Offset from Event"), in wich case the value shall be "NUMERIC".
     * - > Concept Name Code Sequence
       - (0040,A043)
       - R+
@@ -44,12 +44,12 @@ Each of these is encoded as a sequence item in the Acquisition Context Sequence.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Each sequence item describes one or more of the following, using the specifications and codes in the subsections below.
 
-+ Orthognathic Functional Conditions - e.g., lips and mouth open, closed, smiling, relaxed, etc)
-+ Finding by Inspection - artifact on the patient which is identified as part of the inspection during a visit or encounter
-+ Observable Entity 
-+ Dental Occlusion - centric occlusion, centric relation, see :ref:`definitions`
-+ Longitudinal Temporal Event Type
-+ Longitudinal Temporal Offset from Event
++ **Orthognathic Functional Conditions** - e.g., lips and mouth open, closed, smiling, relaxed, etc)
++ **Orthodontic Finding by Inspection** - artifact on the patient which is identified as part of the inspection during a visit or encounter
++ **Orthodontic Observable Entity** 
++ **Dental Occlusion** - centric occlusion, centric relation, see :ref:`definitions`
++ **Longitudinal Temporal Event Type**
++ **Longitudinal Temporal Offset from Event**
 
 7.4.1.6.1.1 Orthognathic Functional Conditions
 **********************************************
@@ -78,8 +78,8 @@ This section specifies coded values that can be used when Concept Name Code in (
       - One of CID 4066 Orthognathic Functional Conditions
       - See :ref:`cid-4066`.
 
-7.4.1.6.1.2 Finding by Inspection
-**********************************
+7.4.1.6.1.2 Orthodontic Finding by Inspection
+*********************************************
 
 **Optionality:** Optional  Zero or more findings MAY be specified. A finding by inspection is an artifact on the patient which is identified as part of the inspection during a visit or encounter. 
 
@@ -105,6 +105,32 @@ This section specifies coded values that can be used when Concept Name Code in (
       - One of CID 4067 Finding by inspection
       - See :ref:`cid-4067`.
 
+7.4.1.6.1.3 Orthodontic Observable Entity
+*****************************************
+
+**Optionality:** Optional
+
+This section specifies coded values that can be used when Concept Name Code in (0040,A043) is **(363787002, SCT, "Observable entity")**.
+
+.. list-table:: 
+    :header-rows: 1
+
+    * - **Attribute Name**
+      - **Tag**
+      - **Value**
+      - **Meaning**
+    * - > Acquisition Context Sequence Attribute
+      - (0040,0555) 
+      - 
+      - 
+    * - >> Concept Name Code Sequence Attribute
+      - (0040,A043)
+      - (363787002, SCT, "Observable entity")
+      - 
+    * - >> Concept Code Sequence Attribute
+      - (0040,A168)
+      - One of CID 4068 Orthodontic Observable Entity
+      - See :ref:`cid-4068`.
 
 .. toctree::
 	:glob:
