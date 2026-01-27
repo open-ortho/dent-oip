@@ -33,7 +33,8 @@ Each of these is encoded as a sequence item in the Acquisition Context Sequence.
 .. _acquisition_context_sequence_items:
 
 7.4.1.6.1 Acquisition Context Sequence Items
-++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Each sequence item describes one or more of the following, using the specifications and codes in the subsections below.
 
 + Orthognathic Functional Conditions - e.g., lips and mouth open, closed, smiling, relaxed, etc)
 + Finding by Inspection - artifact on the patient which is identified as part of the inspection during a visit or encounter
@@ -42,6 +43,32 @@ Each of these is encoded as a sequence item in the Acquisition Context Sequence.
 + Longitudinal Temporal Event Type
 + Longitudinal Temporal Offset from Event
 
+7.4.1.6.1.1 Orthognathic Functional Conditions
+**********************************************
+
+**Optionality:**  Recommended
+
+Zero or more functional conditions present during acquisition, such as position of lips, mandible position, mouth position. These include functional conditions that might influence the clinical treatment of jaws and/or alignment of teeth and SHOULD be present, if known.
+
+.. list-table:: 
+    :header-rows: 1
+
+    * - **Attribute Name**
+      - **Tag**
+      - **Value**
+      - **Meaning**
+    * - > Acquisition Context Sequence Attribute
+      - (0040,0555) 
+      - 
+      - 
+    * - >> Concept Name Code Sequence Attribute
+      - (0040,A043)
+      - `DCM-130325 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html#>`__
+      - Orthognathic Functional Conditions  (Note: Zero or more conditions may be specified in this sequence.
+    * - >> Concept Code Sequence Attribute
+      - (0040,A168)
+      - One of CID 4066 Orthognathic Functional Conditions
+      - See :ref:`cid-4066`.
 
 
 
