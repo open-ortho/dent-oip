@@ -54,11 +54,9 @@ Each sequence item describes one or more of the following, using the specificati
 7.4.1.6.1.1 Orthognathic Functional Conditions
 **********************************************
 
-**Optionality:**  Recommended
+**Optionality:**  Recommended.  Zero or more functional conditions present during acquisition, such as position of lips, mandible position, mouth position. These include functional conditions that might influence the clinical treatment of jaws and/or alignment of teeth and SHOULD be present, if known.
 
-This section specifies coded values that can be used when Concept Name Code in (0040,A043) is (130325, DCM, "Orthognathic Functional Condition").
-
-Zero or more functional conditions present during acquisition, such as position of lips, mandible position, mouth position. These include functional conditions that might influence the clinical treatment of jaws and/or alignment of teeth and SHOULD be present, if known.
+This section specifies coded values that can be used when Concept Name Code in (0040,A043) is **(130325, DCM, "Orthognathic Functional Condition")**.
 
 .. list-table:: 
     :header-rows: 1
@@ -80,6 +78,32 @@ Zero or more functional conditions present during acquisition, such as position 
       - One of CID 4066 Orthognathic Functional Conditions
       - See :ref:`cid-4066`.
 
+7.4.1.6.1.2 Finding by Inspection
+**********************************
+
+**Optionality:** Optional  Zero or more findings MAY be specified. A finding by inspection is an artifact on the patient which is identified as part of the inspection during a visit or encounter. 
+
+This section specifies coded values that can be used when Concept Name Code in (0040,A043) is **(118243007, SCT, "Finding by inspection")**.
+
+.. list-table:: 
+    :header-rows: 1
+
+    * - **Attribute Name**
+      - **Tag**
+      - **Value**
+      - **Meaning**
+    * - > Acquisition Context Sequence Attribute
+      - (0040,0555) 
+      - 
+      - 
+    * - >> Concept Name Code Sequence Attribute
+      - (0040,A043)
+      - (118243007, SCT, "Finding by inspection")
+      - 
+    * - >> Concept Code Sequence Attribute
+      - (0040,A168)
+      - One of CID 4067 Finding by inspection
+      - See :ref:`cid-4067`.
 
 
 .. toctree::
