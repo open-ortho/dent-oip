@@ -10,25 +10,57 @@ This normative section contains extensions to DICOM tags defined in the Device m
 + `DICOM PS3.3: C.7.6.12 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.7.6.12>`_
 + Extensions in Table 7.4.1.7-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
 
+In Table 6.4.1.7-1, attributes with Type O+ are recommended and SHOULD be used where applicable.
+
 .. list-table:: **Table 7.4.1.7-1 Device Module Attribute Requirements**
     :header-rows: 1
 
     * - **Attribute**
       - **Tag**
       - **Type**
-      - **Attribute Description/Notes**
+      - **Notes**
     * - Device Sequence
       - (0050,0010)
-      - O+ 
+      - 
+      - This sequence SHOULD be used whenever a known device was purposely used during the acquisition process.
 
-	Note: This sequence SHOULD be used whenever a known device was purposely used during the acquisition process.
-      - The Device Sequence allows for an unlimited number of devices, which are defined using SNOMED codes. 
+	The Device Sequence allows for an unlimited number of devices, which are defined using SNOMED codes. 
+	
+	It is not required to codify each object present in the field of view of the image, except for those in Section 7.4.1.8.1. 
+    * - > 
+      - include `Code Sequence Macro Attributes <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#table_8.8-1>`_
+      - R+ 
+      - See Section 7.4.1.8.1 for codes for devices most commonly used for orthodontic views that may be visible in the image. 
 
-	The codes in Section 7.4.1.8.1 are most commonly used for orthodontic views that may be visible in the image. 
-
-	It is not required to codify each object present in the field of view of the image, except for those listed above. 
-
-	Additional entries making uses of codes which are children of `SCT 260787004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260787004&edition=MAIN&release=&languages=en>`__ physical object MAY be used.	
+	Additional sequence entries making uses of codes which are children of `SCT 260787004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260787004&edition=MAIN&release=&languages=en>`__ physical object MAY be used.	
+    * - > Manufacturer
+      - (0008,0070)
+      - O+
+      - 
+    * - > Manufacturer's Model Name
+      - (0008,1090)
+      - O+
+      - 
+    * - > Device Serial Number
+      - (0018,1000)
+      - O+
+      - 
+    * - > Device ID
+      - (0018,1003)
+      - O+
+      - 
+    * - > Device Length
+      - (0050,0014)
+      - O+
+      - Length in mm of device. See `DICOM Section C.7.6.12.1.1 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.12.html#sect_C.7.6.12.1.1>`__.
+    * - > Device Diameter
+      - (0050,0016)
+      - O+
+      - Unit diameter of device. See `DICOM Section C.7.6.12.1.1 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.6.12.html#sect_C.7.6.12.1.1>`__.
+    * - > Device Diameter Units
+      - (0050,0017)
+      - RC
+      - Required if Device Diameter (0050,0016) is present.
 
 7.4.1.8.1 Device Code Values 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
