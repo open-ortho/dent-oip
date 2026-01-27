@@ -159,6 +159,33 @@ This section specifies coded values in DICOM CID 4069 that can be used when Conc
       - See :ref:`cid-4069`.
       - 
 
+7.4.1.6.1.5 Longitudinal Temporal Event Type
+********************************************
+
+**Optionality:** ???
+
+This section specifies coded values in DICOM CID 208 that can be used when Concept Name Code in (0040,A043) is **(128741, DCM, "Longitudinal Temporal Event Type")**.  Note:  This Concept Name for CID 280 entries is defined in `TID 1502 Time Point Context <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_A.html#sect_TID_1502>`__ 
+
+.. list-table:: 
+    :header-rows: 1
+
+    * - **Attribute Name**
+      - **Tag**
+      - **Value**
+      - **Meaning**
+    * - > Acquisition Context Sequence Attribute
+      - (0040,0555) 
+      - 
+      - 
+    * - >> Concept Name Code Sequence Attribute
+      - (0040,A043)
+      - (128741, DCM, "Longitudinal Temporal Event Type")
+      - Longitudinal Temporal Event Type
+    * - >> Concept Code Sequence Attribute
+      - (0040,A168)
+      - One of :ref:`CID-280 <cid-280>`
+      - See :ref:`notes <concept code sequence attribute>` below.
+
 .. toctree::
 	:glob:
 	:maxdepth: 1
