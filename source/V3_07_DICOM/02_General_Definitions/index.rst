@@ -406,3 +406,36 @@ These values are used within Acquisition Context (0040,0555) when Concept Name C
     * - `SCT 736783005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=736783005&edition=MAIN&release=&languages=en>`__
       - Centric relation (observable entity)
       - If present, *Centric occlusion* cannot be present. See :ref:`Centric Relation and Centric Occlusion Definition <centric occlusion>`.
+
+.. _cid-280:
+
+7.2.10 Longitudinal Temporal Event Type
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These values are used within Acquisition Context (0040,0555) when Concept Name Code in (0040,A043) is (128741, DCM, "Longitudinal Temporal Event Type").
+
+The allowed values for this code sequence have been taken from `DICOM CID 280 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_280.html>`__ and applied in the :ref:`Progress Table above <cid-280>`
+
+<*QUESTION FOR TONI:  The last 3 values in this table are not in CID 280.  Where did they come from?*>
+
+.. list-table:: **Table CID 280. Longitudinal Temporal Event Type**
+    :header-rows: 1
+
+    * - **Code**
+      - **Meaning**
+      - **Notes**
+    * - (C37948, NCIt, "Enrollment")
+      - Enrollment
+      - 
+    * - (121079, DCM, "Baseline")
+      - Baseline
+      - 
+    * - `SCT 184047000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=184047000&edition=MAIN&release=&languages=en>`__
+      - Patient registration
+      - 
+    * - `SCT 1332161000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1332161000&edition=MAIN&release=&languages=en>`__
+      - Orthodontic Treatment started
+      - 
+    * - `SCT 1340210007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1340210007&edition=MAIN&release=&languages=en>`__
+      - Orthodontic Treatment stopped
+      - 
