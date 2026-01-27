@@ -299,7 +299,9 @@ Orientation set to ['A','F']
 7.2.6 Orthognathic Functional Conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. list-table:: CID 4066. Orthognathic Functional Conditions
+These values are used within Acquisition Context (0040,0555).
+
+.. list-table:: **Table CID 4066. Orthognathic Functional Conditions**
     :header-rows: 1
 
     * - SNOMED Code
@@ -323,3 +325,42 @@ Orientation set to ['A','F']
     * - `SCT 225583004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=225583004&edition=MAIN&release=&languages=en>`__
       - Smiles (finding)
       - 
+
+7.2.7 Orthodontic Finding by Inspection
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These values are used within Acquisition Context (0040,0555).
+
+.. list-table:: **Table CID 4067. Orthodontic Finding by Inspection**
+    :header-rows: 1
+
+    * - **SNOMED Code**
+      - **Meaning**
+      - **Notes**
+    * - `SCT 276470008 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=276470008&edition=MAIN&release=&languages=en>`__
+      - Skin mark (disorder)
+      - Optional. MAY be present if some kind of skin mark is present. SNOMED-CT children of this code are also allowed, e.g. birthmark, slap mark, ...
+    * - `SCT 341000119102 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=341000119102&edition=MAIN&release=&languages=en>`__
+      - Tattoo of skin (finding)
+      - Optional. MAY be present if a tattoo is present on the skin within the field of view.
+    * - `SCT 4356008 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=4356008&edition=MAIN&release=&languages=en>`__
+      - Gingival recession (disorder)
+      - Optional. MAY be present.
+    * - `SCT 710793000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=710793000&edition=MAIN&release=&languages=en>`__
+      - Cant of occlusal plane (observable entity)
+      - Optional. MAY be present.
+    * - `SCT 1264188003 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1264188003&edition=MAIN&release=&languages=en>`__
+      - Local exogenous pigmentation of left buccal mucosa
+      - Optional. MAY be present.
+    * - `SCT 1264193000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1264193000&edition=MAIN&release=&languages=en>`__
+      - Local exogenous pigmentation of right buccal mucosa
+      - Optional. MAY be present.
+    * - `SCT 1260043007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1260043007&edition=MAIN&release=&languages=en>`__
+      - Local exogenous pigmentation of mucosa of soft palate
+      - Optional. MAY be present.
+    * - `SCT 1260047008 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1260047008&edition=MAIN&release=&languages=en>`__
+      - Local exogenous pigmentation of mucous membrane of lower lip
+      - Optional. MAY be present.
+    * - `SCT 1260049006 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1260049006&edition=MAIN&release=&languages=en>`__
+      - Local exogenous pigmentation of mucous membrane of upper lip    
+      - Optional. MAY be present.
