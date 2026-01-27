@@ -293,3 +293,33 @@ bottom).
 
 **For example:** a Right Profile photograph of the face, would have Patient
 Orientation set to ['A','F']
+
+.. _cid-4066:
+
+7.2.6 Orthognathic Functional Conditions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: CID 4066. Orthognathic Functional Conditions
+    :header-rows: 1
+
+    * - SNOMED Code
+      - Meaning
+      - Notes
+    * - `SCT 1336028006 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1336028006&edition=MAIN&release=&languages=en>`__
+      - Upper and lower lips in relaxed position
+      - 
+    * - `SCT 1336029003 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1336029003&edition=MAIN&release=&languages=en>`__
+      - Upper and lower lips in closed position
+      - 
+    * - `SCT 1332210001 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1332210001&edition=MAIN&release=&languages=en>`__
+      - Mouth in partially open position
+      - 
+    * - `SCT 262016004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=262016004&edition=MAIN&release=&languages=en>`__
+      - Open Mouth (finding)
+      - 
+    * - `SCT 1336026005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1336026005&edition=MAIN&release=&languages=en>`__
+      - Mandible postured forward
+      - 
+    * - `SCT 225583004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=225583004&edition=MAIN&release=&languages=en>`__
+      - Smiles (finding)
+      - 
