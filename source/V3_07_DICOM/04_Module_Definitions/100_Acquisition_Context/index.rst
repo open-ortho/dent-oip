@@ -44,12 +44,14 @@ Each of these is encoded as a sequence item in the Acquisition Context Sequence.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Each sequence item describes one or more of the following, using the specifications and codes in the subsections below.
 
-+ **Orthognathic Functional Conditions** - e.g., lips and mouth open, closed, smiling, relaxed, etc)
-+ **Orthodontic Finding by Inspection** - artifact on the patient which is identified as part of the inspection during a visit or encounter
-+ **Orthodontic Observable Entity** 
-+ **Dental Occlusion** - centric occlusion, centric relation, see :ref:`definitions`
-+ **Longitudinal Temporal Event Type**
-+ **Longitudinal Temporal Offset from Event**
++ :ref:`Orthognathic Functional Conditions <orthognathic_functional_conditions>` - e.g., lips and mouth open, closed, smiling, relaxed, etc)
++ :ref:`Orthodontic Finding by Inspection <orthodontic_finding_by_inspection>` - artifact on the patient which is identified as part of the inspection during a visit or encounter
++ :ref:`Orthodontic Observable Entity <orthodontic_observable_entity>`
++ :ref:`Dental Occlusion <dental_occlusion>` - centric occlusion, centric relation
++ :ref:`Longitudinal Temporal Event Type**
++ :ref:`Longitudinal Temporal Offset from Event**
+
+.. _orthognathic_functional_conditions:
 
 7.4.1.6.1.1 Orthognathic Functional Conditions
 **********************************************
@@ -78,6 +80,8 @@ This section specifies coded values in DICOM CID 4066 that can be used when Conc
       - One of CID 4066 Orthognathic Functional Conditions
       - See :ref:`cid-4066`.
 
+.. _orthodontic_finding_by_inspection:
+
 7.4.1.6.1.2 Orthodontic Finding by Inspection
 *********************************************
 
@@ -105,6 +109,8 @@ This section specifies coded values in DICOM CID 4067 that can be used when Conc
       - One of CID 4067 Finding by inspection
       - See :ref:`cid-4067`.
 
+.. _orthodontic_observable_entity:
+
 7.4.1.6.1.3 Orthodontic Observable Entity
 *****************************************
 
@@ -131,6 +137,8 @@ This section specifies coded values in DICOM CID 4068 that can be used when Conc
       - (0040,A168)
       - One of CID 4068 Orthodontic Observable Entity
       - See :ref:`cid-4068`.
+
+.. _dental_occlusion:
 
 7.4.1.6.1.4 Dental Occlusion
 ****************************
@@ -184,7 +192,16 @@ This section specifies coded values in DICOM CID 208 that can be used when Conce
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
       - One of :ref:`CID-280 <cid-280>`
-      - See :ref:`notes <concept code sequence attribute>` below.
+      - 
+
+
+7.4.1.6.1.6 Longitudinal Temporal Offset from Event
+***************************************************
+
+**Optionality:** 
+
+- Recommended. SHOULD be present if :ref:`longitudinal_temporal_event_type` is present. 
+- If present, :ref:`longitudinal_temporal_event_type` SHALL be present.
 
 .. toctree::
 	:glob:
