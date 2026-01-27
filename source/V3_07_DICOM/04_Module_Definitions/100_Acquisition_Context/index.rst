@@ -7,7 +7,7 @@ This normative section contains extensions to DICOM tags defined in the Acquisit
 
 For orthodontic photography, we make use of the Acquisition Context module to encode the conditions of the patient during the photographic acquisition session (lips and mouth open, closed, smiling, relaxed, etc), the occlusal relationship (centric occlusion, centric relation, see :ref:`definitions`), the Image View (projection) and the Image View Modifier (direct or indirect) during the photographic acquisition session.  
 
-Each of these is encoded as a sequence item in the Acquisition Context Sequence.  Section 7.4.1.6.1 specifies how each acquisition context is encoded.
+Each of these is encoded as a sequence item in the Acquisition Context Sequence.  Table 7.4.1.6-1 and Section 7.4.1.6.1 specifiy how each acquisition context is encoded.
 
 **References:**
 
@@ -56,7 +56,7 @@ Each sequence item describes one or more of the following, using the specificati
 
 **Optionality:**  Recommended.  Zero or more functional conditions present during acquisition, such as position of lips, mandible position, mouth position. These include functional conditions that might influence the clinical treatment of jaws and/or alignment of teeth and SHOULD be present, if known.
 
-This section specifies coded values that can be used when Concept Name Code in (0040,A043) is **(130325, DCM, "Orthognathic Functional Condition")**.
+This section specifies coded values in DICOM CID 4066 that can be used when Concept Name Code in (0040,A043) is **(130325, DCM, "Orthognathic Functional Condition")**.
 
 .. list-table:: 
     :header-rows: 1
@@ -83,7 +83,7 @@ This section specifies coded values that can be used when Concept Name Code in (
 
 **Optionality:** Optional  Zero or more findings MAY be specified. A finding by inspection is an artifact on the patient which is identified as part of the inspection during a visit or encounter. 
 
-This section specifies coded values that can be used when Concept Name Code in (0040,A043) is **(118243007, SCT, "Finding by inspection")**.
+This section specifies coded values in DICOM CID 4067 that can be used when Concept Name Code in (0040,A043) is **(118243007, SCT, "Finding by inspection")**.
 
 .. list-table:: 
     :header-rows: 1
@@ -110,7 +110,7 @@ This section specifies coded values that can be used when Concept Name Code in (
 
 **Optionality:** Optional
 
-This section specifies coded values that can be used when Concept Name Code in (0040,A043) is **(363787002, SCT, "Observable entity")**.
+This section specifies coded values in DICOM CID 4068 that can be used when Concept Name Code in (0040,A043) is **(363787002, SCT, "Observable entity")**.
 
 .. list-table:: 
     :header-rows: 1
@@ -131,6 +131,33 @@ This section specifies coded values that can be used when Concept Name Code in (
       - (0040,A168)
       - One of CID 4068 Orthodontic Observable Entity
       - See :ref:`cid-4068`.
+
+7.4.1.6.1.4 Dental Occlusion
+****************************
+
+**Optionality:** Recommended. SHOULD be present, if known.  Defines the dental occlusion. Only one value is allowed.
+
+This section specifies coded values in DICOM CID 4069 that can be used when Concept Name Code in (0040,A043) is **(25272006, SCT, "Dental occlusion")**.
+
+.. list-table:: 
+    :header-rows: 1
+
+    * - **Attribute Name**
+      - **Tag**
+      - **Value**
+      - **Meaning**
+    * - > Acquisition Context Sequence Attribute
+      - (0040,0555) 
+      - 
+      - 
+    * - >> Concept Name Code Sequence Attribute
+      - (0040,A043)
+      - (25272006, SCT, "Dental occlusion")
+      - 
+    * - >> Concept Code Sequence Attribute
+      - One of CID 4069 Orthodontic Observable Entity
+      - See :ref:`cid-4069`.
+      - 
 
 .. toctree::
 	:glob:
