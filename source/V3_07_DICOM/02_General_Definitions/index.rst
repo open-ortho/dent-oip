@@ -8,8 +8,8 @@
 
 .. _cid_4028:
 
-7.2.1 Table CID 4028 - Craniofacial Anatomic Region
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7.2.1 CID 4028 - Craniofacial Anatomic Region
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 These values are used in the Anatomic Region Sequence (0008,2218) and are a subset of DICOM CID 4028.  
 
 When applied to orthodontic photographs, the anatomic region is *Mouth* for intraoral views, and *Head/Neck* for extraoral views.
@@ -33,8 +33,8 @@ When applied to orthodontic photographs, the anatomic region is *Mouth* for intr
 
 .. _cid_247:
 
-7.2.2 Table CID 247 - Laterality Left-Right Only
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7.2.2 CID 247 - Laterality Left-Right Only
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table:: **Table CID 247. Laterality Left-Right Only**
     :header-rows: 1
@@ -54,8 +54,8 @@ When applied to orthodontic photographs, the anatomic region is *Mouth* for intr
 
 .. _cid_244:
 
-7.2.3 Table CID 244 - Laterality
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7.2.3 CID 244 - Laterality
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 In DICOM, *laterality* is used to define body parts which come in pairs, for
 example knees, ears, eyes, etc. It is not used to describe the side of the body
 being imaged. For example, an image of the left side of the right eye would have
@@ -206,7 +206,7 @@ orthodontic domain relevant regions)
 
 .. _cid_4061:
 
-7.2.4 Table CID 4061 - Head and/or Neck Primary Anatomic Structure
+7.2.4 CID 4061 - Head and/or Neck Primary Anatomic Structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 These values are used in the Primary Anatomic Structure Sequence (0008,2228) and are a subset of DICOM CID 4061.
 
@@ -299,7 +299,7 @@ Orientation set to ['A','F']
 7.2.6 Orthognathic Functional Conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These values are used within Acquisition Context (0040,0555).
+These values are used within Acquisition Context (0040,0555) when Concept Name Code in (0040,A043) is (130325, DCM, "Orthognathic Functional Condition").
 
 .. list-table:: **Table CID 4066. Orthognathic Functional Conditions**
     :header-rows: 1
@@ -331,7 +331,7 @@ These values are used within Acquisition Context (0040,0555).
 7.2.7 Orthodontic Finding by Inspection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These values are used within Acquisition Context (0040,0555).
+These values are used within Acquisition Context (0040,0555) when Concept Name Code in (0040,A043) is (118243007, SCT, "Finding by inspection").
 
 .. list-table:: **Table CID 4067. Orthodontic Finding by Inspection**
     :header-rows: 1
@@ -372,7 +372,7 @@ These values are used within Acquisition Context (0040,0555).
 7.2.8 Orthodontic Observable Entity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These values are used within Acquisition Context (0040,0555).
+These values are used within Acquisition Context (0040,0555) when Concept Name Code in (0040,A043) is (363787002, SCT, "Observable entity").
 
 .. list-table:: **Table CID 4068. Orthodontic Observable Entity**
     :header-rows: 1
