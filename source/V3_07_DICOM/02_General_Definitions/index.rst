@@ -326,6 +326,8 @@ These values are used within Acquisition Context (0040,0555).
       - Smiles (finding)
       - 
 
+.. _cid-4067:
+
 7.2.7 Orthodontic Finding by Inspection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -364,3 +366,23 @@ These values are used within Acquisition Context (0040,0555).
     * - `SCT 1260049006 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1260049006&edition=MAIN&release=&languages=en>`__
       - Local exogenous pigmentation of mucous membrane of upper lip    
       - Optional. MAY be present.
+
+.. _cid-4068:
+
+7.2.8 Orthodontic Observable Entity
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These values are used within Acquisition Context (0040,0555).
+
+.. list-table:: **Table CID 4068. Orthodontic Observable Entity**
+    :header-rows: 1
+
+    * - **SNOMED Code**
+      - **Meaning**
+      - **Notes**
+    * - `SCT 110343009 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=110343009&edition=MAIN&release=&languages=en>`__
+      - Tongue thrust
+      - Mandatory if encoding :ref:`IV13 <IV13>`.
+    * - `SCT 193093009 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=193093009&edition=MAIN&release=&languages=en>`__
+      - Bell's palsy (disorder)
+      - Optional.
