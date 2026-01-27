@@ -7,7 +7,7 @@ This normative section contains extensions to DICOM tags defined in the Acquisit
 
 For orthodontic photography, we make use of the Acquisition Context module to encode the conditions of the patient during the photographic acquisition session (lips and mouth open, closed, smiling, relaxed, etc), the occlusal relationship (centric occlusion, centric relation, see :ref:`definitions`), the Image View (projection) and the Image View Modifier (direct or indirect) during the photographic acquisition session.  
 
-Each of these is encoded as a sequence item in the Acquisition Context Sequence.  
+Each of these is encoded as a sequence item in the Acquisition Context Sequence.  Section 7.4.1.6.1 specifies how each acquisition context is encoded.
 
 **References:**
 
@@ -23,12 +23,20 @@ Each of these is encoded as a sequence item in the Acquisition Context Sequence.
       - **Attribute Description**
     * - Acquisition Context Sequence
       - (0040,0555)
+      - O+
+      - Zero or more Items shall be included in this Sequence.   Each sequence item is encoded using the `Content Item Macro <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#table_10-2>`_ that describes one discreet, coded acquisition context value of the photographic acquisition session.
+    * - > Value Type
+      - (0040,A040)
       - R+
-      - Zero or more Items shall be included in this Sequence.   Each sequence item describes one to store one discreet, coded acquisition context value of the photographic acquisition session.
+      - Shall be "CODE"
     * - > Concept Name Code Sequence
       - (0040,A043)
       - R+
-      - Each sequence item is encoded using the DICOM `Content Item With Modifiers Macro <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#table_10.2.1-1>`_ .  Section 7.4.1.6.1 :ref:`acquisition_context_sequence_items` identifies how each sequence item encodes a single acquisition context value.
+      - Coded concept name of this name-value Item.   Only a single Item shall be included in this Sequence. The coded value is taken from `DICOM TID 3465 VL Orthodontic Acquisition Context <https://dicom.nema.org/medical/dicom/current/output/html/part16.html#sect_TID_3465>`_.  Each sequence item is encoded using the DICOM `Content Item With Modifiers Macro <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#table_10.2.1-1>`_ .  
+    * - > Concept Code Sequence
+      - (0040,A168)
+      - R+
+      - Coded concept value of this name-value Item.  Only a single Item shall be included in this Sequence.   See :ref:`acquisition_context_sequence_items` for coded values under each Concept Name Code
 
 .. _acquisition_context_sequence_items:
 
@@ -48,6 +56,8 @@ Each sequence item describes one or more of the following, using the specificati
 
 **Optionality:**  Recommended
 
+This section specifies coded values that can be used when Concept Name Code in (0040,A043) is (130325, DCM, "Orthognathic Functional Condition").
+
 Zero or more functional conditions present during acquisition, such as position of lips, mandible position, mouth position. These include functional conditions that might influence the clinical treatment of jaws and/or alignment of teeth and SHOULD be present, if known.
 
 .. list-table:: 
@@ -63,8 +73,8 @@ Zero or more functional conditions present during acquisition, such as position 
       - 
     * - >> Concept Name Code Sequence Attribute
       - (0040,A043)
-      - `DCM-130325 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_D.html#>`__
-      - Orthognathic Functional Conditions  (Note: Zero or more conditions may be specified in this sequence.
+      - (130325, DCM, "Orthognathic Functional Condition")
+      - 
     * - >> Concept Code Sequence Attribute
       - (0040,A168)
       - One of CID 4066 Orthognathic Functional Conditions
