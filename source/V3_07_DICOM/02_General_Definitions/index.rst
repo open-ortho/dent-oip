@@ -386,3 +386,23 @@ These values are used within Acquisition Context (0040,0555) when Concept Name C
     * - `SCT 193093009 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=193093009&edition=MAIN&release=&languages=en>`__
       - Bell's palsy (disorder)
       - Optional.
+
+.. _cid-4069:
+
+7.2.9 Dental Occlusion
+~~~~~~~~~~~~~~~~~~~~~~
+
+These values are used within Acquisition Context (0040,0555) when Concept Name Code in (0040,A043) is (25272006, SCT, "Dental occlusion").
+
+.. list-table:: **Table CID 4069. Dental Occlusion**
+    :header-rows: 1
+
+    * - **SNOMED Code**
+      - **Meaning**
+      - **Notes**
+    * - `SCT 110320000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=110320000&edition=MAIN&release=&languages=en>`__
+      - Centric occlusion (observable entity)
+      - If present, *Centric relation* cannot be present. See :ref:`Centric Relation and Centric Occlusion Definition <centric occlusion>`.
+    * - `SCT 736783005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=736783005&edition=MAIN&release=&languages=en>`__
+      - Centric relation (observable entity)
+      - If present, *Centric occlusion* cannot be present. See :ref:`Centric Relation and Centric Occlusion Definition <centric occlusion>`.
