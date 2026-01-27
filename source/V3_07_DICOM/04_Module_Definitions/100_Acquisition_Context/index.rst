@@ -5,7 +5,9 @@
 
 This normative section contains extensions to DICOM tags defined in the Acquisition Context module.
 
-For orthodontic photography, we make use of the Acquisition Context module to encode the conditions of the patient during the photographic acquisition session (lips and mouth open, closed, smiling, relaxed, etc), the occlusal relationship (centric occlusion, centric relation, see :ref:`definitions`), the Image View (projection) and the Image View Modifier (direct or indirect) during the photographic acquisition session.  
+For orthodontic photography, we make use of the Acquisition Context module to encode the conditions of the patient during the photographic acquisition session (lips and mouth open, closed, smiling, relaxed, etc), the occlusal relationship (centric occlusion, centric relation, see :ref:`definitions`), the Image View (projection) and the Image View Modifier (direct or indirect) during the photographic acquisition session. 
+
+<*QUESTION FOR TONI:  Though it is mentioned above, I don't see the Image View  or Image View Modifier specified in the context details below*>
 
 Each of these is encoded as a sequence item in the Acquisition Context Sequence.  Table 7.4.1.6-1 and Section 7.4.1.6.1 specifiy how each acquisition context is encoded.
 
@@ -48,8 +50,8 @@ Each sequence item describes one or more of the following, using the specificati
 + :ref:`Orthodontic Finding by Inspection <orthodontic_finding_by_inspection>` - artifact on the patient which is identified as part of the inspection during a visit or encounter
 + :ref:`Orthodontic Observable Entity <orthodontic_observable_entity>`
 + :ref:`Dental Occlusion <dental_occlusion>` - centric occlusion, centric relation
-+ :ref:`Longitudinal Temporal Event Type**
-+ :ref:`Longitudinal Temporal Offset from Event**
++ :ref:`Longitudinal Temporal Event Type <longitudinal_temporal_event_type>`
++ :ref:`Longitudinal Temporal Offset from Event <longitudinal_temporal_offset_from_event>`
 
 .. _orthognathic_functional_conditions:
 
@@ -67,15 +69,15 @@ This section specifies coded values in DICOM CID 4066 that can be used when Conc
       - **Tag**
       - **Value**
       - **Meaning**
-    * - > Acquisition Context Sequence Attribute
+    * - > Acquisition Context Sequence 
       - (0040,0555) 
       - 
       - 
-    * - >> Concept Name Code Sequence Attribute
+    * - >> Concept Name Code Sequence 
       - (0040,A043)
       - (130325, DCM, "Orthognathic Functional Condition")
       - 
-    * - >> Concept Code Sequence Attribute
+    * - >> Concept Code Sequence 
       - (0040,A168)
       - One of CID 4066 Orthognathic Functional Conditions
       - See :ref:`cid-4066`.
@@ -96,15 +98,15 @@ This section specifies coded values in DICOM CID 4067 that can be used when Conc
       - **Tag**
       - **Value**
       - **Meaning**
-    * - > Acquisition Context Sequence Attribute
+    * - > Acquisition Context Sequence 
       - (0040,0555) 
       - 
       - 
-    * - >> Concept Name Code Sequence Attribute
+    * - >> Concept Name Code Sequence 
       - (0040,A043)
       - (118243007, SCT, "Finding by inspection")
       - 
-    * - >> Concept Code Sequence Attribute
+    * - >> Concept Code Sequence 
       - (0040,A168)
       - One of CID 4067 Finding by inspection
       - See :ref:`cid-4067`.
@@ -125,15 +127,15 @@ This section specifies coded values in DICOM CID 4068 that can be used when Conc
       - **Tag**
       - **Value**
       - **Meaning**
-    * - > Acquisition Context Sequence Attribute
+    * - > Acquisition Context Sequence 
       - (0040,0555) 
       - 
       - 
-    * - >> Concept Name Code Sequence Attribute
+    * - >> Concept Name Code Sequence
       - (0040,A043)
       - (363787002, SCT, "Observable entity")
       - 
-    * - >> Concept Code Sequence Attribute
+    * - >> Concept Code Sequence 
       - (0040,A168)
       - One of CID 4068 Orthodontic Observable Entity
       - See :ref:`cid-4068`.
@@ -154,18 +156,20 @@ This section specifies coded values in DICOM CID 4069 that can be used when Conc
       - **Tag**
       - **Value**
       - **Meaning**
-    * - > Acquisition Context Sequence Attribute
+    * - > Acquisition Context Sequence 
       - (0040,0555) 
       - 
       - 
-    * - >> Concept Name Code Sequence Attribute
+    * - >> Concept Name Code Sequence 
       - (0040,A043)
       - (25272006, SCT, "Dental occlusion")
       - 
-    * - >> Concept Code Sequence Attribute
+    * - >> Concept Code Sequence 
       - One of CID 4069 Orthodontic Observable Entity
       - See :ref:`cid-4069`.
       - 
+
+.. _longitudinal_temporal_event_type:
 
 7.4.1.6.1.5 Longitudinal Temporal Event Type
 ********************************************
@@ -181,19 +185,20 @@ This section specifies coded values in DICOM CID 208 that can be used when Conce
       - **Tag**
       - **Value**
       - **Meaning**
-    * - > Acquisition Context Sequence Attribute
+    * - > Acquisition Context Sequence 
       - (0040,0555) 
       - 
       - 
-    * - >> Concept Name Code Sequence Attribute
+    * - >> Concept Name Code Sequence 
       - (0040,A043)
       - (128741, DCM, "Longitudinal Temporal Event Type")
       - Longitudinal Temporal Event Type
-    * - >> Concept Code Sequence Attribute
+    * - >> Concept Code Sequence 
       - (0040,A168)
       - One of :ref:`CID-280 <cid-280>`
       - 
 
+.. _longitudinal_temporal_offset_from_event:
 
 7.4.1.6.1.6 Longitudinal Temporal Offset from Event
 ***************************************************
@@ -202,6 +207,34 @@ This section specifies coded values in DICOM CID 208 that can be used when Conce
 
 - Recommended. SHOULD be present if :ref:`longitudinal_temporal_event_type` is present. 
 - If present, :ref:`longitudinal_temporal_event_type` SHALL be present.
+
+.. list-table::
+    :header-rows: 1
+
+    * - Attribute Name
+      - Tag
+      - Value
+      - Meaning
+    * - > Acquisition Context Sequence 
+      - (0040,0555) 
+      - 
+      - This sequence is omitted for "Initial" and "Final", as there are no progresses.  Note: This Acquisition Context Sequence (0040,0555) without a Numeric Value Attribute (0040,A30A) SHALL be considered invalid, malformed and disregarded. Interpreting it as a zero is a violation of the DICOM standard.
+    * - >> Value Type
+      - (0040,A040)
+      - "NUMERIC"
+      - 
+    * - >> Concept Name Code Sequence 
+      - (0040,A043)
+      - (128740, DCM, "Longitudinal Temporal Offset from Event"
+      - This Concept Name comes from `DICOM TID 1502 Time Point Context <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_A.html#sect_TID_1502>`__ 
+    * - >> Numeric Value
+      - (0040,A30A)
+      - 0,1,2,3,...
+      - Required. Number of days past the Event Type.  
+
+	Zero or a positive integer, in units of days.	
+
+	If value is unknown, the entire sequence should be omitted.  If value is zero (0), the integer zero SHALL be used.
 
 .. toctree::
 	:glob:
