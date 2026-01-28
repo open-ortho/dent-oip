@@ -105,7 +105,7 @@ The Display is a specialized Content Consumer that implements requirements to pr
 
 A Display actor in the OIP Profile shall implement all display requirements in DEN TF-2: 3.1.4.1.3.  This provides mandatory support for Viewsets VS-01, VS-02, VS-03, and VS-04 as defined in ANSI/ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets".
 
-An Display actor may optionally support Standard Display and/or the Hanging Protocol.  See Table 3.2-1.
+A Display actor may optionally support Standard Display and/or the Hanging Protocol.  See Table 3.2-1.
 
 
 
