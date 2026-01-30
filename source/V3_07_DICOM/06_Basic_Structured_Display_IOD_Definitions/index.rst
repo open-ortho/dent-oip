@@ -2,11 +2,11 @@
 
 *<<Discuss:  Are display requirements really a part of compliance to this profile (presumably for the Content Consumer??   If so, we should discuss how to incorporate these requirements into Volume 1>*
 
-IOD Definitions
-===============
+Basic Structured Display IOD Definitions
+========================================
 
 Introduction
------------
+------------
 
 The Basic Structured Display IOD is a DICOM Information Object Definition that specifies a fixed, deterministic layout of images and related content that must be presented to the viewer exactly as defined. It provides a mechanism to create reproducible presentations of images, graphics, text and other renderable content.
 
