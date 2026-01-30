@@ -13,7 +13,7 @@ This section contains DICOM (Information Object Defintion) IOD specifications re
 
 Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  
 
-In Column 4 of the tables below, the values of **M**, **U**, and **C** for 'Usage' are defined in `DICOM PS3.3: A.1.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.1.3>`_.  
+In Column 4 of the tables below, the values of **M**, **U**, and **C** for 'Usage' are defined in `DICOM PS3.3: A.1.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/chapter_A.html#sect_A.1.3>`_.  
 
 In Column 5, these additional 'Usage' values are defined:
 
@@ -34,7 +34,7 @@ This part was compiled using the values allowed in the DICOM CID
 (Content IDs) tables, highlighting those values which are relevant to the
 orthodontic domain.
 
-The baseline requirements for the VL Photographic Image IOD are defined in `DICOM PS3.3: A.32.4.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.4.3>`_ .  In Table 7.3.1-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements.   
+The baseline requirements for the VL Photographic Image IOD are defined in `DICOM PS3.3: A.32.4.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.32.4.3.html>`_ .  In Table 7.3.1-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements.   
 
 *<Discuss:  This profile defines many constraints on the modules listed in this table.   In Col 5, add a reference to the section containing those constraints (otherwise, a quick glance at this table implies, for example, that there is no difference between DICOM and OIP for the General Study, Patient, Acquisition Context, etc modules, which is not the case)>* 
 
@@ -149,7 +149,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - M
      - M
 
-       See Section 7.4.x
+       See Section 7.4.2.1
    * - 
      - VL Photographic Acquisition
      - C.8.12.11
@@ -190,7 +190,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
 This normative section contains a description of the DICOM tags which are
 necessary to capture motion picture, movies, and/or video in orthodontics.
 
-The baseline requirements for Video Photographic Image IODs are defined in `DICOM PS3.3: A.32.7.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.32.7.3>`_ . In Table 7.3.2-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for Video Photographic Image IODs are defined in `DICOM PS3.3: A.32.7.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.32.7.3.html>`_ . In Table 7.3.2-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
 .. list-table:: **Table 7.3.2-1 - IHE constraints on DICOM Modules for Video Photograpic Image IODs**
    :header-rows: 1
@@ -339,11 +339,11 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
 
 7.3.3 Encapsulated 3D Manufacturing Models IODs Definition
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-The baseline requirements for Encapsulated 3D Manufacturing Model IODs are defined in `DICOM PS3.3: A.85 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85>`_ , specifially:
+The baseline requirements for Encapsulated 3D Manufacturing Model IODs are defined in `DICOM PS3.3: A.85 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.85.html>`_ , specifially:
 
-+ **Encapsulated STL IOD** in `DICOM PS3.3: A.85.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.1>`_ - The Encapsulated STL IOD describes a 3D model in Stereolithography (STL) format that has been encapsulated within a DICOM Information Object.
-+ **Encapsulated OBJ IOD** in `DICOM PS3.3: A.85.2 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.2>`_ - The Encapsulated OBJ IOD describes a 3D model in OBJ format. *(Note:  Any supporting material library file (MTL) and supporting 2D texture map image files are addressed in other DICOM IODs..)*
-+ **Encapsulated MTL IOD** in `DICOM PS3.3: A.85.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.3>`_ . The Encapsulated MTL IOD describes in MTL format a materials library used by an Encapsulated OBJ 3D model (see `DICOM PS3.3: A.85.2.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.85.2.1>`_).
++ **Encapsulated STL IOD** in `DICOM PS3.3: A.85.1 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.85.html#sect_A.85.1>`_ - The Encapsulated STL IOD describes a 3D model in Stereolithography (STL) format that has been encapsulated within a DICOM Information Object.
++ **Encapsulated OBJ IOD** in `DICOM PS3.3: A.85.2 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.85.html#sect_A.85.2>`_ - The Encapsulated OBJ IOD describes a 3D model in OBJ format. *(Note:  Any supporting material library file (MTL) and supporting 2D texture map image files are addressed in other DICOM IODs..)*
++ **Encapsulated MTL IOD** in `DICOM PS3.3: A.85.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.85.html#sect_A.85.3>`_ . The Encapsulated MTL IOD describes in MTL format a materials library used by an Encapsulated OBJ 3D model (see `DICOM PS3.3: A.85.2.1 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.85.2.html#sect_A.85.2.1>`_).
 
 The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.3-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
@@ -459,7 +459,7 @@ If any...to be determined...
 This normative section contains a description of the DICOM tags which are
 necessary to capture 3D intraoral or extraoral surface scans directly from a patient.
 
-The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3: A.68 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.68>`_ . In Table 7.3.4-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3: A.68.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.68.3.html>`_ . In Table 7.3.4-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
 .. list-table:: **Table 7.3.4-1 - IHE constraints on DICOM Modules for Surface Scan Mesh IODs**
    :header-rows: 1
@@ -574,7 +574,7 @@ If any...to be determined...
 This normative section contains a description of the DICOM tags which are
 necessary to capture scan film, negatives, or positive photographs. 
 
-The baseline requirements for Multi-frame True Color Secondary Capture Image IODs are defined in `DICOM PS3.3: A.68 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.8.5>`_ . In Table 7.3.5-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for Multi-frame True Color Secondary Capture Image IODs are defined in `DICOM PS3.3: A.8.5.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.8.5.3.html>`_ . In Table 7.3.5-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
 .. list-table:: **Table 7.3.5-1 - IHE constraints on DICOM Modules for Multi-frame True Color Secondary Capture IODs**
    :header-rows: 1
@@ -737,7 +737,7 @@ The baseline requirements for Multi-frame True Color Secondary Capture Image IOD
 
 This normative section contains a description of the DICOM tags which are necessary to capture scanned study models or other body parts (i.e. face)
 
-The baseline requirements for Secondary Capture Image IODs are defined in `DICOM PS3.3: A.8.1 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.8.1>`_ . In Table 7.3.6-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for Secondary Capture Image IODs are defined in `DICOM PS3.3: A.8.1.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.8.html#sect_A.8.1.3>`_ . In Table 7.3.6-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
 .. list-table:: **Table 7.3.6-1 - IHE constraints on DICOM Modules for Secondary Capture Image IODs**
    :header-rows: 1
