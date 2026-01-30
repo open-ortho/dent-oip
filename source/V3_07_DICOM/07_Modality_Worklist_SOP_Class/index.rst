@@ -1,10 +1,7 @@
-*<Discuss with Toni:  How to incorporate these MWL requirements into the profile text>*
-
-
 .. _modality_worklist_sop_class:
 
-Modality Worklist SOP Class
-===========================
+Modality Worklist SOP Class (for future revision of OIP)
+========================================================
 
 This normative section contains a description of the DICOM tags which are
 necessary to request for orthodontic photographs to be taken (acquired).
