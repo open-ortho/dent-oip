@@ -11,7 +11,7 @@ Any EXIF tag which comes from the camera, should be mapped and stored in the VL 
 
 **References:**
 
-+ `DICOM PS3.3: C.8.12.11 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.8.12.11>`_
++ `DICOM PS3.3: C.8.12.11 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.8.12.11.html>`_
 + Extensions in Table X.y z-1 are from ???
 
 **Table X.y.z-1 VL Photographic Acquisition Module Attribute Requirements**
