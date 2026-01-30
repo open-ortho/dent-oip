@@ -1,4 +1,4 @@
-.. _iod_definitions:
+
 
 7.3 IOD Definitions
 ===================
@@ -24,6 +24,8 @@ In Column 5, these additional 'Usage' values are defined:
 
 7.3.1 VL Photographic Image IOD Definition
 +++++++++++++++++++++++++++++++++++++++++++
+
+.. _vl_photographic_image_iod_definitions:
 
 This normative section contains a description of the DICOM tags which are
 necessary to fully describe orthodontic views (photographs) and to request for these photographs to be taken (acquired).
