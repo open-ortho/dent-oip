@@ -47,7 +47,6 @@ Contents
 
 .. toctree::
    :glob:
-   :numbered:
    :maxdepth: 2
 
    Preamble/*
