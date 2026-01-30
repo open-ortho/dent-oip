@@ -48,11 +48,12 @@ Contents
 .. toctree::
    :glob:
    :numbered:
-   :maxdepth: 1
+   :maxdepth: 2
 
    Preamble/*
 
    V1_Orthodontic_Imaging_Profile/*
+   V2_Transactions/04_OIP_Transactions/*
    V3_07_DICOM/*
    V3_Appendix/A_ViewExamples/index
    V3_Appendix/B_ViewSetExamples/index

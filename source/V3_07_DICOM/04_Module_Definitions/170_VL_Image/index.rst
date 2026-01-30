@@ -1,11 +1,11 @@
 .. _vl image:
 
 7.4.x Image Modules
-+++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~
 This section contains IHE constraints on Modules that are common across multiple DICOM Composite IODs.
 
-7.4.x.y VL Image Module
-++++++++++++++++++++++
+7.4.x.1 VL Image Module
++++++++++++++++++++++++
 
 This normative section contains a description of the DICOM tags defined in the VL Image module which are relevant to orthodontic photography.  This section describes the requirements for storing the image type of an orthodontic photograph as a code in a DICOM Visible Light (VL) object. While the orthodontic image can be fully represented using a combination of various DICOM attributes, there exist many situations where it is more convenient to encode the image type in a single code.
 
@@ -37,8 +37,8 @@ For orthodontic photography, we make use of the VL Image Module  to store the co
       - C (Recommended. SHOULD be specified, if known. Only one value is allowed.)
       - The projection of the anatomic region of interest on an image receptor.  Use one of the lateral projections for photographs of the buccal (cheek) region.   See Section 7.4.x.y.1.
 
-7.4.x.y.1 View Code Sequence (0054,0220)
-+++++++++++++++++++++++++++++++++++++++
+7.4.x.1.1 View Code Sequence (0054,0220)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Buccal projection* is not present in SNOMED-CT, but there are various lateral projections. *Buccal (intended site)* `SCT 763825005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=763825005&edition=MAIN&release=&languages=en>`__ in the anatomic region sequence is enough to specify un-ambiguosly that this photograph is a buccal view. 
 
@@ -115,8 +115,7 @@ Allowed values:
       - `260499007 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=260499007&edition=MAIN&release=&languages=en>`__
       - Occlusal projection (qualifier value)
       - 
-Requirements
-------------
+**Requirements**
 
 1. **ViewCodeSequence Usage**
 
