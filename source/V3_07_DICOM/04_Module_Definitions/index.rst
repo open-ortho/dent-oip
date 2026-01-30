@@ -17,7 +17,6 @@ orthodontic domain.
 ++++++++++++++++++++++++++++++
 This section contains IHE constraints on Modules that are common across multiple DICOM Composite IODs:
 
-+ :ref:`requested_procedure`
 + :ref:`patient_module`
 + :ref:`general_study_module`
 + :ref:`patient_study_module`
