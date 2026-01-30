@@ -135,7 +135,7 @@ This differs from Requested Procedure Description (0032,1060), which is used in 
 .. _general_series_module:
 
 7.4.1.4 General Series Module
-=============================
++++++++++++++++++++++++++++++
 
 This normative section contains extensions to DICOM tags defined in the General Series module for orthodontic image acquisition.
 
