@@ -308,10 +308,4 @@ All of the above terms are to be stored in this tag as a simple string
 characters or numbers here).
 
 
-.. toctree::
-	:glob:
-	:maxdepth: 1
-
-	./*
-
 
