@@ -197,4 +197,4 @@ This normative section contains extensions to DICOM tags defined in the General 
 
 .. toctree::
 	:glob:
-	:maxdepth: 1
+	:maxdepth: 2
