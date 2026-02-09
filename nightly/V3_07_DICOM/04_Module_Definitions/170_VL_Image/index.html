@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>7.4.2 VL Photographic Image IOD - Module Constraints &#8212; DENT-OIP 0.2.7-nightly.20260209200448 documentation</title>
+    <title>7.4.2 VL Photographic Image IOD - Module Constraints &#8212; DENT-OIP 0.2.7-nightly.20260209214858 documentation</title>
   
   
   
@@ -36,13 +36,15 @@
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../../_static/documentation_options.js?v=ba965564"></script>
+    <script src="../../../_static/documentation_options.js?v=7b5ef72b"></script>
     <script src="../../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'V3_07_DICOM/04_Module_Definitions/170_VL_Image/index';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="7.4.1.9 SOP Common" href="../220_SOP_Common/index.html" />
+    <link rel="prev" title="7.4.1.8 Device" href="../150_Device/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -105,8 +107,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260209200448 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260209214858 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -148,7 +148,7 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../Preamble/01_foreword.html">Foreword</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../Preamble/02_scope.html">Introduction to this Supplement</a></li>
 
@@ -175,6 +175,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../../01_Conventions/index.html">7 DICOM Conventions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../02_General_Definitions/index.html">7.2  DICOM Coded Values</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../index.html">7.4 Module Definitions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../100_Acquisition_Context/index.html">7.4.1.6 Acquisition Context</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../110_General_Image/index.html">7.4.1.7 General Image</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../150_Device/index.html">7.4.1.8 Device</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">7.4.2 VL Photographic Image IOD - Module Constraints</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../220_SOP_Common/index.html">7.4.1.9 SOP Common</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../V3_Appendix/A_ViewExamples/index.html">Appendix A: View Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -566,7 +579,34 @@ document.write(`
 <li><p><a class="reference external" href="https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.8.12.11.html">DICOM PS3.3: C.8.12.11</a></p></li>
 <li><p>Extensions in Table 7.4.2.2-1 are from ???</p></li>
 </ul>
-<p><strong>Table 7.4.2.2-1 VL Photographic Acquisition Module Attribute Requirements</strong></p>
+<div class="pst-scrollable-table-container"><table class="table" id="id2">
+<caption><span class="caption-text"><strong>Table 7.4.2.2-1 VL Photographic Acquisition Module Attribute Requirements</strong></span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Attribute</strong></p></th>
+<th class="head"><p><strong>Tag</strong></p></th>
+<th class="head"><p><strong>Type</strong></p></th>
+<th class="head"><p><strong>Attribute Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>File Source</p></td>
+<td><p>(0016,003A)</p></td>
+<td><p>RC+ (confirm this)</p></td>
+<td><p>Indicates the type of scene. In orthodontic photography, digital still cameras record the image and this tag value shall be set to 3, indicating that the image was taken with a digital still camera (DSC).</p></td>
+</tr>
+<tr class="row-odd"><td><p>Scene Type</p></td>
+<td><p>(0016,003B)</p></td>
+<td><p>R+ (confirm this)</p></td>
+<td><p>Indicates the type of scene. In orthodontic photography, digital still cameras record the image and this tag value must shall be set to 1, indicating that the image was directly photographed.</p></td>
+</tr>
+<tr class="row-even"><td><p>TBD</p></td>
+<td><p>TBD</p></td>
+<td><p>TBD</p></td>
+<td><p>TBD</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <p><strong>Requirements</strong></p>
 <ol class="arabic simple">
 <li><p><strong>ViewCodeSequence Usage</strong></p>
@@ -656,6 +696,24 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../150_Device/index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">7.4.1.8 Device</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../220_SOP_Common/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">7.4.1.9 SOP Common</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
