@@ -1,10 +1,10 @@
-.. _vl__photographic_image_module_constraints:
+.. _vl_photographic_image_module_constraints:
 
 7.4.2 VL Photographic Image IOD - Module Constraints
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This section contains IHE constraints on Modules that are specific to the VL Phtotgraphic Image IOD.
 
-.. _vl__image_module
+.. _vl_image_module
 
 7.4.2.1 VL Image Module
 +++++++++++++++++++++++
@@ -222,4 +222,3 @@ Any EXIF tag which comes from the camera, should be mapped and stored in the VL 
 	:glob:
 	:maxdepth: 2
 
-	./*
