@@ -50,7 +50,7 @@ Frameworks <https://profiles.ihe.net/GeneralIntro/ch-5.html>`_.
 
 1.4 Comment Process
 -------------------
-*TO DO: specify here how this will work in for Dental profile text.*
+*TO DO: specify here how public comment will work.*
 
 1.5 Copyright Licenses
 ----------------------
@@ -104,13 +104,11 @@ applied.
 
 2.1 Transaction Modeling and Profile Conventions
 ------------------------------------------------
-In order to maintain consistent documentation, modeling methods for IHE transactions and510
-profiling conventions for frequently used standards are maintained in the IHE Technical
+In order to maintain consistent documentation, modeling methods for IHE transactions and profiling conventions for frequently used standards are maintained in the IHE Technical
 Frameworks General Introduction, `Appendix E - Standards Profiling and Documentation
 Conventions <https://profiles.ihe.net/GeneralIntro/ch-E.html>`_. Methods described include the Unified Modeling Language (UML) and standards
 conventions include DICOM, HL7 v2.x, HL7 Clinical Document Architecture (CDA)
-Documents, etc. These conventions are critical to understanding this volume and should be515
-reviewed prior to reading this text.
+Documents, etc. These conventions are critical to understanding this volume and should be reviewed prior to reading this text.
 
 2.2 Use of Coded Entities and Coding Schemes
 --------------------------------------------
@@ -124,8 +122,3 @@ any licensing/copyright requirements are satisfied.
 This section defines each transaction in detail, specifying the standards used, and the information
 transferred.
 
-.. toctree::
-	:glob:
-	:maxdepth: 1
-
-	*/index
