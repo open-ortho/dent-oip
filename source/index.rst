@@ -60,8 +60,8 @@ Contents
    V3_07_DICOM/04_Module_Definitions/100_Acquisition_Context/*
    V3_07_DICOM/04_Module_Definitions/110_General_Image/*
    V3_07_DICOM/04_Module_Definitions/150_Device/*
-   V3_07_DICOM/04_Module_Definitions/170_VL_Image/*
    V3_07_DICOM/04_Module_Definitions/220_SOP_Common/*
+   V3_07_DICOM/04_Module_Definitions/170_VL_Image/*
    V3_07_DICOM/05_Hanging_Protocol_IOD_Definitions/index
    V3_07_DICOM/06_Basic_Structured_Display_IOD_Definitions/index
    V3_Appendix/A_ViewExamples/index
