@@ -21,15 +21,15 @@ Open Issues and Questions
 =========================
 *<TO DO: List the open issues/questions that need to be addressed. These are particularly useful for highlighting problematic issues and/or specifically soliciting public comments.>*
 
-#. 
+#. Vol 1 Sec 3.2 -- In this draft of OIP, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to 'process' all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?
 
-#. 
+#. Vol 1 Sec 3.2 -- This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?
 
-#. 
+#. Vol 1 Sec 3.1.1.1 - In IHE, a system that creates DICOM images has requirements for Study and Series UIDs, in particular conditions for when a new Series shall be created.   See `IHE RAD TF-2 <https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Vol2.pdf>`_: 4.8.4.1.1.1.   Should we pull these requirements into OIP?
 
 Closed Issues 
 =============
-#. This first revision of OIP does does not include transactions that specify how DICOM images and associated data is exchanged between actors; i.e., transactions such as DICOM C-STORE or Modality Worklist are deferred to a future version of OIP, or to a separate profile.
+#. This first revision of OIP does does not include transactions that specify how DICOM images and associated data is exchanged between actors.  Transactions such as DICOM C-STORE, Modality Worklist, or Query/Retrieve are deferred to a future version of OIP, or to a separate profile.
 
 #. 
 
