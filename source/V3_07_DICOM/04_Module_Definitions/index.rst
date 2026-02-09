@@ -14,7 +14,7 @@ This section also specifies the values allowed in the DICOM CID
 orthodontic domain.
 
 7.4.1 General (Common) Modules
-++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This section contains IHE constraints on Modules that are common across multiple DICOM Composite IODs:
 
 + :ref:`patient_module`
@@ -107,7 +107,7 @@ This normative section contains extensions to DICOM tags defined in the Patient 
 + `DICOM PS3.3: C.7.2.2  <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.7.2.2>`_ "Patient Study Module"
 + Extensions in Table 7.4.1.3.1.1-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
 
-7.4.3.1.1 Guidance on Encoding Reason for Visit
+7.4.1.3.1 Guidance on Encoding Reason for Visit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In orthodontics, the reason for a visit is typically obtained from the Practice Management System (PMS) and is associated with an appointment. Examples include "Initial Consultation", "Follow-up", "Debanding", or "Adjustment". These values represent the reason for the patient's visit and do not necessarily describe any imaging-specific procedures.
