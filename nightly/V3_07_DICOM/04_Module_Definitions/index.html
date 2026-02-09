@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>7.4 Module Definitions &#8212; DENT-OIP 0.2.7-nightly.20260130204013 documentation</title>
+    <title>7.4 Module Definitions &#8212; DENT-OIP 0.2.7-nightly.20260209200448 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=6b451684"></script>
+    <script src="../../_static/documentation_options.js?v=ba965564"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260130204013 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260209200448 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -169,13 +169,14 @@
 
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../V2_Transactions/04_OIP_Transactions/index.html">1 Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../V2_Transactions/04_OIP_Transactions/index.html">1 Introduction to Volume 2</a></li>
 
 
 <li class="toctree-l1"><a class="reference internal" href="../01_Conventions/index.html">7 DICOM Conventions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../02_General_Definitions/index.html">7.2  DICOM Coded Values</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">7.4 Module Definitions</a></li>
-
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">7.4 Module Definitions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../V3_Appendix/A_ViewExamples/index.html">Appendix A: View Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../V3_Appendix/A_ViewExamples/generated/EV01.html">[EV01] - Right Profile (subject is facing observer’s right) - Lips Relaxed, Centric Occlusion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../V3_Appendix/A_ViewExamples/generated/EV02.html">[EV02] - Right Profile (subject is facing observer’s right) - Lips Relaxed, Centric Relation</a></li>
@@ -405,22 +406,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">7.4 Module Definitions</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-common-modules">7.4.1 General (Common) Modules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#patient-module">7.4.1.1 Patient Module</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-study-module">7.4.1.2 General Study Module</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#patient-study-module">7.4.1.3 Patient Study Module</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guidance-on-encoding-reason-for-visit">7.4.3.1.1 Guidance on Encoding Reason for Visit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-common-modules">7.4.1 General (Common) Modules</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patient-module">7.4.1.1 Patient Module</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-study-module">7.4.1.2 General Study Module</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patient-study-module">7.4.1.3 Patient Study Module</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#guidance-on-encoding-reason-for-visit">7.4.1.3.1 Guidance on Encoding Reason for Visit</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-series-module">7.4.1.4 General Series Module</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-equipment-module">7.4.1.5 General Equipment Module</a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#general-series-module">7.4.1.4 General Series Module</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-equipment-module">7.4.1.5 General Equipment Module</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -450,9 +447,8 @@ orthodontic domain.</p>
 <li><p><a class="reference internal" href="#general-series-module"><span class="std std-ref">7.4.1.4 General Series Module</span></a></p></li>
 <li><p><a class="reference internal" href="#general-equipment-module"><span class="std std-ref">7.4.1.5 General Equipment Module</span></a></p></li>
 </ul>
-</section>
 <section id="patient-module">
-<span id="id2"></span><h2>7.4.1.1 Patient Module<a class="headerlink" href="#patient-module" title="Link to this heading">#</a></h2>
+<span id="id2"></span><h3>7.4.1.1 Patient Module<a class="headerlink" href="#patient-module" title="Link to this heading">#</a></h3>
 <p>This normative section contains extensions to DICOM tags defined in the Patient module which are relevant to orthodontic photography.</p>
 <p><strong>References:</strong></p>
 <ul class="simple">
@@ -494,7 +490,7 @@ orthodontic domain.</p>
 </div>
 </section>
 <section id="general-study-module">
-<span id="id3"></span><h2>7.4.1.2 General Study Module<a class="headerlink" href="#general-study-module" title="Link to this heading">#</a></h2>
+<span id="id3"></span><h3>7.4.1.2 General Study Module<a class="headerlink" href="#general-study-module" title="Link to this heading">#</a></h3>
 <p>This normative section contains extensions to DICOM tags defined in the General Study module DICOM tags which are relevant to orthodontic photography.</p>
 <p><strong>References:</strong></p>
 <ul class="simple">
@@ -531,7 +527,7 @@ orthodontic domain.</p>
 </div>
 </section>
 <section id="patient-study-module">
-<span id="id4"></span><h2>7.4.1.3 Patient Study Module<a class="headerlink" href="#patient-study-module" title="Link to this heading">#</a></h2>
+<span id="id4"></span><h3>7.4.1.3 Patient Study Module<a class="headerlink" href="#patient-study-module" title="Link to this heading">#</a></h3>
 <p>This normative section contains extensions to DICOM tags defined in the Patient Study module .</p>
 <p><strong>References:</strong></p>
 <ul class="simple">
@@ -539,7 +535,7 @@ orthodontic domain.</p>
 <li><p>Extensions in Table 7.4.1.3.1.1-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1</p></li>
 </ul>
 <section id="guidance-on-encoding-reason-for-visit">
-<h3>7.4.3.1.1 Guidance on Encoding Reason for Visit<a class="headerlink" href="#guidance-on-encoding-reason-for-visit" title="Link to this heading">#</a></h3>
+<h4>7.4.1.3.1 Guidance on Encoding Reason for Visit<a class="headerlink" href="#guidance-on-encoding-reason-for-visit" title="Link to this heading">#</a></h4>
 <p>In orthodontics, the reason for a visit is typically obtained from the Practice Management System (PMS) and is associated with an appointment. Examples include “Initial Consultation”, “Follow-up”, “Debanding”, or “Adjustment”. These values represent the reason for the patient’s visit and do not necessarily describe any imaging-specific procedures.</p>
 <p>This differs from Requested Procedure Description (0032,1060), which is used in the Modality Worklist to describe the image-specific procedure to be performed. See <a class="reference internal" href="../07_Modality_Worklist_SOP_Class/02_Requested_Procedure/index.html#requested-procedure"><span class="std std-ref">Requested Procedure</span></a>.</p>
 <p><strong>Table 7.4.1.3.1.1-1 Patient Study Module Attribute Requirements</strong></p>
@@ -567,9 +563,8 @@ orthodontic domain.</p>
 </div>
 </section>
 </section>
-</section>
 <section id="general-series-module">
-<span id="id5"></span><h1>7.4.1.4 General Series Module<a class="headerlink" href="#general-series-module" title="Link to this heading">#</a></h1>
+<span id="id5"></span><h3>7.4.1.4 General Series Module<a class="headerlink" href="#general-series-module" title="Link to this heading">#</a></h3>
 <p>This normative section contains extensions to DICOM tags defined in the General Series module for orthodontic image acquisition.</p>
 <p><strong>References:</strong></p>
 <ul class="simple">
@@ -598,8 +593,9 @@ orthodontic domain.</p>
 </tbody>
 </table>
 </div>
+</section>
 <section id="general-equipment-module">
-<span id="id6"></span><h2>7.4.1.5 General Equipment Module<a class="headerlink" href="#general-equipment-module" title="Link to this heading">#</a></h2>
+<span id="id6"></span><h3>7.4.1.5 General Equipment Module<a class="headerlink" href="#general-equipment-module" title="Link to this heading">#</a></h3>
 <p>This normative section contains extensions to DICOM tags defined in the General Equipment module.</p>
 <p><strong>References:</strong></p>
 <ul class="simple">
@@ -631,6 +627,7 @@ orthodontic domain.</p>
 </div>
 <div class="toctree-wrapper compound">
 </div>
+</section>
 </section>
 </section>
 
@@ -679,22 +676,18 @@ orthodontic domain.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">7.4 Module Definitions</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-common-modules">7.4.1 General (Common) Modules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#patient-module">7.4.1.1 Patient Module</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-study-module">7.4.1.2 General Study Module</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#patient-study-module">7.4.1.3 Patient Study Module</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#guidance-on-encoding-reason-for-visit">7.4.3.1.1 Guidance on Encoding Reason for Visit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-common-modules">7.4.1 General (Common) Modules</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patient-module">7.4.1.1 Patient Module</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-study-module">7.4.1.2 General Study Module</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#patient-study-module">7.4.1.3 Patient Study Module</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#guidance-on-encoding-reason-for-visit">7.4.1.3.1 Guidance on Encoding Reason for Visit</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-series-module">7.4.1.4 General Series Module</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-equipment-module">7.4.1.5 General Equipment Module</a></li>
 </ul>
 </li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#general-series-module">7.4.1.4 General Series Module</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-equipment-module">7.4.1.5 General Equipment Module</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

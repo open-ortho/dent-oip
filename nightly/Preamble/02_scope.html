@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction to this Supplement &#8212; DENT-OIP 0.2.7-nightly.20260130204013 documentation</title>
+    <title>Introduction to this Supplement &#8212; DENT-OIP 0.2.7-nightly.20260209200448 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=6b451684"></script>
+    <script src="../_static/documentation_options.js?v=ba965564"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260130204013 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260209200448 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -169,13 +169,14 @@
 
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../V2_Transactions/04_OIP_Transactions/index.html">1 Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../V2_Transactions/04_OIP_Transactions/index.html">1 Introduction to Volume 2</a></li>
 
 
 <li class="toctree-l1"><a class="reference internal" href="../V3_07_DICOM/01_Conventions/index.html">7 DICOM Conventions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../V3_07_DICOM/02_General_Definitions/index.html">7.2  DICOM Coded Values</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../V3_07_DICOM/04_Module_Definitions/index.html">7.4 Module Definitions</a></li>
-
+<li class="toctree-l1 has-children"><a class="reference internal" href="../V3_07_DICOM/04_Module_Definitions/index.html">7.4 Module Definitions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../V3_Appendix/A_ViewExamples/index.html">Appendix A: View Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../V3_Appendix/A_ViewExamples/generated/EV01.html">[EV01] - Right Profile (subject is facing observer’s right) - Lips Relaxed, Centric Occlusion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../V3_Appendix/A_ViewExamples/generated/EV02.html">[EV02] - Right Profile (subject is facing observer’s right) - Lips Relaxed, Centric Relation</a></li>
@@ -430,7 +431,7 @@ document.write(`
   <section id="introduction-to-this-supplement">
 <h1>Introduction to this Supplement<a class="headerlink" href="#introduction-to-this-supplement" title="Link to this heading">#</a></h1>
 <p>The intended audience of this document is the medical imaging software developers or medical imaging device manufacturer who deals with visible light digital photography.</p>
-<p><em>&lt;TO DO: First, briefly describe the current landscape in dental imaging, presumably with many proprietary implementations.  Then describe how the IOP profile addresses this problem.&gt;</em></p>
+<p><em>&lt;TO DO: First, briefly describe the current landscape in dental imaging, presumably with many proprietary implementations.  Then describe how the OIP profile addresses this problem.&gt;</em></p>
 <p>The document, along with its accompanying CSV files and DICOM sample files found in the Volume 3 Appendices, provides a detailed implementation guide for encoding orthodontic/craniofacial
 views using DICOM with SNOMED CT terminology.</p>
 <p>Using the Orthodontic Imaging Profile to implement a standard encoding of Visual Light Photographic Images ensures interoperability between vendors and enables the imaging software developer or device manufacturer to spend less time designing and implementing novel and proprietary ways for connecting with other products.  That work is alreay done and defined. All that needs to be done is implement it in your product.</p>
@@ -443,11 +444,22 @@ Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets available onli
 </section>
 <section id="open-issues-and-questions">
 <h1>Open Issues and Questions<a class="headerlink" href="#open-issues-and-questions" title="Link to this heading">#</a></h1>
-<p><em>&lt;List the open issues/questions that need to be addressed. These are particularly useful for highlighting problematic issues and/or specifically soliciting public comments.&gt;</em></p>
+<p>This section identifies open issues/questions that need to be addressed prior to publishing OIP for Trial Implementation. We are specifically soliciting public comments for these items:</p>
+<ol class="arabic simple">
+<li><p>Vol 1 Sec 3.2 – In this draft of OIP, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to ‘process’ all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?</p></li>
+<li><p>Vol 1 Sec 3.2 – This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?</p></li>
+<li><p>Vol 1 Sec 3.1.1.1 - In IHE, a system that creates DICOM images has requirements for Study and Series UIDs, in particular conditions for when a new Series shall be created.   See <a class="reference external" href="https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Vol2.pdf">IHE RAD TF-2</a>: 4.8.4.1.1.1.   Should we pull these requirements into OIP?</p></li>
+<li></li>
+<li></li>
+</ol>
 </section>
 <section id="closed-issues">
 <h1>Closed Issues<a class="headerlink" href="#closed-issues" title="Link to this heading">#</a></h1>
-<p><em>&lt;Discuss with Toni:  You might choose to omit the following IHE-specific sections, at least for now…&gt;</em></p>
+<ol class="arabic simple">
+<li><p>This first revision of OIP does does not include transactions that specify how DICOM images and associated data is exchanged between actors.  Transactions such as DICOM C-STORE, Modality Worklist, or Query/Retrieve are deferred to a future version of OIP, or to a separate profile.</p></li>
+<li></li>
+<li></li>
+</ol>
 </section>
 <section id="ihe-technical-frameworks-general-introduction">
 <h1>IHE Technical Frameworks General Introduction<a class="headerlink" href="#ihe-technical-frameworks-general-introduction" title="Link to this heading">#</a></h1>
@@ -475,10 +487,13 @@ Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets available onli
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Content Creator</p></td>
-<td><p>The Content Creator Actor creates content and transmits to a Content Consumer.</p></td>
+<td><p>The Content Creator Actor creates content and transmits to a Content Consumer.   Note:  In OIP, ‘content’ is DICOM objects.  See Volume 1 Section 3.1.1.1 for examples of products that could be a Content Creator in OIP.</p></td>
 </tr>
 <tr class="row-odd"><td><p>Content Consumer</p></td>
-<td><p>The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.</p></td>
+<td><p>The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.  Note:  In OIP, ‘content’ is DICOM objects.  See Volume 1 Section 3.1.1.1 for examples of products that could be a Content Consumer in OIP.</p></td>
+</tr>
+<tr class="row-even"><td><p>Image Display</p></td>
+<td><p>The Image Display Actor presents medical images and associated imaging data.</p></td>
 </tr>
 </tbody>
 </table>

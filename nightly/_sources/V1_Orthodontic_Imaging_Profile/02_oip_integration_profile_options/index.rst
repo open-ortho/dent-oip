@@ -34,7 +34,7 @@ Options that may be selected for each actor in this profile, if any, are listed 
     * - Content Consumer
       - No options defined
       - --
-    * - Display
+    * - Image Display
       - Structured Display Option
       - Section 3.2.7
     * - 
@@ -42,10 +42,6 @@ Options that may be selected for each actor in this profile, if any, are listed 
       - Section 3.2.8
 
 *Note 1:* The Content Creator shall support at least one option.
-
-<*DISCUSS: (1) Possibly rename options to be more meaningful to industry readers.  (2) Determine whether there should be options for the Content Consumer, or whether a Consumer that is compliant with this profile shalle be able to 'process' the types of images in all of the options*>
-
-<*DISCUSS: This revision of the table proposes Options on the Display for support of Structured Display and Hanging Protocol.  This could be deferred to a future revision of the profile.*>
 
 .. _direct_photography_option:
 
@@ -84,7 +80,6 @@ A Content Creator that supports this option shall be able to create DICOM images
 3.2.5 True Color Scan Option
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The True Color Scan Option applies devices that scan film, negatives, or positive photographs.  
-
 A Content Creator that supports this option shall be able to create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition.
 
 .. _scanned_radiographs_option:
@@ -103,9 +98,9 @@ A Structured Display DICOM Object represents a standard method of encoding and e
 
 DICOM Structured Display which enables a user to arrange a specific presentation layout of single screen that has been created for a Patient.  
 
-A Display that supports the Structured Dislay Option shall be able to create a Basic Structured Display IOD, as defined in `DICOM PS3.3 Section A.33.5.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.33.5.3>`_ , to specify an Instance of a single screen structured display that has been created for a Patient. 
+An Image Display that supports the Structured Dislay Option shall be able to create a Basic Structured Display IOD, as defined in `DICOM PS3.3 Section A.33.5.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.33.5.3>`_ , to specify an Instance of a single screen structured display that has been created for a Patient. 
 
-A Display that supports the Structured Dislay Option shall be able to:
+An Image Display that supports the Structured Dislay Option shall be able to:
   + consume a Basic Structured Display IOD and the associated DICOM images, and
   + render for the user a static presentation that shows the layout of the screen the exactly as specified in the Basic Structured Display IOD.
 
@@ -115,9 +110,9 @@ A Display that supports the Structured Dislay Option shall be able to:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A Hanging Protocol DICOM Object  defines the initial display arrangement of medical images on one or more display systems. It allows for the specification of how images should be positioned, sized, annotated, and organized when initially displayed to a user, while allowing users to subsequently manipulate and interact with the images.
 
-A Display that supports the Hanging Protocol Option shall be able to create a Hanging Protocol IOD, as defined in `DICOM PS3.3 Section A.44.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.44.3>`_, to specify he creator of the display, the type of Study it addresses, the type of image sets to display, the intended display environment, and the intended layout for the screen(s).
+An Image Display that supports the Hanging Protocol Option shall be able to create a Hanging Protocol IOD, as defined in `DICOM PS3.3 Section A.44.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.44.3>`_, to specify he creator of the display, the type of Study it addresses, the type of image sets to display, the intended display environment, and the intended layout for the screen(s).
 
-A Display that supports the Hanging Protocol Option shall be able to:
+An Image Display that supports the Hanging Protocol Option shall be able to:
   + consume a Hanging Protocol IOD and the associated DICOM images, and
   + render for the user an initial presentation that shows the layout of the images the exactly as specified in the Hanging Protocol IOD
   + enable the user to interact with the images in the display.
@@ -138,7 +133,7 @@ An actor from this profile (Column 1) shall implement all of the required transa
     * - Content Consumer
       - None
       - 
-    * - Display
+    * - Image Display
       - OIP / Content Consumer
       - Section 3.1.1.2
 
@@ -175,7 +170,7 @@ The Modality Worklist Option enables a Content Creator to use DICOM Modality Wor
 
 A Content Creator that supports the Modality Worklist Option shall support the IHE RAD Query Modality Worklist [RAD-5] transaction (RAD TF-2: 4.5) in the Role of Acquisition Modality, i.e., it is able to support the DICOM Basic Worklist Management Service as an SCU.  Note that this includes all requirements in RAD TF-2: 4.5.4.1.2 Message Semantics and RAD TF-2: 4.5.4.1.2.2 Matching and Return Keys.  
 
-*<<Discuss with Toni: rqmts for display of return keys on the SCU>>*
+*<<Open Issue:  Determine rqmts for display of return keys on the SCU>>*
 
 X.2.2 DICOM Storage Option
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -192,6 +187,5 @@ A Content Consumer that supports the DICOM Storage Option shall support the IHE 
 - Multi-frame True Secondary Capture IOD
 - Secondary Capture IOD
 
-*<<Discuss with Toni:  would you like to pull in the requirements in RAD TF-2: 4.8.4.1.1.1 Study and Series UIDs ??>>*
 
 

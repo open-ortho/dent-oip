@@ -2,7 +2,7 @@ Introduction to this Supplement
 ===============================
 The intended audience of this document is the medical imaging software developers or medical imaging device manufacturer who deals with visible light digital photography.
 
-*<TO DO: First, briefly describe the current landscape in dental imaging, presumably with many proprietary implementations.  Then describe how the IOP profile addresses this problem.>*
+*<TO DO: First, briefly describe the current landscape in dental imaging, presumably with many proprietary implementations.  Then describe how the OIP profile addresses this problem.>*
 
 The document, along with its accompanying CSV files and DICOM sample files found in the Volume 3 Appendices, provides a detailed implementation guide for encoding orthodontic/craniofacial
 views using DICOM with SNOMED CT terminology. 
@@ -19,12 +19,25 @@ Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets available onli
 
 Open Issues and Questions
 =========================
-*<List the open issues/questions that need to be addressed. These are particularly useful for highlighting problematic issues and/or specifically soliciting public comments.>*
+This section identifies open issues/questions that need to be addressed prior to publishing OIP for Trial Implementation. We are specifically soliciting public comments for these items:
+
+#. Vol 1 Sec 3.2 -- In this draft of OIP, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to 'process' all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?
+
+#. Vol 1 Sec 3.2 -- This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?
+
+#. Vol 1 Sec 3.1.1.1 - In IHE, a system that creates DICOM images has requirements for Study and Series UIDs, in particular conditions for when a new Series shall be created.   See `IHE RAD TF-2 <https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Vol2.pdf>`_: 4.8.4.1.1.1.   Should we pull these requirements into OIP?
+
+#. 
+
+#. 
 
 Closed Issues 
 =============
+#. This first revision of OIP does does not include transactions that specify how DICOM images and associated data is exchanged between actors.  Transactions such as DICOM C-STORE, Modality Worklist, or Query/Retrieve are deferred to a future version of OIP, or to a separate profile.
 
-*<Discuss with Toni:  You might choose to omit the following IHE-specific sections, at least for now...>*
+#. 
+
+#. 
 
 IHE Technical Frameworks General Introduction
 =============================================
@@ -53,8 +66,10 @@ The table below lists existing actors that are utilized in this profile.
     * - **Existing Actor Name**
       - **Definition**
     * - Content Creator
-      - The Content Creator Actor creates content and transmits to a Content Consumer.
+      - The Content Creator Actor creates content and transmits to a Content Consumer.   Note:  In OIP, 'content' is DICOM objects.  See Volume 1 Section 3.1.1.1 for examples of products that could be a Content Creator in OIP.
     * - Content Consumer
-      - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.
+      - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.  Note:  In OIP, 'content' is DICOM objects.  See Volume 1 Section 3.1.1.1 for examples of products that could be a Content Consumer in OIP.
+    * - Image Display
+      - The Image Display Actor presents medical images and associated imaging data.
 
 

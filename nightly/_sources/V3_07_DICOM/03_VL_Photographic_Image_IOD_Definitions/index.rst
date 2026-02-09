@@ -1,5 +1,3 @@
-
-
 7.3 IOD Definitions
 ===================
 This section contains DICOM (Information Object Defintion) IOD specifications referenced in profiles of the IHE Dental domain.  
@@ -890,3 +888,7 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
 ++++++++++++++++++++++++++++++++++++++++
 
 If any...to be determined...
+
+.. toctree::
+	:glob:
+	:maxdepth: 2
