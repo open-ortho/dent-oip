@@ -62,7 +62,7 @@ Table 3.1-1 lists the transactions content module(s) defined in the OIP Profile.
       - --
       - R *(Note 1)*
       - DEN TF-3: 7.3.6 
-    * - Display
+    * - Image Display
       - --
       - Display Visible Light Images [DEN-1]
       - R
@@ -97,15 +97,15 @@ In the OIP profile, the Content Consumer is a 'generic' actor for a system that 
 
 .. _display_actor:
 
-3.1.1.3 Display
-+++++++++++++++
-The Display is a specialized Content Consumer that implements requirements to provide standardized display functionality to ensure 
+3.1.1.3 Image Display
++++++++++++++++++++++
+The Image Display is a specialized Content Consumer that implements requirements to provide standardized display functionality to ensure ...
 
 *<TO DO: Describe to goal of standardized display requirements here.   You may want to point to the ADA spec driving these requirements.>*
 
-A Display actor in the OIP Profile shall implement all display requirements in DEN TF-2: 3.1.4.1.3.  This provides mandatory support for Viewsets VS-01, VS-02, VS-03, and VS-04 as defined in ANSI/ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets".
+An Image Display actor in the OIP Profile shall implement all display requirements in DEN TF-2: 3.1.4.1.3.  This provides mandatory support for Viewsets VS-01, VS-02, VS-03, and VS-04 as defined in ANSI/ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets".
 
-A Display actor may optionally support Standard Display and/or the Hanging Protocol.  See Table 3.2-1.
+A Image Display actor may optionally support Standard Display and/or the Hanging Protocol.  See Table 3.2-1.
 
 
 
