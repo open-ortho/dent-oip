@@ -55,7 +55,7 @@ Contents
    V2_Transactions/*
    V3_07_DICOM/01_Conventions/*
    V3_07_DICOM/02_General_Definitions/*
-   V3_07_DICOM/03_VL_Photographic_Image_IOD_Defintions/*
+   V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/*
    V3_07_DICOM/04_Module_Definitions/*
    V3_07_DICOM/04_Module_Definitions/100_Acquisition_Context/*
    V3_07_DICOM/04_Module_Definitions/110_General_Image/*
