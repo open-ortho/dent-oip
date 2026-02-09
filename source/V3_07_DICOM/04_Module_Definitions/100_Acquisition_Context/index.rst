@@ -236,8 +236,3 @@ This section specifies coded values in DICOM CID 208 that can be used when Conce
 
 	If value is unknown, the entire sequence should be omitted.  If value is zero (0), the integer zero SHALL be used.
 
-.. toctree::
-	:glob:
-	:maxdepth: 1
-
-	./*

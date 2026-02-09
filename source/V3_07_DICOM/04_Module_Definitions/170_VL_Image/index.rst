@@ -134,9 +134,7 @@ Any EXIF tag which comes from the camera, should be mapped and stored in the VL 
 + `DICOM PS3.3: C.8.12.11 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.8.12.11.html>`_
 + Extensions in Table 7.4.2.2-1 are from ???
 
-**Table 7.4.2.2-1 VL Photographic Acquisition Module Attribute Requirements**
-
-.. list-table::
+.. list-table:: **Table 7.4.2.2-1 VL Photographic Acquisition Module Attribute Requirements**
     :header-rows: 1
 
     * - **Attribute**
@@ -153,7 +151,8 @@ Any EXIF tag which comes from the camera, should be mapped and stored in the VL 
       - Indicates the type of scene. In orthodontic photography, digital still cameras record the image and this tag value must shall be set to 1, indicating that the image was directly photographed.
     * - TBD
       - TBD
-
+      - TBD
+      - TBD
 
 **Requirements**
 
