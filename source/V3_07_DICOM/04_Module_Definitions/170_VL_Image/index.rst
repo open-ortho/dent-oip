@@ -218,7 +218,5 @@ Any EXIF tag which comes from the camera, should be mapped and stored in the VL 
    - Implementations SHOULD provide a mechanism for the application to specify the ``ContextGroupExtensionCreatorUID``.
    - Implementations MAY provide a fallback UID for development or testing, but SHALL warn the user.
 
-.. toctree::
-	:glob:
-	:maxdepth: 2
+
 
