@@ -195,6 +195,3 @@ This normative section contains extensions to DICOM tags defined in the General 
       - RC+
       - Shall include the imaging device identifier in the DICOM header when the system generating the image knows which device was used. If the device is unknown—such as when an image is reconstructed from a 3D volume without device metadata, or when a film radiograph, photographic slide, negative or print is rescanned and the original capture device cannot be determined—then the imaging device element may be omitted.
 
-.. toctree::
-	:glob:
-	:maxdepth: 2
