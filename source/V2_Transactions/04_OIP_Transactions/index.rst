@@ -1,5 +1,12 @@
-1 Introduction
-==============
+
+.. toctree::
+	:glob:
+	:maxdepth: 1
+
+	*/index
+
+1 Introduction to Volume 2
+==========================
 This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines
 transactions used in IHE Dental Domain profiles.
 
@@ -116,3 +123,9 @@ any licensing/copyright requirements are satisfied.
 =========================
 This section defines each transaction in detail, specifying the standards used, and the information
 transferred.
+
+.. toctree::
+	:glob:
+	:maxdepth: 1
+
+	*/index
