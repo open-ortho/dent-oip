@@ -52,7 +52,7 @@ Contents
    Preamble/*
 
    V1_Orthodontic_Imaging_Profile/*
-   V2_Transactions/04_OIP_Transactions/*
+   V2_Transactions/*
    V3_07_DICOM/01_Conventions/*
    V3_07_DICOM/02_General_Definitions/*
    V3_07_DICOM/03_VL_Photographic_Image_IOD_Defintions/*
