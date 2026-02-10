@@ -95,10 +95,3 @@ See :ref:`device_examples` for a more detailed explanation of what these devices
       - Photographic image fiducial marker
       - 
 
-.. toctree::
-	:glob:
-	:maxdepth: 1
-
-	./*
-
-

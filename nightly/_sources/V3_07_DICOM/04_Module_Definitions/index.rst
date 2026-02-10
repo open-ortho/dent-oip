@@ -13,8 +13,8 @@ This section also specifies the values allowed in the DICOM CID
 (Content IDs) tables, highlighting those values which are relevant to the
 orthodontic domain.
 
-7.4.1 General (Common) Modules
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7.4.1 General (Common) Module Constraints
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This section contains IHE constraints on Modules that are common across multiple DICOM Composite IODs:
 
 + :ref:`patient_module`
@@ -195,6 +195,3 @@ This normative section contains extensions to DICOM tags defined in the General 
       - RC+
       - Shall include the imaging device identifier in the DICOM header when the system generating the image knows which device was used. If the device is unknown—such as when an image is reconstructed from a 3D volume without device metadata, or when a film radiograph, photographic slide, negative or print is rescanned and the original capture device cannot be determined—then the imaging device element may be omitted.
 
-.. toctree::
-	:glob:
-	:maxdepth: 2
