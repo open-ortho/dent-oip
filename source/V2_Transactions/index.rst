@@ -1,10 +1,3 @@
-
-.. toctree::
-	:glob:
-	:maxdepth: 3
-
-	*/index
-
 1 Introduction to Volume 2
 ==========================
 This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines

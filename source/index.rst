@@ -52,16 +52,18 @@ Contents
    Preamble/*
 
    V1_Orthodontic_Imaging_Profile/*
-   V2_Transactions/04_OIP_Transactions/*
+   V2_Transactions/*
    V3_07_DICOM/01_Conventions/*
    V3_07_DICOM/02_General_Definitions/*
-   V3_07_DICOM/03_VL_Photographic_Image_IOD_Defintions/*
+   V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/*
    V3_07_DICOM/04_Module_Definitions/*
    V3_07_DICOM/04_Module_Definitions/100_Acquisition_Context/*
    V3_07_DICOM/04_Module_Definitions/110_General_Image/*
    V3_07_DICOM/04_Module_Definitions/150_Device/*
-   V3_07_DICOM/04_Module_Definitions/170_VL_Image/*
    V3_07_DICOM/04_Module_Definitions/220_SOP_Common/*
+   V3_07_DICOM/04_Module_Definitions/170_VL_Image/*
+   V3_07_DICOM/05_Hanging_Protocol_IOD_Definitions/index
+   V3_07_DICOM/06_Basic_Structured_Display_IOD_Definitions/index
    V3_Appendix/A_ViewExamples/index
    V3_Appendix/B_ViewSetExamples/index
    V3_Appendix/C_DeviceExamples/03_device_examples
