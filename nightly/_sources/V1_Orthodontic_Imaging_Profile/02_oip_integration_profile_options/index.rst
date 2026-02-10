@@ -98,9 +98,8 @@ A Structured Display DICOM Object represents a standard method of encoding and e
 
 DICOM Structured Display which enables a user to arrange a specific presentation layout of single screen that has been created for a Patient.  
 
-An Image Display that supports the Structured Dislay Option shall be able to create a Basic Structured Display IOD, as defined in `DICOM PS3.3 Section A.33.5.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.33.5.3>`_ , to specify an Instance of a single screen structured display that has been created for a Patient. 
-
 An Image Display that supports the Structured Dislay Option shall be able to:
+  + create a Basic Structured Display IOD, as defined in as defined in :ref:`DEN TF-3: 7.3.7 <structured_display_iod_definition>`, to specify an Instance of a single screen structured display that has been created for a Patient. 
   + consume a Basic Structured Display IOD and the associated DICOM images, and
   + render for the user a static presentation that shows the layout of the screen the exactly as specified in the Basic Structured Display IOD.
 
@@ -108,13 +107,22 @@ An Image Display that supports the Structured Dislay Option shall be able to:
 
 3.2.8 Hanging Protocol Option
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-A Hanging Protocol DICOM Object  defines the initial display arrangement of medical images on one or more display systems. It allows for the specification of how images should be positioned, sized, annotated, and organized when initially displayed to a user, while allowing users to subsequently manipulate and interact with the images.
+A Hanging Protocol is a specialized DICOM Information Object Definition (IOD) that defines the initial display arrangement of medical images on one or more display systems. It allows for the specification of how images should be positioned, sized, annotated, and organized when initially displayed to a user.
 
-An Image Display that supports the Hanging Protocol Option shall be able to create a Hanging Protocol IOD, as defined in `DICOM PS3.3 Section A.44.3 <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_A.44.3>`_, to specify he creator of the display, the type of Study it addresses, the type of image sets to display, the intended display environment, and the intended layout for the screen(s).
+Unlike the :ref:`Basic Structured Display <structured_display_option>`, which defines a static presentation that contains references to specific image instances, Hanging Protocols provide instructions for the initial layout and the generic types of images that should be placed in the specific areas or boxes. 
+ 
+Hanging Protocols are useful in clinical workflows where specific viewing configurations are preferred for different examination types or specialties.
+
+Hanging Protocols are particularly valuable:
+
+* when a system allows the user to customize the display of images, this customization can be saved as a Hanging Protocol, exported and re-imported in different systems, allowing the clinicians to preserve their preferred display settings, without having to re-configure the display on the new system;
+* when a practice is using more than one system that requires the visualization of images and allows the user to customize the display, the Hanging Protocol can be used transferred and synchronized between the systems to ensure that the images are displayed in the same way on all systems, without requiring the user to re-configure the display on each system.
+
+The Hanging Protocol DICOM IOD works in conjunction with display systems to streamline image interpretation and enhance workflow efficiency, providing a standardized presentation that can be applied to any image set.
 
 An Image Display that supports the Hanging Protocol Option shall be able to:
-  + consume a Hanging Protocol IOD and the associated DICOM images, and
-  + render for the user an initial presentation that shows the layout of the images the exactly as specified in the Hanging Protocol IOD
+  + create a Hanging Protocol IOD as defined in :ref:`DEN TF-3: 7.3.8 <hanging_protocol_iod_definition>` to specify the creator of the display, the type of Study it addresses, the type of image sets to display, the intended display environment, and the intended layout for the screen(s)
+  + consume a Hanging Protocol IOD and the associated DICOM images, and render for the user an initial presentation that shows the layout of the images the exactly as specified in the Hanging Protocol IOD
   + enable the user to interact with the images in the display.
 
 3.3 OIP Required Actor Groupings

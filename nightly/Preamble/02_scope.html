@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction to this Supplement &#8212; DENT-OIP 0.2.7-nightly.20260210175557 documentation</title>
+    <title>Introduction to this Supplement &#8212; DENT-OIP 0.2.7-nightly.20260210220000 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=33071618"></script>
+    <script src="../_static/documentation_options.js?v=bdf3ec2e"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260210175557 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260210220000 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -183,8 +183,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../V3_07_DICOM/04_Module_Definitions/150_Device/index.html">7.4.1.8 Device</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../V3_07_DICOM/04_Module_Definitions/220_SOP_Common/index.html">7.4.1.9 SOP Common</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../V3_07_DICOM/04_Module_Definitions/170_VL_Image/index.html">7.4.2 VL Photographic Image IOD - Module Constraints</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../V3_07_DICOM/05_Hanging_Protocol_IOD_Definitions/index.html">IOD Definitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../V3_07_DICOM/06_Basic_Structured_Display_IOD_Definitions/index.html">Basic Structured Display IOD Definitions</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../V3_Appendix/A_ViewExamples/index.html">Appendix A: View Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../V3_Appendix/A_ViewExamples/generated/EV01.html">[EV01] - Right Profile (subject is facing observer’s right) - Lips Relaxed, Centric Occlusion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../V3_Appendix/A_ViewExamples/generated/EV02.html">[EV02] - Right Profile (subject is facing observer’s right) - Lips Relaxed, Centric Relation</a></li>
@@ -456,6 +454,7 @@ Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets available onli
 <ol class="arabic simple">
 <li><p>Vol 1 Sec 3.2 – In this draft of OIP, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to ‘process’ all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?</p></li>
 <li><p>Vol 1 Sec 3.2 – This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?</p></li>
+<li><p>Vol 1 Sec 3.2.7 and 3.2.8 – For the Structured Display and Hanging Protocol Options, the Image Display that supports either of the options must be able to both create the associated IOD based on the charactstics and content of a given rendering <strong>and also</strong> be able to consume/interpret a hanging protocol or structured display (and the associated study) created by a different system and render the study accordingly.</p></li>
 <li><p>Vol 1 Sec 3.1.1.1 - In IHE, a system that creates DICOM images has requirements for Study and Series UIDs, in particular conditions for when a new Series shall be created.   See <a class="reference external" href="https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Vol2.pdf">IHE RAD TF-2</a>: 4.8.4.1.1.1.   Should we pull these requirements into OIP?</p></li>
 <li></li>
 <li></li>
