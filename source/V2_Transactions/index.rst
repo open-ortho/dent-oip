@@ -155,7 +155,7 @@ The roles in this transaction are defined in the following table and may be play
 3.1.4 Messages
 ~~~~~~~~~~~~~~
 
-.. figure:: ../../images-static/Figure_3.1.4-1_InteractionDiagram.png
+.. figure:: ../images-static/Figure_3.1.4-1_InteractionDiagram.png
     :class: with-border with-shadow float-left
     :align: center
 
