@@ -2,14 +2,14 @@
 ===================
 This section contains DICOM (Information Object Defintion) IOD specifications referenced in profiles of the IHE Dental domain.  
 
-+ :ref:`vl_photographic_image_iod_definition`
-+ :ref:`video_photographic_image_iod_definition`
-+ :ref:`encapsulated_3d_manufacturing_model_iods_definition`
-+ :ref:`surface_scan_mesh_iod_definition`
-+ :ref:`multi-frame_true_color_secondary_capture_mage_iod_definition`
-+ :ref:`secondary_capture_image_iod_definition`
-+ :ref:`hanging_protocol_iod_definition`
-+ :ref:`structured_display_iod_definition`
++ :ref:`Section 7.3.1 VL Photographic Image IOD Definition <vl_photographic_image_iod_definition>`
++ :ref:`Section 7.3.2 Video Photographics Image IOD Definition <video_photographic_image_iod_definition>`
++ :ref:`Section 7.3.3 Encapsulated 3D Manufacturing Model IOD Definitions <encapsulated_3d_manufacturing_model_iods_definition>`
++ :ref:`Section 7.3.4 Surface Scan Mesh IOD Definition <surface_scan_mesh_iod_definition>`
++ :ref:`Section 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition <multi-frame_true_color_secondary_capture_image_iod_definition>`
++ :ref:`Section 7.3.6 Secondary Capture Image IOD Definition <secondary_capture_image_iod_definition>`
++ :ref:`Section 7.3.7 Structured Display IOD Definition<structured_display_iod_definition`
++ :ref:`Section 7.3.8 Hanging Protocol IOD Definition <hanging_protocol_iod_definition>`
 
 Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  
 
@@ -564,7 +564,7 @@ The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3
 
 If any...to be determined...
 
-.. _multi-frame_true_color_secondary_capture_mage_iod_definition:
+.. _multi-frame_true_color_secondary_capture_image_iod_definition:
 
 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -889,55 +889,16 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
 
 If any...to be determined...
 
-.. _hanging_protocol_iod_definition:
-
-7.3.7 Hanging Protocol IOD Definition
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This normative section describes a Hanging Protocol entity that specifies the viewing preferences of a specific user or group, for a specific type of Study (Modality, Anatomy, Laterality combination, and optionally Procedure, and/or Reason).
-
-The baseline requirements for Hanging Protocol IODs are defined in `DICOM PS3.3: A.44.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.44.3.html>`_ . In Table 7.3.7-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
-
-.. list-table:: **Table 7.3.7-1 Usage of DICOM Modules in Hanging Protocol IODs**
-   :header-rows: 1
-   :widths: 15 25 15 40 15
-
-   * - IE
-     - Module
-     - Reference
-     - Usage
-     - OIP Profile Usage
-   * - Hanging Protocol
-     - SOP Common
-     - C.12.1
-     - M
-     - M See Section 7.4.1.9
-   * - 
-     - Hanging Protocol Definition
-     - C.23.1
-     - M
-     - M 
-   * - 
-     - Hanging Protocol Environment
-     - C.23.2
-     - M
-     - M 
-   * - 
-     - Hanging Protocol Display
-     - C.23.3
-     - M
-     - M 
-
 .. _structured_display_iod_definition:
 
-7.3.8 Structured Display IOD Definition
+7.3.7 Structured Display IOD Definition
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This normative section describes the Basic Structured Display IOD which specifies an Instance of a single screen structured display that has been created for a Patient. It references specific image or other composite SOP Instances from one or more Studies for that Patient, or for other Patients for comparison, arranged in a specific presentation layout. 
 
-The baseline requirements for Structured Display IODs are defined in `DICOM PS3.3: A.33.5.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.33.5.3.html>`_ . In Table 7.3.8-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+The baseline requirements for Structured Display IODs are defined in `DICOM PS3.3: A.33.5.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.33.5.3.html>`_ . In Table 7.3.7-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
 
-.. list-table:: **Table 7.3.8-1 Usage of DICOM Modules in Basic Structured Display IOD**
+.. list-table:: **Table 7.3.7-1 Usage of DICOM Modules in Basic Structured Display IOD**
    :header-rows: 1
    :widths: 15 25 15 40 15
 
@@ -1027,6 +988,44 @@ The baseline requirements for Structured Display IODs are defined in `DICOM PS3.
      - M
      - M See Section 7.4.1.9
 
+.. _hanging_protocol_iod_definition:
+
+7.3.8 Hanging Protocol IOD Definition
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This normative section describes a Hanging Protocol entity that specifies the viewing preferences of a specific user or group, for a specific type of Study (Modality, Anatomy, Laterality combination, and optionally Procedure, and/or Reason).
+
+The baseline requirements for Hanging Protocol IODs are defined in `DICOM PS3.3: A.44.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.44.3.html>`_ . In Table 7.3.8-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+
+.. list-table:: **Table 7.3.8-1 Usage of DICOM Modules in Hanging Protocol IODs**
+   :header-rows: 1
+   :widths: 15 25 15 40 15
+
+   * - IE
+     - Module
+     - Reference
+     - Usage
+     - OIP Profile Usage
+   * - Hanging Protocol
+     - SOP Common
+     - C.12.1
+     - M
+     - M See Section 7.4.1.9
+   * - 
+     - Hanging Protocol Definition
+     - C.23.1
+     - M
+     - M 
+   * - 
+     - Hanging Protocol Environment
+     - C.23.2
+     - M
+     - M 
+   * - 
+     - Hanging Protocol Display
+     - C.23.3
+     - M
+     - M 
 
 .. toctree::
 	:glob:
