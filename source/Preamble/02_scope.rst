@@ -25,6 +25,8 @@ This section identifies open issues/questions that need to be addressed prior to
 
 #. Vol 1 Sec 3.2 -- This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?
 
+#. Vol 1 Sec 3.2.7 and 3.2.8 -- For the Structured Display and Hanging Protocol Options, the Image Display that supports either of the options must be able to both create the associated IOD based on the charactstics and content of a given rendering **and also** be able to consume/interpret a hanging protocol or structured display (and the associated study) created by a different system and render the study accordingly.
+
 #. Vol 1 Sec 3.1.1.1 - In IHE, a system that creates DICOM images has requirements for Study and Series UIDs, in particular conditions for when a new Series shall be created.   See `IHE RAD TF-2 <https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Vol2.pdf>`_: 4.8.4.1.1.1.   Should we pull these requirements into OIP?
 
 #. 
