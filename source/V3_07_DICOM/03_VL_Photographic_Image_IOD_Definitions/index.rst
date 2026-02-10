@@ -2,12 +2,14 @@
 ===================
 This section contains DICOM (Information Object Defintion) IOD specifications referenced in profiles of the IHE Dental domain.  
 
-+ :ref:`vl_photographic_image_iod_definition`
-+ :ref:`video_photographic_image_iod_definition`
-+ :ref:`encapsulated_3d_manufacturing_model_iods_definition`
-+ :ref:`surface_scan_mesh_iod_definition`
-+ :ref:`multi-frame_true_color_secondary_capture_mage_iod_definition`
-+ :ref:`secondary_capture_image_iod_definition`
++ :ref:`Section 7.3.1 VL Photographic Image IOD Definition <vl_photographic_image_iod_definition>`
++ :ref:`Section 7.3.2 Video Photographics Image IOD Definition <video_photographic_image_iod_definition>`
++ :ref:`Section 7.3.3 Encapsulated 3D Manufacturing Model IOD Definitions <encapsulated_3d_manufacturing_model_iods_definition>`
++ :ref:`Section 7.3.4 Surface Scan Mesh IOD Definition <surface_scan_mesh_iod_definition>`
++ :ref:`Section 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition <multi-frame_true_color_secondary_capture_image_iod_definition>`
++ :ref:`Section 7.3.6 Secondary Capture Image IOD Definition <secondary_capture_image_iod_definition>`
++ :ref:`Section 7.3.7 Structured Display IOD Definition<structured_display_iod_definition`
++ :ref:`Section 7.3.8 Hanging Protocol IOD Definition <hanging_protocol_iod_definition>`
 
 Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  
 
@@ -21,9 +23,7 @@ In Column 5, these additional 'Usage' values are defined:
 .. _vl_photographic_image_iod_definition:
 
 7.3.1 VL Photographic Image IOD Definition
-+++++++++++++++++++++++++++++++++++++++++++
-
-.. _vl_photographic_image_iod_definitions:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This normative section contains a description of the DICOM tags which are
 necessary to fully describe orthodontic views (photographs) and to request for these photographs to be taken (acquired).
@@ -183,7 +183,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
 .. _video_photographic_image_iod_definition:
 
 7.3.2 Video Photograpic Image IOD Definition 
-++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This normative section contains a description of the DICOM tags which are
 necessary to capture motion picture, movies, and/or video in orthodontics.
@@ -336,7 +336,7 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
 .. _encapsulated_3d_manufacturing_model_iods_definition:
 
 7.3.3 Encapsulated 3D Manufacturing Models IODs Definition
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The baseline requirements for Encapsulated 3D Manufacturing Model IODs are defined in `DICOM PS3.3: A.85 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.85.html>`_ , specifially:
 
 + **Encapsulated STL IOD** in `DICOM PS3.3: A.85.1 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.85.html#sect_A.85.1>`_ - The Encapsulated STL IOD describes a 3D model in Stereolithography (STL) format that has been encapsulated within a DICOM Information Object.
@@ -452,7 +452,7 @@ If any...to be determined...
 .. _surface_scan_mesh_iod_definition:
 
 7.3.4 Surface Scan Mesh IOD Definition
-+++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This normative section contains a description of the DICOM tags which are
 necessary to capture 3D intraoral or extraoral surface scans directly from a patient.
@@ -564,10 +564,10 @@ The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3
 
 If any...to be determined...
 
-.. _multi-frame_true_color_secondary_capture_mage_iod_definition:
+.. _multi-frame_true_color_secondary_capture_image_iod_definition:
 
 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This normative section contains a description of the DICOM tags which are
 necessary to capture scan film, negatives, or positive photographs. 
@@ -731,7 +731,7 @@ The baseline requirements for Multi-frame True Color Secondary Capture Image IOD
 .. _secondary_capture_image_iod_definition:
 
 7.3.6 Secondary Capture Image IOD Definition
-++++++++++++++++++++++++++++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This normative section contains a description of the DICOM tags which are necessary to capture scanned study models or other body parts (i.e. face)
 
@@ -888,6 +888,144 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
 ++++++++++++++++++++++++++++++++++++++++
 
 If any...to be determined...
+
+.. _structured_display_iod_definition:
+
+7.3.7 Structured Display IOD Definition
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This normative section describes the Basic Structured Display IOD which specifies an Instance of a single screen structured display that has been created for a Patient. It references specific image or other composite SOP Instances from one or more Studies for that Patient, or for other Patients for comparison, arranged in a specific presentation layout. 
+
+The baseline requirements for Structured Display IODs are defined in `DICOM PS3.3: A.33.5.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.33.5.3.html>`_ . In Table 7.3.7-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+
+.. list-table:: **Table 7.3.7-1 Usage of DICOM Modules in Basic Structured Display IOD**
+   :header-rows: 1
+   :widths: 15 25 15 40 15
+
+   * - IE
+     - Module
+     - Reference
+     - Usage
+     - IHE Usage
+   * - Patient
+     - Patient
+     - C.7.1.1
+     - M
+     - M See Section 7.4.1.1
+   * - 
+     - Clinical Trial Subject
+     - C.7.1.3
+     - U
+     - U
+   * - Study
+     - General Study
+     - C.7.2.1
+     - M
+     - M See Section 7.4.1.2
+   * - 
+     - Patient Study
+     - C.7.2.2
+     - U
+     - M See Section 7.4.1.3
+   * - 
+     - Clinical Trial Study
+     - C.7.2.3
+     - U
+     - U
+   * - Series
+     - General Series
+     - C.7.3.1
+     - M
+     - M See Section 7.4.1.4
+   * -  
+     - Clinical Trial Series
+     - C.7.3.2
+     - U
+     - U
+   * - 
+     - Presentation Series
+     - C.11.9
+     - M
+     - M
+   * - Equipment
+     - General Equipment
+     - C.7.5.1
+     - M
+     - M  See Section 7.4.1.5
+   * - 
+     - Enhanced General Equipment
+     - C.7.5.2
+     - U
+     - U
+   * - Presentation State
+     - Structured Display
+     - C.11.16
+     - M
+     - M
+   * - 
+     - Structured Display Image Box
+     - C.11.17
+     - M
+     - M
+   * - 
+     - Structured Display Annotation
+     - C.11.18
+     - U
+     - U
+   * - 
+     - Common Instance Reference
+     - C.12.2
+     - M
+     - M
+   * - 
+     - Specimen
+     - C.7.6.22
+     - U
+     - U
+   * - SOP Common
+     - SOP Common
+     - C.12.1
+     - M
+     - M See Section 7.4.1.9
+
+.. _hanging_protocol_iod_definition:
+
+7.3.8 Hanging Protocol IOD Definition
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This normative section describes a Hanging Protocol entity that specifies the viewing preferences of a specific user or group, for a specific type of Study (Modality, Anatomy, Laterality combination, and optionally Procedure, and/or Reason).
+
+The baseline requirements for Hanging Protocol IODs are defined in `DICOM PS3.3: A.44.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.44.3.html>`_ . In Table 7.3.8-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements. 
+
+.. list-table:: **Table 7.3.8-1 Usage of DICOM Modules in Hanging Protocol IODs**
+   :header-rows: 1
+   :widths: 15 25 15 40 15
+
+   * - IE
+     - Module
+     - Reference
+     - Usage
+     - OIP Profile Usage
+   * - Hanging Protocol
+     - SOP Common
+     - C.12.1
+     - M
+     - M See Section 7.4.1.9
+   * - 
+     - Hanging Protocol Definition
+     - C.23.1
+     - M
+     - M 
+   * - 
+     - Hanging Protocol Environment
+     - C.23.2
+     - M
+     - M 
+   * - 
+     - Hanging Protocol Display
+     - C.23.3
+     - M
+     - M 
 
 .. toctree::
 	:glob:
