@@ -99,7 +99,7 @@ A Structured Display DICOM Object represents a standard method of encoding and e
 DICOM Structured Display which enables a user to arrange a specific presentation layout of single screen that has been created for a Patient.  
 
 An Image Display that supports the Structured Dislay Option shall be able to:
-  + create a Basic Structured Display IOD, as defined in as defined in :ref:`DEN TF-3: 7.3.8 <structured_display_iod_definition>`, to specify an Instance of a single screen structured display that has been created for a Patient. 
+  + create a Basic Structured Display IOD, as defined in as defined in :ref:`DEN TF-3: 7.3.7 <structured_display_iod_definition>`, to specify an Instance of a single screen structured display that has been created for a Patient. 
   + consume a Basic Structured Display IOD and the associated DICOM images, and
   + render for the user a static presentation that shows the layout of the screen the exactly as specified in the Basic Structured Display IOD.
 
@@ -121,7 +121,7 @@ Hanging Protocols are particularly valuable:
 The Hanging Protocol DICOM IOD works in conjunction with display systems to streamline image interpretation and enhance workflow efficiency, providing a standardized presentation that can be applied to any image set.
 
 An Image Display that supports the Hanging Protocol Option shall be able to:
-  + create a Hanging Protocol IOD as defined in :ref:`DEN TF-3: 7.3.7 <hanging_protocol_iod_definition>` to specify the creator of the display, the type of Study it addresses, the type of image sets to display, the intended display environment, and the intended layout for the screen(s)
+  + create a Hanging Protocol IOD as defined in :ref:`DEN TF-3: 7.3.8 <hanging_protocol_iod_definition>` to specify the creator of the display, the type of Study it addresses, the type of image sets to display, the intended display environment, and the intended layout for the screen(s)
   + consume a Hanging Protocol IOD and the associated DICOM images, and render for the user an initial presentation that shows the layout of the images the exactly as specified in the Hanging Protocol IOD
   + enable the user to interact with the images in the display.
 
