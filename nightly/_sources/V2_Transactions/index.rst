@@ -1,5 +1,9 @@
 Volume 2 - Transactions
 =======================
+
+This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines transactions used in IHE Dental Domain profiles.
+
+1 Introduction to Volume 2
 This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines
 transactions used in IHE Dental Domain profiles.
 
@@ -206,7 +210,7 @@ Displays shall support the capabilities described in this section for DICOM imag
 ****************************************
 The Display shall:
 
-+ <*Open Issue:  enumerate here general requirements other than those below for Viewsets, e.g. for annotation Next, add logical subsections.   There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.*>
++ <*OPEN ISSUE: enumerate here general requirements beyond the viewset requirements below, e.g. for annotation perhaps. Next, add logical subsections.   There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.*
 
 3.1.4.1.3.2 Viewset VS-01
 *************************

@@ -19,7 +19,11 @@ For orthodontic photography, we make use of the VL Image Module  to store the co
 + `DICOM PS3.16: CID 4062 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4062.html>`_ "VL View"
 + `DICOM PS3.16: CID 4063 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4063.html>`_ "VL Dental View"
 + `DICOM PS3.16: CID 4065 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4065.html>`_  "VL Dental View Modifier"
-+ Extensions in Table 7.4.2.1-1 are from ???
++ Extensions in Table 7.4.2.1-1 are from ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Crainiofacial/Forensic Photographic Views and Viewsets"
+
+**References:**
+
++ See :ref:`Appendix A <view_examples>` for example DICOM encoding of views
 
 **Table 7.4.2.1-1 VL Image Module Attribute Requirements**
 
@@ -123,7 +127,7 @@ Allowed values:
 7.4.2.2 VL Photographic Acquisition
 +++++++++++++++++++++++++++++++++++
 
-This normative section contains extensions to  DICOM tags defined in the VL Photographic Acquisition Module which are necessary to fully describe orthodontic views (photographs).
+This normative section contains extensions to DICOM tags defined in the VL Photographic Acquisition Module which are necessary to fully describe orthodontic views (photographs).
 
 Most of the tags of this module have a direct mapping to EXIF tags that come from digital cameras. 
 
@@ -218,15 +222,3 @@ Any EXIF tag which comes from the camera, should be mapped and stored in the VL 
    - Implementations SHOULD provide a mechanism for the application to specify the ``ContextGroupExtensionCreatorUID``.
    - Implementations MAY provide a fallback UID for development or testing, but SHALL warn the user.
 
-.. _vl_photographic_acquisition_module:
-
-7.4.2.2 VL Photographic Acquisition Module
-++++++++++++++++++++++++++++++++++++++++++
-
-This normative section contains a description of the DICOM tags defined in the VL Photographic Acquisition module which are relevant to orthodontic photography.
-
-<*OPEN ISSUE: Are there any constraints in this module*>
-
-**References:**
-
-+ `DICOM PS3.3: C.8.12.11  <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.8.12.11.html>`_ "VL Photographic Acquisition Module"
