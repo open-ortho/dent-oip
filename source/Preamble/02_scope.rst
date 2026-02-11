@@ -23,11 +23,13 @@ This section identifies open issues/questions that need to be addressed prior to
 
 #. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>` -- In this draft of OIP, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to 'process' all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?
 
-#. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>`  -- This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?
+#. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>` -- This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?
 
 #. :ref:`Vol 1 Sec 3.2.7 and 3.2.8 <structured_display_option>` -- For the Structured Display and Hanging Protocol Options, the Image Display that supports either of the options must be able to both create the associated IOD based on the charactstics and content of a given rendering **and also** be able to consume/interpret a hanging protocol or structured display (and the associated study) created by a different system and render the study accordingly.
 
-#. Vol 1 Sec 3.1.1.1 - In IHE, a system that creates DICOM images has requirements for Study and Series UIDs, in particular conditions for when a new Series shall be created.   See `IHE RAD TF-2 <https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Vol2.pdf>`_: 4.8.4.1.1.1.   Should we pull these requirements into OIP?
+#. :ref:`Vol 1 Sec 3.1.1.1 <content_creator_actor>` - In IHE, a system that creates DICOM images has requirements for Study and Series UIDs, in particular conditions for when a new Series shall be created.   See `IHE RAD TF-2 <https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Vol2.pdf>`_: 4.8.4.1.1.1.   Should we pull these requirements into OIP?
+
+#. Vol 2 Sec 3.1.4.1.3.1 - Regarding display of VL Photographic Images, should we include some general display requirements in addition to those specific to the Viewsets, e.g. associated with display of annotation? There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.
 
 #. Vol 2 Sec 3.1.4.1.3.1 - Regarding display of VL Photographic Images, should we include some general display requirements in addition to those specific to the Viewsets, e.g. associated with display of annotation?  There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.
 
@@ -39,7 +41,7 @@ This section identifies open issues/questions that need to be addressed prior to
 
 
 
-#. 
+#. Proposed 1114 AIP, Section 11.2 'DICOM Requirements for 2D Orthodontic/Craniofacial/Forensic Visible Light Images' contains requirements requirements labeled with SHOULD.  Should any of these requirements be promoted to a "SHALL" for OIP?
 
 Closed Issues 
 =============
@@ -76,9 +78,9 @@ The table below lists existing actors that are utilized in this profile.
     * - **Existing Actor Name**
       - **Definition**
     * - Content Creator
-      - The Content Creator Actor creates content and transmits to a Content Consumer.   Note:  In OIP, 'content' is DICOM objects.  See Volume 1 Section 3.1.1.1 for examples of products that could be a Content Creator in OIP.
+      - The Content Creator Actor creates content and transmits to a Content Consumer.   Note:  In OIP, 'content' is DICOM objects.  See :ref:`Volume 1 Section 3.1.1.1 <content_creator_actor>` for examples of products that could be a Content Creator in OIP.
     * - Content Consumer
-      - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.  Note:  In OIP, 'content' is DICOM objects.  See Volume 1 Section 3.1.1.1 for examples of products that could be a Content Consumer in OIP.
+      - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.  Note:  In OIP, 'content' is DICOM objects.  See :ref:`Volume 1 Section 3.1.1.2 <content_consumer_actor> for examples of products that could be a Content Consumer in OIP.
     * - Image Display
       - The Image Display Actor presents medical images and associated imaging data.
 
