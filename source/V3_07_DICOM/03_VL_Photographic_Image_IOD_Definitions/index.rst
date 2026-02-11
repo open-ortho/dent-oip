@@ -4,6 +4,8 @@ This section contains DICOM (Information Object Defintion) IOD specifications re
 
 Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  
 
+**Usage Values in the Module Tables:**
+
 In Column 4 of the tables below, the values of **M**, **U**, and **C** for 'Usage' are defined in `DICOM PS3.3: A.1.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/chapter_A.html#sect_A.1.3>`_.  
 
 In Column 5, these additional 'Usage' values are defined:
@@ -21,8 +23,6 @@ In Column 5, these additional 'Usage' values are defined:
 + :ref:`Section 7.3.6 Secondary Capture Image IOD Definition <secondary_capture_image_iod_definition>`
 + :ref:`Section 7.3.7 Structured Display IOD Definition <structured_display_iod_definition>`
 + :ref:`Section 7.3.8 Hanging Protocol IOD Definition <hanging_protocol_iod_definition>`
-
-
 
 .. _vl_photographic_image_iod_definition:
 
