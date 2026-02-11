@@ -38,6 +38,8 @@ orthodontic domain.
 
 The baseline requirements for the VL Photographic Image IOD are defined in `DICOM PS3.3: A.32.4.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_A.32.4.3.html>`_ .  In Table 7.3.1-1, Column 5 identifies modules where the OIP profile defines additional constraints on the baseline DICOM requirements.   
 
+.. note:: Note 1:  Constraints in Column 5 originate in ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Crainiofacial/Forensic Photographic Views and Viewsets"
+
 .. list-table:: **Table 7.3.1-1 - IHE constraints on DICOM Modules for VL Photographic Image IODs**
    :header-rows: 1
    :widths: 15 25 15 40 15
