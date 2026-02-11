@@ -80,7 +80,7 @@ The table below lists existing actors that are utilized in this profile.
     * - Content Creator
       - The Content Creator Actor creates content and transmits to a Content Consumer.   Note:  In OIP, 'content' is DICOM objects.  See :ref:`Volume 1 Section 3.1.1.1 <content_creator_actor>` for examples of products that could be a Content Creator in OIP.
     * - Content Consumer
-      - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.  Note:  In OIP, 'content' is DICOM objects.  See :ref:`Volume 1 Section 3.1.1.2 <content_consumer_actor> for examples of products that could be a Content Consumer in OIP.
+      - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.  Note:  In OIP, 'content' is DICOM objects.  See :ref:`Volume 1 Section 3.1.1.2 <content_consumer_actor>` for examples of products that could be a Content Consumer in OIP.
     * - Image Display
       - The Image Display Actor presents medical images and associated imaging data.
 
