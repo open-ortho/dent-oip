@@ -31,7 +31,11 @@ This section identifies open issues/questions that need to be addressed prior to
 
 #. In Proposed 1114 AIP, Section 6.1.5 Common Requirements says, all image types "... SHOULD include the prescribing provider’s name".  Is ‘prescribing provider’ the same as Referring Physician Name (008,0090) in the General Study Module?   If “no”, then what is the DICOM attribute you want for prescribing provider??
 
-#. Proposed 1114 AIP, Sections 7.1-7.3 contain requirements for acquiring Intra-Oral Radiographs.  Should those requirements be incorporated into OIP?   If so, they would become functional requirements added to Vol 1 Sec 3.2.1 for a Content Creator that supports the Direct Photography Option (creating VL Photographic Images) and 
+#. Proposed 1114 AIP, Sections 7.1-7.4 contain requirements for acquiring Intra-Oral Radiographs.  Should those requirements be incorporated into OIP?   If so, they would become functional requirements added to Vol 1 Sec 3.2.1 for a Content Creator that supports the Direct Photography Option (creating VL Photographic Images).
+
+#. 
+
+#. 
 
 Closed Issues 
 =============
