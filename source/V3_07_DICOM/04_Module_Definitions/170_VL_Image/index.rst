@@ -218,5 +218,15 @@ Any EXIF tag which comes from the camera, should be mapped and stored in the VL 
    - Implementations SHOULD provide a mechanism for the application to specify the ``ContextGroupExtensionCreatorUID``.
    - Implementations MAY provide a fallback UID for development or testing, but SHALL warn the user.
 
+.. _vl_photographic_acquisition_module:
 
+7.4.2.2 VL Photographic Acquisition Module
+++++++++++++++++++++++++++++++++++++++++++
 
+This normative section contains a description of the DICOM tags defined in the VL Photographic Acquisition module which are relevant to orthodontic photography.
+
+<*OPEN ISSUE: Are there any constraints in this module*>
+
+**References:**
+
++ `DICOM PS3.3: C.8.12.11  <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.8.12.11.html>`_ "VL Photographic Acquisition Module"
