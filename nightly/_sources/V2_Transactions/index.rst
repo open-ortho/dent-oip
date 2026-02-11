@@ -139,7 +139,7 @@ transferred.
 ~~~~~~~~~~~
 This transaction is used to present DICOM Visual Light Photographic Images to a dental professional interpreting a study.  This includes 2-dimensional radiographic images such as intraoral and panoramic image, cone beam computed tomography (CBCT) data); as well as visible light images, such as photographs in an organized and structured manner for all aspect of oral healthcare, including those in private practice settings.  The images rendered in this transaction are produced by a OIP Content Creator actor supporting the :ref:`direct_photography_option`; see DEN TF-1: 3.2.1 Direct Photography Option.
 
-*<NOTE to Toni:  The above list comes from the ADA spec, Introduction section pg 7>*
+*<NOTE to Toni:  The above list comes from the ADA 1114, Introduction section pg 7>*
 
 This transaction is not a typical network-based transaction between two devices; instead, the primary focus of the requirements is on the behavior of the display application rather than messaging between two actors. This can be thought
 of as an “informational transaction” between a display device and a user.
@@ -207,9 +207,7 @@ Displays shall support the capabilities described in this section for DICOM imag
 ****************************************
 The Display shall:
 
-+ <TO DO:  enumerate here requirements that apply to all IODs, or that are independent of an IOD type
-
-<TO DO:  Next, add logical subsections.   There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.
++ <*Open Issue:  enumerate here general requirements other than those below for Viewsets, e.g. for annotation Next, add logical subsections.   There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.*>
 
 3.1.4.1.3.2 Viewset VS-01
 *************************
