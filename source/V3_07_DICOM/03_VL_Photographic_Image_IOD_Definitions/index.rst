@@ -128,14 +128,14 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - M
      - M
 
-       See Section 7.4.x
+       See Section 7.4.1.6
    * - 
      - Device
      - C.7.6.12
      - U
      - RC
 
-       See Section 7.4.x
+       See Section 7.4.1.8
    * - 
      - Specimen
      - C.7.6.22
