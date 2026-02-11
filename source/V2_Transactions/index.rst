@@ -204,7 +204,7 @@ The behaviors in this section are specified as baseline capabilities.  Displays 
 
 Displays shall support the capabilities described in this section for DICOM images encoded in instances of the following:
 
-* VL Photographic Image IOD as defined in :ref:`DEN TF-3: 7.3.1 VL Photographic Image IOD Definition <vl_photographic_image_iod_definition>.
+* VL Photographic Image IOD as defined in :ref:`DEN TF-3: 7.3.1 VL Photographic Image IOD Definition <vl_photographic_image_iod_definition>`.
 
 3.1.4.1.3.1 General Display Requirements
 ****************************************
