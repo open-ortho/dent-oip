@@ -158,7 +158,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - U
      - R??
 
-       See Section 7.4.2.2
+       See :ref:`Section 7.4.2.2 <vl_photographic_acquisition>`
    * - 
      - VL Photographic Geolocation
      - C.8.12.12
