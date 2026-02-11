@@ -1,5 +1,5 @@
-Volume 2
-========
+Volume 2 - Transactions
+=======================
 This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines
 transactions used in IHE Dental Domain profiles.
 
