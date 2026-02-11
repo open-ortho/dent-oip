@@ -151,14 +151,14 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - M
      - M
 
-       See Section 7.4.2.1
+       See :ref:`Section 7.4.2.1 <vl_image_module>`
    * - 
      - VL Photographic Acquisition
      - C.8.12.11
      - U
-     - R
+     - R??
 
-       See Section 7.4.2.x
+       See Section 7.4.2.2
    * - 
      - VL Photographic Geolocation
      - C.8.12.12
@@ -337,7 +337,7 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - M
      - M
 
-       See Section 7.4.2.1
+       See :ref:`Section 7.4.2.1 <vl_image_module>`
    * - 
      - ICC Profile
      - C.11.15
