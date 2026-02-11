@@ -918,7 +918,7 @@ If any...to be determined...
 .. _structured_display_iod_definition:
 
 7.3.7 Structured Display IOD Definition
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This normative section describes the Basic Structured Display IOD which specifies an Instance of a single screen structured display that has been created for a Patient. It references specific image or other composite SOP Instances from one or more Studies for that Patient, or for other Patients for comparison, arranged in a specific presentation layout. 
 
