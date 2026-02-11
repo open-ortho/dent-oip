@@ -137,16 +137,16 @@ transferred.
 ----------------------------------------
 3.1.1 Scope
 ~~~~~~~~~~~
-This transaction is used to present DICOM Visual Light Photographic Images to a dental professional interpreting a study.  This includes 2-dimensional radiographic images such as intraoral and panoramic image, cone beam computed tomography (CBCT) data); as well as visible light images, such as photographs in an organized and structured manner for all aspect of oral healthcare, including those in private practice settings.  The images rendered in this transaction are produced by a OIP Content Creator actor supporting the :ref:`direct_photography_option`; see DEN TF-1: 3.2.1 Direct Photography Option.
+This transaction is used to present DICOM Visual Light Photographic Images to a dental professional interpreting a study.  This includes 2-dimensional radiographic images such as intraoral and panoramic image, cone beam computed tomography (CBCT) data); as well as visible light images, such as photographs in an organized and structured manner for all aspect of oral healthcare, including those in private practice settings.  The  VL Photographic Images rendered in this transaction are produced by a OIP Content Creator actor supporting the :ref:`DEN TF-1: 3.2.1 Direct Photography Option <direct_photography_option>`.
 
 *<NOTE to Toni:  The above list comes from the ADA 1114, Introduction section pg 7>*
 
 This transaction is not a typical network-based transaction between two devices; instead, the primary focus of the requirements is on the behavior of the display application rather than messaging between two actors. This can be thought
 of as an “informational transaction” between a display device and a user.
 
-The Display may have behaviors in addition to those required by this transaction.  
+Methods that the Display uses to select and obtain the data to be displayed are outside the scope of this transaction.
 
-Methods for selecting and obtaining the data to be displayed are outside the scope of this transaction.
+The Display may have behaviors in addition to those required by this transaction.  
 
 3.1.2 Actor Roles
 ~~~~~~~~~~~~~~~~~
@@ -167,8 +167,7 @@ The roles in this transaction are defined in the following table and may be play
 
 3.1.3 Referenced Standards
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-+ ANSI/ADA Standard No. 1100, Rev. ??, "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets
-+ TO DO: Add list of standards here...
++ ANSI/ADA Standard No. 1100, Rev. July 2025, "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets
 
 3.1.4 Messages
 ~~~~~~~~~~~~~~
@@ -189,7 +188,7 @@ A user or an automated function determines that one or more studies should be pr
 
 3.1.4.1.2 Message Semantics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The DICOM VL Photographic Image IODs are encoded as described in DEN TF-3: 7.3.1 .
+The DICOM VL Photographic Image IODs are encoded as described in :ref:`DEN TF-3: 7.3.1 VL Photographic Image IOD Definition <vl_photographic_image_iod_definition>`.
 
 This transaction does not depend on how the DICOM images were transferred to the Display. If the Display
 receives results by a profiled mechanism such as DICOM C-STORE, the messaging protocol is specified in that corresponding transaction. If results are accessed by being grouped with another actor such as a Content Consumer or an Image Manager / Image Archive, there is no messaging protocol involved.
@@ -201,7 +200,7 @@ The behaviors in this section are specified as baseline capabilities.  Displays 
 
 Displays shall support the capabilities described in this section for DICOM images encoded in instances of the following:
 
-* VL Photographic Image IOD as defined in DEN TF-3: 7.3.1.
+* VL Photographic Image IOD as defined in :ref:`DEN TF-3: 7.3.1 VL Photographic Image IOD Definition <vl_photographic_image_iod_definition>.
 
 3.1.4.1.3.1 General Display Requirements
 ****************************************
