@@ -37,7 +37,7 @@ This section identifies open issues/questions that need to be addressed prior to
 
 #. Vol 3 Sec 7.4.2.2 Are there any additional OIP constraints on attributes in the VL Photographic Acquisition module?
 
-#. 
+#. Proposed 1114 AIP, Section 11.2 'DICOM Requirements for 2D Orthodontic/Craniofacial/Forensic Visible Light Images' contains requirements requirements labeled with SHOULD.  Should any of these requirements be promoted to a "SHALL" for OIP?
 
 Closed Issues 
 =============
