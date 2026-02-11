@@ -1,7 +1,19 @@
-1 Introduction to Volume 2
-==========================
+Volume 2
+========
 This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines
 transactions used in IHE Dental Domain profiles.
+
+**Contents**
+
++ :ref:`Section 1 - Introduction to Volume 2 <introduction_to_volume_2>`
++ :ref:`Section 2 - Conventions <conventions>`
++ :ref:`Section 3 - Conventions <ihe_dental_transations>`
++ :ref:`Section 3.1 - Display Visible Light Images [DEN-1] <den_1>`
+
+.. _introduction_to_volume_2:
+
+1 Introduction to Volume 2
+==========================
 
 1.1 Introduction to IHE
 -----------------------
@@ -87,7 +99,9 @@ disclosure process to the secretary of the IHE International Board: secretary@ih
       - **Change Summary**
     * - TBD
       - TBD
-      - TBD
+      - Publish for Public Comment
+
+.. _conventions:
 
 2 Conventions
 =============
@@ -110,10 +124,14 @@ standards are used in IHE Profiles. In the cases where such resources are not ex
 by standards, implementations may utilize any resource (including proprietary or local) provided
 any licensing/copyright requirements are satisfied.
 
+.. _ihe_dental_transations:
+
 3 IHE Dental Transactions
 =========================
 This section defines each transaction in detail, specifying the standards used, and the information
 transferred.
+
+.. _den_1:
 
 3.1 Display Visible Light Images [DEN-1]
 ----------------------------------------
