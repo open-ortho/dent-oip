@@ -160,6 +160,28 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - C.8.12.12
      - U
      - U
+   * - 
+     - Overlay Plane
+     - C.9.2
+     - U
+     - U
+   * - 
+     - ICC Profile
+     - C.11.15
+     - U
+     - U
+   * - 
+     - SOP Common
+     - C.22.1
+     - M
+     - M
+
+       See Section 7.4.1.9
+   * - 
+     - Common Instance Reference
+     - C.12.2
+     - U
+     - U
 
 7.3.1.1 VL Photographic Image IOD Acquisition Requirements
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
