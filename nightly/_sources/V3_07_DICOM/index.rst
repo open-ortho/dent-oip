@@ -1,7 +1,12 @@
-.. _dicom_tags:
+Volume 3 - Content Definitions
+==============================
+This document, Volume 3 of the IHE Dental (DEN) Technical Framework, defines
+content modules used used in IHE Dental Domain profiles.
 
-7. DICOM Content Definitions
-=============================
+.. _dicom_content_definitions:
+
+7 DICOM Content Definitions
+===========================
 The DICOM Content Definitions constrain the use of instances of specific DICOM IODs (also referred to as DICOM objects). This typically means placing requirements on the creators of those instances, although requirements may also be placed on the receivers and users.
 
 The most common such requirements are to:
