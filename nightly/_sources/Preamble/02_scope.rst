@@ -21,19 +21,23 @@ Open Issues and Questions
 =========================
 This section identifies open issues/questions that need to be addressed prior to publishing OIP for Trial Implementation. We are specifically soliciting public comments for these items:
 
-#. Vol 1 Sec 3.2 -- In this draft of OIP, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to 'process' all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?
+#. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>` -- In this draft of OIP, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to 'process' all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?
 
-#. Vol 1 Sec 3.2 -- This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?
+#. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>`  -- This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?
 
-#. Vol 1 Sec 3.2.7 and 3.2.8 -- For the Structured Display and Hanging Protocol Options, the Image Display that supports either of the options must be able to both create the associated IOD based on the charactstics and content of a given rendering **and also** be able to consume/interpret a hanging protocol or structured display (and the associated study) created by a different system and render the study accordingly.
+#. :ref:`Vol 1 Sec 3.2.7 and 3.2.8 <structured_display_option>` -- For the Structured Display and Hanging Protocol Options, the Image Display that supports either of the options must be able to both create the associated IOD based on the charactstics and content of a given rendering **and also** be able to consume/interpret a hanging protocol or structured display (and the associated study) created by a different system and render the study accordingly.
 
 #. Vol 1 Sec 3.1.1.1 - In IHE, a system that creates DICOM images has requirements for Study and Series UIDs, in particular conditions for when a new Series shall be created.   See `IHE RAD TF-2 <https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Vol2.pdf>`_: 4.8.4.1.1.1.   Should we pull these requirements into OIP?
 
+#. Vol 2 Sec 3.1.4.1.3.1 - Regarding display of VL Photographic Images, should we include some general display requirements in addition to those specific to the Viewsets, e.g. associated with display of annotation?  There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.
+
 #. In Proposed 1114 AIP, Section 6.1.5 Common Requirements says, all image types "... SHOULD include the prescribing provider’s name".  Is ‘prescribing provider’ the same as Referring Physician Name (008,0090) in the General Study Module?   If “no”, then what is the DICOM attribute you want for prescribing provider??
+
+#. Vol 3 Sec 7.4.2.2 Are there any additional OIP constraints on attributes in the VL Photographic Acquisition module?
 
 #. Proposed 1114 AIP, Sections 7.1-7.4 contain requirements for acquiring Intra-Oral Radiographs.  Should those requirements be incorporated into OIP?   If so, they would become functional requirements added to Vol 1 Sec 3.2.1 for a Content Creator that supports the Direct Photography Option (creating VL Photographic Images).
 
-#. Vol 2 Sec 3.1.4.1.3.1 - Regarding display of VL Photographic Images, should we include some general display requirements in addition to those specific to the Viewsets, e.g. associated with display of annotation?  There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.
+
 
 #. 
 
