@@ -7,15 +7,17 @@ The intended audience of this document is the medical imaging software developer
 The document, along with its accompanying CSV files and DICOM sample files found in the Volume 3 Appendices, provides a detailed implementation guide for encoding orthodontic/craniofacial
 views using DICOM with SNOMED CT terminology. 
 
-Using the Orthodontic Imaging Profile to implement a standard encoding of Visual Light Photographic Images ensures interoperability between vendors and enables the imaging software developer or device manufacturer to spend less time designing and implementing novel and proprietary ways for connecting with other products.  That work is alreay done and defined. All that needs to be done is implement it in your product.
+Using this Orthodontic Imaging Profile (OIO) to implement a standard encoding of Visual Light Photographic Images, and other DICOM IODs, ensures interoperability between vendors and enables the imaging software developer or device manufacturer to spend less time designing and implementing novel and proprietary ways for connecting with other products.  That work is alreay done and defined. All that needs to be done is implement it in your product.
 
 
 .. note::
 
     The :ref:`list of views presented in the Appendix <view_examples>` of this standard serve as example for encoding a virtually unlimited number of view types. As long as the implementer follows the guidelines of this standard, the implementation will comply to this standard, even if the view represented in such implementation is not included as one of the views in the Appendix.
 
-This guide depends on ADA SCDI White Paper 1100 -
-Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets available online on the ADA Catalog.
+This guide depends on 
+
++ ADA SCDI White Paper 1100 - Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets 
++ ADA Standard No. 1114 - Dentistry – Implementation Requirements for the Effective Use of DICOM
 
 Open Issues and Questions
 =========================
@@ -33,7 +35,7 @@ This section identifies open issues/questions that need to be addressed prior to
 
 #. In Proposed 1114 AIP, Section 6.1.5 Common Requirements says, all image types "... SHOULD include the prescribing provider’s name".  Is ‘prescribing provider’ the same as Referring Physician Name (008,0090) in the :ref:`General Study Module <general_study_module>`?   If “no”, then what is the DICOM attribute you want for prescribing provider??
 
-#. Proposed 1114 AIP, Sections 7.1-7.5 contain requirements for acquiring Intra-Oral Radiographs.  Should those requirements be incorporated into OIP?   If so, we need another Content Creator option.
+#. Proposed 1114 AIP, Sections 7.1-7.5 contain requirements for acquiring Intra-Oral Radiographs.  Should those requirements, or others for CT IODs be incorporated into OIP?   If so, we need other Content Creator option(s).
 
 #. Proposed 1114 AIP, Section 11.2 'DICOM Requirements for 2D Orthodontic/Craniofacial/Forensic Visible Light Images' contains requirements requirements labeled with SHOULD.  Should any of these requirements be promoted to a "SHALL" for OIP?
 
@@ -68,7 +70,7 @@ The `IHE Technical Framework General Introduction Appendices <https://profiles.i
 `Appendix A <https://profiles.ihe.net/GeneralIntro/ch-A.html>`_ - **Actors**
 -----------------------------------------------------------------------------
 
-The table below lists existing actors that are utilized in this profile.
+The table below lists existing IHE actors that are utilized in this profile.
 
 .. list-table::
     :header-rows: 1
