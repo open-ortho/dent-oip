@@ -2,6 +2,17 @@
 ===================
 This section contains DICOM (Information Object Defintion) IOD specifications referenced in profiles of the IHE Dental domain.  
 
+Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  
+
+In Column 4 of the tables below, the values of **M**, **U**, and **C** for 'Usage' are defined in `DICOM PS3.3: A.1.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/chapter_A.html#sect_A.1.3>`_.  
+
+In Column 5, these additional 'Usage' values are defined:
+
+- **R** - The Module is defined as Conditional (C) or User Option (U) in DICOM; however, this Requirement is an IHE extension of the DICOM requirements, and the Module shall be present.
+- **RC** - The Module is defined as Conditional (C) or User Option (U) in DICOM; however, this requirement is an IHE extension of the DICOM requirements, and the Module shall be present when the specified conditions apply.
+
+**IOD Definitions specified in this section:**
+
 + :ref:`Section 7.3.1 VL Photographic Image IOD Definition <vl_photographic_image_iod_definition>`
 + :ref:`Section 7.3.2 Video Photographics Image IOD Definition <video_photographic_image_iod_definition>`
 + :ref:`Section 7.3.3 Encapsulated 3D Manufacturing Model IOD Definitions <encapsulated_3d_manufacturing_model_iods_definition>`
@@ -11,14 +22,7 @@ This section contains DICOM (Information Object Defintion) IOD specifications re
 + :ref:`Section 7.3.7 Structured Display IOD Definition <structured_display_iod_definition>`
 + :ref:`Section 7.3.8 Hanging Protocol IOD Definition <hanging_protocol_iod_definition>`
 
-Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  
 
-In Column 4 of the tables below, the values of **M**, **U**, and **C** for 'Usage' are defined in `DICOM PS3.3: A.1.3 <https://dicom.nema.org/medical/dicom/current/output/chtml/part03/chapter_A.html#sect_A.1.3>`_.  
-
-In Column 5, these additional 'Usage' values are defined:
-
-- **R** - The Module is defined as Conditional (C) or User Option (U) in DICOM; however, this Requirement is an IHE extension of the DICOM requirements, and the Module shall be present.
-- **RC** - The Module is defined as Conditional (C) or User Option (U) in DICOM; however, this requirement is an IHE extension of the DICOM requirements, and the Module shall be present when the specified conditions apply.
 
 .. _vl_photographic_image_iod_definition:
 
@@ -68,7 +72,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - Patient Study
      - C.7.2.2
      - U
-     - U
+     - RC
 
        See Section 7.4.1.3
    * - 
@@ -154,7 +158,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - U
      - R
 
-       See Section 7.4.x
+       See Section 7.4.2.x
    * - 
      - VL Photographic Geolocation
      - C.8.12.12
@@ -244,7 +248,7 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - Patient Study
      - C.7.2.2
      - U
-     - U
+     - RC
 
        See Section 7.4.1.3
    * - 
@@ -314,14 +318,14 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - M
      - M
 
-       See Section 7.4.x
+       See Section 7.4.1.6
    * - 
      - Device
      - C.7.6.12
      - U
-     - U
+     - RC
 
-       See Section 7.4.x
+       See Section 7.4.1.8
    * - 
      - Specimen
      - C.7.6.22
@@ -333,7 +337,7 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - M
      - M
 
-       See Section 7.4.x
+       See Section 7.4.2.1
    * - 
      - ICC Profile
      - C.11.15
@@ -343,7 +347,7 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - SOP Common
      - C.12.1
      - M
-     - M
+     - M See Section 7.4.1.9
    * - 
      - Common Instance Reference
      - C.12.2
@@ -399,7 +403,7 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - Patient Study
      - C.7.2.2
      - U
-     - U
+     - RC
 
        See Section 7.4.1.3
    * - 
@@ -426,7 +430,7 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - General Equipment
      - C.7.5.1
      - M
-     - U
+     - M
 
        See Section 7.4.1.5
    * - 
@@ -453,7 +457,7 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - SOP Common
      - C.12.1
      - M
-     - M
+     - M See Section 7.4.1.9
    * - 
      - Common Instance Reference
      - C.12.1
@@ -463,7 +467,7 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - Acquisition Context 
      - C.7.6.14
      - X
-     - M  -  See Section 7.4.x
+     - M  -  See Section 7.4.1.6
 
 
 7.3.3.1 Additional Encoding Requirements
@@ -513,7 +517,7 @@ The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3
      - Patient Study
      - C.7.2.2
      - U
-     - U
+     - RC
 
        See Section 7.4.1.3
    * - 
@@ -579,7 +583,7 @@ The baseline requirements for Surface Scan Mesh IODs are defined in `DICOM PS3.3
      - SOP Common
      - C.12.1
      - M
-     - M
+     - M See Section 7.4.1.9
 
 7.3.4.1 Additional Encoding Requirements
 ++++++++++++++++++++++++++++++++++++++++
@@ -628,7 +632,7 @@ The baseline requirements for Multi-frame True Color Secondary Capture Image IOD
      - Patient Study
      - C.7.2.2
      - U
-     - U
+     - RC
 
        See Section 7.4.1.3
    * - 
@@ -701,9 +705,9 @@ The baseline requirements for Multi-frame True Color Secondary Capture Image IOD
      - Device
      - C.7.6.12
      - U
-     - U
+     - RC
 
-       See Section 7.4.x
+       See Section 7.4.1.8
    * - 
      - Multi-frame Functional Groups
      - C.7.6.16
@@ -738,7 +742,7 @@ The baseline requirements for Multi-frame True Color Secondary Capture Image IOD
      - SOP Common
      - C.12.1
      - M
-     - M
+     - M See Section 7.4.1.9
    * - 
      - Common Instance Reference
      - C.12.2
@@ -791,7 +795,7 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
      - Patient Study
      - C.7.2.2
      - U
-     - U
+     - RC
 
        See Section 7.4.1.3
    * - 
@@ -869,7 +873,7 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
      - Device
      - C.7.6.12
      - U
-     - U
+     - RC See Section 7.4.1.8
    * - 
      - Specimen
      - C.7.6.22
@@ -899,7 +903,7 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
      - SOP Common
      - C.12.1
      - M
-     - M
+     - M See Section 7.4.1.9
    * - 
      - Common Instance Reference
      - C.12.2
@@ -948,7 +952,7 @@ The baseline requirements for Structured Display IODs are defined in `DICOM PS3.
      - Patient Study
      - C.7.2.2
      - U
-     - M See Section 7.4.1.3
+     - RC See Section 7.4.1.3
    * - 
      - Clinical Trial Study
      - C.7.2.3
