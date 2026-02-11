@@ -196,9 +196,7 @@ Displays shall support the capabilities described in this section for DICOM imag
 ****************************************
 The Display shall:
 
-+ <TO DO:  enumerate here requirements that apply to all IODs, or that are independent of an IOD type
-
-<TO DO:  Next, add logical subsections.   There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.
++ <*OPEN ISSUE: enumerate here general requirements beyond the viewset requirements below, e.g. for annotation perhaps. Next, add logical subsections.   There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.*
 
 3.1.4.1.3.2 Viewset VS-01
 *************************
