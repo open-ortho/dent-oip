@@ -1,3 +1,8 @@
+Volume 2 - Transactions
+=======================
+
+This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines transactions used in IHE Dental Domain profiles.
+
 1 Introduction to Volume 2
 ==========================
 This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines
@@ -114,6 +119,8 @@ any licensing/copyright requirements are satisfied.
 =========================
 This section defines each transaction in detail, specifying the standards used, and the information
 transferred.
+
+.. _den_1:
 
 3.1 Display Visible Light Images [DEN-1]
 ----------------------------------------
