@@ -33,7 +33,7 @@ This section identifies open issues/questions that need to be addressed prior to
 
 #. Proposed 1114 AIP, Sections 7.1-7.4 contain requirements for acquiring Intra-Oral Radiographs.  Should those requirements be incorporated into OIP?   If so, they would become functional requirements added to Vol 1 Sec 3.2.1 for a Content Creator that supports the Direct Photography Option (creating VL Photographic Images).
 
-#. 
+#. Vol 2 Sec 3.1.4.1.3.1 - Regarding display of VL Photographic Images, should we include some general display requirements in addition to those specific to the Viewsets, e.g. associated with display of annotation?  There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.
 
 #. 
 
