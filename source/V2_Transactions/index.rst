@@ -7,7 +7,7 @@ transactions used in IHE Dental Domain profiles.
 
 + :ref:`Section 1 - Introduction to Volume 2 <introduction_to_volume_2>`
 + :ref:`Section 2 - Conventions <conventions>`
-+ :ref:`Section 3 - Conventions <ihe_dental_transations>`
++ :ref:`Section 3 - Transactions <ihe_dental_transations>`
 + :ref:`Section 3.1 - Display Visible Light Images [DEN-1] <den_1>`
 
 .. _introduction_to_volume_2:
