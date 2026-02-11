@@ -8,7 +8,7 @@ This section contains DICOM (Information Object Defintion) IOD specifications re
 + :ref:`Section 7.3.4 Surface Scan Mesh IOD Definition <surface_scan_mesh_iod_definition>`
 + :ref:`Section 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition <multi-frame_true_color_secondary_capture_image_iod_definition>`
 + :ref:`Section 7.3.6 Secondary Capture Image IOD Definition <secondary_capture_image_iod_definition>`
-+ :ref:`Section 7.3.7 Structured Display IOD Definition<structured_display_iod_definition`
++ :ref:`Section 7.3.7 Structured Display IOD Definition <structured_display_iod_definition>`
 + :ref:`Section 7.3.8 Hanging Protocol IOD Definition <hanging_protocol_iod_definition>`
 
 Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.  
