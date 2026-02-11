@@ -74,9 +74,9 @@ Note:  The attribute Patient Orientation (0020,0020) should be enough to define 
     * - L
       - (77771000,SCT,"Left")
     * - R
-      - (66459002,SCT,"Right")
+      - (24028007,SCT,"Right")
     * - U
-      - (24028007,SCT,"Unilateral")
+      - (66459002,SCT,"Unilateral")
     * - B
       - (51440002,SCT,"Bilateral")
 
@@ -86,30 +86,30 @@ Note:  When creating the DICOM object, DICOM requires an enumerated value (aka s
 +++++++++++++++++++++++++++++++++++++++
 Consider the following logic when choosing laterality.
 
-+-----+----------+-----------------------------------------------------+
-| U   | Unpaired | Used for most orthodontic images.                   |
-+-----+----------+-----------------------------------------------------+
-| L   | Left     | Only use if this Series is of Mastoid bone, Maxilla |
-|     |          | or Temporomandibular joint. For all other anatomic  |
-|     |          | regions containing one or both sides, set to 'U'.   |
-+-----+----------+-----------------------------------------------------+
-| R   | Right    | Only use if this Series is of Mastoid bone, Maxilla |
-|     |          | or Temporomandibular joint. For all other anatomic  |
-|     |          | regions containing one or both sides, set to 'U'.   |
-+-----+----------+-----------------------------------------------------+
-| B   | Both     | Only use if this Series is of Mastoid bone, Maxilla |
-|     |          | or Temporomandibular joint. For all other anatomic  |
-|     |          | regions containing one or both sides, set to 'U'.   |
-|     |          | This is almost never used.                          |
-|     |          |                                                     |
-|     |          | For example, a frontal face smiling photograph,     |
-|     |          | would have Image Laterality of 'U'. However, an     |
-|     |          | image which would contain both the left Maxilla and |
-|     |          | the right Maxilla in the same frame (image) (for    |
-|     |          | example making use of mirrors or by merging two     |
-|     |          | images into one) would have an Image Laterality of  |
-|     |          | 'B'.                                                |
-+-----+----------+-----------------------------------------------------+
++-----+-----------+-----------------------------------------------------+
+| U   | Unilateral| Used for most orthodontic images.                   |
++-----+-----------+-----------------------------------------------------+
+| L   | Left      | Only use if this Series is of Mastoid bone, Maxilla |
+|     |           | or Temporomandibular joint. For all other anatomic  |
+|     |           | regions containing one or both sides, set to 'U'.   |
++-----+-----------+-----------------------------------------------------+
+| R   | Right     | Only use if this Series is of Mastoid bone, Maxilla |
+|     |           | or Temporomandibular joint. For all other anatomic  |
+|     |           | regions containing one or both sides, set to 'U'.   |
++-----+-----------+-----------------------------------------------------+
+| B   | Both      | Only use if this Series is of Mastoid bone, Maxilla |
+|     |           | or Temporomandibular joint. For all other anatomic  |
+|     |           | regions containing one or both sides, set to 'U'.   |
+|     |           | This is almost never used.                          |
+|     |           |                                                     |
+|     |           | For example, a frontal face smiling photograph,     |
+|     |           | would have Image Laterality of 'U'. However, an     |
+|     |           | image which would contain both the left Maxilla and |
+|     |           | the right Maxilla in the same frame (image) (for    |
+|     |           | example making use of mirrors or by merging two     |
+|     |           | images into one) would have an Image Laterality of  |
+|     |           | 'B'.                                                |
++-----+-----------+-----------------------------------------------------+
 
 The above table was compiled using the following considerations:
 

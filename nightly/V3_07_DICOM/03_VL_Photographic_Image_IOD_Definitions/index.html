@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>7.3 IOD Definitions &#8212; DENT-OIP 0.2.7-nightly.20260210220000 documentation</title>
+    <title>7.3 IOD Definitions &#8212; DENT-OIP 0.2.7-nightly.20260211163022 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=bdf3ec2e"></script>
+    <script src="../../_static/documentation_options.js?v=d645743a"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260210220000 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260211163022 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -446,6 +446,15 @@ document.write(`
   <section id="iod-definitions">
 <h1>7.3 IOD Definitions<a class="headerlink" href="#iod-definitions" title="Link to this heading">#</a></h1>
 <p>This section contains DICOM (Information Object Defintion) IOD specifications referenced in profiles of the IHE Dental domain.</p>
+<p>Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.</p>
+<p><strong>Usage Values in the Module Tables:</strong></p>
+<p>In Column 4 of the tables below, the values of <strong>M</strong>, <strong>U</strong>, and <strong>C</strong> for ‘Usage’ are defined in <a class="reference external" href="https://dicom.nema.org/medical/dicom/current/output/chtml/part03/chapter_A.html#sect_A.1.3">DICOM PS3.3: A.1.3</a>.</p>
+<p>In Column 5, these additional ‘Usage’ values are defined:</p>
+<ul class="simple">
+<li><p><strong>R</strong> - The Module is defined as Conditional (C) or User Option (U) in DICOM; however, this Requirement is an IHE extension of the DICOM requirements, and the Module shall be present.</p></li>
+<li><p><strong>RC</strong> - The Module is defined as Conditional (C) or User Option (U) in DICOM; however, this requirement is an IHE extension of the DICOM requirements, and the Module shall be present when the specified conditions apply.</p></li>
+</ul>
+<p><strong>IOD Definitions specified in this section:</strong></p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#vl-photographic-image-iod-definition"><span class="std std-ref">Section 7.3.1 VL Photographic Image IOD Definition</span></a></p></li>
 <li><p><a class="reference internal" href="#video-photographic-image-iod-definition"><span class="std std-ref">Section 7.3.2 Video Photographics Image IOD Definition</span></a></p></li>
@@ -453,15 +462,8 @@ document.write(`
 <li><p><a class="reference internal" href="#surface-scan-mesh-iod-definition"><span class="std std-ref">Section 7.3.4 Surface Scan Mesh IOD Definition</span></a></p></li>
 <li><p><a class="reference internal" href="#multi-frame-true-color-secondary-capture-image-iod-definition"><span class="std std-ref">Section 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition</span></a></p></li>
 <li><p><a class="reference internal" href="#secondary-capture-image-iod-definition"><span class="std std-ref">Section 7.3.6 Secondary Capture Image IOD Definition</span></a></p></li>
-<li><p><span class="xref std std-ref">Section 7.3.7 Structured Display IOD Definition&lt;structured_display_iod_definition</span></p></li>
+<li><p><a class="reference internal" href="#structured-display-iod-definition"><span class="std std-ref">Section 7.3.7 Structured Display IOD Definition</span></a></p></li>
 <li><p><a class="reference internal" href="#hanging-protocol-iod-definition"><span class="std std-ref">Section 7.3.8 Hanging Protocol IOD Definition</span></a></p></li>
-</ul>
-<p>Each IOD definition contains a table that identifies Modules comprising the IOD, including the baseline Modules requirements defined in DICOM, and Modules where requirements are extended by Dental domain profiles.</p>
-<p>In Column 4 of the tables below, the values of <strong>M</strong>, <strong>U</strong>, and <strong>C</strong> for ‘Usage’ are defined in <a class="reference external" href="https://dicom.nema.org/medical/dicom/current/output/chtml/part03/chapter_A.html#sect_A.1.3">DICOM PS3.3: A.1.3</a>.</p>
-<p>In Column 5, these additional ‘Usage’ values are defined:</p>
-<ul class="simple">
-<li><p><strong>R</strong> - The Module is defined as Conditional (C) or User Option (U) in DICOM; however, this Requirement is an IHE extension of the DICOM requirements, and the Module shall be present.</p></li>
-<li><p><strong>RC</strong> - The Module is defined as Conditional (C) or User Option (U) in DICOM; however, this requirement is an IHE extension of the DICOM requirements, and the Module shall be present when the specified conditions apply.</p></li>
 </ul>
 <section id="vl-photographic-image-iod-definition">
 <span id="id1"></span><h2>7.3.1 VL Photographic Image IOD Definition<a class="headerlink" href="#vl-photographic-image-iod-definition" title="Link to this heading">#</a></h2>
@@ -516,7 +518,7 @@ orthodontic domain.</p>
 <td><p>Patient Study</p></td>
 <td><p>C.7.2.2</p></td>
 <td><p>U</p></td>
-<td><p>U</p>
+<td><p>RC</p>
 <p>See Section 7.4.1.3</p>
 </td>
 </tr>
@@ -585,7 +587,7 @@ orthodontic domain.</p>
 <td><p>C.7.6.14</p></td>
 <td><p>M</p></td>
 <td><p>M</p>
-<p>See Section 7.4.x</p>
+<p>See Section 7.4.1.6</p>
 </td>
 </tr>
 <tr class="row-even"><td></td>
@@ -593,7 +595,7 @@ orthodontic domain.</p>
 <td><p>C.7.6.12</p></td>
 <td><p>U</p></td>
 <td><p>RC</p>
-<p>See Section 7.4.x</p>
+<p>See Section 7.4.1.8</p>
 </td>
 </tr>
 <tr class="row-odd"><td></td>
@@ -615,12 +617,38 @@ orthodontic domain.</p>
 <td><p>C.8.12.11</p></td>
 <td><p>U</p></td>
 <td><p>R</p>
-<p>See Section 7.4.x</p>
+<p>See Section 7.4.2.x</p>
 </td>
 </tr>
 <tr class="row-even"><td></td>
 <td><p>VL Photographic Geolocation</p></td>
 <td><p>C.8.12.12</p></td>
+<td><p>U</p></td>
+<td><p>U</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Overlay Plane</p></td>
+<td><p>C.9.2</p></td>
+<td><p>U</p></td>
+<td><p>U</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>ICC Profile</p></td>
+<td><p>C.11.15</p></td>
+<td><p>U</p></td>
+<td><p>U</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>SOP Common</p></td>
+<td><p>C.22.1</p></td>
+<td><p>M</p></td>
+<td><p>M</p>
+<p>See Section 7.4.1.9</p>
+</td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Common Instance Reference</p></td>
+<td><p>C.12.2</p></td>
 <td><p>U</p></td>
 <td><p>U</p></td>
 </tr>
@@ -690,7 +718,7 @@ necessary to capture motion picture, movies, and/or video in orthodontics.</p>
 <td><p>Patient Study</p></td>
 <td><p>C.7.2.2</p></td>
 <td><p>U</p></td>
-<td><p>U</p>
+<td><p>RC</p>
 <p>See Section 7.4.1.3</p>
 </td>
 </tr>
@@ -771,15 +799,15 @@ necessary to capture motion picture, movies, and/or video in orthodontics.</p>
 <td><p>C.7.6.14</p></td>
 <td><p>M</p></td>
 <td><p>M</p>
-<p>See Section 7.4.x</p>
+<p>See Section 7.4.1.6</p>
 </td>
 </tr>
 <tr class="row-even"><td></td>
 <td><p>Device</p></td>
 <td><p>C.7.6.12</p></td>
 <td><p>U</p></td>
-<td><p>U</p>
-<p>See Section 7.4.x</p>
+<td><p>RC</p>
+<p>See Section 7.4.1.8</p>
 </td>
 </tr>
 <tr class="row-odd"><td></td>
@@ -793,7 +821,7 @@ necessary to capture motion picture, movies, and/or video in orthodontics.</p>
 <td><p>C.8.12.1</p></td>
 <td><p>M</p></td>
 <td><p>M</p>
-<p>See Section 7.4.x</p>
+<p>See Section 7.4.2.1</p>
 </td>
 </tr>
 <tr class="row-odd"><td></td>
@@ -806,7 +834,7 @@ necessary to capture motion picture, movies, and/or video in orthodontics.</p>
 <td><p>SOP Common</p></td>
 <td><p>C.12.1</p></td>
 <td><p>M</p></td>
-<td><p>M</p></td>
+<td><p>M See Section 7.4.1.9</p></td>
 </tr>
 <tr class="row-odd"><td></td>
 <td><p>Common Instance Reference</p></td>
@@ -877,7 +905,7 @@ necessary to capture motion picture, movies, and/or video in orthodontics.</p>
 <td><p>Patient Study</p></td>
 <td><p>C.7.2.2</p></td>
 <td><p>U</p></td>
-<td><p>U</p>
+<td><p>RC</p>
 <p>See Section 7.4.1.3</p>
 </td>
 </tr>
@@ -909,7 +937,7 @@ necessary to capture motion picture, movies, and/or video in orthodontics.</p>
 <td><p>General Equipment</p></td>
 <td><p>C.7.5.1</p></td>
 <td><p>M</p></td>
-<td><p>U</p>
+<td><p>M</p>
 <p>See Section 7.4.1.5</p>
 </td>
 </tr>
@@ -941,7 +969,7 @@ necessary to capture motion picture, movies, and/or video in orthodontics.</p>
 <td><p>SOP Common</p></td>
 <td><p>C.12.1</p></td>
 <td><p>M</p></td>
-<td><p>M</p></td>
+<td><p>M See Section 7.4.1.9</p></td>
 </tr>
 <tr class="row-even"><td></td>
 <td><p>Common Instance Reference</p></td>
@@ -953,7 +981,7 @@ necessary to capture motion picture, movies, and/or video in orthodontics.</p>
 <td><p>Acquisition Context</p></td>
 <td><p>C.7.6.14</p></td>
 <td><p>X</p></td>
-<td><p>M  -  See Section 7.4.x</p></td>
+<td><p>M  -  See Section 7.4.1.6</p></td>
 </tr>
 </tbody>
 </table>
@@ -1012,7 +1040,7 @@ necessary to capture 3D intraoral or extraoral surface scans directly from a pat
 <td><p>Patient Study</p></td>
 <td><p>C.7.2.2</p></td>
 <td><p>U</p></td>
-<td><p>U</p>
+<td><p>RC</p>
 <p>See Section 7.4.1.3</p>
 </td>
 </tr>
@@ -1090,7 +1118,7 @@ necessary to capture 3D intraoral or extraoral surface scans directly from a pat
 <td><p>SOP Common</p></td>
 <td><p>C.12.1</p></td>
 <td><p>M</p></td>
-<td><p>M</p></td>
+<td><p>M See Section 7.4.1.9</p></td>
 </tr>
 </tbody>
 </table>
@@ -1149,7 +1177,7 @@ necessary to capture scan film, negatives, or positive photographs.</p>
 <td><p>Patient Study</p></td>
 <td><p>C.7.2.2</p></td>
 <td><p>U</p></td>
-<td><p>U</p>
+<td><p>RC</p>
 <p>See Section 7.4.1.3</p>
 </td>
 </tr>
@@ -1235,8 +1263,8 @@ necessary to capture scan film, negatives, or positive photographs.</p>
 <td><p>Device</p></td>
 <td><p>C.7.6.12</p></td>
 <td><p>U</p></td>
-<td><p>U</p>
-<p>See Section 7.4.x</p>
+<td><p>RC</p>
+<p>See Section 7.4.1.8</p>
 </td>
 </tr>
 <tr class="row-odd"><td></td>
@@ -1279,7 +1307,7 @@ necessary to capture scan film, negatives, or positive photographs.</p>
 <td><p>SOP Common</p></td>
 <td><p>C.12.1</p></td>
 <td><p>M</p></td>
-<td><p>M</p></td>
+<td><p>M See Section 7.4.1.9</p></td>
 </tr>
 <tr class="row-even"><td></td>
 <td><p>Common Instance Reference</p></td>
@@ -1345,7 +1373,7 @@ necessary to capture scan film, negatives, or positive photographs.</p>
 <td><p>Patient Study</p></td>
 <td><p>C.7.2.2</p></td>
 <td><p>U</p></td>
-<td><p>U</p>
+<td><p>RC</p>
 <p>See Section 7.4.1.3</p>
 </td>
 </tr>
@@ -1437,7 +1465,7 @@ necessary to capture scan film, negatives, or positive photographs.</p>
 <td><p>Device</p></td>
 <td><p>C.7.6.12</p></td>
 <td><p>U</p></td>
-<td><p>U</p></td>
+<td><p>RC See Section 7.4.1.8</p></td>
 </tr>
 <tr class="row-even"><td></td>
 <td><p>Specimen</p></td>
@@ -1473,7 +1501,7 @@ necessary to capture scan film, negatives, or positive photographs.</p>
 <td><p>SOP Common</p></td>
 <td><p>C.12.1</p></td>
 <td><p>M</p></td>
-<td><p>M</p></td>
+<td><p>M See Section 7.4.1.9</p></td>
 </tr>
 <tr class="row-even"><td></td>
 <td><p>Common Instance Reference</p></td>
@@ -1533,7 +1561,7 @@ necessary to capture scan film, negatives, or positive photographs.</p>
 <td><p>Patient Study</p></td>
 <td><p>C.7.2.2</p></td>
 <td><p>U</p></td>
-<td><p>M See Section 7.4.1.3</p></td>
+<td><p>RC See Section 7.4.1.3</p></td>
 </tr>
 <tr class="row-even"><td></td>
 <td><p>Clinical Trial Study</p></td>
