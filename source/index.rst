@@ -1,9 +1,17 @@
-.. DENT-OPI documentation master file, created by
+.. DENT-OIP documentation master file, created by
    sphinx-quickstart on Tue Jul 13 09:01:04 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-DENT-OPI
+Dental 
+======
+Technical Framework Supplement
+==============================
+Orthodontic Imaging Profile 
+===========================
+(OIP)
+=====
+Trial Implementation
 ====================================
 
 `DOCX <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.pdf>`__
@@ -39,14 +47,27 @@ Contents
 
 .. toctree::
    :glob:
-   :numbered:
-   :maxdepth: 1
+   :maxdepth: 4
 
    Preamble/*
 
-   Orthodontic_Imaging_Profile/*
-   DICOM/*
-   Appendix/index
+   V1_Orthodontic_Imaging_Profile/*
+   V2_Transactions/*
+   V3_07_DICOM/01_Conventions/index
+   V3_07_DICOM/01_Conventions/*
+   V3_07_DICOM/02_General_Definitions/*
+   V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/*
+   V3_07_DICOM/04_Module_Definitions/*
+   V3_07_DICOM/04_Module_Definitions/100_Acquisition_Context/*
+   V3_07_DICOM/04_Module_Definitions/110_General_Image/*
+   V3_07_DICOM/04_Module_Definitions/150_Device/*
+   V3_07_DICOM/04_Module_Definitions/220_SOP_Common/*
+   V3_07_DICOM/04_Module_Definitions/170_VL_Image/*
+   V3_Appendix/A_ViewExamples/index
+   V3_Appendix/B_ViewSetExamples/index
+   V3_Appendix/C_DeviceExamples/03_device_examples
+   V3_Appendix/D_Definitions/04_definitions
+   V3_Appendix/99_list_of_codes
 
    bibliography
 

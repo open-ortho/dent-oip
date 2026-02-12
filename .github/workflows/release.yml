@@ -61,9 +61,17 @@ jobs:
             ./source/tables/views.csv
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish HTML to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/html/
           destination_dir: release
+
+      - name: Update Latest Tag
+        run: |
+          git tag -d latest || true  # Delete the local tag if it exists
+          git push origin :refs/tags/latest || true  # Delete the remote tag if it exists
+          git tag -a latest -m "Updated latest tag"
+          git push origin latest

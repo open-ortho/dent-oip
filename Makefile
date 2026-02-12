@@ -25,7 +25,6 @@ IMAGES_ORIGIN = modules/orthoviews-linedrawings/images/png
 
 PIPENV = $(PYTHON) -m pipenv
 # PIPENV_RUN = $(PIPENV) run
-VIEWBUILDER = $(PIPENV_RUN) $(PYTHON) ./view_maker.py
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
@@ -33,10 +32,13 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= $(PIPENV_RUN) sphinx-build
 SOURCEDIR     = ./source
 
+VALUESETBUILDER = $(PIPENV_RUN) $(PYTHON) ./dent_oip_builder/valueset_builder.py
+VIEWBUILDER = $(PIPENV_RUN) $(PYTHON) ./dent_oip_builder/view_maker.py
+
 VERSION_FILE  = $(SOURCEDIR)/_VERSION
 GENERATED_TABLES = $(SOURCEDIR)/tables/generated
 SAMPLE_DICOM_FILES = $(SOURCEDIR)/_static/dicom_samples
-VIEW_EXAMPLES = $(SOURCEDIR)/Appendix/ViewExamples
+VIEW_EXAMPLES = $(SOURCEDIR)/V3_Appendix/A_ViewExamples
 IMAGES = $(SOURCEDIR)/images
 
 # Put it first so that "make" without argument is like "make help".
@@ -47,7 +49,9 @@ help:
 
 # This will get executed automatically for each target routed to Sphinx. See catchall target below.
 $(GENERATED_TABLES): $(IMAGES)
-	$(VIEWBUILDER)
+	echo $(SOURCEDIR)
+	PYTHONPATH=$(SOURCEDIR) $(VIEWBUILDER)
+	$(VALUESETBUILDER)
 
 clean:
 	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)" "$(IMAGES)" "$(VIEW_EXAMPLES)/generated" "$(SAMPLE_DICOM_FILES)" "$(VERSION_FILE)"
@@ -58,7 +62,7 @@ deploy:
 
 git-tag:
 	git tag $(shell cat $(VERSION_FILE))
-	git push $(shell cat $(VERSION_FILE))
+	git push origin $(shell cat $(VERSION_FILE))
 
 # Don't run locally, will change rst files. Intended for github actions only.
 nightly:
