@@ -132,14 +132,14 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
      - M
      - M
 
-       See Section 7.4.1.6
+       See :ref:`Section 7.4.1.6 <acquisition_context>`
    * - 
      - Device
      - C.7.6.12
      - U
      - RC
 
-       See Section 7.4.1.8
+       See :ref:`Section 7.4.1.8 <device>`
    * - 
      - Specimen
      - C.7.6.22
@@ -318,14 +318,14 @@ The baseline requirements for Video Photographic Image IODs are defined in `DICO
      - M
      - M
 
-       See Section 7.4.1.6
+       See :ref:`Section 7.4.1.6 <acquisition_context>`
    * - 
      - Device
      - C.7.6.12
      - U
      - RC
 
-       See Section 7.4.1.8
+       See :ref:`Section 7.4.1.8 <device>`
    * - 
      - Specimen
      - C.7.6.22
@@ -467,7 +467,7 @@ The IOD Module requirements are the same for all 3 of these IODs.  In Table 7.3.
      - Acquisition Context 
      - C.7.6.14
      - X
-     - M  -  See Section 7.4.1.6
+     - M  -  See :ref:`Section 7.4.1.6 <acquisition_context>`
 
 
 7.3.3.1 Additional Encoding Requirements
@@ -707,7 +707,7 @@ The baseline requirements for Multi-frame True Color Secondary Capture Image IOD
      - U
      - RC
 
-       See Section 7.4.1.8
+       See :ref:`Section 7.4.1.8 <device>`
    * - 
      - Multi-frame Functional Groups
      - C.7.6.16
@@ -873,7 +873,7 @@ The baseline requirements for Secondary Capture Image IODs are defined in `DICOM
      - Device
      - C.7.6.12
      - U
-     - RC See Section 7.4.1.8
+     - RC See :ref:`Section 7.4.1.8 <device>`
    * - 
      - Specimen
      - C.7.6.22
