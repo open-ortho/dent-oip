@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dental Technical Framework Supplement Orthodontic Imaging Profile (OIP) Trial Implementation</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f2ed;
+        --panel: #fffdf9;
+        --ink: #1f2328;
+        --muted: #5d6774;
+        --accent: #1e7c67;
+        --accent-ink: #0c3b31;
+        --border: #e3ddd2;
+        --shadow: 0 10px 30px rgba(23, 27, 31, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Source Serif 4", "Source Serif Pro", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        color: var(--ink);
+        background: radial-gradient(1200px 700px at 10% 0%, #fbf7f0 0%, var(--bg) 55%, #efe8dc 100%);
+      }
+
+      main {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 40px 20px;
+      }
+
+      .card {
+        width: min(780px, 100%);
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        padding: 40px clamp(24px, 4vw, 56px);
+        box-shadow: var(--shadow);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(28px, 4vw, 40px);
+        letter-spacing: -0.02em;
+      }
+
+      p {
+        margin: 0 0 24px;
+        color: var(--muted);
+        line-height: 1.6;
+        font-size: 1.05rem;
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      .build {
+        display: grid;
+        gap: 10px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 18px 20px;
+        background: #ffffff;
+      }
+
+      .build h2 {
+        margin: 0;
+        font-size: 1.1rem;
+        letter-spacing: 0.01em;
+      }
+
+      .build p {
+        margin: 0;
+        font-size: 0.98rem;
+      }
+
+      a {
+        color: var(--accent-ink);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      a::after {
+        content: " →";
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--accent-ink);
+        background: rgba(30, 124, 103, 0.08);
+        border: 1px solid rgba(30, 124, 103, 0.2);
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 0.92rem;
+        width: fit-content;
+      }
+
+      @media (min-width: 640px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <div class="cta">DENT-OIP published docs</div>
+        <h1>Dental Technical Framework Supplement Orthodontic Imaging Profile (OIP) Trial Implementation</h1>
+        <p>
+          Choose between the stable release documentation or the latest nightly build generated
+          every time updates land on the <strong>develop</strong> branch.
+        </p>
+
+        <div class="grid">
+          <article class="build">
+            <h2>Release builds</h2>
+            <p>
+              Official, tagged documentation aligned with published releases.
+            </p>
+            <a href="./release/">Open release docs</a>
+          </article>
+
+          <article class="build">
+            <h2>Nightly builds</h2>
+            <p>
+              Automatically generated on every push to <strong>develop</strong> for the latest changes.
+            </p>
+            <a href="./nightly/">Open nightly docs</a>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
