@@ -68,6 +68,14 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/html/
           destination_dir: release
+          keep_files: true
+
+      - name: Publish root index to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gh-pages-root/
+          keep_files: true
 
       - name: Update Latest Tag
         run: |

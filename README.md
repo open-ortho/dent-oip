@@ -1,4 +1,6 @@
-# DENT-OIP v0.2.7
+# Dental Technical Framework Supplement Orthodontic Imaging Profile (OIP) Trial Implementation
+
+Version: DENT-OIP v0.2.7
 
 These are the source files for the DENT-OIP standard document.
 
