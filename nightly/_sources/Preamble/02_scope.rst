@@ -7,7 +7,7 @@ The intended audience of this document is the medical imaging software developer
 The document, along with its accompanying CSV files and DICOM sample files found in the Volume 3 Appendices, provides a detailed implementation guide for encoding orthodontic/craniofacial
 views using DICOM with SNOMED CT terminology. 
 
-Using the Orthodontic Imaging Profile to implement a standard encoding of Visual Light Photographic Images ensures interoperability between vendors and enables the imaging software developer or device manufacturer to spend less time designing and implementing novel and proprietary ways for connecting with other products.  That work is alreay done and defined. All that needs to be done is implement it in your product.
+Using this Orthodontic Imaging Profile (OIP) to implement a standard encoding of Visual Light Photographic Images, and other DICOM IODs, ensures interoperability between vendors and enables the imaging software developer or device manufacturer to spend less time designing and implementing novel and proprietary ways for connecting with other products.  That work is alreay done and defined. All that needs to be done is implement it in your product.
 
 
 .. note::
