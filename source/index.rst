@@ -1,18 +1,5 @@
-.. DENT-OIP documentation master file, created by
-   sphinx-quickstart on Tue Jul 13 09:01:04 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Dental 
-======
-Technical Framework Supplement
-==============================
-Orthodontic Imaging Profile 
-===========================
-(OIP)
-=====
-Trial Implementation
-====================================
+Dental – Technical Framework Supplement – Orthodontic Imaging Profile (OIP) – Trial Implementation
+==================================================================================================
 
 `DOCX <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP-RELEASE_TAG_PLACEHOLDER.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP-RELEASE_TAG_PLACEHOLDER.pdf>`__
 
