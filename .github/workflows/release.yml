@@ -47,6 +47,11 @@ jobs:
       - name: Run Make dist
         run: make dist
 
+      - name: Create versioned asset names
+        run: |
+          cp ./dist/pdf/DENT-OIP.pdf "./dist/pdf/DENT-OIP-v${{ steps.version.outputs.VERSION }}.pdf"
+          cp ./dist/docx/DENT-OIP.docx "./dist/docx/DENT-OIP-v${{ steps.version.outputs.VERSION }}.docx"
+
       - name: Create and Upload Release Assets
         uses: softprops/action-gh-release@v2
         with:
@@ -55,8 +60,8 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            ./dist/docx/DENT-OIP.docx
-            ./dist/pdf/DENT-OIP.pdf
+            ./dist/docx/DENT-OIP-v${{ steps.version.outputs.VERSION }}.docx
+            ./dist/pdf/DENT-OIP-v${{ steps.version.outputs.VERSION }}.pdf
             ./source/tables/codes.csv
             ./source/tables/views.csv
         env:
@@ -68,6 +73,14 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist/html/
           destination_dir: release
+          keep_files: true
+
+      - name: Publish root index to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gh-pages-root/
+          keep_files: true
 
       - name: Update Latest Tag
         run: |

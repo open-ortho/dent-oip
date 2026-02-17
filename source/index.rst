@@ -1,20 +1,7 @@
-.. DENT-OIP documentation master file, created by
-   sphinx-quickstart on Tue Jul 13 09:01:04 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Dental – Technical Framework Supplement – Orthodontic Imaging Profile (OIP) – Trial Implementation
+==================================================================================================
 
-Dental 
-======
-Technical Framework Supplement
-==============================
-Orthodontic Imaging Profile 
-===========================
-(OIP)
-=====
-Trial Implementation
-====================================
-
-`DOCX <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.pdf>`__
+`DOCX <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP-RELEASE_TAG_PLACEHOLDER.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP-RELEASE_TAG_PLACEHOLDER.pdf>`__
 
 Executive Summary
 -----------------
@@ -53,7 +40,6 @@ Contents
 
    V1_Orthodontic_Imaging_Profile/*
    V2_Transactions/*
-   V3_07_DICOM/01_Conventions/index
    V3_07_DICOM/01_Conventions/*
    V3_07_DICOM/02_General_Definitions/*
    V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/*
@@ -70,4 +56,3 @@ Contents
    V3_Appendix/99_list_of_codes
 
    bibliography
-
