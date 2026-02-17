@@ -14,7 +14,7 @@ Orthodontic Imaging Profile
 Trial Implementation
 ====================================
 
-`DOCX <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP.pdf>`__
+`DOCX <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP-RELEASE_TAG_PLACEHOLDER.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/RELEASE_TAG_PLACEHOLDER/DENT-OIP-RELEASE_TAG_PLACEHOLDER.pdf>`__
 
 Executive Summary
 -----------------
@@ -69,4 +69,3 @@ Contents
    V3_Appendix/99_list_of_codes
 
    bibliography
-

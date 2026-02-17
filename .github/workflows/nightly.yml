@@ -37,6 +37,11 @@ jobs:
       - name: Run Make nightly
         run: make nightly
 
+      - name: Create versioned asset names
+        run: |
+          cp ./dist/pdf/DENT-OIP.pdf "./dist/pdf/DENT-OIP-${NIGHTLY_VERSION}.pdf"
+          cp ./dist/docx/DENT-OIP.docx "./dist/docx/DENT-OIP-${NIGHTLY_VERSION}.docx"
+
       - name: Get NIGHTLY_VERSION from _VERSION
         id: version
         run: |
@@ -57,8 +62,8 @@ jobs:
           draft: false
           prerelease: true
           files: |
-            ./dist/docx/DENT-OIP.docx
-            ./dist/pdf/DENT-OIP.pdf
+            ./dist/docx/DENT-OIP-${{ steps.version.outputs.NIGHTLY_VERSION }}.docx
+            ./dist/pdf/DENT-OIP-${{ steps.version.outputs.NIGHTLY_VERSION }}.pdf
             ./source/tables/codes.csv
             ./source/tables/views.csv
         env:
