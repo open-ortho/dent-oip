@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - develop
+  workflow_dispatch:
 
 jobs:
   build-and-release:
@@ -37,11 +38,6 @@ jobs:
       - name: Run Make nightly
         run: make nightly
 
-      - name: Create versioned asset names
-        run: |
-          cp ./dist/pdf/DENT-OIP.pdf "./dist/pdf/DENT-OIP-${NIGHTLY_VERSION}.pdf"
-          cp ./dist/docx/DENT-OIP.docx "./dist/docx/DENT-OIP-${NIGHTLY_VERSION}.docx"
-
       - name: Get NIGHTLY_VERSION from _VERSION
         id: version
         run: |
@@ -53,6 +49,11 @@ jobs:
             echo "Cannot load NIGHTLY_VERSION from $VERSION_FILE"
             exit 1
           fi
+
+      - name: Create versioned asset names
+        run: |
+          cp ./dist/pdf/DENT-OIP.pdf "./dist/pdf/DENT-OIP-${{ steps.version.outputs.NIGHTLY_VERSION }}.pdf"
+          cp ./dist/docx/DENT-OIP.docx "./dist/docx/DENT-OIP-${{ steps.version.outputs.NIGHTLY_VERSION }}.docx"
       
       - name: Create and Upload Release Assets
         uses: softprops/action-gh-release@v2
