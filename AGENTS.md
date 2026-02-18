@@ -1,6 +1,6 @@
 # AGENTS.md - Developer Guidelines for DENT-OIP
 
-This document provides coding guidelines and conventions for AI coding agents and human developers working on the DENT-OIP (Dental Technical Framework Supplement Orthodontic Imaging Profile) project.
+This document provides coding guidelines and conventions for AI coding agents and human developers working on the DENT-OIP (Dentistry Technical Framework Supplement Orthodontic Imaging Profile) project.
 
 ## Project Overview
 
@@ -46,8 +46,10 @@ make clean
 - **Nightly builds**: Automatically triggered on push to `develop` branch (see `.github/workflows/nightly.yml`)
 - **Release builds**: Automatically triggered on push to `master` branch (see `.github/workflows/release.yml`)
 - Both workflows build HTML, PDF, and DOCX, then deploy to GitHub Pages at:
+  - Root landing page: <http://open-ortho.org/dent-oip/> (from `gh-pages-root/index.html`)
   - Nightly: <http://open-ortho.org/dent-oip/nightly/>
   - Release: <http://open-ortho.org/dent-oip/release/>
+- **IMPORTANT**: The `gh-pages-root/index.html` file is the landing page that provides navigation to both nightly and release builds. Both workflows deploy this file to the root of gh-pages to ensure users can navigate between versions.
 
 ### Platform-Specific Notes (Local Testing)
 
@@ -234,6 +236,8 @@ dent-oip/
 │   │   ├── codes.csv   # Code definitions
 │   │   └── generated/  # Auto-generated CSVs (DO NOT EDIT)
 │   └── images/         # Auto-generated from submodule (gitignored)
+├── gh-pages-root/      # Landing page for GitHub Pages
+│   └── index.html     # Root page (DO NOT DELETE - deployed by both workflows)
 ├── dent_oip_builder/   # Python build scripts
 │   ├── view_maker.py   # DICOM generation and RST creation
 │   └── valueset_builder.py  # FHIR ValueSet processing
@@ -296,6 +300,8 @@ dent-oip/
 ## Notes for AI Agents
 
 - **Do not modify** generated files in `source/tables/generated/`
+- **Do not modify** generated view RST files in `source/V3_Appendix/A_ViewExamples/generated/`
+- **Do not delete** `gh-pages-root/index.html` - this is the landing page for GitHub Pages
 - **Do not commit** files in `.gitignore`
 - **Use pathlib.Path** for all file operations
 - **Log operations** using `logging` module
