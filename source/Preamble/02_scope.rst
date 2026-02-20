@@ -25,7 +25,7 @@ This section identifies open issues/questions that need to be addressed prior to
 
 #. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>` -- This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?
 
-#. :ref:`Vol 1 Sec 3.2.7 and 3.2.8 <structured_display_option>` -- For the Structured Display and Hanging Protocol Options, the Image Display that supports either of the options must be able to both create the associated IOD based on the charactstics and content of a given rendering **and also** be able to consume/interpret a hanging protocol or structured display (and the associated study) created by a different system and render the study accordingly.
+#. :ref:`Vol 1 Sec 3.1.1.3 <display_actor>` -- For the Structured Display and Hanging Protocol requirements, the Image Display must be able to both create the associated IOD based on the charactstics and content of a given rendering **and also** be able to consume/interpret a hanging protocol or structured display (and the associated study) created by a different system and render the study accordingly.
 
 #. :ref:`Vol 1 Sec 3.1.1.1 <content_creator_actor>` - In IHE, a system that creates DICOM images has requirements for Study and Series UIDs, in particular conditions for when a new Series shall be created.   See `IHE RAD TF-2 <https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Vol2.pdf>`_: 4.8.4.1.1.1.   Should we pull these requirements into OIP?
 
@@ -83,5 +83,4 @@ The table below lists existing actors that are utilized in this profile.
       - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.  Note:  In OIP, 'content' is DICOM objects.  See :ref:`Volume 1 Section 3.1.1.2 <content_consumer_actor> for examples of products that could be a Content Consumer in OIP.
     * - Image Display
       - The Image Display Actor presents medical images and associated imaging data.
-
 
