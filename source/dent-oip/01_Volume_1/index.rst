@@ -1,6 +1,8 @@
-Volume 1 - Profiles
-==============================
+Volume 1 - Integration Profiles
+===============================
 
-Domain-specific additions
----------------------------------
+.. toctree::
+   :maxdepth: 2
 
+   ../../Preamble/index
+   ../../V1_Orthodontic_Imaging_Profile/index

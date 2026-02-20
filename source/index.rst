@@ -33,26 +33,8 @@ Contents
 --------
 
 .. toctree::
-   :glob:
-   :maxdepth: 4
+   :maxdepth: 2
 
-   Preamble/*
-
-   V1_Orthodontic_Imaging_Profile/*
-   V2_Transactions/*
-   V3_07_DICOM/01_Conventions/*
-   V3_07_DICOM/02_General_Definitions/*
-   V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/*
-   V3_07_DICOM/04_Module_Definitions/*
-   V3_07_DICOM/04_Module_Definitions/100_Acquisition_Context/*
-   V3_07_DICOM/04_Module_Definitions/110_General_Image/*
-   V3_07_DICOM/04_Module_Definitions/150_Device/*
-   V3_07_DICOM/04_Module_Definitions/220_SOP_Common/*
-   V3_07_DICOM/04_Module_Definitions/170_VL_Image/*
-   V3_Appendix/A_ViewExamples/index
-   V3_Appendix/B_ViewSetExamples/index
-   V3_Appendix/C_DeviceExamples/03_device_examples
-   V3_Appendix/D_Definitions/04_definitions
-   V3_Appendix/99_list_of_codes
-
-   bibliography
+   dent-oip/01_Volume_1/index
+   dent-oip/02_Volume_2/index
+   dent-oip/03_Volume_3/index
