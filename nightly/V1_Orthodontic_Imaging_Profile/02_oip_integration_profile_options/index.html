@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>3.2 OIP Profile Options &#8212; DENT-OIP 0.2.7-nightly.20260218065733 documentation</title>
+    <title>3.2 OIP Profile Options &#8212; DENT-OIP 0.2.7-nightly.20260220200604 documentation</title>
   
   
   
@@ -36,14 +36,14 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=f9a014ba"></script>
+    <script src="../../_static/documentation_options.js?v=fc17126f"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/index';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3.4 OIP Overview" href="../03_oip_process_flow/index.html" />
+    <link rel="next" title="3.2.1 Direct Photography Option" href="direct_photography_option.html" />
     <link rel="prev" title="3.1 OIP Actors, Transactions, and Content Modules" href="../01_oip_actors_transactions/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260218065733 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260220200604 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -161,7 +161,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Preamble/04_requirements.html">Guiding Principles (Informative)</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">3 Orthodontic Imaging (OIP) Profile</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../01_oip_actors_transactions/index.html">3.1 OIP Actors, Transactions, and Content Modules</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.2 OIP Profile Options</a></li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">3.2 OIP Profile Options</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="direct_photography_option.html">3.2.1 Direct Photography Option</a></li>
+<li class="toctree-l3"><a class="reference internal" href="direct_motion_picture_option.html">3.2.2 Direct Motion Picture Option</a></li>
+<li class="toctree-l3"><a class="reference internal" href="3d_scan_for_appliances_option.html">3.2.3 3D Scan for Appliances Option</a></li>
+<li class="toctree-l3"><a class="reference internal" href="3d_intraoral_extraoral_scan_option.html">3.2.4 3D Intraoral / Extraoral Scan Option</a></li>
+<li class="toctree-l3"><a class="reference internal" href="true_color_scan_option.html">3.2.5 True Color Scan Option</a></li>
+<li class="toctree-l3"><a class="reference internal" href="scanned_radiographs_option.html">3.2.6 Scanned Radiographs Option</a></li>
+</ul>
+</details></li>
 
 
 <li class="toctree-l2"><a class="reference internal" href="../03_oip_process_flow/index.html">3.4 OIP Overview</a></li>
@@ -175,9 +183,25 @@
 
 <li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/01_Conventions/index.html">7 DICOM Conventions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/02_General_Definitions/index.html">7.2  DICOM Coded Values</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/index.html">7.3 IOD Definitions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+<li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/encapsulated_3d_manufacturing_model_iods_definition.html">7.3.3 Encapsulated 3D Manufacturing Models IODs Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/hanging_protocol_iod_definition.html">7.3.8 Hanging Protocol IOD Definition</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/index.html">7.3 IOD Definitions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/vl_photographic_image_iod_definition.html">7.3.1 VL Photographic Image IOD Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/video_photographic_image_iod_definition.html">7.3.2 Video Photograpic Image IOD Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/encapsulated_3d_manufacturing_model_iods_definition.html">7.3.3 Encapsulated 3D Manufacturing Models IODs Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/surface_scan_mesh_iod_definition.html">7.3.4 Surface Scan Mesh IOD Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/multi-frame_true_color_secondary_capture_image_iod_definition.html">7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/secondary_capture_image_iod_definition.html">7.3.6 Secondary Capture Image IOD Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/structured_display_iod_definition.html">7.3.7 Structured Display IOD Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/hanging_protocol_iod_definition.html">7.3.8 Hanging Protocol IOD Definition</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/multi-frame_true_color_secondary_capture_image_iod_definition.html">7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/secondary_capture_image_iod_definition.html">7.3.6 Secondary Capture Image IOD Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/structured_display_iod_definition.html">7.3.7 Structured Display IOD Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/surface_scan_mesh_iod_definition.html">7.3.4 Surface Scan Mesh IOD Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/video_photographic_image_iod_definition.html">7.3.2 Video Photograpic Image IOD Definition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/vl_photographic_image_iod_definition.html">7.3.1 VL Photographic Image IOD Definition</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/04_Module_Definitions/index.html">7.4 Module Definitions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/04_Module_Definitions/100_Acquisition_Context/index.html">7.4.1.6 Acquisition Context</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../V3_07_DICOM/04_Module_Definitions/110_General_Image/index.html">7.4.1.7 General Image</a></li>
@@ -413,17 +437,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">3.2 OIP Profile Options</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-photography-option">3.2.1 Direct Photography Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-motion-picture-option">3.2.2 Direct Motion Picture Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-scan-for-appliances-option">3.2.3 3D Scan for Appliances Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-intraoral-extraoral-scan-option">3.2.4 3D Intraoral / Extraoral Scan Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#true-color-scan-option">3.2.5 True Color Scan Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scanned-radiographs-option">3.2.6 Scanned Radiographs Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structured-display-option">3.2.7 Structured Display Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hanging-protocol-option">3.2.8 Hanging Protocol Option</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">3.2 OIP Profile Options</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#oip-required-actor-groupings">3.3 OIP Required Actor Groupings</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#x-2-oip-profile-options-to-be-moved-to-a-future-version-of-the-profile"><em>x.2 OIP Profile Options (to be moved to a future version of the profile…)</em></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#x-2-1-modality-worklist-option">X.2.1 Modality Worklist Option</a></li>
@@ -483,80 +497,23 @@ document.write(`
 <td><p>–</p></td>
 </tr>
 <tr class="row-odd"><td><p>Image Display</p></td>
-<td><p>Structured Display Option</p></td>
-<td><p>Section 3.2.7</p></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p>Hanging Protocol Option</p></td>
-<td><p>Section 3.2.8</p></td>
+<td><p>No options defined</p></td>
+<td><p>–</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p><em>Note 1:</em> The Content Creator shall support at least one option.</p>
-<section id="direct-photography-option">
-<span id="id1"></span><h2>3.2.1 Direct Photography Option<a class="headerlink" href="#direct-photography-option" title="Link to this heading">#</a></h2>
-<p>The Direct Photography Option applies to direct photography (visible light imaging) in orthodontics.</p>
-<p>A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.1 VL Photographic Image IOD Definition.</p>
-</section>
-<section id="direct-motion-picture-option">
-<span id="id2"></span><h2>3.2.2 Direct Motion Picture Option<a class="headerlink" href="#direct-motion-picture-option" title="Link to this heading">#</a></h2>
-<p>The Direct Motion Picture Option applies to devices that capture motion picture, movies, and/or video in orthodontics.</p>
-<p>A Content Creator that supports this option shall be able to acquire 2D photographs and create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.2 Video Photograpic Image IOD Definition.</p>
-</section>
-<section id="d-scan-for-appliances-option">
-<span id="id3"></span><h2>3.2.3 3D Scan for Appliances Option<a class="headerlink" href="#d-scan-for-appliances-option" title="Link to this heading">#</a></h2>
-<p>The 3D Scan Option applies to for aligners and study models needed to produce orthodontic appliances. These are surfaces produced by devices and systems (M3D), where the data comes from different tools, for example treatment planning, or orthodontic appliance design for production/manufacturing.</p>
-<p>A Content Creator that supports this option shall be able to create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.3 Encapsulated 3D Manufacturing Model IOD Definition.</p>
-</section>
-<section id="d-intraoral-extraoral-scan-option">
-<span id="id4"></span><h2>3.2.4 3D Intraoral / Extraoral Scan Option<a class="headerlink" href="#d-intraoral-extraoral-scan-option" title="Link to this heading">#</a></h2>
-<p>The 3D Intraoral / Extraoral Scan Option applies to devices that capture 3D intraoral or extraoral surface scans directly from a patient</p>
-<p>A Content Creator that supports this option shall be able to create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.4 Surface Scan Mesh IOD Definition.</p>
-</section>
-<section id="true-color-scan-option">
-<span id="id5"></span><h2>3.2.5 True Color Scan Option<a class="headerlink" href="#true-color-scan-option" title="Link to this heading">#</a></h2>
-<p>The True Color Scan Option applies devices that scan film, negatives, or positive photographs.
-A Content Creator that supports this option shall be able to create DICOM images that are compliant with the requirements in DEN TF-3: 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition.</p>
-</section>
-<section id="scanned-radiographs-option">
-<span id="id6"></span><h2>3.2.6 Scanned Radiographs Option<a class="headerlink" href="#scanned-radiographs-option" title="Link to this heading">#</a></h2>
-<p>The Scanned Radiographs Option applies to scanners that generate a digitized image of a film emulsion radiograph (cephalograms, bytewings, intraoral radiographs, panos, or other body parts, e.g., hand-wrist).</p>
-<p>A Content Creator that supports this option shall be able to create DICOM objects that are compliant with the requirements in DEN TF-3: 7.3.6  Secondary Capture Image IOD Definitions with a Modality type of OSS.</p>
-</section>
-<section id="structured-display-option">
-<span id="id7"></span><h2>3.2.7 Structured Display Option<a class="headerlink" href="#structured-display-option" title="Link to this heading">#</a></h2>
-<p>A Structured Display DICOM Object represents a standard method of encoding and exchanging a specific presentation layout of single screen that has been created for a Patient.  The Structured Display can be exchanged with images to allow for complete reproduction of the original exam.   See <a class="reference external" href="https://dicom.nema.org/medical/dicom/current/output/html/part17.html#sect_OO.1.1">DICOM PS3.17: Section OO.1.1</a> for Informative Structured Display Use Cases for Dentistry.</p>
-<p>DICOM Structured Display which enables a user to arrange a specific presentation layout of single screen that has been created for a Patient.</p>
-<dl class="simple">
-<dt>An Image Display that supports the Structured Dislay Option shall be able to:</dt><dd><ul class="simple">
-<li><p>create a Basic Structured Display IOD, as defined in as defined in <a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/index.html#structured-display-iod-definition"><span class="std std-ref">DEN TF-3: 7.3.7</span></a>, to specify an Instance of a single screen structured display that has been created for a Patient.</p></li>
-<li><p>consume a Basic Structured Display IOD and the associated DICOM images, and</p></li>
-<li><p>render for the user a static presentation that shows the layout of the screen the exactly as specified in the Basic Structured Display IOD.</p></li>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="direct_photography_option.html">3.2.1 Direct Photography Option</a></li>
+<li class="toctree-l1"><a class="reference internal" href="direct_motion_picture_option.html">3.2.2 Direct Motion Picture Option</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3d_scan_for_appliances_option.html">3.2.3 3D Scan for Appliances Option</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3d_intraoral_extraoral_scan_option.html">3.2.4 3D Intraoral / Extraoral Scan Option</a></li>
+<li class="toctree-l1"><a class="reference internal" href="true_color_scan_option.html">3.2.5 True Color Scan Option</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scanned_radiographs_option.html">3.2.6 Scanned Radiographs Option</a></li>
 </ul>
-</dd>
-</dl>
-</section>
-<section id="hanging-protocol-option">
-<span id="id8"></span><h2>3.2.8 Hanging Protocol Option<a class="headerlink" href="#hanging-protocol-option" title="Link to this heading">#</a></h2>
-<p>A Hanging Protocol is a specialized DICOM Information Object Definition (IOD) that defines the initial display arrangement of medical images on one or more display systems. It allows for the specification of how images should be positioned, sized, annotated, and organized when initially displayed to a user.</p>
-<p>Unlike the <a class="reference internal" href="#structured-display-option"><span class="std std-ref">Basic Structured Display</span></a>, which defines a static presentation that contains references to specific image instances, Hanging Protocols provide instructions for the initial layout and the generic types of images that should be placed in the specific areas or boxes.</p>
-<p>Hanging Protocols are useful in clinical workflows where specific viewing configurations are preferred for different examination types or specialties.</p>
-<p>Hanging Protocols are particularly valuable:</p>
-<ul class="simple">
-<li><p>when a system allows the user to customize the display of images, this customization can be saved as a Hanging Protocol, exported and re-imported in different systems, allowing the clinicians to preserve their preferred display settings, without having to re-configure the display on the new system;</p></li>
-<li><p>when a practice is using more than one system that requires the visualization of images and allows the user to customize the display, the Hanging Protocol can be used transferred and synchronized between the systems to ensure that the images are displayed in the same way on all systems, without requiring the user to re-configure the display on each system.</p></li>
-</ul>
-<p>The Hanging Protocol DICOM IOD works in conjunction with display systems to streamline image interpretation and enhance workflow efficiency, providing a standardized presentation that can be applied to any image set.</p>
-<dl class="simple">
-<dt>An Image Display that supports the Hanging Protocol Option shall be able to:</dt><dd><ul class="simple">
-<li><p>create a Hanging Protocol IOD as defined in <a class="reference internal" href="../../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/index.html#hanging-protocol-iod-definition"><span class="std std-ref">DEN TF-3: 7.3.8</span></a> to specify the creator of the display, the type of Study it addresses, the type of image sets to display, the intended display environment, and the intended layout for the screen(s)</p></li>
-<li><p>consume a Hanging Protocol IOD and the associated DICOM images, and render for the user an initial presentation that shows the layout of the images the exactly as specified in the Hanging Protocol IOD</p></li>
-<li><p>enable the user to interact with the images in the display.</p></li>
-</ul>
-</dd>
-</dl>
-</section>
+</div>
 </section>
 <section id="oip-required-actor-groupings">
 <h1>3.3 OIP Required Actor Groupings<a class="headerlink" href="#oip-required-actor-groupings" title="Link to this heading">#</a></h1>
@@ -657,11 +614,11 @@ A Content Creator that supports this option shall be able to create DICOM images
       </div>
     </a>
     <a class="right-next"
-       href="../03_oip_process_flow/index.html"
+       href="direct_photography_option.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">3.4 OIP Overview</p>
+        <p class="prev-next-title">3.2.1 Direct Photography Option</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -681,17 +638,7 @@ A Content Creator that supports this option shall be able to create DICOM images
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">3.2 OIP Profile Options</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-photography-option">3.2.1 Direct Photography Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#direct-motion-picture-option">3.2.2 Direct Motion Picture Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-scan-for-appliances-option">3.2.3 3D Scan for Appliances Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-intraoral-extraoral-scan-option">3.2.4 3D Intraoral / Extraoral Scan Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#true-color-scan-option">3.2.5 True Color Scan Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scanned-radiographs-option">3.2.6 Scanned Radiographs Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structured-display-option">3.2.7 Structured Display Option</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hanging-protocol-option">3.2.8 Hanging Protocol Option</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">3.2 OIP Profile Options</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#oip-required-actor-groupings">3.3 OIP Required Actor Groupings</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#x-2-oip-profile-options-to-be-moved-to-a-future-version-of-the-profile"><em>x.2 OIP Profile Options (to be moved to a future version of the profile…)</em></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#x-2-1-modality-worklist-option">X.2.1 Modality Worklist Option</a></li>
