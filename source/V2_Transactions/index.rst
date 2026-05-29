@@ -59,7 +59,7 @@ Frameworks <https://profiles.ihe.net/GeneralIntro/ch-5.html>`_.
 
 1.4 Comment Process
 -------------------
-*TO DO: specify here how public comment will work.*
+IHE International welcomes comments on this document. Comments should be submitted using the IHE comment submission form available at `https://profiles.ihe.net <https://profiles.ihe.net>`_. Comments submitted during the Public Comment period will be reviewed by the IHE Dental Technical Committee and addressed prior to the document advancing to Trial Implementation status.
 
 1.5 Copyright Licenses
 ----------------------
@@ -92,7 +92,7 @@ disclosure process including links to forms for making disclosures is available 
 http://www.ihe.net/Patent_Disclosure_Process. Please address questions about the patent
 disclosure process to the secretary of the IHE International Board: secretary@ihe.net.
 
-1.6 History of Document Changes
+1.8 History of Document Changes
 -------------------------------
 
 .. list-table::
@@ -142,8 +142,6 @@ transferred.
 3.1.1 Scope
 ~~~~~~~~~~~
 This transaction is used to present DICOM Visual Light Photographic Images to a dental professional interpreting a study.  This includes 2-dimensional radiographic images such as intraoral and panoramic image, cone beam computed tomography (CBCT) data); as well as visible light images, such as photographs in an organized and structured manner for all aspect of oral healthcare, including those in private practice settings.  The  VL Photographic Images rendered in this transaction are produced by a OIP Content Creator actor supporting the :ref:`DEN TF-1: 3.2.1 Direct Photography Option <direct_photography_option>`.
-
-*<NOTE to Toni:  The above list comes from the ADA 1114, Introduction section pg 7>*
 
 This transaction is not a typical network-based transaction between two devices; instead, the primary focus of the requirements is on the behavior of the display application rather than messaging between two actors. This can be thought
 of as an “informational transaction” between a display device and a user.

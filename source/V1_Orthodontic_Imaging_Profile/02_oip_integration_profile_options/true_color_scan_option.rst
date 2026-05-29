@@ -1,3 +1,5 @@
+:orphan:
+
 .. _true_color_scan_option:
 
 3.2.5 True Color Scan Option

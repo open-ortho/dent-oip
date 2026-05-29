@@ -1,3 +1,5 @@
+:orphan:
+
 .. _scanned_radiographs_option:
 
 3.2.6 Scanned Radiographs Option

@@ -107,13 +107,6 @@ This normative section contains extensions to DICOM tags defined in the Patient 
 + `DICOM PS3.3: C.7.2.2  <https://dicom.nema.org/medical/dicom/current/output/html/part03.html#sect_C.7.2.2>`_ "Patient Study Module"
 + Extensions in Table 7.4.1.3.1.1-1 are from ADA Standard No. 1114 Rev. ??. Section 6.1
 
-7.4.1.3.1 Guidance on Encoding Reason for Visit
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-In orthodontics, the reason for a visit is typically obtained from the Practice Management System (PMS) and is associated with an appointment. Examples include "Initial Consultation", "Follow-up", "Debanding", or "Adjustment". These values represent the reason for the patient's visit and do not necessarily describe any imaging-specific procedures.
-
-This differs from Requested Procedure Description (0032,1060), which is used in the Modality Worklist to describe the image-specific procedure to be performed. See :ref:`requested_procedure`.
-
 **Table 7.4.1.3.1.1-1 Patient Study Module Attribute Requirements**
 
 .. list-table::
@@ -131,6 +124,13 @@ This differs from Requested Procedure Description (0032,1060), which is used in 
       - (0032,1067)
       - RC+
       - If the PMS uses values from a set, such as those used for billing, or a pre-programmed or customizable list, then (0032,1067) SHALL be used. This sequence allows multiple codes, but for orthodontic visits, typically only one code is used.
+
+7.4.1.3.1 Guidance on Encoding Reason for Visit
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In orthodontics, the reason for a visit is typically obtained from the Practice Management System (PMS) and is associated with an appointment. Examples include "Initial Consultation", "Follow-up", "Debanding", or "Adjustment". These values represent the reason for the patient's visit and do not necessarily describe any imaging-specific procedures.
+
+This differs from Requested Procedure Description (0032,1060), which is used in the Modality Worklist to describe the image-specific procedure to be performed. See :ref:`requested_procedure`.
 
 .. _general_series_module:
 
@@ -155,15 +155,7 @@ This normative section contains extensions to DICOM tags defined in the General 
     * - Modality
       - (0008,0060)
       - R
-      - The OIP profile specifies these values:
-
-	**XC** - for VL Photographic Image IOD, Video Photographic IOD, Multi-frame True Color Secondary Capture Image IOD
-
-	?? - for Scan Mesh IOD
-
-	**OSS** - for Secondary Capture IOD
-
-	**M3D** - for Encapsulated 3D Manufacturing Model IOD
+      - **XC** - for VL Photographic Image IOD
 
 .. _general_equipment_module:
 
@@ -194,4 +186,13 @@ This normative section contains extensions to DICOM tags defined in the General 
       - (0018,1002)
       - RC+
       - Shall include the imaging device identifier in the DICOM header when the system generating the image knows which device was used. If the device is unknown—such as when an image is reconstructed from a 3D volume without device metadata, or when a film radiograph, photographic slide, negative or print is rescanned and the original capture device cannot be determined—then the imaging device element may be omitted.
+
+.. toctree::
+   :hidden:
+
+   100_Acquisition_Context/index
+   110_General_Image/index
+   150_Device/index
+   220_SOP_Common/index
+   170_VL_Image/index
 

@@ -7,7 +7,9 @@ This normative section contains extensions to DICOM tags defined in the Acquisit
 
 For orthodontic photography, we make use of the Acquisition Context module to encode the conditions of the patient during the photographic acquisition session (lips and mouth open, closed, smiling, relaxed, etc), the occlusal relationship (centric occlusion, centric relation, see :ref:`definitions`), the Image View (projection) and the Image View Modifier (direct or indirect) during the photographic acquisition session. 
 
-<*QUESTION FOR TONI:  Though it is mentioned above, I don't see the Image View  or Image View Modifier specified in the context details below*>
+.. note::
+
+   Image View (projection) and Image View Modifier (direct or indirect) are specified in the VL Image Module (Section 7.4.2.1) via the View Code Sequence (0054,0220), not in the Acquisition Context Sequence. The Acquisition Context Sequence below covers patient functional conditions, orthodontic progress context, and dental occlusion.
 
 Each of these is encoded as a sequence item in the Acquisition Context Sequence.  Table 7.4.1.6-1 and Section 7.4.1.6.1 specifiy how each acquisition context is encoded.
 

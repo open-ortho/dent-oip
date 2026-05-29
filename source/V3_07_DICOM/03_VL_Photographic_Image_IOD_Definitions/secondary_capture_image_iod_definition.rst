@@ -1,3 +1,5 @@
+:orphan:
+
 .. _secondary_capture_image_iod_definition:
 
 7.3.6 Secondary Capture Image IOD Definition

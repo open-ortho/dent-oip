@@ -1,3 +1,5 @@
+:orphan:
+
 .. _multi-frame_true_color_secondary_capture_image_iod_definition:
 
 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition

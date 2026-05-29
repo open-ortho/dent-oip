@@ -2,20 +2,38 @@ Introduction to this Supplement
 ===============================
 The intended audience of this document is the medical imaging software developers or medical imaging device manufacturer who deals with visible light digital photography.
 
-*<TO DO: First, briefly describe the current landscape in dental imaging, presumably with many proprietary implementations.  Then describe how the OIP profile addresses this problem.>*
+Orthodontic imaging today relies on a fragmented landscape of proprietary implementations. Imaging devices and software systems from different vendors store and label photographic images in incompatible ways, making it difficult to exchange images across sites, integrate with practice management systems, or build clinical applications that work with images from multiple sources. This profile addresses that problem by specifying exactly how orthodontic visible light photographs shall be encoded using DICOM and SNOMED CT, providing a single, unambiguous standard that any vendor can implement.
 
-The document, along with its accompanying CSV files and DICOM sample files found in the Volume 3 Appendices, provides a detailed implementation guide for encoding orthodontic/craniofacial
-views using DICOM with SNOMED CT terminology. 
+The Orthodontic Imaging Profile (OIP) specifies the exact DICOM tags and SNOMED CT codes required to unambiguously label each clinical image. The use of DICOM populated with standard SNOMED values enables seamless interoperability of imaging data regardless of whether images are used within a site or across different sites and systems. The standard provides tables for each individual image view identified in ADA WP-1100, along with the reasoning behind the choice of each DICOM tag.
 
-Using this Orthodontic Imaging Profile (OIP) to implement a standard encoding of Visual Light Photographic Images, and other DICOM IODs, ensures interoperability between vendors and enables the imaging software developer or device manufacturer to spend less time designing and implementing novel and proprietary ways for connecting with other products.  That work is alreay done and defined. All that needs to be done is implement it in your product.
+The document, along with its accompanying CSV files and DICOM sample files found in the Volume 3 Appendices, provides a detailed implementation guide for encoding orthodontic/craniofacial views using DICOM with SNOMED CT terminology.
 
+Using this Orthodontic Imaging Profile (OIP) to implement a standard encoding of Visual Light Photographic Images ensures interoperability between vendors and enables the imaging software developer or device manufacturer to spend less time designing and implementing novel and proprietary ways for connecting with other products. That work is already done and defined. All that needs to be done is implement it in your product.
 
 .. note::
 
-    The :ref:`list of views presented in the Appendix <view_examples>` of this standard serve as example for encoding a virtually unlimited number of view types. As long as the implementer follows the guidelines of this standard, the implementation will comply to this standard, even if the view represented in such implementation is not included as one of the views in the Appendix.
+    The :ref:`list of views presented in the Appendix <view_examples>` of this standard serve as examples for encoding a virtually unlimited number of view types. As long as the implementer follows the guidelines of this standard, the implementation will comply to this standard, even if the view represented in such implementation is not included as one of the views in the Appendix.
 
-This guide depends on ADA SCDI White Paper 1100 -
-Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets available online on the ADA Catalog.
+This guide depends on `ADA SCDI White Paper 1100 - Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets <https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/resources/practice/dental-standards/aip-review/1100_aip_review_july_2025.pdf>`_ available online on the ADA Catalog.
+
+Guiding Principles (Informative)
+---------------------------------
+
+The OIP Profile was developed to fulfill the requirements specified in ADA Standard 1100 by the orthodontic community, thus setting a standard methodology that clearly defines how orthodontic photographic images should be electronically represented.
+
+These principles guided OIP Profile development:
+
+1. **Using DICOM**: DICOM provides the industry with the ability to develop solutions that store and recall images and their metadata across different products. DICOM has a defined protocol for exchanging images over networks and between devices. Promoting DICOM use facilitates implementation, and increased adoption by developers enhances interoperability.
+
+2. **Improving Search Capabilities**: Using DICOM tags allows the industry to develop solutions that enhance search capabilities by searching through DICOM tags and their values.
+
+3. **Standardizing use of Codes**: Standardizing use of SNOMED CT ensures consistent interpretation across different devices and software.
+
+4. **Persistence**: Persistence is a key characteristic of DICOM and SNOMED CT.
+
+5. **Promoting Standards-based Implementations**: By implementing this standard, the industry can develop products that capture and store all necessary information, eliminating the need for custom implementations. Standards-based implementations enhance interoperability between different vendors' products.
+
+Note that demonstrating or aiding the staff member during the acquisition process is part of the user experience of the software they are using and is not covered in this document.
 
 Open Issues and Questions
 =========================
@@ -43,13 +61,11 @@ This section identifies open issues/questions that need to be addressed prior to
 
 #. Proposed 1114 AIP, Section 11.2 'DICOM Requirements for 2D Orthodontic/Craniofacial/Forensic Visible Light Images' contains requirements requirements labeled with SHOULD.  Should any of these requirements be promoted to a "SHALL" for OIP?
 
-Closed Issues 
+Closed Issues
 =============
-#. This first revision of OIP does does not include transactions that specify how DICOM images and associated data is exchanged between actors.  Transactions such as DICOM C-STORE, Modality Worklist, or Query/Retrieve are deferred to a future version of OIP, or to a separate profile.
+#. This first revision of OIP does not include transactions that specify how DICOM images and associated data is exchanged between actors. Transactions such as DICOM C-STORE, Modality Worklist, or Query/Retrieve are deferred to a future version of OIP, or to a separate profile.
 
-#. 
-
-#. 
+#. **Scope limited to Visible Light images in V1** — At the ADA meeting in Chicago, the working group decided that the first version of this profile is intentionally limited to the creation and display of Visible Light images (VL Photographic Image IOD). Support for other DICOM IODs used in orthodontics (e.g., Video Photographic Image, Surface Scan Mesh, Secondary Capture, Encapsulated 3D Manufacturing Model) will be added in future revisions of OIP.
 
 IHE Technical Frameworks General Introduction
 =============================================
@@ -83,4 +99,17 @@ The table below lists existing actors that are utilized in this profile.
       - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.  Note:  In OIP, 'content' is DICOM objects.  See :ref:`Volume 1 Section 3.1.1.2 <content_consumer_actor> for examples of products that could be a Content Consumer in OIP.
     * - Image Display
       - The Image Display Actor presents medical images and associated imaging data.
+
+`Appendix B <https://profiles.ihe.net/GeneralIntro/ch-B.html>`_ - **Transactions**
+-------------------------------------------------------------------------------------
+
+The table below lists the transactions used in this profile.
+
+.. list-table::
+    :header-rows: 1
+
+    * - **Transaction Name and Number**
+      - **Description**
+    * - Display Visible Light Images [DEN-1]
+      - The Image Display Actor retrieves and renders VL Photographic Images in conformance with the viewset requirements defined in :ref:`Vol 2 Sec 3.1 <den_transactions>`.
 

@@ -2,7 +2,7 @@
 
 3.4 OIP Overview
 ----------------
-The Orthodontic Imaging Profile ... *TO DO:  Provide a short intro to concepts here*
+The Orthodontic Imaging Profile (OIP) defines how visible light photographic images acquired during orthodontic care shall be encoded, stored, and displayed using DICOM. This section provides an overview of the key clinical and technical concepts needed to understand the profile, followed by the use cases that motivated its design.
 
 3.4.1 Concepts
 ~~~~~~~~~~~~~~

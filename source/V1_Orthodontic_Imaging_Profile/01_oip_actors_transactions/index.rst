@@ -29,56 +29,25 @@ Table 3.1-1 lists the transactions content module(s) defined in the OIP Profile.
     * - Content Creator & Content Consumer
       - VL Photographic Image IOD Definition
       - --
-      - R *(Note 1)*
-      - DEN TF-3: 7.3.1 
-    * - 
-      - Video Photograpic Image IOD Definition
-      - --
-      - R *(Note 1)*
-      - DEN TF-3: 7.3.2 
-
-    * - 
-      - Encapsulated 3D Manufacturing Model IOD Definition
-      - --
-      - R *(Note 1)*
-      - DEN TF-3: 7.3.3 
-    * - 
-      - Secondary Capture IOD Definition
-      - --
-      - R *(Note 1)*
-      - DEN TF-3: 7.3.3 
-    * - 
-      - Surface Scan Mesh IOD Definition
-      - --
-      - R *(Note 1)*
-      - DEN TF-3: 7.3.4 
-    * - 
-      - Multi-frame True Color Secondary Capture Image IOD Definition
-      - --
-      - R *(Note 1)*
-      - DEN TF-3: 7.3.5 
-    * - 
-      - Secondary Capture IOD Definition
-      - --
-      - R *(Note 1)*
-      - DEN TF-3: 7.3.6 
+      - R
+      - DEN TF-3: 7.3.1
     * - Image Display
       - --
       - Display Visible Light Images [DEN-1]
       - R
       - DEN TF-2: 3.1
-    * - 
+    * -
       - Structured Display IOD Definition
       - --
-      - R
-      - DEN TF-3: 7.3.7
-    * - 
+      - O *(Note 1)*
+      - DEN TF-3: 7.3.2
+    * -
       - Hanging Protocol IOD Definition
       - --
-      - R
-      - DEN TF-3: 7.3.8
+      - O *(Note 1)*
+      - DEN TF-3: 7.3.3
 
-*Note 1:* A Content Creator shall support at least one of these Content Modules (i.e., IOD Defintiions).   A Content Consumer shall support all Content Modules listed. 
+*Note 1:* Structured Display and Hanging Protocol support are optional capabilities for the Image Display actor. See Section 3.2 for the corresponding options.
 
 3.1.1 Actor Description and Actor Profile Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,16 +57,15 @@ Most requirements are documented in DEN: TF-2: Transactions and DEN TF-3: Conten
 
 3.1.1.1 Content Creator
 +++++++++++++++++++++++
-In the OIP profile, the Content Creator is a 'generic' actor for a system that creates DICOM images.  
-To identify which type(s) of DICOM images a Content Creator supports, it shall specify support one or more of the Options in Table 3.2-1.
+In the OIP profile, the Content Creator is a system that acquires or converts visible light photographic images and encodes them as VL Photographic Image IODs compliant with the requirements in DEN TF-3: 7.3.1 of this profile.
 
-In the 'real-world' OIP Content Creator actor may be:
+In the 'real-world', an OIP Content Creator actor may be:
 
-+ DICOM-compliant devices such as physical cameras, intra-oral scanners, smart phone apps.   These acquire and create medical images while a patient is present.
++ A DICOM-compliant camera, smartphone app, or imaging workstation that directly acquires and creates VL Photographic Image DICOM objects while a patient is present.
 
-+ A system or software that interfaces to a non-DICOM ready modality in order to integrate that modality into dental care workflows by creating DICOM output compliant with this profile.  Examples of a non-DICOM ready modality includes conventional photographic SLR cameras, a smart phone with a generic photo app, etc.
++ A system or software that interfaces to a non-DICOM ready device (e.g., a conventional SLR camera or a smartphone with a generic photo app) in order to integrate that device into dental care workflows by creating DICOM VL Photographic Image output compliant with this profile.
 
-+ A system or software that converts existing contents of a non-DICOM archive into DICOM images compliant with this profile
++ A system or software that converts existing contents of a non-DICOM archive into VL Photographic Image IODs compliant with this profile.
 
 .. _content_consumer_actor:
 
@@ -109,9 +77,7 @@ In the OIP profile, the Content Consumer is a 'generic' actor for a system that 
 
 3.1.1.3 Image Display
 +++++++++++++++++++++
-The Image Display is a specialized Content Consumer that implements requirements to provide standardized display functionality to ensure ...
-
-*<TO DO: Describe to goal of standardized display requirements here.   You may want to point to the ADA spec driving these requirements.>*
+The Image Display is a specialized Content Consumer that implements standardized display requirements to ensure consistent, clinically meaningful presentation of orthodontic photographs. ANSI/ADA Standard No. 1100 defines the viewsets (VS-01 through VS-04) and the associated layout expectations that clinical users rely on for assessment and treatment planning. The goal of the Image Display actor is to guarantee that any OIP-compliant viewer renders these viewsets in a predictable, standardized way regardless of vendor.
 
 An Image Display actor in the OIP Profile shall implement all display requirements in DEN TF-2: 3.1.4.1.3. This provides mandatory support for Viewsets VS-01, VS-02, VS-03, and VS-04 as defined in ANSI/ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets".
 

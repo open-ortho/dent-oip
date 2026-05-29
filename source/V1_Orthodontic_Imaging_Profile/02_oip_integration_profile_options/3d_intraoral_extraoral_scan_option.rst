@@ -1,3 +1,5 @@
+:orphan:
+
 .. _3d_intraoral_extraoral_scan_option:
 
 3.2.4 3D Intraoral / Extraoral Scan Option

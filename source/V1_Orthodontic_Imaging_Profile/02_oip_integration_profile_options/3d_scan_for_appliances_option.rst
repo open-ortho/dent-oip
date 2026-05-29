@@ -1,3 +1,5 @@
+:orphan:
+
 .. _3d_scan_for_appliances_option:
 
 3.2.3 3D Scan for Appliances Option
