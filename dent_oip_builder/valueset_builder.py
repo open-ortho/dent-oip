@@ -36,10 +36,10 @@ SYSTEM_TO_CODESCHEMEDESIGNATOR_MAP = {
 
 
 urls = [
-    "http://terminology.open-ortho.org/fhir/extraoral-2d-photographic-scheduled-protocol",
-    "http://terminology.open-ortho.org/fhir/intraoral-2d-photographic-scheduled-protocol",
-    "http://terminology.open-ortho.org/fhir/extraoral-3d-visible-light-scheduled-protocol",
-    "http://terminology.open-ortho.org/fhir/intraoral-3d-visible-light-scheduled-protocol",
+    "https://terminology.open-ortho.org/fhir/sid/ada1100/CodeSystem/extraoral-2d-photographic-scheduled-protocol",
+    "https://terminology.open-ortho.org/fhir/sid/ada1100/CodeSystem/intraoral-2d-photographic-scheduled-protocol",
+    "https://terminology.open-ortho.org/fhir/sid/ada1100/CodeSystem/extraoral-3d-visible-light-scheduled-protocol",
+    "https://terminology.open-ortho.org/fhir/sid/ada1100/CodeSystem/intraoral-3d-visible-light-scheduled-protocol",
     "ftp://medical.nema.org/medical/dicom/resources/valuesets/fhir/json/ValueSet-dicom-cid-2-AnatomicModifier.json",
     "ftp://medical.nema.org/medical/dicom/resources/valuesets/fhir/json/ValueSet-dicom-cid-7201-ReferencedImagePurposeOfReference.json",
     "ftp://medical.nema.org/medical/dicom/resources/valuesets/fhir/json/ValueSet-dicom-cid-247-LateralityLeftRightOnly.json"
