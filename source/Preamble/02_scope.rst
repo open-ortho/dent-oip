@@ -4,17 +4,17 @@ The intended audience of this document is the medical imaging software developer
 
 Orthodontic imaging today relies on a fragmented landscape of proprietary implementations. Imaging devices and software systems from different vendors store and label photographic images in incompatible ways, making it difficult to exchange images across sites, integrate with practice management systems, or build clinical applications that work with images from multiple sources. This profile addresses that problem by specifying exactly how orthodontic visible light photographs shall be encoded using DICOM and SNOMED CT, providing a single, unambiguous standard that any vendor can implement.
 
-The Orthodontic Imaging Profile (OIP) specifies the exact DICOM tags and SNOMED CT codes required to unambiguously label each clinical image. The use of DICOM populated with standard SNOMED values enables seamless interoperability of imaging data regardless of whether images are used within a site or across different sites and systems. The standard provides tables for each individual image view identified in ADA WP-1100, along with the reasoning behind the choice of each DICOM tag.
+The Orthodontic Imaging Profile (OIP) specifies the required DICOM tags and SNOMED CT codes to unambiguously label each clinical image. The use of DICOM populated with standard SNOMED values enables seamless interoperability of imaging data regardless of whether images are used within a site or across different sites and systems. The standard provides tables for each individual image view identified in ADA WP-1100, along with the reasoning behind the choice of each DICOM tag.
 
 The document, along with its accompanying CSV files and DICOM sample files found in the Volume 3 Appendices, provides a detailed implementation guide for encoding orthodontic/craniofacial views using DICOM with SNOMED CT terminology.
 
-Using this Orthodontic Imaging Profile (OIP) to implement a standard encoding of Visual Light Photographic Images ensures interoperability between vendors and enables the imaging software developer or device manufacturer to spend less time designing and implementing novel and proprietary ways for connecting with other products. That work is already done and defined. All that needs to be done is implement it in your product.
+Using this document to implement a standard encoding of Visual Light Photographic Images ensures interoperability between vendors and enables the imaging software developer or device manufacturer to spend less time designing and implementing novel and proprietary ways for connecting with other products. That work is already done and defined. All that needs to be done is implement it in your product.
 
 .. note::
 
     The :ref:`list of views presented in the Appendix <view_examples>` of this standard serve as examples for encoding a virtually unlimited number of view types. As long as the implementer follows the guidelines of this standard, the implementation will comply to this standard, even if the view represented in such implementation is not included as one of the views in the Appendix.
 
-This guide depends on `ADA SCDI White Paper 1100 - Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets <https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/resources/practice/dental-standards/aip-review/1100_aip_review_july_2025.pdf>`_ available online on the ADA Catalog.
+This guide depends on `ANSI/ADA Dentistry – 2D and 3D Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets <https://webstore.ansi.org/standards/ada/ansiada11002022>`_ available online on the ANSI webstore.
 
 Guiding Principles (Informative)
 ---------------------------------
@@ -37,9 +37,9 @@ Note that demonstrating or aiding the staff member during the acquisition proces
 
 Open Issues and Questions
 =========================
-This section identifies open issues/questions that need to be addressed prior to publishing OIP for Trial Implementation. We are specifically soliciting public comments for these items:
+This section identifies open issues/questions that need to be addressed prior to publishing this document. We are specifically soliciting public comments for these items:
 
-#. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>` -- In this draft of OIP, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to 'process' all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?
+#. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>` -- In this draft, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to 'process' all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?
 
 #. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>` -- This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?
 
@@ -56,8 +56,6 @@ This section identifies open issues/questions that need to be addressed prior to
 #. Vol 3 Sec 7.4.2.2 Are there any additional OIP constraints on attributes in the VL Photographic Acquisition module?
 
 #. Proposed 1114 AIP, Sections 7.1-7.4 contain requirements for acquiring Intra-Oral Radiographs.  Should those requirements be incorporated into OIP?   If so, they would become functional requirements added to Vol 1 Sec 3.2.1 for a Content Creator that supports the Direct Photography Option (creating VL Photographic Images).
-
-
 
 #. Proposed 1114 AIP, Section 11.2 'DICOM Requirements for 2D Orthodontic/Craniofacial/Forensic Visible Light Images' contains requirements requirements labeled with SHOULD.  Should any of these requirements be promoted to a "SHALL" for OIP?
 
@@ -113,3 +111,8 @@ The table below lists the transactions used in this profile.
     * - Display Visible Light Images [DEN-1]
       - The Image Display Actor retrieves and renders VL Photographic Images in conformance with the viewset requirements defined in :ref:`Vol 2 Sec 3.1 <den_transactions>`.
 
+
+`Appendix D <https://profiles.ihe.net/GeneralIntro/ch-D.html>`_ - **Glossary**
+-------------------------------------------------------------------------------------
+
+The table lists terms that should be added to the General IHE Glossary.
