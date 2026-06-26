@@ -13,13 +13,12 @@ Builds located in `dist/`.
 
 [Sphinx](https://www.sphinx-doc.org/) is the tool used to build these files into HTML, PDF, etc. Sphinx uses the reStructuredText language.
 
-
 ## Requirements
 
-* Python3: the whole thing runs in Python3
-* orthoviews-linedrawings: all the line drawings which represent the orthodontic views, come from these line drawings. They are also used to create the DICOM sample files.
-* dicom4ortho: used to generate the DICOM files. The orthoviews-linedrawings are used as `PixelValue`.
-* pynetdicom: used to convert the DICOM files into tables for the example views in the appendix section of this document.
+- Python3: the whole thing runs in Python3
+- orthoviews-linedrawings: all the line drawings which represent the orthodontic views, come from these line drawings. They are also used to create the DICOM sample files.
+- dicom4ortho: used to generate the DICOM files. The orthoviews-linedrawings are used as `PixelValue`.
+- pynetdicom: used to convert the DICOM files into tables for the example views in the appendix section of this document.
 
 ## Editing
 
@@ -63,12 +62,30 @@ Saving in git is called "committing". When it is time to save, the editor should
 
 ### Not a git-lover?
 
-If you don't feel like learning how git works (understandable), editing the documents can be done any way then sent Toni for the merging. 
+If you don't feel like learning how git works (understandable), editing the documents can be done any way then sent Toni for the merging.
 
 For example, copy the page as it appears here in GitHub and paste it in your own editor of choice, (MS-Word, Pages, Google Docs, LibreOffice, etc), then make modifications. When done, send Toni the .docx file, which he can then convert back to `.rst`.
 
 You can also work off of the docx build: you can find a link to it on the first page of the released HTML document: [here](http://open-ortho.org/dent-oip/release/index.html) . When doing so, make strict use of heading formatting to divide sections and paragraphs, and do not worry about any formatting: this will facilitate merging the modifications back
 in `.rst`.
+
+## Release Branching
+
+When the current release is still in progress but later-release content already
+exists, keep the current release on `develop` and park later-release work on a
+future branch.
+
+Recommended branch roles:
+
+- `master`: published releases only.
+- `develop`: active work for the current release, e.g. R1.
+- `future/r2`: content intended for the following release, e.g. R2.
+- `feature/*`: short-lived branches merged into either `develop` or `future/r2`.
+
+Merge `develop` into `future/r2` regularly so future work stays current with R1.
+Do not merge `future/r2` back into `develop` until R1 has shipped. When R1 is
+ready, cut a `release/r1` branch from `develop`, publish and tag R1, then merge
+`future/r2` into `develop` to begin normal R2 development.
 
 ## Building
 
@@ -87,13 +104,11 @@ This section wasn't required until recently the latexpdf target stopped working 
 
     sudo apt install texlive
 
-
-
 ### Building on macOS
 
 The `Makefile` makes use of gnu cut. You need to install `brew install coreutils`, then replace the `cut` instance in `Makefile` with `gcut`.
 
-To build the PDF, you will need LaTeX. 
+To build the PDF, you will need LaTeX.
 
         brew install basictex
         sudo tlmgr update --self
@@ -113,9 +128,9 @@ Both username and password are `scdi116`.
 
 ## View Tables Generation
 
-The CSV files in `source/tables/*.csv` are used to automatically generate another set of CSV files located in `source/tables/generated/*.csv`. The final tables in the appendices are built from CSV files `source/tables/generated/*.csv`. 
+The CSV files in `source/tables/*.csv` are used to automatically generate another set of CSV files located in `source/tables/generated/*.csv`. The final tables in the appendices are built from CSV files `source/tables/generated/*.csv`.
 
-`view_maker.py` contains instructions to 
+`view_maker.py` contains instructions to
 
 - import the `source/tables/generated/*.csv` into an SQLite database
 - build the tables into a `_temp` table, looping row by row with a large SQL command.
@@ -126,4 +141,4 @@ This process is very inefficient, but optimization is not needed since execution
 
 ## Image generation
 
-The images of the tables in the appendix are imported automatically by `make` from the `open-ortho/orthoviews-linedrawings` GitHub repository, which is a submodule of this repository. You will therefore find  the `sources/images` folder excluded from `.gitignore`.
+The images of the tables in the appendix are imported automatically by `make` from the `open-ortho/orthoviews-linedrawings` GitHub repository, which is a submodule of this repository. You will therefore find the `sources/images` folder excluded from `.gitignore`.
