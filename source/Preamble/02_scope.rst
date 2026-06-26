@@ -9,19 +9,17 @@ views using DICOM with SNOMED CT terminology.
 
 Using this Orthodontic Imaging Profile (OIP) to implement a standard encoding of Visual Light Photographic Images, and other DICOM IODs, ensures interoperability between vendors and enables the imaging software developer or device manufacturer to spend less time designing and implementing novel and proprietary ways for connecting with other products.  That work is alreay done and defined. All that needs to be done is implement it in your product.
 
-
 .. note::
 
     The :ref:`list of views presented in the Appendix <view_examples>` of this standard serve as example for encoding a virtually unlimited number of view types. As long as the implementer follows the guidelines of this standard, the implementation will comply to this standard, even if the view represented in such implementation is not included as one of the views in the Appendix.
 
-This guide depends on ADA SCDI White Paper 1100 -
-Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets available online on the ADA Catalog.
+This guide depends on `ANSI/ADA Dentistry – 2D and 3D Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets <https://webstore.ansi.org/standards/ada/ansiada11002022>`_ available online on the ANSI webstore.
 
 Open Issues and Questions
 =========================
-This section identifies open issues/questions that need to be addressed prior to publishing OIP for Trial Implementation. We are specifically soliciting public comments for these items:
+This section identifies open issues/questions that need to be addressed prior to publishing this document. We are specifically soliciting public comments for these items:
 
-#. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>` -- In this draft of OIP, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to 'process' all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?
+#. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>` -- In this draft, we defined options for the Content Creator to enable it to declare which type(s) of DICOM objects it is able to produce.  Should the Content Consumer that is compliant with this profile shall be able to 'process' all of the types of DICOM images in 6 options (a common pattern in IHE to enhance interoperability; e.g., a Consumer that is a DICOM archive is able to store many types of DICOM objects), or is it more appropriate to have the same options for the Consumer as we have for the Creator, enabling a Consumer that supports storing/displaying/processing a subset of the DICOM objects defined to be compliant with OIP?
 
 #. :ref:`Vol 1 Sec 3.2 <oip_integration_profile_options>` -- This revision of the table proposes Options on the Image Display for support of Structured Display and Hanging Protocol.  Should this remain in OIP, be deferred to a future revision of the profile (or made mandatory, if that is appropriate)?
 
@@ -38,8 +36,6 @@ This section identifies open issues/questions that need to be addressed prior to
 #. Vol 3 Sec 7.4.2.2 Are there any additional OIP constraints on attributes in the VL Photographic Acquisition module?
 
 #. Proposed 1114 AIP, Sections 7.1-7.4 contain requirements for acquiring Intra-Oral Radiographs.  Should those requirements be incorporated into OIP?   If so, they would become functional requirements added to Vol 1 Sec 3.2.1 for a Content Creator that supports the Direct Photography Option (creating VL Photographic Images).
-
-
 
 #. Proposed 1114 AIP, Section 11.2 'DICOM Requirements for 2D Orthodontic/Craniofacial/Forensic Visible Light Images' contains requirements requirements labeled with SHOULD.  Should any of these requirements be promoted to a "SHALL" for OIP?
 
@@ -83,4 +79,3 @@ The table below lists existing actors that are utilized in this profile.
       - The Content Consumer Actor views, imports, or performs other processing of content created by a Content Creator Actor.  Note:  In OIP, 'content' is DICOM objects.  See :ref:`Volume 1 Section 3.1.1.2 <content_consumer_actor> for examples of products that could be a Content Consumer in OIP.
     * - Image Display
       - The Image Display Actor presents medical images and associated imaging data.
-

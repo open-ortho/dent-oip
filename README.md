@@ -1,4 +1,4 @@
-# Dentistry Technical Framework Supplement Orthodontic Imaging Profile (OIP) Trial Implementation
+# Dentistry - Orthodontic Imaging Technical Implementation Profile
 
 Version: DENT-OIP v0.2.7
 
