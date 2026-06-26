@@ -15,7 +15,7 @@ DENT-OIP is an **IHE Profile** for orthodontic imaging standards, written in **r
 
 ### Document Structure (IHE Profile Format)
 
-- **Preamble**: Foreword, Scope, Normative References, Requirements
+- **Preamble**: Introduction/scope, open and closed issues, IHE boilerplate references
 - **Volume 1**: Orthodontic Imaging Profile (actors, transactions, integration profile options, process flow, security)
 - **Volume 2**: Transactions (detailed transaction specifications)
 - **Volume 3**: DICOM specifications (conventions, definitions, IOD definitions, module definitions)
@@ -222,7 +222,7 @@ dent-oip/
 ├── source/              # Sphinx source files (.rst)
 │   ├── conf.py         # Sphinx configuration
 │   ├── index.rst       # Main entry point
-│   ├── Preamble/       # Foreword, scope, references, requirements
+│   ├── Preamble/       # Introduction/scope, issues, IHE boilerplate references
 │   ├── V1_Orthodontic_Imaging_Profile/  # Volume 1: actors, transactions, process flow
 │   ├── V2_Transactions/                  # Volume 2: transaction details
 │   ├── V3_07_DICOM/                     # Volume 3: DICOM specifications
@@ -266,6 +266,28 @@ dent-oip/
 - **Development branch**: `develop` (nightly builds)
 - Never commit `dist/`, `generated/`, `source/images/`, `.pyc`, `*.log`
 - GitHub Actions automatically builds on push to `master` and `develop`
+
+### Temporary Lynn Review Workflow
+
+Remove this section after `feature/55-incorporate-lynns-work` has been merged
+and Lynn's review work is complete.
+
+During the Lynn TODO review, `feature/55-incorporate-lynns-work` is the R1
+cleanup/review branch and `future/r2` preserves work needed for later releases.
+For each reviewed TODO item, classify the resulting changes before applying them
+to `future/r2`:
+
+- **Shared cleanup/editorial**: apply to both R1 and R2. This includes approved
+  deletions of obsolete template files or wrong structure.
+- **R1-only scope narrowing**: keep only on R1. This includes deleting or hiding
+  non-VL modalities, non-VL IODs, or other content solely because R1 is limited
+  to VL Photographic Images.
+- **R2-adapted work**: apply the cleanup to R2, but preserve, move, or mark the
+  future-release content instead of deleting it.
+
+Do not cherry-pick the large unreviewed cleanup commit `64f537060` wholesale into
+`future/r2`. Extract reviewed hunks or smaller reviewed commits from the 55
+branch and apply them to R2 according to the classification above.
 
 ## Common Tasks
 
