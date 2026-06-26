@@ -47,7 +47,7 @@ Preamble,,Appendix D - Glossary,,CREATED,Only needed if you have terms in the do
 2,1.5,Copyright Licenses,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#15-copyright-licenses,Done  ,
 2,1.6,Trademark,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#16-trademark,Done  ,
 2,1.7,Disclaimer Regarding Patent Rights,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#17-disclaimer-regarding-patent-rights,Done  ,
-2,1.8,History of Document Changes,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#16-history-of-document-changes,Update it,Note that I mistakenly marked this as Sec 1.6 
+2,1.8,History of Document Changes,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#16-history-of-document-changes,Update it,Note that I mistakenly marked this as Sec 1.6
 2,2,Conventions,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#2-conventions,Done  ,
 2,2.1,Transaction Modeling and Profile Conventions,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#21-transaction-modeling-and-profile-conventions,Done  ,
 2,2.2,Use of Coded Entities and Coding Schemes,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#22-use-of-coded-entities-and-coding-schemes,Done  ,
@@ -86,7 +86,7 @@ Preamble,,Appendix D - Glossary,,CREATED,Only needed if you have terms in the do
 3,7.2.9,Dental Occlusion,https://github.com/open-ortho/dent-oip/blob/master/source/V3_07_DICOM/02_General_Definitions/index.rst#729-dental-occlusion,Done,
 3,7.2.10,Longitudinal Temporal Event Type,https://github.com/open-ortho/dent-oip/blob/master/source/V3_07_DICOM/02_General_Definitions/index.rst#7210-longitudinal-temporal-event-type,Check & complete,See 'question for Toni' in the text
 3,7.3,IOD Definitions,https://github.com/open-ortho/dent-oip/blob/master/source/V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/index.rst#73-iod-definitions,Update it,I added  links to all of the IODs that were originally in scope.   Update the list to only include the link to the VL Photographic Image IOD
-3,7.3.1,VL Photographic Image IOD Definition,https://github.com/open-ortho/dent-oip/blob/master/source/V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/index.rst#731-vl-photographic-image-iod-definition,Check & complete,Check to ensure the links are correct.    
+3,7.3.1,VL Photographic Image IOD Definition,https://github.com/open-ortho/dent-oip/blob/master/source/V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/index.rst#731-vl-photographic-image-iod-definition,Check & complete,Check to ensure the links are correct.
 3,7.3.1.1,VL Photographic Image IOD Acquisition Requirements,https://github.com/open-ortho/dent-oip/blob/master/source/V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/index.rst#7311-vl-photographic-image-iod-acquisition-requirements,Check & complete,
 3,7.3.1 - 7.3.6,,https://github.com/open-ortho/dent-oip/blob/master/source/V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/index.rst#732-video-photograpic-image-iod-definition,Delete it,These sections contain the IOD definitions for all of the DICOM image types that are deferred to a future revision of OIP.  Save for later.
 3,7.3.7,Structured Display IOD Definition,https://github.com/open-ortho/dent-oip/blob/master/source/V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/index.rst#737-structured-display-iod-definition,Done,"If you decide Structured Display is part of this revision of the profile, you would keep this section.   Perhaps renumber it to follow the VL image section."
@@ -102,7 +102,7 @@ Preamble,,Appendix D - Glossary,,CREATED,Only needed if you have terms in the do
 3,7.4.1.7,General Image Module,,Not started,Add constraints for this module that apply to VL IODs
 3,7.4.1.8,Device Module,,Not started,Add constraints for this module that apply to VL IODs
 3,7.4.1.9,SOP Common Module,,Not started,Add constraints for this module that apply to VL IODs
-3,7.4.2,VL-Related Modules,,Not started,This is just an intro section 
+3,7.4.2,VL-Related Modules,,Not started,This is just an intro section
 3,7.4.2.1,VL Image Module,,Not started,Add constraints for this module that apply to VL IODs
 3,7.4.2.2,VL Photographic Acquisition,,Not started,Add constraints for this module that apply to VL IODs
 3,see comment-->,,https://github.com/open-ortho/dent-oip/tree/master/source/V3_Appendix,,You had lots of good content that could live in appendices to Vol 3.   I never touched those files.   You can decide what is relevant and valuable to the reader and include them as appendics to Vol 3 (or perhaps Vol 1)
