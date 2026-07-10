@@ -35,8 +35,11 @@ Options that may be selected for each actor in this profile, if any, are listed 
       - No options defined
       - --
     * - Image Display
-      - No options defined
-      - --
+      - Structured Display Option
+      - Section 3.2.7
+    * -
+      - Hanging Protocol Option
+      - Section 3.2.8
 
 *Note 1:* The Content Creator shall support at least one option.
 
@@ -49,6 +52,14 @@ Options that may be selected for each actor in this profile, if any, are listed 
     3d_intraoral_extraoral_scan_option
     true_color_scan_option
     scanned_radiographs_option
+
+3.2.7 Structured Display Option
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Structured Display Option enables an Image Display actor to retrieve and render a Structured Display IOD that defines a standardized layout for presenting a set of orthodontic images. An Image Display actor that supports this option shall implement the requirements in DEN TF-2: 3.1.4.1.3.6 and shall support the Structured Display IOD Definition in DEN TF-3: 7.3.7.
+
+3.2.8 Hanging Protocol Option
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The Hanging Protocol Option enables an Image Display actor to apply a Hanging Protocol IOD to automatically arrange and configure the display of a set of orthodontic images. An Image Display actor that supports this option shall implement the requirements in DEN TF-2: 3.1.4.1.3.6 and shall support the Hanging Protocol IOD Definition in DEN TF-3: 7.3.8.
 
 3.3 OIP Required Actor Groupings
 --------------------------------
@@ -119,4 +130,3 @@ A Content Consumer that supports the DICOM Storage Option shall support the IHE 
 - Surface Scan Mesh IOD
 - Multi-frame True Secondary Capture IOD
 - Secondary Capture IOD
-
