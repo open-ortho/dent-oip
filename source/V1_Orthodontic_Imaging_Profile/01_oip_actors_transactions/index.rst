@@ -109,12 +109,9 @@ In the OIP profile, the Content Consumer is a 'generic' actor for a system that 
 
 3.1.1.3 Image Display
 +++++++++++++++++++++
-The Image Display is a specialized Content Consumer that implements requirements to provide standardized display functionality to ensure ...
-
-*<TO DO: Describe to goal of standardized display requirements here.   You may want to point to the ADA spec driving these requirements.>*
+The Image Display is a specialized Content Consumer that implements standardized display requirements to ensure consistent, clinically meaningful presentation of orthodontic photographs. ANSI/ADA Standard No. 1100 defines the viewsets (VS-01 through VS-04) and the associated layout expectations that clinical users rely on for assessment and treatment planning. The goal of the Image Display actor is to guarantee that any OIP-compliant viewer renders these viewsets in a predictable, standardized way regardless of vendor.
 
 An Image Display actor in the OIP Profile shall implement all display requirements in DEN TF-2: 3.1.4.1.3. This provides mandatory support for Viewsets VS-01, VS-02, VS-03, and VS-04 as defined in ANSI/ADA Standard No. 1100 "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets".
 
 An Image Display actor shall support the Basic Structured Display IOD and Hanging Protocol IOD as defined in DEN TF-3: 7.3.7 and 7.3.8 to exchange standardized viewset layouts and hanging protocol definitions aligned with ANSI/ADA Standard No. 1100.
-
 
