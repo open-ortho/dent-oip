@@ -41,7 +41,7 @@ Table 3.4.1.1-1 provides a reference for translating orthodontic progress into c
       - Patient comes back for regular visits. The provider collects observation records.
       - SCT-184047000 Patient registration
       - Number of days past the day the patient registers.
-    * - Pretreatment
+    * - Pretreatment *(Note 1)*
       - Images acquired before treatment starts. Only used when the patient and doctor have agreed to start a treatment. This should be treated as Observation above.
       - See Observation
       - See Observation
@@ -63,7 +63,7 @@ Table 3.4.1.1-1 provides a reference for translating orthodontic progress into c
       - Number of days past the day the treatment ended (see Final above).
 
 
-**Note:**  Distinguishing Pretreatment from Observation is not always straightforward. In some cases, there may be a clear Pretreatment definition by the provider, which could be properly coded in the practice management system. However, in many other cases, it may not be clearly defined, or what was considered Pretreatment might not lead to treatment.  Consequently, the orthodontic domain experts of the working group have decided to disregard Pretreatment status and consider it as Observation.
+*Note 1:* Distinguishing Pretreatment from Observation is not always straightforward. In some cases, there may be a clear Pretreatment definition by the provider, which could be properly coded in the practice management system. However, in many other cases, it may not be clearly defined, or what was considered Pretreatment might not lead to treatment. Consequently, the orthodontic domain experts of the working group have decided to disregard Pretreatment status and consider it as Observation.
 
 3.4.1.2 Study Description (0008,1030)
 +++++++++++++++++++++++++++++++++++++
@@ -139,3 +139,5 @@ same order. Once the image is acquired, the Instance Number, a unique integer
 for each image in the series, can be used to preserve the same order as the on
 in the Requested Procedure Code Sequence. See :ref:`instance_number` for more
 information.
+
+.. include:: oip_use_cases.rst
