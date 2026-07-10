@@ -25,7 +25,7 @@ Preamble,,Appendix D - Glossary,,CREATED,Only needed if you have terms in the do
 3. We didn't talk about this much, but I am assuming that Structured Display and Hanging Protocol are ""in scope"" for this first revision of OIP.   You need to decide whether support of this functionality is mandatory for the Image Display actor, or whether it's 'additional' functionality they *may* support as an option.  The 'option' alternative is how it is documented here today.
 
 "
-1,3.3,OIP Required Actor Groupings,https://github.com/open-ortho/dent-oip/blob/master/source/V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/index.rst#33-oip-required-actor-groupings,Done,
+1,3.3,OIP Required Actor Groupings,https://github.com/open-ortho/dent-oip/blob/master/source/V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/index.rst#33-oip-required-actor-groupings,REVIEWED: No content change needed,
 1,x.2,OIP Profile Options (to be moved to a future version of the profile...),https://github.com/open-ortho/dent-oip/blob/master/source/V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/index.rst#x2-oip-profile-options-to-be-moved-to-a-future-version-of-the-profile,Delete it,"Save for future, including subsections.   This text was here when I started working on OI, before we decided that MWL is for a future revision."
 1,3.4,Overview,https://github.com/open-ortho/dent-oip/blob/master/source/V1_Orthodontic_Imaging_Profile/03_oip_process_flow/index.rst#34-oip-overview,Update it,"See ""TO DO"" in existing text."
 1,3.4.1,Concepts,https://github.com/open-ortho/dent-oip/blob/master/source/V1_Orthodontic_Imaging_Profile/03_oip_process_flow/index.rst#341-concepts,Done,
