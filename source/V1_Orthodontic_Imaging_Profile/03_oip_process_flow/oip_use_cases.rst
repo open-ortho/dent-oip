@@ -38,3 +38,20 @@ This use case outlines both direct and indirect workflows for creating digital o
     office but presents them in a different display without the need for a human
     to view the individual files and sort them.
     """
+
+3.4.2.4 Viewing Visible Light Photographic Images
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+A dental professional selects a patient, study, and orthodontic viewset for
+review. The Image Display has access to the corresponding VL Photographic
+Image IOD instances. How the instances are stored, selected, or transferred
+to the Image Display is outside the scope of this use case.
+
+The Image Display presents the photographs according to the selected viewset
+defined by ANSI/ADA Standard No. 1100 and the display requirements defined in
+DEN-1. When a Basic Structured Display or Hanging Protocol instance is
+provided, the Image Display applies it to arrange the photographs for review.
+
+A product that renders individual VL Photographic Image IOD instances but
+does not implement the standardized display requirements may claim the
+Content Consumer actor, but not the Image Display actor.
