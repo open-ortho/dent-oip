@@ -68,13 +68,22 @@ propose a revision, they can contact standards@ada.org.
 
 1.6 Trademarks
 --------------
-Names and marks referenced in this document may be trademarks of their
-respective owners. IHE® and the IHE logo are trademarks of the Healthcare
-Information Management Systems Society in the United States and of IHE Europe
-in the European Community. See the `IHE Technical Frameworks General
-Introduction, Section 10 - Trademark
-<https://profiles.ihe.net/GeneralIntro/ch-10.html>`_ for information on their
-use.
+The following trademarks are referenced in this document:
+
+- DICOM® is the registered trademark of the National Electrical Manufacturers
+  Association for its standards publications relating to digital
+  communications of medical information.
+- HL7® and CDA® are registered trademarks of Health Level Seven International.
+- IHE® and the IHE logo are trademarks of the Healthcare Information
+  Management Systems Society in the United States and of IHE Europe in the
+  European Community.
+- LOINC® is a registered United States trademark of Regenstrief Institute,
+  Inc.
+- SNOMED CT® is a registered trademark of the International Health Terminology
+  Standards Development Organisation (IHTSDO), trading as SNOMED
+  International.
+
+Use of these marks does not imply endorsement of DENT-OIP by their owners.
 
 1.7 Disclaimer Regarding Patent Rights
 --------------------------------------
