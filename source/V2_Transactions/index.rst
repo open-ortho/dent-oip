@@ -185,7 +185,9 @@ The roles in this transaction are defined in the following table and may be play
 
 3.1.3 Referenced Standards
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-+ ANSI/ADA Standard No. 1100, Rev. July 2025, "Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets
++ `ANSI/ADA Standard No. 1100, Rev. July 2025, "Dentistry - 2D and 3D
+  Orthodontic/Cranial/Forensic Photographic Views and View Sets"
+  <https://webstore.ansi.org/standards/ada/ansiada11002025>`_
 
 3.1.4 Messages
 ~~~~~~~~~~~~~~
@@ -236,7 +238,7 @@ The Display shall be able to display for the user Viewset VS-01, with eight imag
 *************************
 VS-02 is a custom craniofacial viewset has greatest use for documentation of orthognathic and craniofacial surgery treatment.
 
-The Display shall be able to display for the user Viewset VS-01, with 13 views as defined in **ANSI/ADA Standard No. 1100**, Section 10.
+The Display shall be able to display for the user Viewset VS-02, with 13 views as defined in **ANSI/ADA Standard No. 1100**, Section 10.
 
 3.1.4.1.3.4 Viewset VS-03
 *************************
