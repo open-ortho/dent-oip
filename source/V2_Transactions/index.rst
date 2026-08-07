@@ -12,7 +12,7 @@ possible future conversion into an IHE Profile.
 
 + :ref:`Section 1 - Introduction to Volume 2 <introduction_to_volume_2>`
 + :ref:`Section 2 - Conventions <conventions>`
-+ :ref:`Section 3 - Transactions <ihe_dental_transations>`
++ :ref:`Section 3 - Transactions <oip_transactions>`
 + :ref:`Section 3.1 - Display Visible Light Images [DEN-1] <den_1>`
 
 .. _introduction_to_volume_2:
@@ -127,10 +127,10 @@ identifies a coding resource, implementations may use a proprietary or local
 resource, provided that applicable licensing and copyright requirements are
 satisfied.
 
-.. _ihe_dental_transations:
+.. _oip_transactions:
 
-3 IHE Dental Transactions
-=========================
+3 OIP Transactions
+==================
 This section defines each transaction in detail, specifying the standards used, and the information
 transferred.
 

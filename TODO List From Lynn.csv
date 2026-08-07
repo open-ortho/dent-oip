@@ -51,7 +51,7 @@ Preamble,,Appendix D - Glossary,,DONE: APPENDIX D CREATED,Only needed if you hav
 2,2,Conventions,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#2-conventions,DONE: CONVENTIONS ADAPTED FOR DENT-OIP,
 2,2.1,Transaction Modeling and Profile Conventions,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#21-transaction-modeling-and-profile-conventions,DONE: IHE MODELING CONVENTIONS RETAINED WITH CONTEXT,
 2,2.2,Use of Coded Entities and Coding Schemes,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#22-use-of-coded-entities-and-coding-schemes,DONE: CODED ENTITY GUIDANCE ADAPTED FOR DENT-OIP,
-2,3,IHE Dental Transactions,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#3-ihe-dental-transactions,REVIEWED: NO CONTENT CHANGE NEEDED,
+2,3,OIP Transactions,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#3-oip-transactions,DONE: TRANSACTION SECTION RENAMED FOR DENT-OIP,
 2,3.1,Display Visible Light Images [DEN-1],https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#31-display-visible-light-images-den-1,REVIEWED: NO CONTENT CHANGE NEEDED,
 2,3.1.1,Scope,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#311-scope,DONE: DEN-1 SCOPE LIMITED TO VL; INTERNAL NOTE REMOVED,"Remove the ""Note to Toni"" in the text"
 2,3.1.2,Actor Roles,https://github.com/open-ortho/dent-oip/blob/master/source/V2_Transactions/index.rst#312-actor-roles,REVIEWED: NO CONTENT CHANGE NEEDED,
