@@ -97,15 +97,8 @@ this ADA/ANSI standards project may be sent to standards@ada.org.
 1.8 History of Document Changes
 -------------------------------
 
-.. list-table::
-    :header-rows: 1
-
-    * - **Date**
-      - **Document Revision**
-      - **Change Summary**
-    * - TBD
-      - TBD
-      - Publish for Public Comment
+This section is reserved for the publication history of a future IHE Profile.
+No IHE revisions currently exist.
 
 .. _conventions:
 
