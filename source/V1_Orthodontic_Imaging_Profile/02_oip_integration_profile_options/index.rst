@@ -119,4 +119,3 @@ A Content Consumer that supports the DICOM Storage Option shall support the IHE 
 - Surface Scan Mesh IOD
 - Multi-frame True Secondary Capture IOD
 - Secondary Capture IOD
-
