@@ -27,13 +27,13 @@ effective use of electronic health records (EHRs). IHE provides a forum for care
 experts and other stakeholders in several clinical and operational domains to reach consensus on
 standards-based solutions to critical interoperability issues.
 
-The primary output of IHE is system implementation guides, called IHE Profiles. IHE publishes 
+The primary output of IHE is system implementation guides, called IHE Profiles. IHE publishes
 each profile through a well-defined process of public review and trial implementation and
 gathers profiles that have reached final text status into an IHE Technical Framework, of which
 this volume is a part.
 
 For general information regarding IHE, refer to `www.ihe.net <http://www.ihe.net/>`_. It is strongly recommended that,
-prior to reading this volume, the reader familiarizes themselves with the concepts defined in the 
+prior to reading this volume, the reader familiarizes themselves with the concepts defined in the
 `IHE Technical Frameworks General Introduction <https://profiles.ihe.net/GeneralIntro/index.html>`_.
 
 1.2 Intended Audience
@@ -47,7 +47,7 @@ The intended audience of IHE Technical Frameworks Volume 2 is:
 1.3 Overview of Technical Framework Volume 2
 --------------------------------------------
 Volume 2 is comprised of several distinct sections:
-  
+
 • Section 1 provides background and reference material.
 • Section 2 presents the conventions used in this volume to define the transactions.
 • Section 3 defines Dental transactions in detail, specifying the roles for each actor, the standards employed, the information exchanged, and in some cases, implementation options for the transaction.
@@ -59,7 +59,10 @@ Frameworks <https://profiles.ihe.net/GeneralIntro/ch-5.html>`_.
 
 1.4 Comment Process
 -------------------
-IHE International welcomes comments on this document. Comments should be submitted using the IHE comment submission form available at `https://profiles.ihe.net <https://profiles.ihe.net>`_. Comments submitted during the Public Comment period will be reviewed by the IHE Dental Technical Committee and addressed prior to the document advancing to Trial Implementation status.
+
+The American Dental Association welcomes comments on this document during the
+public review process. Once the standard is published, if someone would like to
+propose a revision, they can contact standards@ada.org.
 
 1.5 Copyright Licenses
 ----------------------
@@ -165,7 +168,7 @@ of as an “informational transaction” between a display device and a user.
 
 Methods that the Display uses to select and obtain the data to be displayed are outside the scope of this transaction.
 
-The Display may have behaviors in addition to those required by this transaction.  
+The Display may have behaviors in addition to those required by this transaction.
 
 3.1.2 Actor Roles
 ~~~~~~~~~~~~~~~~~
@@ -177,11 +180,11 @@ The roles in this transaction are defined in the following table and may be play
     :header-rows: 0
 
     * - **Role**
-      - Display:  
+      - Display:
            Presents results visually to a user.
 
     * - **Actor(s)**
-      - The following actors may play the role of Display:   
+      - The following actors may play the role of Display:
            Image Display
 
 3.1.3 Referenced Standards
@@ -247,6 +250,6 @@ The Display shall be able to display for the user Viewset VS-03, with 13 image b
 
 3.1.4.1.3.5 Viewset VS-04
 *************************
-VS-04 is a custom supplementary patient record display, was designed to facilitate assessment of craniofacial asymmetries. 
+VS-04 is a custom supplementary patient record display, was designed to facilitate assessment of craniofacial asymmetries.
 
 The Display shall be able to display for the user Viewset VS-04, with 12 image boxes as defined in **ANSI/ADA Standard No. 1100**, Section 10.
