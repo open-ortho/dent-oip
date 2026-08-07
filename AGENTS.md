@@ -1,10 +1,23 @@
 # AGENTS.md - Developer Guidelines for DENT-OIP
 
-This document provides coding guidelines and conventions for AI coding agents and human developers working on the DENT-OIP (Dentistry Technical Framework Supplement Orthodontic Imaging Profile) project.
+This document provides coding guidelines and conventions for AI coding agents and human developers working on the DENT-OIP (Dentistry Orthodontic Imaging Profile) project.
 
 ## Project Overview
 
-DENT-OIP is an **IHE Profile** for orthodontic imaging standards, written in **reStructuredText (RST)** and built using Sphinx. The project follows IHE Profile conventions as defined in the [IHE Official Templates](https://wiki.ihe.net/index.php/Official_Templates).
+DENT-OIP is currently being developed as an **ADA/ANSI standard**, not as an
+IHE Profile or an IHE-published Technical Framework. It is written in
+**reStructuredText (RST)** and built using Sphinx. The document uses the
+organization and conventions of the
+[IHE Official Templates](https://wiki.ihe.net/index.php/Official_Templates)
+to simplify possible future conversion into an IHE Profile.
+
+Apply IHE-derived templates at the sentence level. Preserve useful,
+standards-neutral material by adapting it to DENT-OIP and ADA/ANSI terminology.
+Remove or rewrite only content that incorrectly implies IHE ownership,
+publication, governance, or review. Mention IHE when needed to explain the
+future-profile goal, an adopted convention, or an actual IHE profile or
+definition. Do not delete useful guidance solely because it originated in an
+IHE template.
 
 **Version**: v0.2.7  
 **Primary Language**: reStructuredText (`.rst`)  
@@ -13,9 +26,9 @@ DENT-OIP is an **IHE Profile** for orthodontic imaging standards, written in **r
 **Outputs**: HTML (primary), DOCX, PDF  
 **Repository**: <https://github.com/open-ortho/dent-oip>
 
-### Document Structure (IHE Profile Format)
+### Document Structure (IHE-Compatible Format)
 
-- **Preamble**: Introduction/scope, open and closed issues, IHE boilerplate references
+- **Preamble**: Introduction/scope, open and closed issues, and applicable references
 - **Volume 1**: Orthodontic Imaging Profile (actors, transactions, integration profile options, process flow, security)
 - **Volume 2**: Transactions (detailed transaction specifications)
 - **Volume 3**: DICOM specifications (conventions, definitions, IOD definitions, module definitions)
@@ -274,6 +287,10 @@ and Lynn's review work is complete.
 
 During the Lynn TODO review, `feature/55-incorporate-lynns-work` is the R1
 cleanup/review branch and `future/r2` preserves work needed for later releases.
+R1 is focused on ANSI/ADA Standard No. 1100 and is limited to VL Photographic
+Images and their required display behavior. R2 shall contain everything retained
+in R1 while preserving and developing content beyond ADA 1100 toward full
+implementation of ANSI/ADA Standard No. 1114.
 For each reviewed TODO item, classify the resulting changes before applying them
 to `future/r2`:
 
@@ -294,7 +311,7 @@ branch and apply them to R2 according to the classification above.
 ### Editing RST Documentation
 
 1. Edit `.rst` files in `source/` directory
-2. Follow IHE Profile structure (Preamble, Volume 1, Volume 2, Volume 3, Appendices)
+2. Follow the IHE-compatible structure (Preamble, Volume 1, Volume 2, Volume 3, Appendices) without presenting DENT-OIP as an existing IHE publication
 3. Maintain consistent heading hierarchy (see RST Style section)
 4. Test locally with `pipenv run make html`
 5. Push to `develop` branch for nightly build
