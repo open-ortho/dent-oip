@@ -39,15 +39,13 @@ Table 3.1-1 lists the transactions content module(s) defined in the OIP Profile.
     * -
       - Structured Display IOD Definition
       - --
-      - O *(Note 1)*
+      - R
       - DEN TF-3: 7.3.2
     * -
       - Hanging Protocol IOD Definition
       - --
-      - O *(Note 1)*
+      - R
       - DEN TF-3: 7.3.3
-
-*Note 1:* Structured Display and Hanging Protocol support are optional capabilities for the Image Display actor. See Section 3.2 for the corresponding options.
 
 3.1.1 Actor Description and Actor Profile Requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,4 +81,5 @@ An Image Display actor in the OIP Profile shall implement all display requiremen
 
 An Image Display actor shall support the Basic Structured Display IOD and Hanging Protocol IOD as defined in DEN TF-3: 7.3.7 and 7.3.8 to exchange standardized viewset layouts and hanging protocol definitions aligned with ANSI/ADA Standard No. 1100.
 
+A product that consumes or displays VL Photographic Image IODs without implementing these standardized display requirements may claim the Content Consumer actor without claiming the Image Display actor.
 

@@ -141,7 +141,24 @@ transferred.
 ----------------------------------------
 3.1.1 Scope
 ~~~~~~~~~~~
-This transaction is used to present DICOM Visual Light Photographic Images to a dental professional interpreting a study.  This includes 2-dimensional radiographic images such as intraoral and panoramic image, cone beam computed tomography (CBCT) data); as well as visible light images, such as photographs in an organized and structured manner for all aspect of oral healthcare, including those in private practice settings.  The  VL Photographic Images rendered in this transaction are produced by a OIP Content Creator actor supporting the :ref:`DEN TF-1: 3.2.1 Direct Photography Option <direct_photography_option>`.
+This transaction is used to present DICOM VL Photographic Image IOD
+instances to a dental professional for clinical review. It applies to
+individual visible light photographs and collections of photographs,
+including extraoral and intraoral photographs.
+
+The Image Display is required to support viewsets VS-01 through VS-04 as
+baseline standardized layouts. These required viewsets do not restrict the
+transaction to those layouts; the transaction may also be used to present
+other visible light photographs and viewsets.
+
+Radiographic images, including intraoral radiographs, panoramic
+radiographs, and cone beam computed tomography data, are outside the scope
+of this transaction.
+
+The VL Photographic Image IOD instances rendered in this transaction are
+produced by an OIP Content Creator actor supporting the
+:ref:`DEN TF-1: 3.2.1 Direct Photography Option
+<direct_photography_option>`.
 
 This transaction is not a typical network-based transaction between two devices; instead, the primary focus of the requirements is on the behavior of the display application rather than messaging between two actors. This can be thought
 of as an “informational transaction” between a display device and a user.

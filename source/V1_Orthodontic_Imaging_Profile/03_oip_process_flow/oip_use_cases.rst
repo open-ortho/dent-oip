@@ -9,11 +9,6 @@ Please refer to the original ADA documents for more details on each use case.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 This use case outlines both direct and indirect workflows for creating digital orthodontic records, either through direct capture with imaging devices or by digitizing analog records. It details how acquired images and models are tagged with standard metadata and integrated into the patient’s EHR for proper storage and retrieval. The process supports efficient transformation between digital and analog formats for clinical applications such as 3D printing. 
-
-
-.. note::
-   *The use cases in Sections 3.4.2.2 and 3.4.2.3 are based on ADA Standard No. 1100 and may be outdated. Please refer to the latest release of ADA 1100 for the most current information.*
-
 3.4.2.2 ADA 1100 Use Case No. 2.1 - Routine Orthodontic Photography Workflow
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -43,3 +38,20 @@ This use case outlines both direct and indirect workflows for creating digital o
     office but presents them in a different display without the need for a human
     to view the individual files and sort them.
     """
+
+3.4.2.4 Viewing Visible Light Photographic Images
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+A dental professional selects a patient, study, and orthodontic viewset for
+review. The Image Display has access to the corresponding VL Photographic
+Image IOD instances. How the instances are stored, selected, or transferred
+to the Image Display is outside the scope of this use case.
+
+The Image Display presents the photographs according to the selected viewset
+defined by ANSI/ADA Standard No. 1100 and the display requirements defined in
+DEN-1. When a Basic Structured Display or Hanging Protocol instance is
+provided, the Image Display applies it to arrange the photographs for review.
+
+A product that renders individual VL Photographic Image IOD instances but
+does not implement the standardized display requirements may claim the
+Content Consumer actor, but not the Image Display actor.
