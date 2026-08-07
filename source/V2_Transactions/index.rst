@@ -22,41 +22,41 @@ possible future conversion into an IHE Profile.
 
 1.1 Introduction to IHE
 -----------------------
-Integrating the Healthcare Enterprise (IHE) is an international initiative to promote the use of
-standards to achieve interoperability among health information technology (HIT) systems and
-effective use of electronic health records (EHRs). IHE provides a forum for care providers, HIT
-experts and other stakeholders in several clinical and operational domains to reach consensus on
-standards-based solutions to critical interoperability issues.
+Integrating the Healthcare Enterprise (IHE) is an international initiative
+that promotes standards-based interoperability among health information
+technology systems. IHE provides a forum for care providers, developers, and
+other stakeholders to reach consensus on solutions to interoperability issues.
 
-The primary output of IHE is system implementation guides, called IHE Profiles. IHE publishes
-each profile through a well-defined process of public review and trial implementation and
-gathers profiles that have reached final text status into an IHE Technical Framework, of which
-this volume is a part.
+IHE publishes implementation guides called IHE Profiles through public review
+and trial implementation, and incorporates profiles that reach Final Text into
+domain Technical Frameworks. DENT-OIP is not currently an IHE Profile or part
+of an IHE Technical Framework. It follows IHE-compatible organization and
+conventions to support possible future conversion into an IHE Profile.
 
-For general information regarding IHE, refer to `www.ihe.net <http://www.ihe.net/>`_. It is strongly recommended that,
-prior to reading this volume, the reader familiarizes themselves with the concepts defined in the
-`IHE Technical Frameworks General Introduction <https://profiles.ihe.net/GeneralIntro/index.html>`_.
+For general information and definitions of IHE framework concepts referenced
+by this standard, see the `IHE Technical Frameworks General Introduction
+<https://profiles.ihe.net/GeneralIntro/index.html>`_.
 
 1.2 Intended Audience
 ---------------------
-The intended audience of IHE Technical Frameworks Volume 2 is:
+The intended audience for Volume 2 of DENT-OIP includes:
 
-• IT departments of healthcare institutions
-• Developers and technical staff of vendors participating in the IHE initiative
-• Experts involved in standards development
+- IT departments of healthcare institutions, where available
+- Developers and technical staff of vendors
+- Experts involved in standards development
 
-1.3 Overview of Technical Framework Volume 2
---------------------------------------------
-Volume 2 is comprised of several distinct sections:
+1.3 Overview of Volume 2
+------------------------
+Volume 2 comprises the following sections:
 
-• Section 1 provides background and reference material.
-• Section 2 presents the conventions used in this volume to define the transactions.
-• Section 3 defines Dental transactions in detail, specifying the roles for each actor, the standards employed, the information exchanged, and in some cases, implementation options for the transaction.
-• The appendices provide clarification of technical details of the IHE data model and transactions.
+- Section 1 provides background and reference material.
+- Section 2 presents the conventions used to define transactions.
+- Section 3 defines DENT-OIP transactions, including actor roles, referenced
+  standards, information exchanged, and implementation requirements.
 
-For a brief overview of other Technical Framework Volumes (TF-1, TF-3), please see
-the IHE Technical Frameworks General Introduction, `Section 5 - Structure of the IHE Technical
-Frameworks <https://profiles.ihe.net/GeneralIntro/ch-5.html>`_.
+Volume 1 defines the OIP actors, options, and process flows. Volume 3 defines
+the DICOM content and constraints referenced by the transactions in this
+volume.
 
 1.4 Comment Process
 -------------------
@@ -65,36 +65,25 @@ The American Dental Association welcomes comments on this document during the
 public review process. Once the standard is published, if someone would like to
 propose a revision, they can contact standards@ada.org.
 
-1.5 Copyright Licenses
-----------------------
-IHE technical documents refer to, and make use of, a number of standards developed and
-published by several standards development organizations. Please refer to the IHE Technical
-Frameworks General Introduction, `Section 9 - Copyright Licenses <https://profiles.ihe.net/GeneralIntro/ch-9.html>`_ for copyright license
-information for frequently referenced base standards. Information pertaining to the use of IHE
-International copyrighted materials is also available there.
 
-1.6 Trademark
--------------
-IHE® and the IHE logo are trademarks of the Healthcare Information Management Systems
-Society in the United States and trademarks of IHE Europe in the European Community. Please
-refer to the IHE Technical Frameworks General Introduction, `Section 10 - Trademark <https://profiles.ihe.net/GeneralIntro/ch-10.html>`_ for
-information on their use.
+1.6 Trademarks
+--------------
+Names and marks referenced in this document may be trademarks of their
+respective owners. IHE® and the IHE logo are trademarks of the Healthcare
+Information Management Systems Society in the United States and of IHE Europe
+in the European Community. See the `IHE Technical Frameworks General
+Introduction, Section 10 - Trademark
+<https://profiles.ihe.net/GeneralIntro/ch-10.html>`_ for information on their
+use.
 
 1.7 Disclaimer Regarding Patent Rights
 --------------------------------------
-Attention is called to the possibility that implementation of the specifications in this document
-may require use of subject matter covered by patent rights. By publication of this document, no
-position is taken with respect to the existence or validity of any patent rights in connection
-therewith. IHE International is not responsible for identifying Necessary Patent Claims for which
-a license may be required, for conducting inquiries into the legal validity or scope of Patents
-Claims or determining whether any licensing terms or conditions provided in connection with
-submission of a Letter of Assurance, if any, or in any licensing agreements are reasonable or
-non-discriminatory. Users of the specifications in this document are expressly advised that
-determination of the validity of any patent rights, and the risk of infringement of such rights, is
-entirely their own responsibility. Further information about the IHE International patent
-disclosure process including links to forms for making disclosures is available at
-http://www.ihe.net/Patent_Disclosure_Process. Please address questions about the patent
-disclosure process to the secretary of the IHE International Board: secretary@ihe.net.
+Attention is called to the possibility that implementation of this standard
+may require the use of subject matter covered by patent rights. This document
+does not take a position on the existence or validity of any patent rights.
+Implementers are responsible for determining whether licenses are required and
+for assessing the risk of infringement. Questions about patent disclosures for
+this ADA/ANSI standards project may be sent to standards@ada.org.
 
 1.8 History of Document Changes
 -------------------------------
@@ -113,24 +102,28 @@ disclosure process to the secretary of the IHE International Board: secretary@ih
 
 2 Conventions
 =============
-This document has adopted the following conventions for representing the framework concepts
-and specifying how the standards upon which the IHE Technical Framework is based shall be
-applied.
+This document uses the following conventions to represent OIP concepts and to
+specify how referenced standards are applied.
 
 2.1 Transaction Modeling and Profile Conventions
 ------------------------------------------------
-In order to maintain consistent documentation, modeling methods for IHE transactions and profiling conventions for frequently used standards are maintained in the IHE Technical
-Frameworks General Introduction, `Appendix E - Standards Profiling and Documentation
-Conventions <https://profiles.ihe.net/GeneralIntro/ch-E.html>`_. Methods described include the Unified Modeling Language (UML) and standards
-conventions include DICOM, HL7 v2.x, HL7 Clinical Document Architecture (CDA)
-Documents, etc. These conventions are critical to understanding this volume and should be reviewed prior to reading this text.
+To provide consistent transaction specifications and simplify possible future
+conversion into an IHE Profile, DENT-OIP adopts applicable modeling and
+documentation conventions from the `IHE Technical Frameworks General
+Introduction, Appendix E - Standards Profiling and Documentation Conventions
+<https://profiles.ihe.net/GeneralIntro/ch-E.html>`_. These include the Unified
+Modeling Language (UML) and conventions for applying standards such as DICOM,
+HL7 v2.x, and HL7 Clinical Document Architecture (CDA). Implementers should
+review the cited conventions when interpreting transaction diagrams and
+requirements in this volume.
 
 2.2 Use of Coded Entities and Coding Schemes
 --------------------------------------------
-Where applicable, coding schemes required by the DICOM ®, HL7®, LOINC®, and SNOMED®
-standards are used in IHE Profiles. In the cases where such resources are not explicitly identified
-by standards, implementations may utilize any resource (including proprietary or local) provided
-any licensing/copyright requirements are satisfied.
+Where applicable, DENT-OIP uses coding schemes required by DICOM®, HL7®,
+LOINC®, and SNOMED CT®. When neither a base standard nor DENT-OIP explicitly
+identifies a coding resource, implementations may use a proprietary or local
+resource, provided that applicable licensing and copyright requirements are
+satisfied.
 
 .. _ihe_dental_transations:
 
