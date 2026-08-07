@@ -1,11 +1,12 @@
 Volume 2 - Transactions
 =======================
 
-This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines transactions used in IHE Dental Domain profiles.
+This document is Volume 2 of the Dentistry Orthodontic Imaging Profile
+(DENT-OIP), which is being developed as an ADA/ANSI standard. It defines the
+transactions used by the Orthodontic Imaging Profile (OIP).
 
-1 Introduction to Volume 2
-This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines
-transactions used in IHE Dental Domain profiles.
+DENT-OIP uses an IHE-compatible organization and section numbering to simplify
+possible future conversion into an IHE Profile.
 
 **Contents**
 
