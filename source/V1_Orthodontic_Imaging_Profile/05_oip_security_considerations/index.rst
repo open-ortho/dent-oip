@@ -55,8 +55,5 @@ audit logging.
 3.6 OIP Cross-Profile Considerations
 ------------------------------------
 
-OIP focuses on the content encoding of visible light orthodontic images. Implementations will typically pair OIP with one or more workflow or transport profiles:
-
-- **Modality Worklist**: To obtain patient demographics and order information prior to image acquisition, a Content Creator may be grouped with an actor that supports DICOM Modality Worklist (e.g., the IHE RAD Acquisition Modality). This grouping is deferred to a future revision of OIP.
-- **DICOM Storage (C-STORE)**: To send OIP-compliant images from a Content Creator to a Content Consumer, implementers may use DICOM C-STORE. Formal transaction requirements for storage are deferred to a future revision of OIP or a separate profile.
-- **Query/Retrieve**: To retrieve OIP-compliant images from an archive for display, an Image Display may be grouped with a DICOM Query/Retrieve SCU. This is deferred to a future revision of OIP.
+Cross-profile actor groupings are outside the scope of this revision of OIP.
+No cross-profile groupings are defined.
