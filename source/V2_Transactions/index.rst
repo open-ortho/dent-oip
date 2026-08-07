@@ -224,9 +224,16 @@ Displays shall support the capabilities described in this section for DICOM imag
 
 3.1.4.1.3.1 General Display Requirements
 ****************************************
-The Display shall:
 
-+ <*OPEN ISSUE: enumerate here general requirements beyond the viewset requirements below, e.g. for annotation perhaps. Next, add logical subsections.   There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.*
+For each displayed VL Photographic Image IOD instance, the Image Display shall
+display, in association with that instance:
+
+- the human-readable image type specified in :ref:`Section 7.4.2.1.1
+  <view_code_sequence>`; and
+- Image Comments (0020,4000), when present, as specified in :ref:`Section
+  7.4.1.7 <general_image>`.
+
+The displayed information shall not obscure clinically relevant image content.
 
 3.1.4.1.3.2 Viewset VS-01
 *************************
