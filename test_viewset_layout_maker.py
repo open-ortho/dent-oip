@@ -22,7 +22,7 @@ class TestViewsetLayoutMaker(unittest.TestCase):
                 row_boxes = boxes[row.first_number - 1 : row.first_number - 1 + row.box_count]
                 self.assertEqual(row.box_count, len(row_boxes))
                 self.assertEqual(
-                    {row.box_aspect_ratio},
+                    {layout.geometry.box_aspect_ratios[row.row_type]},
                     {
                         (box.width / box.height).quantize(precision)
                         for box in row_boxes
@@ -34,18 +34,18 @@ class TestViewsetLayoutMaker(unittest.TestCase):
         boxes = calculate_boxes(vs04)
 
         expected_coordinates = {
-            1: ("0.033", "0.607", "0.254", "0.955"),
-            5: ("0.033", "0.236", "0.254", "0.584"),
-            9: ("0.033", "0.045", "0.254", "0.213"),
-            12: ("0.746", "0.045", "0.967", "0.213"),
+            1: ("0.034", "0.607", "0.254", "0.954"),
+            5: ("0.034", "0.236", "0.254", "0.584"),
+            9: ("0.034", "0.046", "0.254", "0.214"),
+            12: ("0.746", "0.046", "0.966", "0.214"),
         }
         for number, expected in expected_coordinates.items():
             box = boxes[number - 1]
             actual = (
-                f"{box.left:.3f}",
-                f"{box.bottom / vs04.height_ratio:.3f}",
-                f"{box.left + box.width:.3f}",
-                f"{(box.bottom + box.height) / vs04.height_ratio:.3f}",
+                f"{box.left / vs04.width:.3f}",
+                f"{box.bottom / vs04.height:.3f}",
+                f"{(box.left + box.width) / vs04.width:.3f}",
+                f"{(box.bottom + box.height) / vs04.height:.3f}",
             )
             self.assertEqual(expected, actual)
 
@@ -54,29 +54,28 @@ class TestViewsetLayoutMaker(unittest.TestCase):
         vs02 = next(layout for layout in LAYOUTS if layout.name == "VS-02")
 
         self.assertEqual(
-            tuple(row.box_aspect_ratio for row in vs01.rows),
-            tuple(row.box_aspect_ratio for row in vs02.rows),
+            tuple(row.row_type for row in vs01.rows),
+            tuple(row.row_type for row in vs02.rows),
         )
-        self.assertEqual(vs01.horizontal_margin, vs02.horizontal_margin)
-        self.assertEqual(vs01.vertical_margin, vs02.vertical_margin)
-        self.assertEqual(vs01.horizontal_gap, vs02.horizontal_gap)
-        self.assertEqual(vs01.vertical_gap, vs02.vertical_gap)
-        self.assertEqual(Decimal("0.454"), vs02.height_ratio.quantize(Decimal("0.001")))
+        self.assertEqual(vs01.geometry, vs02.geometry)
+        self.assertEqual(vs01.box_width, vs02.box_width)
+        self.assertEqual(vs01.height, vs02.height)
+        self.assertEqual(Decimal("0.429"), vs02.height_ratio.quantize(Decimal("0.001")))
 
         boxes = calculate_boxes(vs02)
         expected_coordinates = {
-            1: ("0.044", "0.563", "0.178", "0.903"),
-            7: ("0.200", "0.309", "0.333", "0.515"),
-            11: ("0.278", "0.097", "0.411", "0.261"),
-            13: ("0.589", "0.097", "0.723", "0.261"),
+            1: ("0.023", "0.544", "0.172", "0.947"),
+            7: ("0.184", "0.274", "0.333", "0.518"),
+            11: ("0.264", "0.053", "0.414", "0.247"),
+            13: ("0.586", "0.053", "0.736", "0.247"),
         }
         for number, expected in expected_coordinates.items():
             box = boxes[number - 1]
             actual = (
-                f"{box.left:.3f}",
-                f"{box.bottom / vs02.height_ratio:.3f}",
-                f"{box.left + box.width:.3f}",
-                f"{(box.bottom + box.height) / vs02.height_ratio:.3f}",
+                f"{box.left / vs02.width:.3f}",
+                f"{box.bottom / vs02.height:.3f}",
+                f"{(box.left + box.width) / vs02.width:.3f}",
+                f"{(box.bottom + box.height) / vs02.height:.3f}",
             )
             self.assertEqual(expected, actual)
 
@@ -93,6 +92,15 @@ class TestViewsetLayoutMaker(unittest.TestCase):
                 self.assertEqual(
                     2 * box_count,
                     len(root.findall(".//svg:circle", namespace)),
+                )
+                vertical_label = next(
+                    element
+                    for element in root.findall(".//svg:text", namespace)
+                    if element.text == f"{layout.height_ratio:.3f}"
+                )
+                self.assertGreaterEqual(
+                    Decimal(root.attrib["width"]) - Decimal(vertical_label.attrib["x"]),
+                    Decimal(75),
                 )
 
 

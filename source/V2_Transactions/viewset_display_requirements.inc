@@ -15,6 +15,18 @@ the published edition listed in Section 3.1.3.
 Common Viewset Display Requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+The Image Display shall use the common scale-independent geometry in Table
+3.1.4.1.3.2-1 when constructing VS-01 through VS-04. Box dimensions, margins,
+and gaps are established in VS-01 layout units. Each complete viewset shall be
+assembled in those units before its coordinates are normalized to a width and
+height of ``1.000``.
+
+**Table 3.1.4.1.3.2-1: Common Viewset Layout Geometry**
+
+.. csv-table::
+   :file: ../tables/viewset_layouts/geometry.csv
+   :header-rows: 1
+
 The Image Display shall apply the following requirements when displaying any
 of VS-01 through VS-04. VS-02 through VS-04 inherit the common VS-01
 requirements except where their respective sections specify otherwise.
@@ -66,23 +78,24 @@ notes following Table 4.1.)
 VS-01 Layout
 ^^^^^^^^^^^^
 
-The Image Display shall construct VS-01 using the proportions in Table
-3.1.4.1.3.2-1. (ADA 1100, Section 10, VS-01 requirements 1 through 6 and
+The Image Display shall construct VS-01 using the common geometry in Table
+3.1.4.1.3.2-1 and the arrangement in Table
+3.1.4.1.3.2-2. (ADA 1100, Section 10, VS-01 requirements 1 through 6 and
 Construction Details.)
 
-**Table 3.1.4.1.3.2-1: VS-01 Layout Geometry**
+**Table 3.1.4.1.3.2-2: VS-01 Layout Arrangement**
 
 .. csv-table::
    :file: ../tables/viewset_layouts/VS-01.csv
    :header-rows: 1
 
 The normalized layout figure in :ref:`Appendix B <viewset_vs01_examples>` is
-generated from Table 3.1.4.1.3.2-1.
+generated from Tables 3.1.4.1.3.2-1 and 3.1.4.1.3.2-2.
 
 The boxes shall contain the images or information specified in Table
-3.1.4.1.3.2-2. (ADA 1100, Section 10, VS-01 requirement 7 and Table 4.1.)
+3.1.4.1.3.2-3. (ADA 1100, Section 10, VS-01 requirement 7 and Table 4.1.)
 
-**Table 3.1.4.1.3.2-2: VS-01 Image Locations**
+**Table 3.1.4.1.3.2-3: VS-01 Image Locations**
 
 Source: ADA 1100, Section 10, Table 4.1, corresponding ILC row.
 
@@ -140,20 +153,19 @@ introductory paragraph.)
 VS-02 Layout
 ^^^^^^^^^^^^
 
-The Image Display shall construct VS-02 using the proportions in Table
-3.1.4.1.3.3-1. VS-02 shall use the VS-01 top-, middle-, and bottom-row box
-proportions, margins, and gaps. Its six-, four-, and three-box row arrangement
-determines the resulting complete layout height. (ADA 1100, Section 10,
+The Image Display shall construct VS-02 using the common geometry in Table
+3.1.4.1.3.2-1 and the arrangement in Table 3.1.4.1.3.3-1. Its six-, four-, and
+three-box rows shall be centered independently. (ADA 1100, Section 10,
 inherited VS-01 requirements 4 through 6 and VS-02 Figure A2-1.)
 
-**Table 3.1.4.1.3.3-1: VS-02 Layout Geometry**
+**Table 3.1.4.1.3.3-1: VS-02 Layout Arrangement**
 
 .. csv-table::
    :file: ../tables/viewset_layouts/VS-02.csv
    :header-rows: 1
 
 The normalized layout figure in :ref:`Appendix B <viewset_vs02_examples>` is
-generated from Table 3.1.4.1.3.3-1.
+generated from Tables 3.1.4.1.3.2-1 and 3.1.4.1.3.3-1.
 
 The boxes shall contain the images or information specified in Table
 3.1.4.1.3.3-2. (ADA 1100, Section 10, Table 4.2.)
@@ -234,18 +246,19 @@ VS-03 Layout
 The Image Display shall apply the VS-01 display requirements except as follows.
 (ADA 1100, Section 10, VS-03 compliance statement.)
 
-The Image Display shall construct VS-03 using the proportions in Table
-3.1.4.1.3.4-1. (ADA 1100, Section 10, VS-03 requirements 1 through 3,
-inherited VS-01 requirements 4 and 6, and VS-03 Construction Details.)
+The Image Display shall construct VS-03 using the common geometry in Table
+3.1.4.1.3.2-1 and the arrangement in Table 3.1.4.1.3.4-1. (ADA 1100, Section
+10, VS-03 requirements 1 through 3, inherited VS-01 requirements 4 and 6, and
+VS-03 Construction Details.)
 
-**Table 3.1.4.1.3.4-1: VS-03 Layout Geometry**
+**Table 3.1.4.1.3.4-1: VS-03 Layout Arrangement**
 
 .. csv-table::
    :file: ../tables/viewset_layouts/VS-03.csv
    :header-rows: 1
 
 The normalized layout figure in :ref:`Appendix B <viewset_vs03_examples>` is
-generated from Table 3.1.4.1.3.4-1.
+generated from Tables 3.1.4.1.3.2-1 and 3.1.4.1.3.4-1.
 
 The boxes shall contain the images or information specified in Table
 3.1.4.1.3.4-2. (ADA 1100, Section 10, Table 4.3.)
@@ -325,20 +338,21 @@ VS-04 Layout
 The Image Display shall apply the VS-01 display requirements except as follows.
 (ADA 1100, Section 10, VS-04 compliance statement.)
 
-The Image Display shall construct VS-04 using the proportions in Table
-3.1.4.1.3.5-1. The first and second rows use the VS-01 top-row box proportion;
-the third row uses the VS-01 bottom-row box proportion. VS-04 does not use the
-VS-01 middle-row box proportion. (ADA 1100, Section 10, VS-04 requirements 1
-through 3 and inherited VS-01 requirements 4 and 6.)
+The Image Display shall construct VS-04 using the common geometry in Table
+3.1.4.1.3.2-1 and the arrangement in Table 3.1.4.1.3.5-1. The first and second
+rows use the VS-01 top-row box proportion; the third row uses the VS-01
+bottom-row box proportion. VS-04 does not use the VS-01 middle-row box
+proportion. (ADA 1100, Section 10, VS-04 requirements 1 through 3 and inherited
+VS-01 requirements 4 and 6.)
 
-**Table 3.1.4.1.3.5-1: VS-04 Layout Geometry**
+**Table 3.1.4.1.3.5-1: VS-04 Layout Arrangement**
 
 .. csv-table::
    :file: ../tables/viewset_layouts/VS-04.csv
    :header-rows: 1
 
 The normalized layout figure in :ref:`Appendix B <viewset_vs04_examples>` is
-generated from Table 3.1.4.1.3.5-1.
+generated from Tables 3.1.4.1.3.2-1 and 3.1.4.1.3.5-1.
 
 The boxes shall contain the images or information specified in Table
 3.1.4.1.3.5-2. (ADA 1100, Section 10, Table 4.4.)

@@ -1,4 +1,4 @@
-Row,Row Type,Boxes,First ILC,Box Width:Height,Layout Width,Layout Height,Horizontal Margin,Vertical Margin,Horizontal Gap,Vertical Gap
-1,Top,6,1,0.866,1.000,0.454,0.044,0.044,0.022,0.022
-2,Middle,4,7,1.432,1.000,0.454,0.044,0.044,0.022,0.022
-3,Bottom,3,11,1.794,1.000,0.454,0.044,0.044,0.022,0.022
+Row,Row Type,Boxes,First ILC
+1,Top,6,1
+2,Middle,4,7
+3,Bottom,3,11

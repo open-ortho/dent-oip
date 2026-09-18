@@ -54,49 +54,58 @@ For more information on how this process works, see section View Tables Generati
 #### Viewset layout CSV format
 
 The files in `source/tables/viewset_layouts/` are the source of truth for the
-normative viewset proportions and the generated normalized-layout diagrams.
-Each viewset has one CSV file named `<viewset>.csv`, such as `VS-04.csv`.
+normative viewset geometry and the generated normalized-layout diagrams.
+`geometry.csv` defines dimensions shared by every viewset. Each viewset also
+has an arrangement file named `<viewset>.csv`, such as `VS-04.csv`.
 
 The same CSV is used in two places:
 
-- Volume 2 includes it as the normative layout-geometry table.
+- Volume 2 includes the CSV files as normative geometry and arrangement tables.
 - `dent_oip_builder/viewset_layout_maker.py` reads it to generate the SVG
   diagram used in Appendix B.
 
 This prevents the dimensions stated in the document from diverging from the
 diagram.
 
-Each CSV row defines one physical row of image boxes, ordered from top to
-bottom. The columns are:
+`geometry.csv` uses `Parameter` and `Value` columns. Its parameters are:
+
+| Parameter | Meaning |
+| --- | --- |
+| `Reference Viewset` | Viewset used to establish the common physical box width. This is VS-01. |
+| `Reference Layout Width` | Width assigned to the reference layout in arbitrary scale-independent units. |
+| `Horizontal Margin` | Common left and right margin in reference-layout units. |
+| `Vertical Margin` | Common top and bottom margin in reference-layout units. |
+| `Horizontal Gap` | Common gap between boxes in reference-layout units. |
+| `Vertical Gap` | Common gap between rows in reference-layout units. |
+| `<Row Type> Box Width:Height` | Physical box proportion for the `Top`, `Middle`, or `Bottom` row type. |
+
+The viewset arrangement CSVs define physical rows from top to bottom:
 
 | Column | Meaning |
 | --- | --- |
 | `Row` | One-based physical row number, from top to bottom. |
-| `Row Type` | Clinical row type inherited from the viewset definition, such as `Top`, `Middle`, or `Bottom`. This documents which standard box proportion the row uses. |
-| `Boxes` | Number of equal-width boxes in the row. |
+| `Row Type` | `Top`, `Middle`, or `Bottom`; selects the corresponding common box proportion. A viewset may repeat a row type. |
+| `Boxes` | Number of boxes in the row. All boxes in all viewsets have the common physical box width. |
 | `First ILC` | Image Location Code assigned to the leftmost box. Following boxes are numbered consecutively. |
-| `Box Width:Height` | Physical width-to-height ratio of every box in the row. The generator calculates row height as box width divided by this value. |
-| `Layout Width` | Physical width of the complete layout. It is currently required to be `1.000`. |
-| `Layout Height` | Expected physical height of the complete layout relative to `Layout Width`, rounded to three decimal places. The generator verifies this value against the height calculated from the rows, margins, and vertical gaps. |
-| `Horizontal Margin` | Left and right margins, expressed in physical units relative to `Layout Width`. |
-| `Vertical Margin` | Top and bottom margins, expressed in physical units relative to `Layout Width`. |
-| `Horizontal Gap` | Gap between boxes, expressed relative to `Layout Width`. It may be a decimal or a fraction such as `1/60`. |
-| `Vertical Gap` | Gap between rows, expressed relative to `Layout Width`. It may be a decimal or fraction. |
 
-Values that describe the complete layout (`Layout Width`, `Layout Height`,
-`Horizontal Margin`, `Vertical Margin`, `Horizontal Gap`, and `Vertical Gap`)
-must be identical on every row. The generator rejects inconsistent values.
+All dimensions are scale-independent. Calling them pixels is convenient when
+reasoning about the layout, but the resulting SVG can be rendered at any size.
 
 The generator calculates geometry as follows:
 
-1. The row containing the most boxes determines the common box width.
-2. Each row height is calculated from its `Box Width:Height` value.
-3. Rows with fewer boxes are centered horizontally.
-4. The complete layout height is calculated from the row heights, vertical
-   margins, and vertical gaps. The calculation must round to the declared
-   `Layout Height`.
-5. Physical coordinates are normalized independently to the calculated layout
-   width and height and printed to three decimal places in the diagram.
+1. Calculate the common box width from the VS-01 reference width, its three
+   columns, and the common horizontal margins and gaps.
+2. Calculate the three box heights from that width and the common top, middle,
+   and bottom width-to-height ratios.
+3. Assemble each viewset in common physical units using its row arrangement.
+4. Center rows with fewer boxes under the widest row.
+5. Count the resulting physical width and height of the complete layout.
+6. Normalize every corner coordinate independently to that layout's calculated
+   width and height, and print it to three decimal places in the SVG.
+
+The box dimensions, margins, gaps, and text sizes therefore stay proportional
+across all diagrams. A viewset with more columns becomes physically wider
+before normalization instead of shrinking its boxes or enlarging its padding.
 
 Do not edit files in `source/images-static/generated/`. They are ignored by
 Git and recreated during every Makefile build target by:
