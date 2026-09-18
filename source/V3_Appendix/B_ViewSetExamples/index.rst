@@ -3,89 +3,93 @@
 Appendix B: ViewSet Examples
 ============================
 
+The figures in this appendix are informative. Normative Image Display
+requirements are specified in :ref:`Section 3.1.4.1.3.2
+<viewset_display_requirements>`.
+
+The figures were imported from the ADA 1100 working materials. The clinical
+photographic example is included with the subject's authorization for
+publication.
+
+.. _viewset_vs01_examples:
 
 Viewset VS-01
-+++++++++++++++++++
++++++++++++++
 
-.. list-table:: ViewSet VS-01
-   :header-rows: 1
+.. figure:: ../../images-static/VS-01-example-drawings.png
+   :align: center
+   :width: 70%
+   :alt: Line-drawing example of the VS-01 photographic viewset.
 
-   * - order
-     - code
-     - meaning
-   * - 01
-     - `SCT 1306623000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1306623000&edition=MAIN&release=&languages=en>`__
-     - Photographic extraoral image of right half of face with lips relaxed and teeth in centric occlusion (record artifact)
-   * - 02
-     - `SCT 1306630006 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1306630006&edition=MAIN&release=&languages=en>`__
-     - Photographic extraoral image of full face with lips relaxed and teeth in centric occlusion (record artifact)
-   * - 03
-     - `SCT 1306664005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1306664005&edition=MAIN&release=&languages=en>`__
-     - Photographic extraoral image of full face with full smile and teeth in centric occlusion (record artifact)
-   * - 04
-     - `OPOR 73865053 <https://github.com/open-ortho/terminology/releases/download/v0.3.2/open_ortho_terminology.terminology.open_ortho.json>`__
-     - Intraoral, Maxillary, Mouth Open, Occlusal View, With Mirror, But Corrected
-   * - 05
-     - 
-     - 
-   * - 06
-     - `OPOR 73865055 <https://github.com/open-ortho/terminology/releases/download/v0.3.2/open_ortho_terminology.terminology.open_ortho.json>`__
-     - Intraoral, Mandibular, Mouth Open, Occlusal View, With Mirror, But Corrected
-   * - 07
-     - `OPOR 73864849 <https://github.com/open-ortho/terminology/releases/download/v0.3.2/open_ortho_terminology.terminology.open_ortho.json>`__
-     - Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)
-   * - 08
-     - `OPOR 73864855 <https://github.com/open-ortho/terminology/releases/download/v0.3.2/open_ortho_terminology.terminology.open_ortho.json>`__
-     - Intraoral, Frontal View, Centric Occlusion
-   * - 09
-     - `OPOR 73864956 <https://github.com/open-ortho/terminology/releases/download/v0.3.2/open_ortho_terminology.terminology.open_ortho.json>`__
-     - Intraoral, Left Buccal Segment, Centric Occlusion (Direct View)
+   Informative line-drawing example of VS-01.
+
+.. figure:: ../../images-static/VS-01-example-photographs.png
+   :align: center
+   :width: 70%
+   :alt: Clinical photographic example of the VS-01 viewset.
+
+   Informative clinical photographic example of VS-01.
+
+.. figure:: ../../images-static/VS-01-normalized-layout.png
+   :align: center
+   :width: 70%
+   :alt: VS-01 layout with normalized dimensions and positions.
+
+   Informative VS-01 layout with normalized dimensions and positions.
+
+.. _viewset_vs02_examples:
 
 Viewset VS-02
-+++++++++++++++++++
++++++++++++++
 
-.. list-table:: ViewSet VS-01
-   :header-rows: 1
+.. figure:: ../../images-static/VS-02-example-drawings.png
+   :align: center
+   :width: 90%
+   :alt: Line-drawing example of the VS-02 photographic viewset.
 
-   * - order
-     - code
-     - meaning
-   * - 01
-     - `SCT 1306623000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1306623000&edition=MAIN&release=&languages=en>`__
-     - Photographic extraoral image of right half of face with lips relaxed and teeth in centric occlusion (record artifact)
-   * - 02
-     - `SCT 1306627004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1306627004&edition=MAIN&release=&languages=en>`__
-     - Photographic extraoral image of 45 degree view of right half of face with lips relaxed and teeth in centric occlusion (record artifact)
-   * - 03
-     - `SCT 1306630006 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1306630006&edition=MAIN&release=&languages=en>`__
-     - Photographic extraoral image of full face with lips relaxed and teeth in centric occlusion (record artifact)
-   * - 04
-     - `SCT 1306664005 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1306664005&edition=MAIN&release=&languages=en>`__
-     - Photographic extraoral image of full face with full smile and teeth in centric occlusion (record artifact)
-   * - 05
-     - `SCT 1306644000 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1306644000&edition=MAIN&release=&languages=en>`__
-     - Photographic extraoral image of 45 degree view of left half of face with lips relaxed and teeth in centric occlusion (record artifact)
-   * - 06
-     - `SCT 1306656004 <https://browser.ihtsdotools.org/?perspective=full&conceptId1=1306656004&edition=MAIN&release=&languages=en>`__
-     - Photographic extraoral image of full face with full smile and teeth in centric occlusion (record artifact)
-   * - 07
-     - IO.MX.MO.OV.WM.BC
-     - Intraoral, Maxillary, Mouth Open, Occlusal View, With Mirror, But Corrected
-   * - 08
-     - IO.MD.MO.OV.WM.BC
-     - Intraoral, Mandibular, Mouth Open, Occlusal View, With Mirror, But Corrected
-   * - 09
-     - IO.FV.IV.CO
-     - Intraoral, Frontal View Inferior (showing depth of bite and overjet), Centric Occlusion
-   * - 10
-     - 
-     - 
-   * - 11
-     - IO.RB.CO
-     - Intraoral, Right Buccal Segment, Centric Occlusion (Direct View)
-   * - 12
-     - IO.FV.CO
-     - Intraoral, Frontal View, Centric Occlusion
-   * - 13
-     - IO.LB.CO
-     - Intraoral, Left Buccal Segment, Centric Occlusion (Direct View)
+   Informative line-drawing example of VS-02.
+
+.. figure:: ../../images-static/VS-02-normalized-layout.png
+   :align: center
+   :width: 90%
+   :alt: VS-02 layout with normalized dimensions and positions.
+
+   Informative VS-02 layout with normalized dimensions and positions.
+
+.. _viewset_vs03_examples:
+
+Viewset VS-03
++++++++++++++
+
+.. figure:: ../../images-static/VS-03-example-drawings.png
+   :align: center
+   :width: 90%
+   :alt: Line-drawing example of the VS-03 photographic viewset.
+
+   Informative line-drawing example of VS-03.
+
+.. figure:: ../../images-static/VS-03-normalized-layout.png
+   :align: center
+   :width: 90%
+   :alt: VS-03 layout with normalized dimensions and positions.
+
+   Informative VS-03 layout with normalized dimensions and positions.
+
+.. _viewset_vs04_examples:
+
+Viewset VS-04
++++++++++++++
+
+.. figure:: ../../images-static/VS-04-example-drawings.png
+   :align: center
+   :width: 80%
+   :alt: Line-drawing example of the VS-04 photographic viewset.
+
+   Informative line-drawing example of VS-04.
+
+.. figure:: ../../images-static/VS-04-normalized-layout.png
+   :align: center
+   :width: 80%
+   :alt: VS-04 layout with normalized dimensions and positions.
+
+   Informative VS-04 layout with normalized dimensions and positions.

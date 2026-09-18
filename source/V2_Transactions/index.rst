@@ -220,7 +220,8 @@ The behaviors in this section are specified as baseline capabilities.  Displays 
 
 Displays shall support the capabilities described in this section for DICOM images encoded in instances of the following:
 
-* VL Photographic Image IOD as defined in :ref:`DEN TF-3: 7.3.1 VL Photographic Image IOD Definition <vl_photographic_image_iod_definition>.
+* VL Photographic Image IOD as defined in :ref:`DEN TF-3: 7.3.1 VL
+  Photographic Image IOD Definition <vl_photographic_image_iod_definition>`.
 
 3.1.4.1.3.1 General Display Requirements
 ****************************************
@@ -235,26 +236,4 @@ display, in association with that instance:
 
 The displayed information shall not obscure clinically relevant image content.
 
-3.1.4.1.3.2 Viewset VS-01
-*************************
-VS-01 (from DICOM correction package 1571) is the template preferred by the ABO for Case Submission and Display. It is the viewset most commonly used by orthodontic practitioners and vendors of orthodontic software.
-
-The Display shall be able to display for the user Viewset VS-01, with eight images and one text box, as defined in **ANSI/ADA Standard No. 1100**, Section 10.
-
-3.1.4.1.3.3 Viewset VS-02
-*************************
-VS-02 is a custom craniofacial viewset has greatest use for documentation of orthognathic and craniofacial surgery treatment.
-
-The Display shall be able to display for the user Viewset VS-02, with 13 views as defined in **ANSI/ADA Standard No. 1100**, Section 10.
-
-3.1.4.1.3.4 Viewset VS-03
-*************************
-VS-03 is a custom supplementary patient record display, presents specific views commonly requested by insurance companies for documentation of automatic qualifiers (such as excessive overjet or impinging deep bite).
-
-The Display shall be able to display for the user Viewset VS-03, with 13 image boxes as defined in **ANSI/ADA Standard No. 1100**, Section 10.
-
-3.1.4.1.3.5 Viewset VS-04
-*************************
-VS-04 is a custom supplementary patient record display, was designed to facilitate assessment of craniofacial asymmetries.
-
-The Display shall be able to display for the user Viewset VS-04, with 12 image boxes as defined in **ANSI/ADA Standard No. 1100**, Section 10.
+.. include:: viewset_display_requirements.inc
