@@ -58,7 +58,7 @@ normative viewset geometry and the generated normalized-layout diagrams.
 `geometry.csv` defines dimensions shared by every viewset. Each viewset also
 has an arrangement file named `<viewset>.csv`, such as `VS-04.csv`.
 
-The same CSV is used in two places:
+These CSV files are used in two places:
 
 - Volume 2 includes the CSV files as normative geometry and arrangement tables.
 - `dent_oip_builder/viewset_layout_maker.py` reads it to generate the SVG
@@ -66,6 +66,15 @@ The same CSV is used in two places:
 
 This prevents the dimensions stated in the document from diverging from the
 diagram.
+
+`geometry.csv` contains the fixed inputs from which the generator calculates
+the box dimensions and complete layouts. ADA 1100 does not prescribe numeric
+margin or gap dimensions; it requires spacing that aids visualization without
+interfering with the images. The values in `geometry.csv` were calculated from
+the example graphics in ADA 1100, which in turn were based on commonly used
+American Board of Orthodontics (ABO) case presentations and existing
+commercially produced presentations. The reference width of `1000` is an
+arbitrary scale-independent unit used to express those measured proportions.
 
 `geometry.csv` uses `Parameter` and `Value` columns. Its parameters are:
 
@@ -91,7 +100,7 @@ The viewset arrangement CSVs define physical rows from top to bottom:
 All dimensions are scale-independent. Calling them pixels is convenient when
 reasoning about the layout, but the resulting SVG can be rendered at any size.
 
-The generator calculates geometry as follows:
+From these fixed inputs, the generator calculates each layout as follows:
 
 1. Calculate the common box width from the VS-01 reference width, its three
    columns, and the common horizontal margins and gaps.
