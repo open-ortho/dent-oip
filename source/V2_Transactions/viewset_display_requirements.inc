@@ -66,24 +66,23 @@ notes following Table 4.1.)
 VS-01 Layout
 ^^^^^^^^^^^^
 
-The Image Display shall construct VS-01 as follows:
+The Image Display shall construct VS-01 using the proportions in Table
+3.1.4.1.3.2-1. (ADA 1100, Section 10, VS-01 requirements 1 through 6 and
+Construction Details.)
 
-- The layout shall contain nine equal-width boxes arranged in three rows and
-  three columns. (ADA 1100, Section 10, VS-01 requirements 1 through 3.)
-- The height of the three boxes within each row shall be identical. (ADA 1100,
-  Section 10, VS-01 requirement 6.)
-- The width-to-height ratio of each top-row box shall be ``0.866``. (ADA 1100,
-  Section 10, VS-01 requirement 4, Top Row.)
-- The width-to-height ratio of each middle-row box shall be ``1.432``. (ADA
-  1100, Section 10, VS-01 requirement 4, Middle Row.)
-- The width-to-height ratio of each bottom-row box shall be ``1.794``. (ADA
-  1100, Section 10, VS-01 requirement 4, Bottom Row.)
-- The width-to-height ratio of the complete layout shall be ``1.000:0.829``.
-  (ADA 1100, Section 10, VS-01 Construction Details, bullet 1.)
-- The boxes shall contain the images or information specified in Table
-  3.1.4.1.3.2-1. (ADA 1100, Section 10, VS-01 requirement 7 and Table 4.1.)
+**Table 3.1.4.1.3.2-1: VS-01 Layout Geometry**
 
-**Table 3.1.4.1.3.2-1: VS-01 Image Locations**
+.. csv-table::
+   :file: ../tables/viewset_layouts/VS-01.csv
+   :header-rows: 1
+
+The normalized layout figure in :ref:`Appendix B <viewset_vs01_examples>` is
+generated from Table 3.1.4.1.3.2-1.
+
+The boxes shall contain the images or information specified in Table
+3.1.4.1.3.2-2. (ADA 1100, Section 10, VS-01 requirement 7 and Table 4.1.)
+
+**Table 3.1.4.1.3.2-2: VS-01 Image Locations**
 
 Source: ADA 1100, Section 10, Table 4.1, corresponding ILC row.
 
@@ -141,25 +140,25 @@ introductory paragraph.)
 VS-02 Layout
 ^^^^^^^^^^^^
 
-The Image Display shall construct VS-02 as follows:
+The Image Display shall construct VS-02 using the proportions in Table
+3.1.4.1.3.3-1. VS-02 shall use the VS-01 top-, middle-, and bottom-row box
+proportions, margins, and gaps. Its six-, four-, and three-box row arrangement
+determines the resulting complete layout height. (ADA 1100, Section 10,
+inherited VS-01 requirements 4 through 6 and VS-02 Figure A2-1.)
 
-- The layout shall contain thirteen equal-width boxes arranged as six boxes
-  in the top row, four centered boxes in the middle row, and three centered
-  boxes in the bottom row. (ADA 1100, Section 10, Figure A2-1.)
-- The height of the boxes within each row shall be identical. (ADA 1100,
-  Section 10, Figure A2-1.)
-- The width-to-height ratio of each top-row box shall be ``0.370``. (Derived
-  from ADA 1100, Section 10, Figure A2-1.)
-- The width-to-height ratio of each middle-row box shall be ``0.611``. (Derived
-  from ADA 1100, Section 10, Figure A2-1.)
-- The width-to-height ratio of each bottom-row box shall be ``0.773``. (Derived
-  from ADA 1100, Section 10, Figure A2-1.)
-- The width-to-height ratio of the complete layout shall be ``1.000:0.544``.
-  (ADA 1100, Section 10, VS-02 Construction Details, bullet 1.)
-- The boxes shall contain the images or information specified in Table
-  3.1.4.1.3.3-1. (ADA 1100, Section 10, Table 4.2.)
+**Table 3.1.4.1.3.3-1: VS-02 Layout Geometry**
 
-**Table 3.1.4.1.3.3-1: VS-02 Image Locations**
+.. csv-table::
+   :file: ../tables/viewset_layouts/VS-02.csv
+   :header-rows: 1
+
+The normalized layout figure in :ref:`Appendix B <viewset_vs02_examples>` is
+generated from Table 3.1.4.1.3.3-1.
+
+The boxes shall contain the images or information specified in Table
+3.1.4.1.3.3-2. (ADA 1100, Section 10, Table 4.2.)
+
+**Table 3.1.4.1.3.3-2: VS-02 Image Locations**
 
 Source: ADA 1100, Section 10, Table 4.2, corresponding ILC row.
 
@@ -235,24 +234,23 @@ VS-03 Layout
 The Image Display shall apply the VS-01 display requirements except as follows.
 (ADA 1100, Section 10, VS-03 compliance statement.)
 
-- The layout shall contain thirteen equal-width boxes in an inverted-pyramid
-  arrangement: five boxes in the top row, four centered boxes in the middle
-  row, and four centered boxes in the bottom row. (ADA 1100, Section 10, VS-03
-  requirements 1 through 3.)
-- The height of the boxes within each row shall be identical. (ADA 1100,
-  Section 10, VS-03 compliance statement and VS-01 requirement 6.)
-- The width-to-height ratio of each top-row box shall be ``0.370``. (Derived
-  from ADA 1100, Section 10, Figure A3-1.)
-- The width-to-height ratio of each middle-row box shall be ``0.611``. (Derived
-  from ADA 1100, Section 10, Figure A3-1.)
-- The width-to-height ratio of each bottom-row box shall be ``0.773``. (Derived
-  from ADA 1100, Section 10, Figure A3-1.)
-- The width-to-height ratio of the complete layout shall be ``1.000:0.544``.
-  (ADA 1100, Section 10, VS-03 Construction Details, bullet 1.)
-- The boxes shall contain the images or information specified in Table
-  3.1.4.1.3.4-1. (ADA 1100, Section 10, Table 4.3.)
+The Image Display shall construct VS-03 using the proportions in Table
+3.1.4.1.3.4-1. (ADA 1100, Section 10, VS-03 requirements 1 through 3,
+inherited VS-01 requirements 4 and 6, and VS-03 Construction Details.)
 
-**Table 3.1.4.1.3.4-1: VS-03 Image Locations**
+**Table 3.1.4.1.3.4-1: VS-03 Layout Geometry**
+
+.. csv-table::
+   :file: ../tables/viewset_layouts/VS-03.csv
+   :header-rows: 1
+
+The normalized layout figure in :ref:`Appendix B <viewset_vs03_examples>` is
+generated from Table 3.1.4.1.3.4-1.
+
+The boxes shall contain the images or information specified in Table
+3.1.4.1.3.4-2. (ADA 1100, Section 10, Table 4.3.)
+
+**Table 3.1.4.1.3.4-2: VS-03 Image Locations**
 
 Source: ADA 1100, Section 10, Table 4.3, corresponding ILC row.
 
@@ -327,23 +325,25 @@ VS-04 Layout
 The Image Display shall apply the VS-01 display requirements except as follows.
 (ADA 1100, Section 10, VS-04 compliance statement.)
 
-- The layout shall contain twelve equal-width boxes arranged as four columns
-  and three rows. (ADA 1100, Section 10, VS-04 requirements 1 through 3.)
-- The height of the four boxes within each row shall be identical. (ADA 1100,
-  Section 10, VS-04 compliance statement and VS-01 requirement 6.)
-- The width-to-height ratio of each top- and middle-row box shall be ``0.635``.
-  (DENT-OIP constraint derived from the ADA 1100 working-layout diagram; not
-  specified in the May 2025 ballot.)
-- The width-to-height ratio of each bottom-row box shall be ``1.315``.
-  (DENT-OIP constraint derived from the ADA 1100 working-layout diagram; not
-  specified in the May 2025 ballot.)
-- The width-to-height ratio of the complete layout shall be ``1.000:0.733``.
-  (DENT-OIP constraint from the ADA 1100 working-layout Construction Details;
-  not specified in the May 2025 ballot.)
-- The boxes shall contain the images or information specified in Table
-  3.1.4.1.3.5-1. (ADA 1100, Section 10, Table 4.4.)
+The Image Display shall construct VS-04 using the proportions in Table
+3.1.4.1.3.5-1. The first and second rows use the VS-01 top-row box proportion;
+the third row uses the VS-01 bottom-row box proportion. VS-04 does not use the
+VS-01 middle-row box proportion. (ADA 1100, Section 10, VS-04 requirements 1
+through 3 and inherited VS-01 requirements 4 and 6.)
 
-**Table 3.1.4.1.3.5-1: VS-04 Image Locations**
+**Table 3.1.4.1.3.5-1: VS-04 Layout Geometry**
+
+.. csv-table::
+   :file: ../tables/viewset_layouts/VS-04.csv
+   :header-rows: 1
+
+The normalized layout figure in :ref:`Appendix B <viewset_vs04_examples>` is
+generated from Table 3.1.4.1.3.5-1.
+
+The boxes shall contain the images or information specified in Table
+3.1.4.1.3.5-2. (ADA 1100, Section 10, Table 4.4.)
+
+**Table 3.1.4.1.3.5-2: VS-04 Image Locations**
 
 Source: ADA 1100, Section 10, Table 4.4, corresponding ILC row.
 

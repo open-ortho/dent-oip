@@ -7,9 +7,10 @@ The figures in this appendix are informative. Normative Image Display
 requirements are specified in :ref:`Section 3.1.4.1.3.2
 <viewset_display_requirements>`.
 
-The figures were imported from the ADA 1100 working materials. The clinical
-photographic example is included with the subject's authorization for
-publication.
+The example figures were imported from the ADA 1100 working materials. The
+normalized-layout figures are generated from the normative Volume 2 layout
+tables. The clinical photographic example is included with the subject's
+authorization for publication.
 
 .. _viewset_vs01_examples:
 
@@ -30,7 +31,7 @@ Viewset VS-01
 
    Informative clinical photographic example of VS-01.
 
-.. figure:: ../../images-static/VS-01-normalized-layout.png
+.. figure:: ../../images-static/generated/VS-01-normalized-layout.svg
    :align: center
    :width: 70%
    :alt: VS-01 layout with normalized dimensions and positions.
@@ -49,7 +50,7 @@ Viewset VS-02
 
    Informative line-drawing example of VS-02.
 
-.. figure:: ../../images-static/VS-02-normalized-layout.png
+.. figure:: ../../images-static/generated/VS-02-normalized-layout.svg
    :align: center
    :width: 90%
    :alt: VS-02 layout with normalized dimensions and positions.
@@ -68,7 +69,7 @@ Viewset VS-03
 
    Informative line-drawing example of VS-03.
 
-.. figure:: ../../images-static/VS-03-normalized-layout.png
+.. figure:: ../../images-static/generated/VS-03-normalized-layout.svg
    :align: center
    :width: 90%
    :alt: VS-03 layout with normalized dimensions and positions.
@@ -87,7 +88,7 @@ Viewset VS-04
 
    Informative line-drawing example of VS-04.
 
-.. figure:: ../../images-static/VS-04-normalized-layout.png
+.. figure:: ../../images-static/generated/VS-04-normalized-layout.svg
    :align: center
    :width: 80%
    :alt: VS-04 layout with normalized dimensions and positions.

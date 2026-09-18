@@ -34,18 +34,20 @@ SOURCEDIR     = ./source
 
 VALUESETBUILDER = $(PIPENV_RUN) $(PYTHON) ./dent_oip_builder/valueset_builder.py
 VIEWBUILDER = $(PIPENV_RUN) $(PYTHON) ./dent_oip_builder/view_maker.py
+VIEWSET_LAYOUT_BUILDER = $(PIPENV_RUN) $(PYTHON) ./dent_oip_builder/viewset_layout_maker.py
 
 VERSION_FILE  = $(SOURCEDIR)/_VERSION
 GENERATED_TABLES = $(SOURCEDIR)/tables/generated
 SAMPLE_DICOM_FILES = $(SOURCEDIR)/_static/dicom_samples
 VIEW_EXAMPLES = $(SOURCEDIR)/V3_Appendix/A_ViewExamples
 IMAGES = $(SOURCEDIR)/images
+VIEWSET_LAYOUTS = $(SOURCEDIR)/images-static/generated
 
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile deploy genereted_tables dist
+.PHONY: help Makefile deploy genereted_tables dist viewset-layouts
 
 # This will get executed automatically for each target routed to Sphinx. See catchall target below.
 $(GENERATED_TABLES): $(IMAGES)
@@ -54,7 +56,7 @@ $(GENERATED_TABLES): $(IMAGES)
 	$(VALUESETBUILDER)
 
 clean:
-	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)" "$(IMAGES)" "$(VIEW_EXAMPLES)/generated" "$(SAMPLE_DICOM_FILES)" "$(VERSION_FILE)"
+	rm -rf "$(BUILDDIR)" "$(GENERATED_TABLES)" "$(IMAGES)" "$(VIEW_EXAMPLES)/generated" "$(SAMPLE_DICOM_FILES)" "$(VERSION_FILE)" "$(VIEWSET_LAYOUTS)"
 
 deploy:
 	cp VERSION $(VERSION_FILE)
@@ -85,6 +87,9 @@ $(SAMPLE_DICOM_FILES): $(GENERATED_TABLES)
 	mkdir -p $@
 	mv -v $(IMAGES)/*.dcm $@
 
+viewset-layouts:
+	$(VIEWSET_LAYOUT_BUILDER)
+
 # both using latexpdf and sphinx -b pdf proved to be unstable. Too much maintenance. Resorting to LibreOffice.
 pdf: docx
 	mkdir -p $(BUILDDIR)/pdf/
@@ -92,5 +97,5 @@ pdf: docx
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile $(SAMPLE_DICOM_FILES) 
+%: Makefile $(SAMPLE_DICOM_FILES) viewset-layouts
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

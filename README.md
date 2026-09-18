@@ -51,6 +51,74 @@ For more information on how this process works, see section View Tables Generati
 - The _codeset_ column contains the abbreviation for the codeset used, i.e. `SCT` for SNOMED-CT, `DCM` for DICOM.
 - The codes which are not part of a real codeset and are considered CS (Coded String) in DICOM, have `CS` in the _codeset_ column.
 
+#### Viewset layout CSV format
+
+The files in `source/tables/viewset_layouts/` are the source of truth for the
+normative viewset proportions and the generated normalized-layout diagrams.
+Each viewset has one CSV file named `<viewset>.csv`, such as `VS-04.csv`.
+
+The same CSV is used in two places:
+
+- Volume 2 includes it as the normative layout-geometry table.
+- `dent_oip_builder/viewset_layout_maker.py` reads it to generate the SVG
+  diagram used in Appendix B.
+
+This prevents the dimensions stated in the document from diverging from the
+diagram.
+
+Each CSV row defines one physical row of image boxes, ordered from top to
+bottom. The columns are:
+
+| Column | Meaning |
+| --- | --- |
+| `Row` | One-based physical row number, from top to bottom. |
+| `Row Type` | Clinical row type inherited from the viewset definition, such as `Top`, `Middle`, or `Bottom`. This documents which standard box proportion the row uses. |
+| `Boxes` | Number of equal-width boxes in the row. |
+| `First ILC` | Image Location Code assigned to the leftmost box. Following boxes are numbered consecutively. |
+| `Box Width:Height` | Physical width-to-height ratio of every box in the row. The generator calculates row height as box width divided by this value. |
+| `Layout Width` | Physical width of the complete layout. It is currently required to be `1.000`. |
+| `Layout Height` | Expected physical height of the complete layout relative to `Layout Width`, rounded to three decimal places. The generator verifies this value against the height calculated from the rows, margins, and vertical gaps. |
+| `Horizontal Margin` | Left and right margins, expressed in physical units relative to `Layout Width`. |
+| `Vertical Margin` | Top and bottom margins, expressed in physical units relative to `Layout Width`. |
+| `Horizontal Gap` | Gap between boxes, expressed relative to `Layout Width`. It may be a decimal or a fraction such as `1/60`. |
+| `Vertical Gap` | Gap between rows, expressed relative to `Layout Width`. It may be a decimal or fraction. |
+
+Values that describe the complete layout (`Layout Width`, `Layout Height`,
+`Horizontal Margin`, `Vertical Margin`, `Horizontal Gap`, and `Vertical Gap`)
+must be identical on every row. The generator rejects inconsistent values.
+
+The generator calculates geometry as follows:
+
+1. The row containing the most boxes determines the common box width.
+2. Each row height is calculated from its `Box Width:Height` value.
+3. Rows with fewer boxes are centered horizontally.
+4. The complete layout height is calculated from the row heights, vertical
+   margins, and vertical gaps. The calculation must round to the declared
+   `Layout Height`.
+5. Physical coordinates are normalized independently to the calculated layout
+   width and height and printed to three decimal places in the diagram.
+
+Do not edit files in `source/images-static/generated/`. They are ignored by
+Git and recreated during every Makefile build target by:
+
+```bash
+python3 dent_oip_builder/viewset_layout_maker.py
+```
+
+The canonical generated format is SVG so that dimensions remain precise at any
+output resolution. Sphinx copies the SVG into the HTML build. Other formats,
+such as PNG for a word-processing workflow, should be derived from the generated
+SVG rather than maintained as separate drawings.
+
+Run the focused generator tests with:
+
+```bash
+python3 -m unittest test_viewset_layout_maker.py -v
+```
+
+The tests validate the calculated proportions and normalized coordinates and
+confirm that the output is valid SVG with coordinate-corner markers.
+
 ### Using GitHub
 
 Editors can edit the document from within the `source/` directory. The document content is only in files with extension `.rst`, which stands for restructured text. [a primer here.](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
