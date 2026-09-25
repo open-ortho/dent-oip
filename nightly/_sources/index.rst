@@ -1,7 +1,7 @@
 Dentistry – Technical Framework Supplement – Orthodontic Imaging Profile (OIP) – Trial Implementation
 ==================================================================================================
 
-`DOCX <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20260220203304/DENT-OIP-0.2.7-nightly.20260220203304.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20260220203304/DENT-OIP-0.2.7-nightly.20260220203304.pdf>`__
+`DOCX <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20260925122838/DENT-OIP-0.2.7-nightly.20260925122838.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20260925122838/DENT-OIP-0.2.7-nightly.20260925122838.pdf>`__
 
 Executive Summary
 -----------------
