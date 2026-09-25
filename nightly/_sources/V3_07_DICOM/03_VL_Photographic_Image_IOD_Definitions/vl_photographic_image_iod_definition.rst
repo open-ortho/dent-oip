@@ -164,7 +164,7 @@ The baseline requirements for the VL Photographic Image IOD are defined in `DICO
 7.3.1.1 VL Photographic Image IOD Acquisition Requirements
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-**Reference:**  <question for Toni:  Where did these requirement originate?>
+**References:** The acquisition requirements below originate from ADA Standard No. 1114 (Section 6.1) and ADA SCDI White Paper 1100, and have been adapted for expression as DICOM constraints in this profile.
 
 #. Each DICOM *Study* SHALL represent a specific orthodontic progress (rather than necessarily an orthodontic visit). The same *Study* SHALL NOT span across multiple visits, or multiple progresses.
 

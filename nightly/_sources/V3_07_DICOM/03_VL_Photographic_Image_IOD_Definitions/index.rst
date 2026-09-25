@@ -16,22 +16,12 @@ In Column 5, these additional 'Usage' values are defined:
 **IOD Definitions specified in this section:**
 
 + :ref:`Section 7.3.1 VL Photographic Image IOD Definition <vl_photographic_image_iod_definition>`
-+ :ref:`Section 7.3.2 Video Photographics Image IOD Definition <video_photographic_image_iod_definition>`
-+ :ref:`Section 7.3.3 Encapsulated 3D Manufacturing Model IOD Definitions <encapsulated_3d_manufacturing_model_iods_definition>`
-+ :ref:`Section 7.3.4 Surface Scan Mesh IOD Definition <surface_scan_mesh_iod_definition>`
-+ :ref:`Section 7.3.5 Multi-frame True Color Secondary Capture Image IOD Definition <multi-frame_true_color_secondary_capture_image_iod_definition>`
-+ :ref:`Section 7.3.6 Secondary Capture Image IOD Definition <secondary_capture_image_iod_definition>`
-+ :ref:`Section 7.3.7 Structured Display IOD Definition <structured_display_iod_definition>`
-+ :ref:`Section 7.3.8 Hanging Protocol IOD Definition <hanging_protocol_iod_definition>`
++ :ref:`Section 7.3.2 Structured Display IOD Definition <structured_display_iod_definition>`
++ :ref:`Section 7.3.3 Hanging Protocol IOD Definition <hanging_protocol_iod_definition>`
 
 .. toctree::
     :maxdepth: 1
 
     vl_photographic_image_iod_definition
-    video_photographic_image_iod_definition
-    encapsulated_3d_manufacturing_model_iods_definition
-    surface_scan_mesh_iod_definition
-    multi-frame_true_color_secondary_capture_image_iod_definition
-    secondary_capture_image_iod_definition
     structured_display_iod_definition
     hanging_protocol_iod_definition

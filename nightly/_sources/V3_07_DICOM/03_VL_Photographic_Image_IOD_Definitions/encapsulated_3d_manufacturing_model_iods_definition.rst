@@ -1,3 +1,5 @@
+:orphan:
+
 .. _encapsulated_3d_manufacturing_model_iods_definition:
 
 7.3.3 Encapsulated 3D Manufacturing Models IODs Definition

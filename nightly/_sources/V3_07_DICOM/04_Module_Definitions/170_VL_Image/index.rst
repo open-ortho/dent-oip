@@ -43,6 +43,8 @@ For orthodontic photography, we make use of the VL Image Module  to store the co
       - C (Recommended. SHOULD be specified, if known. Only one value is allowed.)
       - Sequence that provides modifiers for the view of the anatomic region of interest in the image.   See `CID 4065 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_4065.html>`_ "VL Dental View Modifier".
 
+.. _view_code_sequence:
+
 7.4.2.1.1 View Code Sequence (0054,0220)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -221,4 +223,3 @@ Any EXIF tag which comes from the camera, should be mapped and stored in the VL 
    - Implementations SHALL follow this specification for all orthodontic photographs requiring non-standard image type codes.
    - Implementations SHOULD provide a mechanism for the application to specify the ``ContextGroupExtensionCreatorUID``.
    - Implementations MAY provide a fallback UID for development or testing, but SHALL warn the user.
-

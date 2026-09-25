@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Volume 2 - Transactions &#8212; DENT-OIP 0.2.7-nightly.20260925122838 documentation</title>
+    <title>Volume 2 - Transactions &#8212; DENT-OIP 0.2.7-nightly.20260925122851 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../_static/documentation_options.js?v=692df224"></script>
+    <script src="../_static/documentation_options.js?v=9f9e148d"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260925122838 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260925122851 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -151,7 +151,6 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../dent-oip/01_Volume_1/index.html">Volume 1 - Integration Profiles</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../Preamble/index.html">Preamble</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../Preamble/01_foreword.html">Foreword</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Preamble/02_scope.html">Introduction to this Supplement</a></li>
 
 
@@ -159,22 +158,14 @@
 
 
 
-<li class="toctree-l3"><a class="reference internal" href="../Preamble/03_normative_references.html">Normative References</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Preamble/04_requirements.html">Guiding Principles (Informative)</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/index.html">3 Orthodontic Imaging (OIP) Profile</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/01_oip_actors_transactions/index.html">3.1 OIP Actors, Transactions, and Content Modules</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/index.html">3.2 OIP Profile Options</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/direct_photography_option.html">3.2.1 Direct Photography Option</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/direct_motion_picture_option.html">3.2.2 Direct Motion Picture Option</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/3d_scan_for_appliances_option.html">3.2.3 3D Scan for Appliances Option</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/3d_intraoral_extraoral_scan_option.html">3.2.4 3D Intraoral / Extraoral Scan Option</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/true_color_scan_option.html">3.2.5 True Color Scan Option</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/scanned_radiographs_option.html">3.2.6 Scanned Radiographs Option</a></li>
 </ul>
 </details></li>
-
 
 <li class="toctree-l3"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/03_oip_process_flow/index.html">3.4 OIP Overview</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/05_oip_security_considerations/index.html">3.5 OIP Security Considerations</a></li>
@@ -193,6 +184,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../dent-oip/03_Volume_3/index.html">Volume 3 - Content Specifications</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../V3_07_DICOM/index.html">Volume 3 - Content Definitions</a></li>
 
+<li class="toctree-l2"><a class="reference internal" href="../V3_Appendix/B_ViewSetExamples/index.html">Appendix B: ViewSet Examples</a></li>
 </ul>
 </details></li>
 </ul>
@@ -347,12 +339,11 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-volume-2">1 Introduction to Volume 2</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-ihe">1.1 Introduction to IHE</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intended-audience">1.2 Intended Audience</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-technical-framework-volume-2">1.3 Overview of Technical Framework Volume 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-volume-2">1.3 Overview of Volume 2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-process">1.4 Comment Process</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copyright-licenses">1.5 Copyright Licenses</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trademark">1.6 Trademark</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trademarks">1.6 Trademarks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disclaimer-regarding-patent-rights">1.7 Disclaimer Regarding Patent Rights</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-document-changes">1.6 History of Document Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-document-changes">1.8 History of Document Changes</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conventions">2 Conventions</a><ul class="visible nav section-nav flex-column">
@@ -360,7 +351,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-coded-entities-and-coding-schemes">2.2 Use of Coded Entities and Coding Schemes</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ihe-dental-transactions">3 IHE Dental Transactions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#oip-transactions">3 OIP Transactions</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#display-visible-light-images-den-1">3.1 Display Visible Light Images [DEN-1]</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scope">3.1.1 Scope</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actor-roles">3.1.2 Actor Roles</a></li>
@@ -372,11 +363,22 @@ document.write(`
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#expected-actions-i-e-display-requirements">3.1.4.1.3 Expected Actions (i.e., Display Requirements)</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#general-display-requirements">3.1.4.1.3.1 General Display Requirements</a></li>
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#viewset-vs-01">3.1.4.1.3.2 Viewset VS-01</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#common-viewset-display-requirements">Common Viewset Display Requirements</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-01-layout">VS-01 Layout</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#viewset-vs-02">3.1.4.1.3.3 Viewset VS-02</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-02-layout">VS-02 Layout</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#viewset-vs-03">3.1.4.1.3.4 Viewset VS-03</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-03-layout">VS-03 Layout</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#viewset-vs-04">3.1.4.1.3.5 Viewset VS-04</a></li>
 </ul>
 </li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-04-layout">VS-04 Layout</a></li>
 </ul>
 </li>
 </ul>
@@ -399,15 +401,16 @@ document.write(`
                   
   <section id="volume-2-transactions">
 <h1>Volume 2 - Transactions<a class="headerlink" href="#volume-2-transactions" title="Link to this heading">#</a></h1>
-<p>This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines transactions used in IHE Dental Domain profiles.</p>
-<p>1 Introduction to Volume 2
-This document, Volume 2 of the IHE Dental (DEN) Technical Framework, defines
-transactions used in IHE Dental Domain profiles.</p>
+<p>This document is Volume 2 of the Dentistry Orthodontic Imaging Profile
+(DENT-OIP), which is being developed as an ADA/ANSI standard. It defines the
+transactions used by the Orthodontic Imaging Profile (OIP).</p>
+<p>DENT-OIP uses an IHE-compatible organization and section numbering to simplify
+possible future conversion into an IHE Profile.</p>
 <p><strong>Contents</strong></p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#introduction-to-volume-2"><span class="std std-ref">Section 1 - Introduction to Volume 2</span></a></p></li>
 <li><p><a class="reference internal" href="#conventions"><span class="std std-ref">Section 2 - Conventions</span></a></p></li>
-<li><p><a class="reference internal" href="#ihe-dental-transations"><span class="std std-ref">Section 3 - Transactions</span></a></p></li>
+<li><p><a class="reference internal" href="#oip-transactions"><span class="std std-ref">Section 3 - Transactions</span></a></p></li>
 <li><p><a class="reference internal" href="#den-1"><span class="std std-ref">Section 3.1 - Display Visible Light Images [DEN-1]</span></a></p></li>
 </ul>
 </section>
@@ -415,126 +418,126 @@ transactions used in IHE Dental Domain profiles.</p>
 <span id="id1"></span><h1>1 Introduction to Volume 2<a class="headerlink" href="#introduction-to-volume-2" title="Link to this heading">#</a></h1>
 <section id="introduction-to-ihe">
 <h2>1.1 Introduction to IHE<a class="headerlink" href="#introduction-to-ihe" title="Link to this heading">#</a></h2>
-<p>Integrating the Healthcare Enterprise (IHE) is an international initiative to promote the use of
-standards to achieve interoperability among health information technology (HIT) systems and
-effective use of electronic health records (EHRs). IHE provides a forum for care providers, HIT
-experts and other stakeholders in several clinical and operational domains to reach consensus on
-standards-based solutions to critical interoperability issues.</p>
-<p>The primary output of IHE is system implementation guides, called IHE Profiles. IHE publishes
-each profile through a well-defined process of public review and trial implementation and
-gathers profiles that have reached final text status into an IHE Technical Framework, of which
-this volume is a part.</p>
-<p>For general information regarding IHE, refer to <a class="reference external" href="http://www.ihe.net/">www.ihe.net</a>. It is strongly recommended that,
-prior to reading this volume, the reader familiarizes themselves with the concepts defined in the
-<a class="reference external" href="https://profiles.ihe.net/GeneralIntro/index.html">IHE Technical Frameworks General Introduction</a>.</p>
+<p>Integrating the Healthcare Enterprise (IHE) is an international initiative
+that promotes standards-based interoperability among health information
+technology systems. IHE provides a forum for care providers, developers, and
+other stakeholders to reach consensus on solutions to interoperability issues.</p>
+<p>IHE publishes implementation guides called IHE Profiles through public review
+and trial implementation, and incorporates profiles that reach Final Text into
+domain Technical Frameworks. DENT-OIP is not currently an IHE Profile or part
+of an IHE Technical Framework. It follows IHE-compatible organization and
+conventions to support possible future conversion into an IHE Profile.</p>
+<p>For general information and definitions of IHE framework concepts referenced
+by this standard, see the <a class="reference external" href="https://profiles.ihe.net/GeneralIntro/index.html">IHE Technical Frameworks General Introduction</a>.</p>
 </section>
 <section id="intended-audience">
 <h2>1.2 Intended Audience<a class="headerlink" href="#intended-audience" title="Link to this heading">#</a></h2>
-<p>The intended audience of IHE Technical Frameworks Volume 2 is:</p>
+<p>The intended audience for Volume 2 of DENT-OIP includes:</p>
 <ul class="simple">
-<li><p>IT departments of healthcare institutions</p></li>
-<li><p>Developers and technical staff of vendors participating in the IHE initiative</p></li>
+<li><p>IT departments of healthcare institutions, where available</p></li>
+<li><p>Developers and technical staff of vendors</p></li>
 <li><p>Experts involved in standards development</p></li>
 </ul>
 </section>
-<section id="overview-of-technical-framework-volume-2">
-<h2>1.3 Overview of Technical Framework Volume 2<a class="headerlink" href="#overview-of-technical-framework-volume-2" title="Link to this heading">#</a></h2>
-<p>Volume 2 is comprised of several distinct sections:</p>
+<section id="overview-of-volume-2">
+<h2>1.3 Overview of Volume 2<a class="headerlink" href="#overview-of-volume-2" title="Link to this heading">#</a></h2>
+<p>Volume 2 comprises the following sections:</p>
 <ul class="simple">
 <li><p>Section 1 provides background and reference material.</p></li>
-<li><p>Section 2 presents the conventions used in this volume to define the transactions.</p></li>
-<li><p>Section 3 defines Dental transactions in detail, specifying the roles for each actor, the standards employed, the information exchanged, and in some cases, implementation options for the transaction.</p></li>
-<li><p>The appendices provide clarification of technical details of the IHE data model and transactions.</p></li>
+<li><p>Section 2 presents the conventions used to define transactions.</p></li>
+<li><p>Section 3 defines DENT-OIP transactions, including actor roles, referenced
+standards, information exchanged, and implementation requirements.</p></li>
 </ul>
-<p>For a brief overview of other Technical Framework Volumes (TF-1, TF-3), please see
-the IHE Technical Frameworks General Introduction, <a class="reference external" href="https://profiles.ihe.net/GeneralIntro/ch-5.html">Section 5 - Structure of the IHE Technical
-Frameworks</a>.</p>
+<p>Volume 1 defines the OIP actors, options, and process flows. Volume 3 defines
+the DICOM content and constraints referenced by the transactions in this
+volume.</p>
 </section>
 <section id="comment-process">
 <h2>1.4 Comment Process<a class="headerlink" href="#comment-process" title="Link to this heading">#</a></h2>
-<p><em>TO DO: specify here how public comment will work.</em></p>
+<p>The American Dental Association welcomes comments on this document during the
+public review process. Once the standard is published, if someone would like to
+propose a revision, they can contact <a class="reference external" href="mailto:standards&#37;&#52;&#48;ada&#46;org">standards<span>&#64;</span>ada<span>&#46;</span>org</a>.</p>
 </section>
-<section id="copyright-licenses">
-<h2>1.5 Copyright Licenses<a class="headerlink" href="#copyright-licenses" title="Link to this heading">#</a></h2>
-<p>IHE technical documents refer to, and make use of, a number of standards developed and
-published by several standards development organizations. Please refer to the IHE Technical
-Frameworks General Introduction, <a class="reference external" href="https://profiles.ihe.net/GeneralIntro/ch-9.html">Section 9 - Copyright Licenses</a> for copyright license
-information for frequently referenced base standards. Information pertaining to the use of IHE
-International copyrighted materials is also available there.</p>
-</section>
-<section id="trademark">
-<h2>1.6 Trademark<a class="headerlink" href="#trademark" title="Link to this heading">#</a></h2>
-<p>IHE® and the IHE logo are trademarks of the Healthcare Information Management Systems
-Society in the United States and trademarks of IHE Europe in the European Community. Please
-refer to the IHE Technical Frameworks General Introduction, <a class="reference external" href="https://profiles.ihe.net/GeneralIntro/ch-10.html">Section 10 - Trademark</a> for
-information on their use.</p>
+<section id="trademarks">
+<h2>1.6 Trademarks<a class="headerlink" href="#trademarks" title="Link to this heading">#</a></h2>
+<p>The following trademarks are referenced in this document:</p>
+<ul class="simple">
+<li><p>DICOM® is the registered trademark of the National Electrical Manufacturers
+Association for its standards publications relating to digital
+communications of medical information.</p></li>
+<li><p>HL7® and CDA® are registered trademarks of Health Level Seven International.</p></li>
+<li><p>IHE® and the IHE logo are trademarks of the Healthcare Information
+Management Systems Society in the United States and of IHE Europe in the
+European Community.</p></li>
+<li><p>LOINC® is a registered United States trademark of Regenstrief Institute,
+Inc.</p></li>
+<li><p>SNOMED CT® is a registered trademark of the International Health Terminology
+Standards Development Organisation (IHTSDO), trading as SNOMED
+International.</p></li>
+</ul>
+<p>Use of these marks does not imply endorsement of DENT-OIP by their owners.</p>
 </section>
 <section id="disclaimer-regarding-patent-rights">
 <h2>1.7 Disclaimer Regarding Patent Rights<a class="headerlink" href="#disclaimer-regarding-patent-rights" title="Link to this heading">#</a></h2>
-<p>Attention is called to the possibility that implementation of the specifications in this document
-may require use of subject matter covered by patent rights. By publication of this document, no
-position is taken with respect to the existence or validity of any patent rights in connection
-therewith. IHE International is not responsible for identifying Necessary Patent Claims for which
-a license may be required, for conducting inquiries into the legal validity or scope of Patents
-Claims or determining whether any licensing terms or conditions provided in connection with
-submission of a Letter of Assurance, if any, or in any licensing agreements are reasonable or
-non-discriminatory. Users of the specifications in this document are expressly advised that
-determination of the validity of any patent rights, and the risk of infringement of such rights, is
-entirely their own responsibility. Further information about the IHE International patent
-disclosure process including links to forms for making disclosures is available at
-<a class="reference external" href="http://www.ihe.net/Patent_Disclosure_Process">http://www.ihe.net/Patent_Disclosure_Process</a>. Please address questions about the patent
-disclosure process to the secretary of the IHE International Board: <a class="reference external" href="mailto:secretary&#37;&#52;&#48;ihe&#46;net">secretary<span>&#64;</span>ihe<span>&#46;</span>net</a>.</p>
+<p>Attention is called to the possibility that implementation of this standard
+may require the use of subject matter covered by patent rights. This document
+does not take a position on the existence or validity of any patent rights.
+Implementers are responsible for determining whether licenses are required and
+for assessing the risk of infringement. Questions about patent disclosures for
+this ADA/ANSI standards project may be sent to <a class="reference external" href="mailto:standards&#37;&#52;&#48;ada&#46;org">standards<span>&#64;</span>ada<span>&#46;</span>org</a>.</p>
 </section>
 <section id="history-of-document-changes">
-<h2>1.6 History of Document Changes<a class="headerlink" href="#history-of-document-changes" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Date</strong></p></th>
-<th class="head"><p><strong>Document Revision</strong></p></th>
-<th class="head"><p><strong>Change Summary</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>TBD</p></td>
-<td><p>TBD</p></td>
-<td><p>Publish for Public Comment</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<h2>1.8 History of Document Changes<a class="headerlink" href="#history-of-document-changes" title="Link to this heading">#</a></h2>
+<p>This section is reserved for the publication history of a future IHE Profile.
+No IHE revisions currently exist.</p>
 </section>
 </section>
 <section id="conventions">
 <span id="id2"></span><h1>2 Conventions<a class="headerlink" href="#conventions" title="Link to this heading">#</a></h1>
-<p>This document has adopted the following conventions for representing the framework concepts
-and specifying how the standards upon which the IHE Technical Framework is based shall be
-applied.</p>
+<p>This document uses the following conventions to represent OIP concepts and to
+specify how referenced standards are applied.</p>
 <section id="transaction-modeling-and-profile-conventions">
 <h2>2.1 Transaction Modeling and Profile Conventions<a class="headerlink" href="#transaction-modeling-and-profile-conventions" title="Link to this heading">#</a></h2>
-<p>In order to maintain consistent documentation, modeling methods for IHE transactions and profiling conventions for frequently used standards are maintained in the IHE Technical
-Frameworks General Introduction, <a class="reference external" href="https://profiles.ihe.net/GeneralIntro/ch-E.html">Appendix E - Standards Profiling and Documentation
-Conventions</a>. Methods described include the Unified Modeling Language (UML) and standards
-conventions include DICOM, HL7 v2.x, HL7 Clinical Document Architecture (CDA)
-Documents, etc. These conventions are critical to understanding this volume and should be reviewed prior to reading this text.</p>
+<p>To provide consistent transaction specifications and simplify possible future
+conversion into an IHE Profile, DENT-OIP adopts applicable modeling and
+documentation conventions from the <a class="reference external" href="https://profiles.ihe.net/GeneralIntro/ch-E.html">IHE Technical Frameworks General
+Introduction, Appendix E - Standards Profiling and Documentation Conventions</a>. These include the Unified
+Modeling Language (UML) and conventions for applying standards such as DICOM,
+HL7 v2.x, and HL7 Clinical Document Architecture (CDA). Implementers should
+review the cited conventions when interpreting transaction diagrams and
+requirements in this volume.</p>
 </section>
 <section id="use-of-coded-entities-and-coding-schemes">
 <h2>2.2 Use of Coded Entities and Coding Schemes<a class="headerlink" href="#use-of-coded-entities-and-coding-schemes" title="Link to this heading">#</a></h2>
-<p>Where applicable, coding schemes required by the DICOM ®, HL7®, LOINC®, and SNOMED®
-standards are used in IHE Profiles. In the cases where such resources are not explicitly identified
-by standards, implementations may utilize any resource (including proprietary or local) provided
-any licensing/copyright requirements are satisfied.</p>
+<p>Where applicable, DENT-OIP uses coding schemes required by DICOM®, HL7®,
+LOINC®, and SNOMED CT®. When neither a base standard nor DENT-OIP explicitly
+identifies a coding resource, implementations may use a proprietary or local
+resource, provided that applicable licensing and copyright requirements are
+satisfied.</p>
 </section>
 </section>
-<section id="ihe-dental-transactions">
-<span id="ihe-dental-transations"></span><h1>3 IHE Dental Transactions<a class="headerlink" href="#ihe-dental-transactions" title="Link to this heading">#</a></h1>
+<section id="oip-transactions">
+<span id="id3"></span><h1>3 OIP Transactions<a class="headerlink" href="#oip-transactions" title="Link to this heading">#</a></h1>
 <p>This section defines each transaction in detail, specifying the standards used, and the information
 transferred.</p>
 <section id="display-visible-light-images-den-1">
 <span id="den-1"></span><h2>3.1 Display Visible Light Images [DEN-1]<a class="headerlink" href="#display-visible-light-images-den-1" title="Link to this heading">#</a></h2>
 <section id="scope">
 <h3>3.1.1 Scope<a class="headerlink" href="#scope" title="Link to this heading">#</a></h3>
-<p>This transaction is used to present DICOM Visual Light Photographic Images to a dental professional interpreting a study.  This includes 2-dimensional radiographic images such as intraoral and panoramic image, cone beam computed tomography (CBCT) data); as well as visible light images, such as photographs in an organized and structured manner for all aspect of oral healthcare, including those in private practice settings.  The  VL Photographic Images rendered in this transaction are produced by a OIP Content Creator actor supporting the <a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/direct_photography_option.html#direct-photography-option"><span class="std std-ref">DEN TF-1: 3.2.1 Direct Photography Option</span></a>.</p>
-<p><em>&lt;NOTE to Toni:  The above list comes from the ADA 1114, Introduction section pg 7&gt;</em></p>
+<p>This transaction is used to present DICOM VL Photographic Image IOD
+instances to a dental professional for clinical review. It applies to
+individual visible light photographs and collections of photographs,
+including extraoral and intraoral photographs.</p>
+<p>The Image Display is required to support viewsets VS-01 through VS-04 as
+baseline standardized layouts. These required viewsets do not restrict the
+transaction to those layouts; the transaction may also be used to present
+other visible light photographs and viewsets.</p>
+<p>Radiographic images, including intraoral radiographs, panoramic
+radiographs, and cone beam computed tomography data, are outside the scope
+of this transaction.</p>
+<p>The VL Photographic Image IOD instances rendered in this transaction are
+produced by an OIP Content Creator actor supporting the
+<a class="reference internal" href="../V1_Orthodontic_Imaging_Profile/02_oip_integration_profile_options/direct_photography_option.html#direct-photography-option"><span class="std std-ref">DEN TF-1: 3.2.1 Direct Photography Option</span></a>.</p>
 <p>This transaction is not a typical network-based transaction between two devices; instead, the primary focus of the requirements is on the behavior of the display application rather than messaging between two actors. This can be thought
 of as an “informational transaction” between a display device and a user.</p>
 <p>Methods that the Display uses to select and obtain the data to be displayed are outside the scope of this transaction.</p>
@@ -567,7 +570,8 @@ of as an “informational transaction” between a display device and a user.</p
 <section id="referenced-standards">
 <h3>3.1.3 Referenced Standards<a class="headerlink" href="#referenced-standards" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>ANSI/ADA Standard No. 1100, Rev. July 2025, “Dentistry - 2D and 3D Orthodontic/Cranial/Forensic Photographic Views and View Sets</p></li>
+<li><p><a class="reference external" href="https://webstore.ansi.org/standards/ada/ansiada11002025">ANSI/ADA Standard No. 1100, Rev. July 2025, “Dentistry - 2D and 3D
+Orthodontic/Cranial/Forensic Photographic Views and View Sets”</a></p></li>
 </ul>
 </section>
 <section id="messages">
@@ -594,35 +598,596 @@ receives results by a profiled mechanism such as DICOM C-STORE, the messaging pr
 <p>The behaviors in this section are specified as baseline capabilities.  Displays may have additional or alternate capabilities that may be invoked or configured.</p>
 <p>Displays shall support the capabilities described in this section for DICOM images encoded in instances of the following:</p>
 <ul class="simple">
-<li><p>VL Photographic Image IOD as defined in :ref:<a href="#id3"><span class="problematic" id="id4">`</span></a>DEN TF-3: 7.3.1 VL Photographic Image IOD Definition &lt;vl_photographic_image_iod_definition&gt;.</p></li>
+<li><p>VL Photographic Image IOD as defined in <a class="reference internal" href="../V3_07_DICOM/03_VL_Photographic_Image_IOD_Definitions/vl_photographic_image_iod_definition.html#vl-photographic-image-iod-definition"><span class="std std-ref">DEN TF-3: 7.3.1 VL
+Photographic Image IOD Definition</span></a>.</p></li>
 </ul>
 <section id="general-display-requirements">
 <h6>3.1.4.1.3.1 General Display Requirements<a class="headerlink" href="#general-display-requirements" title="Link to this heading">#</a></h6>
-<p>The Display shall:</p>
+<p>For each displayed VL Photographic Image IOD instance, the Image Display shall
+display, in association with that instance:</p>
 <ul class="simple">
-<li><p>&lt;<em>OPEN ISSUE: enumerate here general requirements beyond the viewset requirements below, e.g. for annotation perhaps. Next, add logical subsections.   There are examples of how this is done for NM display in RAD TF-2: 4.16.4.2.2.3, for mammo in RAD TF-2: 4.16.4.2.2.1, and for basic image review in RAD TF-2: 4.16.4.2.2.6.</em></p></li>
+<li><p>the human-readable image type specified in <a class="reference internal" href="../V3_07_DICOM/04_Module_Definitions/170_VL_Image/index.html#view-code-sequence"><span class="std std-ref">Section 7.4.2.1.1</span></a>; and</p></li>
+<li><p>Image Comments (0020,4000), when present, as specified in <a class="reference internal" href="../V3_07_DICOM/04_Module_Definitions/110_General_Image/index.html#general-image"><span class="std std-ref">Section
+7.4.1.7</span></a>.</p></li>
 </ul>
+<p>The displayed information shall not obscure clinically relevant image content.</p>
 </section>
 <section id="viewset-vs-01">
-<h6>3.1.4.1.3.2 Viewset VS-01<a class="headerlink" href="#viewset-vs-01" title="Link to this heading">#</a></h6>
-<p>VS-01 (from DICOM correction package 1571) is the template preferred by the ABO for Case Submission and Display. It is the viewset most commonly used by orthodontic practitioners and vendors of orthodontic software.</p>
-<p>The Display shall be able to display for the user Viewset VS-01, with eight images and one text box, as defined in <strong>ANSI/ADA Standard No. 1100</strong>, Section 10.</p>
+<span id="viewset-display-requirements"></span><h6>3.1.4.1.3.2 Viewset VS-01<a class="headerlink" href="#viewset-vs-01" title="Link to this heading">#</a></h6>
+<p>As defined in ADA 1100, Section 10, “Viewset VS-01,” introductory paragraphs,
+VS-01 is the viewset preferred by the American Board of Orthodontics for case
+submission and display. It is most commonly used by orthodontic practitioners
+and orthodontic software.</p>
+<p>The parenthetical source citations in Sections 3.1.4.1.3.2 through 3.1.4.1.3.5
+use the clause numbering ADA 1100 2025 release. The normative reference remains
+the published edition listed in Section 3.1.3.</p>
 </section>
+</section>
+<section id="common-viewset-display-requirements">
+<h5>Common Viewset Display Requirements<a class="headerlink" href="#common-viewset-display-requirements" title="Link to this heading">#</a></h5>
+<p>The Image Display shall use the common scale-independent geometry in Table
+3.1.4.1.3.2-1 when constructing VS-01 through VS-04. Box dimensions, margins,
+and gaps are established in VS-01 layout units. Each complete viewset shall be
+assembled in those units before its coordinates are normalized to a width and
+height of <code class="docutils literal notranslate"><span class="pre">1.000</span></code>.</p>
+<p><strong>Table 3.1.4.1.3.2-1: Common Viewset Layout Geometry</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Reference Viewset</p></td>
+<td><p>VS-01</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reference Layout Width</p></td>
+<td><p>1000</p></td>
+</tr>
+<tr class="row-even"><td><p>Horizontal Margin</p></td>
+<td><p>44</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vertical Margin</p></td>
+<td><p>44</p></td>
+</tr>
+<tr class="row-even"><td><p>Horizontal Gap</p></td>
+<td><p>22</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vertical Gap</p></td>
+<td><p>22</p></td>
+</tr>
+<tr class="row-even"><td><p>Top Box Width:Height</p></td>
+<td><p>0.866</p></td>
+</tr>
+<tr class="row-odd"><td><p>Middle Box Width:Height</p></td>
+<td><p>1.432</p></td>
+</tr>
+<tr class="row-even"><td><p>Bottom Box Width:Height</p></td>
+<td><p>1.794</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The Image Display shall apply the following requirements when displaying any
+of VS-01 through VS-04. VS-02 through VS-04 inherit the common VS-01
+requirements except where their respective sections specify otherwise.</p>
+<ul class="simple">
+<li><p>The Image Display shall display the complete viewset within one display
+area. (ADA 1100, Section 10, VS-01 requirement 5(iii).)</p></li>
+<li><p>The Image Display shall provide visible separation between adjacent display
+boxes. The separation shall not obscure an image, contain advertising or
+unrelated content, or interfere with comparison of adjacent images. (ADA
+1100, Section 10, VS-01 requirements 5(i), 5(ii), and 5(iv).)</p></li>
+<li><p>The Image Display shall assign each image to the location specified by the
+applicable image location table. Assignment shall be based on the image-view
+semantics encoded as specified in <a class="reference internal" href="../V3_07_DICOM/04_Module_Definitions/170_VL_Image/index.html#view-code-sequence"><span class="std std-ref">Section 7.4.2.1.1</span></a> and not on filename or retrieval order. (ADA 1100,
+Section 10, VS-01 requirement 7 and Tables 4.1 through 4.4; DENT-OIP adds
+the explicit DICOM assignment rule.)</p></li>
+<li><p>All displayed images shall be of the same patient and shall have been
+acquired during the same encounter or clinical time frame, before a
+clinically significant change in the patient. (ADA 1100, Section 10, VS-01
+requirements 10 and 11.)</p></li>
+<li><p>Images acquired in centric occlusion and images acquired in centric relation
+shall not be mixed in one viewset. (ADA 1100, Section 10, note following
+Table 4.1.)</p></li>
+<li><p>The Image Display shall preserve the clinical content of each image. It may
+scale and position an image within its assigned box, but shall not otherwise
+alter the image unless the alteration is documented in the DICOM instance.
+(ADA 1100, Section 10, VS-01 requirements 8 and 9.)</p></li>
+<li><p>Mirror-acquired images identified as corrected shall be displayed in the
+corrected anatomical orientation. (ADA 1100, Section 10, Tables 4.1 through
+4.4, entries identified as <code class="docutils literal notranslate"><span class="pre">WM.BC</span></code>; DENT-OIP states the display behavior.)</p></li>
+<li><p>The Image Display shall maintain each image’s pixel aspect ratio when
+scaling it to fit its assigned box. (DENT-OIP constraint supporting ADA
+1100, Section 10, VS-01 requirement 8.)</p></li>
+<li><p>The information box shall display the patient’s initials, age in years and
+months, and the acquisition date of the photographs. (ADA 1100, Section 10,
+Tables 4.1 through 4.4, <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">box</span></code> or <code class="docutils literal notranslate"><span class="pre">TEXT</span></code> entry.)</p></li>
+</ul>
+<p>For normalized layout coordinates, the lower-left corner of the complete
+viewset is the origin <code class="docutils literal notranslate"><span class="pre">(0,0)</span></code> and the upper-right corner is <code class="docutils literal notranslate"><span class="pre">(1,1)</span></code>. For a
+display area with pixel width <em>W</em> and pixel height <em>H</em>, the Image Display shall
+calculate pixel coordinates as <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">normalized-x</span> <span class="pre">*</span> <span class="pre">W</span></code> and
+<code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">normalized-y</span> <span class="pre">*</span> <span class="pre">H</span></code>. (ADA 1100, Section 10, VS-01 through VS-03
+Construction Details, bullets 2 and 4 and steps 3 and 4.)</p>
+<p>In the following tables, ILC means Image Location Code. ILC values number
+display boxes from left to right and from top to bottom. (ADA 1100, Section 10,
+notes following Table 4.1.)</p>
+</section>
+<section id="vs-01-layout">
+<h5>VS-01 Layout<a class="headerlink" href="#vs-01-layout" title="Link to this heading">#</a></h5>
+<p>The Image Display shall construct VS-01 using the common geometry in Table
+3.1.4.1.3.2-1 and the arrangement in Table
+3.1.4.1.3.2-2. (ADA 1100, Section 10, VS-01 requirements 1 through 6 and
+Construction Details.)</p>
+<p><strong>Table 3.1.4.1.3.2-2: VS-01 Layout Arrangement</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Row</p></th>
+<th class="head"><p>Row Type</p></th>
+<th class="head"><p>Boxes</p></th>
+<th class="head"><p>First ILC</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Top</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Middle</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Bottom</p></td>
+<td><p>3</p></td>
+<td><p>7</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The normalized layout figure in <a class="reference internal" href="../V3_Appendix/B_ViewSetExamples/index.html#viewset-vs01-examples"><span class="std std-ref">Appendix B</span></a> is
+generated from Tables 3.1.4.1.3.2-1 and 3.1.4.1.3.2-2.</p>
+<p>The boxes shall contain the images or information specified in Table
+3.1.4.1.3.2-3. (ADA 1100, Section 10, VS-01 requirement 7 and Table 4.1.)</p>
+<p><strong>Table 3.1.4.1.3.2-3: VS-01 Image Locations</strong></p>
+<p>Source: ADA 1100, Section 10, Table 4.1, corresponding ILC row.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 8.0%" />
+<col style="width: 22.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ILC</p></th>
+<th class="head"><p>ADA 1100 term</p></th>
+<th class="head"><p>Required content</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01</p></td>
+<td><p>EO.RP.LR.CO</p></td>
+<td><p>Extraoral right profile, subject facing the observer’s right, lips
+relaxed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>02</p></td>
+<td><p>EO.FF.LR.CO</p></td>
+<td><p>Extraoral full face, lips relaxed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>03</p></td>
+<td><p>EO.FF.FS.CO</p></td>
+<td><p>Extraoral full face, full smile, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>04</p></td>
+<td><p>IO.MX.MO.OV.WM.BC</p></td>
+<td><p>Intraoral maxillary occlusal view, mouth open, acquired with a mirror
+and corrected</p></td>
+</tr>
+<tr class="row-even"><td><p>05</p></td>
+<td><p>TEXT</p></td>
+<td><p>Patient information box</p></td>
+</tr>
+<tr class="row-odd"><td><p>06</p></td>
+<td><p>IO.MD.MO.OV.WM.BC</p></td>
+<td><p>Intraoral mandibular occlusal view, mouth open, acquired with a mirror
+and corrected</p></td>
+</tr>
+<tr class="row-even"><td><p>07</p></td>
+<td><p>IO.RB.CO.NM or IO.RB.CO.WM.BC</p></td>
+<td><p>Intraoral right buccal segment in centric occlusion, acquired directly
+or with a mirror and corrected</p></td>
+</tr>
+<tr class="row-odd"><td><p>08</p></td>
+<td><p>IO.FV.CO.NM</p></td>
+<td><p>Intraoral frontal view in centric occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>09</p></td>
+<td><p>IO.LB.CO.NM or IO.LB.CO.WM.BC</p></td>
+<td><p>Intraoral left buccal segment in centric occlusion, acquired directly
+or with a mirror and corrected</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Informative illustrations are provided in <a class="reference internal" href="../V3_Appendix/B_ViewSetExamples/index.html#viewset-vs01-examples"><span class="std std-ref">Appendix B</span></a>.</p>
 <section id="viewset-vs-02">
 <h6>3.1.4.1.3.3 Viewset VS-02<a class="headerlink" href="#viewset-vs-02" title="Link to this heading">#</a></h6>
-<p>VS-02 is a custom craniofacial viewset has greatest use for documentation of orthognathic and craniofacial surgery treatment.</p>
-<p>The Display shall be able to display for the user Viewset VS-01, with 13 views as defined in <strong>ANSI/ADA Standard No. 1100</strong>, Section 10.</p>
+<p>VS-02 is a craniofacial viewset used primarily to document orthognathic and
+craniofacial surgical treatment. Its profile and 45-degree views support
+comparison of both sides of the face. (ADA 1100, Section 10, “Viewset VS-02,”
+introductory paragraph.)</p>
 </section>
+</section>
+<section id="vs-02-layout">
+<h5>VS-02 Layout<a class="headerlink" href="#vs-02-layout" title="Link to this heading">#</a></h5>
+<p>The Image Display shall construct VS-02 using the common geometry in Table
+3.1.4.1.3.2-1 and the arrangement in Table 3.1.4.1.3.3-1. Its six-, four-, and
+three-box rows shall be centered independently. (ADA 1100, Section 10,
+inherited VS-01 requirements 4 through 6 and VS-02 Figure A2-1.)</p>
+<p><strong>Table 3.1.4.1.3.3-1: VS-02 Layout Arrangement</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Row</p></th>
+<th class="head"><p>Row Type</p></th>
+<th class="head"><p>Boxes</p></th>
+<th class="head"><p>First ILC</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Top</p></td>
+<td><p>6</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Middle</p></td>
+<td><p>4</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Bottom</p></td>
+<td><p>3</p></td>
+<td><p>11</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The normalized layout figure in <a class="reference internal" href="../V3_Appendix/B_ViewSetExamples/index.html#viewset-vs02-examples"><span class="std std-ref">Appendix B</span></a> is
+generated from Tables 3.1.4.1.3.2-1 and 3.1.4.1.3.3-1.</p>
+<p>The boxes shall contain the images or information specified in Table
+3.1.4.1.3.3-2. (ADA 1100, Section 10, Table 4.2.)</p>
+<p><strong>Table 3.1.4.1.3.3-2: VS-02 Image Locations</strong></p>
+<p>Source: ADA 1100, Section 10, Table 4.2, corresponding ILC row.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 8.0%" />
+<col style="width: 22.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ILC</p></th>
+<th class="head"><p>ADA 1100 term</p></th>
+<th class="head"><p>Required content</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01</p></td>
+<td><p>EO.RP.LR.CO</p></td>
+<td><p>Extraoral right profile, lips relaxed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>02</p></td>
+<td><p>EO.RP.LR.CO.45</p></td>
+<td><p>Extraoral 45-degree right profile, lips relaxed, teeth in centric
+occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>03</p></td>
+<td><p>EO.FF.LR.CO</p></td>
+<td><p>Extraoral full face, lips relaxed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>04</p></td>
+<td><p>EO.FF.FS.CO</p></td>
+<td><p>Extraoral full face, full smile, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>05</p></td>
+<td><p>EO.LP.LR.CO.45</p></td>
+<td><p>Extraoral 45-degree left profile, lips relaxed, teeth in centric
+occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>06</p></td>
+<td><p>EO.LP.LR.CO</p></td>
+<td><p>Extraoral left profile, lips relaxed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>07</p></td>
+<td><p>IO.MX.OV.MO.WM.BC</p></td>
+<td><p>Intraoral maxillary occlusal view, mouth open, acquired with a mirror
+and corrected</p></td>
+</tr>
+<tr class="row-odd"><td><p>08</p></td>
+<td><p>IO.MD.OV.MO.WM.BC</p></td>
+<td><p>Intraoral mandibular occlusal view, mouth open, acquired with a mirror
+and corrected</p></td>
+</tr>
+<tr class="row-even"><td><p>09</p></td>
+<td><p>IO.FV.IV.CO.NM</p></td>
+<td><p>Intraoral inferior frontal view in centric occlusion, showing the depth
+of the bite</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>TEXT</p></td>
+<td><p>Patient information box</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>IO.RB.CO.NM or IO.RB.CO.WM.BC</p></td>
+<td><p>Intraoral right buccal segment in centric occlusion, acquired directly
+or with a mirror and corrected</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>IO.FV.CO.NM or IO.FV.CO.WM.BC</p></td>
+<td><p>Intraoral frontal view in centric occlusion, acquired directly or with
+a mirror and corrected</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>IO.LB.CO.NM or IO.LB.CO.WM.BC</p></td>
+<td><p>Intraoral left buccal segment in centric occlusion, acquired directly
+or with a mirror and corrected</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Informative illustrations are provided in <a class="reference internal" href="../V3_Appendix/B_ViewSetExamples/index.html#viewset-vs02-examples"><span class="std std-ref">Appendix B</span></a>.</p>
 <section id="viewset-vs-03">
 <h6>3.1.4.1.3.4 Viewset VS-03<a class="headerlink" href="#viewset-vs-03" title="Link to this heading">#</a></h6>
-<p>VS-03 is a custom supplementary patient record display, presents specific views commonly requested by insurance companies for documentation of automatic qualifiers (such as excessive overjet or impinging deep bite).</p>
-<p>The Display shall be able to display for the user Viewset VS-03, with 13 image boxes as defined in <strong>ANSI/ADA Standard No. 1100</strong>, Section 10.</p>
+<p>VS-03 is a supplementary patient-record viewset used to document findings such
+as excessive overjet or impinging deep bite. It includes lateral dentition
+views showing overjet and an inferior frontal dentition view showing bite
+depth. (ADA 1100, Section 10, “Viewset VS-03,” introductory paragraph.)</p>
 </section>
+</section>
+<section id="vs-03-layout">
+<h5>VS-03 Layout<a class="headerlink" href="#vs-03-layout" title="Link to this heading">#</a></h5>
+<p>The Image Display shall apply the VS-01 display requirements except as follows.
+(ADA 1100, Section 10, VS-03 compliance statement.)</p>
+<p>The Image Display shall construct VS-03 using the common geometry in Table
+3.1.4.1.3.2-1 and the arrangement in Table 3.1.4.1.3.4-1. (ADA 1100, Section
+10, VS-03 requirements 1 through 3, inherited VS-01 requirements 4 and 6, and
+VS-03 Construction Details.)</p>
+<p><strong>Table 3.1.4.1.3.4-1: VS-03 Layout Arrangement</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Row</p></th>
+<th class="head"><p>Row Type</p></th>
+<th class="head"><p>Boxes</p></th>
+<th class="head"><p>First ILC</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Top</p></td>
+<td><p>5</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Middle</p></td>
+<td><p>4</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Bottom</p></td>
+<td><p>4</p></td>
+<td><p>10</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The normalized layout figure in <a class="reference internal" href="../V3_Appendix/B_ViewSetExamples/index.html#viewset-vs03-examples"><span class="std std-ref">Appendix B</span></a> is
+generated from Tables 3.1.4.1.3.2-1 and 3.1.4.1.3.4-1.</p>
+<p>The boxes shall contain the images or information specified in Table
+3.1.4.1.3.4-2. (ADA 1100, Section 10, Table 4.3.)</p>
+<p><strong>Table 3.1.4.1.3.4-2: VS-03 Image Locations</strong></p>
+<p>Source: ADA 1100, Section 10, Table 4.3, corresponding ILC row.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 8.0%" />
+<col style="width: 22.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ILC</p></th>
+<th class="head"><p>ADA 1100 term</p></th>
+<th class="head"><p>Required content</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01</p></td>
+<td><p>EO.FF.LR.CO</p></td>
+<td><p>Extraoral full face, lips closed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>02</p></td>
+<td><p>EO.FF.FS.CO</p></td>
+<td><p>Extraoral full face, full smile, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>03</p></td>
+<td><p>EO.RP.LR.CO</p></td>
+<td><p>Extraoral right profile, subject facing the observer’s right, lips
+relaxed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>04</p></td>
+<td><p>EO.RP.FS.CO</p></td>
+<td><p>Extraoral right profile, subject facing the observer’s right, full
+smile, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>05</p></td>
+<td><p>EO.LP.LR.CO</p></td>
+<td><p>Extraoral left profile, subject facing the observer’s left, lips
+relaxed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>06</p></td>
+<td><p>IO.MX.MO.OV.WM.BC</p></td>
+<td><p>Intraoral maxillary occlusal view, mouth open, acquired with a mirror
+and corrected</p></td>
+</tr>
+<tr class="row-even"><td><p>07</p></td>
+<td><p>IO.MD.MO.OV.WM.BC</p></td>
+<td><p>Intraoral mandibular occlusal view, mouth open, acquired with a mirror
+and corrected</p></td>
+</tr>
+<tr class="row-odd"><td><p>08</p></td>
+<td><p>IO.FV.IV.CO.NM</p></td>
+<td><p>Intraoral inferior frontal view in centric occlusion, showing bite depth</p></td>
+</tr>
+<tr class="row-even"><td><p>09</p></td>
+<td><p>IO.RL.CO.OJ.NM</p></td>
+<td><p>Intraoral right lateral view in centric occlusion, showing overjet</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>IO.RB.CO.NM or IO.RB.CO.WM.BC</p></td>
+<td><p>Intraoral right buccal segment in centric occlusion, acquired directly
+or with a mirror and corrected</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>IO.FV.CO.NM</p></td>
+<td><p>Intraoral frontal view in centric occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>IO.LB.CO.NM or IO.LB.CO.WM.BC</p></td>
+<td><p>Intraoral left buccal segment in centric occlusion, acquired directly
+or with a mirror and corrected</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>TEXT</p></td>
+<td><p>Patient information box</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Informative illustrations are provided in <a class="reference internal" href="../V3_Appendix/B_ViewSetExamples/index.html#viewset-vs03-examples"><span class="std std-ref">Appendix B</span></a>.</p>
 <section id="viewset-vs-04">
 <h6>3.1.4.1.3.5 Viewset VS-04<a class="headerlink" href="#viewset-vs-04" title="Link to this heading">#</a></h6>
-<p>VS-04 is a custom supplementary patient record display, was designed to facilitate assessment of craniofacial asymmetries.</p>
-<p>The Display shall be able to display for the user Viewset VS-04, with 12 image boxes as defined in <strong>ANSI/ADA Standard No. 1100</strong>, Section 10.</p>
+<p>VS-04 is a supplementary patient-record viewset intended to support assessment
+of craniofacial asymmetry. It includes superior and inferior views of the face
+and views of both sides of the face. (ADA 1100, Section 10, “Viewset VS-04,”
+introductory paragraph.)</p>
 </section>
+</section>
+<section id="vs-04-layout">
+<h5>VS-04 Layout<a class="headerlink" href="#vs-04-layout" title="Link to this heading">#</a></h5>
+<p>The Image Display shall apply the VS-01 display requirements except as follows.
+(ADA 1100, Section 10, VS-04 compliance statement.)</p>
+<p>The Image Display shall construct VS-04 using the common geometry in Table
+3.1.4.1.3.2-1 and the arrangement in Table 3.1.4.1.3.5-1. The first and second
+rows use the VS-01 top-row box proportion; the third row uses the VS-01
+bottom-row box proportion. VS-04 does not use the VS-01 middle-row box
+proportion. (ADA 1100, Section 10, VS-04 requirements 1 through 3 and inherited
+VS-01 requirements 4 and 6.)</p>
+<p><strong>Table 3.1.4.1.3.5-1: VS-04 Layout Arrangement</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Row</p></th>
+<th class="head"><p>Row Type</p></th>
+<th class="head"><p>Boxes</p></th>
+<th class="head"><p>First ILC</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Top</p></td>
+<td><p>4</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Top</p></td>
+<td><p>4</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Bottom</p></td>
+<td><p>4</p></td>
+<td><p>9</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The normalized layout figure in <a class="reference internal" href="../V3_Appendix/B_ViewSetExamples/index.html#viewset-vs04-examples"><span class="std std-ref">Appendix B</span></a> is
+generated from Tables 3.1.4.1.3.2-1 and 3.1.4.1.3.5-1.</p>
+<p>The boxes shall contain the images or information specified in Table
+3.1.4.1.3.5-2. (ADA 1100, Section 10, Table 4.4.)</p>
+<p><strong>Table 3.1.4.1.3.5-2: VS-04 Image Locations</strong></p>
+<p>Source: ADA 1100, Section 10, Table 4.4, corresponding ILC row.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<colgroup>
+<col style="width: 8.0%" />
+<col style="width: 22.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ILC</p></th>
+<th class="head"><p>ADA 1100 term</p></th>
+<th class="head"><p>Required content</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01</p></td>
+<td><p>EO.RP.LR.CO</p></td>
+<td><p>Extraoral right profile, subject facing the observer’s right, lips
+relaxed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>02</p></td>
+<td><p>EO.RP.LR.CO.45</p></td>
+<td><p>Extraoral 45-degree right profile, lips relaxed, teeth in centric
+occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>03</p></td>
+<td><p>EO.FF.LR.CO</p></td>
+<td><p>Extraoral full face, lips closed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>04</p></td>
+<td><p>EO.FF.FS.CO</p></td>
+<td><p>Extraoral full face, full smile, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>05</p></td>
+<td><p>EO.OF.SV</p></td>
+<td><p>Extraoral superior face view showing forehead, infraorbital-rim
+contours, nasal dorsum, upper lip, and chin</p></td>
+</tr>
+<tr class="row-odd"><td><p>06</p></td>
+<td><p>EO.OF.IV</p></td>
+<td><p>Extraoral inferior face view showing mandibular lower border, nares,
+infraorbital-rim contours, and forehead contours</p></td>
+</tr>
+<tr class="row-even"><td><p>07</p></td>
+<td><p>EO.LP.LR.CO.45</p></td>
+<td><p>Extraoral 45-degree left profile, lips relaxed, teeth in centric
+occlusion</p></td>
+</tr>
+<tr class="row-odd"><td><p>08</p></td>
+<td><p>EO.LP.LR.CO</p></td>
+<td><p>Extraoral left profile, subject facing the observer’s left, lips
+relaxed, teeth in centric occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>09</p></td>
+<td><p>IO.RB.CO.NM or IO.RB.CO.WM.BC</p></td>
+<td><p>Intraoral right buccal segment in centric occlusion, acquired directly
+or with a mirror and corrected</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>IO.FV.CO.NM</p></td>
+<td><p>Intraoral frontal view in centric occlusion</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>IO.LB.CO.NM or IO.LB.CO.WM.BC</p></td>
+<td><p>Intraoral left buccal segment in centric occlusion, acquired directly
+or with a mirror and corrected</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>TEXT</p></td>
+<td><p>Patient information box</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Informative illustrations are provided in <a class="reference internal" href="../V3_Appendix/B_ViewSetExamples/index.html#viewset-vs04-examples"><span class="std std-ref">Appendix B</span></a>.</p>
 </section>
 </section>
 </section>
@@ -678,12 +1243,11 @@ receives results by a profiled mechanism such as DICOM C-STORE, the messaging pr
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-volume-2">1 Introduction to Volume 2</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-ihe">1.1 Introduction to IHE</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#intended-audience">1.2 Intended Audience</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-technical-framework-volume-2">1.3 Overview of Technical Framework Volume 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview-of-volume-2">1.3 Overview of Volume 2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comment-process">1.4 Comment Process</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#copyright-licenses">1.5 Copyright Licenses</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trademark">1.6 Trademark</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trademarks">1.6 Trademarks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disclaimer-regarding-patent-rights">1.7 Disclaimer Regarding Patent Rights</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-document-changes">1.6 History of Document Changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-document-changes">1.8 History of Document Changes</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conventions">2 Conventions</a><ul class="visible nav section-nav flex-column">
@@ -691,7 +1255,7 @@ receives results by a profiled mechanism such as DICOM C-STORE, the messaging pr
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-coded-entities-and-coding-schemes">2.2 Use of Coded Entities and Coding Schemes</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ihe-dental-transactions">3 IHE Dental Transactions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#oip-transactions">3 OIP Transactions</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#display-visible-light-images-den-1">3.1 Display Visible Light Images [DEN-1]</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scope">3.1.1 Scope</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#actor-roles">3.1.2 Actor Roles</a></li>
@@ -703,11 +1267,22 @@ receives results by a profiled mechanism such as DICOM C-STORE, the messaging pr
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#expected-actions-i-e-display-requirements">3.1.4.1.3 Expected Actions (i.e., Display Requirements)</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#general-display-requirements">3.1.4.1.3.1 General Display Requirements</a></li>
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#viewset-vs-01">3.1.4.1.3.2 Viewset VS-01</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#common-viewset-display-requirements">Common Viewset Display Requirements</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-01-layout">VS-01 Layout</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#viewset-vs-02">3.1.4.1.3.3 Viewset VS-02</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-02-layout">VS-02 Layout</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#viewset-vs-03">3.1.4.1.3.4 Viewset VS-03</a></li>
+</ul>
+</li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-03-layout">VS-03 Layout</a><ul class="nav section-nav flex-column">
 <li class="toc-h6 nav-item toc-entry"><a class="reference internal nav-link" href="#viewset-vs-04">3.1.4.1.3.5 Viewset VS-04</a></li>
 </ul>
 </li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#vs-04-layout">VS-04 Layout</a></li>
 </ul>
 </li>
 </ul>

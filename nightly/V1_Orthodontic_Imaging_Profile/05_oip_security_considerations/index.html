@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>3.5 OIP Security Considerations &#8212; DENT-OIP 0.2.7-nightly.20260925122838 documentation</title>
+    <title>3.5 OIP Security Considerations &#8212; DENT-OIP 0.2.7-nightly.20260925122851 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=692df224"></script>
+    <script src="../../_static/documentation_options.js?v=9f9e148d"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260925122838 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260925122851 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -151,7 +151,6 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../dent-oip/01_Volume_1/index.html">Volume 1 - Integration Profiles</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../Preamble/index.html">Preamble</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../Preamble/01_foreword.html">Foreword</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../Preamble/02_scope.html">Introduction to this Supplement</a></li>
 
 
@@ -159,22 +158,14 @@
 
 
 
-<li class="toctree-l3"><a class="reference internal" href="../../Preamble/03_normative_references.html">Normative References</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../Preamble/04_requirements.html">Guiding Principles (Informative)</a></li>
 </ul>
 </details></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">3 Orthodontic Imaging (OIP) Profile</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../01_oip_actors_transactions/index.html">3.1 OIP Actors, Transactions, and Content Modules</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../02_oip_integration_profile_options/index.html">3.2 OIP Profile Options</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="../02_oip_integration_profile_options/direct_photography_option.html">3.2.1 Direct Photography Option</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../02_oip_integration_profile_options/direct_motion_picture_option.html">3.2.2 Direct Motion Picture Option</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../02_oip_integration_profile_options/3d_scan_for_appliances_option.html">3.2.3 3D Scan for Appliances Option</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../02_oip_integration_profile_options/3d_intraoral_extraoral_scan_option.html">3.2.4 3D Intraoral / Extraoral Scan Option</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../02_oip_integration_profile_options/true_color_scan_option.html">3.2.5 True Color Scan Option</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../02_oip_integration_profile_options/scanned_radiographs_option.html">3.2.6 Scanned Radiographs Option</a></li>
 </ul>
 </details></li>
-
 
 <li class="toctree-l3"><a class="reference internal" href="../03_oip_process_flow/index.html">3.4 OIP Overview</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">3.5 OIP Security Considerations</a></li>
@@ -193,6 +184,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../dent-oip/03_Volume_3/index.html">Volume 3 - Content Specifications</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../V3_07_DICOM/index.html">Volume 3 - Content Definitions</a></li>
 
+<li class="toctree-l2"><a class="reference internal" href="../../V3_Appendix/B_ViewSetExamples/index.html">Appendix B: ViewSet Examples</a></li>
 </ul>
 </details></li>
 </ul>
@@ -359,11 +351,55 @@ document.write(`
                   
   <section id="oip-security-considerations">
 <h1>3.5 OIP Security Considerations<a class="headerlink" href="#oip-security-considerations" title="Link to this heading">#</a></h1>
-<p><em>TO DO:  Describe profile-specific security considerations. This should include the outcomes of a risk assessment.  The security considerations for a content profile may be dependent upon the security provisions defined by the grouped actor(s).</em></p>
+<p>OIP content modules and the Display Visible Light Images [DEN-1] transaction
+define how orthodontic photographs are encoded, labeled, and displayed. They
+do not define network transport, storage, authentication, or authorization
+mechanisms. Implementations shall assess the security capabilities of the
+actors and mechanisms grouped with OIP.</p>
+<p><strong>Confidentiality</strong></p>
+<p>OIP objects contain patient-identifying DICOM attributes. Facial and intraoral
+photographs may also identify a patient from the pixel data itself, even after
+identifying metadata has been removed.</p>
+<ul class="simple">
+<li><p>Implementations shall protect OIP objects in transit and at rest according
+to applicable policy and regulation.</p></li>
+<li><p>When de-identification is required, implementations shall apply the DICOM
+Attribute Confidentiality Profile in DICOM PS3.15 Annex E and the applicable
+options, including the Clean Pixel Data Option when necessary.</p></li>
+<li><p>Metadata de-identification alone is not sufficient for identifiable
+photographs. De-identified pixel data should be reviewed to confirm that
+recognizable facial features, burned-in annotations, and other identifying
+content have been addressed as required by the intended use.</p></li>
+</ul>
+<p><strong>Integrity and Patient Safety</strong></p>
+<p>Modification, substitution, or incorrect patient association of an image can
+cause a practitioner to interpret the wrong clinical information. Modification
+of a Structured Display or Hanging Protocol object can cause photographs to be
+presented in the wrong position or context.</p>
+<ul class="simple">
+<li><p>Implementations shall preserve the integrity of image pixel data, patient
+and study identifiers, view-identification metadata, Structured Display
+objects, and Hanging Protocol objects.</p></li>
+<li><p>Implementations shall maintain and validate the association between each
+image and the correct patient, study, and view before clinical display.</p></li>
+</ul>
+<p><strong>Availability</strong></p>
+<p>Loss of access to OIP objects or required display information may delay care.
+OIP does not define availability, backup, or recovery mechanisms. Deployments
+should provide those capabilities according to their clinical risk assessment
+and operational requirements.</p>
+<p><strong>Authentication, Authorization, and Audit</strong></p>
+<p>Implementations shall authenticate users and systems, authorize access using
+an appropriate access-control policy, and record security-relevant events.
+Authorization is separate from IHE Audit Trail and Node Authentication (ATNA).
+When applicable to the selected transport and deployment architecture, ATNA
+may be used for secure-node authentication, protected communications, and
+audit logging.</p>
 </section>
 <section id="oip-cross-profile-considerations">
 <h1>3.6 OIP Cross-Profile Considerations<a class="headerlink" href="#oip-cross-profile-considerations" title="Link to this heading">#</a></h1>
-<p><em>TO DO: This is a place to point to other profiles that can be used alongside OIP for enhanced functionality.   For example, when you have a workflow profile with DICOM MWL and Storage, you would reference that in this section.</em></p>
+<p>Cross-profile actor groupings are outside the scope of this revision of OIP.
+No cross-profile groupings are defined.</p>
 </section>
 
 

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1551.333" height="1141.485"
+     viewBox="0 0 1551.333 1141.485" role="img"
+     aria-labelledby="title description">
+  <title id="title">VS-04 normalized layout</title>
+  <desc id="description">
+    Boxes are assembled in common VS-01 physical units, then normalized to the
+    resulting layout width and height. The normalized layout ratio is
+    1.000 to 0.733.
+  </desc>
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="8" refX="0" refY="4"
+            orient="auto">
+      <path d="M 8 0 L 0 4 L 8 8 Z" fill="#111"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="8" refX="8" refY="4"
+            orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#111"/>
+    </marker>
+    <style>
+      .dimension { fill: none; stroke: #111; stroke-width: 2; marker-start: url(#arrow-start); marker-end: url(#arrow-end); }
+      .box { fill: #fff; stroke: #111; stroke-width: 1.5; }
+      .corner { fill: #fff; stroke: #111; stroke-width: 1.5; }
+      .dimension-label { font: 22px sans-serif; fill: #111; }
+      .coordinate { font: 16px sans-serif; fill: #111; }
+      .number { font: 56px sans-serif; fill: #111; text-anchor: middle; dominant-baseline: central; }
+      .note { font: 18px sans-serif; fill: #333; }
+    </style>
+  </defs>
+  <rect x="60" y="80" width="1311.333" height="961.485" fill="#d0d0d0"/>
+  <path class="dimension" d="M 60 40 H 1371.333"/>
+  <text class="dimension-label" x="715.667" y="30" text-anchor="middle">1.000</text>
+  <path class="dimension" d="M 1416.333 80 V 1041.485"/>
+  <text class="dimension-label" x="1476.333" y="560.742" text-anchor="middle">0.733</text>
+  <g>
+    <rect class="box" x="104.000" y="124.000" width="289.333" height="334.103"/>
+    <circle class="corner" cx="104.000" cy="124.000" r="7"/>
+    <circle class="corner" cx="393.333" cy="458.103" r="7"/>
+    <text class="coordinate" x="114.000" y="148.000">(0.034, 0.954)</text>
+    <text class="coordinate" x="383.333" y="448.103" text-anchor="end">(0.254, 0.607)</text>
+    <text class="number" x="248.667" y="291.052">1</text>
+  </g>
+  <g>
+    <rect class="box" x="415.333" y="124.000" width="289.333" height="334.103"/>
+    <circle class="corner" cx="415.333" cy="124.000" r="7"/>
+    <circle class="corner" cx="704.667" cy="458.103" r="7"/>
+    <text class="coordinate" x="425.333" y="148.000">(0.271, 0.954)</text>
+    <text class="coordinate" x="694.667" y="448.103" text-anchor="end">(0.492, 0.607)</text>
+    <text class="number" x="560.000" y="291.052">2</text>
+  </g>
+  <g>
+    <rect class="box" x="726.667" y="124.000" width="289.333" height="334.103"/>
+    <circle class="corner" cx="726.667" cy="124.000" r="7"/>
+    <circle class="corner" cx="1016.000" cy="458.103" r="7"/>
+    <text class="coordinate" x="736.667" y="148.000">(0.508, 0.954)</text>
+    <text class="coordinate" x="1006.000" y="448.103" text-anchor="end">(0.729, 0.607)</text>
+    <text class="number" x="871.333" y="291.052">3</text>
+  </g>
+  <g>
+    <rect class="box" x="1038.000" y="124.000" width="289.333" height="334.103"/>
+    <circle class="corner" cx="1038.000" cy="124.000" r="7"/>
+    <circle class="corner" cx="1327.333" cy="458.103" r="7"/>
+    <text class="coordinate" x="1048.000" y="148.000">(0.746, 0.954)</text>
+    <text class="coordinate" x="1317.333" y="448.103" text-anchor="end">(0.966, 0.607)</text>
+    <text class="number" x="1182.667" y="291.052">4</text>
+  </g>
+  <g>
+    <rect class="box" x="104.000" y="480.103" width="289.333" height="334.103"/>
+    <circle class="corner" cx="104.000" cy="480.103" r="7"/>
+    <circle class="corner" cx="393.333" cy="814.206" r="7"/>
+    <text class="coordinate" x="114.000" y="504.103">(0.034, 0.584)</text>
+    <text class="coordinate" x="383.333" y="804.206" text-anchor="end">(0.254, 0.236)</text>
+    <text class="number" x="248.667" y="647.155">5</text>
+  </g>
+  <g>
+    <rect class="box" x="415.333" y="480.103" width="289.333" height="334.103"/>
+    <circle class="corner" cx="415.333" cy="480.103" r="7"/>
+    <circle class="corner" cx="704.667" cy="814.206" r="7"/>
+    <text class="coordinate" x="425.333" y="504.103">(0.271, 0.584)</text>
+    <text class="coordinate" x="694.667" y="804.206" text-anchor="end">(0.492, 0.236)</text>
+    <text class="number" x="560.000" y="647.155">6</text>
+  </g>
+  <g>
+    <rect class="box" x="726.667" y="480.103" width="289.333" height="334.103"/>
+    <circle class="corner" cx="726.667" cy="480.103" r="7"/>
+    <circle class="corner" cx="1016.000" cy="814.206" r="7"/>
+    <text class="coordinate" x="736.667" y="504.103">(0.508, 0.584)</text>
+    <text class="coordinate" x="1006.000" y="804.206" text-anchor="end">(0.729, 0.236)</text>
+    <text class="number" x="871.333" y="647.155">7</text>
+  </g>
+  <g>
+    <rect class="box" x="1038.000" y="480.103" width="289.333" height="334.103"/>
+    <circle class="corner" cx="1038.000" cy="480.103" r="7"/>
+    <circle class="corner" cx="1327.333" cy="814.206" r="7"/>
+    <text class="coordinate" x="1048.000" y="504.103">(0.746, 0.584)</text>
+    <text class="coordinate" x="1317.333" y="804.206" text-anchor="end">(0.966, 0.236)</text>
+    <text class="number" x="1182.667" y="647.155">8</text>
+  </g>
+  <g>
+    <rect class="box" x="104.000" y="836.206" width="289.333" height="161.278"/>
+    <circle class="corner" cx="104.000" cy="836.206" r="7"/>
+    <circle class="corner" cx="393.333" cy="997.485" r="7"/>
+    <text class="coordinate" x="114.000" y="860.206">(0.034, 0.214)</text>
+    <text class="coordinate" x="383.333" y="987.485" text-anchor="end">(0.254, 0.046)</text>
+    <text class="number" x="248.667" y="916.845">9</text>
+  </g>
+  <g>
+    <rect class="box" x="415.333" y="836.206" width="289.333" height="161.278"/>
+    <circle class="corner" cx="415.333" cy="836.206" r="7"/>
+    <circle class="corner" cx="704.667" cy="997.485" r="7"/>
+    <text class="coordinate" x="425.333" y="860.206">(0.271, 0.214)</text>
+    <text class="coordinate" x="694.667" y="987.485" text-anchor="end">(0.492, 0.046)</text>
+    <text class="number" x="560.000" y="916.845">10</text>
+  </g>
+  <g>
+    <rect class="box" x="726.667" y="836.206" width="289.333" height="161.278"/>
+    <circle class="corner" cx="726.667" cy="836.206" r="7"/>
+    <circle class="corner" cx="1016.000" cy="997.485" r="7"/>
+    <text class="coordinate" x="736.667" y="860.206">(0.508, 0.214)</text>
+    <text class="coordinate" x="1006.000" y="987.485" text-anchor="end">(0.729, 0.046)</text>
+    <text class="number" x="871.333" y="916.845">11</text>
+  </g>
+  <g>
+    <rect class="box" x="1038.000" y="836.206" width="289.333" height="161.278"/>
+    <circle class="corner" cx="1038.000" cy="836.206" r="7"/>
+    <circle class="corner" cx="1327.333" cy="997.485" r="7"/>
+    <text class="coordinate" x="1048.000" y="860.206">(0.746, 0.214)</text>
+    <text class="coordinate" x="1317.333" y="987.485" text-anchor="end">(0.966, 0.046)</text>
+    <text class="number" x="1182.667" y="916.845">12</text>
+  </g>
+  <text class="note" x="60" y="1101.485">Coordinates are normalized independently to layout width and height.</text>
+</svg>

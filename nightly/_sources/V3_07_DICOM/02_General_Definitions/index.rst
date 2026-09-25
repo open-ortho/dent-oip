@@ -414,9 +414,9 @@ These values are used within Acquisition Context (0040,0555) when Concept Name C
 
 These values are used within Acquisition Context (0040,0555) when Concept Name Code in (0040,A043) is (128741, DCM, "Longitudinal Temporal Event Type").
 
-The allowed values for this code sequence have been taken from `DICOM CID 280 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_280.html>`__ and applied in the :ref:`Progress Table above <cid-280>`
+The allowed values for this code sequence have been taken from `DICOM CID 280 <https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_280.html>`__ and applied in the :ref:`Progress Table above <cid-280>`.
 
-<*QUESTION FOR TONI:  The last 3 values in this table are not in CID 280.  Where did they come from?*>
+The three SNOMED CT codes in the table below (Patient registration, Orthodontic Treatment started, Orthodontic Treatment stopped) are not part of the standard DICOM CID 280. They were added to align with the orthodontic progress model defined in ADA Standard No. 1114 and the clinical workflow described in Section 3.4.1.1 of this profile. These codes are proposed as OIP-specific extensions to CID 280.
 
 .. list-table:: **Table CID 280. Longitudinal Temporal Event Type**
     :header-rows: 1
