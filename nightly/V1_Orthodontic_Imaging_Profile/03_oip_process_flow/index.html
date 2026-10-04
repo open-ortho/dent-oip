@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>3.4 OIP Overview &#8212; DENT-OIP 0.2.7-nightly.20260925122851 documentation</title>
+    <title>3.4 OIP Overview &#8212; DENT-OIP 0.2.7-nightly.20261004193647 documentation</title>
   
   
   
@@ -36,7 +36,7 @@
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="../../_static/documentation_options.js?v=9f9e148d"></script>
+    <script src="../../_static/documentation_options.js?v=33953353"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
@@ -132,7 +132,7 @@
   
   
   
-    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20260925122851 documentation</p>
+    <p class="title logo__title">DENT-OIP 0.2.7-nightly.20261004193647 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -344,7 +344,17 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-cases-for-orthodontic-images">3.4.2 Use Cases for Orthodontic Images</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ada-tr-1065-use-case-no-03-creating-digital-orthodontic-records">3.4.2.1 ADA TR 1065 Use Case No. 03 - Creating Digital Orthodontic Records</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ada-1100-use-case-no-2-2-referral-and-image-transfer-workflow">3.4.2.3 ADA 1100 Use Case No. 2.2 - Referral and Image Transfer Workflow</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#viewing-visible-light-photographic-images">3.4.2.4 Viewing Visible Light Photographic Images</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-same-display-template-across-applications">3.4.2.4 Using the Same Display Template Across Applications</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clinical-scenario">Clinical Scenario</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#technical-realization">Technical Realization</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preserving-and-sharing-a-patient-specific-presentation">3.4.2.5 Preserving and Sharing a Patient-Specific Presentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-a-presentation-from-a-display-template">3.4.2.5.1 Generating a Presentation from a Display Template</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-presentation-from-scratch">3.4.2.5.2 Creating a Presentation from Scratch</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#archiving-and-sharing-the-saved-presentation">3.4.2.5.3 Archiving and Sharing the Saved Presentation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -503,7 +513,17 @@ information.</p>
 <section id="use-cases-for-orthodontic-images">
 <h2>3.4.2 Use Cases for Orthodontic Images<a class="headerlink" href="#use-cases-for-orthodontic-images" title="Link to this heading">#</a></h2>
 <p>ADA Technical Report No. 1065 “Use Cases of the Orthodontic Electronic Health Record” contains use cases that describe orthodontic workflows, both imaging and non-imaging. Within 1065, Use Case No. 03 specifically addresses the creation of digital orthodontic records, which includes the imaging workflows. ADA Standard No. 1100 “Dentistry - 2D and 3D Orthodontic/Craniofacial/Forensic Photographic Views and Viewsets” is specific for visible light images.</p>
-<p>Please refer to the original ADA documents for more details on each use case.</p>
+<p>Please refer to the original ADA documents for more details on the use cases
+in Sections 3.4.2.1 through 3.4.2.3. Sections 3.4.2.4 and 3.4.2.5 describe
+additional DENT-OIP scenarios for reusable display templates and saved
+patient-specific presentations.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sections 3.4.2.4 and 3.4.2.5 are draft use cases awaiting working-group
+approval. They were developed during the review of Structured Display
+and Hanging Protocol behavior and the Display Configuration Creator
+actor tracked in issue 55.</p>
+</div>
 <section id="ada-tr-1065-use-case-no-03-creating-digital-orthodontic-records">
 <h3>3.4.2.1 ADA TR 1065 Use Case No. 03 - Creating Digital Orthodontic Records<a class="headerlink" href="#ada-tr-1065-use-case-no-03-creating-digital-orthodontic-records" title="Link to this heading">#</a></h3>
 <p>This use case outlines both direct and indirect workflows for creating digital orthodontic records, either through direct capture with imaging devices or by digitizing analog records. It details how acquired images and models are tagged with standard metadata and integrated into the patient’s EHR for proper storage and retrieval. The process supports efficient transformation between digital and analog formats for clinical applications such as 3D printing.
@@ -538,20 +558,107 @@ office but presents them in a different display without the need for a human
 to view the individual files and sort them.
 “””</p>
 </div></blockquote>
+<p>The receiving practitioner may review the photographs using their own
+preferred template, as described in <a class="reference internal" href="oip_use_cases.html#shared-display-template-use-case"><span class="std std-ref">Section 3.4.2.4</span></a>. The sender may also provide a saved
+patient-specific presentation so that the recipient can reproduce the
+sender’s arrangement, as described in <a class="reference internal" href="oip_use_cases.html#saved-patient-presentation-use-case"><span class="std std-ref">Section 3.4.2.5</span></a>.</p>
 </section>
-<section id="viewing-visible-light-photographic-images">
-<h3>3.4.2.4 Viewing Visible Light Photographic Images<a class="headerlink" href="#viewing-visible-light-photographic-images" title="Link to this heading">#</a></h3>
-<p>A dental professional selects a patient, study, and orthodontic viewset for
-review. The Image Display has access to the corresponding VL Photographic
-Image IOD instances. How the instances are stored, selected, or transferred
-to the Image Display is outside the scope of this use case.</p>
-<p>The Image Display presents the photographs according to the selected viewset
-defined by ANSI/ADA Standard No. 1100 and the display requirements defined in
-DEN-1. When a Basic Structured Display or Hanging Protocol instance is
-provided, the Image Display applies it to arrange the photographs for review.</p>
-<p>A product that renders individual VL Photographic Image IOD instances but
-does not implement the standardized display requirements may claim the
-Content Consumer actor, but not the Image Display actor.</p>
+<section id="using-the-same-display-template-across-applications">
+<span id="shared-display-template-use-case"></span><h3>3.4.2.4 Using the Same Display Template Across Applications<a class="headerlink" href="#using-the-same-display-template-across-applications" title="Link to this heading">#</a></h3>
+<section id="clinical-scenario">
+<h4>Clinical Scenario<a class="headerlink" href="#clinical-scenario" title="Link to this heading">#</a></h4>
+<p>Dr. Patel reviews orthodontic photographs in her imaging software. She
+chooses a pre-programmed display template based on VS-01 for both initial
+and progress photographs and customizes it to suit her practice.</p>
+<p>Her practice management software also supports image review. When she opens
+the photograph viewer for a patient there, the photographs appear using the
+same template she selected in the imaging software. She does not need to
+configure the layout again or manually sort the photographs. Changes to her
+saved template can likewise be made available to both applications.</p>
+</section>
+<section id="technical-realization">
+<h4>Technical Realization<a class="headerlink" href="#technical-realization" title="Link to this heading">#</a></h4>
+<p>Either application may create or update the shared template as a DICOM
+Hanging Protocol instance. The protocol is stored in a central DICOM
+repository, such as a PACS or medical imaging management and processing
+system (MIMPS), accessible to both applications.</p>
+<p>Each application’s Image Display uses the protocol’s selection and
+presentation rules to arrange the applicable patient images. The protocol
+preserves reusable preferences rather than a fixed selection of images
+from one patient.</p>
+<p>The four required ADA 1100 viewsets, VS-01 through VS-04, provide baseline
+layouts. They do not limit the additional arrangements that display
+templates may support.</p>
+<p>This scenario illustrates shared access to display configuration. This
+revision of DENT-OIP does not prescribe the repository or the network
+transactions used to store and obtain the protocol.</p>
+</section>
+</section>
+<section id="preserving-and-sharing-a-patient-specific-presentation">
+<span id="saved-patient-presentation-use-case"></span><h3>3.4.2.5 Preserving and Sharing a Patient-Specific Presentation<a class="headerlink" href="#preserving-and-sharing-a-patient-specific-presentation" title="Link to this heading">#</a></h3>
+<p>A patient-specific presentation may be generated from a reusable template
+or created from scratch. The following sub-use cases distinguish these two
+creation paths; both produce a presentation that can be archived or shared
+with its selected photographs.</p>
+<section id="generating-a-presentation-from-a-display-template">
+<h4>3.4.2.5.1 Generating a Presentation from a Display Template<a class="headerlink" href="#generating-a-presentation-from-a-display-template" title="Link to this heading">#</a></h4>
+<p><strong>Clinical scenario</strong></p>
+<p>Dr. Patel prepares an orthognathic referral. She opens the patient’s
+photographs using her usual display template and selects the treatment
+timepoint or acquisition date. The software automatically populates the
+presentation with the corresponding facial and intraoral photographs in
+the order specified by the template.</p>
+<p>She reviews the populated presentation and saves it in the patient’s record
+for sharing with the consulting surgeon. She does not need to select and
+position each photograph manually.</p>
+<p><strong>Technical realization</strong></p>
+<p>The application applies a DICOM Hanging Protocol to the images for the
+selected patient and timepoint. Its selection and presentation rules
+determine the image instances and their arrangement. The application then
+saves the resulting patient-specific presentation as a DICOM Basic
+Structured Display instance, recording the layout and references to the
+selected image instances.</p>
+<p>The Structured Display records the result of applying the protocol to this
+patient’s images. It does not require the recipient to obtain or reapply
+the originating Hanging Protocol.</p>
+</section>
+<section id="creating-a-presentation-from-scratch">
+<h4>3.4.2.5.2 Creating a Presentation from Scratch<a class="headerlink" href="#creating-a-presentation-from-scratch" title="Link to this heading">#</a></h4>
+<p><strong>Clinical scenario</strong></p>
+<p>For another referral, Dr. Patel wants to highlight changes in a patient’s
+facial asymmetry that are not readily shown by her usual templates. She
+starts with an empty presentation, selects particular photographs from
+the initial and progress records, and places them side by side in the
+order she wants the consulting surgeon to review them.</p>
+<p>She saves this case-specific presentation in the patient’s record for
+sharing. She does not need to create or modify a reusable template for
+this one case.</p>
+<p><strong>Technical realization</strong></p>
+<p>The application creates a DICOM Basic Structured Display instance directly
+from the clinician’s image selection and arrangement. It records references
+to those particular image instances and their positions in the presentation.
+This creation path does not require a Hanging Protocol.</p>
+</section>
+<section id="archiving-and-sharing-the-saved-presentation">
+<h4>3.4.2.5.3 Archiving and Sharing the Saved Presentation<a class="headerlink" href="#archiving-and-sharing-the-saved-presentation" title="Link to this heading">#</a></h4>
+<p><strong>Clinical scenario</strong></p>
+<p>In either case, Dr. Patel sends the saved presentation and its photographs
+to the consulting surgeon. When the surgeon opens it, the selected
+photographs appear in the arrangement Dr. Patel intended, without requiring
+the surgeon to reconstruct it. Dr. Patel can also reopen the same
+presentation later as part of the archived referral record.</p>
+<p>The surgeon can separately arrange the photographs using their own
+preferred template for further review.</p>
+<p><strong>Technical realization</strong></p>
+<p>The Structured Display and its referenced VL Photographic Image instances
+are preserved and made available together for archiving or sharing. The
+receiving Image Display uses the Structured Display to reproduce the
+recorded arrangement using the referenced images, rather than a flattened
+composite image of the presentation.</p>
+<p>The required ADA 1100 viewsets provide baseline layouts without limiting
+other patient-specific presentations. Storage and transfer mechanisms
+remain outside the scope of this revision.</p>
+</section>
 </section>
 </section>
 </section>
@@ -610,7 +717,17 @@ Content Consumer actor, but not the Image Display actor.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-cases-for-orthodontic-images">3.4.2 Use Cases for Orthodontic Images</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ada-tr-1065-use-case-no-03-creating-digital-orthodontic-records">3.4.2.1 ADA TR 1065 Use Case No. 03 - Creating Digital Orthodontic Records</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ada-1100-use-case-no-2-2-referral-and-image-transfer-workflow">3.4.2.3 ADA 1100 Use Case No. 2.2 - Referral and Image Transfer Workflow</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#viewing-visible-light-photographic-images">3.4.2.4 Viewing Visible Light Photographic Images</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-same-display-template-across-applications">3.4.2.4 Using the Same Display Template Across Applications</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clinical-scenario">Clinical Scenario</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#technical-realization">Technical Realization</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preserving-and-sharing-a-patient-specific-presentation">3.4.2.5 Preserving and Sharing a Patient-Specific Presentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#generating-a-presentation-from-a-display-template">3.4.2.5.1 Generating a Presentation from a Display Template</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-presentation-from-scratch">3.4.2.5.2 Creating a Presentation from Scratch</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#archiving-and-sharing-the-saved-presentation">3.4.2.5.3 Archiving and Sharing the Saved Presentation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
