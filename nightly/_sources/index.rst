@@ -1,7 +1,7 @@
 Dentistry - Orthodontic Imaging Technical Implementation Profile 
 ================================================================
 
-`DOCX <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20261004193647/DENT-OIP-0.2.7-nightly.20261004193647.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20261004193647/DENT-OIP-0.2.7-nightly.20261004193647.pdf>`__
+`DOCX <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20261004194126/DENT-OIP-0.2.7-nightly.20261004194126.docx>`__ | `PDF <https://github.com/open-ortho/dent-oip/releases/download/0.2.7-nightly.20261004194126/DENT-OIP-0.2.7-nightly.20261004194126.pdf>`__
 
 Executive Summary
 -----------------
