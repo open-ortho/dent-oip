@@ -70,31 +70,29 @@ sender's arrangement, as described in :ref:`Section 3.4.2.5
 Clinical Scenario
 ^^^^^^^^^^^^^^^^^
 
-Dr. Patel reviews orthodontic photographs in her imaging software. She
-chooses a pre-programmed display template based on VS-01 for both initial
-and progress photographs and customizes it to suit her practice.
+Dr. Patel reviews orthodontic photographs in her DICOM software. She chooses a
+pre-programmed display template based on VS-01 for both initial and progress
+photographs and might want to customize the central box to suit her practice.
 
-Her practice management software also supports image review. When she opens
-the photograph viewer for a patient there, the photographs appear using the
-same template she selected in the imaging software. She does not need to
+Her practice management software also supports image review. When she opens the
+photograph viewer for a patient there, the photographs appear using the same
+template she selected in the DICOM viewing software. She does not need to
 configure the layout again or manually sort the photographs. Changes to her
 saved template can likewise be made available to both applications.
 
 Technical Realization
 ^^^^^^^^^^^^^^^^^^^^^
 
-Either application may create or update the shared template as a DICOM
-Hanging Protocol instance. The protocol is stored in a central DICOM
-repository, such as a PACS or medical imaging management and processing
-system (MIMPS), accessible to both applications.
+Either application may create or update the shared template as a DICOM Hanging
+Protocol (template) instance. The Hanging Protocol is stored in a central DICOM
+repository, such as a PACS or medical imaging management and processing system
+(MIMPS), accessible to both applications.
 
-Each application's Image Display uses the protocol's selection and
-presentation rules to arrange the applicable patient images. The protocol
-preserves reusable preferences rather than a fixed selection of images
-from one patient.
+Each application's Image Display uses the Hanging Protocol's selection and
+presentation rules to arrange the applicable patient images.
 
-The four required ADA 1100 viewsets, VS-01 through VS-04, provide baseline
-layouts. They do not limit the additional arrangements that display
+The four required ADA 1100 orthodontic viewsets, VS-01 through VS-04, provide
+baseline layouts. They do not limit the additional arrangements that display
 templates may support.
 
 This scenario illustrates shared access to display configuration. This
@@ -106,47 +104,47 @@ transactions used to store and obtain the protocol.
 3.4.2.5 Preserving and Sharing a Patient-Specific Presentation
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-A patient-specific presentation may be generated from a reusable template
-or created from scratch. The following sub-use cases distinguish these two
-creation paths; both produce a presentation that can be archived or shared
-with its selected photographs.
+A patient-specific presentation may be generated de novo or from a reusable
+template. The following use cases distinguish these two creation paths; both
+produce a presentation that can be archived or shared along with its selected
+photographs.
 
 3.4.2.5.1 Generating a Presentation from a Display Template
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Clinical scenario**
 
-Dr. Patel prepares an orthognathic referral. She opens the patient's
-photographs using her usual display template and selects the treatment
-timepoint or acquisition date. The software automatically populates the
-presentation with the corresponding facial and intraoral photographs in
+Dr. Patel prepares an orthognathic referral. To create a structure display, she
+opens the patient's photographs using her usual empty display template and
+selects the treatment timepoint or acquisition date. The software automatically
+populates the display with the corresponding facial and intraoral photographs in
 the order specified by the template.
 
-She reviews the populated presentation and saves it in the patient's record
-for sharing with the consulting surgeon. She does not need to select and
-position each photograph manually.
+She reviews the structured display and saves it in the patient's record for
+sharing with the consulting provider. She does not need to select and position
+each photograph manually.
 
 **Technical realization**
 
-The application applies a DICOM Hanging Protocol to the images for the
-selected patient and timepoint. Its selection and presentation rules
-determine the image instances and their arrangement. The application then
-saves the resulting patient-specific presentation as a DICOM Basic
-Structured Display instance, recording the layout and references to the
+The application applies a DICOM Hanging Protocol (the template) to the images
+for the selected patient and timepoint. Its selection and presentation rules
+determine the image instances and their arrangement. The application then saves
+the resulting patient-specific display as a DICOM Basic Structured Display (the
+structured display) instance, recording the layout and references to the
 selected image instances.
 
-The Structured Display records the result of applying the protocol to this
-patient's images. It does not require the recipient to obtain or reapply
-the originating Hanging Protocol.
+The DICOM Basic Structured Display records the result of applying the Hanging
+Protocol to this patient's images. It does not require the recipient to obtain
+or reapply the originating Hanging Protocol.
 
-3.4.2.5.2 Creating a Presentation from Scratch
+3.4.2.5.2 Creating a Structured Display de Novo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Clinical scenario**
 
 For another referral, Dr. Patel wants to highlight changes in a patient's
-facial asymmetry that are not readily shown by her usual templates. She
-starts with an empty presentation, selects particular photographs from
+facial asymmetry that are not readily shown by her usual templates. She manually creates a new empty structured display 
+starts with an empty , selects particular photographs from
 the initial and progress records, and places them side by side in the
 order she wants the consulting surgeon to review them.
 
